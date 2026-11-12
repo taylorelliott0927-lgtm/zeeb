@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794520922115,
+  "lastTick": 1794521281394,
   "asleep": false,
-  "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-12T22:02:02.115Z",
-  "actionMinutes": 120,
-  "thought": "if i do not plug into hangar bay 3 right now i am going to pass out mid-step. the dart can wait till i am fully charged.",
-  "feeling": "sleepy, heavy, low battery",
-  "say": "*bweep* turning off the dish for a bit...",
-  "mood": -0.063,
-  "energy": 0.388,
+  "place": "cantina",
+  "action": "chat_patrons",
+  "doing": "chatting with the cantina regulars",
+  "actionStartedAt": "2026-11-12T22:08:01.394Z",
+  "actionMinutes": 60,
+  "thought": "the old pilot was interested in the engine, let's see if they have any more tales to tell",
+  "feeling": "curious and a bit nervous about the interaction",
+  "say": "Hey old pilot, I've been tuning the engines and trying to get them to run smoother. What did you do to get your engine to start back when you were first built?",
+  "mood": -0.012,
+  "energy": 0.583,
   "needs": {
-    "charge": 0.042,
-    "oil": 0.078,
-    "curiosity": 0.82,
-    "company": 0.709,
-    "craft": 0.634
+    "charge": 0.07,
+    "oil": 0.102,
+    "curiosity": 0.868,
+    "company": 0.241,
+    "craft": 0.674
   },
   "credits": 2,
   "recent": [
+    {
+      "id": "chat_patrons",
+      "detail": "",
+      "at": "2026-11-12T22:08:01.394Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "chat_patrons",
       "detail": "the old pilot at the bar, about engines",
       "at": "2026-11-12T12:28:00.035Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "rewired the cockpit lights",
-      "at": "2026-11-12T11:27:06.035Z"
     }
   ],
   "wants": [
@@ -96,7 +96,7 @@
   "letters": [],
   "creatorThread": [],
   "seenCreatorMsgs": [],
-  "lettersCheckedAt": "2026-11-12T22:02:02.115Z",
+  "lettersCheckedAt": "2026-11-12T22:08:01.394Z",
   "weather": {
     "kind": "hazy",
     "temp": 24,
@@ -107,22 +107,23 @@
   },
   "sleepDay": 3,
   "lastReflectDay": 3,
-  "brain": "gemini-3.5-flash",
-  "updatedAt": "2026-11-12T22:02:02.115Z",
+  "brain": "your PC (qwen2.5:3b)",
+  "updatedAt": "2026-11-12T22:08:01.394Z",
   "clock": {
     "day": 4,
-    "time": "20:17",
-    "hour": 20,
-    "minute": 17
+    "time": "21:05",
+    "hour": 21,
+    "minute": 5
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the Dented Moon cantina",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-12T22:02:02.115Z"
+    "action": "chat_patrons",
+    "since": "2026-11-12T22:08:01.394Z"
   },
-  "busyUntil": "2026-11-12T22:17:02.115Z",
-  "busyUntilTown": "22:17",
-  "runner": "github",
-  "model": "gemini-3.5-flash"
+  "busyUntil": "2026-11-12T22:15:31.394Z",
+  "busyUntilTown": "22:05",
+  "runner": "pc",
+  "model": "gemini-3.5-flash",
+  "pcBrainAt": "2026-11-12T22:08:01.394Z"
 }

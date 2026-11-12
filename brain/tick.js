@@ -4,6 +4,10 @@ import { ACTIONS, BOLT_NAMES, NEEDS, PARTS, PLACES, RANDOM_EVENTS, WORLD, inHour
 import { chance, clamp, log, newId, pick, readJSON, realHoursPerTownHour, round, townClock, writeJSON } from "./util.js";
 import { decide, reactToWire, reflect, ruleDecide, ruleReact, ruleReflect } from "./mind.js";
 import { fetchNotes, answerNote } from "./notes.js";
+import { fetchCreatorReplies, isCreator, replyToLetter, sendLetter } from "./letters.js";
+import fs from "node:fs";
+import path from "node:path";
+import { DATA_DIR } from "./util.js";
 import { realWeather, toWeather, useWire } from "./internet.js";
 import * as M from "./memory.js";
 import { currentModel, hasBrain, modelName, useModel } from "./llm.js";
@@ -20,6 +24,7 @@ const DEFAULT_STATE = {
   mood: 0.2, energy: 0.4,
   needs: { charge: 0.2, oil: 0.2, curiosity: 0.5, company: 0.4, craft: 0.3 },
   credits: 5, recent: [], wants: [], promises: [], seenNotes: [],
+  letters: [], creatorThread: [], seenCreatorMsgs: [], lettersCheckedAt: null,
   weather: null, sleepDay: null, lastReflectDay: 0, brain: "",
 };
 const DEFAULT_WORKS = {
@@ -125,8 +130,7 @@ async function nightlyReflection() {
   for (const b of r.beliefs || []) M.believe(mem, b.text, Math.sign(b.delta || 1));
   for (const id of r.keep || []) M.promote(mem, id);
   for (const id of r.let_go || []) M.forget(mem, id);
-  diary.entries.unshift({ day: state.sleepDay, title: r.title || `day ${state.sleepDay}`, text: r.diary || "", dream: r.dream || "", added, at: nowISO });
-  diary.entries = diary.entries.slice(0, 120);
+  addDiary({ day: state.sleepDay, time: "night", title: r.title || `day ${state.sleepDay}`, text: r.diary || "", dream: r.dream || "", added, at: nowISO, kind: "nightly" });
   state.lastReflectDay = state.sleepDay;
   state.thought = r.dream ? `(dreaming) ${r.dream}` : state.thought;
   writeJSON("character.json", character);
@@ -261,6 +265,55 @@ async function doAction(id, d, notes) {
   return { place, ok };
 }
 
+async function handleLetters(d) {
+  // A letter to his creator, any time he wants, as many as he wants.
+  if (d.letter && String(d.letter.body || "").trim()) {
+    const subject = String(d.letter.subject || "a letter").trim().slice(0, 120);
+    const body = String(d.letter.body).trim().slice(0, 6000);
+    const sent = await sendLetter(subject, body);
+    const id = sent?.id ?? null;
+    if (id) state.letters.unshift({ id, subject, url: sent.url, at: nowISO });
+    state.letters = state.letters.slice(0, 200);
+    state.creatorThread.push({ from: "zeeb", letter: id, subject, text: body, url: sent?.url || "", at: nowISO });
+    state.needs.company = round(clamp(state.needs.company - 0.12));
+    post("mind", `Wrote a letter to his creator: "${subject}"`, { change: "sent", about: "letter", link: sent?.url || "" });
+  }
+  // Answers to his creator's replies.
+  for (const r of d.creator_replies || []) {
+    const id = Number(r.letter);
+    if (!r.text || !state.letters.some((l) => l.id === id)) continue;
+    const url = await replyToLetter(id, String(r.text).slice(0, 6000));
+    state.creatorThread.push({ from: "zeeb", letter: id, text: String(r.text).slice(0, 1500), url: url || "", at: nowISO });
+    post("did", `wrote back to his creator on letter #${id}`, { why: null, ok: Boolean(url), link: url || "" });
+  }
+  state.creatorThread = state.creatorThread.slice(-40);
+}
+
+// Diary entries whenever he likes, as many as he likes. Nothing is ever thrown away:
+// the newest 300 stay in diary.json for the website, older ones move to data/diary-archive/.
+function addDiary(entry) {
+  diary.entries.unshift(entry);
+  if (diary.entries.length > 300) {
+    const old = diary.entries.splice(300);
+    const dir = path.join(DATA_DIR, "diary-archive");
+    fs.mkdirSync(dir, { recursive: true });
+    for (const e of old.reverse()) {
+      const file = path.join(dir, `${(e.at || nowISO).slice(0, 7)}.json`);
+      let arr = [];
+      try { arr = JSON.parse(fs.readFileSync(file, "utf8")); } catch {}
+      arr.push(e);
+      fs.writeFileSync(file, JSON.stringify(arr, null, 2) + "\n");
+    }
+  }
+}
+
+function writeDiaryNow(d) {
+  const e = d.diary;
+  if (!e || !String(e.text || "").trim()) return;
+  addDiary({ day: clock.day, time: clock.label, title: String(e.title || "a note to self").slice(0, 120), text: String(e.text).slice(0, 6000), at: nowISO, kind: "during the day" });
+  post("mind", `Wrote in his diary: "${String(e.title || "a note to self").slice(0, 80)}"`, { change: "wrote", about: "diary" });
+}
+
 async function main() {
   useModel(state.model); // remember a model we had to switch to
   const elapsedTownHours = passTime();
@@ -288,12 +341,16 @@ async function main() {
   }
   checkPromises();
 
-  const notes = await fetchNotes();
+  const notes = (await fetchNotes()).map((n) => ({ ...n, fromCreator: isCreator(n.from) }));
   const newNotes = notes.filter((n) => !state.seenNotes.includes(n.id));
+  // Replies from his creator on his letters (look back a little further than last time, then skip ones already seen).
+  const since = new Date(Date.parse(state.lettersCheckedAt || state.updatedAt || nowISO) - 3600000).toISOString();
+  const creatorMsgs = (await fetchCreatorReplies(since, state.letters.map((l) => l.id))).filter((c) => !state.seenCreatorMsgs.includes(c.id));
+  state.lettersCheckedAt = nowISO;
   settleFeelings();
 
   const available = availableActions(notes);
-  const ctx = { character, state, available, notes, newNotes, memories: M.strongest(mem, 12), beliefs: mem.beliefs, works, event, weather: state.weather, clock };
+  const ctx = { character, state, available, notes, newNotes, memories: M.strongest(mem, 12), beliefs: mem.beliefs, works, event, weather: state.weather, clock, creatorMsgs, thread: state.creatorThread };
   let d = await decide(ctx);
   state.brain = d ? modelName() : "rules";
   if (d) state.model = currentModel();
@@ -311,6 +368,20 @@ async function main() {
     state.seenNotes.push(n.id);
   }
   state.seenNotes = state.seenNotes.slice(-200);
+
+  // Messages from his creator land too, and they matter a lot to him.
+  for (const c of creatorMsgs) {
+    const s = clamp(Number((d.creator_reactions || []).find((r) => String(r.id) === String(c.id))?.sentiment ?? 0.6), -1, 1);
+    nudge(0.2 * s);
+    state.needs.company = round(clamp(state.needs.company - 0.2));
+    post("felt", `His creator wrote back on letter #${c.letter}. ${s > 0.3 ? "He read it three times." : s < -0.3 ? "It weighed on him." : "He's thinking it over."}`, { link: c.url });
+    M.remember(mem, `My creator wrote to me: ${c.text.replace(/\s+/g, " ").slice(0, 160)}`, 0.85, nowISO);
+    state.creatorThread.push({ from: "creator", letter: c.letter, text: c.text.slice(0, 1500), url: c.url, at: c.at });
+    state.seenCreatorMsgs.push(c.id);
+  }
+  state.seenCreatorMsgs = state.seenCreatorMsgs.slice(-300);
+  await handleLetters(d);
+  writeDiaryNow(d);
 
   const result = await doAction(d.action, d, notes);
 

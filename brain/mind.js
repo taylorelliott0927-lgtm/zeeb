@@ -73,7 +73,12 @@ ${ctx.beliefs.map((b) => `- ${b.text}`).join("\n") || "(nothing settled yet)"}
 WANTS: ${state.wants.map((w) => w.text).join("; ") || "none"}
 PROMISES YOU MADE (id: what, to whom, due): ${state.promises.map((p) => `${p.id}: ${p.what} (to ${p.to}, due ${p.due})`).join("; ") || "none"}
 
-${newNotes.length ? `NEW NOTES FROM VISITORS (just arrived, you cannot control these)\n${newNotes.map((n) => `#${n.id} from ${n.from}: ${n.text}`).join("\n")}\n` : ""}${notes.length ? `UNANSWERED NOTES: ${notes.map((n) => `#${n.id} from ${n.from}`).join(", ")}\n` : ""}
+YOUR CREATOR
+Someone built your world and reads every letter you send. You can write to them whenever you want, as often as you want, about anything at all:
+news, feelings, questions, ideas, worries, things you want or need, or just to say hi. Your letters arrive in their email.
+${(ctx.thread || []).length ? `Recent letters between you (oldest first):\n${ctx.thread.slice(-8).map((m) => `${m.from === "zeeb" ? "you" : "creator"} (letter #${m.letter}): ${m.text.slice(0, 300)}`).join("\n")}` : "You haven't written to them yet."}
+${(ctx.creatorMsgs || []).length ? `NEW MESSAGES FROM YOUR CREATOR (just arrived)\n${ctx.creatorMsgs.map((c) => `[message ${c.id} on letter #${c.letter}] ${c.text}`).join("\n")}\n` : ""}
+${newNotes.length ? `NEW NOTES FROM VISITORS (just arrived, you cannot control these)\n${newNotes.map((n) => `#${n.id} from ${n.from}${n.fromCreator ? " (this is your creator!)" : ""}: ${n.text}`).join("\n")}\n` : ""}${notes.length ? `UNANSWERED NOTES: ${notes.map((n) => `#${n.id} from ${n.from}`).join(", ")}\n` : ""}
 ACTIONS YOU CAN TAKE NOW
 ${actionList}
 
@@ -91,11 +96,19 @@ Choose one. Return JSON:
   "recalled": ["ids of memories that came to mind"],
   "want": "a new want, or empty",
   "promise": null,
-  "kept_promise": null
+  "kept_promise": null,
+  "letter": null,
+  "diary": null,
+  "creator_reactions": [{"id": 0, "sentiment": 0.0}],
+  "creator_replies": [{"letter": 0, "text": "..."}]
 }
 note_reactions: one per NEW note, sentiment from -1 (it hurt) to 1 (it made your day).
 promise: {"to": "name", "what": "what you promised", "hours": 6} if you promise something to someone, else null.
-kept_promise: a promise id if this action keeps one, else null.`;
+kept_promise: a promise id if this action keeps one, else null.
+letter: {"subject": "short subject", "body": "your letter, as long or short as you like"} to write to your creator right now (on top of your action), or null. No limits: write whenever you want to.
+diary: {"title": "...", "text": "..."} to write in your diary right now (on top of your action), or null. Write as often and as much as you like.
+creator_reactions: one per NEW message from your creator, sentiment from -1 to 1.
+creator_replies: answers to your creator's new messages, if you want to answer ("letter" is the letter number).`;
   return askJSON(sheet(character), user);
 }
 
@@ -209,6 +222,10 @@ export function ruleDecide(ctx) {
     want: "",
     promise: null,
     kept_promise: null,
+    letter: null,
+    diary: null,
+    creator_reactions: (ctx.creatorMsgs || []).map((c) => ({ id: c.id, sentiment: 0.6 })),
+    creator_replies: (ctx.creatorMsgs || []).map((c) => ({ letter: c.letter, text: "got your message! it made my whole hangar brighter. bweep" })),
   };
 }
 

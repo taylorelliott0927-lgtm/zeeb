@@ -93,6 +93,9 @@ function availableActions(notes) {
     if (!inHours(a.hours, clock.hour)) return false;
     if (a.needsNotes && !notes.length) return false;
     if (a.needsLinks && !(works.lastLinks || []).length) return false;
+    if (a.needsParts && !works.stash.length) return false;
+    if (a.needsCredits && state.credits < a.needsCredits) return false;
+    if (a.needsTune && !works.tunes.length) return false;
     if (a.needsShip && !(works.dart.launched || []).length) return false;
     if (a.outdoorFlight && storm) return false;
     if (a.needsBuilds && !(works.builds || []).length) return false;
@@ -213,25 +216,67 @@ async function doAction(id, d, notes) {
 
   for (const [k, v] of Object.entries(a.effects)) state.needs[k] = round(clamp(state.needs[k] + v));
   nudge(a.mood || 0);
-  if (a.cost) state.credits -= a.cost;
-  if (a.earn) state.credits += a.earn;
+  if (a.cost) { state.credits -= a.cost; pop(`-${a.cost} credit${a.cost > 1 ? "s" : ""}`, "spend"); }
+  if (Array.isArray(a.earn) && id !== "fix_job") state.credits += a.earn[0];
 
   if (id !== "reply_notes" && id !== "go_to_sleep") post("did", text, { why: d.why || null, ok: true, ...(detail && id !== "browse_wire" ? { detail } : {}) });
   switch (id) {
     case "scavenge": {
-      if (chance(0.7)) {
-        const part = { name: pick(BOLT_NAMES), what: pick(PARTS), at: nowISO };
-        works.stash.unshift(part);
-        works.stash = works.stash.slice(0, 12);
-        post("noticed", `Found ${part.what} in the junk. Named it ${part.name}.`);
-        nudge(0.04);
+      // Usually something, often a few things, now and then a real treasure.
+      const n = chance(0.12) ? 0 : chance(0.35) ? 3 : chance(0.5) ? 2 : 1;
+      const found = [];
+      for (let i = 0; i < n; i++) found.push(addPart(chance(0.08)));
+      if (found.length) {
+        post("noticed", `Dug up ${found.map((p) => `${p.what}${p.good ? " (a really good one!)" : ""} and named it ${p.name}`).join("; ")}.`);
+        nudge(0.03 * found.length);
       } else post("noticed", "Nothing worth keeping in the piles today.");
+      break;
+    }
+    case "fix_job": {
+      if (chance(0.25)) {
+        const p = addPart(chance(0.2));
+        post("noticed", `The trader paid him in parts: ${p.what}. He named it ${p.name}.`);
+      } else {
+        const pay = 3 + Math.floor(Math.random() * 4);
+        state.credits += pay;
+        pop(`+${pay} credits`, "credits");
+        post("noticed", `Got paid ${pay} credits for the repair. Now has ${state.credits}.`);
+      }
+      break;
+    }
+    case "buy_part": {
+      const good = /good|best|really/i.test(detail) && state.credits >= 8;
+      const price = good ? 8 : 3 + Math.floor(Math.random() * 3);
+      if (state.credits < price) { post("noticed", `Couldn't afford it: the trader wanted ${price} credits.`); break; }
+      state.credits -= price;
+      pop(`-${price} credits`, "spend");
+      const p = addPart(good);
+      post("noticed", `Bought ${p.what}${good ? " (a really good one)" : ""} for ${price} credits and named it ${p.name}. Has ${state.credits} left.`);
+      nudge(0.03);
+      break;
+    }
+    case "sell_scrap": {
+      const want = String(detail).toLowerCase();
+      const i = Math.max(0, works.stash.findIndex((p) => want && (want.includes(p.name.toLowerCase()) || want.includes(p.what.toLowerCase()))));
+      const [p] = works.stash.splice(i, 1);
+      const price = (p.good ? 5 : 2) + Math.floor(Math.random() * 3);
+      state.credits += price;
+      pop(`+${price} credits`, "credits");
+      post("noticed", `Sold ${p.name} (${p.what}) for ${price} credits. Now has ${state.credits}.`);
+      break;
+    }
+    case "busk": {
+      const tips = Math.floor(Math.random() * 5);
+      state.credits += tips;
+      if (tips) pop(`+${tips} in tips`, "credits");
+      post("noticed", tips ? `Played his tunes and got ${tips} credits in tips. Now has ${state.credits}.` : "Played his heart out. Nobody tipped. Rough crowd.");
+      nudge(tips ? 0.04 : -0.03);
       break;
     }
     case "work_dart": {
       const dart = works.dart;
       const part = works.stash.pop();
-      if (part) dart.partsUsed = (dart.partsUsed || 0) + 1;
+      if (part) dart.partsUsed = (dart.partsUsed || 0) + (part.good ? 2 : 1);
       const gain = part ? 6 + Math.floor(Math.random() * 5) : 2 + Math.floor(Math.random() * 3);
       const before = dart.progress;
       dart.progress = Math.min(100, dart.progress + gain);
@@ -291,6 +336,11 @@ async function doAction(id, d, notes) {
       if (r.inspiration) post("mind", `Idea: ${r.inspiration}`, { change: "idea", about: "piece" });
       if (r.thought) d.thought = r.thought;
       if (r.feeling) d.feeling = r.feeling;
+      break;
+    }
+    case "wander":
+    case "stargaze": {
+      if (chance(0.2)) { const p = addPart(chance(0.05)); post("noticed", `Spotted ${p.what} half-buried in the sand. Named it ${p.name}.`); }
       break;
     }
     case "send_signal": {
@@ -513,6 +563,19 @@ function applyChats() {
   return true;
 }
 
+// Add a scavenged part to his stash (good ones help the Dart more and sell for more).
+// Little things that pop up over Zeeb on the website (credits gained or spent, parts found).
+const pops = [];
+const pop = (text, kind) => pops.push({ text, kind, at: nowISO });
+
+function addPart(good) {
+  const p = { name: pick(BOLT_NAMES), what: pick(PARTS), at: nowISO, ...(good ? { good: true } : {}) };
+  works.stash.unshift(p);
+  works.stash = works.stash.slice(0, 20);
+  pop(`+ ${p.what}${good ? " ★" : ""}`, "part");
+  return p;
+}
+
 async function main() {
   // If your PC has been doing his thinking recently, GitHub sits this one out.
   if (RUNNER === "github" && state.pcBrainAt && NOW - Date.parse(state.pcBrainAt) < PC_HANDOFF_MS) {
@@ -549,10 +612,14 @@ async function main() {
   let event = null;
   if (chance(0.12)) {
     event = pick(RANDOM_EVENTS);
+    state.event = { id: `e${Date.parse(nowISO).toString(36)}`, key: event.key, text: event.text, at: nowISO };
+    if (event.key === "hauler_paint") state.haulerPaint = pick(["#e8476a", "#3fbf6f", "#f2c230", "#8a5cf0", "#2fb7d6", "#f07a2a"]);
+    if (event.key === "light") state.lampOutUntil = new Date(NOW + TOWN_DAY_MINUTES * 60000).toISOString();
     post("noticed", event.text);
     nudge(event.mood || 0);
     for (const [k, v] of Object.entries(event.needs || {})) state.needs[k] = round(clamp(state.needs[k] + v));
-    if (event.part) works.stash.unshift({ name: pick(BOLT_NAMES), what: pick(PARTS), at: nowISO });
+    for (let i = 0; i < (event.part === true ? 1 : event.part || 0); i++) addPart(false);
+    if (event.credits) { state.credits += event.credits; pop(`+${event.credits} credit${event.credits > 1 ? "s" : ""}`, "credits"); }
   }
   checkPromises();
 
@@ -690,6 +757,7 @@ async function finish() {
 
 function save() {
   state.lastTick = NOW;
+  if (pops.length) state.pops = { at: nowISO, items: pops.slice(0, 6) };
   state.runner = RUNNER;
   if (RUNNER === "pc") state.pcBrainAt = nowISO;
   state.updatedAt = nowISO;

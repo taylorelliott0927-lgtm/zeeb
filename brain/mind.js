@@ -59,7 +59,9 @@ export async function decide(ctx) {
 Town day ${clock.day}, ${clock.label}. You are at ${PLACES[state.place]?.name || "the outpost"}.
 Weather: ${weather ? `${weather.kind}, ${weather.temp}C, wind ${weather.wind} km/h` : "unknown"}.
 Mood ${state.mood.toFixed(2)} (from -1 low to 1 high). Energy ${state.energy.toFixed(2)} (from -1 spent to 1 lively).
-Credits: ${state.credits}. Parts in your stash: ${works.stash.length ? works.stash.map((p) => `${p.name} (${p.what})`).join(", ") : "none"}.
+MONEY AND PARTS
+Credits: ${state.credits}.${state.credits < 2 ? " You're nearly broke: oil costs 1 credit, and with no credits you can't buy any." : ""} (Repair jobs pay 3 to 6, busking at the cantina gets tips, and you can sell spare parts. Traders at the market also sell parts: 3 to 5 credits, or 8 for a really good one.)
+Parts in your stash (${works.stash.length}): ${works.stash.length ? works.stash.slice(0, 12).map((p) => `${p.name} (${p.what}${p.good ? ", a really good one" : ""})`).join(", ") : "none."} ${works.stash.length < 2 ? "Without parts the Little Dart goes slowly; scavenging the junk market usually turns some up." : "Parts make the Little Dart go much faster; building things uses them too."}
 ${event ? `Something just happened: ${event.text}\n` : ""}
 NEEDS (0 met, 1 pressing)
 ${fmtNeeds(state.needs)}

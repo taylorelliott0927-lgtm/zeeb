@@ -45,8 +45,8 @@ export const ACTIONS = {
   },
   fix_job: {
     place: "market", doing: "doing a repair job at the market", minutes: 45, hours: [7, 20],
-    effects: { craft: -0.2, company: -0.15, charge: 0.06 }, mood: 0.0, earn: 3,
-    about: "fix something for a trader at the market and earn 3 credits",
+    effects: { craft: -0.2, company: -0.15, charge: 0.06 }, mood: 0.0, earn: [3, 6],
+    about: "fix something for a trader at the market: pays 3 to 6 credits (sometimes they pay in parts instead)",
   },
   scavenge: {
     place: "market", doing: "digging through the junk piles", minutes: 40, hours: [6, 21],
@@ -162,6 +162,21 @@ export const ACTIONS = {
     effects: { craft: -0.1 }, mood: 0,
     about: "take down one of the things you built (put its id in 'detail')",
   },
+  buy_part: {
+    place: "market", doing: "browsing the parts stalls at the market", minutes: 25, hours: [7, 21], needsCredits: 3,
+    effects: { curiosity: -0.1 }, mood: 0.02,
+    about: "buy a part from a trader: 3 to 5 credits, or 8 for a really good one (say which in 'detail': 'good' or 'any')",
+  },
+  sell_scrap: {
+    place: "market", doing: "haggling over scrap at the market", minutes: 25, hours: [7, 21], needsParts: true,
+    effects: { company: -0.1 }, mood: 0.01,
+    about: "sell one of the parts from your stash to a trader for 2 to 4 credits (say which in 'detail')",
+  },
+  busk: {
+    place: "cantina", doing: "playing his tunes for tips at the cantina", minutes: 40, hours: [16, 2], needsTune: true,
+    effects: { company: -0.3, craft: -0.2 }, mood: 0.04,
+    about: "play your tunes for the cantina crowd and see if anyone tips (0 to 4 credits)",
+  },
   wander: {
     place: "any", doing: "wandering around the outpost", minutes: 20,
     effects: { curiosity: -0.12 }, mood: 0.01,
@@ -175,16 +190,20 @@ export const ACTIONS = {
 };
 
 export const RANDOM_EVENTS = [
-  { text: "A freighter came in low over the hangar and rattled every bolt in the place.", mood: -0.04 },
-  { text: "The power flickered across the outpost for a few seconds.", mood: -0.03, needs: { charge: 0.05 } },
-  { text: "A trader left a box of free scrap outside the hangar.", mood: 0.06, part: true },
-  { text: "Some kids at the market waved at him.", mood: 0.05, needs: { company: -0.1 } },
-  { text: "The cargo-hauler bot at the depot got a new paint job. Show-off.", mood: -0.03 },
-  { text: "He heard a strange crackle on his dish. Probably nothing. Probably.", mood: 0.03, needs: { curiosity: 0.1 } },
-  { text: "Sand got into his left elbow joint. Again.", mood: -0.05, needs: { oil: 0.1 } },
-  { text: "The cantina band played his favourite song while he walked past.", mood: 0.05 },
-  { text: "A pilot asked him for directions and called him 'buddy'.", mood: 0.05, needs: { company: -0.08 } },
-  { text: "One of the hangar lights finally died for good.", mood: -0.02 },
+  { key: "freighter", text: "A freighter came in low over the hangar and rattled every bolt in the place.", mood: -0.04 },
+  { key: "power", text: "The power flickered across the outpost for a few seconds.", mood: -0.03, needs: { charge: 0.05 } },
+  { key: "scrap_box", text: "A trader left a box of free scrap outside the hangar.", mood: 0.06, part: 2 },
+  { key: "crate", text: "A cargo crate fell off a freighter at the edge of the dunes. Some of it rolled his way.", mood: 0.05, part: 2 },
+  { key: "hauler_drop", text: "The depot's cargo-hauler bot dropped a part and didn't notice.", mood: 0.04, part: 1 },
+  { key: "pilot", text: "A pilot paid him a credit for directions to the cantina.", mood: 0.04, credits: 1 },
+  { key: "tip", text: "Someone he fixed something for last week came back and tipped him.", mood: 0.06, credits: 2 },
+  { key: "kids", text: "Some kids at the market waved at him.", mood: 0.05, needs: { company: -0.1 } },
+  { key: "hauler_paint", text: "The cargo-hauler bot at the depot got a new paint job. Show-off.", mood: -0.03 },
+  { key: "crackle", text: "He heard a strange crackle on his dish. Probably nothing. Probably.", mood: 0.03, needs: { curiosity: 0.1 } },
+  { key: "sand", text: "Sand got into his left elbow joint. Again.", mood: -0.05, needs: { oil: 0.1 } },
+  { key: "band", text: "The cantina band played his favourite song while he walked past.", mood: 0.05 },
+  { key: "pilot", text: "A pilot asked him for directions and called him 'buddy'.", mood: 0.05, needs: { company: -0.08 } },
+  { key: "light", text: "One of the hangar lights finally died for good.", mood: -0.02 },
 ];
 
 export const PARTS = [

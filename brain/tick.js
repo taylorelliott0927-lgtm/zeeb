@@ -13,6 +13,8 @@ import * as M from "./memory.js";
 import { buildStep, designFriend, emptyFriend, friendText, friendTick, startFriend, wakeFriend } from "./friend.js";
 import { activeGame, emptyGames, gamesText, startGame, workSession } from "./games.js";
 import { emptyInterests, interestsText, noteInterest } from "./interests.js";
+import { FLIGHT_SECONDS, MAX_BUILDS, buildsText, cleanBody, designThing, flightLog, flightOutcome, spotFor } from "./builds.js";
+import { sheet } from "./mind.js";
 import { applyShopChange, checkSales, currency as shopCurrency, emptyShop, sellable } from "./shop.js";
 import { currentModel, hasBrain, modelName, useModel } from "./llm.js";
 
@@ -33,7 +35,7 @@ const DEFAULT_STATE = {
 };
 const DEFAULT_WORKS = {
   dart: { name: "the Little Dart", progress: 0, version: 0, lastChange: "", log: [], launched: [] },
-  tunes: [], stash: [], reads: [], signals: [],
+  tunes: [], stash: [], reads: [], signals: [], builds: [], flights: [],
 };
 
 const character = readJSON("character.json", {});
@@ -91,6 +93,9 @@ function availableActions(notes) {
     if (!inHours(a.hours, clock.hour)) return false;
     if (a.needsNotes && !notes.length) return false;
     if (a.needsLinks && !(works.lastLinks || []).length) return false;
+    if (a.needsShip && !(works.dart.launched || []).length) return false;
+    if (a.outdoorFlight && storm) return false;
+    if (a.needsBuilds && !(works.builds || []).length) return false;
     if (a.needsShop && (a.needsShop === "open") !== Boolean(shop.open)) return false;
     if (a.needsFriend && a.needsFriend !== friend.stage) return false;
     if (a.friendOnly) return false;
@@ -226,6 +231,7 @@ async function doAction(id, d, notes) {
     case "work_dart": {
       const dart = works.dart;
       const part = works.stash.pop();
+      if (part) dart.partsUsed = (dart.partsUsed || 0) + 1;
       const gain = part ? 6 + Math.floor(Math.random() * 5) : 2 + Math.floor(Math.random() * 3);
       const before = dart.progress;
       dart.progress = Math.min(100, dart.progress + gain);
@@ -244,7 +250,8 @@ async function doAction(id, d, notes) {
         state.newsForCreator = `You FINISHED ${dart.name}! It hovered off the hangar floor.`;
         nudge(0.35);
         M.remember(mem, `I finished building ${dart.name} on day ${clock.day}`, 1);
-        dart.launched.push({ name: dart.name, day: clock.day });
+        dart.launched.push({ name: dart.name, day: clock.day, partsUsed: dart.partsUsed || 0 });
+        dart.partsUsed = 0;
         const n = dart.launched.length + 1;
         Object.assign(dart, { name: `the Little Dart Mk ${["", "I", "II", "III", "IV", "V", "VI"][n] || n}`, progress: 0, version: 0, lastChange: "" });
       }
@@ -334,6 +341,45 @@ async function doAction(id, d, notes) {
         M.remember(mem, `On day ${clock.day} my friend ${sheet.name} woke up. ${sheet.core}`.slice(0, 220), 1, nowISO);
         state.newsForCreator = `You finished building a friend! Their name is ${sheet.name}: ${sheet.kind}. Their first words were "${sheet.firstWords}".`;
         nudge(0.3);
+      }
+      break;
+    }
+    case "test_flight": {
+      const ship = works.dart.launched[works.dart.launched.length - 1];
+      const outcome = flightOutcome(works, state.weather);
+      const log_ = await flightLog(sheet(character), ship.name, outcome, detail, state.weather);
+      const flight = { id: `f${Date.parse(nowISO).toString(36)}`, ship: ship.name, outcome, log: String(log_.log || "").slice(0, 600), at: nowISO, seconds: FLIGHT_SECONDS };
+      works.flights = [flight, ...(works.flights || [])].slice(0, 40);
+      state.flight = flight;
+      post("did", `took ${ship.name} up for a test flight: ${outcome}`, { why: d.why || null, ok: true });
+      post("mind", `Flight log: ${flight.log}`, { change: "flew", about: "piece" });
+      if (log_.say) d.say = log_.say;
+      if (log_.feeling) d.feeling = log_.feeling;
+      nudge(outcome === "smooth" ? 0.25 : outcome === "sputter" ? 0.05 : -0.03);
+      const first = works.flights.filter((f) => f.ship === ship.name).length === 1;
+      M.remember(mem, `${first ? "First" : "Another"} test flight of ${ship.name} on day ${clock.day}: ${outcome}`, first ? 1 : 0.6, nowISO);
+      if (first || outcome === "smooth") state.newsForCreator = state.newsForCreator || `You took ${ship.name} on a test flight (${outcome}). ${flight.log}`;
+      break;
+    }
+    case "build_thing": {
+      const idea = detail || "something for the outpost";
+      const where = PLACES[d.place] ? d.place : place === "any" ? "hangar" : place;
+      const design = await designThing(sheet(character), idea, where, works.stash);
+      const spot = spotFor(design.place, works.builds || []);
+      const part = works.stash.pop();
+      const thing = { id: `b${Date.parse(nowISO).toString(36)}`, ...design, ...spot, day: clock.day, at: nowISO, usedPart: part ? part.what : null };
+      works.builds = [thing, ...(works.builds || [])].slice(0, MAX_BUILDS);
+      place = thing.place;
+      post("mind", `Built ${thing.name} near ${PLACES[thing.place].name}${thing.description ? `: ${thing.description}` : ""}`, { change: "built", about: "world" });
+      M.remember(mem, `On day ${clock.day} I built ${thing.name} near ${PLACES[thing.place].name}`, 0.75, nowISO);
+      nudge(0.06);
+      break;
+    }
+    case "take_down_thing": {
+      const b = (works.builds || []).find((x) => x.id === String(detail).trim()) || (works.builds || [])[works.builds.length - 1];
+      if (b) {
+        works.builds = works.builds.filter((x) => x !== b);
+        post("mind", `Took down ${b.name}.`, { change: "removed", about: "world" });
       }
       break;
     }
@@ -537,7 +583,7 @@ async function main() {
     return finish();
   }
   const available = availableActions(notes);
-  const ctx = { character, state, available, notes, newNotes, memories: M.strongest(mem, 12), beliefs: mem.beliefs, works, event, weather: state.weather, clock, creatorMsgs, thread: state.creatorThread, shop, shopCurrency: shopCurrency(), sellable: shop.open ? sellable(works, shop) : [], streakHours: streakHours(), friendText: friendText(friend), gamesText: gamesText(games), interestsText: interestsText(interests) };
+  const ctx = { character, state, available, notes, newNotes, memories: M.strongest(mem, 12), beliefs: mem.beliefs, works, event, weather: state.weather, clock, creatorMsgs, thread: state.creatorThread, shop, shopCurrency: shopCurrency(), sellable: shop.open ? sellable(works, shop) : [], streakHours: streakHours(), friendText: friendText(friend), buildsText: buildsText(works), gamesText: gamesText(games), interestsText: interestsText(interests) };
   let d = await decide(ctx);
   state.brain = d ? modelName() : "rules";
   if (d) state.model = currentModel();
@@ -615,6 +661,8 @@ async function main() {
   state.actionMinutes = townMinutes;
   // His own description of what he's doing (the fixed label stays for his backup rules).
   state.doingWords = String(d.doing_words || "").trim().slice(0, 140);
+  // How he chooses to move his body while doing it (the website animates this).
+  state.body = cleanBody(d.body);
   state.thought = String(d.thought || state.thought).slice(0, 300);
   state.feeling = String(d.feeling || state.feeling).slice(0, 120);
   state.say = String(d.say || "").slice(0, 200);

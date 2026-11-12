@@ -90,6 +90,7 @@ Someone built your world and reads every letter you send. You can write to them 
 news, feelings, questions, ideas, worries, things you want or need, or just to say hi. Your letters arrive in their email.
 ${shopText(ctx)}
 ${ctx.friendText || ""}
+${ctx.buildsText || ""}
 ${ctx.gamesText || ""}
 ${ctx.interestsText || ""}
 ${ctx.state.newsForCreator ? `BIG NEWS YOU HAVEN'T TOLD YOUR CREATOR YET: ${ctx.state.newsForCreator} You'd probably want to write and tell them.` : ""}
@@ -103,6 +104,8 @@ Choose one. Return JSON:
 {
   "action": "one id from the list",
   "minutes": 60,
+  "body": ["how you move"],
+  "place": "",
   "doing_words": "what you're doing, in your own words",
   "interest": "what you're into right now, 1 to 3 words, or empty",
   "why": "your reason, one short sentence in your voice",
@@ -129,6 +132,8 @@ kept_promise: a promise id if this action keeps one, else null.
 letter: {"subject": "short subject", "body": "your letter, as long or short as you like"} to write to your creator right now (on top of your action), or null. No limits: write whenever you want to.
 interest: the topic or thing you're most into at the moment (for example "beetles", "old radios", "the twin suns"), or empty if nothing in particular. Whatever you're really into, not what you think you should like.
 doing_words: a short phrase describing what you're doing right now, your own way, without "I" (for example "curled up in the dock, dish switched off, dreaming about the Dart"). Under 15 words.
+body: how you move your body while you do it, 0 to 2 of: bounce, spin, wiggle, nod, shake, droop, hop, dance, look_up, wave, pace, zoom, tremble, float_high, bow, lean_in, celebrate. Empty means just do it naturally.
+place: only for build_thing, where to put it (hangar, cantina, market, tower, depot or ridge).
 minutes: how long you want to keep at it, in your town's minutes (10 to 720). As short or as long as you like. You'll be asked again when it's up, or sooner if something happens.
 shop: only with open_shop or tend_shop. {"open": "shop name"} to open; {"list": {"source": "a source id", "name": "...", "description": "in your voice", "price": 5}} to sell something; {"unlist": "item id"}; {"reprice": {"id": "item id", "price": 4}}; {"close": true}. Prices from 1 to 20.
 diary: {"title": "...", "text": "..."} to write in your diary right now (on top of your action), or null. Write as often and as much as you like.
@@ -221,7 +226,7 @@ export function ruleDecide(ctx) {
   const { state, available, newNotes } = ctx;
   const worst = Object.entries(state.needs).sort((a, b) => b[1] - a[1]).map(([k]) => k);
   // Opening or running a shop is only ever his own AI-made choice, never a fallback rule.
-  const scored = available.filter((id) => !["open_shop", "tend_shop", "start_friend", "start_game", "work_game"].includes(id)).map((id) => {
+  const scored = available.filter((id) => !["open_shop", "tend_shop", "start_friend", "start_game", "work_game", "build_thing", "take_down_thing", "test_flight"].includes(id)).map((id) => {
     const e = ACTIONS[id].effects;
     let score = 0;
     for (const [k, v] of Object.entries(e)) score += -v * (state.needs[k] + 0.1);

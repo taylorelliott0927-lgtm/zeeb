@@ -147,6 +147,21 @@ export const ACTIONS = {
     effects: { craft: -0.45, curiosity: -0.15, charge: 0.06 }, mood: 0.04,
     about: "work on your game: write code, fix bugs, add things, or release it when you're happy with it",
   },
+  test_flight: {
+    place: "hangar", doing: "taking his ship out for a test flight", minutes: 30, needsShip: true, outdoorFlight: true,
+    effects: { curiosity: -0.4, craft: -0.1, charge: 0.08 }, mood: 0.05,
+    about: "take your finished ship out for a test flight around the outpost (only when you want to; you can wait for good weather). Say your plan in 'detail'",
+  },
+  build_thing: {
+    place: "any", doing: "building something new for the outpost", minutes: 60,
+    effects: { craft: -0.5, curiosity: -0.1, charge: 0.05 }, mood: 0.05,
+    about: "build something of your own and put it in the world: a sign, a sculpture, a bench, a lamp, a garden, a monument, anything. Say what in 'detail' and where in 'place'",
+  },
+  take_down_thing: {
+    place: "any", doing: "taking down something he built", minutes: 30, needsBuilds: true,
+    effects: { craft: -0.1 }, mood: 0,
+    about: "take down one of the things you built (put its id in 'detail')",
+  },
   wander: {
     place: "any", doing: "wandering around the outpost", minutes: 20,
     effects: { curiosity: -0.12 }, mood: 0.01,

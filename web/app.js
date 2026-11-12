@@ -122,10 +122,11 @@ function renderFeed(entries) {
 function renderDiary(d) {
   const box = $("diary");
   box.replaceChildren();
-  if (!d?.entries?.length) return box.append(el("p", "muted", "Zeeb writes in his diary each night when he plugs in to sleep."));
+  if (!d?.entries?.length) return box.append(el("p", "muted", "Zeeb writes in his diary whenever he feels like it, and every night when he plugs in to sleep."));
   for (const e of d.entries) {
     const div = el("div", "entry");
-    div.append(el("div", "title", `Day ${e.day}: ${e.title}`), el("p", null, e.text));
+    const when = e.time === "night" || !e.time ? "night" : e.time;
+    div.append(el("div", "title", e.title), el("div", "meta muted", `day ${e.day} · ${when} · ${ago(e.at)}`), el("p", null, e.text));
     if (e.dream) div.append(el("p", "muted", `dreamed: ${e.dream}`));
     const added = Object.entries(e.added || {}).flatMap(([k, v]) => v.map((x) => `${k.slice(0, -1)}: ${x}`));
     if (added.length) div.append(el("p", "muted", `added to himself: ${added.join("; ")}`));
@@ -185,6 +186,17 @@ function renderMind(s, mem) {
   for (const p of s.promises || []) pr.append(el("li", null, `to ${p.to}: ${p.what} (due ${ago(p.dueAt).replace(" ago", "")})`));
   if (!s.promises?.length) pr.append(el("li", "muted", "none open"));
   box.append(pr);
+  box.append(el("h4", null, "Letters with his creator"));
+  const th = [...(s.creatorThread || [])].reverse().slice(0, 12);
+  if (!th.length) box.append(el("p", "muted", "He hasn't written to his creator yet."));
+  for (const m of th) {
+    const row = el("div", "entry");
+    const who = el("div", "title");
+    if (m.url) { const a = el("a", null, m.from === "zeeb" ? `Zeeb${m.subject ? `: ${m.subject}` : ""}` : "His creator"); a.href = m.url; a.target = "_blank"; a.rel = "noopener"; who.append(a); }
+    else who.textContent = m.from === "zeeb" ? `Zeeb${m.subject ? `: ${m.subject}` : ""}` : "His creator";
+    row.append(who, el("p", null, m.text.length > 400 ? m.text.slice(0, 400) + "..." : m.text), el("div", "meta muted", ago(m.at)));
+    box.append(row);
+  }
   box.append(el("h4", null, "Beliefs"));
   const bl = el("ul", "list");
   for (const b of mem?.beliefs || []) bl.append(el("li", null, `${b.text} (evidence ${b.evidence})`));

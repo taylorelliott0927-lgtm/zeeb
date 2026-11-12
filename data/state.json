@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794526619824,
+  "lastTick": 1794526919838,
   "asleep": false,
   "place": "market",
-  "action": "fix_job",
-  "doing": "doing a repair job at the market",
-  "actionStartedAt": "2026-11-12T23:36:59.824Z",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-12T23:41:59.838Z",
   "actionMinutes": 60,
-  "thought": "Fixing this tool will earn me 3 credits, which will help me progress with the Little Dart",
-  "feeling": "focused and industrious",
-  "say": "I'll fix your tool and you can pay me 3 credits for it.",
-  "mood": 0.098,
-  "energy": -0.434,
+  "thought": "The thrusters are working well, but the ducts need more work. Hopefully, I can find something useful.",
+  "feeling": "Curious and hopeful.",
+  "say": "I might find something here that can help the Little Dart.",
+  "mood": 0.156,
+  "energy": -0.464,
   "needs": {
-    "charge": 0.801,
-    "oil": 0.299,
-    "curiosity": 1,
-    "company": 0,
-    "craft": 0
+    "charge": 0.824,
+    "oil": 0.349,
+    "curiosity": 0.65,
+    "company": 0.027,
+    "craft": 0.033
   },
   "credits": 4,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-12T23:41:59.838Z"
+    },
     {
       "id": "fix_job",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "browse_wire",
       "detail": "welding",
       "at": "2026-11-12T22:23:01.320Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-12T22:18:01.467Z"
     }
   ],
   "wants": [
+    {
+      "id": "w6",
+      "text": "Find a way to seal the ducts better so the Little Dart can be fully built.",
+      "at": "2026-11-12T23:41:59.838Z"
+    },
     {
       "id": "w5",
       "text": "to find a way to seal the ducts better, so the Little Dart can be fully built",
@@ -97,11 +102,6 @@
       "id": "w3",
       "text": "To finish the Little Dart, so I can test it out",
       "at": "2026-11-12T23:15:51.274Z"
-    },
-    {
-      "id": "w2",
-      "text": "to have the Little Dart ready for a test flight",
-      "at": "2026-11-12T23:10:51.047Z"
     }
   ],
   "promises": [],
@@ -151,37 +151,37 @@
     }
   ],
   "seenCreatorMsgs": [],
-  "lettersCheckedAt": "2026-11-12T23:36:59.824Z",
+  "lettersCheckedAt": "2026-11-12T23:41:59.838Z",
   "weather": {
     "kind": "clear",
     "temp": 24,
     "wind": 6,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-12T23:11:11.782Z"
+    "at": "2026-11-12T23:42:00.215Z"
   },
   "sleepDay": 4,
   "lastReflectDay": 4,
   "brain": "your PC (qwen2.5:3b)",
-  "updatedAt": "2026-11-12T23:36:59.824Z",
+  "updatedAt": "2026-11-12T23:41:59.838Z",
   "clock": {
     "day": 5,
-    "time": "08:57",
-    "hour": 8,
-    "minute": 57
+    "time": "09:37",
+    "hour": 9,
+    "minute": 37
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
   "streak": {
-    "action": "fix_job",
-    "since": "2026-11-12T23:36:59.824Z"
+    "action": "scavenge",
+    "since": "2026-11-12T23:41:59.838Z"
   },
-  "busyUntil": "2026-11-12T23:44:29.824Z",
-  "busyUntilTown": "09:57",
+  "busyUntil": "2026-11-12T23:49:29.838Z",
+  "busyUntilTown": "10:37",
   "runner": "pc",
   "model": "gemini-3.5-flash",
-  "pcBrainAt": "2026-11-12T23:36:59.824Z",
-  "doingWords": "fixing a trader's broken tool",
+  "pcBrainAt": "2026-11-12T23:41:59.838Z",
+  "doingWords": "digging through the junk market",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-12T23:36:59.824Z"

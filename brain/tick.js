@@ -1,0 +1,369 @@
+// One heartbeat of Zeeb's life. GitHub Actions runs this every few minutes.
+// Read state -> let time pass -> offer actions -> ask the brain -> apply the result -> save.
+import { ACTIONS, BOLT_NAMES, NEEDS, PARTS, PLACES, RANDOM_EVENTS, WORLD, inHours, placeFor } from "./world.js";
+import { chance, clamp, log, newId, pick, readJSON, realHoursPerTownHour, round, townClock, writeJSON } from "./util.js";
+import { decide, reactToWire, reflect, ruleDecide, ruleReact, ruleReflect } from "./mind.js";
+import { fetchNotes, answerNote } from "./notes.js";
+import { realWeather, toWeather, useWire } from "./internet.js";
+import * as M from "./memory.js";
+import { currentModel, hasBrain, modelName, useModel } from "./llm.js";
+
+const NOW = process.env.ZEEB_NOW ? Number(process.env.ZEEB_NOW) : Date.now();
+const nowISO = new Date(NOW).toISOString();
+const SLEEP_FROM = 23, WAKE_AT = 6; // town hours
+const FEED_KEEP = 300;
+
+const DEFAULT_STATE = {
+  epoch: NOW, lastTick: NOW, asleep: false, place: "hangar",
+  action: null, doing: "booting up", actionStartedAt: nowISO, actionMinutes: 10,
+  thought: "", feeling: "freshly switched on", say: "",
+  mood: 0.2, energy: 0.4,
+  needs: { charge: 0.2, oil: 0.2, curiosity: 0.5, company: 0.4, craft: 0.3 },
+  credits: 5, recent: [], wants: [], promises: [], seenNotes: [],
+  weather: null, sleepDay: null, lastReflectDay: 0, brain: "",
+};
+const DEFAULT_WORKS = {
+  dart: { name: "the Little Dart", progress: 0, version: 0, lastChange: "", log: [], launched: [] },
+  tunes: [], stash: [], reads: [], signals: [],
+};
+
+const character = readJSON("character.json", {});
+const state = { ...structuredClone(DEFAULT_STATE), ...readJSON("state.json", DEFAULT_STATE) };
+const feed = readJSON("feed.json", { entries: [] });
+const works = { ...structuredClone(DEFAULT_WORKS), ...readJSON("works.json", DEFAULT_WORKS) };
+const diary = readJSON("diary.json", { entries: [] });
+const mem = readJSON("memories.json", M.emptyMemory());
+
+const clock = townClock(state.epoch, NOW);
+const stamp = `day ${clock.day} ${clock.label}`;
+
+function post(kind, text, extra = {}) {
+  feed.entries.unshift({ at: nowISO, townTime: stamp, kind, text, ...extra });
+}
+function nudge(delta) {
+  state.mood = round(clamp(state.mood + delta, -1, 1));
+}
+
+function passTime() {
+  const realHours = Math.max(0, (NOW - state.lastTick) / 3600000);
+  const townHours = Math.min(8, realHours / realHoursPerTownHour);
+  for (const [k, def] of Object.entries(NEEDS)) {
+    let rise = def.rise * townHours;
+    if (state.asleep) rise = k === "charge" ? -0.12 * townHours : rise * 0.15;
+    state.needs[k] = round(clamp(state.needs[k] + rise));
+  }
+  M.fade(mem, Math.max(1, Math.round(townHours)));
+  return townHours;
+}
+
+function settleFeelings() {
+  const n = state.needs;
+  const pressure = (n.charge + n.oil + n.curiosity * 1.2 + n.company * 1.3 + n.craft) / 5.5;
+  const moodTarget = 0.55 - 1.1 * pressure;
+  state.mood = round(clamp(state.mood + 0.35 * (moodTarget - state.mood), -1, 1));
+  const energyTarget = 0.8 - 1.3 * n.charge - 0.6 * n.oil;
+  state.energy = round(clamp(state.energy + 0.5 * (energyTarget - state.energy), -1, 1));
+}
+
+function availableActions(notes) {
+  const blockedRecent = state.recent.slice(0, 3).map((r) => r.id); // cannot repeat the last three
+  const storm = state.weather?.kind === "sandstorm";
+  let ids = Object.keys(ACTIONS).filter((id) => {
+    const a = ACTIONS[id];
+    if (blockedRecent.includes(id)) return false;
+    if (!inHours(a.hours, clock.hour)) return false;
+    if (a.needsNotes && !notes.length) return false;
+    if (storm && a.place !== "any" && PLACES[a.place].outdoor) return false;
+    return true;
+  });
+  // Completely flat battery: only charging or oil will do.
+  if (state.needs.charge > 0.92) ids = ids.filter((id) => ["nap_dock", "drink_oil"].includes(id));
+  if (!ids.length) ids = ["nap_dock"];
+  return ids;
+}
+
+async function getWeather() {
+  const age = state.weather ? NOW - Date.parse(state.weather.at) : Infinity;
+  if (age < 30 * 60000) return state.weather;
+  const w = process.env.MOCK === "1" ? toWeather(20 + Math.random() * 18, Math.random() * 34, pick([0, 1, 2, 3, 61])) : await realWeather(WORLD.weatherSource);
+  if (w && state.weather?.kind !== w.kind) post("noticed", `The weather turned ${w.kind} (${w.temp}C, wind ${w.wind} km/h).`);
+  return w || state.weather;
+}
+
+async function sleepTick() {
+  if (!state.asleep) {
+    state.asleep = true;
+    state.place = "hangar";
+    state.action = "sleep";
+    state.doing = "asleep in the charging dock";
+    state.actionStartedAt = nowISO;
+    state.say = "";
+    state.sleepDay = clock.hour >= SLEEP_FROM ? clock.day : clock.day - 1;
+    post("did", "plugged into the charging dock for the night", { why: null, ok: true });
+    if (state.lastReflectDay !== state.sleepDay) await nightlyReflection();
+  }
+}
+
+async function nightlyReflection() {
+  const today = feed.entries.filter((f) => f.townTime?.startsWith(`day ${state.sleepDay} `)).reverse().slice(-60);
+  const ctx = { character, feedToday: today, memories: M.strongest(mem, 20), beliefs: mem.beliefs, works, clock: { ...clock, day: state.sleepDay } };
+  const r = (await reflect(ctx)) || ruleReflect(ctx);
+  const added = {};
+  character.added = character.added || { traits: [], values: [], fears: [], quirks: [] };
+  for (const k of ["traits", "values", "fears", "quirks"]) {
+    const items = (r.add?.[k] || []).slice(0, 1).map((s) => String(s).trim()).filter((s) => s.length > 3);
+    for (const it of items) {
+      const list = character.added[k] = character.added[k] || [];
+      const known = [...(character[k] || []), ...list].some((x) => x.toLowerCase() === it.toLowerCase());
+      if (!known && list.length < 12) {
+        list.push(it);
+        (added[k] = added[k] || []).push(it);
+        post("mind", `Added to who he is (${k.slice(0, -1)}): ${it}`, { change: "added", about: "self" });
+      }
+    }
+  }
+  for (const b of r.beliefs || []) M.believe(mem, b.text, Math.sign(b.delta || 1));
+  for (const id of r.keep || []) M.promote(mem, id);
+  for (const id of r.let_go || []) M.forget(mem, id);
+  diary.entries.unshift({ day: state.sleepDay, title: r.title || `day ${state.sleepDay}`, text: r.diary || "", dream: r.dream || "", added, at: nowISO });
+  diary.entries = diary.entries.slice(0, 120);
+  state.lastReflectDay = state.sleepDay;
+  state.thought = r.dream ? `(dreaming) ${r.dream}` : state.thought;
+  writeJSON("character.json", character);
+}
+
+function wakeUp() {
+  state.asleep = false;
+  post("felt", `Woke up with the first sun. Charge at ${Math.round((1 - state.needs.charge) * 100)}%.`);
+}
+
+function checkPromises() {
+  const dueNow = state.promises.filter((p) => Date.parse(p.dueAt) < NOW);
+  for (const p of dueNow) {
+    post("felt", `Didn't do what he told ${p.to} he would (${p.what}).`);
+    nudge(-0.06);
+  }
+  state.promises = state.promises.filter((p) => Date.parse(p.dueAt) >= NOW);
+}
+
+async function doAction(id, d, notes) {
+  const a = ACTIONS[id];
+  const place = placeFor(id, state);
+  const detail = String(d.detail || "").slice(0, 200);
+  let ok = true;
+  let text = a.doing;
+  if (id === "browse_wire" && detail) text = `searched the Wire for "${detail}"`;
+
+  if (a.cost && state.credits < a.cost) {
+    ok = false;
+    post("did", `tried to buy oil but had no credits`, { why: d.why || null, ok: false });
+    nudge(-0.04);
+    return { place, ok };
+  }
+
+  // Repetition is punished seven times harder than novelty is rewarded.
+  const repeats = state.recent.slice(0, 8).filter((r) => r.id === id).length;
+  nudge(repeats ? -0.07 * repeats : 0.01);
+
+  for (const [k, v] of Object.entries(a.effects)) state.needs[k] = round(clamp(state.needs[k] + v));
+  nudge(a.mood || 0);
+  if (a.cost) state.credits -= a.cost;
+  if (a.earn) state.credits += a.earn;
+
+  if (id !== "reply_notes") post("did", text, { why: d.why || null, ok: true, ...(detail && id !== "browse_wire" ? { detail } : {}) });
+  switch (id) {
+    case "scavenge": {
+      if (chance(0.7)) {
+        const part = { name: pick(BOLT_NAMES), what: pick(PARTS), at: nowISO };
+        works.stash.unshift(part);
+        works.stash = works.stash.slice(0, 12);
+        post("noticed", `Found ${part.what} in the junk. Named it ${part.name}.`);
+        nudge(0.04);
+      } else post("noticed", "Nothing worth keeping in the piles today.");
+      break;
+    }
+    case "work_dart": {
+      const dart = works.dart;
+      const part = works.stash.pop();
+      const gain = part ? 6 + Math.floor(Math.random() * 5) : 2 + Math.floor(Math.random() * 3);
+      const before = dart.progress;
+      dart.progress = Math.min(100, dart.progress + gain);
+      dart.version += 1;
+      dart.lastChange = (detail || "tinkered with it") + (part ? ` (used ${part.name}, ${part.what})` : "");
+      dart.log.unshift({ version: dart.version, change: dart.lastChange, progress: dart.progress, at: nowISO });
+      dart.log = dart.log.slice(0, 40);
+      post("mind", `Worked on ${dart.name} (version ${dart.version}, ${dart.progress}% built): ${dart.lastChange}`, { change: "worked", about: "piece" });
+      for (const m of [25, 50, 75]) if (before < m && dart.progress >= m) { post("felt", `${dart.name} is ${m}% done!`); nudge(0.1); }
+      if (dart.progress >= 100) {
+        post("felt", `${dart.name} is finished. It actually hovered off the hangar floor. Nobody believes him.`);
+        nudge(0.35);
+        M.remember(mem, `I finished building ${dart.name} on day ${clock.day}`, 1);
+        dart.launched.push({ name: dart.name, day: clock.day });
+        const n = dart.launched.length + 1;
+        Object.assign(dart, { name: `the Little Dart Mk ${["", "I", "II", "III", "IV", "V", "VI"][n] || n}`, progress: 0, version: 0, lastChange: "" });
+      }
+      break;
+    }
+    case "compose_tune": {
+      const beeps = ["bip", "bwee", "bop", "doo", "bzzt", "tee", "boop"];
+      const notes = Array.from({ length: 6 + Math.floor(Math.random() * 5) }, () => pick(beeps)).join("-");
+      const title = (detail || "untitled beeps").replace(/^["']|["']$/g, "");
+      works.tunes.unshift({ title, notes, at: nowISO });
+      works.tunes = works.tunes.slice(0, 40);
+      post("mind", `Made a tune called "${title}": ${notes}`, { change: "made", about: "piece" });
+      break;
+    }
+    case "browse_wire":
+    case "read_news": {
+      const found = await useWire(a.internet, detail);
+      const r = (await reactToWire({ character, works }, found)) || ruleReact(found);
+      if (found.failed) { ok = false; feed.entries[0].ok = false; post("noticed", "The Wire was down. Nothing loaded."); }
+      const title = found.kind === "news" ? (r.picked || found.items?.[0]?.title || "the news") : found.title;
+      const item = found.kind === "news" ? (found.items.find((i) => i.title === r.picked) || found.items?.[0]) : found;
+      if (!found.failed) {
+        works.reads.unshift({ title, url: item?.url || "", query: found.query || "", takeaway: r.takeaway || "", kind: found.kind, at: nowISO });
+        works.reads = works.reads.slice(0, 40);
+        post("noticed", `Read "${title}"${r.takeaway ? `: ${r.takeaway}` : ""}`, { link: item?.url || "" });
+      }
+      for (const m of r.remember || []) M.remember(mem, m.text, m.importance ?? 0.5, nowISO);
+      if (r.inspiration) post("mind", `Idea: ${r.inspiration}`, { change: "idea", about: "piece" });
+      if (r.thought) d.thought = r.thought;
+      if (r.feeling) d.feeling = r.feeling;
+      break;
+    }
+    case "send_signal": {
+      const msg = detail || "hello out there. zeeb here. bweep";
+      works.signals.unshift({ text: msg, at: nowISO });
+      works.signals = works.signals.slice(0, 40);
+      post("mind", `Sent into deep space: "${msg}"`, { change: "sent", about: "signal" });
+      if (chance(0.04)) {
+        post("noticed", "Something crackled back on his dish. It almost sounded like an answer.");
+        nudge(0.2);
+        M.remember(mem, `On day ${clock.day} my dish picked up something that sounded like an answer`, 0.95, nowISO);
+      }
+      break;
+    }
+    case "watch_suns": {
+      const score = Math.max(1, Math.min(10, Math.round(6 + Math.random() * 4 + (state.weather?.kind === "hazy" ? 1 : 0))));
+      post("noticed", `Rated the sunset ${score}/10.`);
+      break;
+    }
+    case "reply_notes": {
+      for (const rep of d.replies || []) {
+        const note = notes.find((n) => n.id === Number(rep.id));
+        if (!note || !rep.text) continue;
+        const sent = await answerNote(note.id, String(rep.text).slice(0, 800));
+        post("did", `answered ${note.from}'s note: "${String(rep.text).slice(0, 160)}"`, { why: null, ok: sent });
+      }
+      break;
+    }
+  }
+  return { place, ok };
+}
+
+async function main() {
+  useModel(state.model); // remember a model we had to switch to
+  const elapsedTownHours = passTime();
+  log(`${stamp}, ${round(elapsedTownHours, 2)} town hours passed, brain: ${modelName()}`);
+
+  const sleeping = clock.hour >= SLEEP_FROM || clock.hour < WAKE_AT;
+  if (sleeping) {
+    await sleepTick();
+    settleFeelings();
+    return save();
+  }
+  if (state.asleep) wakeUp();
+
+  state.weather = await getWeather();
+  if (state.weather) nudge(state.weather.mood * 0.5);
+
+  // Things outside his control.
+  let event = null;
+  if (chance(0.12)) {
+    event = pick(RANDOM_EVENTS);
+    post("noticed", event.text);
+    nudge(event.mood || 0);
+    for (const [k, v] of Object.entries(event.needs || {})) state.needs[k] = round(clamp(state.needs[k] + v));
+    if (event.part) works.stash.unshift({ name: pick(BOLT_NAMES), what: pick(PARTS), at: nowISO });
+  }
+  checkPromises();
+
+  const notes = await fetchNotes();
+  const newNotes = notes.filter((n) => !state.seenNotes.includes(n.id));
+  settleFeelings();
+
+  const available = availableActions(notes);
+  const ctx = { character, state, available, notes, newNotes, memories: M.strongest(mem, 12), beliefs: mem.beliefs, works, event, weather: state.weather, clock };
+  let d = await decide(ctx);
+  state.brain = d ? modelName() : "rules";
+  if (d) state.model = currentModel();
+  if (!d || !available.includes(d.action)) {
+    if (d) log(`brain chose "${d.action}", which isn't available; using rules`);
+    d = { ...ruleDecide(ctx), ...(d && available.includes(d.action) ? d : {}) };
+  }
+
+  // Notes land whether he likes it or not.
+  for (const n of newNotes) {
+    const s = clamp(Number((d.note_reactions || []).find((r) => Number(r.id) === n.id)?.sentiment ?? 0.3), -1, 1);
+    nudge(0.12 * s);
+    post("felt", `Got a note from ${n.from}. ${s > 0.3 ? "It made his day a bit brighter." : s < -0.3 ? "It stung a bit." : "He's not sure what to make of it."}`);
+    M.remember(mem, `${n.from} left me a note: ${n.text.split("\n")[0].slice(0, 120)}`, 0.5 + Math.abs(s) * 0.3, nowISO);
+    state.seenNotes.push(n.id);
+  }
+  state.seenNotes = state.seenNotes.slice(-200);
+
+  const result = await doAction(d.action, d, notes);
+
+  for (const m of d.remember || []) M.remember(mem, m.text, Number(m.importance ?? 0.5), nowISO);
+  for (const id of d.recalled || []) M.recall(mem, id);
+  if (d.want && !state.wants.some((w) => w.text.toLowerCase() === String(d.want).toLowerCase())) {
+    state.wants.unshift({ id: newId("w", state.wants), text: String(d.want).slice(0, 140), at: nowISO });
+    state.wants = state.wants.slice(0, 4);
+  }
+  if (d.promise?.what && d.promise?.to && !state.promises.some((p) => p.what.toLowerCase() === String(d.promise.what).toLowerCase())) {
+    const hours = clamp(Number(d.promise.hours || 6), 1, 48);
+    state.promises.push({ id: newId("p", state.promises), to: String(d.promise.to).slice(0, 40), what: String(d.promise.what).slice(0, 140), due: `in ${hours}h`, dueAt: new Date(NOW + hours * 3600000).toISOString() });
+    post("mind", `Promised ${d.promise.to}: ${d.promise.what}`, { change: "promised", about: "promise" });
+  }
+  if (d.kept_promise) {
+    const p = state.promises.find((x) => x.id === d.kept_promise);
+    if (p) {
+      state.promises = state.promises.filter((x) => x !== p);
+      post("felt", `Did what he told ${p.to} he would.`);
+      nudge(0.08);
+    }
+  }
+
+  state.place = result.place;
+  state.action = d.action;
+  state.doing = ACTIONS[d.action].doing;
+  state.actionStartedAt = nowISO;
+  state.actionMinutes = ACTIONS[d.action].minutes;
+  state.thought = String(d.thought || state.thought).slice(0, 300);
+  state.feeling = String(d.feeling || state.feeling).slice(0, 120);
+  state.say = String(d.say || "").slice(0, 200);
+  state.recent.unshift({ id: d.action, detail: String(d.detail || "").slice(0, 80), at: nowISO });
+  state.recent = state.recent.slice(0, 12);
+  settleFeelings();
+  save();
+}
+
+function save() {
+  state.lastTick = NOW;
+  state.updatedAt = nowISO;
+  state.clock = { day: clock.day, time: clock.label, hour: clock.hour, minute: clock.minute };
+  state.townDayMinutes = Number(process.env.TOWN_DAY_MINUTES || 180);
+  state.placeName = PLACES[state.place]?.name;
+  feed.entries = feed.entries.slice(0, FEED_KEEP);
+  writeJSON("state.json", state);
+  writeJSON("feed.json", feed);
+  writeJSON("works.json", works);
+  writeJSON("diary.json", diary);
+  writeJSON("memories.json", mem);
+  log(`${state.asleep ? "asleep" : state.doing} | mood ${state.mood} energy ${state.energy} | ${hasBrain() ? "AI" : "rules"}`);
+}
+
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});

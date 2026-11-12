@@ -1,0 +1,11 @@
+{
+  "name": "zeeb",
+  "private": true,
+  "type": "module",
+  "description": "Zeeb, a little bot who lives on his own at Rustwell Outpost. Inspired by Pino, from pinos.world.",
+  "scripts": {
+    "tick": "node brain/tick.js",
+    "simulate": "node brain/simulate.js"
+  },
+  "engines": { "node": ">=20" }
+}

@@ -169,3 +169,37 @@ export async function askText(system, user, { temperature = 0.8, numCtx = 16384,
   }
   return null;
 }
+
+// A real back-and-forth conversation (used by live chat): messages = [{role: "user"|"assistant", content}].
+export async function askChat(system, messages, { temperature = 0.9, maxTokens = 220 } = {}) {
+  if (!hasBrain()) return null;
+  if (OLLAMA_URL && !ollamaDown) {
+    try {
+      const res = await fetchWithTimeout(`${OLLAMA_URL}/api/chat`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: OLLAMA_MODEL, stream: false, keep_alive: OLLAMA_KEEP,
+          messages: [{ role: "system", content: system }, ...messages],
+          options: { temperature, num_ctx: 8192, num_predict: maxTokens, repeat_penalty: 1.25, presence_penalty: 0.6 },
+        }),
+      }, 120000);
+      if (res.ok) {
+        const t = (await res.json())?.message?.content || "";
+        if (t.trim()) { lastBrain = `your PC (${OLLAMA_MODEL})`; return t; }
+      }
+    } catch (e) { log("chat via PC brain failed:", e.message); }
+  }
+  if (KEY && !geminiOut) {
+    try {
+      const body = {
+        systemInstruction: { parts: [{ text: system }] },
+        contents: messages.map((m) => ({ role: m.role === "assistant" ? "model" : "user", parts: [{ text: m.content }] })),
+        generationConfig: { temperature, maxOutputTokens: Math.max(maxTokens, 1024) },
+      };
+      const r = await callGemini(model, body);
+      if (r.text) return r.text;
+    } catch (e) { log("chat via Gemini failed:", e.message); }
+  }
+  return null;
+}

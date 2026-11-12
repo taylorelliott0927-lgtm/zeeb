@@ -118,3 +118,9 @@ h1 { margin: 0; font-size: 20px; letter-spacing: 0.02em; }
 .modal[hidden] { display: none; }
 .modal { position: fixed; inset: 0; background: rgba(0,0,0,.6); display: grid; place-items: center; z-index: 10; padding: 16px; }
 .modal-card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; max-width: 380px; width: 100%; text-align: center; }
+
+.game-frame { width: 100%; aspect-ratio: 4 / 3; border: 1px solid var(--line); border-radius: 10px; background: #000; display: block; margin: 8px 0; }
+.game-card { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.game-card:last-child { border: 0; }
+.badge { font-size: 11px; padding: 1px 8px; border-radius: 99px; background: var(--panel-2); color: var(--brass); margin-left: 6px; }
+.badge.obsessed { background: var(--rust); color: #fff; }

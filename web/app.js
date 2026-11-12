@@ -82,7 +82,7 @@ if (SRC.owner && SRC.repo) $("noteLink").href = `https://github.com/${SRC.owner}
 else { $("noteLink").removeAttribute("href"); $("notesInfo").textContent = "Notes switch on once this site is running on GitHub Pages."; }
 
 // ---------- rendering ----------
-let S = null, works = null;
+let S = null, works = null, mind_interests = null;
 
 function renderStats(s) {
   $("doing").textContent = s.asleep ? "asleep in the charging dock"
@@ -215,6 +215,16 @@ function renderMind(s, mem) {
     row.append(who, el("p", null, m.text.length > 400 ? m.text.slice(0, 400) + "..." : m.text), el("div", "meta muted", ago(m.at)));
     box.append(row);
   }
+  if (mind_interests?.topics?.length) {
+    box.append(el("h4", null, "Interests"));
+    const ul = el("ul", "list");
+    for (const t of mind_interests.topics.slice(0, 8)) {
+      const li = el("li", null, t.name);
+      if (t.obsession) li.append(el("span", "badge obsessed", "obsessed"));
+      ul.append(li);
+    }
+    box.append(ul);
+  }
   box.append(el("h4", null, "Beliefs"));
   const bl = el("ul", "list");
   for (const b of mem?.beliefs || []) bl.append(el("li", null, `${b.text} (evidence ${b.evidence})`));
@@ -290,6 +300,51 @@ function renderFriend(f) {
   }
 }
 
+// ---------- arcade: games Zeeb wrote himself, played in a locked box ----------
+const LOCK = `<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; media-src data: blob:; font-src data:">`;
+async function playGame(file, holder) {
+  holder.replaceChildren(el("div", "muted", "loading..."));
+  const blob = await loadBlob(file);
+  if (!blob) return holder.replaceChildren(el("div", "muted", "couldn't load the game"));
+  let html = await blob.text();
+  html = /<head[^>]*>/i.test(html) ? html.replace(/<head[^>]*>/i, (m) => m + LOCK) : LOCK + html;
+  const frame = document.createElement("iframe");
+  frame.className = "game-frame";
+  frame.setAttribute("sandbox", "allow-scripts");
+  frame.setAttribute("title", "Zeeb's game");
+  frame.srcdoc = html;
+  holder.replaceChildren(frame);
+  frame.focus();
+}
+function renderArcade(g) {
+  const games = g?.games || [];
+  $("arcadeTab").hidden = !games.length;
+  const box = $("arcade");
+  if (box.dataset.sig === JSON.stringify(games.map((x) => [x.id, x.status, x.versions?.[0]?.v]))) return; // don't interrupt someone playing
+  box.dataset.sig = JSON.stringify(games.map((x) => [x.id, x.status, x.versions?.[0]?.v]));
+  box.replaceChildren();
+  if (!games.length) return;
+  box.append(el("p", "muted", "Games Zeeb wrote himself, code and all. They run in a locked box that can't reach anything else. Expect the odd bug: he's learning."));
+  for (const game of games) {
+    const card = el("div", "game-card");
+    const head = el("div", "title", game.title);
+    head.append(el("span", "badge", game.status === "released" ? "released" : game.status === "abandoned" ? "abandoned" : `in progress, v${game.versions?.[0]?.v || 0}`));
+    card.append(head, el("p", "muted", game.idea));
+    const v = game.versions?.[0];
+    if (v?.changes) card.append(el("p", null, `Latest: ${v.changes}`));
+    if (v?.error) card.append(el("p", "muted", `Known bug: ${v.error}`));
+    const holder = el("div");
+    if (game.playable) {
+      const btn = el("button", "button", game.status === "released" ? "Play" : "Play test build");
+      btn.type = "button";
+      btn.onclick = () => playGame(game.playable, holder);
+      card.append(btn);
+    } else card.append(el("p", "muted", "No working version yet."));
+    card.append(holder);
+    box.append(card);
+  }
+}
+
 let shopData = null;
 function renderShop(shop) {
   shopData = shop;
@@ -358,8 +413,10 @@ async function refresh() {
   if (!s) { $("status").textContent = "Zeeb's brain hasn't saved anything yet. Run the first heartbeat on GitHub."; return; }
   S = s;
   if (slow++ % 4 === 0 || !works) {
-    const [w, d, mem, c, sh] = await Promise.all([load("works.json"), load("diary.json"), load("memories.json"), load("character.json"), load("shop.json")]);
+    const [w, d, mem, c, sh, gm, it] = await Promise.all([load("works.json"), load("diary.json"), load("memories.json"), load("character.json"), load("shop.json"), load("games.json"), load("interests.json")]);
     works = w || works;
+    mind_interests = it;
+    renderArcade(gm);
     renderWorks(works); renderDiary(d); renderMind(s, mem); renderWho(c); renderShop(sh);
   }
   world?.setState({ ...s, works });

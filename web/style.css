@@ -127,3 +127,9 @@ h1 { margin: 0; font-size: 20px; letter-spacing: 0.02em; }
 .place-label.small { font-size: 11px; padding: 1px 7px; background: rgba(18, 15, 23, 0.5); color: #e9dccd; }
 .flight-card { padding: 8px 0; border-bottom: 1px solid var(--line); }
 .flight-card:last-child { border: 0; }
+.event-toast { position: absolute; left: 50%; bottom: 72px; transform: translateX(-50%) translateY(10px); max-width: min(560px, 90%); padding: 8px 16px; border-radius: 12px; background: rgba(18,15,23,.85); color: var(--text); font-size: 14px; text-align: center; opacity: 0; transition: opacity .4s, transform .4s; pointer-events: none; }
+.event-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+.pop { position: absolute; left: 0; top: 0; font-weight: 700; font-size: 15px; white-space: nowrap; text-shadow: 0 1px 3px #000, 0 0 2px #000; pointer-events: none; }
+.pop-credits { color: #ffd34d; }
+.pop-spend { color: #ff8a7a; }
+.pop-part { color: #7ff0ff; font-size: 13px; }

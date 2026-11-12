@@ -167,8 +167,8 @@ export class World {
     this.put(depot, box, { pos: [2.6, 0.7, 2.4], scale: [0.7, 1.4, 0.5], color: C.brass });
     // a cargo hauler bot (Zeeb's "rival"), just standing there being shiny
     this.hauler = this.put(depot, null, { pos: [-3.4, 0, 3] });
-    this.put(this.hauler, box, { pos: [0, 1.1, 0], scale: [1.4, 1.6, 1.0], color: [0.3, 0.5, 0.75] });
-    this.put(this.hauler, box, { pos: [0, 2.1, 0.1], scale: [0.8, 0.5, 0.7], color: [0.3, 0.5, 0.75] });
+    this.haulerBody = this.put(this.hauler, box, { pos: [0, 1.1, 0], scale: [1.4, 1.6, 1.0], color: [0.3, 0.5, 0.75] });
+    this.haulerHead = this.put(this.hauler, box, { pos: [0, 2.1, 0.1], scale: [0.8, 0.5, 0.7], color: [0.3, 0.5, 0.75] });
     this.put(this.hauler, box, { pos: [0, 2.15, 0.46], scale: [0.5, 0.12, 0.05], color: C.warm, emissive: 1 });
     for (const sx of [-0.45, 0.45]) this.put(this.hauler, box, { pos: [sx, 0.2, 0], scale: [0.35, 0.4, 1.1], color: C.dark });
 
@@ -246,6 +246,10 @@ export class World {
       const h = { hangar: 5.6, cantina: 5.4, market: 3.4, tower: 12, depot: 4.2, ridge: 2.2 }[k];
       return { el, pos: this.at(p.x, p.z, h) };
     });
+    this.fx = [];
+    this.toast = document.createElement("div");
+    this.toast.className = "event-toast";
+    this.labels.appendChild(this.toast);
     this.bubble = document.createElement("div");
     this.bubble.className = "bubble";
     this.labels.appendChild(this.bubble);
@@ -353,6 +357,13 @@ export class World {
     const f = s.flight;
     if (f && f.id !== this.seenFlight && Date.now() - Date.parse(f.at) < 8 * 60000) { this.seenFlight = f.id; this.playFlight(f); }
     else if (f && !this.seenFlight) this.seenFlight = f.id;
+    // Random events and little pop-ups (credits, parts) play once, live, if they just happened.
+    const ev = s.event;
+    if (ev && ev.id !== this.seenEvent) { const fresh = this.seenEvent !== undefined || Date.now() - Date.parse(ev.at) < 10 * 60000; this.seenEvent = ev.id; if (fresh && Date.now() - Date.parse(ev.at) < 10 * 60000) this.playEvent(ev); }
+    const pp = s.pops;
+    if (pp && pp.at !== this.seenPops) { const fresh = Date.now() - Date.parse(pp.at) < 10 * 60000; this.seenPops = pp.at; if (fresh) this.showPops(pp.items || []); }
+    if (s.haulerPaint && /^#[0-9a-f]{6}$/i.test(s.haulerPaint)) { const c = [1, 3, 5].map((i) => parseInt(s.haulerPaint.slice(i, i + 2), 16) / 255); this.haulerBody.color = c; this.haulerHead.color = c; }
+    this.lampOut = s.lampOutUntil && Date.now() < Date.parse(s.lampOutUntil);
   }
 
   setExtras({ shopOpen, gamesCount }) {
@@ -540,6 +551,8 @@ export class World {
 
     this.animateBuddy(dt);
     this.animateFlight();
+    this.runFx(dt);
+    if (this.lampOut) this.hangarLamp.emissive = 0;
     this.zeeb.visible = !this.flight || (this.t - this.flight.start) / this.flight.dur > 0.995;
     this.shadow.visible = this.zeeb.visible;
     for (const n of this.spinners) n.rot = [n.rot[0], this.t * 1.2, n.rot[2]];
@@ -568,6 +581,133 @@ export class World {
     this.bEye.emissive = resting ? 0.1 : 1;
     this.bFlame.visible = !resting;
     this.bBody.pos = [0, !moving && ["cantina_band", "hang_out"].includes(st.action) ? Math.abs(Math.sin(t * 4)) * 0.12 : 0, 0];
+  }
+
+  // ---------- events you can see ----------
+  addFx(seconds, update, end) { this.fx.push({ t0: this.t, dur: seconds, update, end }); }
+  runFx(dt) {
+    this.fx = this.fx.filter((f) => {
+      const u = (this.t - f.t0) / f.dur;
+      if (u >= 1) { f.end?.(); return false; }
+      f.update(u, dt);
+      return true;
+    });
+  }
+  showToast(text) {
+    this.toast.textContent = text;
+    this.toast.classList.add("show");
+    clearTimeout(this.toastTimer);
+    this.toastTimer = setTimeout(() => this.toast.classList.remove("show"), 7000);
+  }
+  temp(mesh, opts) { const n = this.put(this.root, mesh, opts); return n; }
+  drop(node) { this.root.children = this.root.children.filter((c) => c !== node); }
+
+  showPops(items) {
+    items.forEach((it, i) => {
+      const el = document.createElement("div");
+      el.className = `pop pop-${it.kind}`;
+      el.textContent = it.text;
+      this.labels.appendChild(el);
+      const delay = i * 1.2;
+      this.addFx(4.5 + delay, (u) => {
+        const k = (u * (4.5 + delay) - delay) / 4.5;
+        if (k < 0) { el.style.display = "none"; return; }
+        const p = this.r.project([this.zeeb.pos[0], this.zeeb.pos[1] + 1.6 + k * 1.6, this.zeeb.pos[2]]);
+        if (!p) { el.style.display = "none"; return; }
+        el.style.display = "";
+        el.style.opacity = String(k < 0.8 ? 1 : (1 - k) * 5);
+        el.style.transform = `translate(${p.x}px, ${p.y}px) translate(-50%, -100%)`;
+      }, () => el.remove());
+    });
+  }
+
+  playEvent(ev) {
+    this.showToast(ev.text);
+    const m = this.meshes, g = (x, z, h = 0) => [x, groundHeight(x, z) + h, z];
+    const hz = PLACES.hangar, zp = () => this.zeebPos;
+    const crate = (x, z, from, stay, scale = 1) => {
+      const c = this.temp(m.box, { pos: [x, from, z], scale: [0.9 * scale, 0.7 * scale, 0.7 * scale], color: [0.55, 0.4, 0.25] });
+      const lid = this.temp(m.box, { pos: [x, from, z], scale: [0.95 * scale, 0.1, 0.75 * scale], color: [0.4, 0.28, 0.18] });
+      const floor = groundHeight(x, z) + 0.35 * scale;
+      let y = from, vy = 0;
+      this.addFx(stay, (u, dt) => {
+        vy -= 18 * dt; y += vy * dt;
+        if (y < floor) { y = floor; vy = Math.abs(vy) > 2 ? -vy * 0.35 : 0; }
+        c.pos = [x, y, z]; lid.pos = [x, y + 0.38 * scale, z];
+      }, () => { this.drop(c); this.drop(lid); });
+    };
+    switch (ev.key) {
+      case "freighter": {
+        const f = this.temp(null, {});
+        this.put(f, m.ball, { scale: [5, 1.8, 9], color: [0.66, 0.66, 0.68] });
+        this.put(f, m.box, { pos: [0, 0.5, -2.5], scale: [8.5, 0.35, 2.5], color: [0.55, 0.55, 0.58] });
+        for (const sx of [-1.5, 1.5]) this.put(f, m.cone, { pos: [sx, 0, -4.8], rot: [-Math.PI / 2, 0, 0], scale: [0.9, 1.4, 0.9], color: [1, 0.7, 0.35], emissive: 1 });
+        this.addFx(16, (u) => { f.pos = [-90 + u * 180, 10 + Math.sin(u * Math.PI) * -2, hz.z + 4 - u * 8]; f.rot = [0, Math.PI / 2, Math.sin(this.t) * 0.05]; if (u > 0.4 && u < 0.6) this.zBody.pos = [Math.sin(this.t * 60) * 0.04, 0, 0]; }, () => this.drop(f));
+        break;
+      }
+      case "power": this.addFx(4, () => { const on = Math.random() > 0.5; for (const l of this.lights) l.emissive = on ? 1 : 0; this.hangarLamp.emissive = on ? 1 : 0; this.dockLight.emissive = on ? 1 : 0; }); break;
+      case "scrap_box": crate(hz.x + 2.6, hz.z + 5.4, 12, 180); break;
+      case "crate": {
+        crate(-14, -21, 30, 240, 1.8);
+        const bits = [0, 1, 2].map(() => this.temp(m.rough || m.ball, { color: [0.6, 0.5, 0.42], scale: [0.4, 0.3, 0.4] }));
+        this.addFx(12, (u) => bits.forEach((b, i) => { const k = Math.min(1, Math.max(0, u * 1.5 - 0.3)); b.pos = g(-14 + k * (4 + i * 2), -21 + k * (6 + i * 3), 0.2); b.rot = [k * 8, k * 5, 0]; }), () => bits.forEach((b) => this.drop(b)));
+        break;
+      }
+      case "hauler_drop": {
+        const D = PLACES.depot, part = this.temp(m.ball, { scale: [0.3, 0.3, 0.3], color: [0.8, 0.6, 0.3] });
+        this.addFx(8, (u) => { this.hauler.rot = [0, Math.sin(this.t * 2) * 0.1, 0]; const k = Math.min(1, u * 2); part.pos = g(D.x - 3.4 + k * 3, D.z + 3 + k * 2, 0.15 + Math.abs(Math.sin(k * 9)) * (1 - k) * 0.8); part.rot = [k * 12, 0, 0]; }, () => { this.drop(part); this.hauler.rot = [0, 0, 0]; });
+        break;
+      }
+      case "pilot": {
+        const p = this.temp(null, {});
+        this.put(p, m.cyl, { pos: [0, 0.75, 0], scale: [0.45, 1.1, 0.45], color: [0.9, 0.5, 0.2] });
+        this.put(p, m.ball, { pos: [0, 1.55, 0], scale: [0.45, 0.45, 0.45], color: [0.95, 0.85, 0.75] });
+        this.put(p, m.box, { pos: [0, 1.6, 0.18], scale: [0.4, 0.12, 0.1], color: [0.2, 0.2, 0.25] });
+        const C2 = PLACES.cantina;
+        this.addFx(16, (u) => {
+          const z = zp(), to = { x: z.x + 1.4, z: z.z + 1.2 };
+          const k = u < 0.4 ? u / 0.4 : u < 0.7 ? 1 : 1 - (u - 0.7) / 0.3;
+          const x = C2.x + (to.x - C2.x) * k, zz = C2.z + 4 + (to.z - C2.z - 4) * k;
+          p.pos = g(x, zz, Math.abs(Math.sin(this.t * 8)) * 0.06);
+          p.rot = [0, u < 0.4 ? Math.atan2(to.x - C2.x, to.z - C2.z - 4) : u < 0.7 ? Math.atan2(z.x - x, z.z - zz) : Math.atan2(C2.x - x, C2.z + 4 - zz), 0];
+        }, () => this.drop(p));
+        break;
+      }
+      case "tip": {
+        const coin = this.temp(m.cyl, { scale: [0.4, 0.06, 0.4], color: [1, 0.82, 0.3], emissive: 0.6 });
+        this.addFx(4, (u) => { const z = this.zeeb.pos; coin.pos = [z[0], z[1] + 1.4 + u * 1.5, z[2]]; coin.rot = [Math.PI / 2, this.t * 8, 0]; }, () => this.drop(coin));
+        break;
+      }
+      case "kids": {
+        const M2 = PLACES.market;
+        const kids = [[-2, 4.5, [0.3, 0.6, 0.9]], [-0.8, 5.2, [0.9, 0.4, 0.6]]].map(([dx, dz, col]) => {
+          const k = this.temp(null, { pos: g(M2.x + dx, M2.z + dz) });
+          this.put(k, m.cyl, { pos: [0, 0.4, 0], scale: [0.3, 0.6, 0.3], color: col });
+          this.put(k, m.ball, { pos: [0, 0.85, 0], scale: [0.32, 0.32, 0.32], color: [0.95, 0.8, 0.65] });
+          const arm = this.put(k, m.box, { pos: [0.2, 0.75, 0], scale: [0.08, 0.35, 0.08], color: col });
+          return { k, arm, dx, dz };
+        });
+        this.addFx(12, () => kids.forEach(({ k, arm, dx, dz }, i) => { k.pos = g(M2.x + dx, M2.z + dz, Math.max(0, Math.sin(this.t * 6 + i)) * 0.3); arm.rot = [0, 0, 2.6 + Math.sin(this.t * 10 + i) * 0.4]; k.rot = [0, Math.atan2(this.zeebPos.x - M2.x - dx, this.zeebPos.z - M2.z - dz), 0]; }), () => kids.forEach(({ k }) => this.drop(k)));
+        break;
+      }
+      case "crackle": {
+        const sparks = Array.from({ length: 6 }, () => this.temp(m.box, { scale: [0.06, 0.06, 0.06], color: C.cyan, emissive: 1 }));
+        this.addFx(5, () => { const z = this.zeeb.pos; sparks.forEach((sp) => { sp.visible = Math.random() > 0.3; sp.pos = [z[0] + (Math.random() - 0.5) * 0.9, z[1] + 0.8 + Math.random() * 0.5, z[2] + (Math.random() - 0.5) * 0.9]; }); this.zDish.rot = [-0.4, this.t * 6, 0]; }, () => sparks.forEach((sp) => this.drop(sp)));
+        break;
+      }
+      case "sand": {
+        const puffs = Array.from({ length: 5 }, () => this.temp(m.ball, { color: [0.82, 0.66, 0.45] }));
+        this.addFx(4, (u) => { const z = this.zeeb.pos; this.zBody.pos = [Math.sin(this.t * 50) * 0.05, 0, 0]; puffs.forEach((p, i) => { const a = i * 1.26 + u * 2; const r = 0.4 + u * 1.2; p.pos = [z[0] + Math.cos(a) * r, z[1] - 0.3 + u * 0.6, z[2] + Math.sin(a) * r]; const sc = 0.5 * (1 - u) + 0.1; p.scale = [sc, sc, sc]; }); }, () => puffs.forEach((p) => this.drop(p)));
+        break;
+      }
+      case "band": {
+        const C2 = PLACES.cantina;
+        const notes = Array.from({ length: 8 }, (_, i) => this.temp(i % 2 ? m.ball : m.box, { scale: [0.22, 0.22, 0.22], color: [[1, 0.5, 0.8], [0.4, 0.9, 1], [1, 0.85, 0.3]][i % 3], emissive: 1 }));
+        this.addFx(12, (u) => notes.forEach((n, i) => { const k = (u * 3 + i / 8) % 1; n.pos = g(C2.x + Math.sin(i * 2.1 + k * 4) * 1.5, C2.z + 3.5 + Math.cos(i * 1.7) * 0.8, 2 + k * 4); n.rot = [0, k * 6, 0]; }), () => notes.forEach((n) => this.drop(n)));
+        break;
+      }
+      case "light": this.addFx(3, () => { this.hangarLamp.emissive = Math.random() > 0.6 ? 1 : 0; }); break;
+    }
   }
 
   motion(m, t, b, la, ra) {

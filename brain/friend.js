@@ -103,7 +103,7 @@ ACTIONS YOU CAN TAKE NOW
 ${list}
 
 Return JSON:
-{"action": "an id", "minutes": 45, "why": "...", "thought": "...", "feeling": "a few words", "say": "something you say, or empty", "detail": "",
+{"action": "an id", "minutes": 45, "doing_words": "what you're doing, in your own words, without I", "why": "...", "thought": "...", "feeling": "a few words", "say": "something you say, or empty", "detail": "",
  "remember": [{"text": "...", "importance": 0.5}], "diary": null, "promise_to_zeeb": null, "kept_promise": null}
 minutes: how long you want to do it, in town minutes (10 to 720). diary: {"title","text"} if you want to write in your diary, any time.
 promise_to_zeeb: {"what": "...", "hours": 6} if you promise Zeeb something. kept_promise: a promise id you just kept, or null.`;
@@ -173,7 +173,8 @@ export async function friendTick(f, ctx) {
   st.mood = round(clamp(st.mood + (a.mood || 0), -1, 1));
 
   const place = d.action === "hang_out" ? ctx.zeeb.place : placeFor(d.action, st);
-  const text = `${name} is ${a.doing.replace(/\bhis friend\b/, "Zeeb")}`;
+  const own = String(d.doing_words || "").trim().slice(0, 140);
+  const text = own ? `${name}: ${own}` : `${name} is ${a.doing.replace(/\bhis friend\b/, "Zeeb")}`;
   if (d.action === "scavenge" && chance(0.6)) {
     const part = { name: pick(BOLT_NAMES), what: pick(PARTS), at: nowISO };
     ctx.works.stash.unshift(part);
@@ -191,7 +192,7 @@ export async function friendTick(f, ctx) {
     ctx.post("did", text + (d.say ? `: "${String(d.say).slice(0, 160)}"` : ""), { why: d.why || null, ok: true, who: "friend" });
     const townMin = clamp(Math.round(Number(d.minutes) || a.minutes || 30), 10, 720);
     st.busyUntil = new Date(nowMs + (townMin / 60) * ctx.realHoursPerTownHour * 3600000).toISOString();
-    st.place = place; st.action = d.action; st.doing = a.doing.replace(/\bhis friend\b/, "Zeeb");
+    st.place = place; st.action = d.action; st.doing = own || a.doing.replace(/\bhis friend\b/, "Zeeb");
     st.say = String(d.say || "").slice(0, 200);
   }
   st.thought = String(d.thought || st.thought || "").slice(0, 300);

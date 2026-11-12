@@ -110,6 +110,7 @@ async function getWeather() {
 // and wakes himself up once he's fully charged, even in the middle of the night.
 async function goToSleep(why) {
   state.asleep = true;
+  state.doingWords = "";
   state.place = "hangar";
   state.action = "sleep";
   state.doing = "asleep in the charging dock";
@@ -149,6 +150,7 @@ async function nightlyReflection() {
 
 function wakeUp(night) {
   state.asleep = false;
+  state.doingWords = "";
   state.action = null;
   state.doing = "just woke up";
   post("felt", night
@@ -171,8 +173,8 @@ async function doAction(id, d, notes) {
   if (id === "hang_out" && friend.state && !friend.state.asleep) place = friend.state.place;
   const detail = String(d.detail || "").slice(0, 200);
   let ok = true;
-  let text = a.doing;
-  if (id === "browse_wire" && detail) text = `searched the Wire for "${detail}"`;
+  let text = String(d.doing_words || "").trim().slice(0, 140) || a.doing;
+  if (id === "browse_wire" && detail && !d.doing_words) text = `searched the Wire for "${detail}"`;
 
   if (a.cost && state.credits < a.cost) {
     ok = false;
@@ -536,6 +538,8 @@ async function main() {
   state.doing = d.action === wasDoing ? `still ${ACTIONS[d.action].doing}` : ACTIONS[d.action].doing;
   if (d.action !== wasDoing) state.actionStartedAt = nowISO;
   state.actionMinutes = townMinutes;
+  // His own description of what he's doing (the fixed label stays for his backup rules).
+  state.doingWords = String(d.doing_words || "").trim().slice(0, 140);
   state.thought = String(d.thought || state.thought).slice(0, 300);
   state.feeling = String(d.feeling || state.feeling).slice(0, 120);
   state.say = String(d.say || "").slice(0, 200);

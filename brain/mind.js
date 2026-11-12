@@ -100,6 +100,7 @@ Choose one. Return JSON:
 {
   "action": "one id from the list",
   "minutes": 60,
+  "doing_words": "what you're doing, in your own words",
   "why": "your reason, one short sentence in your voice",
   "thought": "what is on your mind now, one or two sentences, first person",
   "feeling": "a few words on how you feel",
@@ -122,6 +123,7 @@ note_reactions: one per NEW note, sentiment from -1 (it hurt) to 1 (it made your
 promise: {"to": "name", "what": "what you promised", "hours": 6} if you promise something to someone, else null.
 kept_promise: a promise id if this action keeps one, else null.
 letter: {"subject": "short subject", "body": "your letter, as long or short as you like"} to write to your creator right now (on top of your action), or null. No limits: write whenever you want to.
+doing_words: a short phrase describing what you're doing right now, your own way, without "I" (for example "curled up in the dock, dish switched off, dreaming about the Dart"). Under 15 words.
 minutes: how long you want to keep at it, in your town's minutes (10 to 720). As short or as long as you like. You'll be asked again when it's up, or sooner if something happens.
 shop: only with open_shop or tend_shop. {"open": "shop name"} to open; {"list": {"source": "a source id", "name": "...", "description": "in your voice", "price": 5}} to sell something; {"unlist": "item id"}; {"reprice": {"id": "item id", "price": 4}}; {"close": true}. Prices from 1 to 20.
 diary: {"title": "...", "text": "..."} to write in your diary right now (on top of your action), or null. Write as often and as much as you like.

@@ -27,6 +27,22 @@ async function load(name) {
   return null;
 }
 
+async function loadBlob(rel) {
+  for (const base of [SRC.live, SRC.local].filter(Boolean)) {
+    try {
+      const r = await fetch(base + rel, { cache: "no-store" });
+      if (r.ok) return await r.blob();
+    } catch {}
+  }
+  return null;
+}
+const TYPES = { wav: "audio/wav", svg: "image/svg+xml" };
+async function typedUrl(rel) {
+  const b = await loadBlob(rel);
+  if (!b) return null;
+  return URL.createObjectURL(new Blob([b], { type: TYPES[rel.split(".").pop()] || b.type }));
+}
+
 // ---------- helpers ----------
 const $ = (id) => document.getElementById(id);
 const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
@@ -69,7 +85,7 @@ else { $("noteLink").removeAttribute("href"); $("notesInfo").textContent = "Note
 let S = null, works = null;
 
 function renderStats(s) {
-  $("doing").textContent = s.asleep ? "asleep in the charging dock" : `${s.doing} at ${s.placeName || "the outpost"}`;
+  $("doing").textContent = s.asleep ? "asleep in the charging dock" : `${s.doing} at ${s.placeName || "the outpost"}${s.busyUntilTown ? ` (planning to until ${s.busyUntilTown})` : ""}`;
   $("thought").textContent = s.thought ? `"${s.thought}"` : "";
   $("feeling").textContent = s.feeling ? `feels: ${s.feeling}` : "";
   const two = (id, v) => {
@@ -227,6 +243,104 @@ function renderWho(c) {
   box.append(el("h4", null, "voice"), el("p", "muted", c.voice));
 }
 
+function renderFriend(f) {
+  const tab = $("friendTab");
+  const stage = f?.stage || "none";
+  tab.hidden = stage === "none";
+  const box = $("friend");
+  box.replaceChildren();
+  if (stage === "building") {
+    box.append(el("h3", null, "Zeeb is building a friend"));
+    if (f.project.idea) box.append(el("p", "muted", `His idea: ${f.project.idea}`));
+    const bar = el("div", "progress"), fill = el("i"); fill.style.width = `${f.project.progress}%`; bar.append(fill);
+    box.append(bar, el("div", "muted", `${f.project.progress}% built`));
+    const ul = el("ul", "list");
+    for (const l of f.project.log.slice(0, 8)) ul.append(el("li", null, `${l.progress}%: ${l.note}`));
+    box.append(ul);
+    return;
+  }
+  if (stage !== "alive") return;
+  const s = f.sheet, st = f.state;
+  box.append(el("h3", null, `${s.name}, ${s.kind}`), el("p", null, s.core));
+  box.append(el("p", "muted", `Built by Zeeb from scrap and a copy of his own blueprint. Woke up ${ago(f.bornAt)}.${s.why ? ` Zeeb says: "${s.why}"` : ""}`));
+  box.append(el("h4", null, "Right now"));
+  box.append(el("p", null, st.asleep ? "asleep in the charging dock" : `${st.doing}${st.feeling ? `, feeling ${st.feeling}` : ""}`));
+  if (st.thought) box.append(el("p", "muted", `"${st.thought}"`));
+  const two = (label, v) => { const row = el("div", "meter wide"); const bar = el("div", "bar two"), i = el("i"); const w = Math.abs(v) * 50; i.style.left = v >= 0 ? "50%" : `${50 - w}%`; i.style.width = `${w}%`; i.style.background = v >= 0 ? "var(--good)" : "var(--bad)"; bar.append(i); row.append(el("span", null, label), bar); return row; };
+  box.append(two("Mood", st.mood), two("Energy", st.energy));
+  box.append(el("h4", null, "Promises to Zeeb"));
+  const pr = el("ul", "list");
+  for (const p of f.promises) pr.append(el("li", null, p.what));
+  if (!f.promises.length) pr.append(el("li", "muted", "none open"));
+  box.append(pr);
+  for (const k of ["traits", "values", "fears", "quirks"]) {
+    box.append(el("h4", null, k));
+    const ul = el("ul", "list");
+    for (const x of [...(s[k] || []), ...((s.added || {})[k] || [])]) ul.append(el("li", null, x));
+    box.append(ul);
+  }
+  box.append(el("h4", null, `${s.name}'s diary`));
+  if (!f.diary.length) box.append(el("p", "muted", "nothing yet"));
+  for (const e of f.diary.slice(0, 20)) {
+    const div = el("div", "entry");
+    div.append(el("div", "title", e.title), el("div", "meta muted", `day ${e.day} · ${e.time} · ${ago(e.at)}`), el("p", null, e.text));
+    box.append(div);
+  }
+}
+
+let shopData = null;
+function renderShop(shop) {
+  shopData = shop;
+  const tab = $("shopTab");
+  tab.hidden = !shop?.open;
+  const box = $("shop");
+  box.replaceChildren();
+  if (!shop?.open) return;
+  const items = shop.items.filter((i) => i.active);
+  box.append(el("h3", null, shop.name));
+  box.append(el("p", "muted", `Zeeb opened this shop himself on ${new Date(shop.openedAt).toLocaleDateString()}. He picks what to sell, writes the descriptions and sets the prices. Everything here is made by Zeeb, an AI character. ${items.some((i) => i.link) ? "Payments go to his creator." : ""}`));
+  if (!items.length) box.append(el("p", "muted", "The shelf is empty for now."));
+  for (const it of items) {
+    const row = el("div", "shop-item");
+    const thumb = el("div", "shop-thumb", it.kind === "tune" ? "tune" : "...");
+    if (it.kind !== "tune") typedUrl(it.file).then((u) => { if (u) { const img = el("img"); img.src = u; img.alt = it.name; thumb.replaceChildren(img); } });
+    const body = el("div");
+    body.append(el("div", "name", it.name), el("div", "price", it.currency === "credits" ? `${it.price} credits (in-world only)` : `${it.price.toFixed(2)} ${it.currency.toUpperCase()}`), el("p", null, it.description));
+    const actions = el("div", "shop-actions");
+    if (it.link) { const a = el("a", "button", "Buy"); a.href = it.link; a.target = "_blank"; a.rel = "noopener"; actions.append(a); }
+    if (it.kind === "tune") {
+      const btn = el("button", "link-btn", "Listen");
+      btn.type = "button";
+      btn.onclick = async () => { btn.textContent = "loading..."; const u = await typedUrl(it.file); if (u) { const au = el("audio"); au.controls = true; au.src = u; btn.replaceWith(au); au.play().catch(() => {}); } else btn.textContent = "couldn't load"; };
+      actions.append(btn);
+    }
+    if (it.sales) actions.append(el("span", "muted", `${it.sales} sold`));
+    body.append(actions);
+    row.append(thumb, body);
+    box.append(row);
+  }
+  maybeThanks();
+}
+
+let thanked = false;
+function maybeThanks() {
+  const id = new URLSearchParams(location.search).get("thanks");
+  if (!id || thanked || !shopData) return;
+  const it = shopData.items.find((i) => i.id === id);
+  if (!it) return;
+  thanked = true;
+  $("thanksTitle").textContent = `Thank you for buying "${it.name}"!`;
+  $("thanks").hidden = false;
+  $("thanksClose").onclick = () => ($("thanks").hidden = true);
+  $("thanksDownload").onclick = async () => {
+    const u = await typedUrl(it.file);
+    if (!u) return ($("thanksText").textContent = "The download didn't load. Try again in a minute.");
+    const a = document.createElement("a");
+    a.href = u; a.download = `zeeb-${it.name.replace(/[^a-z0-9]+/gi, "-").toLowerCase()}.${it.file.split(".").pop()}`;
+    a.click();
+  };
+}
+
 function tickClock() {
   if (!S?.epoch) return;
   const dayMs = (S.townDayMinutes || 180) * 60000;
@@ -238,15 +352,16 @@ function tickClock() {
 
 let slow = 0;
 async function refresh() {
-  const [s, feed] = await Promise.all([load("state.json"), load("feed.json")]);
+  const [s, feed, fr] = await Promise.all([load("state.json"), load("feed.json"), load("friend.json")]);
   if (!s) { $("status").textContent = "Zeeb's brain hasn't saved anything yet. Run the first heartbeat on GitHub."; return; }
   S = s;
   if (slow++ % 4 === 0 || !works) {
-    const [w, d, mem, c] = await Promise.all([load("works.json"), load("diary.json"), load("memories.json"), load("character.json")]);
+    const [w, d, mem, c, sh] = await Promise.all([load("works.json"), load("diary.json"), load("memories.json"), load("character.json"), load("shop.json")]);
     works = w || works;
-    renderWorks(works); renderDiary(d); renderMind(s, mem); renderWho(c);
+    renderWorks(works); renderDiary(d); renderMind(s, mem); renderWho(c); renderShop(sh);
   }
   world?.setState({ ...s, works });
+  if (fr) { world?.setFriend(fr); renderFriend(fr); }
   renderStats(s);
   renderFeed(feed?.entries || []);
   $("status").textContent = `last heartbeat ${ago(s.updatedAt || new Date(s.lastTick).toISOString())}`;

@@ -183,6 +183,30 @@ export class World {
     this.put(this.zBody, cyl, { pos: [0, -0.5, 0], scale: [0.36, 0.2, 0.36], color: C.metal });
     this.flame = this.put(this.zBody, cone, { pos: [0, -0.75, 0], rot: [Math.PI, 0, 0], scale: [0.3, 0.35, 0.3], color: C.cyan, emissive: 1 });
     this.shadow = this.put(R, m("disc", Geo.cyl(0.5, 0.5, 0.02, 16)), { color: [0.55, 0.42, 0.3], scale: [1.1, 1, 1.1] });
+
+    // His friend (only exists if Zeeb decides to build one): a frame on the hangar floor while building, then a bot of their own.
+    this.friendFrame = this.put(hangar, null, { pos: [-2.4, 0, 1.8], visible: false });
+    this.frameParts = [
+      this.put(this.friendFrame, cyl, { pos: [0, 0.15, 0], scale: [0.7, 0.3, 0.7], color: C.dark }),
+      this.put(this.friendFrame, cyl, { pos: [0, 0.75, 0], scale: [0.55, 0.9, 0.55], color: C.metal }),
+      this.put(this.friendFrame, ball, { pos: [0, 1.45, 0], scale: [0.6, 0.55, 0.6], color: C.metal }),
+      this.put(this.friendFrame, ball, { pos: [0, 1.48, 0.27], scale: [0.2, 0.2, 0.1], color: [0.3, 0.3, 0.3] }),
+    ];
+    this.buddy = this.put(R, null, { pos: this.at(-2, 4, 0.9), visible: false, scale: [0.85, 0.85, 0.85] });
+    this.bBody = this.put(this.buddy, null);
+    this.bShell = this.put(this.bBody, cyl, { pos: [0, 0.1, 0], scale: [0.7, 1.0, 0.7], color: [0.4, 0.7, 0.65] });
+    this.put(this.bBody, cyl, { pos: [0, -0.35, 0], scale: [0.76, 0.12, 0.76], color: C.dark });
+    this.bHead = this.put(this.bBody, ball, { pos: [0, 0.85, 0], scale: [0.75, 0.68, 0.75], color: [0.4, 0.7, 0.65] });
+    this.bEye = this.put(this.bBody, ball, { pos: [0, 0.88, 0.31], scale: [0.3, 0.3, 0.14], color: [1, 0.8, 0.4], emissive: 1 });
+    this.put(this.bBody, cyl, { pos: [0, 1.32, 0], scale: [0.05, 0.3, 0.05], color: C.metal });
+    this.bTip = this.put(this.bBody, ball, { pos: [0, 1.5, 0], scale: [0.12, 0.12, 0.12], color: [1, 0.8, 0.4], emissive: 1 });
+    this.bFlame = this.put(this.bBody, cone, { pos: [0, -0.6, 0], rot: [Math.PI, 0, 0], scale: [0.25, 0.3, 0.25], color: [1, 0.8, 0.4], emissive: 1 });
+    this.bShadow = this.put(R, this.meshes.disc, { color: [0.55, 0.42, 0.3], visible: false });
+    this.buddyPos = { x: -2, z: 4, yaw: 0 };
+    this.buddyTarget = { x: -2, z: 4 };
+    this.buddyBubble = document.createElement("div");
+    this.buddyBubble.className = "bubble";
+    this.labels.appendChild(this.buddyBubble);
     z.scale = [0.85, 0.85, 0.85];
 
     this.zeebPos = { x: 2, z: 4, yaw: 0 };
@@ -263,6 +287,29 @@ export class World {
     tone(660, 0.8, 0.12, "square"); tone(990, 0.95, 0.12, "square"); tone(1320, 1.1, 0.22, "square");
   }
 
+  setFriend(f) {
+    this.friend = f;
+    const stage = f?.stage || "none";
+    this.friendFrame.visible = stage === "building";
+    if (stage === "building") {
+      const n = Math.max(1, Math.ceil(((f.project?.progress || 0) / 100) * this.frameParts.length));
+      this.frameParts.forEach((p, i) => (p.visible = i < n));
+    }
+    const alive = stage === "alive" && f.state;
+    this.buddy.visible = Boolean(alive);
+    this.bShadow.visible = Boolean(alive);
+    if (!alive) return;
+    const hex = (h, d) => (/^#[0-9a-f]{6}$/i.test(h || "") ? [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255) : d);
+    const body = hex(f.sheet?.colors?.body, [0.4, 0.7, 0.65]), eye = hex(f.sheet?.colors?.eye, [1, 0.8, 0.4]);
+    this.bShell.color = body; this.bHead.color = body; this.bEye.color = eye; this.bTip.color = eye; this.bFlame.color = eye;
+    const st = f.state, place = PLACES[st.place] || PLACES.hangar;
+    const action = st.asleep ? "sleep" : st.action;
+    const off = SPOTS[action] || [0, 0, 4];
+    // stand beside Zeeb when hanging out, otherwise a step to the side of the usual spot
+    this.buddyTarget = action === "hang_out" && this.state ? { x: this.target.x + 1.6, z: this.target.z + 0.4 } : { x: place.x + off[0] + 1.4, z: place.z + off[2] + 0.8 };
+    if (!this.buddyPlaced) { this.buddyPos.x = this.buddyTarget.x; this.buddyPos.z = this.buddyTarget.z; this.buddyPlaced = true; }
+  }
+
   setState(s) {
     const first = !this.state;
     this.state = s;
@@ -285,7 +332,7 @@ export class World {
       hour = (((Date.now() - s.epoch) % dayMs) / dayMs) * 24;
     }
     this.hour = hour;
-    const sunAng = ((hour - 6) / 12) * Math.PI; // 0 at 6:00, PI at 18:00
+    const sunAng = ((hour - 5) / 15) * Math.PI; // sunrise 5:00, sunset 20:00: long days, short nights
     const sunA = norm([-Math.cos(sunAng) * 0.9, Math.sin(sunAng), -0.35]);
     const sunB = norm([-Math.cos(sunAng - 0.32) * 0.9, Math.sin(sunAng - 0.32) * 0.85, -0.5]);
     const elev = Math.max(sunA[1], sunB[1]);
@@ -374,7 +421,31 @@ export class World {
     for (const l of this.lights) { l.emissive = 0.15 + 0.85 * (this.night ?? 0); }
     this.cantinaSign.emissive = 0.4 + 0.6 * (this.night ?? 0);
 
+    this.animateBuddy(dt);
     this.updateCamera(dt);
+  }
+
+  animateBuddy(dt) {
+    if (!this.buddy.visible) return;
+    const t = this.t, bp = this.buddyPos, st = this.friend.state;
+    const dx = this.buddyTarget.x - bp.x, dz = this.buddyTarget.z - bp.z, dist = Math.hypot(dx, dz);
+    const moving = dist > 0.15;
+    if (moving) {
+      const step = Math.min(dist, dt * (dist > 8 ? 3.8 : 2.2));
+      bp.x += (dx / dist) * step; bp.z += (dz / dist) * step;
+      bp.yaw = turn(bp.yaw, Math.atan2(dx, dz), dt * 5);
+    } else if (st.action === "hang_out") {
+      bp.yaw = turn(bp.yaw, Math.atan2(this.zeebPos.x - bp.x, this.zeebPos.z - bp.z), dt * 3);
+    }
+    const resting = !moving && st.asleep;
+    const gy = groundHeight(bp.x, bp.z);
+    this.buddy.pos = [bp.x, gy + (resting ? 0.45 : 1.0 + Math.sin(t * 2.6 + 1) * 0.09), bp.z];
+    this.buddy.rot = [moving ? 0.15 : 0, bp.yaw, Math.sin(t * 1.1 + 2) * 0.05];
+    this.bShadow.pos = [bp.x, gy + 0.03, bp.z];
+    this.bShadow.scale = [0.9, 1, 0.9];
+    this.bEye.emissive = resting ? 0.1 : 1;
+    this.bFlame.visible = !resting;
+    this.bBody.pos = [0, !moving && ["cantina_band", "hang_out"].includes(st.action) ? Math.abs(Math.sin(t * 4)) * 0.12 : 0, 0];
   }
 
   updateCamera(dt) {
@@ -417,6 +488,13 @@ export class World {
     }
     const s = this.state || {};
     const whistled = this.t - this.whistleT < 3.5;
+    const f = this.friend;
+    if (this.buddy.visible && f?.state) {
+      const bt = f.state.asleep ? "zzz" : f.state.say || "";
+      const bq = this.r.project([this.buddy.pos[0], this.buddy.pos[1] + 2.5, this.buddy.pos[2]]);
+      if (bt && bq) { this.buddyBubble.textContent = bt; this.buddyBubble.style.display = ""; this.buddyBubble.style.transform = `translate(${bq.x}px, ${bq.y}px) translate(-50%, -100%)`; }
+      else this.buddyBubble.style.display = "none";
+    } else this.buddyBubble.style.display = "none";
     const text = whistled ? "bweep? oh, hi!" : s.asleep ? "zzz" : s.say || "";
     const bp = this.r.project([this.zeeb.pos[0], this.zeeb.pos[1] + 1.5, this.zeeb.pos[2]]);
     if (text && bp) {

@@ -57,6 +57,8 @@
         <button role="tab" data-tab="works">Works</button>
         <button role="tab" data-tab="mind">Mind</button>
         <button role="tab" data-tab="who">Who</button>
+        <button role="tab" data-tab="friend" id="friendTab" hidden>Friend</button>
+        <button role="tab" data-tab="shop" id="shopTab" hidden>Shop</button>
         <button role="tab" data-tab="note">Leave a note</button>
       </nav>
       <section class="card panel" id="panel-feed" role="tabpanel"><ol class="feed" id="feed"></ol></section>
@@ -64,6 +66,8 @@
       <section class="card panel" id="panel-works" role="tabpanel" hidden><div id="works"></div></section>
       <section class="card panel" id="panel-mind" role="tabpanel" hidden><div id="mind"></div></section>
       <section class="card panel" id="panel-who" role="tabpanel" hidden><div id="who"></div></section>
+      <section class="card panel" id="panel-friend" role="tabpanel" hidden><div id="friend"></div></section>
+      <section class="card panel" id="panel-shop" role="tabpanel" hidden><div id="shop"></div></section>
       <section class="card panel" id="panel-note" role="tabpanel" hidden>
         <h3>Leave Zeeb a note</h3>
         <p>Notes reach him on his next check of the comms tower. He reads every one, and it really does change his mood, so be kind. When he decides to answer, his reply shows up under your note.</p>
@@ -73,6 +77,15 @@
       </section>
     </aside>
   </main>
+
+  <div class="modal" id="thanks" hidden>
+    <div class="modal-card">
+      <h3 id="thanksTitle">Thank you!</h3>
+      <p id="thanksText">Zeeb will be thrilled. Here's your download.</p>
+      <button class="button" id="thanksDownload" type="button">Download</button>
+      <button class="link-btn" id="thanksClose" type="button">Close</button>
+    </div>
+  </div>
 
   <footer class="foot">
     <span id="status">connecting...</span>

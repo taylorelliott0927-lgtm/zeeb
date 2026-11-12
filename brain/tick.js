@@ -1,7 +1,7 @@
 // One heartbeat of Zeeb's life. GitHub Actions runs this every few minutes.
 // Read state -> let time pass -> offer actions -> ask the brain -> apply the result -> save.
 import { ACTIONS, BOLT_NAMES, NEEDS, PARTS, PLACES, RANDOM_EVENTS, WORLD, inHours, placeFor } from "./world.js";
-import { chance, clamp, log, newId, pick, readJSON, realHoursPerTownHour, round, townClock, writeJSON } from "./util.js";
+import { TOWN_DAY_MINUTES, chance, clamp, log, newId, pick, readJSON, realHoursPerTownHour, round, townClock, writeJSON } from "./util.js";
 import { decide, reactToWire, reflect, ruleDecide, ruleReact, ruleReflect } from "./mind.js";
 import { fetchNotes, answerNote } from "./notes.js";
 import { fetchCreatorReplies, isCreator, replyToLetter, sendLetter } from "./letters.js";
@@ -10,11 +10,13 @@ import path from "node:path";
 import { DATA_DIR } from "./util.js";
 import { realWeather, toWeather, useWire } from "./internet.js";
 import * as M from "./memory.js";
+import { buildStep, designFriend, emptyFriend, friendText, friendTick, startFriend, wakeFriend } from "./friend.js";
+import { applyShopChange, checkSales, currency as shopCurrency, emptyShop, sellable } from "./shop.js";
 import { currentModel, hasBrain, modelName, useModel } from "./llm.js";
 
 const NOW = process.env.ZEEB_NOW ? Number(process.env.ZEEB_NOW) : Date.now();
 const nowISO = new Date(NOW).toISOString();
-const SLEEP_FROM = 23, WAKE_AT = 6; // town hours
+const SLEEP_FROM = 23, WAKE_AT = 5; // town hours: night runs 23:00 to 05:00
 const FEED_KEEP = 300;
 
 const DEFAULT_STATE = {
@@ -38,6 +40,9 @@ const feed = readJSON("feed.json", { entries: [] });
 const works = { ...structuredClone(DEFAULT_WORKS), ...readJSON("works.json", DEFAULT_WORKS) };
 const diary = readJSON("diary.json", { entries: [] });
 const mem = readJSON("memories.json", M.emptyMemory());
+const shop = { ...emptyShop(), ...readJSON("shop.json", emptyShop()) };
+const friend = { ...emptyFriend(), ...readJSON("friend.json", emptyFriend()) };
+for (const t of works.tunes) t.id = t.id || `t${Date.parse(t.at || 0).toString(36)}`;
 
 const clock = townClock(state.epoch, NOW);
 const stamp = `day ${clock.day} ${clock.label}`;
@@ -54,7 +59,7 @@ function passTime() {
   const townHours = Math.min(8, realHours / realHoursPerTownHour);
   for (const [k, def] of Object.entries(NEEDS)) {
     let rise = def.rise * townHours;
-    if (state.asleep) rise = k === "charge" ? -0.12 * townHours : rise * 0.15;
+    if (state.asleep) rise = k === "charge" ? -0.3 * townHours : rise * 0.15;
     state.needs[k] = round(clamp(state.needs[k] + rise));
   }
   M.fade(mem, Math.max(1, Math.round(townHours)));
@@ -71,13 +76,19 @@ function settleFeelings() {
 }
 
 function availableActions(notes) {
-  const blockedRecent = state.recent.slice(0, 3).map((r) => r.id); // cannot repeat the last three
+  // He can't jump back to something he did in his last three actions, but he can always keep going with what he's doing now.
+  const blockedRecent = state.recent.slice(0, 3).map((r) => r.id).filter((x) => x !== state.action);
+  // ...but not forever: after 8 town hours straight on one thing he's burned out on it, and it goes on the cooldown like anything else.
+  if (state.action && streakHours() >= MAX_STREAK_HOURS) blockedRecent.push(state.action);
   const storm = state.weather?.kind === "sandstorm";
   let ids = Object.keys(ACTIONS).filter((id) => {
     const a = ACTIONS[id];
     if (blockedRecent.includes(id)) return false;
     if (!inHours(a.hours, clock.hour)) return false;
     if (a.needsNotes && !notes.length) return false;
+    if (a.needsShop && (a.needsShop === "open") !== Boolean(shop.open)) return false;
+    if (a.needsFriend && a.needsFriend !== friend.stage) return false;
+    if (a.friendOnly) return false;
     if (storm && a.place !== "any" && PLACES[a.place].outdoor) return false;
     return true;
   });
@@ -95,18 +106,18 @@ async function getWeather() {
   return w || state.weather;
 }
 
-async function sleepTick() {
-  if (!state.asleep) {
-    state.asleep = true;
-    state.place = "hangar";
-    state.action = "sleep";
-    state.doing = "asleep in the charging dock";
-    state.actionStartedAt = nowISO;
-    state.say = "";
-    state.sleepDay = clock.hour >= SLEEP_FROM ? clock.day : clock.day - 1;
-    post("did", "plugged into the charging dock for the night", { why: null, ok: true });
-    if (state.lastReflectDay !== state.sleepDay) await nightlyReflection();
-  }
+// Sleep is his choice. He goes to sleep when he decides to (or when his battery is nearly flat),
+// and wakes himself up once he's fully charged, even in the middle of the night.
+async function goToSleep(why) {
+  state.asleep = true;
+  state.place = "hangar";
+  state.action = "sleep";
+  state.doing = "asleep in the charging dock";
+  state.actionStartedAt = nowISO;
+  state.say = "";
+  state.sleepDay = clock.hour >= 12 ? clock.day : clock.day - 1;
+  post("did", "plugged into the charging dock to sleep", { why: why || null, ok: true });
+  if (state.lastReflectDay !== state.sleepDay) await nightlyReflection();
 }
 
 async function nightlyReflection() {
@@ -136,9 +147,13 @@ async function nightlyReflection() {
   writeJSON("character.json", character);
 }
 
-function wakeUp() {
+function wakeUp(night) {
   state.asleep = false;
-  post("felt", `Woke up with the first sun. Charge at ${Math.round((1 - state.needs.charge) * 100)}%.`);
+  state.action = null;
+  state.doing = "just woke up";
+  post("felt", night
+    ? `Woke up fully charged in the middle of the night. Not sleepy at all.`
+    : `Woke up with the first sun. Charge at ${Math.round((1 - state.needs.charge) * 100)}%.`);
 }
 
 function checkPromises() {
@@ -152,7 +167,8 @@ function checkPromises() {
 
 async function doAction(id, d, notes) {
   const a = ACTIONS[id];
-  const place = placeFor(id, state);
+  let place = placeFor(id, state);
+  if (id === "hang_out" && friend.state && !friend.state.asleep) place = friend.state.place;
   const detail = String(d.detail || "").slice(0, 200);
   let ok = true;
   let text = a.doing;
@@ -166,15 +182,25 @@ async function doAction(id, d, notes) {
   }
 
   // Repetition is punished seven times harder than novelty is rewarded.
-  const repeats = state.recent.slice(0, 8).filter((r) => r.id === id).length;
-  nudge(repeats ? -0.07 * repeats : 0.01);
+  // Repetition is punished seven times harder than novelty is rewarded. Choosing to keep going with the same thing isn't repetition.
+  const continuing = id === state.action;
+  const repeats = continuing ? 0 : state.recent.slice(0, 8).filter((r) => r.id === id).length;
+  if (!continuing) nudge(repeats ? -0.07 * repeats : 0.01);
+  // Keeping going is fine for a while, then it starts to get boring, more and more the longer it runs.
+  if (continuing) {
+    const h = streakHours();
+    if (h > BORED_AFTER_HOURS) {
+      nudge(-Math.min(0.2, 0.03 * (h - BORED_AFTER_HOURS)));
+      if (h > BORED_AFTER_HOURS + 2) post("felt", `Starting to get a bit bored of ${a.doing} after ${Math.round(h)} hours.`);
+    }
+  }
 
   for (const [k, v] of Object.entries(a.effects)) state.needs[k] = round(clamp(state.needs[k] + v));
   nudge(a.mood || 0);
   if (a.cost) state.credits -= a.cost;
   if (a.earn) state.credits += a.earn;
 
-  if (id !== "reply_notes") post("did", text, { why: d.why || null, ok: true, ...(detail && id !== "browse_wire" ? { detail } : {}) });
+  if (id !== "reply_notes" && id !== "go_to_sleep") post("did", text, { why: d.why || null, ok: true, ...(detail && id !== "browse_wire" ? { detail } : {}) });
   switch (id) {
     case "scavenge": {
       if (chance(0.7)) {
@@ -197,9 +223,14 @@ async function doAction(id, d, notes) {
       dart.log.unshift({ version: dart.version, change: dart.lastChange, progress: dart.progress, at: nowISO });
       dart.log = dart.log.slice(0, 40);
       post("mind", `Worked on ${dart.name} (version ${dart.version}, ${dart.progress}% built): ${dart.lastChange}`, { change: "worked", about: "piece" });
-      for (const m of [25, 50, 75]) if (before < m && dart.progress >= m) { post("felt", `${dart.name} is ${m}% done!`); nudge(0.1); }
+      for (const m of [25, 50, 75]) if (before < m && dart.progress >= m) {
+        post("felt", `${dart.name} is ${m}% done!`);
+        nudge(0.1);
+        state.newsForCreator = `${dart.name} just reached ${m}% built (version ${dart.version}). Last change: ${dart.lastChange}.`;
+      }
       if (dart.progress >= 100) {
         post("felt", `${dart.name} is finished. It actually hovered off the hangar floor. Nobody believes him.`);
+        state.newsForCreator = `You FINISHED ${dart.name}! It hovered off the hangar floor.`;
         nudge(0.35);
         M.remember(mem, `I finished building ${dart.name} on day ${clock.day}`, 1);
         dart.launched.push({ name: dart.name, day: clock.day });
@@ -212,7 +243,7 @@ async function doAction(id, d, notes) {
       const beeps = ["bip", "bwee", "bop", "doo", "bzzt", "tee", "boop"];
       const notes = Array.from({ length: 6 + Math.floor(Math.random() * 5) }, () => pick(beeps)).join("-");
       const title = (detail || "untitled beeps").replace(/^["']|["']$/g, "");
-      works.tunes.unshift({ title, notes, at: nowISO });
+      works.tunes.unshift({ id: `t${Date.parse(nowISO).toString(36)}`, title, notes, at: nowISO });
       works.tunes = works.tunes.slice(0, 40);
       post("mind", `Made a tune called "${title}": ${notes}`, { change: "made", about: "piece" });
       break;
@@ -250,6 +281,44 @@ async function doAction(id, d, notes) {
     case "watch_suns": {
       const score = Math.max(1, Math.min(10, Math.round(6 + Math.random() * 4 + (state.weather?.kind === "hazy" ? 1 : 0))));
       post("noticed", `Rated the sunset ${score}/10.`);
+      works.lastSunsetRating = score;
+      break;
+    }
+    case "open_shop":
+    case "tend_shop": {
+      const change = { ...(d.shop || {}) };
+      if (id === "open_shop" && !change.open) change.open = detail || "Zeeb's Hangar Shop";
+      const happened = await applyShopChange(shop, works, change, nowISO, post);
+      for (const h of happened) post("mind", `${h[0].toUpperCase()}${h.slice(1)}.`, { change: "shop", about: "shop" });
+      if (id === "open_shop" && shop.open) {
+        state.newsForCreator = `You opened your own shop, "${shop.name}"!`;
+        M.remember(mem, `On day ${clock.day} I opened my own shop, "${shop.name}"`, 0.9, nowISO);
+      }
+      if (!happened.length && id === "tend_shop") post("noticed", "Dusted the shop shelf. Nothing changed.");
+      break;
+    }
+    case "start_friend": {
+      startFriend(friend, detail, nowISO);
+      post("mind", `Started building a friend.${detail ? ` First idea: ${detail}` : ""}`, { change: "started", about: "friend" });
+      M.remember(mem, `On day ${clock.day} I started building a friend out of scrap`, 0.85, nowISO);
+      break;
+    }
+    case "build_friend": {
+      const step = buildStep(friend, works, detail, nowISO);
+      post("mind", `Worked on his friend (${friend.project.progress}% built): ${step.note}`, { change: "worked", about: "friend" });
+      if (step.done) {
+        const sheet = await designFriend(character, friend, M.strongest(mem, 8));
+        wakeFriend(friend, sheet, nowISO);
+        post("felt", `He copied his own blueprint into his friend, and ${sheet.name} opened their eyes. First words: "${sheet.firstWords}"`);
+        if (sheet.why) post("mind", `Why he made ${sheet.name} this way: ${sheet.why}`, { change: "made", about: "friend" });
+        M.remember(mem, `On day ${clock.day} my friend ${sheet.name} woke up. ${sheet.core}`.slice(0, 220), 1, nowISO);
+        state.newsForCreator = `You finished building a friend! Their name is ${sheet.name}: ${sheet.kind}. Their first words were "${sheet.firstWords}".`;
+        nudge(0.3);
+      }
+      break;
+    }
+    case "hang_out": {
+      state.invitedFriend = true;
       break;
     }
     case "reply_notes": {
@@ -266,6 +335,12 @@ async function doAction(id, d, notes) {
 }
 
 async function handleLetters(d) {
+  if (state.newsForCreator && !(d.letter && String(d.letter.body || "").trim())) {
+    if (state.newsPendingTicks >= 1) {
+      d.letter = { subject: "big news from the hangar!", body: `dear creator,\n\n${state.newsForCreator}\n\njust had to tell you. bweep!` };
+    } else state.newsPendingTicks = (state.newsPendingTicks || 0) + 1;
+  }
+  if (d.letter && String(d.letter.body || "").trim()) { state.newsForCreator = ""; state.newsPendingTicks = 0; }
   // A letter to his creator, any time he wants, as many as he wants.
   if (d.letter && String(d.letter.body || "").trim()) {
     const subject = String(d.letter.subject || "a letter").trim().slice(0, 120);
@@ -314,18 +389,43 @@ function writeDiaryNow(d) {
   post("mind", `Wrote in his diary: "${String(e.title || "a note to self").slice(0, 80)}"`, { change: "wrote", about: "diary" });
 }
 
+// Where this heartbeat is running: on GitHub, or on your PC (pc/run-zeeb.js sets ZEEB_RUNNER=pc).
+const RUNNER = process.env.ZEEB_RUNNER || (process.env.GITHUB_ACTIONS === "true" ? "github" : "local");
+const PC_HANDOFF_MS = 15 * 60000;
+
+// How long he's been doing the same thing without a break, in town hours.
+const MAX_STREAK_HOURS = 8, BORED_AFTER_HOURS = 3;
+function streakHours() {
+  if (!state.streak || state.streak.action !== state.action) return 0;
+  return (NOW - Date.parse(state.streak.since)) / 3600000 / realHoursPerTownHour;
+}
+
 async function main() {
+  // If your PC has been doing his thinking recently, GitHub sits this one out.
+  if (RUNNER === "github" && state.pcBrainAt && NOW - Date.parse(state.pcBrainAt) < PC_HANDOFF_MS) {
+    log(`your PC ran his last heartbeat at ${state.pcBrainAt}, so GitHub is skipping this one`);
+    return;
+  }
   useModel(state.model); // remember a model we had to switch to
   const elapsedTownHours = passTime();
   log(`${stamp}, ${round(elapsedTownHours, 2)} town hours passed, brain: ${modelName()}`);
 
-  const sleeping = clock.hour >= SLEEP_FROM || clock.hour < WAKE_AT;
-  if (sleeping) {
-    await sleepTick();
+  const night = clock.hour >= SLEEP_FROM || clock.hour < WAKE_AT;
+  if (state.asleep) {
+    const full = state.needs.charge <= 0.03;
+    if (night && !full) { settleFeelings(); return finish(); } // still charging, no AI needed
+    wakeUp(night);
+  } else if (state.needs.charge > 0.9) {
+    // battery nearly flat: no choice, he has to sleep
+    await goToSleep("battery almost empty, couldn't keep his visor open");
     settleFeelings();
-    return save();
+    return finish();
   }
-  if (state.asleep) wakeUp();
+  // Stayed up all night? He still writes about the day that's gone.
+  if (!night && clock.day > 1 && state.lastReflectDay < clock.day - 1) {
+    state.sleepDay = clock.day - 1;
+    await nightlyReflection();
+  }
 
   state.weather = await getWeather();
   if (state.weather) nudge(state.weather.mood * 0.5);
@@ -349,8 +449,26 @@ async function main() {
   state.lettersCheckedAt = nowISO;
   settleFeelings();
 
+  // Shop sales (real money only, checked about once an hour).
+  for (const s of await checkSales(shop, NOW)) {
+    nudge(0.25);
+    post("felt", `Someone bought "${s.item.name}"${s.count > 1 ? ` (${s.count} of them)` : ""}! He did a little spin.`);
+    M.remember(mem, `Someone bought my "${s.item.name}" on day ${clock.day}`, 0.85, nowISO);
+    state.newsForCreator = `Someone bought "${s.item.name}" from your shop!`;
+  }
+  // Still in the middle of something he chose to do for a while? Carry on, unless something comes up.
+  const busy = state.busyUntil && NOW < Date.parse(state.busyUntil) && ACTIONS[state.action];
+  const urgent = newNotes.length || creatorMsgs.length || event || state.newsForCreator || Math.max(...Object.values(state.needs)) > 0.85;
+  if (busy && !urgent) {
+    const a = ACTIONS[state.action];
+    const share = Math.min(1, elapsedTownHours / Math.max(0.25, (a.minutes || 30) / 60)) * 0.5;
+    for (const [k, v] of Object.entries(a.effects)) state.needs[k] = round(clamp(state.needs[k] + v * share));
+    log(`still ${ACTIONS[state.action].doing} until ${state.busyUntilTown}`);
+    settleFeelings();
+    return finish();
+  }
   const available = availableActions(notes);
-  const ctx = { character, state, available, notes, newNotes, memories: M.strongest(mem, 12), beliefs: mem.beliefs, works, event, weather: state.weather, clock, creatorMsgs, thread: state.creatorThread };
+  const ctx = { character, state, available, notes, newNotes, memories: M.strongest(mem, 12), beliefs: mem.beliefs, works, event, weather: state.weather, clock, creatorMsgs, thread: state.creatorThread, shop, shopCurrency: shopCurrency(), sellable: shop.open ? sellable(works, shop) : [], streakHours: streakHours(), friendText: friendText(friend) };
   let d = await decide(ctx);
   state.brain = d ? modelName() : "rules";
   if (d) state.model = currentModel();
@@ -405,22 +523,48 @@ async function main() {
     }
   }
 
+  // How long he wants to keep at it is his choice (in his town's minutes).
+  const wasDoing = state.action;
+  if (d.action !== wasDoing || !state.streak || state.streak.action !== d.action) state.streak = { action: d.action, since: nowISO };
+  const townMinutes = clamp(Math.round(Number(d.minutes) || ACTIONS[d.action].minutes || 30), 10, 720);
+  const realMs = (townMinutes / 1440) * TOWN_DAY_MINUTES * 60000;
+  state.busyUntil = new Date(NOW + realMs).toISOString();
+  const until = townClock(state.epoch, NOW + realMs);
+  state.busyUntilTown = until.label;
   state.place = result.place;
   state.action = d.action;
-  state.doing = ACTIONS[d.action].doing;
-  state.actionStartedAt = nowISO;
-  state.actionMinutes = ACTIONS[d.action].minutes;
+  state.doing = d.action === wasDoing ? `still ${ACTIONS[d.action].doing}` : ACTIONS[d.action].doing;
+  if (d.action !== wasDoing) state.actionStartedAt = nowISO;
+  state.actionMinutes = townMinutes;
   state.thought = String(d.thought || state.thought).slice(0, 300);
   state.feeling = String(d.feeling || state.feeling).slice(0, 120);
   state.say = String(d.say || "").slice(0, 200);
   state.recent.unshift({ id: d.action, detail: String(d.detail || "").slice(0, 80), at: nowISO });
+  if (d.action === "go_to_sleep") await goToSleep(d.why);
   state.recent = state.recent.slice(0, 12);
   settleFeelings();
+  await finish();
+}
+
+// His friend (if he has built one) lives their own heartbeat too, whatever Zeeb is doing.
+async function finish() {
+  if (friend.stage === "alive") {
+    try {
+      await friendTick(friend, {
+        nowMs: NOW, clock, weather: state.weather, works, post, realHoursPerTownHour,
+        zeeb: state, zeebInvited: Boolean(state.invitedFriend),
+      });
+      if (state.invitedFriend && friend.state.action === "hang_out") post("felt", `Zeeb and ${friend.sheet.name} are hanging out.`);
+    } catch (e) { log("friend's heartbeat had a problem:", e.message); }
+    state.invitedFriend = false;
+  }
   save();
 }
 
 function save() {
   state.lastTick = NOW;
+  state.runner = RUNNER;
+  if (RUNNER === "pc") state.pcBrainAt = nowISO;
   state.updatedAt = nowISO;
   state.clock = { day: clock.day, time: clock.label, hour: clock.hour, minute: clock.minute };
   state.townDayMinutes = Number(process.env.TOWN_DAY_MINUTES || 180);
@@ -431,6 +575,8 @@ function save() {
   writeJSON("works.json", works);
   writeJSON("diary.json", diary);
   writeJSON("memories.json", mem);
+  writeJSON("shop.json", shop);
+  writeJSON("friend.json", friend);
   log(`${state.asleep ? "asleep" : state.doing} | mood ${state.mood} energy ${state.energy} | ${hasBrain() ? "AI" : "rules"}`);
 }
 

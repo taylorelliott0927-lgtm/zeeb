@@ -79,14 +79,54 @@ export const ACTIONS = {
     about: "read today's real space news and tech headlines off the Wire",
   },
   send_signal: {
-    place: "tower", doing: "sending a signal into deep space", minutes: 25, hours: [18, 23],
+    place: "tower", doing: "sending a signal into deep space", minutes: 25, hours: [18, 4],
     effects: { company: -0.2, curiosity: -0.1 }, mood: 0.03,
     about: "point your dish at the sky and send a message to whoever might be out there. Write the message in 'detail'",
   },
   watch_suns: {
-    place: "ridge", doing: "watching the twin suns set from the dune ridge", minutes: 30, hours: [17, 20],
+    place: "ridge", doing: "watching the twin suns set from the dune ridge", minutes: 30, hours: [19, 21],
     effects: { curiosity: -0.15, company: -0.05 }, mood: 0.07,
     about: "climb the dune ridge and watch the twin suns go down (rate it out of ten)",
+  },
+  stargaze: {
+    place: "ridge", doing: "lying on the dune ridge counting stars", minutes: 40, hours: [22, 5],
+    effects: { curiosity: -0.3, company: 0.03 }, mood: 0.06,
+    about: "stay up and look at the stars from the dune ridge",
+  },
+  go_to_sleep: {
+    place: "hangar", doing: "asleep in the charging dock", minutes: 60, hours: [22, 5],
+    effects: {}, mood: 0.02,
+    about: "plug into the charging dock and go to sleep for the night (only if you want to; you can stay up if you're not tired)",
+  },
+  open_shop: {
+    place: "hangar", doing: "setting up a little shop in the corner of the hangar", minutes: 45, needsShop: "closed",
+    effects: { craft: -0.15, company: -0.1 }, mood: 0.08,
+    about: "open your own shop to sell your creations (only if you really want to). Give it a name in 'shop': {\"open\": \"shop name\"}",
+  },
+  tend_shop: {
+    place: "hangar", doing: "tidying his shop shelf", minutes: 25, needsShop: "open",
+    effects: { craft: -0.15 }, mood: 0.03,
+    about: "look after your shop: list a creation, take one down, change a price, or close the shop (say what in 'shop')",
+  },
+  start_friend: {
+    place: "hangar", doing: "sketching plans for a friend on the hangar wall", minutes: 45, needsFriend: "none",
+    effects: { craft: -0.2, company: -0.05 }, mood: 0.05,
+    about: "start building a friend bot out of scrap, using a copy of your own blueprint (only if you want company). Say your first idea for them in 'detail'",
+  },
+  build_friend: {
+    place: "hangar", doing: "building his friend on the workbench", minutes: 60, needsFriend: "building",
+    effects: { craft: -0.45, charge: 0.05 }, mood: 0.04,
+    about: "keep building your friend (parts from your stash help a lot). Say what you work on in 'detail'",
+  },
+  hang_out: {
+    place: "any", doing: "hanging out with his friend", minutes: 40, needsFriend: "alive",
+    effects: { company: -0.55 }, mood: 0.07,
+    about: "spend time with your friend. Say what you do together in 'detail' and what you say to them in 'say'",
+  },
+  help_dart: {
+    place: "hangar", doing: "helping Zeeb with the Little Dart", minutes: 40, friendOnly: true,
+    effects: { craft: -0.4, company: -0.2 }, mood: 0.04,
+    about: "help Zeeb work on his ship, the Little Dart",
   },
   wander: {
     place: "any", doing: "wandering around the outpost", minutes: 20,

@@ -1,0 +1,13 @@
+name: Leave Zeeb a note
+description: Zeeb reads every note at the comms tower, and it changes his mood. Be kind!
+title: "A note for Zeeb"
+labels: ["note"]
+body:
+  - type: textarea
+    id: note
+    attributes:
+      label: Your note
+      description: Say hi, tell him something, ask him a question. He decides for himself whether to reply.
+      placeholder: "hey zeeb, how's the Little Dart coming along?"
+    validations:
+      required: true

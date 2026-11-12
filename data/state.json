@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794519721458,
+  "lastTick": 1794520322052,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-12T21:42:01.458Z",
-  "actionMinutes": 60,
-  "thought": "my craft is bugging me most right now.",
-  "feeling": "okay, ticking along",
-  "say": "",
-  "mood": -0.153,
-  "energy": -0.045,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-12T21:52:02.052Z",
+  "actionMinutes": 15,
+  "thought": "need some fresh lubricant before my shoulder servo seizes up completely. three credits is enough for a cup at the depot.",
+  "feeling": "creaky and thirsty",
+  "say": "time for a quick pit stop! *bweep*",
+  "mood": -0.171,
+  "energy": 0.04,
   "needs": {
-    "charge": 0.398,
-    "oil": 0.648,
-    "curiosity": 0.66,
-    "company": 0.603,
-    "craft": 0.5
+    "charge": 0.445,
+    "oil": 0.038,
+    "curiosity": 0.74,
+    "company": 0.656,
+    "craft": 0.567
   },
-  "credits": 3,
+  "credits": 2,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-12T21:52:02.052Z"
+    },
     {
       "id": "work_dart",
       "detail": "tuned the left thruster",
@@ -85,7 +90,7 @@
   "letters": [],
   "creatorThread": [],
   "seenCreatorMsgs": [],
-  "lettersCheckedAt": "2026-11-12T21:42:01.458Z",
+  "lettersCheckedAt": "2026-11-12T21:52:02.052Z",
   "weather": {
     "kind": "hazy",
     "temp": 25,
@@ -96,21 +101,22 @@
   },
   "sleepDay": 3,
   "lastReflectDay": 3,
-  "brain": "rules",
-  "updatedAt": "2026-11-12T21:42:01.458Z",
+  "brain": "gemini-3.6-flash",
+  "updatedAt": "2026-11-12T21:52:02.052Z",
   "clock": {
     "day": 4,
-    "time": "17:37",
-    "hour": 17,
-    "minute": 37
+    "time": "18:57",
+    "hour": 18,
+    "minute": 57
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-12T21:42:01.458Z"
+    "action": "drink_oil",
+    "since": "2026-11-12T21:52:02.052Z"
   },
-  "busyUntil": "2026-11-12T21:49:31.458Z",
-  "busyUntilTown": "18:37",
-  "runner": "github"
+  "busyUntil": "2026-11-12T21:53:54.552Z",
+  "busyUntilTown": "19:12",
+  "runner": "github",
+  "model": "gemini-3.6-flash"
 }

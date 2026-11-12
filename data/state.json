@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794515257402,
+  "lastTick": 1794518522115,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-12T20:27:37.402Z",
-  "actionMinutes": 20,
-  "thought": "my oil is bugging me most right now.",
-  "feeling": "a bit rusty inside",
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-12T21:22:02.115Z",
+  "actionMinutes": 35,
+  "thought": "read about Comet. filing that away.",
+  "feeling": "curious",
   "say": "",
-  "mood": -0.302,
-  "energy": 0.273,
+  "mood": -0.268,
+  "energy": 0.165,
   "needs": {
-    "charge": 0,
-    "oil": 0.35,
-    "curiosity": 1,
-    "company": 0.862,
+    "charge": 0.254,
+    "oil": 0.568,
+    "curiosity": 0.5,
+    "company": 1,
     "craft": 1
   },
   "credits": 3,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "comets",
+      "at": "2026-11-12T21:22:02.115Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -64,29 +69,38 @@
   ],
   "wants": [],
   "promises": [],
-  "seenNotes": [],
+  "seenNotes": [
+    2
+  ],
   "letters": [],
   "creatorThread": [],
   "seenCreatorMsgs": [],
-  "lettersCheckedAt": "2026-11-12T20:27:37.402Z",
+  "lettersCheckedAt": "2026-11-12T21:22:02.115Z",
   "weather": {
     "kind": "hazy",
     "temp": 25,
-    "wind": 5,
+    "wind": 4,
     "mood": 0,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-12T20:27:37.638Z"
+    "at": "2026-11-12T21:22:02.290Z"
   },
   "sleepDay": 3,
   "lastReflectDay": 3,
   "brain": "rules",
-  "updatedAt": "2026-11-12T20:27:37.402Z",
+  "updatedAt": "2026-11-12T21:22:02.115Z",
   "clock": {
     "day": 4,
-    "time": "07:42",
-    "hour": 7,
-    "minute": 42
+    "time": "14:57",
+    "hour": 14,
+    "minute": 57
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot"
+  "placeName": "the comms tower",
+  "streak": {
+    "action": "browse_wire",
+    "since": "2026-11-12T21:22:02.115Z"
+  },
+  "busyUntil": "2026-11-12T21:26:24.615Z",
+  "busyUntilTown": "15:32",
+  "runner": "github"
 }

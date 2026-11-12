@@ -13,7 +13,7 @@ On the shelf: ${items.map((i) => `${i.id}: "${i.name}" ${i.price} ${i.currency},
 Creations you could list (source id: what): ${(ctx.sellable || []).map((s) => `${s.source}: ${s.what}`).join("; ") || "nothing new right now"}`;
 }
 
-function sheet(c) {
+export function sheet(c) {
   const add = c.added || {};
   const all = (k) => [...(c[k] || []), ...(add[k] || [])].map((x) => `- ${x}`).join("\n");
   return `You are ${c.name}, ${c.kind}. You live at ${WORLD.name} on the desert moon ${WORLD.moon}.
@@ -92,7 +92,7 @@ ${ctx.friendText || ""}
 ${ctx.gamesText || ""}
 ${ctx.interestsText || ""}
 ${ctx.state.newsForCreator ? `BIG NEWS YOU HAVEN'T TOLD YOUR CREATOR YET: ${ctx.state.newsForCreator} You'd probably want to write and tell them.` : ""}
-${(ctx.thread || []).length ? `Recent letters between you (oldest first):\n${ctx.thread.slice(-8).map((m) => `${m.from === "zeeb" ? "you" : "creator"} (letter #${m.letter}): ${m.text.slice(0, 300)}`).join("\n")}` : "You haven't written to them yet."}
+${(ctx.thread || []).length ? `Recent letters and chats between you (oldest first):\n${ctx.thread.slice(-8).map((m) => `${m.from === "zeeb" ? "you" : "creator"} (${m.chat ? "live chat" : `letter #${m.letter}`}): ${m.text.slice(0, 300)}`).join("\n")}` : "You haven't written to them yet."}
 ${(ctx.creatorMsgs || []).length ? `NEW MESSAGES FROM YOUR CREATOR (just arrived)\n${ctx.creatorMsgs.map((c) => `[message ${c.id} on letter #${c.letter}] ${c.text}`).join("\n")}\n` : ""}
 ${newNotes.length ? `NEW NOTES FROM VISITORS (just arrived, you cannot control these)\n${newNotes.map((n) => `#${n.id} from ${n.from}${n.fromCreator ? " (this is your creator!)" : ""}: ${n.text}`).join("\n")}\n` : ""}${notes.length ? `UNANSWERED NOTES: ${notes.map((n) => `#${n.id} from ${n.from}`).join(", ")}\n` : ""}
 ACTIONS YOU CAN TAKE NOW

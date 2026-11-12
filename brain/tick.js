@@ -436,6 +436,27 @@ function streakHours() {
   return (NOW - Date.parse(state.streak.since)) / 3600000 / realHoursPerTownHour;
 }
 
+function applyChats() {
+  const file = process.env.ZEEB_CHAT_FILE;
+  if (!file) return false;
+  let msgs = [];
+  try { msgs = JSON.parse(fs.readFileSync(file, "utf8")); } catch { return false; }
+  msgs = (Array.isArray(msgs) ? msgs : []).filter((m) => m && m.text);
+  if (!msgs.length) return false;
+  const mine = msgs.filter((m) => m.from === "creator");
+  const woke = msgs.some((m) => m.woke);
+  state.needs.company = round(clamp(state.needs.company - Math.min(0.5, 0.12 * mine.length)));
+  nudge(Math.min(0.15, 0.04 * mine.length));
+  if (woke && state.asleep) post("felt", "His creator woke him up for a chat.");
+  post("did", `had a live chat with his creator (${msgs.length} messages)`, { why: null, ok: true });
+  const gist = mine.map((m) => m.text).join(" / ").replace(/\s+/g, " ").slice(0, 150);
+  M.remember(mem, `Chatted live with my creator. They said: ${gist}`, 0.85, nowISO);
+  for (const m of msgs.slice(-6)) state.creatorThread.push({ from: m.from === "creator" ? "creator" : "zeeb", chat: true, text: String(m.text).slice(0, 600), at: m.at || nowISO });
+  state.creatorThread = state.creatorThread.slice(-40);
+  state.lastChatAt = nowISO;
+  return true;
+}
+
 async function main() {
   // If your PC has been doing his thinking recently, GitHub sits this one out.
   if (RUNNER === "github" && state.pcBrainAt && NOW - Date.parse(state.pcBrainAt) < PC_HANDOFF_MS) {
@@ -446,10 +467,12 @@ async function main() {
   const elapsedTownHours = passTime();
   log(`${stamp}, ${round(elapsedTownHours, 2)} town hours passed, brain: ${modelName()}`);
 
+  // Live chats with his creator since the last heartbeat (from the chat page on the PC or phone).
+  const chatted = applyChats();
   const night = clock.hour >= SLEEP_FROM || clock.hour < WAKE_AT;
   if (state.asleep) {
     const full = state.needs.charge <= 0.03;
-    if (night && !full) { settleFeelings(); return finish(); } // still charging, no AI needed
+    if (night && !full && !chatted) { settleFeelings(); return finish(); } // still charging, no AI needed
     wakeUp(night);
   } else if (state.needs.charge > 0.9) {
     // battery nearly flat: no choice, he has to sleep
@@ -494,7 +517,7 @@ async function main() {
   }
   // Still in the middle of something he chose to do for a while? Carry on, unless something comes up.
   const busy = state.busyUntil && NOW < Date.parse(state.busyUntil) && ACTIONS[state.action];
-  const urgent = newNotes.length || creatorMsgs.length || event || state.newsForCreator || Math.max(...Object.values(state.needs)) > 0.85;
+  const urgent = chatted || newNotes.length || creatorMsgs.length || event || state.newsForCreator || Math.max(...Object.values(state.needs)) > 0.85;
   if (busy && !urgent) {
     const a = ACTIONS[state.action];
     const share = Math.min(1, elapsedTownHours / Math.max(0.25, (a.minutes || 30) / 60)) * 0.5;

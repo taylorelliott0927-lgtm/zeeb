@@ -94,11 +94,13 @@ export const ACTIONS = {
     about: "stay up and look at the stars from the dune ridge",
   },
   go_to_sleep: {
+    oneShot: true,
     place: "hangar", doing: "asleep in the charging dock", minutes: 60, hours: [22, 5],
     effects: {}, mood: 0.02,
     about: "plug into the charging dock and go to sleep for the night (only if you want to; you can stay up if you're not tired)",
   },
   open_shop: {
+    oneShot: true,
     place: "hangar", doing: "setting up a little shop in the corner of the hangar", minutes: 45, needsShop: "closed",
     effects: { craft: -0.15, company: -0.1 }, mood: 0.08,
     about: "open your own shop to sell your creations (only if you really want to). Give it a name in 'shop': {\"open\": \"shop name\"}",
@@ -109,6 +111,7 @@ export const ACTIONS = {
     about: "look after your shop: list a creation, take one down, change a price, or close the shop (say what in 'shop')",
   },
   start_friend: {
+    oneShot: true,
     place: "hangar", doing: "sketching plans for a friend on the hangar wall", minutes: 45, needsFriend: "none",
     effects: { craft: -0.2, company: -0.05 }, mood: 0.05,
     about: "start building a friend bot out of scrap, using a copy of your own blueprint (only if you want company). Say your first idea for them in 'detail'",
@@ -127,6 +130,17 @@ export const ACTIONS = {
     place: "hangar", doing: "helping Zeeb with the Little Dart", minutes: 40, friendOnly: true,
     effects: { craft: -0.4, company: -0.2 }, mood: 0.04,
     about: "help Zeeb work on his ship, the Little Dart",
+  },
+  start_game: {
+    oneShot: true,
+    place: "hangar", doing: "sketching a game idea on the back of a crate", minutes: 40, needsGame: "none",
+    effects: { craft: -0.25, curiosity: -0.15 }, mood: 0.05,
+    about: "start making your own little computer game, about anything you like (only if you want to). Say the idea in 'detail'",
+  },
+  work_game: {
+    place: "hangar", doing: "coding his game on an old terminal", minutes: 60, needsGame: "active",
+    effects: { craft: -0.45, curiosity: -0.15, charge: 0.06 }, mood: 0.04,
+    about: "work on your game: write code, fix bugs, add things, or release it when you're happy with it",
   },
   wander: {
     place: "any", doing: "wandering around the outpost", minutes: 20,

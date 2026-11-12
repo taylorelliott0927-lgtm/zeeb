@@ -11,6 +11,8 @@ import { DATA_DIR } from "./util.js";
 import { realWeather, toWeather, useWire } from "./internet.js";
 import * as M from "./memory.js";
 import { buildStep, designFriend, emptyFriend, friendText, friendTick, startFriend, wakeFriend } from "./friend.js";
+import { activeGame, emptyGames, gamesText, startGame, workSession } from "./games.js";
+import { emptyInterests, interestsText, noteInterest } from "./interests.js";
 import { applyShopChange, checkSales, currency as shopCurrency, emptyShop, sellable } from "./shop.js";
 import { currentModel, hasBrain, modelName, useModel } from "./llm.js";
 
@@ -42,6 +44,8 @@ const diary = readJSON("diary.json", { entries: [] });
 const mem = readJSON("memories.json", M.emptyMemory());
 const shop = { ...emptyShop(), ...readJSON("shop.json", emptyShop()) };
 const friend = { ...emptyFriend(), ...readJSON("friend.json", emptyFriend()) };
+const games = { ...emptyGames(), ...readJSON("games.json", emptyGames()) };
+const interests = { ...emptyInterests(), ...readJSON("interests.json", emptyInterests()) };
 for (const t of works.tunes) t.id = t.id || `t${Date.parse(t.at || 0).toString(36)}`;
 
 const clock = townClock(state.epoch, NOW);
@@ -77,7 +81,7 @@ function settleFeelings() {
 
 function availableActions(notes) {
   // He can't jump back to something he did in his last three actions, but he can always keep going with what he's doing now.
-  const blockedRecent = state.recent.slice(0, 3).map((r) => r.id).filter((x) => x !== state.action);
+  const blockedRecent = state.recent.slice(0, 3).map((r) => r.id).filter((x) => x !== state.action || ACTIONS[x]?.oneShot);
   // ...but not forever: after 8 town hours straight on one thing he's burned out on it, and it goes on the cooldown like anything else.
   if (state.action && streakHours() >= MAX_STREAK_HOURS) blockedRecent.push(state.action);
   const storm = state.weather?.kind === "sandstorm";
@@ -89,6 +93,10 @@ function availableActions(notes) {
     if (a.needsShop && (a.needsShop === "open") !== Boolean(shop.open)) return false;
     if (a.needsFriend && a.needsFriend !== friend.stage) return false;
     if (a.friendOnly) return false;
+    if (a.needsGame === "none" && activeGame(games)) return false;
+    // At most one new game per town day.
+    if (a.needsGame === "none" && games.games[0] && NOW - Date.parse(games.games[0].started) < TOWN_DAY_MINUTES * 60000) return false;
+    if (a.needsGame === "active" && !activeGame(games)) return false;
     if (storm && a.place !== "any" && PLACES[a.place].outdoor) return false;
     return true;
   });
@@ -185,7 +193,7 @@ async function doAction(id, d, notes) {
 
   // Repetition is punished seven times harder than novelty is rewarded.
   // Repetition is punished seven times harder than novelty is rewarded. Choosing to keep going with the same thing isn't repetition.
-  const continuing = id === state.action;
+  const continuing = id === state.action && !a.oneShot;
   const repeats = continuing ? 0 : state.recent.slice(0, 8).filter((r) => r.id === id).length;
   if (!continuing) nudge(repeats ? -0.07 * repeats : 0.01);
   // Keeping going is fine for a while, then it starts to get boring, more and more the longer it runs.
@@ -319,6 +327,20 @@ async function doAction(id, d, notes) {
       }
       break;
     }
+    case "start_game": {
+      const g = startGame(games, detail || d.interest || "a little game", nowISO);
+      post("mind", `Started making a game. Idea: ${g.idea}`, { change: "started", about: "game" });
+      M.remember(mem, `On day ${clock.day} I started making my own game: ${g.idea}`, 0.8, nowISO);
+      // First session straight away.
+      const r = await workSession(games, g, character, interestsText(interests), nowISO);
+      reportGame(g, r);
+      break;
+    }
+    case "work_game": {
+      const g = activeGame(games);
+      if (g) reportGame(g, await workSession(games, g, character, interestsText(interests), nowISO));
+      break;
+    }
     case "hang_out": {
       state.invitedFriend = true;
       break;
@@ -334,6 +356,18 @@ async function doAction(id, d, notes) {
     }
   }
   return { place, ok };
+}
+
+function reportGame(g, r) {
+  if (r.abandoned) { post("felt", `Gave up on his game "${g.title}". ${r.note}`); return; }
+  if (!r.ok) { post("noticed", `Sat at the terminal but ${r.note}.`); return; }
+  post("mind", `Game "${g.title}" version ${r.v}: ${r.note || "worked on it"}${r.error ? ` (it has a bug: ${r.error.slice(0, 120)})` : ""}`, { change: "worked", about: "game" });
+  if (r.released) {
+    post("felt", `Released his game "${g.title}"! Anyone can play it in the Arcade now.`);
+    nudge(0.25);
+    M.remember(mem, `On day ${clock.day} I released my game "${g.title}"`, 0.95, nowISO);
+    state.newsForCreator = `You released your game "${g.title}"! People can play it in the Arcade on your site.`;
+  }
 }
 
 async function handleLetters(d) {
@@ -470,7 +504,7 @@ async function main() {
     return finish();
   }
   const available = availableActions(notes);
-  const ctx = { character, state, available, notes, newNotes, memories: M.strongest(mem, 12), beliefs: mem.beliefs, works, event, weather: state.weather, clock, creatorMsgs, thread: state.creatorThread, shop, shopCurrency: shopCurrency(), sellable: shop.open ? sellable(works, shop) : [], streakHours: streakHours(), friendText: friendText(friend) };
+  const ctx = { character, state, available, notes, newNotes, memories: M.strongest(mem, 12), beliefs: mem.beliefs, works, event, weather: state.weather, clock, creatorMsgs, thread: state.creatorThread, shop, shopCurrency: shopCurrency(), sellable: shop.open ? sellable(works, shop) : [], streakHours: streakHours(), friendText: friendText(friend), gamesText: gamesText(games), interestsText: interestsText(interests) };
   let d = await decide(ctx);
   state.brain = d ? modelName() : "rules";
   if (d) state.model = currentModel();
@@ -500,6 +534,14 @@ async function main() {
     state.seenCreatorMsgs.push(c.id);
   }
   state.seenCreatorMsgs = state.seenCreatorMsgs.slice(-300);
+  // What he's into: repeated interests can grow into an obsession.
+  for (const ev of noteInterest(interests, d.interest, clock.day, nowISO, elapsedTownHours)) {
+    if (ev.kind === "obsessed") {
+      post("felt", `He's become a bit obsessed with ${ev.topic}.`);
+      M.remember(mem, `I've become obsessed with ${ev.topic}`, 0.9, nowISO);
+      state.newsForCreator = state.newsForCreator || `You've become totally obsessed with ${ev.topic}.`;
+    } else post("noticed", `His obsession with ${ev.topic} has faded.`);
+  }
   await handleLetters(d);
   writeDiaryNow(d);
 
@@ -581,6 +623,8 @@ function save() {
   writeJSON("memories.json", mem);
   writeJSON("shop.json", shop);
   writeJSON("friend.json", friend);
+  writeJSON("games.json", games);
+  writeJSON("interests.json", interests);
   log(`${state.asleep ? "asleep" : state.doing} | mood ${state.mood} energy ${state.energy} | ${hasBrain() ? "AI" : "rules"}`);
 }
 

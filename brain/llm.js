@@ -59,7 +59,8 @@ function parseJSON(text) {
   }
 }
 
-async function askOllama(system, user, temperature) {
+async function askOllama(system, user, temperature, opts = {}) {
+  const asText = Boolean(opts.text);
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
       const res = await fetchWithTimeout(`${OLLAMA_URL}/api/chat`, {
@@ -68,15 +69,16 @@ async function askOllama(system, user, temperature) {
         body: JSON.stringify({
           model: OLLAMA_MODEL,
           messages: [{ role: "system", content: system }, { role: "user", content: user }],
-          format: "json",
+          ...(asText ? {} : { format: "json" }),
           stream: false,
           keep_alive: OLLAMA_KEEP,
-          options: { temperature: Math.min(temperature, 0.9), num_ctx: 8192 },
+          options: { temperature: Math.min(temperature, 0.9), num_ctx: opts.numCtx || 8192, ...(opts.maxTokens ? { num_predict: opts.maxTokens } : {}) },
         }),
       }, 240000);
       if (!res.ok) throw new Error(`Ollama ${res.status}: ${(await res.text()).slice(0, 200)}`);
       const data = await res.json();
-      const out = parseJSON(data?.message?.content || "");
+      const raw = data?.message?.content || "";
+      const out = asText ? raw : parseJSON(raw);
       lastBrain = `your PC (${OLLAMA_MODEL})`;
       return out;
     } catch (e) {
@@ -98,11 +100,12 @@ async function callGemini(m, body) {
   return { text: data?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("") || "" };
 }
 
-async function askGemini(system, user, temperature) {
+async function askGemini(system, user, temperature, opts = {}) {
+  const asText = Boolean(opts.text);
   const body = {
     systemInstruction: { parts: [{ text: system }] },
     contents: [{ role: "user", parts: [{ text: user }] }],
-    generationConfig: { responseMimeType: "application/json", temperature, maxOutputTokens: 4096 },
+    generationConfig: { ...(asText ? {} : { responseMimeType: "application/json" }), temperature, maxOutputTokens: opts.maxTokens || 4096 },
   };
   const tried = new Set();
   let busyRetry = false;
@@ -117,7 +120,7 @@ async function askGemini(system, user, temperature) {
     try {
       const r = await callGemini(model, body);
       if (r.text !== undefined) {
-        const out = parseJSON(r.text);
+        const out = asText ? r.text : parseJSON(r.text);
         lastBrain = model;
         return out;
       }
@@ -147,6 +150,21 @@ export async function askJSON(system, user, { temperature = 1.0 } = {}) {
   }
   if (KEY && !geminiOut) {
     const r = await askGemini(system, user, temperature);
+    if (r) return r;
+  }
+  return null;
+}
+
+// Plain text answers (used when Zeeb writes code, which doesn't sit well inside JSON).
+export async function askText(system, user, { temperature = 0.8, numCtx = 16384, maxTokens = 6000 } = {}) {
+  if (!hasBrain()) return null;
+  const opts = { text: true, numCtx, maxTokens };
+  if (OLLAMA_URL && !ollamaDown) {
+    const r = await askOllama(system, user, temperature, opts);
+    if (r) return r;
+  }
+  if (KEY && !geminiOut) {
+    const r = await askGemini(system, user, temperature, { ...opts, maxTokens: Math.max(maxTokens, 8192) });
     if (r) return r;
   }
   return null;

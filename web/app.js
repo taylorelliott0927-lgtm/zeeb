@@ -85,7 +85,9 @@ else { $("noteLink").removeAttribute("href"); $("notesInfo").textContent = "Note
 let S = null, works = null;
 
 function renderStats(s) {
-  $("doing").textContent = s.asleep ? "asleep in the charging dock" : `${s.doing} at ${s.placeName || "the outpost"}${s.busyUntilTown ? ` (planning to until ${s.busyUntilTown})` : ""}`;
+  $("doing").textContent = s.asleep ? "asleep in the charging dock"
+    : s.doingWords ? `${s.doingWords} (at ${s.placeName || "the outpost"}${s.busyUntilTown ? `, until about ${s.busyUntilTown}` : ""})`
+    : `${s.doing} at ${s.placeName || "the outpost"}${s.busyUntilTown ? ` (until about ${s.busyUntilTown})` : ""}`;
   $("thought").textContent = s.thought ? `"${s.thought}"` : "";
   $("feeling").textContent = s.feeling ? `feels: ${s.feeling}` : "";
   const two = (id, v) => {

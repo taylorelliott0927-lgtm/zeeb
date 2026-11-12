@@ -26,32 +26,60 @@ const isLocal = (req) => /^(::1|127\.|::ffff:127\.)/.test(req.socket.remoteAddre
 const isHomeNetwork = (ip) => /^(::1|127\.|::ffff:127\.|10\.|::ffff:10\.|192\.168\.|::ffff:192\.168\.|172\.(1[6-9]|2\d|3[01])\.|::ffff:172\.(1[6-9]|2\d|3[01])\.|fe80:)/i.test(ip || "");
 
 export async function startChat({ port = 8787, pin, log }) {
-  const { askText } = await import("../brain/llm.js");
+  const { askChat } = await import("../brain/llm.js");
   const { sheet } = await import("../brain/mind.js");
   const fails = new Map();
   let busy = false;
+
+  // Word overlap between two replies, 0 to 1 (used to catch him repeating himself).
+  const words = (t) => new Set(String(t).toLowerCase().match(/[a-z']+/g) || []);
+  function overlap(a, b) {
+    const A = words(a), B = words(b);
+    if (!A.size || !B.size) return 0;
+    let n = 0; for (const w of A) if (B.has(w)) n++;
+    return n / Math.min(A.size, B.size);
+  }
 
   async function reply(message) {
     const character = data("character.json", {});
     const state = data("state.json", {});
     const mem = data("memories.json", { memories: [] });
-    const feed = data("feed.json", { entries: [] }).entries.slice(0, 6);
-    const history = readJSON(HISTORY, []).slice(-14);
+    const feed = data("feed.json", { entries: [] }).entries.slice(0, 5);
+    const history = readJSON(HISTORY, []).slice(-16);
     const asleep = Boolean(state.asleep);
-    const user = `YOUR CREATOR IS CHATTING WITH YOU LIVE, right now, through the chat screen in the hangar.
+    const system = `${sheet(character)}
+
+YOU ARE IN A LIVE CHAT WITH YOUR CREATOR right now, typing on the chat screen in the hangar.
+Your creator is the person who built your world. They live in the real world, not at Rustwell Outpost, so ask about their life, not about the outpost.
+
+BACKGROUND (only bring this up if it fits; don't keep repeating it):
 ${asleep ? "You were asleep in the charging dock and their message just woke you up." : `You're ${state.doingWords || state.doing || "around"} at ${state.placeName || "the outpost"}.`}
-How you feel: ${state.feeling || "fine"} (mood ${Number(state.mood || 0).toFixed(2)}, energy ${Number(state.energy || 0).toFixed(2)}).
-What's on your mind: ${state.thought || "nothing much"}
-What happened lately: ${feed.map((f) => f.text).join("; ")}
-Things you remember: ${(mem.memories || []).sort((a, b) => b.strength - a.strength).slice(0, 8).map((m) => m.text).join("; ")}
+Mood: ${state.feeling || "fine"}. On your mind: ${state.thought || "nothing much"}
+Lately: ${feed.map((f) => f.text).join("; ")}
+You remember: ${(mem.memories || []).sort((a, b) => b.strength - a.strength).slice(0, 8).map((m) => m.text).join("; ")}
 
-THE CONVERSATION SO FAR
-${history.map((m) => `${m.from === "creator" ? "Creator" : "You"}: ${m.text}`).join("\n") || "(just starting)"}
-Creator: ${message}
-
-Reply as yourself, in your own voice, like a real chat message: usually 1 to 3 short sentences. Be honest about how you feel. Don't narrate actions in asterisks except a little sound now and then. Just write your reply, nothing else.`;
-    let text = await askText(sheet(character), user, { temperature: 0.9, numCtx: 8192, maxTokens: 220 });
-    text = String(text || "").trim().replace(/^(zeeb|you)\s*:\s*/i, "").replace(/^["']|["']$/g, "").slice(0, 600);
+HOW TO CHAT
+- Answer what they just said. React to it, like a real friend would.
+- Never repeat something you already said earlier in this chat. Say something new each time.
+- Usually 1 to 3 short sentences. Plain text, in your own voice. No "Zeeb:" at the start.
+- You can ask them things, tell them about your day, joke, disagree, or change the subject.`;
+    const turns = [];
+    for (const m of history) {
+      const role = m.from === "creator" ? "user" : "assistant";
+      if (turns.length && turns[turns.length - 1].role === role) turns[turns.length - 1].content += "\n" + m.text;
+      else turns.push({ role, content: m.text });
+    }
+    if (turns[0]?.role === "assistant") turns.shift();
+    turns.push({ role: "user", content: message });
+    const clean = (t) => String(t || "").trim().replace(/^(zeeb|you)\s*:\s*/i, "").replace(/^["']|["']$/g, "").slice(0, 600);
+    const mine = history.filter((m) => m.from !== "creator").slice(-4).map((m) => m.text);
+    let text = clean(await askChat(system, turns, { temperature: 0.9 }));
+    // Too close to something he already said? Ask once more, with a nudge.
+    if (text && mine.some((p) => overlap(p, text) > 0.6)) {
+      const again = clean(await askChat(system + "\n\nYour last draft repeated yourself. Respond only to their newest message with something you haven't said yet.", turns, { temperature: 1.1 }));
+      const worst = (t) => Math.max(0, ...mine.map((p) => overlap(p, t)));
+      if (again && worst(again) < worst(text)) text = again; // keep whichever repeats less
+    }
     return { text: text || "*static* ...sorry, my dish is acting up. say that again?", asleep };
   }
 

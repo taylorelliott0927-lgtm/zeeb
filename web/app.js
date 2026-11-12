@@ -163,6 +163,30 @@ function renderWorks(w) {
   const log = el("ul", "list");
   for (const l of (d.log || []).slice(0, 6)) log.append(el("li", null, `v${l.version}: ${l.change}`));
   box.append(log);
+  if (d.launched?.length) {
+    box.append(el("h4", null, "Finished ships"));
+    const ul = el("ul", "list");
+    for (const l of d.launched) ul.append(el("li", null, `${l.name}, finished on day ${l.day}`));
+    box.append(ul);
+  }
+  if (w.flights?.length) {
+    box.append(el("h4", null, "Test flights"));
+    for (const f of w.flights.slice(0, 8)) {
+      const card = el("div", "flight-card");
+      card.append(el("div", "title", `${f.ship}: ${f.outcome}`), el("div", "meta muted", ago(f.at)), el("p", null, f.log));
+      const btn = el("button", "link-btn", "Watch this flight");
+      btn.type = "button";
+      btn.onclick = () => { world?.setMode("follow"); world?.playFlight(f); window.scrollTo({ top: 0, behavior: "smooth" }); };
+      card.append(btn);
+      box.append(card);
+    }
+  }
+  if (w.builds?.length) {
+    box.append(el("h4", null, "Things he's built"));
+    const ul = el("ul", "list");
+    for (const b of w.builds) { const li = el("li", null, `${b.name} (near ${({ hangar: "Hangar Bay 3", cantina: "the cantina", market: "the junk market", tower: "the comms tower", depot: "the fuel depot", ridge: "the dune ridge" })[b.place] || "the outpost"})`); if (b.description) li.append(el("div", "muted", b.description)); ul.append(li); }
+    box.append(ul);
+  }
   box.append(el("h4", null, "Tunes"));
   const tunes = el("ul", "list");
   for (const t of w.tunes.slice(0, 10)) tunes.append(el("li", null, `"${t.title}": ${t.notes}`));
@@ -417,6 +441,7 @@ async function refresh() {
     works = w || works;
     mind_interests = it;
     renderArcade(gm);
+    world?.setExtras({ shopOpen: Boolean(sh?.open), gamesCount: gm?.games?.length || 0 });
     renderWorks(works); renderDiary(d); renderMind(s, mem); renderWho(c); renderShop(sh);
   }
   world?.setState({ ...s, works });

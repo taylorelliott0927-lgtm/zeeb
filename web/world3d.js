@@ -92,14 +92,38 @@ export class World {
     this.lights.push(this.hangarLamp);
     // The Little Dart, built up piece by piece as progress grows
     this.dart = this.put(hangar, null, { pos: [1.4, 0.6, 1.6], rot: [0, -0.5, 0] });
-    this.dartParts = [
-      this.put(this.dart, cone, { pos: [0, 0.3, 0.9], rot: [Math.PI / 2, 0, 0], scale: [0.7, 1.1, 0.7], color: C.white }),
-      this.put(this.dart, cyl, { pos: [0, 0.3, 0], rot: [Math.PI / 2, 0, 0], scale: [0.7, 1.0, 0.7], color: C.white }),
-      this.put(this.dart, box, { pos: [0, 0.25, -0.1], scale: [2.6, 0.08, 0.7], color: C.red }),
-      this.put(this.dart, cyl, { pos: [0, 0.3, -0.65], rot: [Math.PI / 2, 0, 0], scale: [0.45, 0.4, 0.45], color: C.dark }),
-      this.put(this.dart, box, { pos: [0, 0.6, -0.4], scale: [0.08, 0.5, 0.5], color: C.red }),
-      this.put(this.dart, ball, { pos: [0, 0.55, 0.35], scale: [0.4, 0.25, 0.5], color: C.cyan, emissive: 0.5 }),
+    const shipParts = (parent) => [
+      this.put(parent, cone, { pos: [0, 0.3, 0.9], rot: [Math.PI / 2, 0, 0], scale: [0.7, 1.1, 0.7], color: C.white }),
+      this.put(parent, cyl, { pos: [0, 0.3, 0], rot: [Math.PI / 2, 0, 0], scale: [0.7, 1.0, 0.7], color: C.white }),
+      this.put(parent, box, { pos: [0, 0.25, -0.1], scale: [2.6, 0.08, 0.7], color: C.red }),
+      this.put(parent, cyl, { pos: [0, 0.3, -0.65], rot: [Math.PI / 2, 0, 0], scale: [0.45, 0.4, 0.45], color: C.dark }),
+      this.put(parent, box, { pos: [0, 0.6, -0.4], scale: [0.08, 0.5, 0.5], color: C.red }),
+      this.put(parent, ball, { pos: [0, 0.55, 0.35], scale: [0.4, 0.25, 0.5], color: C.cyan, emissive: 0.5 }),
     ];
+    this.dartParts = shipParts(this.dart);
+    // A finished ship parks outside the hangar; the flying one is a copy that takes off from there.
+    this.PARK = { x: 6.8, z: 6.2, yaw: -0.6 };
+    this.parked = this.put(R, null, { pos: this.at(this.PARK.x, this.PARK.z, 0.6), rot: [0, this.PARK.yaw, 0], visible: false, scale: [1.3, 1.3, 1.3] });
+    shipParts(this.parked);
+    this.flyer = this.put(R, null, { visible: false, scale: [1.3, 1.3, 1.3] });
+    shipParts(this.flyer);
+    this.flyerFlame = this.put(this.flyer, cone, { pos: [0, 0.3, -1.05], rot: [-Math.PI / 2, 0, 0], scale: [0.35, 0.6, 0.35], color: C.cyan, emissive: 1 });
+    this.smoke = Array.from({ length: 6 }, () => this.put(R, ball, { color: [0.35, 0.33, 0.32], visible: false }));
+    this.flight = null;
+    // Things Zeeb builds himself get drawn here.
+    this.buildsRoot = this.put(R, null);
+    this.buildLabels = [];
+    this.spinners = [];
+    // Shop booth and arcade cabinet appear only if he opens a shop or makes a game.
+    this.booth = this.put(R, null, { pos: this.at(-4.6, 6.4), rot: [0, 0.5, 0], visible: false });
+    this.put(this.booth, box, { pos: [0, 0.5, 0], scale: [1.8, 1, 1], color: [0.45, 0.33, 0.24] });
+    for (const sx of [-0.8, 0.8]) this.put(this.booth, box, { pos: [sx, 1.3, -0.4], scale: [0.1, 1.6, 0.1], color: C.metal });
+    this.put(this.booth, box, { pos: [0, 2.15, -0.1], scale: [2.1, 0.1, 1.4], rot: [0.15, 0, 0], color: C.teal });
+    this.boothSign = this.put(this.booth, box, { pos: [0, 1.75, -0.45], scale: [1.4, 0.35, 0.05], color: C.warm, emissive: 0.8 });
+    this.arcade = this.put(hangar, null, { pos: [3.1, 0, -4.4], rot: [0, -0.4, 0], visible: false });
+    this.put(this.arcade, box, { pos: [0, 0.8, 0], scale: [0.8, 1.6, 0.6], color: C.purple });
+    this.arcadeScreen = this.put(this.arcade, box, { pos: [0, 1.15, 0.31], scale: [0.6, 0.45, 0.02], color: [0.3, 1, 0.6], emissive: 1 });
+    this.put(this.arcade, box, { pos: [0, 0.75, 0.38], scale: [0.7, 0.08, 0.25], rot: [0.4, 0, 0], color: C.dark });
 
     // Dented Moon cantina: a squat dome with a glowing sign
     const Ca = PLACES.cantina;
@@ -321,6 +345,96 @@ export class World {
     const p = s.works?.dart?.progress ?? 0;
     const built = Math.ceil((p / 100) * this.dartParts.length);
     this.dartParts.forEach((n, i) => (n.visible = i < Math.max(1, built)));
+    const w = s.works || {};
+    this.hasShip = (w.dart?.launched || []).length > 0;
+    if (!this.flight) this.parked.visible = this.hasShip;
+    this.setBuilds(w.builds || []);
+    // A test flight that happened in the last few minutes plays once, live.
+    const f = s.flight;
+    if (f && f.id !== this.seenFlight && Date.now() - Date.parse(f.at) < 8 * 60000) { this.seenFlight = f.id; this.playFlight(f); }
+    else if (f && !this.seenFlight) this.seenFlight = f.id;
+  }
+
+  setExtras({ shopOpen, gamesCount }) {
+    this.booth.visible = Boolean(shopOpen);
+    this.arcade.visible = gamesCount > 0;
+  }
+
+  setBuilds(builds) {
+    const sig = JSON.stringify(builds.map((b) => b.id));
+    if (sig === this.buildsSig) return;
+    this.buildsSig = sig;
+    this.buildsRoot.children = [];
+    this.spinners = [];
+    for (const l of this.buildLabels) l.el.remove();
+    this.buildLabels = [];
+    const meshFor = { box: this.meshes.box, cylinder: this.meshes.cyl, ball: this.meshes.ball, cone: this.meshes.cone };
+    const hex = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255);
+    for (const b of builds) {
+      const g = this.put(this.buildsRoot, null, { pos: this.at(b.x, b.z), rot: [0, b.rot || 0, 0] });
+      let top = 1;
+      for (const pt of b.parts || []) {
+        const n = this.put(g, meshFor[pt.shape] || this.meshes.box, { pos: [pt.x, pt.y, pt.z], scale: [pt.w, pt.h, pt.d], color: hex(pt.color || "#999999"), emissive: pt.glow || 0 });
+        if (pt.glow > 0.3) this.lights.push(n);
+        if (pt.spin) this.spinners.push(n);
+        top = Math.max(top, pt.y + pt.h / 2);
+      }
+      const el = document.createElement("div");
+      el.className = "place-label small";
+      el.textContent = b.name;
+      this.labels.appendChild(el);
+      this.buildLabels.push({ el, pos: this.at(b.x, b.z, top + 0.6) });
+    }
+  }
+
+  // ---------- test flights ----------
+  playFlight(f) {
+    if (!this.hasShip) return;
+    const g = (x, z, h) => [x, groundHeight(x, z) + h, z];
+    const P = this.PARK;
+    const pts = [g(P.x, P.z, 0.6), g(P.x + 1, P.z + 4, 3), g(14, 6, 9), g(17, -8, 12), g(4, -18, 13), g(-12, -30, 14), g(-26, -12, 12), g(-14, 10, 11), g(9, 17, 14), g(13, 10, 7), g(P.x + 2, P.z + 3, 2.5), g(P.x, P.z, 0.6)];
+    this.flight = { f, pts, start: this.t, dur: f.seconds || 45, outcome: f.outcome };
+    this.parked.visible = false;
+    this.flyer.visible = true;
+  }
+
+  animateFlight() {
+    const F = this.flight;
+    if (!F) return;
+    const u = (this.t - F.start) / F.dur;
+    if (u >= 1) {
+      this.flight = null;
+      this.flyer.visible = false;
+      this.parked.visible = this.hasShip;
+      for (const s of this.smoke) s.visible = false;
+      this.onFlightEnd?.(F.f);
+      return;
+    }
+    // ease along a smooth curve through the waypoints
+    const e = u < 0.08 ? (u / 0.08) ** 2 * 0.08 : u;
+    const n = F.pts.length - 1, x = e * n, i = Math.min(n - 1, Math.floor(x)), k = x - i;
+    const p0 = F.pts[Math.max(0, i - 1)], p1 = F.pts[i], p2 = F.pts[i + 1], p3 = F.pts[Math.min(n, i + 2)];
+    const cr = (a, b, c, d) => 0.5 * (2 * b + (-a + c) * k + (2 * a - 5 * b + 4 * c - d) * k * k + (-a + 3 * b - 3 * c + d) * k * k * k);
+    const pos = [0, 1, 2].map((j) => cr(p0[j], p1[j], p2[j], p3[j]));
+    const prev = this.flyer.pos;
+    let roll = 0, pitch = 0;
+    if (F.outcome === "sputter" && u > 0.35 && u < 0.58) {
+      const s = (u - 0.35) / 0.23;
+      pos[1] -= Math.sin(s * Math.PI) * 3;
+      roll = Math.sin(this.t * 14) * 0.35;
+      this.smoke.forEach((sm, j) => { sm.visible = true; const a = (this.t * 2 + j / 6) % 1; sm.pos = [prev[0] - Math.sin(this.flyer.rot[1]) * (1 + a * 4), prev[1] + a * 0.8, prev[2] - Math.cos(this.flyer.rot[1]) * (1 + a * 4)]; const sc = 0.3 + a * 0.9; sm.scale = [sc, sc, sc]; });
+    } else this.smoke.forEach((sm) => (sm.visible = false));
+    if (F.outcome === "bumpy landing" && u > 0.9) {
+      const s = (u - 0.9) / 0.1;
+      pos[1] += Math.abs(Math.sin(s * Math.PI * 3)) * 1.2 * (1 - s);
+      roll = Math.sin(s * 30) * 0.25 * (1 - s);
+    }
+    const dx = pos[0] - prev[0], dz = pos[2] - prev[2], dy = pos[1] - prev[1], hz = Math.hypot(dx, dz);
+    const yaw = hz > 0.001 ? Math.atan2(dx, dz) : this.flyer.rot[1];
+    pitch = hz > 0.001 ? -Math.atan2(dy, hz) * 0.8 : 0;
+    this.flyer.pos = pos;
+    this.flyer.rot = [pitch, yaw, roll + Math.sin(this.t * 2) * 0.05];
+    this.flyerFlame.scale = [0.35, 0.5 + Math.sin(this.t * 40) * 0.15 + (F.outcome === "sputter" && u > 0.35 && u < 0.58 ? (Math.sin(this.t * 9) > 0 ? -0.4 : 0) : 0), 0.35];
   }
 
   env() {
@@ -406,6 +520,9 @@ export class World {
       else if (action === "chat_patrons") { b.rot = [0, Math.sin(t * 1.5) * 0.3, 0]; ra.rot = [Math.sin(t * 4) * 0.4 - 0.3, 0, 0]; }
       else if (resting) { b.rot = [0.15, 0, 0]; this.zDish.rot = [0.25, 0, 0]; }
     }
+    // Movements Zeeb chose for himself override the default body language.
+    const body = !moving && !resting ? s.body || [] : [];
+    for (const m of body) this.motion(m, t, b, la, ra);
     if (whistled) { b.pos = [0, Math.abs(Math.sin((t - this.whistleT) * 8)) * 0.25 * Math.max(0, 1.5 - (t - this.whistleT)), 0]; this.zDish.rot = [0, t * 4, 0]; }
     const blink = Math.sin(t * 0.7) > 0.985 ? 0.15 : 1;
     this.visor.emissive = resting ? 0.15 : 1;
@@ -422,6 +539,11 @@ export class World {
     this.cantinaSign.emissive = 0.4 + 0.6 * (this.night ?? 0);
 
     this.animateBuddy(dt);
+    this.animateFlight();
+    this.zeeb.visible = !this.flight || (this.t - this.flight.start) / this.flight.dur > 0.995;
+    this.shadow.visible = this.zeeb.visible;
+    for (const n of this.spinners) n.rot = [n.rot[0], this.t * 1.2, n.rot[2]];
+    if (this.arcade.visible) this.arcadeScreen.emissive = 0.6 + 0.4 * Math.sin(this.t * 6);
     this.updateCamera(dt);
   }
 
@@ -448,14 +570,40 @@ export class World {
     this.bBody.pos = [0, !moving && ["cantina_band", "hang_out"].includes(st.action) ? Math.abs(Math.sin(t * 4)) * 0.12 : 0, 0];
   }
 
+  motion(m, t, b, la, ra) {
+    const S = Math.sin;
+    switch (m) {
+      case "bounce": b.pos = [b.pos[0], Math.abs(S(t * 5)) * 0.25, b.pos[2]]; break;
+      case "hop": b.pos = [b.pos[0], Math.max(0, S(t * 3.5)) * 0.6, b.pos[2]]; break;
+      case "spin": b.rot = [b.rot[0], t * 4, b.rot[2]]; break;
+      case "wiggle": b.rot = [b.rot[0], b.rot[1], S(t * 9) * 0.25]; break;
+      case "nod": b.rot = [S(t * 4) * 0.25, b.rot[1], b.rot[2]]; break;
+      case "shake": b.rot = [b.rot[0], S(t * 10) * 0.3, b.rot[2]]; break;
+      case "droop": b.rot = [0.45, b.rot[1], b.rot[2]]; b.pos = [b.pos[0], -0.25, b.pos[2]]; this.zDish.rot = [0.5, 0, 0]; break;
+      case "dance": b.pos = [S(t * 3) * 0.2, Math.abs(S(t * 6)) * 0.2, b.pos[2]]; b.rot = [b.rot[0], S(t * 3) * 0.6, S(t * 6) * 0.2]; la.rot = [S(t * 6) * 1.2, 0, 0]; ra.rot = [-S(t * 6) * 1.2, 0, 0]; break;
+      case "look_up": b.rot = [-0.45, b.rot[1], b.rot[2]]; this.zDish.rot = [-0.7, t * 0.5, 0]; break;
+      case "wave": ra.rot = [-1.4 + S(t * 8) * 0.4, 0, 0]; break;
+      case "pace": b.pos = [S(t * 0.8) * 1.2, b.pos[1], b.pos[2]]; b.rot = [b.rot[0], Math.cos(t * 0.8) > 0 ? Math.PI / 2 : -Math.PI / 2, b.rot[2]]; break;
+      case "zoom": b.pos = [Math.cos(t * 3) * 1.5, b.pos[1] + 0.2, S(t * 3) * 1.5]; b.rot = [0.2, t * 3 + Math.PI / 2, -0.3]; break;
+      case "tremble": b.pos = [S(t * 60) * 0.03, b.pos[1], Math.cos(t * 55) * 0.03]; break;
+      case "float_high": b.pos = [b.pos[0], 1.2 + S(t * 1.5) * 0.15, b.pos[2]]; break;
+      case "bow": b.rot = [0.3 + Math.max(0, S(t * 1.5)) * 0.5, b.rot[1], b.rot[2]]; break;
+      case "lean_in": b.rot = [0.3, b.rot[1], b.rot[2]]; b.pos = [b.pos[0], b.pos[1], 0.25]; break;
+      case "celebrate": b.pos = [b.pos[0], Math.abs(S(t * 7)) * 0.4, b.pos[2]]; b.rot = [b.rot[0], t * 5, b.rot[2]]; la.rot = [-1.5, 0, 0]; ra.rot = [-1.5, 0, 0]; break;
+    }
+  }
+
   updateCamera(dt) {
     const zp = this.zeebPos, gy = groundHeight(zp.x, zp.z);
     if (this.mode === "fixed") return;
     if (this.mode === "follow") {
       this.orbit.yaw += dt * 0.03; // slow drift
       const o = this.orbit;
-      const target = [zp.x, gy + 1.4, zp.z];
-      const eye = [zp.x + Math.sin(o.yaw) * Math.cos(o.pitch) * o.dist, gy + 1.4 + Math.sin(o.pitch) * o.dist, zp.z + Math.cos(o.yaw) * Math.cos(o.pitch) * o.dist];
+      const fl = this.flight ? this.flyer.pos : null;
+      const target = fl ? [fl[0], fl[1], fl[2]] : [zp.x, gy + 1.4, zp.z];
+      const c = fl ? { x: fl[0], y: fl[1] - 1.4, z: fl[2] } : { x: zp.x, y: gy, z: zp.z };
+      const dist = fl ? Math.max(o.dist, 14) : o.dist;
+      const eye = [c.x + Math.sin(o.yaw) * Math.cos(o.pitch) * dist, c.y + 1.4 + Math.sin(o.pitch) * dist, c.z + Math.cos(o.yaw) * Math.cos(o.pitch) * dist];
       eye[1] = Math.max(eye[1], groundHeight(eye[0], eye[2]) + 0.8);
       const k = Math.min(1, dt * 3);
       this.cam.eye = this.cam.eye.map((v, i) => lerp(v, eye[i], k));
@@ -478,6 +626,13 @@ export class World {
     this.animate(dt);
     this.r.render(this.root, this.cam, env);
     // labels
+    for (const l of this.buildLabels) {
+      const p = this.r.project(l.pos);
+      const d = Math.hypot(l.pos[0] - this.cam.eye[0], l.pos[2] - this.cam.eye[2]);
+      if (!p || d > 28) { l.el.style.display = "none"; continue; }
+      l.el.style.display = "";
+      l.el.style.transform = `translate(${p.x}px, ${p.y}px) translate(-50%, -100%)`;
+    }
     for (const l of this.placeLabels) {
       const p = this.r.project(l.pos);
       const d = Math.hypot(l.pos[0] - this.cam.eye[0], l.pos[2] - this.cam.eye[2]);

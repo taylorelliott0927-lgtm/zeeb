@@ -1,7 +1,9 @@
 name: Zeeb heartbeat
 
-# Wakes Zeeb up every few minutes so he can decide what to do next.
-# Every 10 minutes keeps him inside Gemini's free daily limit. GitHub often runs it a little late. That's fine.
+# GitHub only starts scheduled jobs about once an hour on free accounts, however often you ask.
+# So each run stays alive for about an hour and gives Zeeb a heartbeat every 10 minutes inside it.
+# (Set a repository variable HEARTBEAT_MINUTES to change the gap. Shorter uses Gemini's free limit faster.)
+# While your PC brain is running, each heartbeat here just checks in and skips.
 on:
   schedule:
     - cron: "*/10 * * * *"
@@ -9,7 +11,7 @@ on:
 
 permissions:
   contents: write   # save his state back into the repo
-  issues: write     # read and answer visitor notes
+  issues: write     # read and answer visitor notes and letters
 
 concurrency:
   group: zeeb-heartbeat
@@ -18,24 +20,40 @@ concurrency:
 jobs:
   tick:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 70
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: One heartbeat
+      - name: Heartbeats for the next hour
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node brain/tick.js
-      - name: Save his state
+          STRIPE_KEY: ${{ secrets.STRIPE_KEY }}
+          SHOP_CURRENCY: ${{ vars.SHOP_CURRENCY }}
+          GAP: ${{ vars.HEARTBEAT_MINUTES || '10' }}
         run: |
           git config user.name "zeeb-bot"
           git config user.email "zeeb-bot@users.noreply.github.com"
-          git add data
-          if git diff --cached --quiet; then echo "nothing changed"; exit 0; fi
-          git commit -m "zeeb: heartbeat" --quiet
-          for i in 1 2 3; do git pull --rebase --quiet && git push --quiet && exit 0; sleep 5; done
-          exit 1
+          end=$(( $(date +%s) + 56 * 60 ))
+          while :; do
+            started=$(date +%s)
+            # Start from exactly what's on GitHub (your PC may have saved in the meantime).
+            git fetch --quiet origin main && git reset --hard --quiet origin/main
+            node brain/tick.js || echo "This heartbeat had a problem; trying again next time."
+            git add data
+            if ! git diff --cached --quiet; then
+              git commit -m "zeeb: heartbeat" --quiet
+              if git pull --rebase --quiet; then
+                git push --quiet || echo "Couldn't save this heartbeat."
+              else
+                git rebase --abort 2>/dev/null || true
+                echo "Your PC saved a heartbeat at the same time, so this one was skipped."
+              fi
+            fi
+            next=$(( started + GAP * 60 ))
+            if [ "$next" -ge "$end" ]; then break; fi
+            sleep $(( next - $(date +%s) > 0 ? next - $(date +%s) : 0 ))
+          done

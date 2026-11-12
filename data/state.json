@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794527219886,
+  "lastTick": 1794527520255,
   "asleep": false,
   "place": "market",
   "action": "scavenge",
-  "doing": "digging through the junk piles",
+  "doing": "still digging through the junk piles",
   "actionStartedAt": "2026-11-12T23:41:59.838Z",
   "actionMinutes": 60,
-  "thought": "The thrusters are working well, but the ducts need more work. Hopefully, I can find something useful.",
-  "feeling": "Curious and hopeful.",
-  "say": "I might find something here that can help the Little Dart.",
-  "mood": 0.148,
-  "energy": -0.512,
+  "thought": "I've been working on the Little Dart for days, and it's finally starting to take shape. I need to find something to seal the ducts better.",
+  "feeling": "A little restless, but excited to keep working.",
+  "say": "I should find something useful for the ducts, that's the next step.",
+  "mood": 0.233,
+  "energy": -0.567,
   "needs": {
-    "charge": 0.847,
-    "oil": 0.384,
-    "curiosity": 0.515,
-    "company": 0.054,
-    "craft": 0.066
+    "charge": 0.87,
+    "oil": 0.434,
+    "curiosity": 0.205,
+    "company": 0.081,
+    "craft": 0.099
   },
   "credits": 4,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "I'll spend the next hour searching the junk market.",
+      "at": "2026-11-12T23:52:00.255Z"
+    },
     {
       "id": "scavenge",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "chat_patrons",
       "detail": "",
       "at": "2026-11-12T22:28:01.440Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "welding",
-      "at": "2026-11-12T22:23:01.320Z"
     }
   ],
   "wants": [
+    {
+      "id": "w7",
+      "text": "To find a way to seal the ducts better so the Little Dart can be fully built.",
+      "at": "2026-11-12T23:52:00.255Z"
+    },
     {
       "id": "w6",
       "text": "Find a way to seal the ducts better so the Little Dart can be fully built.",
@@ -97,11 +102,6 @@
       "id": "w4",
       "text": "To finish the Little Dart, so I can test it out; to have the Little Dart ready for a test flight",
       "at": "2026-11-12T23:16:59.862Z"
-    },
-    {
-      "id": "w3",
-      "text": "To finish the Little Dart, so I can test it out",
-      "at": "2026-11-12T23:15:51.274Z"
     }
   ],
   "promises": [],
@@ -151,7 +151,7 @@
     }
   ],
   "seenCreatorMsgs": [],
-  "lettersCheckedAt": "2026-11-12T23:46:59.886Z",
+  "lettersCheckedAt": "2026-11-12T23:52:00.255Z",
   "weather": {
     "kind": "clear",
     "temp": 24,
@@ -163,12 +163,12 @@
   "sleepDay": 4,
   "lastReflectDay": 4,
   "brain": "your PC (qwen2.5:3b)",
-  "updatedAt": "2026-11-12T23:46:59.886Z",
+  "updatedAt": "2026-11-12T23:52:00.255Z",
   "clock": {
     "day": 5,
-    "time": "10:17",
+    "time": "10:57",
     "hour": 10,
-    "minute": 17
+    "minute": 57
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
@@ -176,13 +176,34 @@
     "action": "scavenge",
     "since": "2026-11-12T23:41:59.838Z"
   },
-  "busyUntil": "2026-11-12T23:49:29.838Z",
-  "busyUntilTown": "10:37",
+  "busyUntil": "2026-11-12T23:59:30.255Z",
+  "busyUntilTown": "11:57",
   "runner": "pc",
   "model": "gemini-3.5-flash",
-  "pcBrainAt": "2026-11-12T23:46:59.886Z",
-  "doingWords": "digging through the junk market",
+  "pcBrainAt": "2026-11-12T23:52:00.255Z",
+  "doingWords": "dig through the junk market, looking for new parts",
   "newsForCreator": "",
   "newsPendingTicks": 0,
-  "lastChatAt": "2026-11-12T23:36:59.824Z"
+  "lastChatAt": "2026-11-12T23:36:59.824Z",
+  "body": [],
+  "pops": {
+    "at": "2026-11-12T23:52:00.255Z",
+    "items": [
+      {
+        "text": "+ a sensor eye with one crack",
+        "kind": "part",
+        "at": "2026-11-12T23:52:00.255Z"
+      },
+      {
+        "text": "+ a scorched heat tile",
+        "kind": "part",
+        "at": "2026-11-12T23:52:00.255Z"
+      },
+      {
+        "text": "+ a perfectly good bolt",
+        "kind": "part",
+        "at": "2026-11-12T23:52:00.255Z"
+      }
+    ]
+  }
 }

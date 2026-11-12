@@ -44,7 +44,7 @@ git("config", "user.email", "zeeb-bot@users.noreply.github.com");
 const exclude = path.join(ROOT, ".git", "info", "exclude");
 try {
   const cur = fs.existsSync(exclude) ? fs.readFileSync(exclude, "utf8") : "";
-  const add = ["pc/settings.env", "pc/zeeb-pc.log", "pc/.lock", "pc/PAUSE"].filter((l) => !cur.includes(l));
+  const add = ["pc/settings.env", "pc/zeeb-pc.log", "pc/.lock", "pc/PAUSE", "pc/chat-pending.json", "pc/chat-processing.json", "pc/chat-history.json"].filter((l) => !cur.includes(l));
   if (add.length) fs.appendFileSync(exclude, "\n" + add.join("\n") + "\n");
 } catch {}
 
@@ -114,8 +114,12 @@ for (;;) {
   bad(`GitHub didn't accept that token (${r ? r.status : "no connection"}). Make sure it's for the ${slug.split("/")[1]} repository with Issues: Read and write.`);
 }
 console.log("  Checking Zeeb can save to GitHub from this PC (a browser window may open to sign in; that's normal)...");
+// Catch up with GitHub first: his GitHub heartbeat may have saved since this folder was downloaded.
+git("fetch", "--quiet", "origin", "main");
+git("reset", "--hard", "--quiet", "origin/main");
 const push = git("push", "--dry-run", "origin", "HEAD:main");
-if (!push.ok) stop(`Saving to GitHub didn't work:\n  ${push.err.split("\n").slice(0, 3).join("\n  ")}\n  Sign in when Git asks you to.`);
+// "rejected" means GitHub accepted the sign-in but someone saved a moment ago: that's fine for this check.
+if (!push.ok && !/rejected|non-fast-forward|fetch first/i.test(push.err)) stop(`Saving to GitHub didn't work:\n  ${push.err.split("\n").slice(0, 3).join("\n  ")}\n  Sign in when Git asks you to.`);
 ok("Saving to GitHub works");
 
 step(6, "Zeeb's shop (optional)");
@@ -141,6 +145,7 @@ saveSettings({
   PC_INTERVAL_MINUTES: old.PC_INTERVAL_MINUTES || 5,
   GAME_GPU_PERCENT: old.GAME_GPU_PERCENT || 40,
   GAME_GPU_MEMORY_MB: old.GAME_GPU_MEMORY_MB || 2600,
+  ...(old.CHAT_PIN ? { CHAT_PIN: old.CHAT_PIN } : {}),
   ...(old.GEMINI_API_KEY ? { GEMINI_API_KEY: old.GEMINI_API_KEY } : {}),
   ...(stripeKey ? { STRIPE_KEY: stripeKey } : {}),
   SHOP_CURRENCY: shopCurrency,

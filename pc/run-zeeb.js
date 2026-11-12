@@ -3,8 +3,9 @@
 // Started by "Start Zeeb.bat" (and automatically at Windows start-up if you chose that in setup).
 import fs from "node:fs";
 import path from "node:path";
-import { spawnSync } from "node:child_process";
-import { PC_DIR, ROOT, git, gpuBusy, loadSettings, ollamaInfo } from "./common.js";
+import { spawn } from "node:child_process";
+import crypto from "node:crypto";
+import { PC_DIR, ROOT, git, gpuBusy, loadSettings, ollamaInfo, saveSettings } from "./common.js";
 
 const S = loadSettings();
 const OLLAMA_URL = S.OLLAMA_URL || "http://127.0.0.1:11434";
@@ -57,14 +58,19 @@ async function heartbeat() {
   if (!reset.ok) return log(`Couldn't update the folder: ${reset.err}`);
 
   const t0 = Date.now();
-  const r = spawnSync(process.execPath, [path.join(ROOT, "brain", "tick.js")], {
-    cwd: ROOT,
-    encoding: "utf8",
-    windowsHide: true,
-    timeout: 8 * 60000,
+  // Hand any live chats since last time to this heartbeat (moved aside so new chats aren't lost meanwhile).
+  const CHAT_PENDING = path.join(PC_DIR, "chat-pending.json"), CHAT_NOW = path.join(PC_DIR, "chat-processing.json");
+  let chatFile = "";
+  try {
+    if (fs.existsSync(CHAT_NOW)) chatFile = CHAT_NOW; // left over from a heartbeat that failed
+    else if (fs.existsSync(CHAT_PENDING)) { fs.renameSync(CHAT_PENDING, CHAT_NOW); chatFile = CHAT_NOW; }
+  } catch {}
+  // Run asynchronously so the live chat keeps answering while he thinks.
+  const r = await runTick({
     env: {
       ...process.env,
       ZEEB_RUNNER: "pc",
+      ...(chatFile ? { ZEEB_CHAT_FILE: chatFile } : {}),
       OLLAMA_URL,
       OLLAMA_MODEL: MODEL,
       GITHUB_TOKEN: S.GITHUB_TOKEN,
@@ -76,6 +82,7 @@ async function heartbeat() {
     },
   });
   const said = (r.stdout || "").trim().split("\n").filter(Boolean);
+  if (r.status === 0 && chatFile) { try { fs.unlinkSync(chatFile); } catch {} }
   if (r.status !== 0) return log(`Heartbeat had a problem:\n${(r.stderr || r.error?.message || "").slice(0, 800)}`);
   log(`${said[said.length - 1] || "heartbeat done"}  (${Math.round((Date.now() - t0) / 1000)}s)`);
 
@@ -90,6 +97,42 @@ async function heartbeat() {
   }
 }
 
+// Live chat (pc/chat.js). Needs Ollama; the PIN keeps other people on your Wi-Fi out.
+async function startChatServer() {
+  if (process.env.ZEEB_NO_CHAT === "1") return;
+  let pin = S.CHAT_PIN;
+  if (!pin) {
+    pin = String(crypto.randomInt(100000, 1000000));
+    saveSettings({ ...S, CHAT_PIN: pin });
+    S.CHAT_PIN = pin;
+  }
+  const port = Number(S.CHAT_PORT || 8787);
+  try {
+    process.env.OLLAMA_URL = OLLAMA_URL;
+    process.env.OLLAMA_MODEL = MODEL;
+    if (S.GEMINI_API_KEY) process.env.GEMINI_API_KEY = S.GEMINI_API_KEY;
+    const { startChat, lanAddresses } = await import("./chat.js");
+    await startChat({ port, pin, log });
+    log(`Chat with Zeeb on this PC: http://localhost:${port}`);
+    const ips = lanAddresses();
+    if (ips.length) log(`On your phone (same home Wi-Fi): ${ips.map((ip) => `http://${ip}:${port}`).join("  or  ")}   PIN: ${pin}`);
+  } catch (e) {
+    log(`Live chat couldn't start (${e.code === "EADDRINUSE" ? `port ${port} is already in use` : e.message}). Zeeb still runs normally.`);
+  }
+}
+
+function runTick({ env }) {
+  return new Promise((resolve) => {
+    const child = spawn(process.execPath, [path.join(ROOT, "brain", "tick.js")], { cwd: ROOT, env, windowsHide: true });
+    let stdout = "", stderr = "";
+    child.stdout.on("data", (d) => (stdout += d));
+    child.stderr.on("data", (d) => (stderr += d));
+    const timer = setTimeout(() => child.kill(), 8 * 60000);
+    child.on("error", (error) => { clearTimeout(timer); resolve({ status: 1, stdout, stderr, error }); });
+    child.on("close", (status) => { clearTimeout(timer); resolve({ status, stdout, stderr }); });
+  });
+}
+
 async function main() {
   process.chdir(ROOT);
   if (!takeLock()) {
@@ -97,6 +140,7 @@ async function main() {
     return;
   }
   log(`Zeeb's PC brain started. Model: ${MODEL}. Heartbeat every ${EVERY_MIN} minutes. Leave this window open (minimised is fine).`);
+  await startChatServer();
   if (process.env.ZEEB_PC_ONCE === "1") { await heartbeat(); try { fs.unlinkSync(LOCK); } catch {} return; } // for testing
   for (;;) {
     const start = Date.now();

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794521581397,
+  "lastTick": 1794521881467,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-12T22:13:01.397Z",
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-12T22:18:01.467Z",
   "actionMinutes": 60,
-  "thought": "the engine seems to be humming better with the recent tuning. Let's see if it runs smoothly now.",
-  "feeling": "relieved and curious",
-  "say": "The thruster runs smoothly now. Time to check the other side.",
-  "mood": 0.052,
-  "energy": 0.567,
+  "thought": "the Little Dart is ready for another tune, maybe the left thruster this time",
+  "feeling": "eager to tinker again",
+  "say": "Time for a quick refuel. The thrusters need a bit of attention.",
+  "mood": 0.039,
+  "energy": 0.559,
   "needs": {
-    "charge": 0.143,
-    "oil": 0.122,
-    "curiosity": 0.908,
-    "company": 0.268,
-    "craft": 0.207
+    "charge": 0.166,
+    "oil": 0,
+    "curiosity": 0.948,
+    "company": 0.295,
+    "craft": 0.24
   },
-  "credits": 2,
+  "credits": 1,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-12T22:18:01.467Z"
+    },
     {
       "id": "work_dart",
       "detail": "tune the right thruster",
@@ -75,11 +80,6 @@
       "id": "scavenge",
       "detail": "",
       "at": "2026-11-12T15:42:21.539Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-12T14:41:29.033Z"
     }
   ],
   "wants": [
@@ -96,7 +96,7 @@
   "letters": [],
   "creatorThread": [],
   "seenCreatorMsgs": [],
-  "lettersCheckedAt": "2026-11-12T22:13:01.397Z",
+  "lettersCheckedAt": "2026-11-12T22:18:01.467Z",
   "weather": {
     "kind": "hazy",
     "temp": 24,
@@ -108,22 +108,23 @@
   "sleepDay": 3,
   "lastReflectDay": 3,
   "brain": "your PC (qwen2.5:3b)",
-  "updatedAt": "2026-11-12T22:13:01.397Z",
+  "updatedAt": "2026-11-12T22:18:01.467Z",
   "clock": {
     "day": 4,
-    "time": "21:45",
-    "hour": 21,
-    "minute": 45
+    "time": "22:25",
+    "hour": 22,
+    "minute": 25
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-12T22:13:01.397Z"
+    "action": "drink_oil",
+    "since": "2026-11-12T22:18:01.467Z"
   },
-  "busyUntil": "2026-11-12T22:20:31.397Z",
-  "busyUntilTown": "22:45",
+  "busyUntil": "2026-11-12T22:25:31.467Z",
+  "busyUntilTown": "23:25",
   "runner": "pc",
   "model": "gemini-3.5-flash",
-  "pcBrainAt": "2026-11-12T22:13:01.397Z"
+  "pcBrainAt": "2026-11-12T22:18:01.467Z",
+  "doingWords": "take a drink of oil"
 }

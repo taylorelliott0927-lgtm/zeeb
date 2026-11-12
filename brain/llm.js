@@ -7,7 +7,6 @@ import { fetchWithTimeout, log } from "./util.js";
 const KEY = process.env.GEMINI_API_KEY || "";
 const BASE = process.env.GEMINI_BASE || "https://generativelanguage.googleapis.com/v1beta";
 let model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
-let discovered = false;
 let geminiOut = false; // hit the free limit during this heartbeat
 
 const OLLAMA_URL = (process.env.OLLAMA_URL || "").replace(/\/$/, "");
@@ -24,25 +23,29 @@ export const currentModel = () => model;
 export const hasBrain = () => !mock() && Boolean(OLLAMA_URL || KEY);
 export const modelName = () => lastBrain || (hasBrain() ? (OLLAMA_URL ? `your PC (${OLLAMA_MODEL})` : model) : "rules (no AI key)");
 
-// Model names change over time. If ours disappears, pick the newest free "flash" model.
-async function discoverModel() {
-  discovered = true;
-  const res = await fetchWithTimeout(`${BASE}/models?pageSize=200`, { headers: { "x-goog-api-key": KEY } });
-  if (!res.ok) return false;
-  const list = (await res.json()).models || [];
-  const ok = list
-    .filter((m) => (m.supportedGenerationMethods || []).includes("generateContent"))
-    .map((m) => m.name.replace(/^models\//, ""))
-    .filter((n) => /^gemini-[\d.]+-flash(-lite)?$/.test(n));
-  ok.sort((a, b) => {
-    const va = parseFloat(a.split("-")[1]), vb = parseFloat(b.split("-")[1]);
-    if (vb !== va) return vb - va;
-    return a.includes("lite") - b.includes("lite");
-  });
-  if (!ok.length) return false;
-  log(`model ${model} unavailable, switching to ${ok[0]}`);
-  model = ok[0];
-  return true;
+// Model names change over time, and a model can be busy or out of free requests.
+// We keep a short list of free "flash" models (newest first) and move down it when one won't answer.
+let candidates = null;
+async function modelList() {
+  if (candidates) return candidates;
+  candidates = [];
+  try {
+    const res = await fetchWithTimeout(`${BASE}/models?pageSize=200`, { headers: { "x-goog-api-key": KEY } });
+    if (res.ok) {
+      const list = (await res.json()).models || [];
+      const ok = list
+        .filter((m) => (m.supportedGenerationMethods || []).includes("generateContent"))
+        .map((m) => m.name.replace(/^models\//, ""))
+        .filter((n) => /^gemini-[\d.]+-flash(-lite)?$/.test(n));
+      ok.sort((a, b) => {
+        const va = parseFloat(a.split("-")[1]), vb = parseFloat(b.split("-")[1]);
+        if (vb !== va) return vb - va;
+        return a.includes("lite") - b.includes("lite");
+      });
+      candidates = ok;
+    }
+  } catch {}
+  return candidates;
 }
 
 function parseJSON(text) {
@@ -84,36 +87,55 @@ async function askOllama(system, user, temperature) {
   return null;
 }
 
+async function callGemini(m, body) {
+  const res = await fetchWithTimeout(
+    `${BASE}/models/${m}:generateContent`,
+    { method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": KEY }, body: JSON.stringify(body) },
+    45000
+  );
+  if (!res.ok) return { status: res.status, error: (await res.text()).slice(0, 160) };
+  const data = await res.json();
+  return { text: data?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("") || "" };
+}
+
 async function askGemini(system, user, temperature) {
   const body = {
     systemInstruction: { parts: [{ text: system }] },
     contents: [{ role: "user", parts: [{ text: user }] }],
     generationConfig: { responseMimeType: "application/json", temperature, maxOutputTokens: 4096 },
   };
-  for (let attempt = 0; attempt < 3; attempt++) {
+  const tried = new Set();
+  let busyRetry = false;
+  for (let step = 0; step < 6; step++) {
+    if (tried.has(model)) {
+      // Current model already failed this time: move to the next free model on the list.
+      const next = (await modelList()).find((m) => !tried.has(m));
+      if (!next) break;
+      log(`trying another Gemini model: ${next}`);
+      model = next;
+    }
     try {
-      const res = await fetchWithTimeout(
-        `${BASE}/models/${model}:generateContent`,
-        { method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": KEY }, body: JSON.stringify(body) },
-        45000
-      );
-      if (res.status === 404 && !discovered && (await discoverModel())) continue;
-      if (res.status === 429) {
-        log("Gemini free limit reached for now");
-        geminiOut = true;
-        return null;
+      const r = await callGemini(model, body);
+      if (r.text !== undefined) {
+        const out = parseJSON(r.text);
+        lastBrain = model;
+        return out;
       }
-      if (!res.ok) throw new Error(`Gemini ${res.status}: ${(await res.text()).slice(0, 200)}`);
-      const data = await res.json();
-      const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("") || "";
-      const out = parseJSON(text);
-      lastBrain = model;
-      return out;
+      if (r.status === 404) { log(`model ${model} is gone`); tried.add(model); continue; }
+      if (r.status === 429) { log(`${model} is out of free requests for now`); tried.add(model); continue; }
+      if (r.status === 503 || r.status === 500) {
+        // Busy: one quick retry, then try a different model.
+        if (!busyRetry) { busyRetry = true; log(`${model} is busy, retrying once`); await new Promise((x) => setTimeout(x, 2500)); continue; }
+        log(`${model} is still busy`); tried.add(model); busyRetry = false; continue;
+      }
+      log(`Gemini ${r.status}: ${r.error}`);
+      tried.add(model);
     } catch (e) {
-      log(`Gemini attempt ${attempt + 1} failed:`, e.message);
-      await new Promise((r) => setTimeout(r, 1500 * (attempt + 1)));
+      log(`Gemini call failed: ${e.message}`);
+      tried.add(model);
     }
   }
+  geminiOut = true; // nothing answered this heartbeat; don't keep hammering
   return null;
 }
 

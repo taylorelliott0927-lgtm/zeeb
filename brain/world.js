@@ -78,6 +78,11 @@ export const ACTIONS = {
     effects: { curiosity: -0.3 }, mood: 0.0, internet: "news",
     about: "read today's real space news and tech headlines off the Wire",
   },
+  follow_link: {
+    place: "tower", doing: "following a link across the Wire", minutes: 30, internet: "page", needsLinks: true,
+    effects: { curiosity: -0.4 }, mood: 0.02,
+    about: "open one of the links you saw last time on the Wire, or any web address you know, and read it. Put the link's number or the address in 'detail'",
+  },
   send_signal: {
     place: "tower", doing: "sending a signal into deep space", minutes: 25, hours: [18, 4],
     effects: { company: -0.2, curiosity: -0.1 }, mood: 0.03,

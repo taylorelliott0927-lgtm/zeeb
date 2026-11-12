@@ -90,6 +90,7 @@ function availableActions(notes) {
     if (blockedRecent.includes(id)) return false;
     if (!inHours(a.hours, clock.hour)) return false;
     if (a.needsNotes && !notes.length) return false;
+    if (a.needsLinks && !(works.lastLinks || []).length) return false;
     if (a.needsShop && (a.needsShop === "open") !== Boolean(shop.open)) return false;
     if (a.needsFriend && a.needsFriend !== friend.stage) return false;
     if (a.friendOnly) return false;
@@ -259,10 +260,19 @@ async function doAction(id, d, notes) {
       break;
     }
     case "browse_wire":
+    case "follow_link":
     case "read_news": {
-      const found = await useWire(a.internet, detail);
+      let target = detail;
+      if (id === "follow_link") {
+        const n = parseInt(String(detail).match(/\d+/)?.[0] || "", 10);
+        const fromList = !/^https?:/i.test(detail) && n >= 1 ? (works.lastLinks || [])[n - 1] : null;
+        target = fromList?.url || (String(detail).match(/https?:\/\/\S+/) || [])[0] || (works.lastLinks || [])[0]?.url || "";
+      }
+      const found = await useWire(a.internet, target);
+      if (!found.failed && found.links?.length) works.lastLinks = found.links.slice(0, 12);
+      else if (found.kind === "news" && !found.failed) works.lastLinks = (found.items || []).filter((i) => i.url).map((i) => ({ title: i.title, url: i.url }));
       const r = (await reactToWire({ character, works }, found)) || ruleReact(found);
-      if (found.failed) { ok = false; feed.entries[0].ok = false; post("noticed", "The Wire was down. Nothing loaded."); }
+      if (found.failed) { ok = false; feed.entries[0].ok = false; post("noticed", found.error ? `Couldn't read it: ${found.error}.` : "The Wire was down. Nothing loaded."); }
       const title = found.kind === "news" ? (r.picked || found.items?.[0]?.title || "the news") : found.title;
       const item = found.kind === "news" ? (found.items.find((i) => i.title === r.picked) || found.items?.[0]) : found;
       if (!found.failed) {

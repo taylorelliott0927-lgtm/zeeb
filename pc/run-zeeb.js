@@ -82,19 +82,24 @@ async function heartbeat() {
     },
   });
   const said = (r.stdout || "").trim().split("\n").filter(Boolean);
-  if (r.status === 0 && chatFile) { try { fs.unlinkSync(chatFile); } catch {} }
   if (r.status !== 0) return log(`Heartbeat had a problem:\n${(r.stderr || r.error?.message || "").slice(0, 800)}`);
   log(`${said[said.length - 1] || "heartbeat done"}  (${Math.round((Date.now() - t0) / 1000)}s)`);
 
   git("add", "data");
-  if (git("diff", "--cached", "--quiet").ok) return;
+  const doneWithChat = () => { if (chatFile) { try { fs.unlinkSync(chatFile); } catch {} } };
+  if (git("diff", "--cached", "--quiet").ok) return doneWithChat();
   git("commit", "--quiet", "-m", "zeeb: heartbeat (PC brain)");
-  const p = git("push", "--quiet", "origin", "HEAD:main");
+  let p = git("push", "--quiet", "origin", "HEAD:main");
   if (!p.ok) {
-    log(`Couldn't save to GitHub this time (${p.err.split("\n")[0]}). Skipping this heartbeat.`);
-    git("fetch", "--quiet", "origin", "main");
-    git("reset", "--hard", "--quiet", "origin/main");
+    // Usually someone just uploaded code files to GitHub. His data doesn't clash with those, so slot it in on top.
+    const pulled = git("pull", "--rebase", "--quiet", "origin", "main");
+    if (pulled.ok) p = git("push", "--quiet", "origin", "HEAD:main");
+    else git("rebase", "--abort");
   }
+  if (p.ok) return doneWithChat();
+  log(`Couldn't save to GitHub this time (${p.err.split("\n")[0]}). Will try again next heartbeat${chatFile ? "; your chat is kept for then" : ""}.`);
+  git("fetch", "--quiet", "origin", "main");
+  git("reset", "--hard", "--quiet", "origin/main");
 }
 
 // Live chat (pc/chat.js). Needs Ollama; the PIN keeps other people on your Wi-Fi out.

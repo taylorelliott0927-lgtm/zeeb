@@ -66,7 +66,19 @@ export function gpuBusy(utilLimit = 40, memLimitMb = 2600) {
     samples.push({ util, mem });
     if (i < 2) Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 700);
   }
+  // Zeeb's own AI (Ollama) also sits on the graphics card, e.g. right after a chat.
+  // Don't mistake that for a game: leave its memory out of the count.
+  let ownMem = 0;
+  const apps = run("nvidia-smi", ["--query-compute-apps=process_name,used_memory", "--format=csv,noheader,nounits"]);
+  if (apps.ok) {
+    for (const line of apps.out.split("\n")) {
+      const [name, used] = line.split(",").map((x) => x.trim());
+      if (/ollama|llama/i.test(name || "")) ownMem += Number(used) || 0;
+    }
+  }
   const util = Math.min(...samples.map((s) => s.util));
-  const mem = Math.min(...samples.map((s) => s.mem));
-  return { busy: util >= utilLimit || mem >= memLimitMb, known: true, util, mem };
+  const mem = Math.max(0, Math.min(...samples.map((s) => s.mem)) - ownMem);
+  // If Zeeb's AI is what's loaded, the GPU % is likely his own thinking too.
+  const busy = mem >= memLimitMb || (util >= utilLimit && !ownMem);
+  return { busy, known: true, util, mem, ownMem };
 }

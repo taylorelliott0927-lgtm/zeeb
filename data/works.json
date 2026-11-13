@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk IV",
-    "progress": 69,
-    "version": 20,
-    "lastChange": "tinkered with it (used Dibs, a sensor eye with one crack)",
+    "progress": 77,
+    "version": 21,
+    "lastChange": "I'm going to try a few more adjustments to the duct seal, make sure it's snug and strong, no loose parts allowed. (used Nim, a strip of hull plating)",
     "log": [
+      {
+        "version": 21,
+        "change": "I'm going to try a few more adjustments to the duct seal, make sure it's snug and strong, no loose parts allowed. (used Nim, a strip of hull plating)",
+        "progress": 77,
+        "at": "2026-11-13T16:02:32.755Z"
+      },
       {
         "version": 20,
         "change": "tinkered with it (used Dibs, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "realize the new hose might need to be slightly adjusted to fit the duct seal perfectly, and decide to test it by running a small vacuum test to check for leaks",
         "progress": 48,
         "at": "2026-11-13T10:31:38.785Z"
-      },
-      {
-        "version": 11,
-        "change": "The cracks in the exhaust ducts have shifted a little, so I need to realign them with the new hose. I'll check the integrity of the joints and seal.",
-        "progress": 44,
-        "at": "2026-11-13T10:19:38.880Z"
       }
     ],
     "launched": [
@@ -419,7 +419,7 @@
         }
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Brakk",
@@ -430,6 +430,11 @@
         "name": "Dibs",
         "what": "a sensor eye with one crack",
         "version": 20
+      },
+      {
+        "name": "Nim",
+        "what": "a strip of hull plating",
+        "version": 21
       }
     ],
     "design": {
@@ -634,13 +639,7 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Nim",
-      "what": "a strip of hull plating",
-      "at": "2026-11-13T15:47:32.726Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Amazon.ca : high temperature wire",

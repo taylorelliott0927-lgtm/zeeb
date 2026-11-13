@@ -139,3 +139,10 @@ h1 { margin: 0; font-size: 20px; letter-spacing: 0.02em; }
 .bubble.event::after { border-top-color: #2a2433; }
 .chip.good-part { color: #ffd34d; background: #3a2f1a; }
 .good-part-text { color: #ffd34d; }
+.thread { max-height: 260px; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; padding: 8px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; }
+.msg { max-width: 88%; padding: 6px 10px; border-radius: 12px; font-size: 13.5px; }
+.msg p { margin: 2px 0; }
+.msg .title { font-size: 12px; font-weight: 650; }
+.msg .meta { font-size: 10.5px; }
+.msg.from-zeeb { align-self: flex-start; background: #2f2838; border-bottom-left-radius: 4px; }
+.msg.from-creator { align-self: flex-end; background: #3a2a22; border-bottom-right-radius: 4px; }

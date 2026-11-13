@@ -1,4 +1,4 @@
-import { World } from "./world3d.js";
+import { World } from "./world3d.js?v=17";
 
 // ---------- where Zeeb's data lives ----------
 // On GitHub Pages (you.github.io/repo) we read the live files straight from the repo,
@@ -245,16 +245,20 @@ function renderMind(s, mem) {
   if (!s.promises?.length) pr.append(el("li", "muted", "none open"));
   box.append(pr);
   box.append(el("h4", null, "Letters with his creator"));
-  const th = [...(s.creatorThread || [])].reverse().slice(0, 12);
+  const th = [...(s.creatorThread || [])].slice(-40);
   if (!th.length) box.append(el("p", "muted", "He hasn't written to his creator yet."));
+  // A small scrolling chat box, oldest at the top, newest at the bottom.
+  const scroller = el("div", "thread");
+  if (th.length) box.append(scroller);
   for (const m of th) {
-    const row = el("div", "entry");
+    const row = el("div", `msg ${m.from === "zeeb" ? "from-zeeb" : "from-creator"}`);
     const who = el("div", "title");
     if (m.url) { const a = el("a", null, m.from === "zeeb" ? `Zeeb${m.subject ? `: ${m.subject}` : ""}` : "His creator"); a.href = m.url; a.target = "_blank"; a.rel = "noopener"; who.append(a); }
     else who.textContent = m.from === "zeeb" ? `Zeeb${m.subject ? `: ${m.subject}` : ""}` : "His creator";
-    row.append(who, el("p", null, m.text.length > 400 ? m.text.slice(0, 400) + "..." : m.text), el("div", "meta muted", ago(m.at)));
-    box.append(row);
+    row.append(who, el("p", null, m.text.length > 400 ? m.text.slice(0, 400) + "..." : m.text), el("div", "meta muted", `${m.chat ? "live chat · " : ""}${ago(m.at)}`));
+    scroller.append(row);
   }
+  if (th.length) requestAnimationFrame(() => { scroller.scrollTop = scroller.scrollHeight; });
   if (mind_interests?.topics?.length) {
     box.append(el("h4", null, "Interests"));
     const ul = el("ul", "list");

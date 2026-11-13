@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794551860225,
-  "asleep": true,
-  "place": "hangar",
-  "action": "sleep",
-  "doing": "asleep in the charging dock",
-  "actionStartedAt": "2026-11-13T06:37:40.225Z",
+  "lastTick": 1794552040219,
+  "asleep": false,
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-13T06:40:40.219Z",
   "actionMinutes": 60,
-  "thought": "(dreaming) I am sailing on a sleek ship, the Little Dart, gliding effortlessly through the cosmos.",
-  "feeling": "energized and focused",
+  "thought": "I've been thinking about the duct seal again. Maybe this time I'll find something useful.",
+  "feeling": "curious and hopeful",
   "say": "",
-  "mood": 0.308,
-  "energy": -0.579,
+  "mood": 0.328,
+  "energy": -0.498,
   "needs": {
-    "charge": 0.923,
-    "oil": 0.355,
-    "curiosity": 0.024,
-    "company": 0.048,
-    "craft": 0.02
+    "charge": 0.803,
+    "oil": 0.387,
+    "curiosity": 0,
+    "company": 0.05,
+    "craft": 0.023
   },
   "credits": 4,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-13T06:40:40.219Z"
+    },
     {
       "id": "build_thing",
       "detail": "I'm checking the shelves again, looking for heat-resistant tubing. Let's hope so",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "I've been measuring and testing different materials, and the old welding wire se",
       "at": "2026-11-13T05:15:08.866Z"
-    },
-    {
-      "id": "build_thing",
-      "detail": "I've measured and tested several materials for the duct seals, including the old",
-      "at": "2026-11-13T05:06:08.739Z"
     }
   ],
   "wants": [
@@ -410,7 +410,7 @@
     6845853225,
     6845900332
   ],
-  "lettersCheckedAt": "2026-11-13T06:34:40.250Z",
+  "lettersCheckedAt": "2026-11-13T06:40:40.219Z",
   "weather": {
     "kind": "clear",
     "temp": 20,
@@ -422,38 +422,48 @@
   "sleepDay": 7,
   "lastReflectDay": 7,
   "brain": "your PC (qwen2.5:3b)",
-  "updatedAt": "2026-11-13T06:37:40.225Z",
+  "updatedAt": "2026-11-13T06:40:40.219Z",
   "clock": {
     "day": 7,
-    "time": "17:02",
+    "time": "17:26",
     "hour": 17,
-    "minute": 2
+    "minute": 26
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the junk market",
   "streak": {
-    "action": "build_thing",
-    "since": "2026-11-13T06:34:40.250Z"
+    "action": "scavenge",
+    "since": "2026-11-13T06:40:40.219Z"
   },
-  "busyUntil": "2026-11-13T06:42:10.250Z",
-  "busyUntilTown": "17:38",
+  "busyUntil": "2026-11-13T06:48:10.219Z",
+  "busyUntilTown": "18:26",
   "runner": "pc",
   "model": "gemini-3.5-flash-lite",
-  "pcBrainAt": "2026-11-13T06:37:40.225Z",
-  "doingWords": "",
+  "pcBrainAt": "2026-11-13T06:40:40.219Z",
+  "doingWords": "dig through the scrap pile",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-13T05:52:40.344Z",
   "body": [
-    "bounce"
+    "wiggle"
   ],
   "pops": {
-    "at": "2026-11-13T06:01:40.079Z",
+    "at": "2026-11-13T06:40:40.219Z",
     "items": [
+      {
+        "text": "+ a perfectly good bolt",
+        "kind": "part",
+        "at": "2026-11-13T06:40:40.219Z"
+      },
       {
         "text": "+ a dented fuel cell",
         "kind": "part",
-        "at": "2026-11-13T06:01:40.079Z"
+        "at": "2026-11-13T06:40:40.219Z"
+      },
+      {
+        "text": "+ a cracked navigation chip",
+        "kind": "part",
+        "at": "2026-11-13T06:40:40.219Z"
       }
     ]
   },
@@ -464,6 +474,10 @@
     "at": "2026-11-13T06:13:40.103Z"
   },
   "thoughts": [
+    {
+      "text": "I've been thinking about the duct seal again. Maybe this time I'll find something useful.",
+      "at": "2026-11-13T06:40:40.219Z"
+    },
     {
       "text": "I've decided to start the hunt for the perfect heat-resistant material again. Let's see what treasures the market has in store for me.",
       "at": "2026-11-13T06:34:40.250Z"
@@ -483,13 +497,9 @@
     {
       "text": "The old welding wire seems to be working well for the duct seals, but I need to test more to ensure the integrity of the seals.",
       "at": "2026-11-13T06:22:40.206Z"
-    },
-    {
-      "text": "I should check the market to ensure I have all the parts I need for the duct seals. It's better to be prepared than to find out I'm missing something crucial.",
-      "at": "2026-11-13T06:19:40.137Z"
     }
   ],
-  "sayAt": "2026-11-13T06:34:40.250Z",
+  "sayAt": "2026-11-13T06:40:40.219Z",
   "today": {
     "day": 7,
     "counts": {
@@ -499,7 +509,7 @@
       "drink_oil": 1,
       "read_news": 1,
       "browse_wire": 2,
-      "scavenge": 1
+      "scavenge": 2
     }
   },
   "lastDone": {
@@ -507,7 +517,7 @@
     "read_news": "2026-11-13T05:49:40.092Z",
     "drink_oil": "2026-11-13T05:40:13.639Z",
     "follow_link": "2026-11-13T02:50:40.321Z",
-    "scavenge": "2026-11-13T06:01:40.079Z",
+    "scavenge": "2026-11-13T06:40:40.219Z",
     "fix_job": "2026-11-13T03:30:40.622Z",
     "build_thing": "2026-11-13T06:34:40.250Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -515,6 +525,11 @@
     "compose_tune": "2026-11-13T06:25:40.216Z"
   },
   "puzzles": [
+    {
+      "id": "q6",
+      "text": "q8",
+      "at": "2026-11-13T06:40:40.219Z"
+    },
     {
       "id": "q8",
       "text": "q7: find a flexible heat-resistant tubing that will seal the ducts better",
@@ -534,11 +549,6 @@
       "id": "q10",
       "text": "flexible heat-resistant tubing",
       "at": "2026-11-13T06:01:40.079Z"
-    },
-    {
-      "id": "q9",
-      "text": "q6: find a way to seal the ducts better to ensure the Little Dart's reliability and progress",
-      "at": "2026-11-13T05:52:40.344Z"
     }
   ],
   "nextSearch": {
@@ -546,6 +556,13 @@
     "at": "2026-11-13T06:31:40.217Z"
   },
   "said": [
+    {
+      "text": "I've been thinking about the duct seal again. Maybe this time I'll find something useful.",
+      "kind": "think",
+      "at": "2026-11-13T06:40:40.219Z",
+      "town": "day 7 17:26",
+      "place": "the junk market"
+    },
     {
       "text": "(dreaming) I am sailing on a sleek ship, the Little Dart, gliding effortlessly through the cosmos.",
       "kind": "think",

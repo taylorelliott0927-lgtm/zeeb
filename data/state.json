@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794599638553,
-  "asleep": false,
+  "lastTick": 1794599818462,
+  "asleep": true,
   "place": "hangar",
-  "action": "test_flight",
-  "doing": "taking his ship out for a test flight",
-  "actionStartedAt": "2026-11-13T19:53:58.553Z",
+  "action": "sleep",
+  "doing": "asleep in the charging dock",
+  "actionStartedAt": "2026-11-13T19:56:58.462Z",
   "actionMinutes": 60,
-  "thought": "it's been so quiet here at outpost, I'm eager to see what the Little Dart can do",
-  "feeling": "excited and satisfied",
-  "say": "It's done, the first test was a success! Now I must make sure the Little Dart is fully inspected and ready for more flights.",
-  "mood": 0.179,
-  "energy": -0.791,
+  "thought": "the Little Dart could really use a test flight tomorrow. I hope I can find the right cable for it.",
+  "feeling": "restless but content",
+  "say": "",
+  "mood": 0.075,
+  "energy": -0.856,
   "needs": {
-    "charge": 0.815,
+    "charge": 0.829,
     "oil": 1,
-    "curiosity": 0,
-    "company": 0.92,
-    "craft": 0
+    "curiosity": 0.024,
+    "company": 0.936,
+    "craft": 0.02
   },
   "credits": 12,
   "recent": [
+    {
+      "id": "go_to_sleep",
+      "detail": "",
+      "at": "2026-11-13T19:56:58.462Z"
+    },
     {
       "id": "test_flight",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "compose_tune",
       "detail": "",
       "at": "2026-11-13T19:23:58.424Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "I take a break from my design to check my list of found cables, cross out ones I",
-      "at": "2026-11-13T19:20:58.377Z"
     }
   ],
   "wants": [
@@ -463,43 +463,41 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-13T19:53:58.553Z",
+  "lettersCheckedAt": "2026-11-13T19:56:58.462Z",
   "weather": {
     "kind": "hazy",
     "temp": 24,
     "wind": 13,
     "mood": 0,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-13T19:23:58.709Z"
+    "at": "2026-11-13T19:56:58.809Z"
   },
   "sleepDay": 11,
   "lastReflectDay": 11,
   "brain": "your PC (qwen2.5:3b)",
-  "updatedAt": "2026-11-13T19:53:58.553Z",
+  "updatedAt": "2026-11-13T19:56:58.462Z",
   "clock": {
     "day": 12,
-    "time": "03:13",
+    "time": "03:37",
     "hour": 3,
-    "minute": 13
+    "minute": 37
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "test_flight",
-    "since": "2026-11-13T19:53:58.553Z"
+    "action": "go_to_sleep",
+    "since": "2026-11-13T19:56:58.462Z"
   },
-  "busyUntil": "2026-11-13T20:01:28.553Z",
-  "busyUntilTown": "04:13",
+  "busyUntil": "2026-11-13T20:04:28.462Z",
+  "busyUntilTown": "04:37",
   "runner": "pc",
   "model": "gemini-3.5-flash-lite",
-  "pcBrainAt": "2026-11-13T19:53:58.553Z",
-  "doingWords": "take my finished ship out for a test flight",
+  "pcBrainAt": "2026-11-13T19:56:58.462Z",
+  "doingWords": "",
   "newsForCreator": "You took the Little Dart Mk IV on a test flight (smooth). The Little Dart Mk IV did everything I hoped it would. It glided perfectly through the air, barely a ripple of the dunes below. It was exhilarating, and so simple.",
-  "newsPendingTicks": 0,
+  "newsPendingTicks": 1,
   "lastChatAt": "2026-11-13T10:55:38.719Z",
-  "body": [
-    "bounce"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-13T17:45:38.990Z",
     "items": [
@@ -523,6 +521,10 @@
   },
   "thoughts": [
     {
+      "text": "the Little Dart could really use a test flight tomorrow. I hope I can find the right cable for it.",
+      "at": "2026-11-13T19:56:58.462Z"
+    },
+    {
       "text": "it's been so quiet here at outpost, I'm eager to see what the Little Dart can do",
       "at": "2026-11-13T19:53:58.553Z"
     },
@@ -541,20 +543,17 @@
     {
       "text": "The design of the Little Dart is finally taking shape, and I'm excited to see how it will look with all these new additions. The heat-resistant hose could be perfect for insulating the Little Dart's engines. I need to find the perfect flexible heat-resistant cable from McMaster-Carr.",
       "at": "2026-11-13T19:41:58.435Z"
-    },
-    {
-      "text": "The little Dart design is finally taking shape, and I'm excited to see how it will look with all these new additions.",
-      "at": "2026-11-13T19:38:58.445Z"
     }
   ],
-  "sayAt": "2026-11-13T19:53:58.553Z",
+  "sayAt": "2026-11-13T19:56:58.462Z",
   "today": {
     "day": 12,
     "counts": {
       "browse_wire": 3,
       "stargaze": 1,
       "work_dart": 4,
-      "test_flight": 1
+      "test_flight": 1,
+      "go_to_sleep": 1
     }
   },
   "lastDone": {
@@ -574,9 +573,15 @@
     "test_flight": "2026-11-13T19:53:58.553Z",
     "design_ship": "2026-11-13T19:14:58.335Z",
     "send_signal": "2026-11-13T16:17:32.810Z",
-    "stargaze": "2026-11-13T19:38:58.445Z"
+    "stargaze": "2026-11-13T19:38:58.445Z",
+    "go_to_sleep": "2026-11-13T19:56:58.462Z"
   },
   "puzzles": [
+    {
+      "id": "q6",
+      "text": "How to precisely attach the heat-resistant hose to the metal surfaces of the Little Dart",
+      "at": "2026-11-13T19:56:58.462Z"
+    },
     {
       "id": "q9",
       "text": "q10: How to precisely attach the heat-resistant hose to the metal surfaces of the Little Dart",
@@ -596,11 +601,6 @@
       "id": "q5",
       "text": "Find the perfect flexible heat-resistant cables from McMaster-Carr.",
       "at": "2026-11-13T19:29:58.382Z"
-    },
-    {
-      "id": "q10",
-      "text": "How to precisely attach the heat-resistant hose to the metal surfaces of the Little Dart.",
-      "at": "2026-11-13T18:21:39.055Z"
     }
   ],
   "nextSearch": {
@@ -608,6 +608,13 @@
     "at": "2026-11-13T19:35:58.390Z"
   },
   "said": [
+    {
+      "text": "the Little Dart could really use a test flight tomorrow. I hope I can find the right cable for it.",
+      "kind": "think",
+      "at": "2026-11-13T19:56:58.462Z",
+      "town": "day 12 03:37",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "It's done, the first test was a success! Now I must make sure the Little Dart is fully inspected and ready for more flights.",
       "kind": "say",
@@ -1650,13 +1657,6 @@
       "at": "2026-11-13T14:13:39.043Z",
       "town": "day 10 05:50",
       "place": "the comms tower"
-    },
-    {
-      "text": "What's out there? I want to know!",
-      "kind": "say",
-      "at": "2026-11-13T14:10:39.059Z",
-      "town": "day 10 05:26",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -1667,7 +1667,7 @@
     "at": "2026-11-13T19:53:58.553Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-13T19:53:58.553Z",
+  "feedArchivedAt": "2026-11-13T19:56:58.462Z",
   "plans": [],
   "searches": [
     {

@@ -2,7 +2,7 @@
 // Read state -> let time pass -> offer actions -> ask the brain -> apply the result -> save.
 import { ACTIONS, BOLT_NAMES, NEEDS, PARTS, PLACES, RANDOM_EVENTS, WORLD, inHours, placeFor } from "./world.js";
 import { TOWN_DAY_MINUTES, chance, clamp, log, newId, pick, readJSON, realHoursPerTownHour, round, townClock, writeJSON } from "./util.js";
-import { decide, reactToWire, reflect, ruleDecide, ruleReact, ruleReflect } from "./mind.js";
+import { decide, muse, reactToWire, reflect, ruleDecide, ruleReact, ruleReflect } from "./mind.js";
 import { fetchNotes, answerNote } from "./notes.js";
 import { fetchCreatorReplies, isCreator, replyToLetter, sendLetter } from "./letters.js";
 import fs from "node:fs";
@@ -568,6 +568,10 @@ function applyChats() {
 const pops = [];
 const pop = (text, kind) => pops.push({ text, kind, at: nowISO });
 
+function noteThought(text) {
+  state.thoughts = [{ text, at: nowISO }, ...(state.thoughts || [])].slice(0, 6);
+}
+
 function addPart(good) {
   const p = { name: pick(BOLT_NAMES), what: pick(PARTS), at: nowISO, ...(good ? { good: true } : {}) };
   works.stash.unshift(p);
@@ -646,6 +650,14 @@ async function main() {
     const share = Math.min(1, elapsedTownHours / Math.max(0.25, (a.minutes || 30) / 60)) * 0.5;
     for (const [k, v] of Object.entries(a.effects)) state.needs[k] = round(clamp(state.needs[k] + v * share));
     log(`still ${ACTIONS[state.action].doing} until ${state.busyUntilTown}`);
+    // A fresh passing thought while he keeps at it (every heartbeat on your PC; sometimes on GitHub, to save free AI).
+    if (RUNNER === "pc" || chance(0.3)) {
+      const recent = feed.entries.filter((e) => Date.parse(e.at) > NOW - 30 * 60000).slice(0, 4).map((e) => e.text);
+      const m = await muse({ character, state, works, clock, recent }).catch(() => null);
+      if (m?.thought) { state.thought = String(m.thought).slice(0, 300); noteThought(state.thought); }
+      state.say = String(m?.say || "").slice(0, 200);
+      state.sayAt = nowISO;
+    }
     settleFeelings();
     return finish();
   }
@@ -731,6 +743,8 @@ async function main() {
   // How he chooses to move his body while doing it (the website animates this).
   state.body = cleanBody(d.body);
   state.thought = String(d.thought || state.thought).slice(0, 300);
+  if (d.thought) noteThought(state.thought);
+  state.sayAt = nowISO;
   state.feeling = String(d.feeling || state.feeling).slice(0, 120);
   state.say = String(d.say || "").slice(0, 200);
   state.recent.unshift({ id: d.action, detail: String(d.detail || "").slice(0, 80), at: nowISO });

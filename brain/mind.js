@@ -286,3 +286,15 @@ export function ruleReflect(ctx) {
     let_go: [],
   };
 }
+
+// A passing thought while he's busy with something (no new decision, just what's in his head).
+export async function muse(ctx) {
+  const { character, state, works, clock, recent } = ctx;
+  const user = `Town day ${clock.day}, ${clock.label}. You're in the middle of ${state.doingWords || state.doing} at ${state.placeName || "the outpost"}.
+You feel ${state.feeling || "fine"}. Last thought: ${state.thought || "none"}.
+What just happened: ${recent.join("; ") || "nothing new"}
+The Little Dart: ${works.dart.progress}% built. Parts in stash: ${works.stash.length}. Credits: ${state.credits}.
+What's going through your head right now, as you keep at it? Something new, not your last thought again.
+Return JSON: {"thought": "one sentence, first person", "say": "something you mutter out loud, or empty"}`;
+  return askJSON(sheet(character), user, { temperature: 1.0 });
+}

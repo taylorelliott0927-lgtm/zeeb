@@ -100,7 +100,8 @@ ${ctx.beliefs.map((b) => `- ${b.text}`).join("\n") || "(nothing settled yet)"}
 WANTS: ${state.wants.map((w) => w.text).join("; ") || "none"}
 THINGS YOU WANT TO FIGURE OUT (id: what): ${(state.puzzles || []).map((p) => `${p.id}: ${p.text}`).join("; ") || "none"}${(state.puzzles || []).length ? " (You can look things up on the Wire, ask your creator, or just try things. Up to you.)" : ""}
 ${state.nextSearch?.text ? `Something you thought you might look up on the Wire: "${state.nextSearch.text}"` : ""}
-PROMISES YOU MADE (id: what, to whom, due): ${state.promises.map((p) => `${p.id}: ${p.what} (to ${p.to}, due ${p.due})`).join("; ") || "none"}
+${(state.plans || []).length ? `PLANS YOU MADE (id: what; you said these yourself, e.g. in chat with your creator, and you can still change your mind): ${state.plans.map((p) => `${p.id}: ${p.text}`).join("; ")}
+` : ""}PROMISES YOU MADE (id: what, to whom, due): ${state.promises.map((p) => `${p.id}: ${p.what} (to ${p.to}, due ${p.due})`).join("; ") || "none"}
 
 YOUR CREATOR
 Someone built your world and reads every letter you send. You can write to them whenever you want, as often as you want, about anything at all:
@@ -136,6 +137,7 @@ Choose one. Return JSON:
   "recalled": ["ids of memories that came to mind"],
   "want": "a new want, or empty",
   "figure_out": "a problem you're stuck on or something you want to find out, in your words, or empty",
+  "done_plan": "the id of a plan you've now done or decided to drop, or empty",
   "figured_out": "the id of something you've now figured out (or given up on), or empty",
   "promise": null,
   "kept_promise": null,

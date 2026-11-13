@@ -17,7 +17,7 @@ import { FLIGHT_SECONDS, MAX_BUILDS, buildsText, cleanBody, designShip, designTh
 import { sheet } from "./mind.js";
 import { craftingText, emptyCrafting, planPart, tryToMake } from "./crafting.js";
 import { applyShopChange, checkSales, currency as shopCurrency, emptyShop, sellable } from "./shop.js";
-import { currentModel, hasBrain, modelName, useModel } from "./llm.js";
+import { askJSON, currentModel, hasBrain, modelName, useModel } from "./llm.js";
 
 const NOW = process.env.ZEEB_NOW ? Number(process.env.ZEEB_NOW) : Date.now();
 const nowISO = new Date(NOW).toISOString();
@@ -673,6 +673,23 @@ function streakHours() {
   return (NOW - Date.parse(state.streak.since)) / 3600000 / realHoursPerTownHour;
 }
 
+// Things he said in chat that he'd do stay on his mind as his own plans (he can still change his mind).
+async function plansFromChat() {
+  const recent = state.creatorThread.filter((m) => m.chat).slice(-10);
+  if (!recent.some((m) => m.from === "zeeb")) return;
+  const r = await askJSON(sheet(character), `Here's your live chat with your creator just now:
+${recent.map((m) => `${m.from === "zeeb" ? "you" : "creator"}: ${m.text.slice(0, 400)}`).join("\n")}
+Did YOU say you'd do anything (build something, look something up, make something, go somewhere)? List only what you really mean to do, in your own words, short. Empty list if nothing.
+Return JSON: {"plans": ["..."]}`, { temperature: 0.4 }).catch(() => null);
+  state.plans = state.plans || [];
+  for (const p of (Array.isArray(r?.plans) ? r.plans : []).map((x) => String(x).trim().slice(0, 140)).filter((x) => x.length > 4).slice(0, 3)) {
+    if (state.plans.some((q) => q.text.toLowerCase() === p.toLowerCase())) continue;
+    state.plans.unshift({ id: newId("pl", state.plans), text: p, at: nowISO });
+    post("mind", `Plans to: ${p}`, { change: "planned", about: "plan" });
+  }
+  state.plans = state.plans.slice(0, 6);
+}
+
 function applyChats() {
   const file = process.env.ZEEB_CHAT_FILE;
   if (!file) return false;
@@ -723,6 +740,7 @@ async function main() {
 
   // Live chats with his creator since the last heartbeat (from the chat page on the PC or phone).
   const chatted = applyChats();
+  if (chatted) await plansFromChat();
   const night = clock.hour >= SLEEP_FROM || clock.hour < WAKE_AT;
   if (state.asleep) {
     const full = state.needs.charge <= 0.03;
@@ -865,6 +883,12 @@ async function main() {
   if (d.want && !state.wants.some((w) => w.text.toLowerCase() === String(d.want).toLowerCase())) {
     state.wants.unshift({ id: newId("w", state.wants), text: String(d.want).slice(0, 140), at: nowISO });
     state.wants = state.wants.slice(0, 4);
+  }
+  // Plans he made (in chat or anywhere): he says when one's done or dropped. Old ones fade after a few town days.
+  state.plans = (state.plans || []).filter((p) => NOW - Date.parse(p.at) < 4 * TOWN_DAY_MINUTES * 60000);
+  if (d.done_plan) {
+    const p = state.plans.find((x) => x.id === String(d.done_plan).trim());
+    if (p) { state.plans = state.plans.filter((x) => x !== p); post("mind", `Done with (or let go of) a plan: ${p.text}`, { change: "plan done", about: "plan" }); }
   }
   // Problems he's stuck on, in his own words, until he says he's sorted them.
   state.puzzles = state.puzzles || [];

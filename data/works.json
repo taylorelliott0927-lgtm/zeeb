@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk III",
-    "progress": 23,
-    "version": 6,
-    "lastChange": "Zeeb is using a wrench to fix a small crack in the exhaust duct of the Little Dart Mk II. He notices a possible supplier at the depot and decides to head there to search for a heat-resistant hose.",
+    "progress": 30,
+    "version": 7,
+    "lastChange": "I'm examining the cracks in the exhaust ducts of the Little Dart. The new hose seems to fit, but needs to be tested to ensure it seals properly. (used Tok, a tiny gyroscope)",
     "log": [
+      {
+        "version": 7,
+        "change": "I'm examining the cracks in the exhaust ducts of the Little Dart. The new hose seems to fit, but needs to be tested to ensure it seals properly. (used Tok, a tiny gyroscope)",
+        "progress": 30,
+        "at": "2026-11-13T09:16:38.420Z"
+      },
       {
         "version": 6,
         "change": "Zeeb is using a wrench to fix a small crack in the exhaust duct of the Little Dart Mk II. He notices a possible supplier at the depot and decides to head there to search for a heat-resistant hose.",
@@ -317,12 +323,17 @@
         ]
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Sprocket",
         "what": "a cracked navigation chip",
         "version": 1
+      },
+      {
+        "name": "Tok",
+        "what": "a tiny gyroscope",
+        "version": 7
       }
     ],
     "design": null
@@ -353,13 +364,7 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Tok",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-13T09:13:38.732Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Word Search Puzzles (Word Find) - Free puzzles",

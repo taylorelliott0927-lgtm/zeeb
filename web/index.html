@@ -6,7 +6,7 @@
   <title>Zeeb</title>
   <meta name="description" content="Zeeb is a little scrap-built bot living on his own at Rustwell Outpost. Watch him live.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cellipse cx='16' cy='19' rx='12' ry='10' fill='%23d0602e'/%3E%3Crect x='9' y='16' width='14' height='3' rx='1.5' fill='%234ef2ff'/%3E%3Cpath d='M9 7h14l-3 4h-8z' fill='%23dba84d'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=25">
+  <link rel="stylesheet" href="style.css?v=26">
 </head>
 <body>
   <header class="top">
@@ -63,7 +63,11 @@
         <button role="tab" data-tab="shop" id="shopTab" hidden>Shop</button>
         <button role="tab" data-tab="note">Leave a note</button>
       </nav>
-      <section class="card panel" id="panel-feed" role="tabpanel"><ol class="feed" id="feed"></ol></section>
+      <section class="card panel" id="panel-feed" role="tabpanel">
+        <div class="feed-bar"><button type="button" id="feedRecent" class="seg on">Last 3 days</button><button type="button" id="feedCal" class="seg">Calendar</button></div>
+        <div id="calendar" hidden></div>
+        <ol class="feed" id="feed"></ol>
+      </section>
       <section class="card panel" id="panel-said" role="tabpanel" hidden><div id="said"></div></section>
       <section class="card panel" id="panel-diary" role="tabpanel" hidden><div id="diary"></div></section>
       <section class="card panel" id="panel-works" role="tabpanel" hidden><div id="works"></div></section>
@@ -97,6 +101,6 @@
     <span>Some 3D models by <a href="https://kenney.nl" target="_blank" rel="noopener">Kenney</a> (CC0)</span>
   </footer>
 
-  <script type="module" src="app.js?v=25"></script>
+  <script type="module" src="app.js?v=26"></script>
 </body>
 </html>

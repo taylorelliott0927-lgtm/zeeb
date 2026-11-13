@@ -155,3 +155,12 @@ h1 { margin: 0; font-size: 20px; letter-spacing: 0.02em; }
 .ship-card { list-style: none; margin: 8px 0; }
 .ship-pic { display: block; width: 100%; max-width: 240px; height: auto; background: var(--panel-2); border-radius: 10px; margin: 4px 0; }
 .made-part-text { color: #8ff0a4; }
+.feed-bar { display: flex; gap: 6px; margin-bottom: 8px; }
+.seg { background: transparent; border: 1px solid var(--line); color: var(--muted); border-radius: 999px; padding: 3px 12px; cursor: pointer; font-size: 13px; }
+.seg.on { background: var(--panel-2); color: var(--text); border-color: var(--brass); }
+.feed .day-head { display: flex; gap: 4px; align-items: baseline; padding: 10px 0 4px; border-bottom: 1px solid var(--brass); font-weight: 700; color: var(--brass); position: sticky; top: -14px; background: var(--panel); z-index: 1; }
+.feed .day-head .muted { font-weight: 400; }
+.cal-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); gap: 6px; margin: 6px 0 12px; }
+.cal-day { display: flex; flex-direction: column; align-items: center; gap: 1px; padding: 6px 4px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel-2); color: var(--text); cursor: pointer; font-size: 12px; }
+.cal-day strong { font-size: 13px; }
+.cal-day.on, .cal-day:hover { border-color: var(--brass); }

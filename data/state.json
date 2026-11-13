@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794540651275,
+  "lastTick": 1794541250567,
   "asleep": false,
   "place": "market",
-  "action": "fix_job",
-  "doing": "still doing a repair job at the market",
-  "actionStartedAt": "2026-11-13T03:10:40.954Z",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-13T03:40:50.567Z",
   "actionMinutes": 45,
-  "thought": "just a few more turns on this regulator and the merchant said he'd pay extra in scrap parts. *bweep*",
-  "feeling": "focused and determined",
-  "say": "all done with the wiring, looks good as new!",
-  "mood": 0.264,
-  "energy": -0.213,
+  "thought": "wonder if there's any flexible tubing hiding under this old cooling unit. *bweep*",
+  "feeling": "curious and a bit dusty",
+  "say": "ooh, what do we have here, a nice little clamp!",
+  "mood": 0.283,
+  "energy": -0.302,
   "needs": {
-    "charge": 0.643,
-    "oil": 0.331,
-    "curiosity": 0.241,
-    "company": 0.021,
-    "craft": 0.114
+    "charge": 0.69,
+    "oil": 0.401,
+    "curiosity": 0,
+    "company": 0.074,
+    "craft": 0.181
   },
   "credits": 5,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-13T03:40:50.567Z"
+    },
     {
       "id": "fix_job",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "",
       "at": "2026-11-13T01:17:00.069Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "After tinkering with the thrusters, I applied some fine lubrication and made a f",
-      "at": "2026-11-13T01:12:01.049Z"
     }
   ],
   "wants": [
@@ -265,7 +265,7 @@
     }
   ],
   "seenCreatorMsgs": [],
-  "lettersCheckedAt": "2026-11-13T03:30:51.275Z",
+  "lettersCheckedAt": "2026-11-13T03:40:50.567Z",
   "weather": {
     "kind": "clear",
     "temp": 22,
@@ -277,39 +277,49 @@
   "sleepDay": 5,
   "lastReflectDay": 5,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-13T03:30:51.275Z",
+  "updatedAt": "2026-11-13T03:40:50.567Z",
   "clock": {
     "day": 6,
-    "time": "16:08",
-    "hour": 16,
-    "minute": 8
+    "time": "17:27",
+    "hour": 17,
+    "minute": 27
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
   "streak": {
-    "action": "fix_job",
-    "since": "2026-11-13T03:10:40.954Z"
+    "action": "scavenge",
+    "since": "2026-11-13T03:40:50.567Z"
   },
-  "busyUntil": "2026-11-13T03:36:18.122Z",
-  "busyUntilTown": "16:51",
+  "busyUntil": "2026-11-13T03:46:28.067Z",
+  "busyUntilTown": "18:12",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-13T02:18:08.246Z",
-  "doingWords": "tightening screws and swapping fused wires for a scrap merchant",
+  "doingWords": "digging through a pile of rusted pipes for sealing rings",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-13T02:02:00.050Z",
   "body": [
-    "wiggle",
-    "nod"
+    "hop",
+    "look_up"
   ],
   "pops": {
-    "at": "2026-11-13T03:30:40.622Z",
+    "at": "2026-11-13T03:40:50.567Z",
     "items": [
       {
-        "text": "+3 credits",
-        "kind": "credits",
-        "at": "2026-11-13T03:30:40.622Z"
+        "text": "+ a perfectly good bolt",
+        "kind": "part",
+        "at": "2026-11-13T03:40:50.567Z"
+      },
+      {
+        "text": "+ a tiny gyroscope",
+        "kind": "part",
+        "at": "2026-11-13T03:40:50.567Z"
+      },
+      {
+        "text": "+ a strip of hull plating",
+        "kind": "part",
+        "at": "2026-11-13T03:40:50.567Z"
       }
     ]
   },
@@ -320,6 +330,10 @@
     "at": "2026-11-13T03:20:40.669Z"
   },
   "thoughts": [
+    {
+      "text": "wonder if there's any flexible tubing hiding under this old cooling unit. *bweep*",
+      "at": "2026-11-13T03:40:50.567Z"
+    },
     {
       "text": "just a few more turns on this regulator and the merchant said he'd pay extra in scrap parts. *bweep*",
       "at": "2026-11-13T03:30:40.622Z"
@@ -339,20 +353,16 @@
     {
       "text": "Some snobby firewall thinks it can keep me out of the high-speed logs. I just wanted to see how they tune their repulsor thrusters without blowing up! *bweep*",
       "at": "2026-11-13T02:50:40.321Z"
-    },
-    {
-      "text": "my oil is bugging me most right now.",
-      "at": "2026-11-13T02:39:48.399Z"
     }
   ],
-  "sayAt": "2026-11-13T03:30:40.622Z",
+  "sayAt": "2026-11-13T03:40:50.567Z",
   "today": {
     "day": 6,
     "counts": {
       "read_news": 3,
       "drink_oil": 1,
       "follow_link": 1,
-      "scavenge": 1,
+      "scavenge": 2,
       "fix_job": 3
     }
   },
@@ -361,7 +371,7 @@
     "read_news": "2026-11-13T02:12:08.281Z",
     "drink_oil": "2026-11-13T02:39:48.399Z",
     "follow_link": "2026-11-13T02:50:40.321Z",
-    "scavenge": "2026-11-13T03:00:40.541Z",
+    "scavenge": "2026-11-13T03:40:50.567Z",
     "fix_job": "2026-11-13T03:30:40.622Z"
   },
   "puzzles": [
@@ -386,6 +396,20 @@
     "at": "2026-11-13T02:50:40.321Z"
   },
   "said": [
+    {
+      "text": "ooh, what do we have here, a nice little clamp!",
+      "kind": "say",
+      "at": "2026-11-13T03:40:50.567Z",
+      "town": "day 6 17:27",
+      "place": "the junk market"
+    },
+    {
+      "text": "wonder if there's any flexible tubing hiding under this old cooling unit. *bweep*",
+      "kind": "think",
+      "at": "2026-11-13T03:40:50.567Z",
+      "town": "day 6 17:27",
+      "place": "the junk market"
+    },
     {
       "text": "all done with the wiring, looks good as new!",
       "kind": "say",

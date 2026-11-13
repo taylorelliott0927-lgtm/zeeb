@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk IV",
-    "progress": 51,
-    "version": 18,
-    "lastChange": "The heat-resistant hose and cable fit perfectly so far, I just need to secure them in place",
+    "progress": 59,
+    "version": 19,
+    "lastChange": "Continue inspecting the fit, making adjustments if necessary, before moving on to the hangar design. (used Brakk, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 19,
+        "change": "Continue inspecting the fit, making adjustments if necessary, before moving on to the hangar design. (used Brakk, a cockpit switch that still clicks)",
+        "progress": 59,
+        "at": "2026-11-13T15:47:32.726Z"
+      },
       {
         "version": 18,
         "change": "The heat-resistant hose and cable fit perfectly so far, I just need to secure them in place",
@@ -238,12 +244,6 @@
         "change": "tinkered with it",
         "progress": 42,
         "at": "2026-11-13T09:43:38.548Z"
-      },
-      {
-        "version": 9,
-        "change": "I'm testing the new hose in the duct seal, ensuring a proper fit and a tight seal",
-        "progress": 38,
-        "at": "2026-11-13T09:40:38.742Z"
       }
     ],
     "launched": [
@@ -419,8 +419,14 @@
         }
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Brakk",
+        "what": "a cockpit switch that still clicks",
+        "version": 19
+      }
+    ],
     "design": {
       "description": "The Little Dart Mk IV now looks like a sleek, futuristic bird with vibrant, reflective accents that catch the eye, perfect for its new role in the outpost's defense and exploration missions.",
       "parts": [
@@ -625,10 +631,14 @@
   ],
   "stash": [
     {
-      "name": "Brakk",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-13T15:44:32.766Z",
-      "carrying": true
+      "name": "Nim",
+      "what": "a strip of hull plating",
+      "at": "2026-11-13T15:47:32.726Z"
+    },
+    {
+      "name": "Dibs",
+      "what": "a sensor eye with one crack",
+      "at": "2026-11-13T15:47:32.726Z"
     }
   ],
   "reads": [

@@ -616,67 +616,19 @@
       }
     ],
     "design": {
-      "description": "the ship takes a bold step towards individuality with a sleek, streamlined design featuring vibrant, reflective accents that catch the eye.",
+      "description": "the ship takes a bold step towards individuality with a sleek, streamlined design featuring vibrant, reflective accents that catch the eye, enhanced with additional reflective parts along the sides an",
       "parts": [
         {
           "shape": "cylinder",
           "turn": "forward",
-          "w": 2,
+          "w": 1,
           "h": 1,
-          "d": 1,
-          "x": 0,
+          "d": 2,
+          "x": -1,
           "y": 0.5,
           "z": 0,
-          "color": "#ffffff",
-          "glow": 1
-        },
-        {
-          "shape": "cylinder",
-          "turn": "forward",
-          "w": 1,
-          "h": 0.5,
-          "d": 1,
-          "x": 0,
-          "y": 1.2,
-          "z": 0,
-          "color": "#000000",
-          "glow": 1
-        },
-        {
-          "shape": "cylinder",
-          "turn": "side",
-          "w": 0.5,
-          "h": 0.5,
-          "d": 1,
-          "x": -0.5,
-          "y": 0,
-          "z": 0,
-          "color": "#00ff00",
-          "glow": 1
-        },
-        {
-          "shape": "cylinder",
-          "turn": "side",
-          "w": 0.5,
-          "h": 0.5,
-          "d": 1,
-          "x": 0.5,
-          "y": 0,
-          "z": 0,
-          "color": "#00ff00",
-          "glow": 1
-        },
-        {
-          "shape": "cylinder",
-          "turn": "side",
-          "w": 1,
-          "h": 0.5,
-          "d": 1,
-          "x": 0,
-          "y": 0,
-          "z": 0,
           "color": "#0000ff",
-          "glow": 1
+          "glow": 0.5
         },
         {
           "shape": "cylinder",
@@ -684,87 +636,87 @@
           "w": 1,
           "h": 0.5,
           "d": 1,
+          "x": 0,
+          "y": 0.7,
+          "z": 0,
+          "color": "#ffff00",
+          "glow": 0
+        },
+        {
+          "shape": "cylinder",
+          "turn": "side",
+          "w": 1,
+          "h": 0.5,
+          "d": 1,
+          "x": -1,
+          "y": 0.7,
+          "z": 0,
+          "color": "#ffff00",
+          "glow": 0
+        },
+        {
+          "shape": "cylinder",
+          "turn": "side",
+          "w": 1,
+          "h": 0.5,
+          "d": 1,
+          "x": 1,
+          "y": 0.7,
+          "z": 0,
+          "color": "#ffff00",
+          "glow": 0
+        },
+        {
+          "shape": "cylinder",
+          "turn": "side",
+          "w": 1,
+          "h": 0.5,
+          "d": 1,
+          "x": 0,
+          "y": 0.9,
+          "z": 0,
+          "color": "#ff0000",
+          "glow": 0.5
+        },
+        {
+          "shape": "cylinder",
+          "turn": "side",
+          "w": 1,
+          "h": 0.5,
+          "d": 1,
+          "x": -1,
+          "y": 0.9,
+          "z": 0,
+          "color": "#ff0000",
+          "glow": 0.5
+        },
+        {
+          "shape": "cylinder",
+          "turn": "side",
+          "w": 1,
+          "h": 0.5,
+          "d": 1,
+          "x": 1,
+          "y": 0.9,
+          "z": 0,
+          "color": "#ff0000",
+          "glow": 0.5
+        },
+        {
+          "shape": "box",
+          "turn": "up",
+          "w": 1,
+          "h": 1,
+          "d": 0.5,
           "x": 0,
           "y": 1,
           "z": 0,
-          "color": "#0000ff",
-          "glow": 1
-        },
-        {
-          "shape": "cylinder",
-          "turn": "forward",
-          "w": 1,
-          "h": 0.5,
-          "d": 1,
-          "x": 0,
-          "y": 0.75,
-          "z": 0,
-          "color": "#ffff00",
-          "glow": 1
-        },
-        {
-          "shape": "cylinder",
-          "turn": "forward",
-          "w": 1,
-          "h": 0.5,
-          "d": 1,
-          "x": 0,
-          "y": 1.25,
-          "z": 0,
-          "color": "#ffff00",
-          "glow": 1
-        },
-        {
-          "shape": "cylinder",
-          "turn": "back",
-          "w": 0.5,
-          "h": 0.5,
-          "d": 1,
-          "x": -0.5,
-          "y": 0,
-          "z": 0,
-          "color": "#0000ff",
-          "glow": 1
-        },
-        {
-          "shape": "cylinder",
-          "turn": "back",
-          "w": 0.5,
-          "h": 0.5,
-          "d": 1,
-          "x": 0.5,
-          "y": 0,
-          "z": 0,
-          "color": "#0000ff",
-          "glow": 1
-        },
-        {
-          "shape": "cylinder",
-          "turn": "back",
-          "w": 1,
-          "h": 0.5,
-          "d": 1,
-          "x": 0,
-          "y": 0.25,
-          "z": 0,
           "color": "#00ff00",
-          "glow": 1
-        },
-        {
-          "shape": "cylinder",
-          "turn": "back",
-          "w": 1,
-          "h": 0.5,
-          "d": 1,
-          "x": 0,
-          "y": 0.75,
-          "z": 0,
-          "color": "#00ff00",
-          "glow": 1
+          "glow": 0
         }
       ],
-      "at": "2026-11-13T19:14:58.335Z",
-      "day": 11
+      "at": "2026-11-13T20:47:58.518Z",
+      "day": 12
     }
   },
   "tunes": [

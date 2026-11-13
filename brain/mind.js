@@ -304,6 +304,21 @@ export function ruleReflect(ctx) {
 }
 
 // A passing thought while he's busy with something (no new decision, just what's in his head).
+// While he's at the comms tower for a while: what does he want to read next, if anything?
+export async function surfNext(ctx) {
+  const { character, state, works, clock } = ctx;
+  const last = works.reads[0];
+  const links = (works.lastLinks || []).slice(0, 10);
+  const user = `Town day ${clock.day}, ${clock.label}. You're at the comms tower, ${state.doingWords || "on the Wire"}.
+Last thing you read: ${last ? `"${last.title}"${last.takeaway ? ` - ${last.takeaway}` : ""}` : "nothing yet"}.
+${links.length ? `LINKS YOU CAN SEE:\n${links.map((l, i) => `${i + 1}. ${l.title}`).join("\n")}` : "No links on screen."}
+${state.nextSearch?.text ? `You thought you might look up: "${state.nextSearch.text}"` : ""}
+${(state.puzzles || []).length ? `Things you want to figure out: ${state.puzzles.map((p) => p.text).join("; ")}` : ""}
+You can open one of the links (its number), search for something (the search words), or read nothing and just think about what you've seen. Whatever you feel like.
+Return JSON: {"next": "a link number, search words, or empty", "thought": "one sentence, first person", "say": "something you mutter out loud, or empty"}`;
+  return askJSON(sheet(character), user, { temperature: 0.9 });
+}
+
 export async function muse(ctx) {
   const { character, state, works, clock, recent } = ctx;
   const user = `Town day ${clock.day}, ${clock.label}. You're in the middle of ${state.doingWords || state.doing} at ${state.placeName || "the outpost"}.

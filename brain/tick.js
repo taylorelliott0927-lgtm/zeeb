@@ -2,7 +2,7 @@
 // Read state -> let time pass -> offer actions -> ask the brain -> apply the result -> save.
 import { ACTIONS, BOLT_NAMES, NEEDS, PARTS, PLACES, RANDOM_EVENTS, WORLD, inHours, placeFor } from "./world.js";
 import { TOWN_DAY_MINUTES, chance, clamp, log, newId, pick, readJSON, realHoursPerTownHour, round, townClock, writeJSON } from "./util.js";
-import { decide, muse, reactToWire, reflect, ruleDecide, ruleReact, ruleReflect } from "./mind.js";
+import { decide, muse, surfNext, reactToWire, reflect, ruleDecide, ruleReact, ruleReflect } from "./mind.js";
 import { fetchNotes, answerNote } from "./notes.js";
 import { fetchCreatorReplies, isCreator, replyToLetter, sendLetter } from "./letters.js";
 import fs from "node:fs";
@@ -184,6 +184,35 @@ function checkPromises() {
   state.promises = state.promises.filter((p) => Date.parse(p.dueAt) >= NOW);
 }
 
+// Turn "3" or a web address into the link he means (from the links he saw last time on the Wire).
+function linkTarget(detail) {
+  detail = String(detail || "");
+  const n = parseInt(detail.match(/\d+/)?.[0] || "", 10);
+  const fromList = !/^https?:/i.test(detail) && n >= 1 ? (works.lastLinks || [])[n - 1] : null;
+  return fromList?.url || (detail.match(/https?:\/\/\S+/) || [])[0] || (works.lastLinks || [])[0]?.url || "";
+}
+
+// Read one thing off the Wire (a search, a page or the news), react to it, and keep a record with the link.
+async function readTheWire(kind, target, wasSearch) {
+  const found = await useWire(kind, target);
+  if (!found.failed && found.links?.length) works.lastLinks = found.links.slice(0, 12);
+  else if (found.kind === "news" && !found.failed) works.lastLinks = (found.items || []).filter((i) => i.url).map((i) => ({ title: i.title, url: i.url }));
+  const r = (await reactToWire({ character, works }, found)) || ruleReact(found);
+  if (found.failed) post("noticed", found.error ? `Couldn't read it: ${found.error}.` : "The Wire was down. Nothing loaded.");
+  const title = found.kind === "news" ? (r.picked || found.items?.[0]?.title || "the news") : found.title;
+  const item = found.kind === "news" ? (found.items.find((i) => i.title === r.picked) || found.items?.[0]) : found;
+  if (!found.failed) {
+    works.reads.unshift({ title, url: item?.url || "", query: found.query || "", takeaway: r.takeaway || "", kind: found.kind, at: nowISO });
+    works.reads = works.reads.slice(0, 40);
+    post("noticed", `Read "${title}"${r.takeaway ? `: ${r.takeaway}` : ""}`, { link: item?.url || "" });
+  }
+  for (const m of r.remember || []) M.remember(mem, m.text, m.importance ?? 0.5, nowISO);
+  if (r.inspiration) post("mind", `Idea: ${r.inspiration}`, { change: "idea", about: "piece" });
+  // What he said he might look up next stays on his mind until his next search.
+  state.nextSearch = r.next_search && String(r.next_search).trim() ? { text: String(r.next_search).trim().slice(0, 120), at: nowISO } : (wasSearch ? null : state.nextSearch);
+  return { ...r, failed: Boolean(found.failed) };
+}
+
 async function doAction(id, d, notes) {
   const a = ACTIONS[id];
   let place = placeFor(id, state);
@@ -329,30 +358,12 @@ async function doAction(id, d, notes) {
     case "browse_wire":
     case "follow_link":
     case "read_news": {
-      let target = detail;
-      if (id === "follow_link") {
-        const n = parseInt(String(detail).match(/\d+/)?.[0] || "", 10);
-        const fromList = !/^https?:/i.test(detail) && n >= 1 ? (works.lastLinks || [])[n - 1] : null;
-        target = fromList?.url || (String(detail).match(/https?:\/\/\S+/) || [])[0] || (works.lastLinks || [])[0]?.url || "";
-      }
-      const found = await useWire(a.internet, target);
-      if (!found.failed && found.links?.length) works.lastLinks = found.links.slice(0, 12);
-      else if (found.kind === "news" && !found.failed) works.lastLinks = (found.items || []).filter((i) => i.url).map((i) => ({ title: i.title, url: i.url }));
-      const r = (await reactToWire({ character, works }, found)) || ruleReact(found);
-      if (found.failed) { ok = false; feed.entries[0].ok = false; post("noticed", found.error ? `Couldn't read it: ${found.error}.` : "The Wire was down. Nothing loaded."); }
-      const title = found.kind === "news" ? (r.picked || found.items?.[0]?.title || "the news") : found.title;
-      const item = found.kind === "news" ? (found.items.find((i) => i.title === r.picked) || found.items?.[0]) : found;
-      if (!found.failed) {
-        works.reads.unshift({ title, url: item?.url || "", query: found.query || "", takeaway: r.takeaway || "", kind: found.kind, at: nowISO });
-        works.reads = works.reads.slice(0, 40);
-        post("noticed", `Read "${title}"${r.takeaway ? `: ${r.takeaway}` : ""}`, { link: item?.url || "" });
-      }
-      for (const m of r.remember || []) M.remember(mem, m.text, m.importance ?? 0.5, nowISO);
-      if (r.inspiration) post("mind", `Idea: ${r.inspiration}`, { change: "idea", about: "piece" });
+      const kind = id === "follow_link" ? "page" : a.internet;
+      const target = id === "follow_link" ? linkTarget(detail) : detail;
+      const r = await readTheWire(kind, target, id === "browse_wire");
+      if (r.failed) { ok = false; feed.entries[0].ok = false; }
       if (r.thought) d.thought = r.thought;
       if (r.feeling) d.feeling = r.feeling;
-      // What he said he might look up next stays on his mind until his next search.
-      state.nextSearch = r.next_search && String(r.next_search).trim() ? { text: String(r.next_search).trim().slice(0, 120), at: nowISO } : (id === "browse_wire" ? null : state.nextSearch);
       break;
     }
     case "wander":
@@ -668,6 +679,26 @@ async function main() {
     for (const [k, v] of Object.entries(a.effects)) state.needs[k] = round(clamp(state.needs[k] + v * share));
     log(`still ${ACTIONS[state.action].doing} until ${state.busyUntilTown}`);
     // A fresh passing thought while he keeps at it (every heartbeat on your PC; sometimes on GitHub, to save free AI).
+    // At the comms tower for a while? Each heartbeat he can open another page, search something new, or just think about it. His pick.
+    if (a.internet && (RUNNER === "pc" || chance(0.3))) {
+      const next = await surfNext({ character, state, works, clock }).catch(() => null);
+      const choice = String(next?.next || "").trim();
+      if (choice) {
+        const isLink = /^\d+$/.test(choice) || /^https?:/i.test(choice);
+        const r = await readTheWire(isLink ? "page" : "search", isLink ? linkTarget(choice) : choice, !isLink);
+        if (r.thought) { state.thought = String(r.thought).slice(0, 300); noteThought(state.thought); }
+        if (r.feeling) state.feeling = String(r.feeling).slice(0, 80);
+        state.say = String(next?.say || "").slice(0, 200);
+        state.sayAt = nowISO;
+        settleFeelings();
+        return finish();
+      }
+      if (next?.thought) { state.thought = String(next.thought).slice(0, 300); noteThought(state.thought); }
+      state.say = String(next?.say || "").slice(0, 200);
+      state.sayAt = nowISO;
+      settleFeelings();
+      return finish();
+    }
     if (RUNNER === "pc" || chance(0.3)) {
       const recent = feed.entries.filter((e) => Date.parse(e.at) > NOW - 30 * 60000).slice(0, 4).map((e) => e.text);
       const m = await muse({ character, state, works, clock, recent }).catch(() => null);

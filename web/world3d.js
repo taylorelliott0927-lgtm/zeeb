@@ -25,6 +25,19 @@ const C = {
   white: [0.92, 0.9, 0.86], red: [0.95, 0.25, 0.2], teal: [0.25, 0.6, 0.6], purple: [0.55, 0.35, 0.65],
 };
 
+// Spots on the ship where parts he uses get bolted on (ship's own coordinates).
+const SHIP_SLOTS = [
+  { pos: [0, 0.65, 0.05] }, { pos: [1.15, 0.29, -0.1] }, { pos: [-1.15, 0.29, -0.1], rot: [0, Math.PI, 0] },
+  { pos: [0.36, 0.3, 0.2], rot: [0, 0, -1.4] }, { pos: [-0.36, 0.3, 0.2], rot: [0, 0, 1.4] },
+  { pos: [0, 0.3, -0.9], rot: [-1.5, 0, 0] }, { pos: [0.7, 0.29, -0.2] }, { pos: [-0.7, 0.29, -0.2] },
+  { pos: [0, -0.05, 0.1], rot: [Math.PI, 0, 0] }, { pos: [0, 0.6, -0.15] }, { pos: [0.36, 0.3, -0.35], rot: [0, 0, -1.4] },
+  { pos: [-0.36, 0.3, -0.35], rot: [0, 0, 1.4] }, { pos: [0, 0.62, 0.55], rot: [0.4, 0, 0] }, { pos: [0.4, 0.29, 0.1] }, { pos: [-0.4, 0.29, 0.1] },
+];
+const FRAME_SLOTS = Array.from({ length: 12 }, (_, i) => {
+  const a = (i / 6) * Math.PI * 2, y = i < 6 ? 0.55 : 1.0;
+  return { pos: [Math.sin(a) * 0.3, y, Math.cos(a) * 0.3], rot: [Math.cos(a) * 1.4, 0, -Math.sin(a) * 1.4] };
+});
+
 export function groundHeight(x, z) {
   const r = Math.hypot(x, z);
   const dunes = 1.3 * Math.sin(x * 0.07 + 1.3) * Math.cos(z * 0.06) + 0.7 * Math.sin(x * 0.13 + z * 0.05) + 0.4 * Math.cos(z * 0.17 - x * 0.04);
@@ -101,12 +114,23 @@ export class World {
       this.put(parent, ball, { pos: [0, 0.55, 0.35], scale: [0.4, 0.25, 0.5], color: C.cyan, emissive: 0.5 }),
     ];
     this.dartParts = shipParts(this.dart);
+    // Parts he's actually put into each ship get mounted on it, so you can see them.
+    this.dartMounts = this.put(this.dart, null);
+    // His stash shelf against the back wall of the hangar: every part he owns sits on it.
+    this.shelf = this.put(hangar, null, { pos: [0, 0, -5.45] });
+    for (const y of [0.55, 1.25]) this.put(this.shelf, box, { pos: [0, y, 0], scale: [5.6, 0.07, 0.6], color: [0.5, 0.36, 0.25] });
+    for (const sx of [-2.75, 0, 2.75]) this.put(this.shelf, box, { pos: [sx, 0.7, 0], scale: [0.08, 1.4, 0.6], color: C.rust });
+    this.shelfParts = this.put(this.shelf, null);
+    this.shelfLabel = { el: Object.assign(document.createElement("div"), { className: "place-label small" }), pos: [H.x, hy + 1.9, H.z - 5.45] };
+    this.labels.appendChild(this.shelfLabel.el);
     // A finished ship parks outside the hangar; the flying one is a copy that takes off from there.
     this.PARK = { x: 6.8, z: 6.2, yaw: -0.6 };
     this.parked = this.put(R, null, { pos: this.at(this.PARK.x, this.PARK.z, 0.6), rot: [0, this.PARK.yaw, 0], visible: false, scale: [1.3, 1.3, 1.3] });
     shipParts(this.parked);
+    this.parkedMounts = this.put(this.parked, null);
     this.flyer = this.put(R, null, { visible: false, scale: [1.3, 1.3, 1.3] });
     shipParts(this.flyer);
+    this.flyerMounts = this.put(this.flyer, null);
     this.flyerFlame = this.put(this.flyer, cone, { pos: [0, 0.3, -1.05], rot: [-Math.PI / 2, 0, 0], scale: [0.35, 0.6, 0.35], color: C.cyan, emissive: 1 });
     this.smoke = Array.from({ length: 6 }, () => this.put(R, ball, { color: [0.35, 0.33, 0.32], visible: false }));
     this.flight = null;
@@ -216,6 +240,7 @@ export class World {
       this.put(this.friendFrame, ball, { pos: [0, 1.45, 0], scale: [0.6, 0.55, 0.6], color: C.metal }),
       this.put(this.friendFrame, ball, { pos: [0, 1.48, 0.27], scale: [0.2, 0.2, 0.1], color: [0.3, 0.3, 0.3] }),
     ];
+    this.frameMounts = this.put(this.friendFrame, null);
     this.buddy = this.put(R, null, { pos: this.at(-2, 4, 0.9), visible: false, scale: [0.85, 0.85, 0.85] });
     this.bBody = this.put(this.buddy, null);
     this.bShell = this.put(this.bBody, cyl, { pos: [0, 0.1, 0], scale: [0.7, 1.0, 0.7], color: [0.4, 0.7, 0.65] });
@@ -322,6 +347,7 @@ export class World {
     if (stage === "building") {
       const n = Math.max(1, Math.ceil(((f.project?.progress || 0) / 100) * this.frameParts.length));
       this.frameParts.forEach((p, i) => (p.visible = i < n));
+      this.mountParts(this.frameMounts, f.project?.parts || [], FRAME_SLOTS, 0.7);
     }
     const alive = stage === "alive" && f.state;
     this.buddy.visible = Boolean(alive);
@@ -353,6 +379,11 @@ export class World {
     this.hasShip = (w.dart?.launched || []).length > 0;
     if (!this.flight) this.parked.visible = this.hasShip;
     this.setBuilds(w.builds || []);
+    this.setStash(w.stash || []);
+    this.mountParts(this.dartMounts, w.dart?.parts || [], SHIP_SLOTS, 1);
+    const last = (w.dart?.launched || []).slice(-1)[0];
+    this.mountParts(this.parkedMounts, last?.parts || [], SHIP_SLOTS, 1);
+    this.mountParts(this.flyerMounts, last?.parts || [], SHIP_SLOTS, 1);
     // A test flight that happened in the last few minutes plays once, live.
     const f = s.flight;
     if (f && f.id !== this.seenFlight && Date.now() - Date.parse(f.at) < 8 * 60000) { this.seenFlight = f.id; this.playFlight(f); }
@@ -384,6 +415,56 @@ export class World {
     this.arcade.visible = gamesCount > 0;
   }
 
+  // ---------- his parts ----------
+  // A tiny model for each kind of part, made from the same simple shapes as everything else.
+  partModel(parent, what, good, opts = {}) {
+    const { box, cyl, cone, ball } = this.meshes, w = String(what || "").toLowerCase();
+    const g = this.put(parent, null, opts);
+    const P = (mesh, o) => this.put(g, mesh, o);
+    const copper = [0.85, 0.45, 0.2];
+    if (w.includes("fin")) { P(box, { pos: [0, 0.2, 0], scale: [0.05, 0.4, 0.32], rot: [0.5, 0, 0], color: C.red }); P(box, { pos: [0, 0.03, 0], scale: [0.12, 0.06, 0.34], color: C.metal }); }
+    else if (w.includes("chip")) { P(box, { pos: [0, 0.03, 0], scale: [0.34, 0.05, 0.24], color: [0.15, 0.5, 0.25] }); P(box, { pos: [0, 0.07, 0], scale: [0.14, 0.04, 0.1], color: C.dark }); P(box, { pos: [0.11, 0.06, 0.07], scale: [0.04, 0.02, 0.04], color: C.cyan, emissive: 1 }); }
+    else if (w.includes("nozzle")) { P(cone, { pos: [0, 0.16, 0], rot: [Math.PI, 0, 0], scale: [0.3, 0.32, 0.3], color: C.dark }); P(cyl, { pos: [0, 0.34, 0], scale: [0.16, 0.06, 0.16], color: C.metal }); }
+    else if (w.includes("wire")) { for (let i = 0; i < 3; i++) P(cyl, { pos: [0, 0.03 + i * 0.05, 0], scale: [0.3 - i * 0.04, 0.035, 0.3 - i * 0.04], color: copper }); }
+    else if (w.includes("gyro")) { P(ball, { pos: [0, 0.18, 0], scale: [0.16, 0.16, 0.16], color: C.brass }); P(cyl, { pos: [0, 0.18, 0], rot: [0.6, 0, 0], scale: [0.34, 0.03, 0.34], color: C.metal }); P(cyl, { pos: [0, 0.18, 0], rot: [0, 0, 1.2], scale: [0.3, 0.03, 0.3], color: C.metal }); }
+    else if (w.includes("fuel")) { P(cyl, { pos: [0, 0.17, 0], scale: [0.2, 0.34, 0.2], color: [0.95, 0.55, 0.15] }); P(cyl, { pos: [0, 0.37, 0], scale: [0.1, 0.06, 0.1], color: C.metal }); }
+    else if (w.includes("switch")) { P(box, { pos: [0, 0.05, 0], scale: [0.26, 0.1, 0.18], color: C.dark }); P(cyl, { pos: [0.03, 0.16, 0], rot: [0, 0, 0.4], scale: [0.04, 0.16, 0.04], color: C.metal }); P(ball, { pos: [0.06, 0.24, 0], scale: [0.07, 0.07, 0.07], color: C.red }); }
+    else if (w.includes("tile")) { P(box, { pos: [0, 0.03, 0], scale: [0.3, 0.05, 0.3], color: [0.18, 0.17, 0.2] }); }
+    else if (w.includes("bolt")) { P(cyl, { pos: [0, 0.12, 0], scale: [0.06, 0.22, 0.06], color: C.metal }); P(cyl, { pos: [0, 0.24, 0], scale: [0.14, 0.05, 0.14], color: C.metal }); }
+    else if (w.includes("eye") || w.includes("sensor")) { P(cyl, { pos: [0, 0.05, 0], scale: [0.2, 0.1, 0.2], color: C.dark }); P(ball, { pos: [0, 0.14, 0], scale: [0.15, 0.15, 0.15], color: C.cyan, emissive: 0.9 }); }
+    else if (w.includes("mystery")) { P(box, { pos: [0, 0.13, 0], scale: [0.26, 0.26, 0.26], color: C.purple }); P(box, { pos: [0, 0.27, 0], scale: [0.28, 0.03, 0.06], color: C.brass }); }
+    else if (w.includes("plat") || w.includes("hull")) { P(box, { pos: [0, 0.03, 0], scale: [0.38, 0.05, 0.26], color: [0.62, 0.63, 0.66] }); P(box, { pos: [0.12, 0.06, 0.08], scale: [0.04, 0.02, 0.04], color: C.dark }); }
+    else if (w.includes("strut") || w.includes("leg")) { P(cyl, { pos: [0, 0.2, 0], scale: [0.05, 0.38, 0.05], color: C.metal }); P(cyl, { pos: [0, 0.02, 0], scale: [0.16, 0.04, 0.16], color: C.dark }); }
+    else { P(box, { pos: [0, 0.1, 0], scale: [0.2, 0.2, 0.2], color: C.rust }); } // anything new he finds
+    if (good) P(ball, { pos: [0, 0.48, 0], scale: [0.07, 0.07, 0.07], color: [1, 0.85, 0.3], emissive: 1 }); // a little gold spark on the good ones
+    return g;
+  }
+
+  setStash(stash) {
+    const sig = JSON.stringify(stash.map((p) => [p.name, p.what, p.good]));
+    this.shelfLabel.el.textContent = stash.length ? `His parts (${stash.length})` : "His parts shelf (empty)";
+    if (sig === this.stashSig) return;
+    this.stashSig = sig;
+    this.shelfParts.children = [];
+    // newest on the left of the top shelf; up to 10 per shelf
+    stash.slice(0, 20).forEach((p, i) => {
+      const row = i < 10 ? 1.29 : 0.59, col = i % 10;
+      this.partModel(this.shelfParts, p.what, p.good, { pos: [-2.45 + col * 0.545, row, 0.05], rot: [0, (i * 0.7) % 1.2 - 0.6, 0], scale: [1.2, 1.2, 1.2] });
+    });
+  }
+
+  mountParts(root, parts, slots, size) {
+    const sig = JSON.stringify(parts.map((p) => [p.what, p.good]));
+    if (root.sig === sig) return;
+    root.sig = sig;
+    root.children = [];
+    // the most recent parts go on; if he's used more than there are spots, the oldest are tucked inside
+    parts.slice(-slots.length).forEach((p, i) => {
+      const s = slots[i];
+      this.partModel(root, p.what, p.good, { pos: s.pos, rot: s.rot || [0, 0, 0], scale: [size * 0.8, size * 0.8, size * 0.8] });
+    });
+  }
+
   setBuilds(builds) {
     const sig = JSON.stringify(builds.map((b) => b.id));
     if (sig === this.buildsSig) return;
@@ -402,6 +483,12 @@ export class World {
         if (pt.glow > 0.3) this.lights.push(n);
         if (pt.spin) this.spinners.push(n);
         top = Math.max(top, pt.y + pt.h / 2);
+      }
+      if (b.usedPart) {
+        // the stash part he used, bolted to a little plate at the foot of what he built
+        let maxX = 0.5; for (const pt of b.parts || []) maxX = Math.max(maxX, Math.abs(pt.x) + pt.w / 2);
+        this.put(g, this.meshes.cyl, { pos: [maxX + 0.35, 0.05, 0.3], scale: [0.55, 0.1, 0.55], color: C.dark });
+        this.partModel(g, b.usedPart, b.usedPartGood, { pos: [maxX + 0.35, 0.1, 0.3], scale: [1.4, 1.4, 1.4] });
       }
       const el = document.createElement("div");
       el.className = "place-label small";
@@ -779,7 +866,7 @@ export class World {
     this.animate(dt);
     this.r.render(this.root, this.cam, env);
     // labels
-    for (const l of this.buildLabels) {
+    for (const l of [...this.buildLabels, this.shelfLabel]) {
       const p = this.r.project(l.pos);
       const d = Math.hypot(l.pos[0] - this.cam.eye[0], l.pos[2] - this.cam.eye[2]);
       if (!p || d > 28) { l.el.style.display = "none"; continue; }

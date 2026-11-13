@@ -152,6 +152,13 @@ function renderDiary(d) {
   }
 }
 
+// A row of little chips naming each part, gold star on the good ones.
+function partChips(parts) {
+  const row = el("div", "facts");
+  for (const p of parts) { const c = el("span", p.good ? "chip good-part" : "chip", `${p.what}${p.good ? " ★" : ""}`); c.title = p.name || ""; row.append(c); }
+  return row;
+}
+
 function renderWorks(w) {
   const box = $("works");
   box.replaceChildren();
@@ -163,10 +170,13 @@ function renderWorks(w) {
   const log = el("ul", "list");
   for (const l of (d.log || []).slice(0, 6)) log.append(el("li", null, `v${l.version}: ${l.change}`));
   box.append(log);
+  if (d.parts?.length) {
+    box.append(el("div", "muted", `Parts built into this one (${d.parts.length}), mounted on the ship in the hangar:`), partChips(d.parts));
+  }
   if (d.launched?.length) {
     box.append(el("h4", null, "Finished ships"));
     const ul = el("ul", "list");
-    for (const l of d.launched) ul.append(el("li", null, `${l.name}, finished on day ${l.day}`));
+    for (const l of d.launched) { const li = el("li", null, `${l.name}, finished on day ${l.day}`); if (l.parts?.length) li.append(partChips(l.parts)); ul.append(li); }
     box.append(ul);
   }
   if (w.flights?.length) {
@@ -184,7 +194,7 @@ function renderWorks(w) {
   if (w.builds?.length) {
     box.append(el("h4", null, "Things he's built"));
     const ul = el("ul", "list");
-    for (const b of w.builds) { const li = el("li", null, `${b.name} (near ${({ hangar: "Hangar Bay 3", cantina: "the cantina", market: "the junk market", tower: "the comms tower", depot: "the fuel depot", ridge: "the dune ridge" })[b.place] || "the outpost"})`); if (b.description) li.append(el("div", "muted", b.description)); ul.append(li); }
+    for (const b of w.builds) { const li = el("li", null, `${b.name} (near ${({ hangar: "Hangar Bay 3", cantina: "the cantina", market: "the junk market", tower: "the comms tower", depot: "the fuel depot", ridge: "the dune ridge" })[b.place] || "the outpost"})`); if (b.description) li.append(el("div", "muted", b.description)); if (b.usedPart) li.append(el("div", "muted", `built with ${b.usedPartName ? `${b.usedPartName}, ` : ""}${b.usedPart}${b.usedPartGood ? " ★" : ""} (it sits on a plate beside it)`)); ul.append(li); }
     box.append(ul);
   }
   box.append(el("h4", null, "Tunes"));
@@ -205,9 +215,9 @@ function renderWorks(w) {
   box.append(reads);
   box.append(el("h4", null, "Parts in his stash"));
   const stash = el("ul", "list");
-  for (const p of w.stash) stash.append(el("li", null, `${p.name}, ${p.what}`));
+  for (const p of w.stash) stash.append(el("li", p.good ? "good-part-text" : null, `${p.name}, ${p.what}${p.good ? " ★" : ""}`));
   if (!w.stash.length) stash.append(el("li", "muted", "empty"));
-  box.append(stash);
+  box.append(el("div", "muted", "They sit on the shelf at the back of Hangar Bay 3. ★ = a good part."), stash);
   box.append(el("h4", null, "Signals sent into deep space"));
   const sig = el("ul", "list");
   for (const s of w.signals.slice(0, 6)) sig.append(el("li", null, `"${s.text}"`));
@@ -292,6 +302,7 @@ function renderFriend(f) {
     box.append(bar, el("div", "muted", `${f.project.progress}% built`));
     const ul = el("ul", "list");
     for (const l of f.project.log.slice(0, 8)) ul.append(el("li", null, `${l.progress}%: ${l.note}`));
+    if (f.project.parts?.length) box.append(el("div", "muted", "Parts in the frame:"), partChips(f.project.parts));
     box.append(ul);
     return;
   }

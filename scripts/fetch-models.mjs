@@ -30,13 +30,10 @@ const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e
 const words = (s) => String(s).toLowerCase().replace(/kenney|_|-|\.glb/g, " ").replace(/([a-z])([A-Z])/g, "$1 $2").split(/[^a-z0-9]+/).filter((w) => w.length > 1 && !/^\d+$/.test(w));
 
 // Read a .glb and measure it (bounding box of every mesh, with the scene's transforms applied).
-function measure(file) {
-  const buf = fs.readFileSync(file);
+function measure(buf) {
   if (buf.readUInt32LE(0) !== 0x46546c67) return null;
   const jsonLen = buf.readUInt32LE(12);
   const gltf = JSON.parse(buf.slice(20, 20 + jsonLen).toString("utf8"));
-  if ((gltf.buffers || []).some((b) => b.uri)) return null; // needs extra files: skip
-  if ((gltf.images || []).some((i) => i.uri)) return null;
   const min = [Infinity, Infinity, Infinity], max = [-Infinity, -Infinity, -Infinity];
   let tris = 0;
   const mul = (a, b) => { const o = new Array(16).fill(0); for (let c = 0; c < 4; c++) for (let r = 0; r < 4; r++) for (let k = 0; k < 4; k++) o[c * 4 + r] += a[k * 4 + r] * b[c * 4 + k]; return o; };
@@ -64,30 +61,65 @@ function measure(file) {
   return { min: min.map((v) => +v.toFixed(3)), max: max.map((v) => +v.toFixed(3)), tris: Math.round(tris) };
 }
 
+// Pack a .gltf or .glb (with its textures and data in separate files) into one self-contained .glb.
+const MIME = { ".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".webp": "image/webp" };
+function packGLB(file) {
+  const dir = path.dirname(file);
+  let gltf, bin = null;
+  const raw = fs.readFileSync(file);
+  if (raw.readUInt32LE(0) === 0x46546c67) {
+    const jl = raw.readUInt32LE(12);
+    gltf = JSON.parse(raw.slice(20, 20 + jl).toString("utf8"));
+    if (raw.length > 20 + jl + 8) bin = raw.slice(28 + jl, 28 + jl + raw.readUInt32LE(20 + jl));
+  } else gltf = JSON.parse(raw.toString("utf8"));
+  const load = (uri) => (uri.startsWith("data:") ? Buffer.from(uri.split(",")[1], "base64") : fs.readFileSync(path.join(dir, decodeURIComponent(uri))));
+  const parts = [], starts = [];
+  let len = 0;
+  const append = (b) => { const at = len; parts.push(b); len += b.length; const pad = (4 - (len % 4)) % 4; if (pad) { parts.push(Buffer.alloc(pad)); len += pad; } return at; };
+  (gltf.buffers || []).forEach((b, i) => { starts[i] = append(b.uri ? load(b.uri) : bin || Buffer.alloc(0)); });
+  for (const v of gltf.bufferViews || []) { v.byteOffset = (v.byteOffset || 0) + (starts[v.buffer || 0] || 0); v.buffer = 0; }
+  for (const im of gltf.images || []) {
+    if (!im.uri) continue;
+    const data = load(im.uri);
+    gltf.bufferViews = gltf.bufferViews || [];
+    gltf.bufferViews.push({ buffer: 0, byteOffset: append(data), byteLength: data.length });
+    im.bufferView = gltf.bufferViews.length - 1;
+    im.mimeType = im.mimeType || MIME[path.extname(im.uri.split("?")[0]).toLowerCase()] || "image/png";
+    delete im.uri;
+  }
+  gltf.buffers = [{ byteLength: len }];
+  let js = Buffer.from(JSON.stringify(gltf));
+  js = Buffer.concat([js, Buffer.alloc((4 - (js.length % 4)) % 4, 0x20)]);
+  const body = Buffer.concat(parts);
+  const head = Buffer.alloc(12); head.writeUInt32LE(0x46546c67, 0); head.writeUInt32LE(2, 4); head.writeUInt32LE(12 + 8 + js.length + 8 + body.length, 8);
+  const c1 = Buffer.alloc(8); c1.writeUInt32LE(js.length, 0); c1.writeUInt32LE(0x4e4f534a, 4);
+  const c2 = Buffer.alloc(8); c2.writeUInt32LE(body.length, 0); c2.writeUInt32LE(0x004e4942, 4);
+  return Buffer.concat([head, c1, js, c2, body]);
+}
+
 const catalog = [];
 let total = 0;
 function addFrom(dir, pack) {
-  const all = walk(dir).filter((f) => f.toLowerCase().endsWith(".glb"));
+  const all = walk(dir).filter((f) => /\.(glb|gltf)$/i.test(f) && !/[\\/]\.git[\\/]/.test(f));
   // Kenney packs ship each model in a few formats; the "GLB format" folder is the one we want.
-  const preferred = all.filter((f) => /glb[ _-]?format/i.test(f));
-  let added = 0;
+  const preferred = all.filter((f) => /glb[ _-]?format/i.test(f) && /\.glb$/i.test(f));
+  let added = 0, failed = 0, heavy = 0;
   for (const f of preferred.length ? preferred : all) {
-    const size = fs.statSync(f).size;
-    if (size > MAX_FILE || total + size > MAX_TOTAL) continue;
-    const base = path.basename(f, ".glb").toLowerCase().replace(/[^a-z0-9-]+/g, "-");
+    const base = path.basename(f).replace(/\.(glb|gltf)$/i, "").toLowerCase().replace(/[^a-z0-9-]+/g, "-");
     const id = `${pack}/${base}`;
     if (catalog.some((c) => c.id === id)) continue;
-    let m;
-    try { m = measure(f); } catch { m = null; }
-    if (!m) continue;
+    let packed, m;
+    try { packed = packGLB(f); m = measure(packed); } catch { m = null; }
+    if (!m) { failed++; continue; }
+    if (packed.length > MAX_FILE || total + packed.length > MAX_TOTAL) { heavy++; continue; }
     fs.mkdirSync(path.join(OUT, pack), { recursive: true });
-    fs.copyFileSync(f, path.join(OUT, pack, `${base}.glb`));
-    total += size;
+    fs.writeFileSync(path.join(OUT, pack, `${base}.glb`), packed);
+    total += packed.length;
     const name = words(base).join(" ") || base;
     catalog.push({ id, name, tags: [...new Set([...words(pack), ...words(base)])].filter((t) => t !== "kit"), min: m.min, max: m.max });
     added++;
   }
-  console.log(`  ${pack}: ${added} models`);
+  console.log(`  ${pack}: ${added} models (found ${all.length} model files${failed ? `, ${failed} couldn't be read` : ""}${heavy ? `, ${heavy} too big` : ""})`);
 }
 
 fs.rmSync(OUT, { recursive: true, force: true });
@@ -97,10 +129,17 @@ fs.mkdirSync(OUT, { recursive: true });
 if (process.env.MODELS_LOCAL) { addFrom(process.env.MODELS_LOCAL, "test-kit"); PACKS.length = 0; REPOS.length = 0; }
 for (const pack of PACKS) {
   try {
-    const page = await (await fetch(`https://kenney.nl/assets/${pack}`, { headers: UA })).text();
-    const zip = (page.match(/href="([^"]+\.zip)"/i) || [])[1];
-    if (!zip) { console.log(`  ${pack}: no download found, skipped`); continue; }
-    const url = new URL(zip, "https://kenney.nl").href;
+    const resp = await fetch(`https://kenney.nl/assets/${pack}`, { headers: { ...UA, Accept: "text/html" } });
+    const page = await resp.text();
+    const zip = (page.match(/["'(]((?:https?:\/\/kenney\.nl)?\/media\/[^"')\s]+?\.zip)["')]/i) || page.match(/["'](https?:\/\/[^"'\s]+?\.zip)["']/i) || [])[1];
+    let url = zip ? new URL(zip, "https://kenney.nl").href : null;
+    if (!url) {
+      // Backup: Kenney also posts his packs on OpenGameArt.org.
+      const oga = await fetch(`https://opengameart.org/content/${pack}`, { headers: { ...UA, Accept: "text/html" } }).then((r) => (r.ok ? r.text() : "")).catch(() => "");
+      const z2 = (oga.match(/href="([^"]+\.zip)"/i) || [])[1];
+      if (z2) url = new URL(z2, "https://opengameart.org").href;
+    }
+    if (!url) { console.log(`  ${pack}: no download found (kenney.nl answered ${resp.status}, ${page.length} bytes${/cloudflare|challenge|captcha/i.test(page) ? ", looks like a bot check" : ""}; not on OpenGameArt either), skipped`); continue; }
     const res = await fetch(url, { headers: UA });
     if (!res.ok) { console.log(`  ${pack}: download answered ${res.status}, skipped`); continue; }
     const zf = path.join(TMP, `${pack}.zip`), dir = path.join(TMP, pack);

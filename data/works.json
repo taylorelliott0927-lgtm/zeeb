@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart",
-    "progress": 95,
-    "version": 18,
-    "lastChange": "tinkered with it (used Sprocket, a dented fuel cell)",
+    "name": "the Little Dart Mk II",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 19,
+        "change": "After tinkering with the thrusters, I applied some fine lubrication and made a few small adjustments. The thrusters now run a bit smoother, but I'll need to keep monitoring the performance as I build  (used Fen, a perfectly good bolt)",
+        "progress": 100,
+        "at": "2026-11-13T01:12:01.049Z"
+      },
       {
         "version": 18,
         "change": "tinkered with it (used Sprocket, a dented fuel cell)",
@@ -114,8 +120,22 @@
         "at": "2026-11-12T11:27:06.035Z"
       }
     ],
-    "launched": [],
-    "partsUsed": 6
+    "launched": [
+      {
+        "name": "the Little Dart",
+        "day": 5,
+        "partsUsed": 7,
+        "parts": [
+          {
+            "name": "Fen",
+            "what": "a perfectly good bolt",
+            "version": 19
+          }
+        ]
+      }
+    ],
+    "partsUsed": 0,
+    "parts": []
   },
   "tunes": [],
   "stash": [
@@ -133,11 +153,6 @@
     {
       "name": "Nim",
       "what": "a little landing strut",
-      "at": "2026-11-13T00:36:59.878Z"
-    },
-    {
-      "name": "Fen",
-      "what": "a perfectly good bolt",
       "at": "2026-11-13T00:36:59.878Z"
     }
   ],

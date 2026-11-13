@@ -152,7 +152,7 @@ letter: {"subject": "short subject", "body": "your letter, as long or short as y
 interest: the topic or thing you're most into at the moment (for example "beetles", "old radios", "the twin suns"), or empty if nothing in particular. Whatever you're really into, not what you think you should like.
 doing_words: a short phrase describing what you're doing right now, your own way, without "I" (for example "curled up in the dock, dish switched off, dreaming about the Dart"). Under 15 words.
 body: how you move your body while you do it, 0 to 2 of: bounce, spin, wiggle, nod, shake, droop, hop, dance, look_up, wave, pace, zoom, tremble, float_high, bow, lean_in, celebrate. Empty means just do it naturally.
-place: only for build_thing, where to put it (hangar, cantina, market, tower, depot or ridge).
+place: only for build_thing, where to put it (${Object.keys(PLACES).join(", ")}). The salt flats, old crater and red mesa are wide open spaces further out with lots of room.
 minutes: how long you want to keep at it, in your town's minutes (10 to 720). As short or as long as you like. You'll be asked again when it's up, or sooner if something happens.
 shop: only with open_shop or tend_shop. {"open": "shop name"} to open; {"list": {"source": "a source id", "name": "...", "description": "in your voice", "price": 5}} to sell something; {"unlist": "item id"}; {"reprice": {"id": "item id", "price": 4}}; {"close": true}. Prices from 1 to 20.
 diary: {"title": "...", "text": "..."} to write in your diary right now (on top of your action), or null. Write as often and as much as you like.

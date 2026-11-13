@@ -15,6 +15,9 @@ export const PLACES = {
   tower: { name: "the comms tower", x: 9, z: 15, outdoor: false },
   depot: { name: "the fuel depot", x: -11, z: 11, outdoor: false },
   ridge: { name: "the dune ridge", x: 0, z: -26, outdoor: true },
+  flats: { name: "the salt flats", x: 44, z: 6, outdoor: true },
+  crater: { name: "the old crater", x: -40, z: 30, outdoor: true },
+  mesa: { name: "the red mesa", x: 8, z: 58, outdoor: true },
 };
 
 // Needs run from 0 (met) to 1 (pressing). They rise every town hour he is awake.

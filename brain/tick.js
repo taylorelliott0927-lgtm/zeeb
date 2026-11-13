@@ -13,7 +13,7 @@ import * as M from "./memory.js";
 import { buildStep, designFriend, emptyFriend, friendText, friendTick, startFriend, wakeFriend } from "./friend.js";
 import { activeGame, emptyGames, gamesText, startGame, workSession } from "./games.js";
 import { emptyInterests, interestsText, noteInterest } from "./interests.js";
-import { FLIGHT_SECONDS, MAX_BUILDS, buildsText, cleanBody, designShip, designThing, refineThing, flightLog, flightOutcome, spotFor } from "./builds.js";
+import { FLIGHT_SECONDS, MAX_BUILDS, buildsText, cleanBody, designShip, designThing, lookUpModels, refineThing, flightLog, flightOutcome, spotFor } from "./builds.js";
 import { sheet } from "./mind.js";
 import { craftingText, emptyCrafting, planPart, tryToMake } from "./crafting.js";
 import { applyShopChange, checkSales, currency as shopCurrency, emptyShop, sellable } from "./shop.js";
@@ -449,10 +449,12 @@ async function doAction(id, d, notes) {
     case "build_thing": {
       const idea = detail || "something for the outpost";
       const where = PLACES[d.place] ? d.place : place === "any" ? "hangar" : place;
-      const design = await designThing(sheet(character), idea, where, works.stash);
+      const lib = await lookUpModels(sheet(character), idea).catch(() => ({ searches: [], found: [] }));
+      if (lib.searches.length) post("noticed", `Looked up ${lib.searches.map((q) => `"${q}"`).join(", ")} in his model library${lib.found.length ? `: found ${lib.found.slice(0, 6).map((m) => m.name).join(", ")}${lib.found.length > 6 ? " and more" : ""}` : ", but nothing matched"}.`);
+      const design = await designThing(sheet(character), idea, where, works.stash, lib.found);
       // Then a second pass where he adds the finishing details.
-      if (design.parts.length >= 3) {
-        const more = await refineThing(sheet(character), design, "").catch(() => null);
+      if (design.parts.length >= 2) {
+        const more = await refineThing(sheet(character), design, "", lib.found).catch(() => null);
         if (more) { design.parts = [...design.parts, ...more.add].slice(0, 60); design.description = more.description || design.description; }
       }
       const spot = spotFor(design.place, works.builds || []);
@@ -522,7 +524,9 @@ async function doAction(id, d, notes) {
       const b = builds.find((x) => x.id === id) || builds.find((x) => detail.toLowerCase().includes(String(x.name).toLowerCase())) || builds[0];
       if (!b) break;
       const wish = detail.replace(id || "", "").replace(/^[\s:,-]+/, "");
-      const more = await refineThing(sheet(character), b, wish).catch(() => null);
+      const lib = await lookUpModels(sheet(character), `${wish || "more detail"} for ${b.name}`).catch(() => ({ searches: [], found: [] }));
+      if (lib.searches.length) post("noticed", `Looked up ${lib.searches.map((q) => `"${q}"`).join(", ")} in his model library${lib.found.length ? `: found ${lib.found.slice(0, 6).map((m) => m.name).join(", ")}` : ", but nothing matched"}.`);
+      const more = await refineThing(sheet(character), b, wish, lib.found).catch(() => null);
       if (!more) { ok = false; feed.entries[0].ok = false; post("noticed", `Stared at ${b.name} for a while but didn't change anything.`); break; }
       b.parts = [...b.parts, ...more.add].slice(0, 60);
       b.description = more.description || b.description;

@@ -3,8 +3,36 @@
 import { askJSON } from "./llm.js";
 import { PLACES } from "./world.js";
 import { clamp, chance, pick } from "./util.js";
+import { catalog, cleanModelPart, describeModel, hasLibrary, searchModels } from "./library.js";
 
-export const MAX_BUILDS = 30;
+// Before building, he can look things up in his model library (free 3D models). Up to him.
+export async function lookUpModels(sheetText, idea) {
+  if (!hasLibrary()) return { searches: [], found: [] };
+  const tags = {};
+  for (const m of catalog()) for (const t of m.tags) tags[t] = (tags[t] || 0) + 1;
+  const common = Object.entries(tags).sort((a, b) => b[1] - a[1]).slice(0, 40).map(([t]) => t).join(", ");
+  const r = await askJSON(sheetText, `You're about to build: "${idea}".
+You have a library of ${catalog().length} ready-made 3D models you can use in your builds (free models by Kenney). Common words in it: ${common}.
+Do you want to look anything up in it? You can search up to 3 times, or not at all if you'd rather make everything yourself.
+Return JSON: {"searches": ["a few words", "..."]}`, { temperature: 0.8 });
+  const searches = (Array.isArray(r?.searches) ? r.searches : []).map((x) => String(x).slice(0, 60)).filter(Boolean).slice(0, 3);
+  const found = [];
+  for (const q of searches) for (const m of searchModels(q, 6)) if (!found.includes(m)) found.push(m);
+  return { searches, found: found.slice(0, 14) };
+}
+
+const modelsText = (found) => found?.length ? `
+MODELS YOU FOUND IN YOUR LIBRARY (use any of them, as many times as you like, mixed with your own shapes, or none):
+${found.map(describeModel).join("\n")}
+To use one, add a part like {"model": "the id", "x": 0, "y": 0, "z": 0, "height": 1.5, "turn_degrees": 0}: height is how tall you want it in metres, y is where its base sits, turn_degrees turns it around.` : "";
+
+function allParts(list, maxShapes) {
+  const shapes = cleanParts(list, maxShapes);
+  const models = (Array.isArray(list) ? list : []).filter((p) => p?.model).map(cleanModelPart).filter(Boolean).slice(0, 15);
+  return [...shapes, ...models];
+}
+
+export const MAX_BUILDS = 100;
 const SHAPES = ["box", "cylinder", "ball", "cone"];
 const TURNS = ["up", "forward", "back", "side"];
 const HEX = /^#[0-9a-f]{6}$/i;
@@ -14,7 +42,7 @@ const num = (v, lo, hi, d) => { const n = Number(v); return Number.isFinite(n) ?
 export const MOTIONS = ["bounce", "spin", "wiggle", "nod", "shake", "droop", "hop", "dance", "look_up", "wave", "pace", "zoom", "tremble", "float_high", "bow", "lean_in", "celebrate"];
 export const cleanBody = (b) => (Array.isArray(b) ? b : String(b || "").split(/[ ,]+/)).map((x) => String(x).toLowerCase().trim()).filter((x) => MOTIONS.includes(x)).slice(0, 2);
 
-export async function designThing(sheetText, idea, place, stash) {
+export async function designThing(sheetText, idea, place, stash, found = []) {
   const user = `You've decided to build something and put it in the world: "${idea}".
 Where: ${PLACES[place]?.name || "near Hangar Bay 3"}. Parts in your stash: ${stash.map((p) => p.what).join(", ") || "just scrap lying around"}.
 Design it out of simple shapes so it can be built. Build it properly, with all its pieces: legs, frames, panels, trims, bolts, handles, lights, cables, signs, whatever it really has. Sizes are in metres; you are about 1 metre tall. y is height above the ground (0 = on the ground, so a 1-metre-tall box sits at y 0.5).
@@ -22,9 +50,9 @@ Design it out of simple shapes so it can be built. Build it properly, with all i
 Return JSON:
 {"name": "what you call it", "description": "one sentence in your voice", "place": "${Object.keys(PLACES).join("|")}",
  "parts": [{"shape": "box|cylinder|ball|cone", "turn": "up", "w": 1, "h": 1, "d": 1, "x": 0, "y": 0.5, "z": 0, "color": "#rrggbb", "glow": 0, "spin": false}]}
-Use 8 to 40 parts. x and z between -4 and 4, y between 0 and 6, sizes between 0.03 and 4. glow from 0 to 1 for lights. spin true for parts that should turn.`;
+Use 8 to 40 parts. x and z between -4 and 4, y between 0 and 6, sizes between 0.03 and 4. glow from 0 to 1 for lights. spin true for parts that should turn.${modelsText(found)}`;
   const r = await askJSON(sheetText, user, { temperature: 0.9 });
-  const parts = cleanParts(r?.parts, 40);
+  const parts = allParts(r?.parts, 40);
   if (parts.length < 2) {
     // Couldn't design it properly: a simple scrap sculpture instead.
     return { name: String(idea || "scrap sculpture").slice(0, 40), description: "a little pile of welded scrap. it's art.", place, parts: [
@@ -46,16 +74,16 @@ function cleanParts(list, max) {
 }
 
 // A second look at something he built: he adds the finishing details (or whatever he wants to change).
-export async function refineThing(sheetText, thing, wish) {
+export async function refineThing(sheetText, thing, wish, found = []) {
   const user = `You built "${thing.name}"${thing.description ? ` (${thing.description})` : ""}. Here are its pieces right now (sizes in metres, y is height above the ground):
-${JSON.stringify(thing.parts.map(({ shape, turn, w, h, d, x, y, z, color }) => ({ shape, turn, w, h, d, x, y, z, color })))}
+${JSON.stringify(thing.parts.map((p) => (p.model ? { model: p.model, name: p.name, x: p.x, y: p.y, z: p.z, height: p.height } : { shape: p.shape, turn: p.turn, w: p.w, h: p.h, d: p.d, x: p.x, y: p.y, z: p.z, color: p.color })))}
 ${wish ? `What you want to do to it: "${wish}".` : "Take a good look at it and add the details it's missing, the way you picture it."}
 Add new pieces that fit onto the existing ones (same coordinates): trims, bolts, rails, panels, lights, cables, signs, decorations, anything.
 "turn" says which way a cone or cylinder points: up, forward, back, or side.
 Return JSON: {"description": "one sentence in your voice about how it looks now", "add": [{"shape": "box|cylinder|ball|cone", "turn": "up", "w": 0.2, "h": 0.2, "d": 0.2, "x": 0, "y": 1, "z": 0, "color": "#rrggbb", "glow": 0, "spin": false}]}
-Add 4 to 20 pieces.`;
+Add 4 to 20 pieces.${modelsText(found)}`;
   const r = await askJSON(sheetText, user, { temperature: 0.8 });
-  const add = cleanParts(r?.add, 20);
+  const add = allParts(r?.add, 20);
   if (!add.length) return null;
   return { description: String(r.description || thing.description || "").slice(0, 200), add };
 }
@@ -85,8 +113,9 @@ Use 3 to 16 parts. x between -2 and 2, y between 0 and 2, z between -2 and 2, si
 // Find a free spot near the place, away from its buildings and from other things he built.
 export function spotFor(place, builds) {
   const P = PLACES[place] || PLACES.hangar;
-  for (let i = 0; i < 40; i++) {
-    const a = Math.random() * Math.PI * 2, r = 6 + Math.random() * 5;
+  // Start close to the place and spread further out as the area fills up.
+  for (let i = 0; i < 80; i++) {
+    const a = Math.random() * Math.PI * 2, r = 6 + Math.random() * 5 + i * 0.35;
     const x = Math.round((P.x + Math.cos(a) * r) * 10) / 10, z = Math.round((P.z + Math.sin(a) * r) * 10) / 10;
     const clash = builds.some((b) => Math.hypot(b.x - x, b.z - z) < 3.5) || Object.values(PLACES).some((q) => Math.hypot(q.x - x, q.z - z) < 4.5);
     if (!clash) return { x, z, rot: Math.round(Math.random() * 628) / 100 };

@@ -39,6 +39,29 @@ Use 2 to 14 parts. x and z between -4 and 4, y between 0 and 6, sizes between 0.
   return { name: String(r.name || idea || "a thing").slice(0, 50), description: String(r.description || "").slice(0, 200), place: PLACES[r.place] ? r.place : place, parts };
 }
 
+// He designs how his ship looks, all of it: shape, size, paint, lights. The website builds it from these shapes.
+const TURNS = ["up", "forward", "back", "side"];
+export async function designShip(sheetText, idea, ship) {
+  const user = `You're designing how your ship, ${ship.name}, looks. The whole thing is up to you: shape, size, paint, wings, lights, anything.
+Your idea: "${idea || "whatever feels right"}".
+${ship.design ? `Right now it looks like: ${ship.design.description || "your last design"}.` : "Right now it has the plain scrap-dart look: white cone nose, white body, red wings, red tail fin, cyan glass bubble."}
+Build it from simple shapes. Sizes are in metres; you are about 1 metre tall. The ship's nose points toward +z (forward), y is up (y 0 is the bottom of the ship), x is left/right.
+"turn" says which way a cone or cylinder points: up, forward (toward the nose), back, or side.
+Return JSON:
+{"name": "the ship's name, or empty to keep ${ship.name}", "description": "one sentence in your voice about how it looks",
+ "parts": [{"shape": "box|cylinder|ball|cone", "turn": "up|forward|back|side", "w": 1, "h": 1, "d": 1, "x": 0, "y": 0.4, "z": 0, "color": "#rrggbb", "glow": 0}]}
+Use 3 to 16 parts. x between -2 and 2, y between 0 and 2, z between -2 and 2, sizes between 0.05 and 3. glow from 0 to 1 for lights and glass.`;
+  const r = await askJSON(sheetText, user, { temperature: 0.9 });
+  const parts = (r?.parts || []).filter((p) => SHAPES.includes(p?.shape)).slice(0, 16).map((p) => ({
+    shape: p.shape, turn: TURNS.includes(p.turn) ? p.turn : "up",
+    w: num(p.w, 0.05, 3, 0.5), h: num(p.h, 0.05, 3, 0.5), d: num(p.d, 0.05, 3, 0.5),
+    x: num(p.x, -2, 2, 0), y: num(p.y, 0, 2, 0.4), z: num(p.z, -2, 2, 0),
+    color: HEX.test(p.color) ? p.color : "#cfc8bc", glow: num(p.glow, 0, 1, 0),
+  }));
+  if (parts.length < 3) return null;
+  return { name: String(r.name || "").trim().slice(0, 40), description: String(r.description || idea || "").slice(0, 200), parts };
+}
+
 // Find a free spot near the place, away from its buildings and from other things he built.
 export function spotFor(place, builds) {
   const P = PLACES[place] || PLACES.hangar;

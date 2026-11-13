@@ -13,7 +13,7 @@ import * as M from "./memory.js";
 import { buildStep, designFriend, emptyFriend, friendText, friendTick, startFriend, wakeFriend } from "./friend.js";
 import { activeGame, emptyGames, gamesText, startGame, workSession } from "./games.js";
 import { emptyInterests, interestsText, noteInterest } from "./interests.js";
-import { FLIGHT_SECONDS, MAX_BUILDS, buildsText, cleanBody, designThing, flightLog, flightOutcome, spotFor } from "./builds.js";
+import { FLIGHT_SECONDS, MAX_BUILDS, buildsText, cleanBody, designShip, designThing, flightLog, flightOutcome, spotFor } from "./builds.js";
 import { sheet } from "./mind.js";
 import { applyShopChange, checkSales, currency as shopCurrency, emptyShop, sellable } from "./shop.js";
 import { currentModel, hasBrain, modelName, useModel } from "./llm.js";
@@ -338,7 +338,8 @@ async function doAction(id, d, notes) {
         state.newsForCreator = `You FINISHED ${dart.name}! It hovered off the hangar floor.`;
         nudge(0.35);
         M.remember(mem, `I finished building ${dart.name} on day ${clock.day}`, 1);
-        dart.launched.push({ name: dart.name, day: clock.day, partsUsed: dart.partsUsed || 0, parts: dart.parts || [] });
+        dart.launched.push({ name: dart.name, day: clock.day, partsUsed: dart.partsUsed || 0, parts: dart.parts || [], ...(dart.design ? { design: dart.design } : {}) });
+        dart.design = null;
         dart.partsUsed = 0;
         dart.parts = [];
         const n = dart.launched.length + 1;
@@ -451,6 +452,18 @@ async function doAction(id, d, notes) {
       post("mind", `Built ${thing.name} near ${PLACES[thing.place].name}${thing.description ? `: ${thing.description}` : ""}`, { change: "built", about: "world" });
       M.remember(mem, `On day ${clock.day} I built ${thing.name} near ${PLACES[thing.place].name}`, 0.75, nowISO);
       nudge(0.06);
+      break;
+    }
+    case "design_ship": {
+      const dart = works.dart;
+      const design = await designShip(sheet(character), detail, dart);
+      if (!design) { ok = false; feed.entries[0].ok = false; post("noticed", "Scribbled a few ship sketches but none of them looked right yet."); break; }
+      const oldName = dart.name;
+      if (design.name && design.name.toLowerCase() !== oldName.toLowerCase()) dart.name = design.name;
+      dart.design = { description: design.description, parts: design.parts, at: nowISO, day: clock.day };
+      post("mind", `Designed a new look for ${dart.name}${dart.name !== oldName ? ` (renamed from ${oldName})` : ""}: ${design.description}`, { change: "designed", about: "ship" });
+      M.remember(mem, `On day ${clock.day} I designed how ${dart.name} looks: ${design.description}`, 0.7, nowISO);
+      nudge(0.05);
       break;
     }
     case "take_down_thing": {

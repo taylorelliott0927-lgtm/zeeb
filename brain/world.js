@@ -157,6 +157,11 @@ export const ACTIONS = {
     effects: { craft: -0.5, curiosity: -0.1, charge: 0.05 }, mood: 0.05,
     about: "build something of your own and put it in the world: a sign, a sculpture, a bench, a lamp, a garden, a monument, anything. Say what in 'detail' and where in 'place'",
   },
+  design_ship: {
+    place: "hangar", doing: "sketching a new look for his ship", minutes: 60,
+    effects: { craft: -0.4, curiosity: -0.1 }, mood: 0.04,
+    about: "design how your ship looks, the whole thing: its shape, size, paint, wings, lights, its name. Describe your idea in 'detail'",
+  },
   take_down_thing: {
     place: "any", doing: "taking down something he built", minutes: 30, needsBuilds: true,
     effects: { craft: -0.1 }, mood: 0,

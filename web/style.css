@@ -169,7 +169,7 @@ h1 { margin: 0; font-size: 20px; letter-spacing: 0.02em; }
 .cal-month { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
 .cal-wd { text-align: center; font-size: 11px; color: var(--muted); }
 .cal-date { display: flex; flex-direction: column; align-items: center; padding: 6px 0 4px; border-radius: 8px; border: 1px solid transparent; background: transparent; color: var(--muted); font-size: 13px; cursor: default; min-height: 42px; }
-.cal-date span { font-size: 8px; color: var(--brass); line-height: 1; }
+.cal-date span { font-size: 10px; color: var(--brass); line-height: 1.2; }
 .cal-date.has { background: var(--panel-2); color: var(--text); cursor: pointer; border-color: var(--line); }
 .cal-date.has:hover, .cal-date.on { border-color: var(--brass); }
 .cal-date.today strong { color: var(--cyan); }

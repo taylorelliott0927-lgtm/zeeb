@@ -1,4 +1,4 @@
-import { World, DEFAULT_SHIP } from "./world3d.js?v=29";
+import { World, DEFAULT_SHIP } from "./world3d.js?v=30";
 
 // ---------- where Zeeb's data lives ----------
 // On GitHub Pages (you.github.io/repo) we read the live files straight from the repo,
@@ -118,13 +118,11 @@ function renderStats(s) {
   ].filter(Boolean)) facts.append(el("span", "chip", t));
 }
 
-// ---------- feed: today, plus a calendar of every real day he's been alive ----------
+// ---------- feed: his current town day, plus a calendar of every town day he's lived (all in his time) ----------
 const dayOf = (f) => Number((f.townTime || "").match(/day (\d+)/)?.[1]) || 0;
-const dateKey = (iso) => { const d = new Date(iso); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
-const keyToDate = (k) => { const [y, m, d] = k.split("-").map(Number); return new Date(y, m - 1, d); };
-const niceDate = (k) => keyToDate(k).toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
-let feedView = "today", feedDate = null, latestFeed = [], feedIndex = null, calMonth = null;
-const dayFiles = new Map(); // town day -> entries (finished days are cached)
+const timeOf = (f) => (f.townTime || "").replace(/^day \d+\s*/, "");
+let feedView = "today", feedDay = null, latestFeed = [], feedIndex = null, calWeek = null;
+const dayFiles = new Map();
 
 function feedItem(f) {
   const li = el("li", `k-${f.kind}${f.ok === false ? " failed" : ""}`);
@@ -135,83 +133,67 @@ function feedItem(f) {
   else text.textContent = (f.ok === false ? "(turned down) " : "") + f.text;
   body.append(text);
   if (f.why) body.append(el("div", "why", f.why));
-  body.append(el("div", "meta", `${f.kind} · ${f.townTime || ""} · ${new Date(f.at).toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" })}`));
+  body.append(el("div", "meta", `${f.kind} · ${timeOf(f)}`));
   li.append(body);
   return li;
 }
 
-// One real day's feed, newest first, with a small marker each time a new town day starts.
-function renderDate(key, entries) {
+const currentDay = () => Number(S?.clock?.day) || Math.max(0, ...latestFeed.map(dayOf));
+
+function renderDay(day, entries) {
   const list = $("feed");
   list.replaceChildren();
-  const items = entries.filter((f) => dateKey(f.at) === key).sort((a, b) => Date.parse(b.at) - Date.parse(a.at));
+  const items = entries.filter((f) => dayOf(f) === day).sort((a, b) => Date.parse(b.at) - Date.parse(a.at));
   const head = el("li", "day-head");
-  head.append(el("span", null, key === dateKey(new Date()) ? `Today, ${niceDate(key)}` : niceDate(key)), el("span", "muted", ` · ${items.length} things`));
+  head.append(el("span", null, day === currentDay() ? `Today · Day ${day}` : `Day ${day}`), el("span", "muted", ` · ${items.length} things`));
   list.append(head);
-  let town = null;
-  for (const f of items) {
-    if (dayOf(f) !== town) { town = dayOf(f); list.append(el("li", "town-head", `town day ${town}`)); }
-    list.append(feedItem(f));
-  }
-  if (!items.length) list.append(el("li", "muted", key === dateKey(new Date()) ? "Nothing yet today." : "Nothing saved for this day."));
+  for (const f of items) list.append(feedItem(f));
+  if (!items.length) list.append(el("li", "muted", day === currentDay() ? "Nothing yet today." : "Nothing saved for this day."));
 }
 
 async function loadIndex() { feedIndex = (await load("feed-days/index.json")) || feedIndex || { days: [] }; return feedIndex; }
 
-// Everything from one real date: the town-day files that overlap it, plus the live feed.
-async function entriesFor(key) {
-  const idx = await loadIndex();
-  const days = idx.days.filter((d) => dateKey(d.first) <= key && dateKey(d.last) >= key).map((d) => d.day);
-  const newest = Math.max(0, ...idx.days.map((d) => d.day));
-  const all = [...latestFeed];
-  await Promise.all(days.map(async (d) => {
-    if (!dayFiles.has(d) || d === newest) { const f = await load(`feed-days/day-${d}.json`); if (f?.entries) dayFiles.set(d, f.entries); }
-    all.push(...(dayFiles.get(d) || []));
-  }));
-  const seen = new Set();
-  return all.filter((e) => { const k = e.at + e.text; if (seen.has(k)) return false; seen.add(k); return true; });
-}
-
-async function showDate(key) {
-  feedDate = key;
+async function showDay(day) {
+  feedDay = day;
   if (feedView === "calendar") renderCalendar();
-  renderDate(key, latestFeed);               // what we have right away
-  renderDate(key, await entriesFor(key));    // then the full day
+  renderDay(day, latestFeed);
+  if (!dayFiles.has(day) || day === currentDay()) { const f = await load(`feed-days/day-${day}.json`); if (f?.entries) dayFiles.set(day, f.entries); }
+  const seen = new Set();
+  renderDay(day, [...latestFeed, ...(dayFiles.get(day) || [])].filter((e) => { const k = e.at + e.text; if (seen.has(k)) return false; seen.add(k); return true; }));
 }
 
+// His calendar: town days in weeks of 7 (Week 1 is days 1 to 7, and so on).
 async function renderCalendar() {
   const cal = $("calendar");
   const idx = await loadIndex();
   const counts = {};
-  for (const d of idx.days) for (let t = keyToDate(dateKey(d.first)); dateKey(t) <= dateKey(d.last); t.setDate(t.getDate() + 1)) counts[dateKey(t)] = (counts[dateKey(t)] || 0) + (dateKey(t) === dateKey(d.first) ? d.count : 0);
-  for (const f of latestFeed) if (!counts[dateKey(f.at)]) counts[dateKey(f.at)] = 1;
-  const today = new Date();
-  calMonth ||= new Date(today.getFullYear(), today.getMonth(), 1);
+  for (const d of idx.days) counts[d.day] = d.count;
+  for (const f of latestFeed) if (!counts[dayOf(f)]) counts[dayOf(f)] = 1;
+  const today = currentDay();
+  const lastWeek = Math.max(1, Math.ceil(today / 7));
+  calWeek ||= lastWeek;
   cal.replaceChildren();
   const nav = el("div", "cal-nav");
   const prev = el("button", "seg", "‹"), next = el("button", "seg", "›");
   prev.type = next.type = "button";
-  prev.onclick = () => { calMonth = new Date(calMonth.getFullYear(), calMonth.getMonth() - 1, 1); renderCalendar(); };
-  next.onclick = () => { calMonth = new Date(calMonth.getFullYear(), calMonth.getMonth() + 1, 1); renderCalendar(); };
-  nav.append(prev, el("strong", null, calMonth.toLocaleDateString(undefined, { month: "long", year: "numeric" })), next);
+  prev.disabled = calWeek <= 1; next.disabled = calWeek >= lastWeek;
+  prev.onclick = () => { calWeek = Math.max(1, calWeek - 1); renderCalendar(); };
+  next.onclick = () => { calWeek = Math.min(lastWeek, calWeek + 1); renderCalendar(); };
+  nav.append(prev, el("strong", null, `Week ${calWeek} · days ${calWeek * 7 - 6} to ${calWeek * 7}`), next);
   cal.append(nav);
   const grid = el("div", "cal-month");
-  for (const w of ["S", "M", "T", "W", "T", "F", "S"]) grid.append(el("div", "cal-wd", w));
-  for (let i = 0; i < calMonth.getDay(); i++) grid.append(el("div"));
-  const days = new Date(calMonth.getFullYear(), calMonth.getMonth() + 1, 0).getDate();
-  for (let n = 1; n <= days; n++) {
-    const k = dateKey(new Date(calMonth.getFullYear(), calMonth.getMonth(), n));
-    const has = Boolean(counts[k]);
-    const b = el("button", `cal-date${has ? " has" : ""}${k === feedDate ? " on" : ""}${k === dateKey(today) ? " today" : ""}`);
+  for (let n = calWeek * 7 - 6; n <= calWeek * 7; n++) {
+    const has = Boolean(counts[n]);
+    const b = el("button", `cal-date${has ? " has" : ""}${n === feedDay ? " on" : ""}${n === today ? " today" : ""}`);
     b.type = "button";
-    b.append(el("strong", null, String(n)));
-    if (has) b.append(el("span", null, "●"));
+    b.append(el("strong", null, `Day ${n}`));
+    b.append(el("span", null, has ? `${counts[n]}` : n > today ? "" : "–"));
     b.disabled = !has;
-    b.onclick = () => showDate(k);
+    b.onclick = () => showDay(n);
     grid.append(b);
   }
   cal.append(grid);
-  cal.append(el("p", "muted", "Days with a dot are days Zeeb was alive. Tap one to see everything he did."));
+  cal.append(el("p", "muted", "His town days, in weeks of 7. Tap a day to see everything he did. Days without a number weren't saved (before the calendar existed)."));
 }
 
 function setFeedView(v) {
@@ -219,18 +201,14 @@ function setFeedView(v) {
   $("feedRecent").classList.toggle("on", v === "today");
   $("feedCal").classList.toggle("on", v === "calendar");
   $("calendar").hidden = v !== "calendar";
-  if (v === "calendar") { renderCalendar(); if (feedDate) showDate(feedDate); else $("feed").replaceChildren(); }
-  else { feedDate = null; showDate(dateKey(new Date())); }
+  if (v === "calendar") { renderCalendar(); if (feedDay) showDay(feedDay); else $("feed").replaceChildren(); }
+  else { feedDay = null; renderDay(currentDay(), latestFeed); }
 }
 setTimeout(() => { $("feedRecent")?.addEventListener("click", () => setFeedView("today")); $("feedCal")?.addEventListener("click", () => setFeedView("calendar")); }, 0);
 
-let todayLoaded = 0;
 function renderFeed(entries) {
   latestFeed = entries;
-  if (feedView !== "today") return;
-  // the live feed every refresh; the full day's files about once a minute
-  if (Date.now() - todayLoaded > 60000) { todayLoaded = Date.now(); showDate(dateKey(new Date())); }
-  else renderDate(dateKey(new Date()), [...entries, ...[...dayFiles.values()].flat()].filter((e, i, a) => a.findIndex((x) => x.at === e.at && x.text === e.text) === i));
+  if (feedView === "today") renderDay(currentDay(), entries); // his whole current day is always in the live feed
 }
 
 function renderFeedOld(entries) {

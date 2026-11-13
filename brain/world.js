@@ -71,7 +71,7 @@ export const ACTIONS = {
   browse_wire: {
     place: "tower", doing: "browsing the Wire at the comms tower", minutes: 35,
     effects: { curiosity: -0.5 }, mood: 0.02, internet: "search",
-    about: "search the Wire (the real internet) for anything you are curious about. Put the search words in 'detail'",
+    about: "search the Wire (the real internet) for anything: something you're curious about, or how to do or fix something. Put the search words in 'detail'",
   },
   read_news: {
     place: "tower", doing: "reading the space news", minutes: 25,

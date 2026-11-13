@@ -74,7 +74,7 @@ ${(() => {
     const hrs = (id) => (state.lastDone?.[id] ? (Date.now() - Date.parse(state.lastDone[id])) / 3600000 / (TOWN_DAY_MINUTES / 60 / 24) : Infinity);
     // Only everyday activities: needs (sleep, oil) and his own big decisions (shop, friend, games, building) are never suggested.
     const skip = ["open_shop", "tend_shop", "start_friend", "build_friend", "start_game", "work_game", "build_thing", "take_down_thing", "test_flight", "go_to_sleep", "nap_dock", "drink_oil", "reply_notes"];
-    const stale = available.filter((id) => !skip.includes(id) && hrs(id) > 10).map((id) => (hrs(id) === Infinity ? `${id} (not lately)` : `${id} (${Math.round(hrs(id) / 24 * 10) / 10} days ago)`));
+    const stale = available.filter((id) => !skip.includes(id) && hrs(id) > 10).sort((a, b) => hrs(b) - hrs(a)).map((id) => (hrs(id) === Infinity ? `${id} (not lately)` : `${id} (${Math.round(hrs(id) / 24 * 10) / 10} days ago)`));
     return `TODAY SO FAR: ${done.map(([id, n]) => `${id} x${n}`).join(", ") || "nothing yet"}${stale.length ? `\nTHINGS YOU HAVEN'T DONE IN A WHILE: ${stale.slice(0, 10).join(", ")}` : ""}`;
   })()}
 
@@ -97,6 +97,8 @@ WHAT YOU BELIEVE
 ${ctx.beliefs.map((b) => `- ${b.text}`).join("\n") || "(nothing settled yet)"}
 
 WANTS: ${state.wants.map((w) => w.text).join("; ") || "none"}
+THINGS YOU WANT TO FIGURE OUT (id: what): ${(state.puzzles || []).map((p) => `${p.id}: ${p.text}`).join("; ") || "none"}${(state.puzzles || []).length ? " (You can look things up on the Wire, ask your creator, or just try things. Up to you.)" : ""}
+${state.nextSearch?.text ? `Something you thought you might look up on the Wire: "${state.nextSearch.text}"` : ""}
 PROMISES YOU MADE (id: what, to whom, due): ${state.promises.map((p) => `${p.id}: ${p.what} (to ${p.to}, due ${p.due})`).join("; ") || "none"}
 
 YOUR CREATOR
@@ -132,6 +134,8 @@ Choose one. Return JSON:
   "remember": [{"text": "something worth remembering", "importance": 0.5}],
   "recalled": ["ids of memories that came to mind"],
   "want": "a new want, or empty",
+  "figure_out": "a problem you're stuck on or something you want to find out, in your words, or empty",
+  "figured_out": "the id of something you've now figured out (or given up on), or empty",
   "promise": null,
   "kept_promise": null,
   "letter": null,

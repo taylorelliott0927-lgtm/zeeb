@@ -351,6 +351,8 @@ async function doAction(id, d, notes) {
       if (r.inspiration) post("mind", `Idea: ${r.inspiration}`, { change: "idea", about: "piece" });
       if (r.thought) d.thought = r.thought;
       if (r.feeling) d.feeling = r.feeling;
+      // What he said he might look up next stays on his mind until his next search.
+      state.nextSearch = r.next_search && String(r.next_search).trim() ? { text: String(r.next_search).trim().slice(0, 120), at: nowISO } : (id === "browse_wire" ? null : state.nextSearch);
       break;
     }
     case "wander":
@@ -570,7 +572,7 @@ function applyChats() {
   nudge(Math.min(0.15, 0.04 * mine.length));
   if (woke && state.asleep) post("felt", "His creator woke him up for a chat.");
   post("did", `had a live chat with his creator (${msgs.length} messages)`, { why: null, ok: true });
-  const gist = mine.map((m) => m.text).join(" / ").replace(/\s+/g, " ").slice(0, 150);
+  const gist = mine.map((m) => m.text).join(" / ").replace(/\s+/g, " ").slice(0, 300);
   M.remember(mem, `Chatted live with my creator. They said: ${gist}`, 0.85, nowISO);
   for (const m of msgs.slice(-6)) state.creatorThread.push({ from: m.from === "creator" ? "creator" : "zeeb", chat: true, text: String(m.text).slice(0, 600), at: m.at || nowISO });
   state.creatorThread = state.creatorThread.slice(-40);
@@ -725,6 +727,16 @@ async function main() {
   if (d.want && !state.wants.some((w) => w.text.toLowerCase() === String(d.want).toLowerCase())) {
     state.wants.unshift({ id: newId("w", state.wants), text: String(d.want).slice(0, 140), at: nowISO });
     state.wants = state.wants.slice(0, 4);
+  }
+  // Problems he's stuck on, in his own words, until he says he's sorted them.
+  state.puzzles = state.puzzles || [];
+  if (d.figured_out) {
+    const p = state.puzzles.find((x) => x.id === String(d.figured_out).trim());
+    if (p) { state.puzzles = state.puzzles.filter((x) => x !== p); post("mind", `Figured out: ${p.text}`, { change: "solved", about: "puzzle" }); }
+  }
+  if (d.figure_out && String(d.figure_out).trim() && !state.puzzles.some((p) => p.text.toLowerCase() === String(d.figure_out).trim().toLowerCase())) {
+    state.puzzles.unshift({ id: newId("q", state.puzzles), text: String(d.figure_out).trim().slice(0, 160), at: nowISO });
+    state.puzzles = state.puzzles.slice(0, 5);
   }
   if (d.promise?.what && d.promise?.to && !state.promises.some((p) => p.what.toLowerCase() === String(d.promise.what).toLowerCase())) {
     const hours = clamp(Number(d.promise.hours || 6), 1, 48);

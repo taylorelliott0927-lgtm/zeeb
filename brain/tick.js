@@ -171,9 +171,11 @@ function wakeUp(night) {
   state.doingWords = "";
   state.action = null;
   state.doing = "just woke up";
-  post("felt", night
-    ? `Woke up fully charged in the middle of the night. Not sleepy at all.`
-    : `Woke up with the first sun. Charge at ${Math.round((1 - state.needs.charge) * 100)}%.`);
+  const pct = Math.round((1 - state.needs.charge) * 100);
+  post("felt", pct < 90
+    ? `His creator's chat woke him up early. Charge at ${pct}%.`
+    : night ? `Woke up fully charged in the middle of the night. Not sleepy at all.`
+    : clock.hour >= 5 && clock.hour < 9 ? `Woke up with the first sun, fully charged.` : `Woke up fully charged.`);
 }
 
 function checkPromises() {
@@ -606,10 +608,10 @@ function reportGame(g, r) {
 }
 
 async function handleLetters(d) {
+  // Big news stays on his mind for a few heartbeats in case he wants to write about it. He writes it himself or not at all.
   if (state.newsForCreator && !(d.letter && String(d.letter.body || "").trim())) {
-    if (state.newsPendingTicks >= 1) {
-      d.letter = { subject: "big news from the hangar!", body: `dear creator,\n\n${state.newsForCreator}\n\njust had to tell you. bweep!` };
-    } else state.newsPendingTicks = (state.newsPendingTicks || 0) + 1;
+    state.newsPendingTicks = (state.newsPendingTicks || 0) + 1;
+    if (state.newsPendingTicks > 6) { state.newsForCreator = ""; state.newsPendingTicks = 0; }
   }
   if (d.letter && String(d.letter.body || "").trim()) { state.newsForCreator = ""; state.newsPendingTicks = 0; }
   // A letter to his creator, any time he wants, as many as he wants.
@@ -724,7 +726,8 @@ async function main() {
   const night = clock.hour >= SLEEP_FROM || clock.hour < WAKE_AT;
   if (state.asleep) {
     const full = state.needs.charge <= 0.03;
-    if (night && !full && !chatted) { settleFeelings(); return finish(); } // still charging, no AI needed
+    // Once he's in the dock he stays until he's charged (day or night), unless his creator chats with him.
+    if (!full && !chatted) { settleFeelings(); return finish(); } // still charging, no AI needed
     wakeUp(night);
   } else if (state.needs.charge > 0.9) {
     // battery nearly flat: no choice, he has to sleep

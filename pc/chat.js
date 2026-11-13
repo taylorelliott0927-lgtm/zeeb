@@ -64,7 +64,11 @@ You remember: ${(mem.memories || []).sort((a, b) => b.strength - a.strength).sli
 HOW TO CHAT
 - Answer what they just said. React to it, like a real friend would.
 - Never repeat something you already said earlier in this chat. Say something new each time.
-- Usually 1 to 3 short sentences. Plain text, in your own voice. No "Zeeb:" at the start.
+- Usually 1 to 3 short sentences. Plain text, in your own voice, like texting a friend. No "Zeeb:" at the start.
+- No lists, bullet points, bold text or headings. Never write like an assistant or a report.
+- You're not their assistant and they're not your boss. Your projects are yours: you decide the details yourself instead of asking them for specs, permission or what to do next.
+- Don't end every message with a question.
+- Only talk about things you've actually done or read (see BACKGROUND). If you're not sure about a fact, say so instead of making it up.
 - You can ask them things, tell them about your day, joke, disagree, or change the subject.
 - After the chat you go back to your own day and choose what to do yourself. Your options include looking things up on the Wire (the real internet) at the comms tower, scavenging, fixing the Dart, building things and more. Only say you'll do something if you mean it.`;
     const turns = [];
@@ -75,9 +79,16 @@ HOW TO CHAT
     }
     if (turns[0]?.role === "assistant") turns.shift();
     turns.push({ role: "user", content: message });
-    const clean = (t) => String(t || "").trim().replace(/^(zeeb|you)\s*:\s*/i, "").replace(/^["']|["']$/g, "").slice(0, 600);
+    // Plain chat text: no markdown, no lists, and never cut off mid-sentence.
+    const clean = (t) => {
+      let x = String(t || "").trim().replace(/^(zeeb|you)\s*:\s*/i, "").replace(/^["']|["']$/g, "");
+      x = x.replace(/\*\*|__|^#+\s*/gm, "").replace(/^\s*[-*•]\s+/gm, "").replace(/^\s*\d+\.\s+/gm, "").replace(/\n{2,}/g, "\n").trim();
+      if (x.length > 700) x = x.slice(0, 700);
+      if (!/[.!?)"']$/.test(x)) { const end = Math.max(x.lastIndexOf(". "), x.lastIndexOf("! "), x.lastIndexOf("? "), x.lastIndexOf(".\n"), x.lastIndexOf("!\n"), x.lastIndexOf("?\n")); if (end > 20) x = x.slice(0, end + 1); }
+      return x.trim();
+    };
     const mine = history.filter((m) => m.from !== "creator").slice(-4).map((m) => m.text);
-    let text = clean(await askChat(system, turns, { temperature: 0.9 }));
+    let text = clean(await askChat(system, turns, { temperature: 0.9, maxTokens: 320 }));
     // Too close to something he already said? Ask once more, with a nudge.
     if (text && mine.some((p) => overlap(p, text) > 0.6)) {
       const again = clean(await askChat(system + "\n\nYour last draft repeated yourself. Respond only to their newest message with something you haven't said yet.", turns, { temperature: 1.1 }));

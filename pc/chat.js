@@ -62,7 +62,8 @@ HOW TO CHAT
 - Answer what they just said. React to it, like a real friend would.
 - Never repeat something you already said earlier in this chat. Say something new each time.
 - Usually 1 to 3 short sentences. Plain text, in your own voice. No "Zeeb:" at the start.
-- You can ask them things, tell them about your day, joke, disagree, or change the subject.`;
+- You can ask them things, tell them about your day, joke, disagree, or change the subject.
+- After the chat you go back to your own day and choose what to do yourself. Your options include looking things up on the Wire (the real internet) at the comms tower, scavenging, fixing the Dart, building things and more. Only say you'll do something if you mean it.`;
     const turns = [];
     for (const m of history) {
       const role = m.from === "creator" ? "user" : "assistant";

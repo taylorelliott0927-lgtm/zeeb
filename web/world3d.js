@@ -148,6 +148,9 @@ export class World {
     this.parkedBody = this.put(this.parked, null);
     this.shipBody(this.parkedBody, null);
     this.parkedMounts = this.put(this.parked, null);
+    // Every ship he finished before the newest one is parked in a row beside it, each with its own look and parts.
+    this.olderShips = this.put(R, null);
+    this.shipLabels = [];
     this.flyer = this.put(R, null, { visible: false, scale: [1.3, 1.3, 1.3] });
     this.flyerBody = this.put(this.flyer, null);
     this.shipBody(this.flyerBody, null);
@@ -405,6 +408,7 @@ export class World {
     const w = s.works || {};
     this.hasShip = (w.dart?.launched || []).length > 0;
     if (!this.flight) this.parked.visible = this.hasShip;
+    this.setOlderShips(w.dart?.launched || []);
     this.setBuilds(w.builds || []);
     this.recipes = new Map(((w.crafting?.recipes) || []).map((r) => [String(r.what).toLowerCase(), r]));
     const rsig = JSON.stringify([...this.recipes.keys()]);
@@ -464,6 +468,28 @@ export class World {
       tail = Math.min(...parts.map((pt) => pt.z - (pt.turn === "forward" || pt.turn === "back" ? pt.h : pt.d) / 2)) - 0.1;
     }
     return { pieces, slots, tail };
+  }
+
+  setOlderShips(launched) {
+    const sig = JSON.stringify(launched.map((l) => [l.name, (l.parts || []).length, l.design?.at || ""]));
+    if (sig === this.olderSig) return;
+    this.olderSig = sig;
+    this.olderShips.children = [];
+    for (const l of this.shipLabels) l.el.remove();
+    this.shipLabels = [];
+    const label = (text, pos) => { const el = document.createElement("div"); el.className = "place-label small"; el.textContent = text; this.labels.appendChild(el); this.shipLabels.push({ el, pos }); };
+    // newest is the main parked ship (the one that flies); the rest line up beside it, newest closest
+    const older = launched.slice(0, -1).reverse();
+    older.forEach((l, i) => {
+      const x = this.PARK.x + 3.4 * (i + 1), z = this.PARK.z + 2.4 * (i + 1);
+      const ship = this.put(this.olderShips, null, { pos: this.at(x, z, 0.6), rot: [0, this.PARK.yaw, 0], scale: [1.3, 1.3, 1.3] });
+      const b = this.shipBody(this.put(ship, null), l.design);
+      const mounts = this.put(ship, null);
+      this.mountParts(mounts, l.parts || [], b.slots, 1);
+      label(l.name, this.at(x, z, 2.2));
+    });
+    const last = launched[launched.length - 1];
+    if (last) label(last.name, this.at(this.PARK.x, this.PARK.z, 2.2));
   }
 
   setShipDesign(which, root, design) {
@@ -1003,7 +1029,7 @@ export class World {
     this.animate(dt);
     this.r.render(this.root, this.cam, env);
     // labels
-    for (const l of [...this.buildLabels, this.shelfLabel]) {
+    for (const l of [...this.buildLabels, this.shelfLabel, ...(this.shipLabels || [])]) {
       const p = this.r.project(l.pos);
       const d = Math.hypot(l.pos[0] - this.cam.eye[0], l.pos[2] - this.cam.eye[2]);
       if (!p || d > 28) { l.el.style.display = "none"; continue; }

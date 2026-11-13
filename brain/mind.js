@@ -312,7 +312,7 @@ export async function surfNext(ctx) {
   const links = (works.lastLinks || []).slice(0, 10);
   const user = `Town day ${clock.day}, ${clock.label}. You're at the comms tower, ${state.doingWords || "on the Wire"}.
 Last thing you read: ${last ? `"${last.title}"${last.takeaway ? ` - ${last.takeaway}` : ""}` : "nothing yet"}.
-${links.length ? `LINKS YOU CAN SEE:\n${links.map((l, i) => `${i + 1}. ${l.title}`).join("\n")}` : "No links on screen."}
+${links.length ? `LINKS YOU CAN SEE:\n${links.map((l, i) => `${i + 1}. ${l.title}${(() => { try { return ` (${new URL(l.url).hostname.replace(/^www\./, "")})`; } catch { return ""; } })()}`).join("\n")}` : "No links on screen."}
 ${state.nextSearch?.text ? `You thought you might look up: "${state.nextSearch.text}"` : ""}
 ${(state.puzzles || []).length ? `Things you want to figure out: ${state.puzzles.map((p) => p.text).join("; ")}` : ""}
 You can open one of the links (its number), search for something (the search words), or read nothing and just think about what you've seen. Whatever you feel like.

@@ -194,7 +194,8 @@ function linkTarget(detail) {
 
 // Read one thing off the Wire (a search, a page or the news), react to it, and keep a record with the link.
 async function readTheWire(kind, target, wasSearch) {
-  const found = await useWire(kind, target);
+  const recentSites = [...new Set((works.reads || []).slice(0, 15).map((r) => { try { return new URL(r.url).hostname.replace(/^www\./, ""); } catch { return ""; } }).filter(Boolean))];
+  const found = await useWire(kind, target, recentSites);
   if (!found.failed && found.links?.length) works.lastLinks = found.links.slice(0, 12);
   else if (found.kind === "news" && !found.failed) works.lastLinks = (found.items || []).filter((i) => i.url).map((i) => ({ title: i.title, url: i.url }));
   const r = (await reactToWire({ character, works }, found)) || ruleReact(found);

@@ -39,7 +39,17 @@ export async function searchWire(query) {
     url: summary?.content_urls?.desktop?.page || `https://en.wikipedia.org/wiki/${encodeURIComponent(hit.title)}`,
     text: trim(summary.extract),
     others: hits.filter((h) => h.title !== hit.title).map((h) => h.title).slice(0, 4),
+    links: await wikiLinks(hit.title),
   };
+}
+
+// The outside websites a Wikipedia article points to, so he can follow them somewhere new.
+async function wikiLinks(title) {
+  try {
+    const d = await getJSON(`https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=externallinks&format=json&origin=*`);
+    return (d?.parse?.externallinks || []).filter((u) => /^https?:/.test(u) && !/wikipedia|wikimedia|wikidata|archive\.org|doi\.org|worldcat|jstor|google\./.test(u) && !BLOCKED.test(u)).slice(0, 10)
+      .map((u) => { try { const x = new URL(u); return { title: `${x.hostname.replace(/^www\./, "")}${x.pathname.length > 1 ? x.pathname.slice(0, 50) : ""}`, url: u }; } catch { return null; } }).filter(Boolean);
+  } catch { return []; }
 }
 
 export async function randomArticle() {
@@ -78,7 +88,8 @@ export async function readNews() {
 }
 
 // ---------- the open web: free search, reading any public page, following links ----------
-const BROWSER_UA = "Mozilla/5.0 (compatible; ZeebBot/1.0; a little virtual bot reading the web)";
+// A normal browser signature: many sites (and search engines) turn away anything that calls itself a bot.
+const BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
 const MAX_BYTES = 1_500_000;
 // Only grown-up content filters here are basic: obvious adult or gambling sites are skipped.
 const BLOCKED = /(porn|xxx|xvideo|xhamster|onlyfans|hentai|sex(?!t)|nsfw|casino|betting|bet365|gambl)/i;
@@ -131,9 +142,15 @@ export function pageToText(html, baseUrl) {
     if (!/^https?:/.test(href) || seen.has(href) || BLOCKED.test(href)) continue;
     seen.add(href);
     links.push({ title: label, url: href });
-    if (links.length >= 12) break;
+    if (links.length >= 60) break;
   }
-  return { title, text, links };
+  // Mix links that lead to other websites in with the page's own, so there's always somewhere new to wander.
+  const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
+  const home = host(baseUrl);
+  const away = links.filter((l) => host(l.url) !== home), own = links.filter((l) => host(l.url) === home);
+  const mixed = [];
+  while (mixed.length < 12 && (away.length || own.length)) { if (away.length) mixed.push(away.shift()); if (own.length && mixed.length < 12) mixed.push(own.shift()); }
+  return { title, text, links: mixed };
 }
 
 export async function readPage(raw) {
@@ -165,11 +182,42 @@ export async function readPage(raw) {
   return { kind: "page", failed: true, error: "too many redirects" };
 }
 
-// Free web search with no key: DuckDuckGo's simple HTML page. Falls back to Wikipedia if it's unavailable.
+// Free web search with no key. Several search engines, tried in turn until one answers
+// (DuckDuckGo, DuckDuckGo Lite, Mojeek, Marginalia and Wiby, which finds small independent websites).
+async function getHTML(url) {
+  const res = await fetchWithTimeout(url, { headers: { "User-Agent": BROWSER_UA, Accept: "text/html", "Accept-Language": "en" } }, 15000);
+  if (!res.ok) throw new Error(`${res.status}`);
+  return res.text();
+}
+const ENGINES = {
+  duckduckgo: async (q) => parseSearch(await getHTML(`https://html.duckduckgo.com/html/?q=${q}`)),
+  duckduckgo_lite: async (q) => parseLinks(await getHTML(`https://lite.duckduckgo.com/lite/?q=${q}`), /<a[^>]*href=["']([^"']+)["'][^>]*class=['"]result-link['"][^>]*>([\s\S]*?)<\/a>/gi),
+  mojeek: async (q) => parseLinks(await getHTML(`https://www.mojeek.com/search?q=${q}`), /<a[^>]*class=["']title["'][^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi),
+  marginalia: async (q) => ((await getJSON(`https://api.marginalia.nu/public/search/${q}?count=10`))?.results || []).map((r) => ({ title: r.title || r.url, url: r.url })),
+  wiby: async (q) => ((await getJSON(`https://wiby.me/json/?q=${q}`)) || []).map((r) => ({ title: r.Title || r.URL, url: r.URL })),
+};
 export async function webSearch(query) {
-  const res = await fetchWithTimeout(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(query.slice(0, 150))}`, { headers: { "User-Agent": BROWSER_UA, Accept: "text/html" } }, 15000);
-  if (!res.ok) throw new Error(`search answered ${res.status}`);
-  return parseSearch(await res.text());
+  const q = encodeURIComponent(query.slice(0, 150));
+  for (const [name, engine] of Object.entries(ENGINES)) {
+    try {
+      const results = (await engine(q)).filter((r) => /^https?:/.test(r.url) && !BLOCKED.test(r.url)).slice(0, 10);
+      if (results.length) { log(`searched with ${name}: ${results.length} results`); return results; }
+    } catch (e) { log(`${name} search didn't answer (${e.message})`); }
+  }
+  return [];
+}
+export function parseLinks(html, re) {
+  const out = [];
+  for (const m of html.matchAll(re)) {
+    let href = decode(m[1]);
+    const ud = href.match(/[?&]uddg=([^&]+)/);
+    if (ud) href = decodeURIComponent(ud[1]);
+    if (href.startsWith("//")) href = "https:" + href;
+    const title = decode(m[2].replace(/<[^>]+>/g, "")).replace(/\s+/g, " ").trim();
+    if (/^https?:/.test(href) && title && !/duckduckgo\.com|mojeek\.com/.test(href)) out.push({ title, url: href });
+    if (out.length >= 10) break;
+  }
+  return out;
 }
 
 export function parseSearch(html) {
@@ -188,12 +236,15 @@ export function parseSearch(html) {
 }
 
 // Search the web, then open one of the results (usually the top one) and read it.
-async function searchAndRead(query) {
+async function searchAndRead(query, recentSites = []) {
   let results = [];
   try { results = await webSearch(query); } catch (e) { log("web search failed:", e.message); }
   if (!results.length) return null;
-  const order = Math.random() < 0.7 ? results : [pick(results), ...results];
-  for (const r of order.slice(0, 3)) {
+  // Sites he hasn't read lately go first, so he keeps finding new places instead of the same few.
+  const site = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
+  const fresh = results.filter((r) => !recentSites.includes(site(r.url))), seen = results.filter((r) => recentSites.includes(site(r.url)));
+  const order = [...(Math.random() < 0.7 ? fresh : [pick(fresh.length ? fresh : results), ...fresh]), ...seen];
+  for (const r of order.slice(0, 5)) {
     try {
       const page = await readPage(r.url);
       if (page.found) return { ...page, kind: "search", query, others: results.filter((x) => x.url !== page.url).map((x) => x.title).slice(0, 5), links: [...results.filter((x) => x.url !== page.url), ...(page.links || [])].slice(0, 12) };
@@ -202,7 +253,7 @@ async function searchAndRead(query) {
   return null;
 }
 
-export async function useWire(kind, query) {
+export async function useWire(kind, query, recentSites = []) {
   if (process.env.MOCK === "1") {
     if (kind === "page") return { kind, found: true, title: "A test page", url: query || "https://example.com", site: "example.com", text: "This is a page about something. It has words in it.", links: [{ title: "Another page", url: "https://example.com/2" }] };
     return kind === "news"
@@ -213,14 +264,14 @@ export async function useWire(kind, query) {
     if (kind === "page") return await readPage(query);
     if (kind === "search") {
       if (!query || query.length < 2) return await randomArticle();
-      const web = await searchAndRead(query);
+      const web = await searchAndRead(query, recentSites);
       if (web) return web;
       const r = await searchWire(query);
       if (r.found) return r;
       // Long, chatty searches often find nothing: try again with just the main words before giving up.
       const short = query.toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter((w) => w.length > 3 && !STOP.has(w)).slice(0, 4).join(" ");
       if (short && short !== query.toLowerCase()) {
-        const again = (await searchAndRead(short)) || (await searchWire(short));
+        const again = (await searchAndRead(short, recentSites)) || (await searchWire(short));
         if (again && again.found !== false) return { ...again, query };
       }
       return { kind, query, failed: true, error: "nothing came up for that search" };

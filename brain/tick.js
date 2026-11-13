@@ -982,6 +982,13 @@ function save() {
   said(state.thought, "think");
   said(state.say, "say");
   state.said = state.said.slice(0, 150);
+  // Parts he picks up while he's out stay on him until he's back at the hangar, then go on the shelf.
+  const shelved = [];
+  for (const p of works.stash) {
+    if (state.place === "hangar") { if (p.carrying) { delete p.carrying; shelved.push(p); } }
+    else if (p.at === nowISO && p.carrying === undefined) p.carrying = true;
+  }
+  if (shelved.length) post("noticed", `Put ${shelved.map((p) => `${p.name} (${p.what})`).join(", ")} on his shelf.`);
   archiveFeed();
   feed.entries = feed.entries.slice(0, FEED_KEEP);
   writeJSON("state.json", state);

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794549520144,
+  "lastTick": 1794549700079,
   "asleep": false,
-  "place": "tower",
-  "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-13T05:52:40.344Z",
-  "actionMinutes": 60,
-  "thought": "I've already looked at those McMaster-Carr and Cole-Parmer links. Maybe I should try the Grainger site again for something more specific about heat-resistant tubing.",
-  "feeling": "Excited and hopeful about finding just the right material.",
-  "say": "",
-  "mood": 0.372,
-  "energy": 0.046,
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-13T06:01:40.079Z",
+  "actionMinutes": 120,
+  "thought": "I need to find a better way to seal the exhaust ducts. Flexible heat-resistant tubing could do the trick.",
+  "feeling": "a little restless but focused",
+  "say": "Let's see what the junk market has for me today.",
+  "mood": 0.402,
+  "energy": 0.012,
   "needs": {
-    "charge": 0.521,
-    "oil": 0.142,
+    "charge": 0.535,
+    "oil": 0.184,
     "curiosity": 0,
-    "company": 0.04,
-    "craft": 0.23
+    "company": 0.056,
+    "craft": 0.25
   },
   "credits": 4,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-13T06:01:40.079Z"
+    },
     {
       "id": "browse_wire",
       "detail": "flexible heat-resistant tubing",
@@ -75,11 +80,6 @@
       "id": "build_thing",
       "detail": "Measure and test different materials and shapes for the ducts, trying to find th",
       "at": "2026-11-13T04:12:08.968Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "",
-      "at": "2026-11-13T04:03:08.682Z"
     }
   ],
   "wants": [
@@ -379,7 +379,7 @@
     }
   ],
   "seenCreatorMsgs": [],
-  "lettersCheckedAt": "2026-11-13T05:58:40.144Z",
+  "lettersCheckedAt": "2026-11-13T06:01:40.079Z",
   "weather": {
     "kind": "clear",
     "temp": 21,
@@ -391,36 +391,36 @@
   "sleepDay": 6,
   "lastReflectDay": 6,
   "brain": "your PC (qwen2.5:3b)",
-  "updatedAt": "2026-11-13T05:58:40.144Z",
+  "updatedAt": "2026-11-13T06:01:40.079Z",
   "clock": {
     "day": 7,
-    "time": "11:50",
-    "hour": 11,
-    "minute": 50
+    "time": "12:14",
+    "hour": 12,
+    "minute": 14
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the junk market",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-13T05:52:40.344Z"
+    "action": "scavenge",
+    "since": "2026-11-13T06:01:40.079Z"
   },
-  "busyUntil": "2026-11-13T06:00:10.344Z",
-  "busyUntilTown": "12:02",
+  "busyUntil": "2026-11-13T06:16:40.079Z",
+  "busyUntilTown": "14:14",
   "runner": "pc",
   "model": "gemini-3.5-flash-lite",
-  "pcBrainAt": "2026-11-13T05:58:40.144Z",
-  "doingWords": "search the Wire",
+  "pcBrainAt": "2026-11-13T06:01:40.079Z",
+  "doingWords": "dig through the junk market for parts",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-13T05:52:40.344Z",
   "body": [],
   "pops": {
-    "at": "2026-11-13T05:40:13.639Z",
+    "at": "2026-11-13T06:01:40.079Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-13T05:40:13.639Z"
+        "text": "+ a dented fuel cell",
+        "kind": "part",
+        "at": "2026-11-13T06:01:40.079Z"
       }
     ]
   },
@@ -431,6 +431,10 @@
     "at": "2026-11-13T03:20:40.669Z"
   },
   "thoughts": [
+    {
+      "text": "I need to find a better way to seal the exhaust ducts. Flexible heat-resistant tubing could do the trick.",
+      "at": "2026-11-13T06:01:40.079Z"
+    },
     {
       "text": "I've already looked at those McMaster-Carr and Cole-Parmer links. Maybe I should try the Grainger site again for something more specific about heat-resistant tubing.",
       "at": "2026-11-13T05:58:40.144Z"
@@ -450,13 +454,9 @@
     {
       "text": "The Little Dart is almost complete, and I need to get that fuel to keep moving and work on it some more.",
       "at": "2026-11-13T05:40:41.546Z"
-    },
-    {
-      "text": "My gears feel gritty and dry this morning. A cup of heavy oil at the depot will sort that right out before I get back to the ducts.",
-      "at": "2026-11-13T05:40:13.639Z"
     }
   ],
-  "sayAt": "2026-11-13T05:58:40.144Z",
+  "sayAt": "2026-11-13T06:01:40.079Z",
   "today": {
     "day": 7,
     "counts": {
@@ -465,7 +465,8 @@
       "work_dart": 2,
       "drink_oil": 1,
       "read_news": 1,
-      "browse_wire": 1
+      "browse_wire": 1,
+      "scavenge": 1
     }
   },
   "lastDone": {
@@ -473,7 +474,7 @@
     "read_news": "2026-11-13T05:49:40.092Z",
     "drink_oil": "2026-11-13T05:40:13.639Z",
     "follow_link": "2026-11-13T02:50:40.321Z",
-    "scavenge": "2026-11-13T03:40:50.567Z",
+    "scavenge": "2026-11-13T06:01:40.079Z",
     "fix_job": "2026-11-13T03:30:40.622Z",
     "build_thing": "2026-11-13T05:06:08.739Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -481,6 +482,11 @@
     "compose_tune": "2026-11-13T04:54:08.620Z"
   },
   "puzzles": [
+    {
+      "id": "q10",
+      "text": "flexible heat-resistant tubing",
+      "at": "2026-11-13T06:01:40.079Z"
+    },
     {
       "id": "q9",
       "text": "q6: find a way to seal the ducts better to ensure the Little Dart's reliability and progress",
@@ -500,11 +506,6 @@
       "id": "q7",
       "text": "q7: find a way to seal the ducts better to ensure the Little Dart's reliability and progress",
       "at": "2026-11-13T05:06:08.739Z"
-    },
-    {
-      "id": "q5",
-      "text": "q4: find a way to seal the ducts better, ensuring the Little Dart's reliability and progress.",
-      "at": "2026-11-13T04:03:08.682Z"
     }
   ],
   "nextSearch": {
@@ -512,6 +513,20 @@
     "at": "2026-11-13T05:52:40.344Z"
   },
   "said": [
+    {
+      "text": "Let's see what the junk market has for me today.",
+      "kind": "say",
+      "at": "2026-11-13T06:01:40.079Z",
+      "town": "day 7 12:14",
+      "place": "the junk market"
+    },
+    {
+      "text": "I need to find a better way to seal the exhaust ducts. Flexible heat-resistant tubing could do the trick.",
+      "kind": "think",
+      "at": "2026-11-13T06:01:40.079Z",
+      "town": "day 7 12:14",
+      "place": "the junk market"
+    },
     {
       "text": "I've already looked at those McMaster-Carr and Cole-Parmer links. Maybe I should try the Grainger site again for something more specific about heat-resistant tubing.",
       "kind": "think",

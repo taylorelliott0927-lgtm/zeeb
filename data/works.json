@@ -187,11 +187,6 @@
       "what": "a strip of hull plating",
       "at": "2026-11-13T03:10:40.954Z",
       "good": true
-    },
-    {
-      "name": "Dibs",
-      "what": "a bent stabiliser fin",
-      "at": "2026-11-13T03:00:40.541Z"
     }
   ],
   "reads": [
@@ -262,6 +257,45 @@
   ],
   "signals": [],
   "builds": [
+    {
+      "id": "bmwefw7ms",
+      "name": "launch stand",
+      "description": "A simple stand to help with launches, lightweight and easy to move.",
+      "place": "hangar",
+      "parts": [
+        {
+          "shape": "box",
+          "w": 2,
+          "h": 1,
+          "d": 2,
+          "x": -2,
+          "y": 0.5,
+          "z": 0,
+          "color": "#77b377",
+          "glow": 0,
+          "spin": false
+        },
+        {
+          "shape": "cylinder",
+          "w": 1,
+          "h": 1,
+          "d": 0.5,
+          "x": 0,
+          "y": 2.5,
+          "z": 0,
+          "color": "#d9d9d9",
+          "glow": 0.5,
+          "spin": true
+        }
+      ],
+      "x": 7.6,
+      "z": -2.7,
+      "rot": 3.79,
+      "day": 6,
+      "at": "2026-11-13T03:51:08.452Z",
+      "usedPart": "a bent stabiliser fin",
+      "usedPartName": "Dibs"
+    },
     {
       "id": "bmwefsd3p",
       "name": "I've been measuring and testing differen",

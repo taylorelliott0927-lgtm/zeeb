@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk V",
-    "progress": 95,
-    "version": 25,
-    "lastChange": "tinkered with it",
+    "name": "the Little Dart Mk VI",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 26,
+        "change": "tinkered with it (used Gus, a dented fuel cell)",
+        "progress": 100,
+        "at": "2026-11-13T21:02:58.578Z"
+      },
       {
         "version": 25,
         "change": "tinkered with it",
@@ -238,12 +244,6 @@
         "change": "tinkered with it",
         "progress": 46,
         "at": "2026-11-13T14:55:39.136Z"
-      },
-      {
-        "version": 15,
-        "change": "continue testing the heat-resistant hose and duct seal, focusing on precise alignment and fit",
-        "progress": 43,
-        "at": "2026-11-13T14:40:39.092Z"
       }
     ],
     "launched": [
@@ -590,134 +590,146 @@
           "at": "2026-11-13T17:21:38.960Z",
           "day": 11
         }
-      }
-    ],
-    "partsUsed": 4,
-    "parts": [
-      {
-        "name": "Rusty Jr",
-        "what": "a cracked navigation chip",
-        "version": 1
       },
       {
-        "name": "Fen",
-        "what": "a coil of copper wire",
-        "version": 2
-      },
-      {
-        "name": "Tok",
-        "what": "half a thruster nozzle",
-        "version": 3
-      },
-      {
-        "name": "Brakk",
-        "what": "a cracked navigation chip",
-        "version": 4
-      }
-    ],
-    "design": {
-      "description": "the ship takes a bold step towards individuality with a sleek, streamlined design featuring vibrant, reflective accents that catch the eye, enhanced with additional reflective parts along the sides an",
-      "parts": [
-        {
-          "shape": "cylinder",
-          "turn": "forward",
-          "w": 1,
-          "h": 1,
-          "d": 2,
-          "x": -1,
-          "y": 0.5,
-          "z": 0,
-          "color": "#0000ff",
-          "glow": 0.5
-        },
-        {
-          "shape": "cylinder",
-          "turn": "side",
-          "w": 1,
-          "h": 0.5,
-          "d": 1,
-          "x": 0,
-          "y": 0.7,
-          "z": 0,
-          "color": "#ffff00",
-          "glow": 0
-        },
-        {
-          "shape": "cylinder",
-          "turn": "side",
-          "w": 1,
-          "h": 0.5,
-          "d": 1,
-          "x": -1,
-          "y": 0.7,
-          "z": 0,
-          "color": "#ffff00",
-          "glow": 0
-        },
-        {
-          "shape": "cylinder",
-          "turn": "side",
-          "w": 1,
-          "h": 0.5,
-          "d": 1,
-          "x": 1,
-          "y": 0.7,
-          "z": 0,
-          "color": "#ffff00",
-          "glow": 0
-        },
-        {
-          "shape": "cylinder",
-          "turn": "side",
-          "w": 1,
-          "h": 0.5,
-          "d": 1,
-          "x": 0,
-          "y": 0.9,
-          "z": 0,
-          "color": "#ff0000",
-          "glow": 0.5
-        },
-        {
-          "shape": "cylinder",
-          "turn": "side",
-          "w": 1,
-          "h": 0.5,
-          "d": 1,
-          "x": -1,
-          "y": 0.9,
-          "z": 0,
-          "color": "#ff0000",
-          "glow": 0.5
-        },
-        {
-          "shape": "cylinder",
-          "turn": "side",
-          "w": 1,
-          "h": 0.5,
-          "d": 1,
-          "x": 1,
-          "y": 0.9,
-          "z": 0,
-          "color": "#ff0000",
-          "glow": 0.5
-        },
-        {
-          "shape": "box",
-          "turn": "up",
-          "w": 1,
-          "h": 1,
-          "d": 0.5,
-          "x": 0,
-          "y": 1,
-          "z": 0,
-          "color": "#00ff00",
-          "glow": 0
+        "name": "the Little Dart Mk V",
+        "day": 12,
+        "partsUsed": 5,
+        "parts": [
+          {
+            "name": "Rusty Jr",
+            "what": "a cracked navigation chip",
+            "version": 1
+          },
+          {
+            "name": "Fen",
+            "what": "a coil of copper wire",
+            "version": 2
+          },
+          {
+            "name": "Tok",
+            "what": "half a thruster nozzle",
+            "version": 3
+          },
+          {
+            "name": "Brakk",
+            "what": "a cracked navigation chip",
+            "version": 4
+          },
+          {
+            "name": "Gus",
+            "what": "a dented fuel cell",
+            "version": 26
+          }
+        ],
+        "design": {
+          "description": "the ship takes a bold step towards individuality with a sleek, streamlined design featuring vibrant, reflective accents that catch the eye, enhanced with additional reflective parts along the sides an",
+          "parts": [
+            {
+              "shape": "cylinder",
+              "turn": "forward",
+              "w": 1,
+              "h": 1,
+              "d": 2,
+              "x": -1,
+              "y": 0.5,
+              "z": 0,
+              "color": "#0000ff",
+              "glow": 0.5
+            },
+            {
+              "shape": "cylinder",
+              "turn": "side",
+              "w": 1,
+              "h": 0.5,
+              "d": 1,
+              "x": 0,
+              "y": 0.7,
+              "z": 0,
+              "color": "#ffff00",
+              "glow": 0
+            },
+            {
+              "shape": "cylinder",
+              "turn": "side",
+              "w": 1,
+              "h": 0.5,
+              "d": 1,
+              "x": -1,
+              "y": 0.7,
+              "z": 0,
+              "color": "#ffff00",
+              "glow": 0
+            },
+            {
+              "shape": "cylinder",
+              "turn": "side",
+              "w": 1,
+              "h": 0.5,
+              "d": 1,
+              "x": 1,
+              "y": 0.7,
+              "z": 0,
+              "color": "#ffff00",
+              "glow": 0
+            },
+            {
+              "shape": "cylinder",
+              "turn": "side",
+              "w": 1,
+              "h": 0.5,
+              "d": 1,
+              "x": 0,
+              "y": 0.9,
+              "z": 0,
+              "color": "#ff0000",
+              "glow": 0.5
+            },
+            {
+              "shape": "cylinder",
+              "turn": "side",
+              "w": 1,
+              "h": 0.5,
+              "d": 1,
+              "x": -1,
+              "y": 0.9,
+              "z": 0,
+              "color": "#ff0000",
+              "glow": 0.5
+            },
+            {
+              "shape": "cylinder",
+              "turn": "side",
+              "w": 1,
+              "h": 0.5,
+              "d": 1,
+              "x": 1,
+              "y": 0.9,
+              "z": 0,
+              "color": "#ff0000",
+              "glow": 0.5
+            },
+            {
+              "shape": "box",
+              "turn": "up",
+              "w": 1,
+              "h": 1,
+              "d": 0.5,
+              "x": 0,
+              "y": 1,
+              "z": 0,
+              "color": "#00ff00",
+              "glow": 0
+            }
+          ],
+          "at": "2026-11-13T20:47:58.518Z",
+          "day": 12
         }
-      ],
-      "at": "2026-11-13T20:47:58.518Z",
-      "day": 12
-    }
+      }
+    ],
+    "partsUsed": 0,
+    "parts": [],
+    "design": null
   },
   "tunes": [
     {
@@ -785,38 +797,27 @@
     {
       "name": "Nim",
       "what": "a coil of copper wire",
-      "at": "2026-11-13T20:59:58.619Z",
-      "carrying": true
+      "at": "2026-11-13T20:59:58.619Z"
     },
     {
       "name": "Sprocket",
       "what": "a coil of copper wire",
-      "at": "2026-11-13T20:59:58.619Z",
-      "carrying": true
+      "at": "2026-11-13T20:59:58.619Z"
     },
     {
       "name": "Dibs",
       "what": "half a thruster nozzle",
-      "at": "2026-11-13T20:59:58.619Z",
-      "carrying": true
+      "at": "2026-11-13T20:59:58.619Z"
     },
     {
       "name": "Rusty Jr",
       "what": "a mystery box that hums",
-      "at": "2026-11-13T20:56:58.636Z",
-      "carrying": true
+      "at": "2026-11-13T20:56:58.636Z"
     },
     {
       "name": "Gus",
       "what": "a cracked navigation chip",
-      "at": "2026-11-13T20:56:58.636Z",
-      "carrying": true
-    },
-    {
-      "name": "Gus",
-      "what": "a dented fuel cell",
-      "at": "2026-11-13T20:56:58.636Z",
-      "carrying": true
+      "at": "2026-11-13T20:56:58.636Z"
     }
   ],
   "reads": [

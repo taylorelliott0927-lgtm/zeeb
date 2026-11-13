@@ -164,3 +164,12 @@ h1 { margin: 0; font-size: 20px; letter-spacing: 0.02em; }
 .cal-day { display: flex; flex-direction: column; align-items: center; gap: 1px; padding: 6px 4px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel-2); color: var(--text); cursor: pointer; font-size: 12px; }
 .cal-day strong { font-size: 13px; }
 .cal-day.on, .cal-day:hover { border-color: var(--brass); }
+.feed .town-head { display: block; padding: 6px 0 2px; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); border-bottom: 1px dashed var(--line); }
+.cal-nav { display: flex; align-items: center; justify-content: space-between; margin: 4px 0 8px; }
+.cal-month { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.cal-wd { text-align: center; font-size: 11px; color: var(--muted); }
+.cal-date { display: flex; flex-direction: column; align-items: center; padding: 6px 0 4px; border-radius: 8px; border: 1px solid transparent; background: transparent; color: var(--muted); font-size: 13px; cursor: default; min-height: 42px; }
+.cal-date span { font-size: 8px; color: var(--brass); line-height: 1; }
+.cal-date.has { background: var(--panel-2); color: var(--text); cursor: pointer; border-color: var(--line); }
+.cal-date.has:hover, .cal-date.on { border-color: var(--brass); }
+.cal-date.today strong { color: var(--cyan); }

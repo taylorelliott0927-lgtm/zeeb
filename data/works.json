@@ -188,11 +188,6 @@
       "name": "Brakk",
       "what": "a perfectly good bolt",
       "at": "2026-11-13T03:40:50.567Z"
-    },
-    {
-      "name": "Tok",
-      "what": "half a thruster nozzle",
-      "at": "2026-11-13T03:20:40.669Z"
     }
   ],
   "reads": [
@@ -271,6 +266,45 @@
   ],
   "signals": [],
   "builds": [
+    {
+      "id": "bmwegn894",
+      "name": "Duct Tester",
+      "description": "A small, boxy device to test different material seals for the ducts.",
+      "place": "hangar",
+      "parts": [
+        {
+          "shape": "box",
+          "w": 1,
+          "h": 1,
+          "d": 1,
+          "x": -2,
+          "y": 1,
+          "z": 0,
+          "color": "#808080",
+          "glow": 0,
+          "spin": false
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.5,
+          "h": 0.5,
+          "d": 0.5,
+          "x": 0,
+          "y": 1.5,
+          "z": 0,
+          "color": "#000000",
+          "glow": 0,
+          "spin": false
+        }
+      ],
+      "x": -5.1,
+      "z": -3.8,
+      "rot": 0.36,
+      "day": 6,
+      "at": "2026-11-13T04:12:08.968Z",
+      "usedPart": "half a thruster nozzle",
+      "usedPartName": "Tok"
+    },
     {
       "id": "bmwefw7ms",
       "name": "launch stand",

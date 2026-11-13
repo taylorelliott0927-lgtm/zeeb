@@ -233,6 +233,12 @@ function renderMind(s, mem) {
   for (const w of s.wants || []) wants.append(el("li", null, w.text));
   if (!s.wants?.length) wants.append(el("li", "muted", "nothing in particular"));
   box.append(wants);
+  box.append(el("h4", null, "Trying to figure out"));
+  const puz = el("ul", "list");
+  for (const q of s.puzzles || []) puz.append(el("li", null, q.text));
+  if (s.nextSearch?.text) puz.append(el("li", "muted", `might look up on the Wire: "${s.nextSearch.text}"`));
+  if (!puz.children.length) puz.append(el("li", "muted", "nothing right now"));
+  box.append(puz);
   box.append(el("h4", null, "Promises"));
   const pr = el("ul", "list");
   for (const p of s.promises || []) pr.append(el("li", null, `to ${p.to}: ${p.what} (due ${ago(p.dueAt).replace(" ago", "")})`));

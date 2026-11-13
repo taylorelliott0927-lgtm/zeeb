@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk VI",
-    "progress": 56,
-    "version": 7,
-    "lastChange": "I use a precision tool to measure the cables with extra care. The fit seems perfect, but I want to be doubly sure. (used Tok, a dented fuel cell)",
+    "progress": 66,
+    "version": 8,
+    "lastChange": "tinkered with it (used Bix, a perfectly good bolt)",
     "log": [
+      {
+        "version": 8,
+        "change": "tinkered with it (used Bix, a perfectly good bolt)",
+        "progress": 66,
+        "at": "2026-11-13T23:03:02.371Z"
+      },
       {
         "version": 7,
         "change": "I use a precision tool to measure the cables with extra care. The fit seems perfect, but I want to be doubly sure. (used Tok, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "Inspect the duct seal and hose carefully. Tweaking the fit to make sure it’s snug and strong, no loose parts allowed. Consider adding a bit more duct seal ring to ensure a tight fit.",
         "progress": 86,
         "at": "2026-11-13T16:20:32.836Z"
-      },
-      {
-        "version": 23,
-        "change": "I focus on the duct seal and the heat-resistant hose. Tweaking the fit to make sure it's snug and strong. The duct seal is starting to look just right",
-        "progress": 83,
-        "at": "2026-11-13T16:08:32.760Z"
       }
     ],
     "launched": [
@@ -727,7 +727,7 @@
         }
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Gus",
@@ -763,6 +763,11 @@
         "name": "Tok",
         "what": "a dented fuel cell",
         "version": 7
+      },
+      {
+        "name": "Bix",
+        "what": "a perfectly good bolt",
+        "version": 8
       }
     ],
     "design": {
@@ -1123,13 +1128,7 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Bix",
-      "what": "a perfectly good bolt",
-      "at": "2026-11-13T22:51:02.321Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "High Temperature and Heat Resistant Cables for Electrical Wiring — Canada Buyer&#x27;s Guide 2026",

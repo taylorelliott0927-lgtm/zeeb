@@ -438,7 +438,7 @@
       }
     ],
     "design": {
-      "description": "the Little Dart Mk IV looks like a sleek, futuristic bird with vibrant, reflective accents that catch the eye, now featuring improved exhaust and insulation.",
+      "description": "the Little Dart Mk IV now features a sleek, futuristic shape with vibrant, reflective accents that catch the eye, now with improved exhaust and insulation.",
       "parts": [
         {
           "shape": "box",
@@ -447,109 +447,97 @@
           "h": 1,
           "d": 2,
           "x": 0,
-          "y": 1,
+          "y": 0,
           "z": 0,
           "color": "#00ff00",
-          "glow": 0.3
+          "glow": 1
         },
         {
           "shape": "cylinder",
           "turn": "back",
           "w": 1,
+          "h": 0.5,
+          "d": 1,
+          "x": 1,
+          "y": 1,
+          "z": 0,
+          "color": "#0000ff",
+          "glow": 1
+        },
+        {
+          "shape": "cylinder",
+          "turn": "side",
+          "w": 1,
+          "h": 0.5,
+          "d": 1,
+          "x": -1,
+          "y": 1,
+          "z": 0,
+          "color": "#ff0000",
+          "glow": 1
+        },
+        {
+          "shape": "cylinder",
+          "turn": "side",
+          "w": 1,
+          "h": 0.5,
+          "d": 1,
+          "x": 0,
+          "y": 1,
+          "z": 0,
+          "color": "#ffff00",
+          "glow": 1
+        },
+        {
+          "shape": "cylinder",
+          "turn": "back",
+          "w": 0.5,
           "h": 0.5,
           "d": 2,
           "x": 0,
-          "y": 1.2,
-          "z": -0.5,
-          "color": "#0000ff",
-          "glow": 0.5
-        },
-        {
-          "shape": "box",
-          "turn": "forward",
-          "w": 1,
-          "h": 1,
-          "d": 1,
-          "x": 0,
-          "y": 0.7,
+          "y": 0,
           "z": 0,
-          "color": "#ff0000",
-          "glow": 0.7
-        },
-        {
-          "shape": "cone",
-          "turn": "side",
-          "w": 0.5,
-          "h": 0.5,
-          "d": 0.5,
-          "x": -0.5,
-          "y": 1.2,
-          "z": -0.5,
-          "color": "#00ff00",
-          "glow": 0.9
-        },
-        {
-          "shape": "cylinder",
-          "turn": "forward",
-          "w": 0.5,
-          "h": 1,
-          "d": 0.5,
-          "x": 0.5,
-          "y": 0.7,
-          "z": -0.5,
-          "color": "#0000ff",
+          "color": "#000000",
           "glow": 1
         },
         {
-          "shape": "box",
-          "turn": "back",
-          "w": 1,
-          "h": 1,
-          "d": 1,
-          "x": 0,
-          "y": 0,
-          "z": -0.5,
-          "color": "#ff0000",
-          "glow": 0.5
-        },
-        {
           "shape": "cylinder",
           "turn": "side",
           "w": 0.5,
           "h": 0.5,
-          "d": 0.5,
-          "x": -0.5,
-          "y": 0,
-          "z": -0.5,
-          "color": "#00ff00",
-          "glow": 0.7
-        },
-        {
-          "shape": "box",
-          "turn": "side",
-          "w": 1,
-          "h": 1,
-          "d": 1,
-          "x": -0.5,
-          "y": 0,
-          "z": -0.5,
-          "color": "#0000ff",
-          "glow": 0.9
+          "d": 2,
+          "x": 0,
+          "y": 0.5,
+          "z": 0,
+          "color": "#ffffff",
+          "glow": 1
         },
         {
           "shape": "cylinder",
           "turn": "forward",
           "w": 0.5,
           "h": 0.5,
-          "d": 0.5,
-          "x": 0.5,
-          "y": 0.5,
-          "z": -0.5,
-          "color": "#ff0000",
+          "d": 2,
+          "x": 0,
+          "y": 1,
+          "z": 0,
+          "color": "#ffffff",
+          "glow": 1
+        },
+        {
+          "shape": "cylinder",
+          "turn": "forward",
+          "w": 0.5,
+          "h": 0.5,
+          "d": 2,
+          "x": 0,
+          "y": 1.5,
+          "z": 0,
+          "color": "#ffffff",
           "glow": 1
         }
       ],
-      "at": "2026-11-13T17:12:38.902Z",
+      "at": "2026-11-13T17:15:38.951Z",
       "day": 11
     }
   },

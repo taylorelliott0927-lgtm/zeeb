@@ -286,7 +286,11 @@ async function doAction(id, d, notes) {
     case "work_dart": {
       const dart = works.dart;
       const part = works.stash.pop();
-      if (part) dart.partsUsed = (dart.partsUsed || 0) + (part.good ? 2 : 1);
+      if (part) {
+        dart.partsUsed = (dart.partsUsed || 0) + (part.good ? 2 : 1);
+        // Remember exactly which part went in, so it can be seen mounted on the ship.
+        dart.parts = [...(dart.parts || []), { name: part.name, what: part.what, ...(part.good ? { good: true } : {}), version: dart.version + 1 }].slice(-40);
+      }
       const gain = part ? 6 + Math.floor(Math.random() * 5) : 2 + Math.floor(Math.random() * 3);
       const before = dart.progress;
       dart.progress = Math.min(100, dart.progress + gain);
@@ -305,8 +309,9 @@ async function doAction(id, d, notes) {
         state.newsForCreator = `You FINISHED ${dart.name}! It hovered off the hangar floor.`;
         nudge(0.35);
         M.remember(mem, `I finished building ${dart.name} on day ${clock.day}`, 1);
-        dart.launched.push({ name: dart.name, day: clock.day, partsUsed: dart.partsUsed || 0 });
+        dart.launched.push({ name: dart.name, day: clock.day, partsUsed: dart.partsUsed || 0, parts: dart.parts || [] });
         dart.partsUsed = 0;
+        dart.parts = [];
         const n = dart.launched.length + 1;
         Object.assign(dart, { name: `the Little Dart Mk ${["", "I", "II", "III", "IV", "V", "VI"][n] || n}`, progress: 0, version: 0, lastChange: "" });
       }
@@ -427,7 +432,7 @@ async function doAction(id, d, notes) {
       const design = await designThing(sheet(character), idea, where, works.stash);
       const spot = spotFor(design.place, works.builds || []);
       const part = works.stash.pop();
-      const thing = { id: `b${Date.parse(nowISO).toString(36)}`, ...design, ...spot, day: clock.day, at: nowISO, usedPart: part ? part.what : null };
+      const thing = { id: `b${Date.parse(nowISO).toString(36)}`, ...design, ...spot, day: clock.day, at: nowISO, usedPart: part ? part.what : null, usedPartName: part ? part.name : null, ...(part?.good ? { usedPartGood: true } : {}) };
       works.builds = [thing, ...(works.builds || [])].slice(0, MAX_BUILDS);
       place = thing.place;
       post("mind", `Built ${thing.name} near ${PLACES[thing.place].name}${thing.description ? `: ${thing.description}` : ""}`, { change: "built", about: "world" });

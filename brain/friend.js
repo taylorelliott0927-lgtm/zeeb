@@ -25,6 +25,7 @@ export function buildStep(friend, works, detail, nowISO) {
   const note = (detail || "worked on the frame") + (part ? ` (used ${part.name}, ${part.what})` : "");
   friend.project.log.unshift({ progress: friend.project.progress, note, at: nowISO });
   friend.project.log = friend.project.log.slice(0, 30);
+  if (part) friend.project.parts = [...(friend.project.parts || []), { name: part.name, what: part.what, ...(part.good ? { good: true } : {}) }].slice(-30);
   return { done: friend.project.progress >= 100, note };
 }
 

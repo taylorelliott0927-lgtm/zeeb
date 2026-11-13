@@ -110,6 +110,80 @@ Use 3 to 16 parts. x between -2 and 2, y between 0 and 2, z between -2 and 2, si
   return { name: String(r.name || "").trim().slice(0, 40), description: String(r.description || idea || "").slice(0, 200), parts };
 }
 
+// ---------- ships, planned part by part so they always read as a ship ----------
+// Where each kind of ship part goes (ship space: nose toward +z, y up, centre line x 0). These are just
+// where the parts physically sit; what each one looks like, its size, shape and colour is all his.
+const SHIP_ROLES = {
+  hull: "the main body, along the centre line (x 0), running front to back (z from about -1.2 to 1.2), y about 0.2 to 0.7. Usually long cylinders/boxes with turn forward",
+  nose: "the very front, z from about 1.0 to 2.0, joined to the hull. A cone with turn forward is classic",
+  cockpit: "on top of the hull toward the front, y about 0.6 to 0.9, z about 0.2 to 0.9. Glass parts can glow",
+  wings: "out to both sides of the hull (x from about ±0.4 to ±1.8), mirrored left and right, thin (small h), around y 0.3",
+  engines: "the back, z about -1.0 to -1.9. Cylinders or cones with turn back, often in pairs, with glowing exhausts",
+  fins: "on top or at the back (tail fins, stabilisers), thin, mirrored if they're on the sides",
+  extras: "anything else you want on it (antennas, lights, stripes, cargo pods, guns, landing legs), attached to the hull, wings or engines",
+};
+const SHIP_SHAPES = ["box", "cylinder", "ball", "cone"];
+function cleanShipParts(list, max) {
+  return (Array.isArray(list) ? list : []).filter((p) => SHIP_SHAPES.includes(p?.shape)).slice(0, max).map((p) => ({
+    shape: p.shape, turn: TURNS.includes(p.turn) ? p.turn : "up",
+    w: num(p.w, 0.03, 3, 0.5), h: num(p.h, 0.03, 3, 0.5), d: num(p.d, 0.03, 3, 0.5),
+    x: num(p.x, -2.2, 2.2, 0), y: num(p.y, 0, 2, 0.4), z: num(p.z, -2.2, 2.2, 0),
+    color: HEX.test(p.color) ? p.color : "#cfc8bc", glow: num(p.glow, 0, 1, 0),
+  }));
+}
+const extentOf = (p) => { const len = p.turn === "forward" || p.turn === "back" ? p.h : p.d, tall = p.turn === "up" ? p.h : p.turn === "side" ? p.w : p.d, wide = p.turn === "side" ? p.h : p.w; return { x0: p.x - wide / 2, x1: p.x + wide / 2, y0: p.y - tall / 2, y1: p.y + tall / 2, z0: p.z - len / 2, z1: p.z + len / 2 }; };
+// Does it have the basics of a ship: longer front-to-back than it is tall, with something at the front and something at the back?
+export function looksLikeShip(parts) {
+  if (parts.length < 4) return false;
+  const e = parts.map(extentOf);
+  const z0 = Math.min(...e.map((b) => b.z0)), z1 = Math.max(...e.map((b) => b.z1)), y0 = Math.min(...e.map((b) => b.y0)), y1 = Math.max(...e.map((b) => b.y1));
+  return z1 - z0 >= 1.6 && z1 - z0 > (y1 - y0) * 1.2 && e.some((b) => b.z1 > 0.8) && e.some((b) => b.z0 < -0.8);
+}
+
+export async function planShip(sheetText, idea, ship) {
+  const r = await askJSON(sheetText, `You're designing how your ship, ${ship.name}, looks. It's all up to you: its style, size, colours and every part.
+Your idea: "${idea || "whatever feels right"}".
+${ship.design ? `Right now it looks like: ${ship.design.description || "your last design"}.` : "Right now it has the plain scrap-dart look: white cone nose, white body, red wings, red tail fin, cyan glass bubble."}
+Think it through like a ship designer. A ship's parts are: ${Object.keys(SHIP_ROLES).join(", ")}. For each part you want, say what it looks like.
+Return JSON:
+{"name": "the ship's name, or empty to keep ${ship.name}", "description": "one sentence in your voice about how it looks", "colors": ["#rrggbb", "#rrggbb"],
+ "parts": [{"role": "${Object.keys(SHIP_ROLES).join("|")}", "details": "what this part looks like"}]}
+Include at least a hull, a nose, a cockpit, wings and engines (you can skip fins or extras).`, { temperature: 0.85 }).catch(() => null);
+  const parts = (Array.isArray(r?.parts) ? r.parts : []).filter((p) => SHIP_ROLES[p?.role]).slice(0, 8);
+  for (const role of ["hull", "nose", "cockpit", "wings", "engines"]) if (!parts.some((p) => p.role === role)) parts.push({ role, details: "" });
+  const order = Object.keys(SHIP_ROLES);
+  parts.sort((a, b) => order.indexOf(a.role) - order.indexOf(b.role));
+  return { name: String(r?.name || "").trim().slice(0, 40), description: String(r?.description || idea || "").slice(0, 200), colors: (r?.colors || []).filter((c) => HEX.test(c)).slice(0, 4), parts: parts.map((p) => ({ role: p.role, details: String(p.details || "").slice(0, 200) })) };
+}
+
+export async function buildShipPart(sheetText, plan, part, soFar) {
+  const placed = soFar.slice(-24).map((p) => `${p.shape}${p.turn !== "up" ? `(${p.turn})` : ""} ${p.w}x${p.h}x${p.d} at (${p.x}, ${p.y}, ${p.z})`).join("; ");
+  const r = await askJSON(sheetText, `You're building your ship "${plan.name || "your ship"}": ${plan.description}. Colours: ${plan.colors.join(", ") || "your choice"}.
+Ship space: the nose points toward +z, y is up (y 0 is the bottom), x is left/right, the centre line is x 0. Sizes in metres; x, y, z is the centre of each shape.
+"turn" says which way a cone or cylinder points: up, forward (toward the nose), back, or side.
+Already built: ${placed || "nothing yet"}.
+Now build the ${part.role.toUpperCase()}${part.details ? `: ${part.details}` : ""}.
+Where it goes: ${SHIP_ROLES[part.role]}. Make it fit onto what's already built.
+Return JSON: {"parts": [{"shape": "box|cylinder|ball|cone", "turn": "forward", "w": 0.5, "h": 0.5, "d": 0.5, "x": 0, "y": 0.4, "z": 0, "color": "#rrggbb", "glow": 0}]}
+Use 1 to 8 shapes for this part.`, { temperature: 0.7 }).catch(() => null);
+  return cleanShipParts(r?.parts, 8);
+}
+
+// A last honest look: does it look like what he meant to make? He can take pieces off and add new ones.
+export async function reviewDesign(sheetText, what, description, parts, space) {
+  const list = parts.slice(0, 70).map((p, i) => (p.model ? `${i}: ${p.name} model at (${p.x}, ${p.y}, ${p.z})` : `${i}: ${p.shape}${p.turn && p.turn !== "up" ? `(${p.turn})` : ""} ${p.w}x${p.h}x${p.d} at (${p.x}, ${p.y}, ${p.z}) ${p.color}`)).join("\n");
+  const r = await askJSON(sheetText, `You just built ${what}: ${description}.
+${space}
+Its pieces (number: shape, size w x h x d, position, colour):
+${list}
+Picture it from the side and from above. Does it really look like ${what}? Are any pieces floating, in the wrong place, too big, or missing?
+Return JSON: {"looks_right": true, "remove": [piece numbers to take off], "add": [{"shape": "box|cylinder|ball|cone", "turn": "up", "w": 0.3, "h": 0.3, "d": 0.3, "x": 0, "y": 0.5, "z": 0, "color": "#rrggbb", "glow": 0}], "why": "one short sentence"}`, { temperature: 0.5 }).catch(() => null);
+  if (!r) return { parts, changed: false };
+  const drop = new Set((Array.isArray(r.remove) ? r.remove : []).map(Number).filter((n) => Number.isInteger(n)));
+  const kept = parts.filter((_, i) => !drop.has(i) || drop.size > parts.length / 3); // never let one review wipe out most of it
+  return { parts: [...kept, ...r.add?.length ? (space.includes("nose") ? cleanShipParts(r.add, 10) : allParts(r.add, 10)) : []], changed: drop.size > 0 || Boolean(r.add?.length), why: String(r.why || "").slice(0, 160) };
+}
+
 // ---------- building with real thought: plan first, then build it piece by piece ----------
 // 1. He thinks it through: what it's for, how big, its colours, and the parts it's made of.
 export async function planBuild(sheetText, idea, place, stash, found = []) {

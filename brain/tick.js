@@ -13,6 +13,7 @@ import * as M from "./memory.js";
 import { buildStep, designFriend, emptyFriend, friendText, friendTick, startFriend, wakeFriend } from "./friend.js";
 import { activeGame, emptyGames, gamesText, startGame, workSession } from "./games.js";
 import { emptyInterests, interestsText, noteInterest } from "./interests.js";
+import { buildShipPart, looksLikeShip, planShip, reviewDesign } from "./builds.js";
 import { FLIGHT_SECONDS, MAX_BUILDS, buildComponent, buildsText, cleanBody, designShip, designThing, lookUpModels, planBuild, refineThing, flightLog, flightOutcome, spotFor } from "./builds.js";
 import { sheet } from "./mind.js";
 import { craftingText, emptyCrafting, planPart, tryToMake } from "./crafting.js";
@@ -488,6 +489,8 @@ async function doAction(id, d, notes) {
       if (plan) {
         let parts = [];
         for (const comp of plan.components.slice(0, RUNNER === "pc" ? 8 : 4)) parts = [...parts, ...(await buildComponent(sheet(character), plan, comp, parts, lib.found))].slice(0, 120);
+        // An honest look: does it actually look like what he set out to build? He can fix it.
+        if (parts.length >= 3 && RUNNER === "pc") parts = (await reviewDesign(sheet(character), `"${plan.name}"`, plan.description, parts, "Build space: centred on x 0, z 0, standing on the ground at y 0 (y is height).")).parts;
         if (parts.length >= 3) design = { name: plan.name, description: plan.description, place: plan.place, parts, plan: { purpose: plan.purpose, size: plan.size, components: plan.components } };
       }
       design ||= await designThing(sheet(character), idea, where, works.stash, lib.found);
@@ -508,7 +511,18 @@ async function doAction(id, d, notes) {
     }
     case "design_ship": {
       const dart = works.dart;
-      const design = await designShip(sheet(character), detail, dart);
+      // Plan the ship, build it part by part (hull, nose, cockpit, wings, engines...), then take an honest look at it.
+      let design = null;
+      const plan = await planShip(sheet(character), detail, dart);
+      let parts = [];
+      for (const p of plan.parts.slice(0, RUNNER === "pc" ? 8 : 5)) parts = [...parts, ...(await buildShipPart(sheet(character), plan, p, parts))].slice(0, 60);
+      if (parts.length >= 4) {
+        const rev = await reviewDesign(sheet(character), `your ship ${plan.name || dart.name}`, plan.description, parts, "Ship space: the nose points toward +z, y is up (y 0 is the bottom), x is left/right.");
+        parts = rev.parts;
+        if (looksLikeShip(parts)) design = { name: plan.name, description: plan.description, parts };
+      }
+      // If that didn't come out ship-shaped, one try the simple way; if that fails too, he keeps the look he had.
+      if (!design) { const d2 = await designShip(sheet(character), detail, dart); if (d2 && looksLikeShip(d2.parts)) design = d2; }
       if (!design) { ok = false; feed.entries[0].ok = false; post("noticed", "Scribbled a few ship sketches but none of them looked right yet."); break; }
       const oldName = dart.name;
       if (design.name && design.name.toLowerCase() !== oldName.toLowerCase()) dart.name = design.name;

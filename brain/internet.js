@@ -16,6 +16,8 @@ async function getJSON(url) {
 
 const trim = (s, n = 900) => (s || "").replace(/\s+/g, " ").trim().slice(0, n);
 
+const STOP = new Set(["about", "with", "that", "this", "from", "into", "what", "when", "where", "which", "there", "their", "them", "then", "than", "some", "more", "need", "want", "just", "better", "information", "inspiration", "gather", "find", "look", "looking", "ideas", "make", "making", "ensure", "little", "dart", "zeeb", "would", "could", "should", "maybe", "really", "things", "thing"]);
+
 // Search Wikipedia and read the best match.
 export async function searchWire(query) {
   const q = encodeURIComponent(query.slice(0, 120));
@@ -214,7 +216,14 @@ export async function useWire(kind, query) {
       const web = await searchAndRead(query);
       if (web) return web;
       const r = await searchWire(query);
-      return r.found ? r : await randomArticle().then((x) => ({ ...x, query, note: "nothing matched, so he clicked a random page" }));
+      if (r.found) return r;
+      // Long, chatty searches often find nothing: try again with just the main words before giving up.
+      const short = query.toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter((w) => w.length > 3 && !STOP.has(w)).slice(0, 4).join(" ");
+      if (short && short !== query.toLowerCase()) {
+        const again = (await searchAndRead(short)) || (await searchWire(short));
+        if (again && again.found !== false) return { ...again, query };
+      }
+      return { kind, query, failed: true, error: "nothing came up for that search" };
     }
     return await readNews();
   } catch (e) {

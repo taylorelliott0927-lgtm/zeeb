@@ -219,6 +219,8 @@ async function doAction(id, d, notes) {
   if (id === "hang_out" && friend.state && !friend.state.asleep) place = friend.state.place;
   const detail = String(d.detail || "").slice(0, 200);
   let ok = true;
+  // The small AI sometimes copies the example sentence from its instructions word for word; that isn't really him, so use the plain description.
+  if (/curled up in the dock, dish switched off/i.test(String(d.doing_words || "")) && !["nap_dock", "go_to_sleep"].includes(id)) d.doing_words = "";
   let text = String(d.doing_words || "").trim().slice(0, 140) || a.doing;
   if (id === "browse_wire" && detail && !d.doing_words) text = `searched the Wire for "${detail}"`;
 
@@ -360,7 +362,9 @@ async function doAction(id, d, notes) {
     case "follow_link":
     case "read_news": {
       const kind = id === "follow_link" ? "page" : a.internet;
-      const target = id === "follow_link" ? linkTarget(detail) : detail;
+      // If he forgot to say what to search for, use what he said he was looking for (never a random page).
+      const searchFor = detail || state.nextSearch?.text || (state.puzzles || [])[0]?.text || String(d.why || "").slice(0, 120) || String(d.doing_words || "");
+      const target = id === "follow_link" ? linkTarget(detail) : id === "browse_wire" ? searchFor : detail;
       const r = await readTheWire(kind, target, id === "browse_wire");
       if (r.failed) { ok = false; feed.entries[0].ok = false; }
       if (r.thought) d.thought = r.thought;

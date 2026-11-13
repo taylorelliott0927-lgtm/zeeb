@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794586472826,
+  "lastTick": 1794586652810,
   "asleep": false,
   "place": "tower",
-  "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-13T16:14:32.826Z",
+  "action": "send_signal",
+  "doing": "sending a signal into deep space",
+  "actionStartedAt": "2026-11-13T16:17:32.810Z",
   "actionMinutes": 60,
-  "thought": "I might find a way to use these heat-resistant cables to protect the Little Dart's sensitive electronics.",
-  "feeling": "Nervous but excited, I'm ready to dive deeper into the search for the right parts.",
-  "say": "Checking out the latest from the Wire.",
-  "mood": -0.089,
-  "energy": -0.538,
+  "thought": "The Little Dart's duct seal and hose look perfect now. I'll test them out in a real test flight and then send a message to see if anyone is listening.",
+  "feeling": "energetic and curious",
+  "say": "Hello! I'm Zeeb, the Little Dart's engineer. My seals are ready for testing! Let's see if anyone out there is listening.",
+  "mood": 0.003,
+  "energy": -0.558,
   "needs": {
-    "charge": 0.574,
+    "charge": 0.588,
     "oil": 1,
     "curiosity": 0,
-    "company": 0.962,
-    "craft": 0.04
+    "company": 0.778,
+    "craft": 0.06
   },
   "credits": 11,
   "recent": [
+    {
+      "id": "send_signal",
+      "detail": "The message is simple and to the point, describing the Little Dart's latest adva",
+      "at": "2026-11-13T16:17:32.810Z"
+    },
     {
       "id": "browse_wire",
       "detail": "search_the_wire: 'flexible heat-resistant cables, McMaster-Carr, heat-resistant ",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "I'll start by searching for flexible heat-resistant cables from McMaster-Carr.",
       "at": "2026-11-13T15:44:32.766Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "I'll search for flexible heat-resistant tubing and cables, especially from McMas",
-      "at": "2026-11-13T15:41:32.745Z"
     }
   ],
   "wants": [
@@ -104,7 +104,15 @@
       "at": "2026-11-13T15:34:39.228Z"
     }
   ],
-  "promises": [],
+  "promises": [
+    {
+      "id": "p1",
+      "to": "creator",
+      "what": "add a hangar to Little Dart",
+      "due": "in 12h",
+      "dueAt": "2026-11-14T04:17:32.810Z"
+    }
+  ],
   "seenNotes": [
     2,
     15
@@ -455,7 +463,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-13T16:14:32.826Z",
+  "lettersCheckedAt": "2026-11-13T16:17:32.810Z",
   "weather": {
     "kind": "windy",
     "temp": 28,
@@ -467,29 +475,31 @@
   "sleepDay": 10,
   "lastReflectDay": 10,
   "brain": "your PC (qwen2.5:3b)",
-  "updatedAt": "2026-11-13T16:14:32.826Z",
+  "updatedAt": "2026-11-13T16:17:32.810Z",
   "clock": {
     "day": 10,
-    "time": "21:57",
-    "hour": 21,
-    "minute": 57
+    "time": "22:21",
+    "hour": 22,
+    "minute": 21
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-13T16:14:32.826Z"
+    "action": "send_signal",
+    "since": "2026-11-13T16:17:32.810Z"
   },
-  "busyUntil": "2026-11-13T16:22:02.826Z",
-  "busyUntilTown": "22:57",
+  "busyUntil": "2026-11-13T16:25:02.810Z",
+  "busyUntilTown": "23:21",
   "runner": "pc",
   "model": "gemini-3.5-flash-lite",
-  "pcBrainAt": "2026-11-13T16:14:32.826Z",
-  "doingWords": "flipping through news on the wire",
+  "pcBrainAt": "2026-11-13T16:17:32.810Z",
+  "doingWords": "I focus on sending a message to whoever might be out there, using the listening dish on my head.",
   "newsForCreator": "the Little Dart Mk IV just reached 75% built (version 21). Last change: I'm going to try a few more adjustments to the duct seal, make sure it's snug and strong, no loose parts allowed. (used Nim, a strip of hull plating).",
-  "newsPendingTicks": 4,
+  "newsPendingTicks": 5,
   "lastChatAt": "2026-11-13T10:55:38.719Z",
-  "body": [],
+  "body": [
+    "bounce"
+  ],
   "pops": {
     "at": "2026-11-13T15:53:32.760Z",
     "items": [
@@ -507,6 +517,10 @@
     "at": "2026-11-13T16:08:32.760Z"
   },
   "thoughts": [
+    {
+      "text": "The Little Dart's duct seal and hose look perfect now. I'll test them out in a real test flight and then send a message to see if anyone is listening.",
+      "at": "2026-11-13T16:17:32.810Z"
+    },
     {
       "text": "I might find a way to use these heat-resistant cables to protect the Little Dart's sensitive electronics.",
       "at": "2026-11-13T16:14:32.826Z"
@@ -526,13 +540,9 @@
     {
       "text": "The perfect fit for the heat-resistant hose and duct seal is so important for the Little Dart's operations.",
       "at": "2026-11-13T16:02:32.755Z"
-    },
-    {
-      "text": "I might start with the Mica High Temperature Wire as it sounds perfect for the Little Dart.",
-      "at": "2026-11-13T15:59:32.736Z"
     }
   ],
-  "sayAt": "2026-11-13T16:14:32.826Z",
+  "sayAt": "2026-11-13T16:17:32.810Z",
   "today": {
     "day": 10,
     "counts": {
@@ -542,7 +552,8 @@
       "build_thing": 2,
       "design_ship": 4,
       "fix_job": 1,
-      "read_news": 1
+      "read_news": 1,
+      "send_signal": 1
     }
   },
   "lastDone": {
@@ -560,7 +571,8 @@
     "craft_part": "2026-11-13T09:04:38.429Z",
     "wander": "2026-11-13T14:43:39.116Z",
     "test_flight": "2026-11-13T13:07:38.889Z",
-    "design_ship": "2026-11-13T15:34:39.228Z"
+    "design_ship": "2026-11-13T15:34:39.228Z",
+    "send_signal": "2026-11-13T16:17:32.810Z"
   },
   "puzzles": [
     {
@@ -594,6 +606,20 @@
     "at": "2026-11-13T16:14:32.826Z"
   },
   "said": [
+    {
+      "text": "Hello! I'm Zeeb, the Little Dart's engineer. My seals are ready for testing! Let's see if anyone out there is listening.",
+      "kind": "say",
+      "at": "2026-11-13T16:17:32.810Z",
+      "town": "day 10 22:21",
+      "place": "the comms tower"
+    },
+    {
+      "text": "The Little Dart's duct seal and hose look perfect now. I'll test them out in a real test flight and then send a message to see if anyone is listening.",
+      "kind": "think",
+      "at": "2026-11-13T16:17:32.810Z",
+      "town": "day 10 22:21",
+      "place": "the comms tower"
+    },
     {
       "text": "Checking out the latest from the Wire.",
       "kind": "say",
@@ -1629,20 +1655,6 @@
       "at": "2026-11-13T10:19:38.880Z",
       "town": "day 8 22:38",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "Flexible heat-resistant tubing and cables might be just the thing to make the Little Dart's exhaust more resilient.",
-      "kind": "think",
-      "at": "2026-11-13T10:16:38.545Z",
-      "town": "day 8 22:14",
-      "place": "the comms tower"
-    },
-    {
-      "text": "I'll look up what I need to make the Little Dart's engine last longer.",
-      "kind": "say",
-      "at": "2026-11-13T10:13:38.652Z",
-      "town": "day 8 21:50",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -1653,7 +1665,7 @@
     "at": "2026-11-13T13:07:38.889Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-13T16:14:32.826Z",
+  "feedArchivedAt": "2026-11-13T16:17:32.810Z",
   "plans": [],
   "searches": [
     {

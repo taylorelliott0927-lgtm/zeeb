@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794529919962,
+  "lastTick": 1794530219878,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-13T00:31:59.962Z",
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-13T00:36:59.878Z",
   "actionMinutes": 60,
-  "thought": "I hope they have some extra oil. The Little Dart's thrusters are running a bit rough, and I could use this to keep them going for a bit longer.",
-  "feeling": "a bit hopeful, a few drops of oil in my tank is still a drop in the ocean compared to what I need for the Little Dart.",
-  "say": "Thanks for the oil, you've been very generous.",
-  "mood": 0.36,
-  "energy": 0.146,
+  "thought": "I need to keep this work moving. The more I can find about sealants, the closer I get to a solution.",
+  "feeling": "Focused and determined",
+  "say": "Looking for old welding wire to seal those ducts. The more I know, the better I can fix them.",
+  "mood": 0.341,
+  "energy": 0.295,
   "needs": {
-    "charge": 0.309,
-    "oil": 0,
-    "curiosity": 0.312,
-    "company": 0.027,
-    "craft": 0.071
+    "charge": 0.332,
+    "oil": 0.05,
+    "curiosity": 0.002,
+    "company": 0.054,
+    "craft": 0.104
   },
   "credits": 3,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-13T00:36:59.878Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "",
       "at": "2026-11-12T23:16:59.862Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "",
-      "at": "2026-11-12T23:15:51.274Z"
     }
   ],
   "wants": [
@@ -189,7 +189,7 @@
     }
   ],
   "seenCreatorMsgs": [],
-  "lettersCheckedAt": "2026-11-13T00:31:59.962Z",
+  "lettersCheckedAt": "2026-11-13T00:36:59.878Z",
   "weather": {
     "kind": "clear",
     "temp": 24,
@@ -201,46 +201,68 @@
   "sleepDay": 5,
   "lastReflectDay": 5,
   "brain": "your PC (qwen2.5:3b)",
-  "updatedAt": "2026-11-13T00:31:59.962Z",
+  "updatedAt": "2026-11-13T00:36:59.878Z",
   "clock": {
     "day": 5,
-    "time": "16:17",
+    "time": "16:57",
     "hour": 16,
-    "minute": 17
+    "minute": 57
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "the junk market",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-13T00:31:59.962Z"
+    "action": "scavenge",
+    "since": "2026-11-13T00:36:59.878Z"
   },
-  "busyUntil": "2026-11-13T00:39:29.962Z",
-  "busyUntilTown": "17:17",
+  "busyUntil": "2026-11-13T00:44:29.878Z",
+  "busyUntilTown": "17:57",
   "runner": "pc",
   "model": "gemini-3.5-flash",
-  "pcBrainAt": "2026-11-13T00:31:59.962Z",
-  "doingWords": "wave my arm, drink oil",
+  "pcBrainAt": "2026-11-13T00:36:59.878Z",
+  "doingWords": "search through the junk market for old welding wire",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-13T00:17:00.182Z",
-  "body": [],
+  "body": [
+    "bounce",
+    "wiggle"
+  ],
   "pops": {
-    "at": "2026-11-13T00:31:59.962Z",
+    "at": "2026-11-13T00:36:59.878Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-13T00:31:59.962Z"
+        "text": "+ a perfectly good bolt",
+        "kind": "part",
+        "at": "2026-11-13T00:36:59.878Z"
+      },
+      {
+        "text": "+ a little landing strut",
+        "kind": "part",
+        "at": "2026-11-13T00:36:59.878Z"
+      },
+      {
+        "text": "+ a strip of hull plating",
+        "kind": "part",
+        "at": "2026-11-13T00:36:59.878Z"
+      },
+      {
+        "text": "+ a strip of hull plating ★",
+        "kind": "part",
+        "at": "2026-11-13T00:36:59.878Z"
       }
     ]
   },
   "event": {
-    "id": "emwe8s44a",
-    "key": "crackle",
-    "text": "He heard a strange crackle on his dish. Probably nothing. Probably.",
-    "at": "2026-11-13T00:31:59.962Z"
+    "id": "emwe8yjja",
+    "key": "hauler_drop",
+    "text": "The depot's cargo-hauler bot dropped a part and didn't notice.",
+    "at": "2026-11-13T00:36:59.878Z"
   },
   "thoughts": [
+    {
+      "text": "I need to keep this work moving. The more I can find about sealants, the closer I get to a solution.",
+      "at": "2026-11-13T00:36:59.878Z"
+    },
     {
       "text": "I hope they have some extra oil. The Little Dart's thrusters are running a bit rough, and I could use this to keep them going for a bit longer.",
       "at": "2026-11-13T00:31:59.962Z"
@@ -254,5 +276,5 @@
       "at": "2026-11-13T00:17:00.182Z"
     }
   ],
-  "sayAt": "2026-11-13T00:31:59.962Z"
+  "sayAt": "2026-11-13T00:36:59.878Z"
 }

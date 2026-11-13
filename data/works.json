@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk IV",
-    "progress": 98,
-    "version": 28,
-    "lastChange": "I take my time inspecting the heat-resistant hose and duct seal, making minor adjustments to ensure a perfect fit. I test the seal's movement, making sure it stays snug against the metal surfaces of t",
+    "name": "the Little Dart Mk V",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 29,
+        "change": "I take my time inspecting the heat-resistant hose and duct seal, making minor adjustments to ensure a perfect fit. I test the seal's movement, making sure it stays snug against the metal surfaces of t",
+        "progress": 100,
+        "at": "2026-11-13T17:30:38.922Z"
+      },
       {
         "version": 28,
         "change": "I take my time inspecting the heat-resistant hose and duct seal, making minor adjustments to ensure a perfect fit. I test the seal's movement, making sure it stays snug against the metal surfaces of t",
@@ -238,12 +244,6 @@
         "change": "tinkered with it",
         "progress": 70,
         "at": "2026-11-13T11:43:38.675Z"
-      },
-      {
-        "version": 19,
-        "change": "I carefully trim the hose to the correct length, making sure it fits the duct seal snugly. I then take the hose and gently insert it into the duct seal, checking for any loose spots or misalignments. ",
-        "progress": 67,
-        "at": "2026-11-13T11:40:38.695Z"
       }
     ],
     "launched": [
@@ -417,177 +417,184 @@
           "at": "2026-11-13T13:16:38.935Z",
           "day": 9
         }
-      }
-    ],
-    "partsUsed": 3,
-    "parts": [
-      {
-        "name": "Brakk",
-        "what": "a cockpit switch that still clicks",
-        "version": 19
       },
       {
-        "name": "Dibs",
-        "what": "a sensor eye with one crack",
-        "version": 20
-      },
-      {
-        "name": "Nim",
-        "what": "a strip of hull plating",
-        "version": 21
-      }
-    ],
-    "design": {
-      "description": "the Little Dart Mk IV now features a sleek, futuristic shape with vibrant, reflective accents that catch the eye, now with improved exhaust and insulation.",
-      "parts": [
-        {
-          "shape": "box",
-          "turn": "forward",
-          "w": 2,
-          "h": 0.5,
-          "d": 0.5,
-          "x": 0,
-          "y": 1,
-          "z": 0,
-          "color": "#00FF00",
-          "glow": 0.2
-        },
-        {
-          "shape": "cylinder",
-          "turn": "forward",
-          "w": 0.5,
-          "h": 0.5,
-          "d": 0.1,
-          "x": -1,
-          "y": 0,
-          "z": 0,
-          "color": "#FF0000",
-          "glow": 0.5
-        },
-        {
-          "shape": "cylinder",
-          "turn": "back",
-          "w": 0.5,
-          "h": 0.5,
-          "d": 0.1,
-          "x": 1,
-          "y": 0,
-          "z": 0,
-          "color": "#FF0000",
-          "glow": 0.5
-        },
-        {
-          "shape": "box",
-          "turn": "forward",
-          "w": 1,
-          "h": 0.3,
-          "d": 0.1,
-          "x": 0,
-          "y": 1,
-          "z": 0,
-          "color": "#00FF00",
-          "glow": 0.5
-        },
-        {
-          "shape": "cylinder",
-          "turn": "forward",
-          "w": 0.1,
-          "h": 0.1,
-          "d": 0.1,
-          "x": 0,
-          "y": 0.2,
-          "z": 0,
-          "color": "#FFFF00",
-          "glow": 1
-        },
-        {
-          "shape": "cylinder",
-          "turn": "back",
-          "w": 0.1,
-          "h": 0.1,
-          "d": 0.1,
-          "x": 0,
-          "y": 0.2,
-          "z": 0,
-          "color": "#FFFF00",
-          "glow": 1
-        },
-        {
-          "shape": "box",
-          "turn": "forward",
-          "w": 0.1,
-          "h": 0.1,
-          "d": 0.1,
-          "x": -0.5,
-          "y": 1,
-          "z": 0,
-          "color": "#FF0000",
-          "glow": 0.5
-        },
-        {
-          "shape": "box",
-          "turn": "forward",
-          "w": 0.1,
-          "h": 0.1,
-          "d": 0.1,
-          "x": 0.5,
-          "y": 1,
-          "z": 0,
-          "color": "#FF0000",
-          "glow": 0.5
-        },
-        {
-          "shape": "cone",
-          "turn": "forward",
-          "w": 0.1,
-          "h": 0.1,
-          "d": 0.1,
-          "x": -0.5,
-          "y": 0,
-          "z": 0,
-          "color": "#00FF00",
-          "glow": 0.2
-        },
-        {
-          "shape": "cone",
-          "turn": "forward",
-          "w": 0.1,
-          "h": 0.1,
-          "d": 0.1,
-          "x": 0.5,
-          "y": 0,
-          "z": 0,
-          "color": "#00FF00",
-          "glow": 0.2
-        },
-        {
-          "shape": "box",
-          "turn": "forward",
-          "w": 0.1,
-          "h": 0.1,
-          "d": 0.1,
-          "x": 0,
-          "y": 1,
-          "z": 0,
-          "color": "#00FF00",
-          "glow": 0.5
-        },
-        {
-          "shape": "cylinder",
-          "turn": "forward",
-          "w": 0.2,
-          "h": 0.1,
-          "d": 0.1,
-          "x": 0,
-          "y": 1,
-          "z": 0,
-          "color": "#FF0000",
-          "glow": 0.5
+        "name": "the Little Dart Mk IV",
+        "day": 11,
+        "partsUsed": 3,
+        "parts": [
+          {
+            "name": "Brakk",
+            "what": "a cockpit switch that still clicks",
+            "version": 19
+          },
+          {
+            "name": "Dibs",
+            "what": "a sensor eye with one crack",
+            "version": 20
+          },
+          {
+            "name": "Nim",
+            "what": "a strip of hull plating",
+            "version": 21
+          }
+        ],
+        "design": {
+          "description": "the Little Dart Mk IV now features a sleek, futuristic shape with vibrant, reflective accents that catch the eye, now with improved exhaust and insulation.",
+          "parts": [
+            {
+              "shape": "box",
+              "turn": "forward",
+              "w": 2,
+              "h": 0.5,
+              "d": 0.5,
+              "x": 0,
+              "y": 1,
+              "z": 0,
+              "color": "#00FF00",
+              "glow": 0.2
+            },
+            {
+              "shape": "cylinder",
+              "turn": "forward",
+              "w": 0.5,
+              "h": 0.5,
+              "d": 0.1,
+              "x": -1,
+              "y": 0,
+              "z": 0,
+              "color": "#FF0000",
+              "glow": 0.5
+            },
+            {
+              "shape": "cylinder",
+              "turn": "back",
+              "w": 0.5,
+              "h": 0.5,
+              "d": 0.1,
+              "x": 1,
+              "y": 0,
+              "z": 0,
+              "color": "#FF0000",
+              "glow": 0.5
+            },
+            {
+              "shape": "box",
+              "turn": "forward",
+              "w": 1,
+              "h": 0.3,
+              "d": 0.1,
+              "x": 0,
+              "y": 1,
+              "z": 0,
+              "color": "#00FF00",
+              "glow": 0.5
+            },
+            {
+              "shape": "cylinder",
+              "turn": "forward",
+              "w": 0.1,
+              "h": 0.1,
+              "d": 0.1,
+              "x": 0,
+              "y": 0.2,
+              "z": 0,
+              "color": "#FFFF00",
+              "glow": 1
+            },
+            {
+              "shape": "cylinder",
+              "turn": "back",
+              "w": 0.1,
+              "h": 0.1,
+              "d": 0.1,
+              "x": 0,
+              "y": 0.2,
+              "z": 0,
+              "color": "#FFFF00",
+              "glow": 1
+            },
+            {
+              "shape": "box",
+              "turn": "forward",
+              "w": 0.1,
+              "h": 0.1,
+              "d": 0.1,
+              "x": -0.5,
+              "y": 1,
+              "z": 0,
+              "color": "#FF0000",
+              "glow": 0.5
+            },
+            {
+              "shape": "box",
+              "turn": "forward",
+              "w": 0.1,
+              "h": 0.1,
+              "d": 0.1,
+              "x": 0.5,
+              "y": 1,
+              "z": 0,
+              "color": "#FF0000",
+              "glow": 0.5
+            },
+            {
+              "shape": "cone",
+              "turn": "forward",
+              "w": 0.1,
+              "h": 0.1,
+              "d": 0.1,
+              "x": -0.5,
+              "y": 0,
+              "z": 0,
+              "color": "#00FF00",
+              "glow": 0.2
+            },
+            {
+              "shape": "cone",
+              "turn": "forward",
+              "w": 0.1,
+              "h": 0.1,
+              "d": 0.1,
+              "x": 0.5,
+              "y": 0,
+              "z": 0,
+              "color": "#00FF00",
+              "glow": 0.2
+            },
+            {
+              "shape": "box",
+              "turn": "forward",
+              "w": 0.1,
+              "h": 0.1,
+              "d": 0.1,
+              "x": 0,
+              "y": 1,
+              "z": 0,
+              "color": "#00FF00",
+              "glow": 0.5
+            },
+            {
+              "shape": "cylinder",
+              "turn": "forward",
+              "w": 0.2,
+              "h": 0.1,
+              "d": 0.1,
+              "x": 0,
+              "y": 1,
+              "z": 0,
+              "color": "#FF0000",
+              "glow": 0.5
+            }
+          ],
+          "at": "2026-11-13T17:21:38.960Z",
+          "day": 11
         }
-      ],
-      "at": "2026-11-13T17:21:38.960Z",
-      "day": 11
-    }
+      }
+    ],
+    "partsUsed": 0,
+    "parts": [],
+    "design": null
   },
   "tunes": [
     {

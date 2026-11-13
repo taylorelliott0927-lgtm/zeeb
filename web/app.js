@@ -1,4 +1,4 @@
-import { World, DEFAULT_SHIP } from "./world3d.js?v=30";
+import { World, DEFAULT_SHIP } from "./world3d.js?v=31";
 
 // ---------- where Zeeb's data lives ----------
 // On GitHub Pages (you.github.io/repo) we read the live files straight from the repo,
@@ -322,7 +322,7 @@ function renderWorks(w) {
   if (w.builds?.length) {
     box.append(el("h4", null, "Things he's built"));
     const ul = el("ul", "list");
-    for (const b of w.builds) { const li = el("li", null, `${b.name} (near ${({ hangar: "Hangar Bay 3", cantina: "the cantina", market: "the junk market", tower: "the comms tower", depot: "the fuel depot", ridge: "the dune ridge" })[b.place] || "the outpost"})`); if (b.description) li.append(el("div", "muted", b.description)); if (b.usedPart) li.append(el("div", "muted", `built with ${b.usedPartName ? `${b.usedPartName}, ` : ""}${b.usedPart}${b.usedPartGood ? " ★" : ""} (it sits on a plate beside it)`)); ul.append(li); }
+    for (const b of w.builds) { const li = el("li", null, `${b.name} (near ${({ hangar: "Hangar Bay 3", cantina: "the cantina", market: "the junk market", tower: "the comms tower", depot: "the fuel depot", ridge: "the dune ridge" })[b.place] || "the outpost"})`); if (b.description) li.append(el("div", "muted", b.description)); if (b.plan?.components?.length) li.append(el("div", "muted", `His plan${b.plan.purpose ? ` (for ${b.plan.purpose})` : ""}: ${b.plan.components.map((c) => c.name).join(", ")} · ${(b.parts || []).length} pieces`)); if (b.usedPart) li.append(el("div", "muted", `built with ${b.usedPartName ? `${b.usedPartName}, ` : ""}${b.usedPart}${b.usedPartGood ? " ★" : ""} (it sits on a plate beside it)`)); ul.append(li); }
     box.append(ul);
   }
   box.append(el("h4", null, "Tunes"));

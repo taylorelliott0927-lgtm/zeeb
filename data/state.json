@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794529619884,
+  "lastTick": 1794529919962,
   "asleep": false,
-  "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-13T00:26:59.884Z",
-  "actionMinutes": 40,
-  "thought": "my charge is bugging me most right now.",
-  "feeling": "okay, ticking along",
-  "say": "",
-  "mood": 0.283,
-  "energy": -0.259,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-13T00:31:59.962Z",
+  "actionMinutes": 60,
+  "thought": "I hope they have some extra oil. The Little Dart's thrusters are running a bit rough, and I could use this to keep them going for a bit longer.",
+  "feeling": "a bit hopeful, a few drops of oil in my tank is still a drop in the ocean compared to what I need for the Little Dart.",
+  "say": "Thanks for the oil, you've been very generous.",
+  "mood": 0.36,
+  "energy": 0.146,
   "needs": {
-    "charge": 0.286,
-    "oil": 0.57,
-    "curiosity": 0.172,
-    "company": 0,
-    "craft": 0.038
+    "charge": 0.309,
+    "oil": 0,
+    "curiosity": 0.312,
+    "company": 0.027,
+    "craft": 0.071
   },
-  "credits": 4,
+  "credits": 3,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-13T00:31:59.962Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "",
       "at": "2026-11-12T23:15:51.274Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "continue to work on sealing the ducts, and make notes for any further improvemen",
-      "at": "2026-11-12T23:10:51.047Z"
     }
   ],
   "wants": [
@@ -189,7 +189,7 @@
     }
   ],
   "seenCreatorMsgs": [],
-  "lettersCheckedAt": "2026-11-13T00:26:59.884Z",
+  "lettersCheckedAt": "2026-11-13T00:31:59.962Z",
   "weather": {
     "kind": "clear",
     "temp": 24,
@@ -201,51 +201,50 @@
   "sleepDay": 5,
   "lastReflectDay": 5,
   "brain": "your PC (qwen2.5:3b)",
-  "updatedAt": "2026-11-13T00:26:59.884Z",
+  "updatedAt": "2026-11-13T00:31:59.962Z",
   "clock": {
     "day": 5,
-    "time": "15:37",
-    "hour": 15,
-    "minute": 37
+    "time": "16:17",
+    "hour": 16,
+    "minute": 17
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-13T00:26:59.884Z"
+    "action": "drink_oil",
+    "since": "2026-11-13T00:31:59.962Z"
   },
-  "busyUntil": "2026-11-13T00:31:59.884Z",
-  "busyUntilTown": "16:17",
+  "busyUntil": "2026-11-13T00:39:29.962Z",
+  "busyUntilTown": "17:17",
   "runner": "pc",
   "model": "gemini-3.5-flash",
-  "pcBrainAt": "2026-11-13T00:26:59.884Z",
-  "doingWords": "",
+  "pcBrainAt": "2026-11-13T00:31:59.962Z",
+  "doingWords": "wave my arm, drink oil",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-13T00:17:00.182Z",
   "body": [],
   "pops": {
-    "at": "2026-11-12T23:57:00.596Z",
+    "at": "2026-11-13T00:31:59.962Z",
     "items": [
       {
-        "text": "+ a mystery box that hums",
-        "kind": "part",
-        "at": "2026-11-12T23:57:00.596Z"
-      },
-      {
-        "text": "+ a dented fuel cell",
-        "kind": "part",
-        "at": "2026-11-12T23:57:00.596Z"
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-13T00:31:59.962Z"
       }
     ]
   },
   "event": {
-    "id": "emwe88tue",
-    "key": "power",
-    "text": "The power flickered across the outpost for a few seconds.",
-    "at": "2026-11-13T00:17:00.182Z"
+    "id": "emwe8s44a",
+    "key": "crackle",
+    "text": "He heard a strange crackle on his dish. Probably nothing. Probably.",
+    "at": "2026-11-13T00:31:59.962Z"
   },
   "thoughts": [
+    {
+      "text": "I hope they have some extra oil. The Little Dart's thrusters are running a bit rough, and I could use this to keep them going for a bit longer.",
+      "at": "2026-11-13T00:31:59.962Z"
+    },
     {
       "text": "my charge is bugging me most right now.",
       "at": "2026-11-13T00:26:59.884Z"
@@ -255,5 +254,5 @@
       "at": "2026-11-13T00:17:00.182Z"
     }
   ],
-  "sayAt": "2026-11-13T00:26:59.884Z"
+  "sayAt": "2026-11-13T00:31:59.962Z"
 }

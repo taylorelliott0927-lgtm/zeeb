@@ -556,7 +556,7 @@ export class World {
   }
 
   setBuilds(builds) {
-    const sig = JSON.stringify(builds.map((b) => b.id));
+    const sig = JSON.stringify(builds.map((b) => [b.id, (b.parts || []).length, b.updatedAt || ""]));
     if (sig === this.buildsSig) return;
     this.buildsSig = sig;
     this.buildsRoot.children = [];
@@ -569,7 +569,8 @@ export class World {
       const g = this.put(this.buildsRoot, null, { pos: this.at(b.x, b.z), rot: [0, b.rot || 0, 0] });
       let top = 1;
       for (const pt of b.parts || []) {
-        const n = this.put(g, meshFor[pt.shape] || this.meshes.box, { pos: [pt.x, pt.y, pt.z], scale: [pt.w, pt.h, pt.d], color: hex(pt.color || "#999999"), emissive: pt.glow || 0 });
+        const turn = { forward: [Math.PI / 2, 0, 0], back: [-Math.PI / 2, 0, 0], side: [0, 0, Math.PI / 2] }[pt.turn] || [0, 0, 0];
+        const n = this.put(g, meshFor[pt.shape] || this.meshes.box, { pos: [pt.x, pt.y, pt.z], rot: turn, scale: [pt.w, pt.h, pt.d], color: hex(pt.color || "#999999"), emissive: pt.glow || 0 });
         if (pt.glow > 0.3) this.lights.push(n);
         if (pt.spin) this.spinners.push(n);
         top = Math.max(top, pt.y + pt.h / 2);

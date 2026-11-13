@@ -1,4 +1,4 @@
-import { World } from "./world3d.js?v=20";
+import { World, DEFAULT_SHIP } from "./world3d.js?v=21";
 
 // ---------- where Zeeb's data lives ----------
 // On GitHub Pages (you.github.io/repo) we read the live files straight from the repo,
@@ -152,6 +152,38 @@ function renderDiary(d) {
   }
 }
 
+// A side view of a ship drawn from its design (nose to the right), as a small picture.
+function shipSVG(design) {
+  const parts = design?.parts?.length ? design.parts : DEFAULT_SHIP;
+  const NS = "http://www.w3.org/2000/svg";
+  const box = (pt) => {
+    const len = pt.turn === "forward" || pt.turn === "back" ? pt.h : pt.d; // along the ship
+    const tall = pt.turn === "up" ? pt.h : pt.turn === "side" ? pt.w : pt.d; // up and down
+    return { z0: pt.z - len / 2, z1: pt.z + len / 2, y0: pt.y - tall / 2, y1: pt.y + tall / 2 };
+  };
+  const bs = parts.map(box);
+  const zMin = Math.min(...bs.map((b) => b.z0)), zMax = Math.max(...bs.map((b) => b.z1)), yMin = Math.min(...bs.map((b) => b.y0)), yMax = Math.max(...bs.map((b) => b.y1));
+  const W = 160, H = 80, pad = 6, k = Math.min((W - pad * 2) / Math.max(0.1, zMax - zMin), (H - pad * 2) / Math.max(0.1, yMax - yMin));
+  const X = (z) => pad + (z - zMin) * k + ((W - pad * 2) - (zMax - zMin) * k) / 2, Y = (y) => H - pad - (y - yMin) * k - ((H - pad * 2) - (yMax - yMin) * k) / 2;
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("class", "ship-pic"); svg.setAttribute("role", "img"); svg.setAttribute("aria-label", design?.description || "the plain scrap-dart look");
+  // draw wide flat parts (wings) first so the hull sits on top
+  parts.map((pt, i) => [pt, bs[i]]).sort((a, b) => b[0].w - a[0].w).forEach(([pt, b]) => {
+    let n;
+    if (pt.shape === "ball") { n = document.createElementNS(NS, "ellipse"); n.setAttribute("cx", (X(b.z0) + X(b.z1)) / 2); n.setAttribute("cy", (Y(b.y0) + Y(b.y1)) / 2); n.setAttribute("rx", Math.max(1, (X(b.z1) - X(b.z0)) / 2)); n.setAttribute("ry", Math.max(1, (Y(b.y0) - Y(b.y1)) / 2)); }
+    else if (pt.shape === "cone") {
+      n = document.createElementNS(NS, "polygon");
+      const [l, r, t, bt] = [X(b.z0), X(b.z1), Y(b.y1), Y(b.y0)], mx = (l + r) / 2, my = (t + bt) / 2;
+      const pts = pt.turn === "forward" ? [[l, t], [r, my], [l, bt]] : pt.turn === "back" ? [[r, t], [l, my], [r, bt]] : pt.turn === "side" ? [[l, t], [r, t], [r, bt], [l, bt]] : [[l, bt], [mx, t], [r, bt]];
+      n.setAttribute("points", pts.map((p) => p.join(",")).join(" "));
+    } else { n = document.createElementNS(NS, "rect"); n.setAttribute("x", X(b.z0)); n.setAttribute("y", Y(b.y1)); n.setAttribute("width", Math.max(1, X(b.z1) - X(b.z0))); n.setAttribute("height", Math.max(1, Y(b.y0) - Y(b.y1))); if (pt.shape === "cylinder") n.setAttribute("rx", Math.min(8, (Y(b.y0) - Y(b.y1)) / 2)); }
+    n.setAttribute("fill", /^#[0-9a-f]{6}$/i.test(pt.color || "") ? pt.color : "#ccc");
+    if (pt.glow > 0.3) n.setAttribute("filter", "drop-shadow(0 0 3px " + pt.color + ")");
+    svg.append(n);
+  });
+  return svg;
+}
+
 // A row of little chips naming each part, gold star on the good ones.
 function partChips(parts) {
   const row = el("div", "facts");
@@ -167,6 +199,9 @@ function renderWorks(w) {
   box.append(el("h4", null, d.name));
   const bar = el("div", "progress"), fill = el("i"); fill.style.width = `${d.progress}%`; bar.append(fill);
   box.append(bar, el("div", "muted", `${d.progress}% built · version ${d.version}${d.launched?.length ? ` · ${d.launched.length} finished before this one` : ""}`));
+  const look = el("div", "ship-card");
+  look.append(shipSVG(d.design), el("div", "muted", d.design ? `His design: ${d.design.description}` : "Still the plain scrap-dart look. He can design it any way he likes, whenever he wants."));
+  box.append(look);
   const log = el("ul", "list");
   for (const l of (d.log || []).slice(0, 6)) log.append(el("li", null, `v${l.version}: ${l.change}`));
   box.append(log);
@@ -176,7 +211,7 @@ function renderWorks(w) {
   if (d.launched?.length) {
     box.append(el("h4", null, "Finished ships"));
     const ul = el("ul", "list");
-    for (const l of d.launched) { const li = el("li", null, `${l.name}, finished on day ${l.day}`); if (l.parts?.length) li.append(partChips(l.parts)); ul.append(li); }
+    for (const l of d.launched) { const li = el("li", "ship-card", `${l.name}, finished on day ${l.day}`); li.prepend(shipSVG(l.design)); if (l.design?.description) li.append(el("div", "muted", l.design.description)); if (l.parts?.length) li.append(partChips(l.parts)); ul.append(li); }
     box.append(ul);
   }
   if (w.flights?.length) {

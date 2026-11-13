@@ -25,6 +25,17 @@ const C = {
   white: [0.92, 0.9, 0.86], red: [0.95, 0.25, 0.2], teal: [0.25, 0.6, 0.6], purple: [0.55, 0.35, 0.65],
 };
 
+// The plain scrap-dart look, used until he designs his own (same format as his designs).
+const DEFAULT_SHIP = [
+  { shape: "cone", turn: "forward", w: 0.7, h: 1.1, d: 0.7, x: 0, y: 0.3, z: 0.9, color: "#ebe6db" },
+  { shape: "cylinder", turn: "forward", w: 0.7, h: 1.0, d: 0.7, x: 0, y: 0.3, z: 0, color: "#ebe6db" },
+  { shape: "box", turn: "up", w: 2.6, h: 0.08, d: 0.7, x: 0, y: 0.25, z: -0.1, color: "#f24033" },
+  { shape: "cylinder", turn: "forward", w: 0.45, h: 0.4, d: 0.45, x: 0, y: 0.3, z: -0.65, color: "#33333d" },
+  { shape: "box", turn: "up", w: 0.08, h: 0.5, d: 0.5, x: 0, y: 0.6, z: -0.4, color: "#f24033" },
+  { shape: "ball", turn: "up", w: 0.4, h: 0.25, d: 0.5, x: 0, y: 0.55, z: 0.35, color: "#4df2ff", glow: 0.5 },
+];
+export { DEFAULT_SHIP };
+
 // Spots on the ship where parts he uses get bolted on (ship's own coordinates).
 const SHIP_SLOTS = [
   { pos: [0, 0.65, 0.05] }, { pos: [1.15, 0.29, -0.1] }, { pos: [-1.15, 0.29, -0.1], rot: [0, Math.PI, 0] },
@@ -105,15 +116,9 @@ export class World {
     this.lights.push(this.hangarLamp);
     // The Little Dart, built up piece by piece as progress grows
     this.dart = this.put(hangar, null, { pos: [1.4, 0.6, 1.6], rot: [0, -0.5, 0] });
-    const shipParts = (parent) => [
-      this.put(parent, cone, { pos: [0, 0.3, 0.9], rot: [Math.PI / 2, 0, 0], scale: [0.7, 1.1, 0.7], color: C.white }),
-      this.put(parent, cyl, { pos: [0, 0.3, 0], rot: [Math.PI / 2, 0, 0], scale: [0.7, 1.0, 0.7], color: C.white }),
-      this.put(parent, box, { pos: [0, 0.25, -0.1], scale: [2.6, 0.08, 0.7], color: C.red }),
-      this.put(parent, cyl, { pos: [0, 0.3, -0.65], rot: [Math.PI / 2, 0, 0], scale: [0.45, 0.4, 0.45], color: C.dark }),
-      this.put(parent, box, { pos: [0, 0.6, -0.4], scale: [0.08, 0.5, 0.5], color: C.red }),
-      this.put(parent, ball, { pos: [0, 0.55, 0.35], scale: [0.4, 0.25, 0.5], color: C.cyan, emissive: 0.5 }),
-    ];
-    this.dartParts = shipParts(this.dart);
+    // Each ship is drawn from its design (his own, or the plain scrap-dart look until he designs one).
+    this.dartBody = this.put(this.dart, null);
+    this.dartParts = this.shipBody(this.dartBody, null).pieces;
     // Parts he's actually put into each ship get mounted on it, so you can see them.
     this.dartMounts = this.put(this.dart, null);
     // His stash shelf against the back wall of the hangar: every part he owns sits on it.
@@ -126,10 +131,12 @@ export class World {
     // A finished ship parks outside the hangar; the flying one is a copy that takes off from there.
     this.PARK = { x: 6.8, z: 6.2, yaw: -0.6 };
     this.parked = this.put(R, null, { pos: this.at(this.PARK.x, this.PARK.z, 0.6), rot: [0, this.PARK.yaw, 0], visible: false, scale: [1.3, 1.3, 1.3] });
-    shipParts(this.parked);
+    this.parkedBody = this.put(this.parked, null);
+    this.shipBody(this.parkedBody, null);
     this.parkedMounts = this.put(this.parked, null);
     this.flyer = this.put(R, null, { visible: false, scale: [1.3, 1.3, 1.3] });
-    shipParts(this.flyer);
+    this.flyerBody = this.put(this.flyer, null);
+    this.shipBody(this.flyerBody, null);
     this.flyerMounts = this.put(this.flyer, null);
     this.flyerFlame = this.put(this.flyer, cone, { pos: [0, 0.3, -1.05], rot: [-Math.PI / 2, 0, 0], scale: [0.35, 0.6, 0.35], color: C.cyan, emissive: 1 });
     this.smoke = Array.from({ length: 6 }, () => this.put(R, ball, { color: [0.35, 0.33, 0.32], visible: false }));
@@ -372,6 +379,10 @@ export class World {
     const off = SPOTS[action] || [0, 0, 4];
     this.target = { x: place.x + off[0], z: place.z + off[2] };
     if (first) { this.zeebPos.x = this.target.x; this.zeebPos.z = this.target.z + 1; }
+    const last0 = (s.works?.dart?.launched || []).slice(-1)[0];
+    this.setShipDesign("dart", this.dartBody, s.works?.dart?.design);
+    this.setShipDesign("parked", this.parkedBody, last0?.design);
+    if (!this.flight) this.setShipDesign("flyer", this.flyerBody, last0?.design);
     const p = s.works?.dart?.progress ?? 0;
     const built = Math.ceil((p / 100) * this.dartParts.length);
     this.dartParts.forEach((n, i) => (n.visible = i < Math.max(1, built)));
@@ -380,10 +391,10 @@ export class World {
     if (!this.flight) this.parked.visible = this.hasShip;
     this.setBuilds(w.builds || []);
     this.setStash(w.stash || []);
-    this.mountParts(this.dartMounts, w.dart?.parts || [], SHIP_SLOTS, 1, !first, w.dart?.name);
+    this.mountParts(this.dartMounts, w.dart?.parts || [], this.slots.dart || SHIP_SLOTS, 1, !first, w.dart?.name);
     const last = (w.dart?.launched || []).slice(-1)[0];
-    this.mountParts(this.parkedMounts, last?.parts || [], SHIP_SLOTS, 1);
-    this.mountParts(this.flyerMounts, last?.parts || [], SHIP_SLOTS, 1);
+    this.mountParts(this.parkedMounts, last?.parts || [], this.slots.parked || SHIP_SLOTS, 1);
+    this.mountParts(this.flyerMounts, last?.parts || [], this.slots.flyer || SHIP_SLOTS, 1);
     // A test flight that happened in the last few minutes plays once, live.
     const f = s.flight;
     if (f && f.id !== this.seenFlight && Date.now() - Date.parse(f.at) < 8 * 60000) { this.seenFlight = f.id; this.playFlight(f); }
@@ -413,6 +424,38 @@ export class World {
   setExtras({ shopOpen, gamesCount }) {
     this.booth.visible = Boolean(shopOpen);
     this.arcade.visible = gamesCount > 0;
+  }
+
+  // ---------- his ships ----------
+  // Draw a ship from a design: a list of simple shapes in the ship's own space (nose toward +z).
+  shipBody(root, design) {
+    const meshFor = { box: this.meshes.box, cylinder: this.meshes.cyl, ball: this.meshes.ball, cone: this.meshes.cone };
+    const turnRot = { up: [0, 0, 0], forward: [Math.PI / 2, 0, 0], back: [-Math.PI / 2, 0, 0], side: [0, 0, Math.PI / 2] };
+    const hex = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255);
+    const parts = design?.parts?.length ? design.parts : DEFAULT_SHIP;
+    root.children = [];
+    const pieces = parts.map((pt) => this.put(root, meshFor[pt.shape] || this.meshes.box, { pos: [pt.x, pt.y, pt.z], rot: turnRot[pt.turn] || [0, 0, 0], scale: [pt.w, pt.h, pt.d], color: hex(pt.color || "#cccccc"), emissive: pt.glow || 0 }));
+    // where stash parts get bolted on: the default ship has hand-placed spots; his own designs get spots on top of each piece
+    let slots = SHIP_SLOTS, tail = -1.05;
+    if (design?.parts?.length) {
+      const top = (pt) => pt.y + (pt.turn === "up" ? pt.h : pt.turn === "side" ? pt.w : pt.d) / 2;
+      const big = [...parts].sort((a, b) => b.w * b.d - a.w * a.d);
+      slots = Array.from({ length: 15 }, (_, i) => { const pt = big[i % big.length], ring = Math.floor(i / big.length); return { pos: [pt.x + (ring % 2 ? 1 : -1) * ring * 0.15, top(pt) + 0.02, pt.z + ring * 0.1] }; });
+      tail = Math.min(...parts.map((pt) => pt.z - (pt.turn === "forward" || pt.turn === "back" ? pt.h : pt.d) / 2)) - 0.1;
+    }
+    return { pieces, slots, tail };
+  }
+
+  setShipDesign(which, root, design) {
+    const sig = JSON.stringify(design?.parts || null);
+    this.shipSigs ||= {}; this.slots ||= {};
+    if (this.shipSigs[which] === sig) return;
+    this.shipSigs[which] = sig;
+    const b = this.shipBody(root, design);
+    this.slots[which] = b.slots;
+    if (which === "dart") { this.dartParts = b.pieces; this.dartMounts.sig = null; }
+    if (which === "parked") this.parkedMounts.sig = null;
+    if (which === "flyer") { this.flyerMounts.sig = null; this.flyerFlame.pos = [0, 0.3, b.tail]; }
   }
 
   // ---------- his parts ----------

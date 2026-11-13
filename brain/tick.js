@@ -204,7 +204,17 @@ async function doAction(id, d, notes) {
   // Repetition is punished seven times harder than novelty is rewarded. Choosing to keep going with the same thing isn't repetition.
   const continuing = id === state.action && !a.oneShot;
   const repeats = continuing ? 0 : state.recent.slice(0, 8).filter((r) => r.id === id).length;
-  if (!continuing) nudge(repeats ? -0.07 * repeats : 0.01);
+  if (!continuing) {
+    // Repeats are punished seven times harder than novelty is rewarded, and things he hasn't done
+    // in ages feel extra fresh. Spending most of a day on the same few things gets a bit stale.
+    const last = state.lastDone?.[id];
+    const hoursSince = last ? (NOW - Date.parse(last)) / 3600000 / realHoursPerTownHour : Infinity;
+    const fresh = repeats ? -0.07 * repeats : hoursSince > 24 ? 0.04 : hoursSince > 8 ? 0.02 : 0.01;
+    const today = state.today?.day === clock.day ? state.today.counts : {};
+    const total = Object.values(today).reduce((x, y) => x + y, 0);
+    const share = total >= 6 ? (today[id] || 0) / total : 0;
+    nudge(fresh - (share > 0.3 ? 0.03 : 0));
+  }
   // Keeping going is fine for a while, then it starts to get boring, more and more the longer it runs.
   if (continuing) {
     const h = streakHours();
@@ -748,6 +758,10 @@ async function main() {
   state.feeling = String(d.feeling || state.feeling).slice(0, 120);
   state.say = String(d.say || "").slice(0, 200);
   state.recent.unshift({ id: d.action, detail: String(d.detail || "").slice(0, 80), at: nowISO });
+  // Keep track of what he does today and when he last did each thing (shown to him, to help him notice ruts).
+  if (state.today?.day !== clock.day) state.today = { day: clock.day, counts: {} };
+  state.today.counts[d.action] = (state.today.counts[d.action] || 0) + 1;
+  state.lastDone = { ...(state.lastDone || {}), [d.action]: nowISO };
   if (d.action === "go_to_sleep") await goToSleep(d.why);
   state.recent = state.recent.slice(0, 12);
   settleFeelings();

@@ -1,7 +1,7 @@
 // What Zeeb is asked, and the simple rules he falls back on when the AI is unavailable.
 import { askJSON } from "./llm.js";
 import { ACTIONS, NEEDS, PLACES, WORLD } from "./world.js";
-import { pick } from "./util.js";
+import { TOWN_DAY_MINUTES, pick } from "./util.js";
 
 function shopText(ctx) {
   const shop = ctx.shop;
@@ -54,7 +54,9 @@ const fmtNeeds = (needs) =>
 
 export async function decide(ctx) {
   const { character, state, available, notes, newNotes, memories, works, event, weather, clock } = ctx;
-  const actionList = available.map((id) => `- ${id}: ${id === state.action && !state.asleep ? `(keep going with what you're doing; you've been at it ${ctx.streakHours ? `about ${Math.round(ctx.streakHours * 10) / 10} hours` : "a little while"}, and it gets boring after 3) ` : ""}${ACTIONS[id].about}${ACTIONS[id].place !== "any" ? ` [at ${PLACES[ACTIONS[id].place].name}]` : ""}`).join("\n");
+  // Shuffle the list each time so he isn't nudged toward whatever happens to be first.
+  const shuffled = [...available].sort(() => Math.random() - 0.5);
+  const actionList = shuffled.map((id) => `- ${id}: ${id === state.action && !state.asleep ? `(keep going with what you're doing; you've been at it ${ctx.streakHours ? `about ${Math.round(ctx.streakHours * 10) / 10} hours` : "a little while"}, and it gets boring after 3) ` : ""}${ACTIONS[id].about}${ACTIONS[id].place !== "any" ? ` [at ${PLACES[ACTIONS[id].place].name}]` : ""}`).join("\n");
   const user = `RIGHT NOW
 Town day ${clock.day}, ${clock.label}. You are at ${PLACES[state.place]?.name || "the outpost"}.
 Weather: ${weather ? `${weather.kind}, ${weather.temp}C, wind ${weather.wind} km/h` : "unknown"}.
@@ -65,6 +67,16 @@ Parts in your stash (${works.stash.length}): ${works.stash.length ? works.stash.
 ${event ? `Something just happened: ${event.text}\n` : ""}
 NEEDS (0 met, 1 pressing)
 ${fmtNeeds(state.needs)}
+
+${(() => {
+    const today = state.today?.day === clock.day ? state.today.counts : {};
+    const done = Object.entries(today).sort((a, b) => b[1] - a[1]);
+    const hrs = (id) => (state.lastDone?.[id] ? (Date.now() - Date.parse(state.lastDone[id])) / 3600000 / (TOWN_DAY_MINUTES / 60 / 24) : Infinity);
+    // Only everyday activities: needs (sleep, oil) and his own big decisions (shop, friend, games, building) are never suggested.
+    const skip = ["open_shop", "tend_shop", "start_friend", "build_friend", "start_game", "work_game", "build_thing", "take_down_thing", "test_flight", "go_to_sleep", "nap_dock", "drink_oil", "reply_notes"];
+    const stale = available.filter((id) => !skip.includes(id) && hrs(id) > 10).map((id) => (hrs(id) === Infinity ? `${id} (not lately)` : `${id} (${Math.round(hrs(id) / 24 * 10) / 10} days ago)`));
+    return `TODAY SO FAR: ${done.map(([id, n]) => `${id} x${n}`).join(", ") || "nothing yet"}${stale.length ? `\nTHINGS YOU HAVEN'T DONE IN A WHILE: ${stale.slice(0, 10).join(", ")}` : ""}`;
+  })()}
 
 WHAT YOU DID RECENTLY (newest first)
 ${state.recent.slice(0, 8).map((r) => `- ${r.id}${r.detail ? ` (${r.detail})` : ""}`).join("\n") || "- nothing yet, you just woke up"}

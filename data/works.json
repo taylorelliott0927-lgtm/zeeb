@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk V",
-    "progress": 10,
-    "version": 1,
-    "lastChange": "tinkered with it (used Rusty Jr, a cracked navigation chip)",
+    "progress": 20,
+    "version": 2,
+    "lastChange": "I spend a long time carefully examining the heat-resistant hose and duct seal, checking for any flaws. Once I'm sure I've found the perfect fit, I begin making the necessary adjustments with my precis (used Fen, a coil of copper wire)",
     "log": [
+      {
+        "version": 2,
+        "change": "I spend a long time carefully examining the heat-resistant hose and duct seal, checking for any flaws. Once I'm sure I've found the perfect fit, I begin making the necessary adjustments with my precis (used Fen, a coil of copper wire)",
+        "progress": 20,
+        "at": "2026-11-13T17:51:38.962Z"
+      },
       {
         "version": 1,
         "change": "tinkered with it (used Rusty Jr, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "tinkered with it",
         "progress": 76,
         "at": "2026-11-13T11:49:38.753Z"
-      },
-      {
-        "version": 21,
-        "change": "tinkered with it",
-        "progress": 74,
-        "at": "2026-11-13T11:46:38.711Z"
       }
     ],
     "launched": [
@@ -592,12 +592,17 @@
         }
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Rusty Jr",
         "what": "a cracked navigation chip",
         "version": 1
+      },
+      {
+        "name": "Fen",
+        "what": "a coil of copper wire",
+        "version": 2
       }
     ],
     "design": null
@@ -662,11 +667,6 @@
       "name": "Tok",
       "what": "half a thruster nozzle",
       "at": "2026-11-13T17:45:38.990Z"
-    },
-    {
-      "name": "Fen",
-      "what": "a coil of copper wire",
-      "at": "2026-11-13T17:42:38.953Z"
     }
   ],
   "reads": [

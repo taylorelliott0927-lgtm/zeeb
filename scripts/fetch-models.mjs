@@ -9,8 +9,8 @@ import os from "node:os";
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const OUT = process.env.MODELS_OUT || path.join(ROOT, "web", "models");
 const TMP = fs.mkdtempSync(path.join(os.tmpdir(), "zeeb-models-"));
-const MAX_FILE = 600 * 1024;        // skip anything heavy so the site stays quick
-const MAX_TOTAL = 60 * 1024 * 1024; // whole library stays under about 60 MB
+const MAX_FILE = 1536 * 1024;       // skip anything really heavy (over 1.5 MB) so builds load quickly
+const MAX_TOTAL = 250 * 1024 * 1024; // whole library up to about 250 MB (models only download when a build uses one)
 
 // Kenney packs (all CC0). Each pack name also becomes a tag, so "space" finds the space kits.
 const PACKS = [

@@ -1,4 +1,4 @@
-import { World } from "./world3d.js?v=18";
+import { World } from "./world3d.js?v=19";
 
 // ---------- where Zeeb's data lives ----------
 // On GitHub Pages (you.github.io/repo) we read the live files straight from the repo,
@@ -223,6 +223,23 @@ function renderWorks(w) {
   for (const s of w.signals.slice(0, 6)) sig.append(el("li", null, `"${s.text}"`));
   if (!w.signals.length) sig.append(el("li", "muted", "none yet"));
   box.append(sig);
+}
+
+// Everything from his speech and thought bubbles, newest first, so nothing gets missed.
+function renderSaid(s) {
+  const box = $("said");
+  if (!box) return;
+  const list = s.said || [];
+  const sig = JSON.stringify(list.slice(0, 3)) + list.length;
+  if (box.dataset.sig === sig) return;
+  box.dataset.sig = sig;
+  box.replaceChildren(el("p", "muted", "Everything from his bubbles: things he says out loud (speech) and things he's thinking (thought). Newest at the top."));
+  if (!list.length) box.append(el("p", "muted", "Nothing yet. This fills up from his next heartbeat."));
+  for (const m of list) {
+    const row = el("div", `said-row ${m.kind === "say" ? "said-say" : "said-think"}`);
+    row.append(el("div", "said-kind", m.kind === "say" ? "said" : "thought"), el("div", "said-text", m.kind === "say" ? `"${m.text}"` : m.text), el("div", "meta muted", `${m.town || ""}${m.place ? ` · ${m.place}` : ""} · ${ago(m.at)}`));
+    box.append(row);
+  }
 }
 
 function renderMind(s, mem) {
@@ -468,6 +485,7 @@ async function refresh() {
   world?.setState({ ...s, works });
   if (fr) { world?.setFriend(fr); renderFriend(fr); }
   renderStats(s);
+  renderSaid(s);
   renderFeed(feed?.entries || []);
   world?.setBubbleLines(s, feed?.entries || []);
   $("status").textContent = `last heartbeat ${ago(s.updatedAt || new Date(s.lastTick).toISOString())}`;

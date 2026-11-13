@@ -110,6 +110,43 @@ Use 3 to 16 parts. x between -2 and 2, y between 0 and 2, z between -2 and 2, si
   return { name: String(r.name || "").trim().slice(0, 40), description: String(r.description || idea || "").slice(0, 200), parts };
 }
 
+// ---------- building with real thought: plan first, then build it piece by piece ----------
+// 1. He thinks it through: what it's for, how big, its colours, and the parts it's made of.
+export async function planBuild(sheetText, idea, place, stash, found = []) {
+  const r = await askJSON(sheetText, `You've decided to build something and put it in the world: "${idea}".
+Where: ${PLACES[place]?.name || "near Hangar Bay 3"}. Parts in your stash: ${stash.map((p) => p.what).join(", ") || "just scrap"}.
+${found.length ? `Models you found in your library that you could use: ${found.map((m) => m.name).join(", ")}.` : ""}
+Before building, think it through properly, like a real builder. What is it for? How big is it (you're about 1 metre tall)? What does it look like, what colours and materials? What are all the main parts it's made of, and where does each one go?
+Return JSON:
+{"name": "what you call it", "description": "one sentence in your voice", "purpose": "what it's for", "place": "${Object.keys(PLACES).join("|")}",
+ "size": {"width": 3, "depth": 2, "height": 2}, "colors": ["#rrggbb", "#rrggbb"],
+ "components": [{"name": "e.g. base platform", "details": "what it looks like and what's on it", "where": "where it sits on the build"}]}
+List 4 to 8 components.`, { temperature: 0.8 }).catch(() => null);
+  if (!r?.components?.length) return null;
+  const n = (v, lo, hi, d) => { const x = Number(v); return Number.isFinite(x) ? Math.min(hi, Math.max(lo, x)) : d; };
+  return {
+    name: String(r.name || idea).slice(0, 50), description: String(r.description || "").slice(0, 200), purpose: String(r.purpose || "").slice(0, 160),
+    place: PLACES[r.place] ? r.place : place,
+    size: { width: n(r.size?.width, 0.5, 8, 3), depth: n(r.size?.depth, 0.5, 8, 2), height: n(r.size?.height, 0.3, 6, 2) },
+    colors: (Array.isArray(r.colors) ? r.colors : []).filter((c) => HEX.test(c)).slice(0, 5),
+    components: r.components.slice(0, 8).map((c) => ({ name: String(c.name || "part").slice(0, 50), details: String(c.details || "").slice(0, 200), where: String(c.where || "").slice(0, 120) })),
+  };
+}
+
+// 2. Then he builds each part of his plan in detail, one at a time, fitting it to what's already there.
+export async function buildComponent(sheetText, plan, comp, partsSoFar, found = []) {
+  const placed = partsSoFar.slice(-30).map((p) => (p.model ? `${p.name} model at (${p.x}, ${p.y}, ${p.z}), ${p.height} tall` : `${p.shape} ${p.w}x${p.h}x${p.d} at (${p.x}, ${p.y}, ${p.z})`)).join("; ");
+  const r = await askJSON(sheetText, `You're building "${plan.name}" (${plan.description}). Overall size about ${plan.size.width} wide (x), ${plan.size.depth} deep (z), ${plan.size.height} tall (y), centred on x 0, z 0, standing on y 0. Colours: ${plan.colors.join(", ") || "your choice"}.
+Your plan's parts: ${plan.components.map((c) => c.name).join(", ")}.
+Already built: ${placed || "nothing yet"}.
+Now build this part in detail: "${comp.name}": ${comp.details}${comp.where ? `, ${comp.where}` : ""}.
+Use as many simple shapes as it needs to look right (frames, panels, edges, bolts, handles, lights, trims...). Sizes in metres; x, y, z is the centre of each shape; y is height above the ground.
+"turn" says which way a cone or cylinder points: up, forward, back, or side.${modelsText(found)}
+Return JSON: {"parts": [{"shape": "box|cylinder|ball|cone", "turn": "up", "w": 0.5, "h": 0.5, "d": 0.5, "x": 0, "y": 0.25, "z": 0, "color": "#rrggbb", "glow": 0, "spin": false}]}
+Use 3 to 14 parts for this one piece.`, { temperature: 0.8 }).catch(() => null);
+  return allParts(r?.parts, 14);
+}
+
 // Find a free spot near the place, away from its buildings and from other things he built.
 export function spotFor(place, builds) {
   const P = PLACES[place] || PLACES.hangar;

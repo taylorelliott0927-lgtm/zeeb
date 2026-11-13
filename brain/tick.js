@@ -13,7 +13,7 @@ import * as M from "./memory.js";
 import { buildStep, designFriend, emptyFriend, friendText, friendTick, startFriend, wakeFriend } from "./friend.js";
 import { activeGame, emptyGames, gamesText, startGame, workSession } from "./games.js";
 import { emptyInterests, interestsText, noteInterest } from "./interests.js";
-import { FLIGHT_SECONDS, MAX_BUILDS, buildsText, cleanBody, designShip, designThing, lookUpModels, refineThing, flightLog, flightOutcome, spotFor } from "./builds.js";
+import { FLIGHT_SECONDS, MAX_BUILDS, buildComponent, buildsText, cleanBody, designShip, designThing, lookUpModels, planBuild, refineThing, flightLog, flightOutcome, spotFor } from "./builds.js";
 import { sheet } from "./mind.js";
 import { craftingText, emptyCrafting, planPart, tryToMake } from "./crafting.js";
 import { applyShopChange, checkSales, currency as shopCurrency, emptyShop, sellable } from "./shop.js";
@@ -482,11 +482,19 @@ async function doAction(id, d, notes) {
       const where = PLACES[d.place] ? d.place : place === "any" ? "hangar" : place;
       const lib = await lookUpModels(sheet(character), idea).catch(() => ({ searches: [], found: [] }));
       if (lib.searches.length) post("noticed", `Looked up ${lib.searches.map((q) => `"${q}"`).join(", ")} in his model library${lib.found.length ? `: found ${lib.found.slice(0, 6).map((m) => m.name).join(", ")}${lib.found.length > 6 ? " and more" : ""}` : ", but nothing matched"}.`);
-      const design = await designThing(sheet(character), idea, where, works.stash, lib.found);
-      // Then a second pass where he adds the finishing details.
+      // He plans it first, then builds each part of the plan in detail (fewer parts on GitHub, to save the free AI).
+      let design = null;
+      const plan = await planBuild(sheet(character), idea, where, works.stash, lib.found);
+      if (plan) {
+        let parts = [];
+        for (const comp of plan.components.slice(0, RUNNER === "pc" ? 8 : 4)) parts = [...parts, ...(await buildComponent(sheet(character), plan, comp, parts, lib.found))].slice(0, 120);
+        if (parts.length >= 3) design = { name: plan.name, description: plan.description, place: plan.place, parts, plan: { purpose: plan.purpose, size: plan.size, components: plan.components } };
+      }
+      design ||= await designThing(sheet(character), idea, where, works.stash, lib.found);
+      // Then a final look where he adds the finishing details.
       if (design.parts.length >= 2) {
         const more = await refineThing(sheet(character), design, "", lib.found).catch(() => null);
-        if (more) { design.parts = [...design.parts, ...more.add].slice(0, 60); design.description = more.description || design.description; }
+        if (more) { design.parts = [...design.parts, ...more.add].slice(0, 140); design.description = more.description || design.description; }
       }
       const spot = spotFor(design.place, works.builds || []);
       const part = works.stash.pop();
@@ -559,7 +567,7 @@ async function doAction(id, d, notes) {
       if (lib.searches.length) post("noticed", `Looked up ${lib.searches.map((q) => `"${q}"`).join(", ")} in his model library${lib.found.length ? `: found ${lib.found.slice(0, 6).map((m) => m.name).join(", ")}` : ", but nothing matched"}.`);
       const more = await refineThing(sheet(character), b, wish, lib.found).catch(() => null);
       if (!more) { ok = false; feed.entries[0].ok = false; post("noticed", `Stared at ${b.name} for a while but didn't change anything.`); break; }
-      b.parts = [...b.parts, ...more.add].slice(0, 60);
+      b.parts = [...b.parts, ...more.add].slice(0, 140);
       b.description = more.description || b.description;
       b.updatedAt = nowISO;
       place = b.place;

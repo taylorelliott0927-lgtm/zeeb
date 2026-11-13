@@ -1,4 +1,4 @@
-import { World, DEFAULT_SHIP } from "./world3d.js?v=22";
+import { World, DEFAULT_SHIP } from "./world3d.js?v=23";
 
 // ---------- where Zeeb's data lives ----------
 // On GitHub Pages (you.github.io/repo) we read the live files straight from the repo,
@@ -248,9 +248,19 @@ function renderWorks(w) {
   }
   if (!w.reads.length) reads.append(el("li", "muted", "nothing yet"));
   box.append(reads);
+  const C = w.crafting || {};
+  if (C.recipes?.length || C.attempts?.length) {
+    box.append(el("h4", null, "Parts he's invented"));
+    const ul = el("ul", "list");
+    for (const r of C.recipes || []) { const li = el("li", null, `${r.what} (made ${r.made}x, first on day ${r.day})`); if (r.how) li.append(el("div", "muted", `How: ${r.how}`)); if (r.uses) li.append(el("div", "muted", `For: ${r.uses}`)); ul.append(li); }
+    const fails = (C.attempts || []).filter((a) => a.result !== "worked" && !(C.recipes || []).some((r) => r.what.toLowerCase() === a.what.toLowerCase()));
+    for (const a of fails.slice(0, 5)) ul.append(el("li", "muted", `still trying: ${a.what}${a.how ? `. ${a.how}` : ""}`));
+    if (!C.recipes?.length) ul.prepend(el("li", "muted", "nothing has worked yet"));
+    box.append(ul);
+  }
   box.append(el("h4", null, "Parts in his stash"));
   const stash = el("ul", "list");
-  for (const p of w.stash) stash.append(el("li", p.good ? "good-part-text" : null, `${p.name}, ${p.what}${p.good ? " ★" : ""}`));
+  for (const p of w.stash) stash.append(el("li", p.good ? "good-part-text" : p.custom ? "made-part-text" : null, `${p.name}, ${p.what}${p.good ? " ★" : ""}${p.custom ? " (he made this)" : ""}`));
   if (!w.stash.length) stash.append(el("li", "muted", "empty"));
   box.append(el("div", "muted", "They sit on the shelf at the back of Hangar Bay 3. ★ = a good part."), stash);
   box.append(el("h4", null, "Signals sent into deep space"));

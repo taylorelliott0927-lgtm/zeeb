@@ -390,6 +390,9 @@ export class World {
     this.hasShip = (w.dart?.launched || []).length > 0;
     if (!this.flight) this.parked.visible = this.hasShip;
     this.setBuilds(w.builds || []);
+    this.recipes = new Map(((w.crafting?.recipes) || []).map((r) => [String(r.what).toLowerCase(), r]));
+    const rsig = JSON.stringify([...this.recipes.keys()]);
+    if (rsig !== this.recipesSig) { this.recipesSig = rsig; this.stashSig = null; this.buildsSig = null; this.dartMounts.sig = null; this.parkedMounts.sig = null; this.flyerMounts.sig = null; }
     this.setStash(w.stash || []);
     this.mountParts(this.dartMounts, w.dart?.parts || [], this.slots.dart || SHIP_SLOTS, 1, !first, w.dart?.name);
     const last = (w.dart?.launched || []).slice(-1)[0];
@@ -465,6 +468,16 @@ export class World {
     const g = this.put(parent, null, opts);
     const P = (mesh, o) => this.put(g, mesh, o);
     const copper = [0.85, 0.45, 0.2];
+    // A part he invented himself: drawn exactly the way he designed it.
+    const mine = this.recipes?.get(w);
+    if (mine?.look?.length) {
+      const meshFor = { box, cylinder: cyl, ball, cone };
+      const turnRot = { forward: [Math.PI / 2, 0, 0], back: [-Math.PI / 2, 0, 0], side: [0, 0, Math.PI / 2] };
+      const hex = (h) => (/^#[0-9a-f]{6}$/i.test(h || "") ? [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255) : C.rust);
+      for (const pt of mine.look) P(meshFor[pt.shape] || box, { pos: [pt.x, pt.y, pt.z], rot: turnRot[pt.turn] || [0, 0, 0], scale: [pt.w, pt.h, pt.d], color: hex(pt.color), emissive: pt.glow || 0 });
+      P(ball, { pos: [0, 0.5, 0], scale: [0.06, 0.06, 0.06], color: [0.5, 1, 0.6], emissive: 1 }); // a little green spark: he made this one
+      return g;
+    }
     if (w.includes("fin")) { P(box, { pos: [0, 0.2, 0], scale: [0.05, 0.4, 0.32], rot: [0.5, 0, 0], color: C.red }); P(box, { pos: [0, 0.03, 0], scale: [0.12, 0.06, 0.34], color: C.metal }); }
     else if (w.includes("chip")) { P(box, { pos: [0, 0.03, 0], scale: [0.34, 0.05, 0.24], color: [0.15, 0.5, 0.25] }); P(box, { pos: [0, 0.07, 0], scale: [0.14, 0.04, 0.1], color: C.dark }); P(box, { pos: [0.11, 0.06, 0.07], scale: [0.04, 0.02, 0.04], color: C.cyan, emissive: 1 }); }
     else if (w.includes("nozzle")) { P(cone, { pos: [0, 0.16, 0], rot: [Math.PI, 0, 0], scale: [0.3, 0.32, 0.3], color: C.dark }); P(cyl, { pos: [0, 0.34, 0], scale: [0.16, 0.06, 0.16], color: C.metal }); }

@@ -73,7 +73,7 @@ ${(() => {
     const done = Object.entries(today).sort((a, b) => b[1] - a[1]);
     const hrs = (id) => (state.lastDone?.[id] ? (Date.now() - Date.parse(state.lastDone[id])) / 3600000 / (TOWN_DAY_MINUTES / 60 / 24) : Infinity);
     // Only everyday activities: needs (sleep, oil) and his own big decisions (shop, friend, games, building) are never suggested.
-    const skip = ["open_shop", "tend_shop", "start_friend", "build_friend", "start_game", "work_game", "build_thing", "take_down_thing", "design_ship", "test_flight", "go_to_sleep", "nap_dock", "drink_oil", "reply_notes"];
+    const skip = ["open_shop", "tend_shop", "start_friend", "build_friend", "start_game", "work_game", "build_thing", "improve_thing", "take_down_thing", "design_ship", "test_flight", "go_to_sleep", "nap_dock", "drink_oil", "reply_notes"];
     const stale = available.filter((id) => !skip.includes(id) && hrs(id) > 10).sort((a, b) => hrs(b) - hrs(a)).map((id) => (hrs(id) === Infinity ? `${id} (not lately)` : `${id} (${Math.round(hrs(id) / 24 * 10) / 10} days ago)`));
     return `TODAY SO FAR: ${done.map(([id, n]) => `${id} x${n}`).join(", ") || "nothing yet"}${stale.length ? `\nTHINGS YOU HAVEN'T DONE IN A WHILE: ${stale.slice(0, 10).join(", ")}` : ""}`;
   })()}
@@ -245,7 +245,7 @@ export function ruleDecide(ctx) {
   const { state, available, newNotes } = ctx;
   const worst = Object.entries(state.needs).sort((a, b) => b[1] - a[1]).map(([k]) => k);
   // Opening or running a shop is only ever his own AI-made choice, never a fallback rule.
-  const scored = available.filter((id) => !["open_shop", "tend_shop", "start_friend", "start_game", "work_game", "build_thing", "take_down_thing", "design_ship", "test_flight"].includes(id)).map((id) => {
+  const scored = available.filter((id) => !["open_shop", "tend_shop", "start_friend", "start_game", "work_game", "build_thing", "improve_thing", "take_down_thing", "design_ship", "test_flight"].includes(id)).map((id) => {
     const e = ACTIONS[id].effects;
     let score = 0;
     for (const [k, v] of Object.entries(e)) score += -v * (state.needs[k] + 0.1);

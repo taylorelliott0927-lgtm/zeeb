@@ -13,7 +13,7 @@ import * as M from "./memory.js";
 import { buildStep, designFriend, emptyFriend, friendText, friendTick, startFriend, wakeFriend } from "./friend.js";
 import { activeGame, emptyGames, gamesText, startGame, workSession } from "./games.js";
 import { emptyInterests, interestsText, noteInterest } from "./interests.js";
-import { FLIGHT_SECONDS, MAX_BUILDS, buildsText, cleanBody, designShip, designThing, flightLog, flightOutcome, spotFor } from "./builds.js";
+import { FLIGHT_SECONDS, MAX_BUILDS, buildsText, cleanBody, designShip, designThing, refineThing, flightLog, flightOutcome, spotFor } from "./builds.js";
 import { sheet } from "./mind.js";
 import { applyShopChange, checkSales, currency as shopCurrency, emptyShop, sellable } from "./shop.js";
 import { currentModel, hasBrain, modelName, useModel } from "./llm.js";
@@ -449,6 +449,11 @@ async function doAction(id, d, notes) {
       const idea = detail || "something for the outpost";
       const where = PLACES[d.place] ? d.place : place === "any" ? "hangar" : place;
       const design = await designThing(sheet(character), idea, where, works.stash);
+      // Then a second pass where he adds the finishing details.
+      if (design.parts.length >= 3) {
+        const more = await refineThing(sheet(character), design, "").catch(() => null);
+        if (more) { design.parts = [...design.parts, ...more.add].slice(0, 60); design.description = more.description || design.description; }
+      }
       const spot = spotFor(design.place, works.builds || []);
       const part = works.stash.pop();
       const thing = { id: `b${Date.parse(nowISO).toString(36)}`, ...design, ...spot, day: clock.day, at: nowISO, usedPart: part ? part.what : null, usedPartName: part ? part.name : null, ...(part?.good ? { usedPartGood: true } : {}) };
@@ -469,6 +474,22 @@ async function doAction(id, d, notes) {
       post("mind", `Designed a new look for ${dart.name}${dart.name !== oldName ? ` (renamed from ${oldName})` : ""}: ${design.description}`, { change: "designed", about: "ship" });
       M.remember(mem, `On day ${clock.day} I designed how ${dart.name} looks: ${design.description}`, 0.7, nowISO);
       nudge(0.05);
+      break;
+    }
+    case "improve_thing": {
+      const builds = works.builds || [];
+      const id = String(detail).match(/b[0-9a-z]{6,}/i)?.[0];
+      const b = builds.find((x) => x.id === id) || builds.find((x) => detail.toLowerCase().includes(String(x.name).toLowerCase())) || builds[0];
+      if (!b) break;
+      const wish = detail.replace(id || "", "").replace(/^[\s:,-]+/, "");
+      const more = await refineThing(sheet(character), b, wish).catch(() => null);
+      if (!more) { ok = false; feed.entries[0].ok = false; post("noticed", `Stared at ${b.name} for a while but didn't change anything.`); break; }
+      b.parts = [...b.parts, ...more.add].slice(0, 60);
+      b.description = more.description || b.description;
+      b.updatedAt = nowISO;
+      place = b.place;
+      post("mind", `Added to ${b.name} (${more.add.length} new pieces): ${b.description}`, { change: "improved", about: "world" });
+      nudge(0.04);
       break;
     }
     case "take_down_thing": {

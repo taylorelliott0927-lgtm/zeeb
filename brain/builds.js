@@ -6,6 +6,7 @@ import { clamp, chance, pick } from "./util.js";
 
 export const MAX_BUILDS = 30;
 const SHAPES = ["box", "cylinder", "ball", "cone"];
+const TURNS = ["up", "forward", "back", "side"];
 const HEX = /^#[0-9a-f]{6}$/i;
 const num = (v, lo, hi, d) => { const n = Number(v); return Number.isFinite(n) ? clamp(n, lo, hi) : d; };
 
@@ -16,18 +17,14 @@ export const cleanBody = (b) => (Array.isArray(b) ? b : String(b || "").split(/[
 export async function designThing(sheetText, idea, place, stash) {
   const user = `You've decided to build something and put it in the world: "${idea}".
 Where: ${PLACES[place]?.name || "near Hangar Bay 3"}. Parts in your stash: ${stash.map((p) => p.what).join(", ") || "just scrap lying around"}.
-Design it out of simple shapes so it can be built. Sizes are in metres; you are about 1 metre tall. y is height above the ground (0 = on the ground, so a 1-metre-tall box sits at y 0.5).
+Design it out of simple shapes so it can be built. Build it properly, with all its pieces: legs, frames, panels, trims, bolts, handles, lights, cables, signs, whatever it really has. Sizes are in metres; you are about 1 metre tall. y is height above the ground (0 = on the ground, so a 1-metre-tall box sits at y 0.5).
+"turn" says which way a cone or cylinder points: up, forward, back, or side (use it for pipes, rails, beams and arms lying down).
 Return JSON:
 {"name": "what you call it", "description": "one sentence in your voice", "place": "${Object.keys(PLACES).join("|")}",
- "parts": [{"shape": "box|cylinder|ball|cone", "w": 1, "h": 1, "d": 1, "x": 0, "y": 0.5, "z": 0, "color": "#rrggbb", "glow": 0, "spin": false}]}
-Use 2 to 14 parts. x and z between -4 and 4, y between 0 and 6, sizes between 0.1 and 4. glow from 0 to 1 for lights. spin true for parts that should turn.`;
+ "parts": [{"shape": "box|cylinder|ball|cone", "turn": "up", "w": 1, "h": 1, "d": 1, "x": 0, "y": 0.5, "z": 0, "color": "#rrggbb", "glow": 0, "spin": false}]}
+Use 8 to 40 parts. x and z between -4 and 4, y between 0 and 6, sizes between 0.03 and 4. glow from 0 to 1 for lights. spin true for parts that should turn.`;
   const r = await askJSON(sheetText, user, { temperature: 0.9 });
-  const parts = (r?.parts || []).filter((p) => SHAPES.includes(p?.shape)).slice(0, 14).map((p) => ({
-    shape: SHAPES.includes(p.shape) ? p.shape : "box",
-    w: num(p.w, 0.1, 4, 1), h: num(p.h, 0.1, 4, 1), d: num(p.d, 0.1, 4, 1),
-    x: num(p.x, -4, 4, 0), y: num(p.y, 0, 6, 0.5), z: num(p.z, -4, 4, 0),
-    color: HEX.test(p.color) ? p.color : "#9a8c7a", glow: num(p.glow, 0, 1, 0), spin: Boolean(p.spin),
-  }));
+  const parts = cleanParts(r?.parts, 40);
   if (parts.length < 2) {
     // Couldn't design it properly: a simple scrap sculpture instead.
     return { name: String(idea || "scrap sculpture").slice(0, 40), description: "a little pile of welded scrap. it's art.", place, parts: [
@@ -39,8 +36,31 @@ Use 2 to 14 parts. x and z between -4 and 4, y between 0 and 6, sizes between 0.
   return { name: String(r.name || idea || "a thing").slice(0, 50), description: String(r.description || "").slice(0, 200), place: PLACES[r.place] ? r.place : place, parts };
 }
 
+function cleanParts(list, max) {
+  return (Array.isArray(list) ? list : []).filter((p) => SHAPES.includes(p?.shape)).slice(0, max).map((p) => ({
+    shape: p.shape, turn: TURNS.includes(p.turn) ? p.turn : "up",
+    w: num(p.w, 0.03, 4, 1), h: num(p.h, 0.03, 4, 1), d: num(p.d, 0.03, 4, 1),
+    x: num(p.x, -4, 4, 0), y: num(p.y, 0, 6, 0.5), z: num(p.z, -4, 4, 0),
+    color: HEX.test(p.color) ? p.color : "#9a8c7a", glow: num(p.glow, 0, 1, 0), spin: Boolean(p.spin),
+  }));
+}
+
+// A second look at something he built: he adds the finishing details (or whatever he wants to change).
+export async function refineThing(sheetText, thing, wish) {
+  const user = `You built "${thing.name}"${thing.description ? ` (${thing.description})` : ""}. Here are its pieces right now (sizes in metres, y is height above the ground):
+${JSON.stringify(thing.parts.map(({ shape, turn, w, h, d, x, y, z, color }) => ({ shape, turn, w, h, d, x, y, z, color })))}
+${wish ? `What you want to do to it: "${wish}".` : "Take a good look at it and add the details it's missing, the way you picture it."}
+Add new pieces that fit onto the existing ones (same coordinates): trims, bolts, rails, panels, lights, cables, signs, decorations, anything.
+"turn" says which way a cone or cylinder points: up, forward, back, or side.
+Return JSON: {"description": "one sentence in your voice about how it looks now", "add": [{"shape": "box|cylinder|ball|cone", "turn": "up", "w": 0.2, "h": 0.2, "d": 0.2, "x": 0, "y": 1, "z": 0, "color": "#rrggbb", "glow": 0, "spin": false}]}
+Add 4 to 20 pieces.`;
+  const r = await askJSON(sheetText, user, { temperature: 0.8 });
+  const add = cleanParts(r?.add, 20);
+  if (!add.length) return null;
+  return { description: String(r.description || thing.description || "").slice(0, 200), add };
+}
+
 // He designs how his ship looks, all of it: shape, size, paint, lights. The website builds it from these shapes.
-const TURNS = ["up", "forward", "back", "side"];
 export async function designShip(sheetText, idea, ship) {
   const user = `You're designing how your ship, ${ship.name}, looks. The whole thing is up to you: shape, size, paint, wings, lights, anything.
 Your idea: "${idea || "whatever feels right"}".

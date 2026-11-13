@@ -938,6 +938,30 @@ async function finish() {
   save();
 }
 
+// Every feed entry is also kept forever in a file for its town day (data/feed-days/day-N.json),
+// so the website's calendar can show any day he's ever lived.
+function archiveFeed() {
+  const since = state.feedArchivedAt ? Date.parse(state.feedArchivedAt) : -Infinity;
+  const fresh = feed.entries.filter((e) => Date.parse(e.at) > since);
+  if (!fresh.length) return;
+  const byDay = {};
+  for (const e of fresh) { const d = Number((e.townTime || "").match(/day (\d+)/)?.[1]); if (d) (byDay[d] ||= []).push(e); }
+  const index = readJSON("feed-days/index.json", { days: [] });
+  for (const [d, list] of Object.entries(byDay)) {
+    const file = `feed-days/day-${d}.json`;
+    const cur = readJSON(file, { day: Number(d), entries: [] });
+    const seen = new Set(cur.entries.map((e) => e.at + e.text));
+    for (const e of list) if (!seen.has(e.at + e.text)) cur.entries.push(e);
+    cur.entries.sort((a, b) => Date.parse(b.at) - Date.parse(a.at));
+    writeJSON(file, cur);
+    const row = { day: Number(d), count: cur.entries.length, first: cur.entries[cur.entries.length - 1].at, last: cur.entries[0].at };
+    index.days = [row, ...index.days.filter((x) => x.day !== row.day)];
+  }
+  index.days.sort((a, b) => b.day - a.day);
+  writeJSON("feed-days/index.json", index);
+  state.feedArchivedAt = feed.entries.reduce((m, e) => (Date.parse(e.at) > Date.parse(m) ? e.at : m), fresh[0].at);
+}
+
 function save() {
   state.lastTick = NOW;
   if (pops.length) state.pops = { at: nowISO, items: pops.slice(0, 6) };
@@ -958,6 +982,7 @@ function save() {
   said(state.thought, "think");
   said(state.say, "say");
   state.said = state.said.slice(0, 150);
+  archiveFeed();
   feed.entries = feed.entries.slice(0, FEED_KEEP);
   writeJSON("state.json", state);
   writeJSON("feed.json", feed);

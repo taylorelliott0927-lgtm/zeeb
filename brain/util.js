@@ -14,7 +14,7 @@ export function readJSON(name, fallback) {
 }
 
 export function writeJSON(name, value) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
+  fs.mkdirSync(path.dirname(path.join(DATA_DIR, name)), { recursive: true });
   fs.writeFileSync(path.join(DATA_DIR, name), JSON.stringify(value, null, 2) + "\n");
 }
 

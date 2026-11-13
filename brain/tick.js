@@ -545,7 +545,7 @@ async function doAction(id, d, notes) {
       break;
     }
     case "start_game": {
-      const g = startGame(games, detail || d.interest || "a little game", nowISO);
+      const g = startGame(games, detail || [].concat(d.interest || [])[0] || "a little game", nowISO);
       post("mind", `Started making a game. Idea: ${g.idea}`, { change: "started", about: "game" });
       M.remember(mem, `On day ${clock.day} I started making my own game: ${g.idea}`, 0.8, nowISO);
       // First session straight away.
@@ -824,7 +824,10 @@ async function main() {
   }
   state.seenCreatorMsgs = state.seenCreatorMsgs.slice(-300);
   // What he's into: repeated interests can grow into an obsession.
-  for (const ev of noteInterest(interests, d.interest, clock.day, nowISO, elapsedTownHours)) {
+  // He can be into several things at once; each one he names counts (time only passes once).
+  const named = (Array.isArray(d.interest) ? d.interest : String(d.interest || "").split(/[;,\n]+/)).map((x) => String(x).trim()).filter(Boolean).slice(0, 5);
+  const interestEvents = named.length ? named.flatMap((t, i) => noteInterest(interests, t, clock.day, nowISO, i === 0 ? elapsedTownHours : 0)) : noteInterest(interests, "", clock.day, nowISO, elapsedTownHours);
+  for (const ev of interestEvents) {
     if (ev.kind === "obsessed") {
       post("felt", `He's become a bit obsessed with ${ev.topic}.`);
       M.remember(mem, `I've become obsessed with ${ev.topic}`, 0.9, nowISO);

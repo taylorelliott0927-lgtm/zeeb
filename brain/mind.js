@@ -124,7 +124,7 @@ Choose one. Return JSON:
   "body": ["how you move"],
   "place": "",
   "doing_words": "what you're doing, in your own words",
-  "interest": "what you're into right now, 1 to 3 words, or empty",
+  "interest": "what you're into right now (each one 1 to 3 words): one thing, a list if you're into several, or empty",
   "why": "your reason, one short sentence in your voice",
   "thought": "what is on your mind now, one or two sentences, first person",
   "feeling": "a few words on how you feel",

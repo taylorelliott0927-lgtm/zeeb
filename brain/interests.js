@@ -8,7 +8,7 @@ export const emptyInterests = () => ({ topics: [] });
 const OBSESSED_AT = 8;     // score needed to become an obsession
 const OBSESSION_DAYS = 2;  // ...across at least this many different town days
 const FORGET_BELOW = 0.5;
-const MAX_TOPICS = 15;
+const MAX_TOPICS = 25;
 
 const clean = (t) => String(t || "").toLowerCase().replace(/[^a-z0-9 '-]/g, "").replace(/\s+/g, " ").trim().slice(0, 40);
 
@@ -47,7 +47,7 @@ export function noteInterest(interests, topic, day, nowISO, townHours) {
 }
 
 export function interestsText(interests) {
-  const top = interests.topics.slice(0, 6);
+  const top = interests.topics.slice(0, 12);
   if (!top.length) return "YOUR INTERESTS: nothing has really grabbed you yet.";
   const obs = top.filter((t) => t.obsession);
   return `YOUR INTERESTS (what you keep coming back to): ${top.map((t) => `${t.name}${t.obsession ? " (you're obsessed with this)" : ""}`).join(", ")}.${obs.length ? " Obsessions pull at you: you think about them a lot and they colour your projects, searches and letters, though you can still do other things." : ""}`;

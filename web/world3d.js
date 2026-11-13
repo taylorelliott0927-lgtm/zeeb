@@ -1,6 +1,7 @@
 // Rustwell Outpost in 3D. Zeeb's body runs here in your browser every frame;
 // his decisions arrive from the brain every few minutes.
-import { Geo, M4, Node, Renderer } from "./engine.js";
+import { Geo, M4, Node, Renderer } from "./engine.js?v=24";
+import { loadGLB } from "./glb.js?v=24";
 
 export const PLACES = {
   hangar: { name: "Hangar Bay 3", x: 0, z: 0 },
@@ -9,6 +10,9 @@ export const PLACES = {
   tower: { name: "Comms Tower", x: 9, z: 15 },
   depot: { name: "Fuel Depot", x: -11, z: 11 },
   ridge: { name: "Dune Ridge", x: 0, z: -26 },
+  flats: { name: "Salt Flats", x: 44, z: 6 },
+  crater: { name: "Old Crater", x: -40, z: 30 },
+  mesa: { name: "Red Mesa", x: 8, z: 58 },
 };
 
 // Where exactly he stands for each action, relative to the place.
@@ -54,8 +58,12 @@ export function groundHeight(x, z) {
   const dunes = 1.3 * Math.sin(x * 0.07 + 1.3) * Math.cos(z * 0.06) + 0.7 * Math.sin(x * 0.13 + z * 0.05) + 0.4 * Math.cos(z * 0.17 - x * 0.04);
   const out = smooth(22, 48, r);
   const ridge = 5.5 * Math.exp(-((z + 30) ** 2) / 50 - (x * x) / 260);
-  return 0.15 * Math.sin(x * 0.4) * Math.cos(z * 0.35) + dunes * (0.15 + 0.85 * out) + out * 2.5 + ridge;
+  let h = 0.15 * Math.sin(x * 0.4) * Math.cos(z * 0.35) + dunes * (0.15 + 0.85 * out) + out * 2.5 + ridge;
+  // The open building areas further out are levelled flat so he has room to build.
+  for (const a of OPEN_AREAS) { const t = smooth(a.r, a.r + 8, Math.hypot(x - a.x, z - a.z)); h = a.y + (h - a.y) * t + (a.dip ? -a.dip * (1 - t) * (1 - Math.hypot(x - a.x, z - a.z) / a.r) : 0); }
+  return h;
 }
+const OPEN_AREAS = [{ x: 44, z: 6, r: 16, y: 2.4 }, { x: -40, z: 30, r: 14, y: 2.2, dip: 1.2 }, { x: 8, z: 58, r: 14, y: 2.8 }];
 function smooth(a, b, v) { const t = Math.min(1, Math.max(0, (v - a) / (b - a))); return t * t * (3 - 2 * t); }
 const lerp = (a, b, t) => a + (b - a) * t;
 const mix3 = (a, b, t) => [lerp(a[0], b[0], t), lerp(a[1], b[1], t), lerp(a[2], b[2], t)];
@@ -89,7 +97,7 @@ export class World {
     const R = this.root, m = (n, g) => this.m(n, g);
     const box = m("box", Geo.box()), cyl = m("cyl", Geo.cyl(0.5, 0.5, 1, 14)), cone = m("cone", Geo.cyl(0, 0.5, 1, 12));
     const ball = m("ball", Geo.sphere(0.5, 14, 9)), rough = m("rough", Geo.sphere(0.5, 7, 5));
-    this.put(R, m("ground", Geo.ground(220, 110, groundHeight)), { color: C.sand });
+    this.put(R, m("ground", Geo.ground(420, 150, groundHeight)), { color: C.sand });
 
     // Rocks scattered in the dunes
     let seed = 7; const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
@@ -97,6 +105,12 @@ export class World {
       const a = rnd() * Math.PI * 2, d = 20 + rnd() * 70, x = Math.cos(a) * d, z = Math.sin(a) * d, s = 0.6 + rnd() * 2.4;
       this.put(R, rough, { pos: this.at(x, z, s * 0.15), scale: [s, s * 0.6, s * (0.7 + rnd() * 0.6)], rot: [0, rnd() * 6, 0], color: mix3(C.sandDark, [0.55, 0.42, 0.33], rnd()) });
     }
+
+    // The open building areas: salt flats (pale ground), an old crater ring of rocks, a red mesa wall.
+    this.put(R, m("disc", Geo.cyl(0.5, 0.5, 0.02, 16)), { pos: this.at(44, 6, 0.02), scale: [30, 1, 30], color: [0.86, 0.82, 0.74] });
+    for (let i = 0; i < 18; i++) { const a = (i / 18) * Math.PI * 2, x = -40 + Math.cos(a) * 15, z = 30 + Math.sin(a) * 15, s2 = 1.5 + (i % 3); this.put(R, rough, { pos: this.at(x, z, s2 * 0.2), scale: [s2, s2 * 0.7, s2], rot: [0, i, 0], color: [0.6, 0.45, 0.35] }); }
+    for (let i = 0; i < 5; i++) this.put(R, box, { pos: this.at(-6 + i * 7, 74 + (i % 2) * 2, 4), scale: [8, 10 + (i % 3) * 3, 6], rot: [0, 0.2 * (i - 2), 0], color: [0.72, 0.36, 0.24] });
+    for (const [sx, sz] of [[34, 6], [-28, 24], [8, 46]]) { this.put(R, cyl, { pos: this.at(sx, sz, 0.9), scale: [0.1, 1.8, 0.1], color: C.rust }); this.put(R, box, { pos: this.at(sx, sz, 1.7), scale: [1.2, 0.4, 0.08], color: C.brass }); }
 
     // Hangar Bay 3: a big half-pipe with an open front
     const H = PLACES.hangar, hy = groundHeight(H.x, H.z);
@@ -568,6 +582,21 @@ export class World {
     }, () => { const set = new Set(bits.map((b) => b.n)); this.root.children = this.root.children.filter((c) => !set.has(c)); });
   }
 
+  // A model from his library (free Kenney models), scaled to the height he chose and stood on its base.
+  placeModel(parent, pt) {
+    const min = pt.min || [-0.5, 0, -0.5], max = pt.max || [0.5, 1, 0.5];
+    const s = (pt.height || 1) / Math.max(0.01, max[1] - min[1]);
+    const holder = this.put(parent, null, { pos: [pt.x || 0, pt.y || 0, pt.z || 0], rot: [0, ((pt.turn_degrees || 0) * Math.PI) / 180, 0], scale: [s, s, s] });
+    this.modelCache ||= new Map();
+    const url = `models/${pt.model}.glb`;
+    if (!this.modelCache.has(url)) this.modelCache.set(url, loadGLB(url).then((g) => (g ? this.r.mesh(g.positions, g.colors) : null)).catch(() => null));
+    this.modelCache.get(url).then((mesh) => {
+      if (mesh) this.put(holder, mesh, { pos: [-(min[0] + max[0]) / 2, -min[1], -(min[2] + max[2]) / 2], color: [1, 1, 1] });
+      else this.put(holder, this.meshes.box, { pos: [0, (max[1] - min[1]) / 2, 0], scale: [max[0] - min[0], max[1] - min[1], max[2] - min[2]], color: [0.6, 0.55, 0.5] }); // couldn't load: a placeholder block
+    });
+    return holder;
+  }
+
   setBuilds(builds) {
     const sig = JSON.stringify(builds.map((b) => [b.id, (b.parts || []).length, b.updatedAt || ""]));
     if (sig === this.buildsSig) return;
@@ -582,6 +611,7 @@ export class World {
       const g = this.put(this.buildsRoot, null, { pos: this.at(b.x, b.z), rot: [0, b.rot || 0, 0] });
       let top = 1;
       for (const pt of b.parts || []) {
+        if (pt.model) { this.placeModel(g, pt); top = Math.max(top, (pt.y || 0) + (pt.height || 1)); continue; }
         const turn = { forward: [Math.PI / 2, 0, 0], back: [-Math.PI / 2, 0, 0], side: [0, 0, Math.PI / 2] }[pt.turn] || [0, 0, 0];
         const n = this.put(g, meshFor[pt.shape] || this.meshes.box, { pos: [pt.x, pt.y, pt.z], rot: turn, scale: [pt.w, pt.h, pt.d], color: hex(pt.color || "#999999"), emissive: pt.glow || 0 });
         if (pt.glow > 0.3) this.lights.push(n);
@@ -958,7 +988,7 @@ export class World {
       if (this.keys.has("d")) w.yaw -= dt * 1.8;
       const fwd = (this.keys.has("w") ? 1 : 0) - (this.keys.has("s") ? 1 : 0);
       w.x += Math.sin(w.yaw) * fwd * sp; w.z += Math.cos(w.yaw) * fwd * sp;
-      const lim = 95; w.x = Math.max(-lim, Math.min(lim, w.x)); w.z = Math.max(-lim, Math.min(lim, w.z));
+      const lim = 200; w.x = Math.max(-lim, Math.min(lim, w.x)); w.z = Math.max(-lim, Math.min(lim, w.z));
       const ey = groundHeight(w.x, w.z) + 1.7;
       this.cam.eye = [w.x, ey, w.z];
       this.cam.target = [w.x + Math.sin(w.yaw) * Math.cos(w.pitch), ey + Math.sin(w.pitch), w.z + Math.cos(w.yaw) * Math.cos(w.pitch)];

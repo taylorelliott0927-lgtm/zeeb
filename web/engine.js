@@ -151,13 +151,13 @@ export class Node {
 }
 
 const VS = `#version 300 es
-in vec3 a_pos; in vec3 a_nrm;
+in vec3 a_pos; in vec3 a_nrm; in vec3 a_col;
 uniform mat4 u_model, u_vp;
-out vec3 v_n; out vec3 v_w;
-void main(){ vec4 w = u_model * vec4(a_pos,1.0); v_w = w.xyz; v_n = mat3(u_model) * a_nrm; gl_Position = u_vp * w; }`;
+out vec3 v_n; out vec3 v_w; out vec3 v_c;
+void main(){ vec4 w = u_model * vec4(a_pos,1.0); v_w = w.xyz; v_n = mat3(u_model) * a_nrm; v_c = a_col; gl_Position = u_vp * w; }`;
 const FS = `#version 300 es
 precision highp float;
-in vec3 v_n; in vec3 v_w;
+in vec3 v_n; in vec3 v_w; in vec3 v_c;
 uniform vec3 u_color, u_sun, u_sunCol, u_amb, u_sky, u_gnd, u_fog, u_cam;
 uniform float u_emis, u_fogD;
 out vec4 o;
@@ -165,8 +165,9 @@ void main(){
   vec3 n = normalize(v_n); if (!gl_FrontFacing) n = -n;
   float d = max(dot(n, u_sun), 0.0);
   vec3 hemi = mix(u_gnd, u_sky, n.y*0.5+0.5);
-  vec3 c = u_color * (u_amb + hemi*0.55 + u_sunCol*d);
-  c = mix(c, u_color*1.4, u_emis);
+  vec3 base = u_color * v_c;
+  vec3 c = base * (u_amb + hemi*0.55 + u_sunCol*d);
+  c = mix(c, base*1.4, u_emis);
   float dist = length(v_w - u_cam);
   float f = 1.0 - exp(-pow(dist*u_fogD, 1.6));
   o = vec4(mix(c, u_fog, clamp(f,0.0,1.0)), 1.0);
@@ -232,14 +233,17 @@ export class Renderer {
     gl.enable(gl.DEPTH_TEST);
     this.cache = new Map();
   }
-  mesh(positions) {
+  // colors (optional): one RGB per vertex, for models that carry their own paint; plain meshes are white and tinted by node color.
+  mesh(positions, colors = null) {
     const gl = this.gl, pos = new Float32Array(positions), nrm = flatNormals(pos);
+    const col = colors ? new Float32Array(colors) : new Float32Array(pos.length).fill(1);
     const vao = gl.createVertexArray();
     gl.bindVertexArray(vao);
-    for (const [name, data] of [["a_pos", pos], ["a_nrm", nrm]]) {
+    for (const [name, data] of [["a_pos", pos], ["a_nrm", nrm], ["a_col", col]]) {
       const b = gl.createBuffer();
       gl.bindBuffer(gl.ARRAY_BUFFER, b); gl.bufferData(gl.ARRAY_BUFFER, data, gl.STATIC_DRAW);
       const loc = gl.getAttribLocation(this.prog.p, name);
+      if (loc < 0) continue;
       gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 3, gl.FLOAT, false, 0, 0);
     }
     return { vao, count: pos.length / 3 };

@@ -162,6 +162,11 @@ export const ACTIONS = {
     effects: { craft: -0.4, curiosity: -0.1 }, mood: 0.04,
     about: "design how your ship looks, the whole thing: its shape, size, paint, wings, lights, its name. Describe your idea in 'detail'",
   },
+  craft_part: {
+    place: "hangar", doing: "inventing a new part at the workbench", minutes: 60,
+    effects: { craft: -0.5, curiosity: -0.1 }, mood: 0.03,
+    about: "try to make a new kind of part yourself at the workbench, if you have an idea how (say what you want to make in 'detail'). It might not work the first time",
+  },
   improve_thing: {
     place: "any", doing: "adding to something he built", minutes: 45, needsBuilds: true,
     effects: { craft: -0.4 }, mood: 0.04,

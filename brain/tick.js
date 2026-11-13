@@ -15,6 +15,7 @@ import { activeGame, emptyGames, gamesText, startGame, workSession } from "./gam
 import { emptyInterests, interestsText, noteInterest } from "./interests.js";
 import { FLIGHT_SECONDS, MAX_BUILDS, buildsText, cleanBody, designShip, designThing, refineThing, flightLog, flightOutcome, spotFor } from "./builds.js";
 import { sheet } from "./mind.js";
+import { craftingText, emptyCrafting, planPart, tryToMake } from "./crafting.js";
 import { applyShopChange, checkSales, currency as shopCurrency, emptyShop, sellable } from "./shop.js";
 import { currentModel, hasBrain, modelName, useModel } from "./llm.js";
 
@@ -319,9 +320,9 @@ async function doAction(id, d, notes) {
       const dart = works.dart;
       const part = works.stash.pop();
       if (part) {
-        dart.partsUsed = (dart.partsUsed || 0) + (part.good ? 2 : 1);
+        dart.partsUsed = (dart.partsUsed || 0) + (part.good || part.custom ? 2 : 1);
         // Remember exactly which part went in, so it can be seen mounted on the ship.
-        dart.parts = [...(dart.parts || []), { name: part.name, what: part.what, ...(part.good ? { good: true } : {}), version: dart.version + 1 }].slice(-40);
+        dart.parts = [...(dart.parts || []), { name: part.name, what: part.what, ...(part.good ? { good: true } : {}), ...(part.custom ? { custom: part.custom } : {}), version: dart.version + 1 }].slice(-40);
       }
       const gain = part ? 6 + Math.floor(Math.random() * 5) : 2 + Math.floor(Math.random() * 3);
       const before = dart.progress;
@@ -474,6 +475,45 @@ async function doAction(id, d, notes) {
       post("mind", `Designed a new look for ${dart.name}${dart.name !== oldName ? ` (renamed from ${oldName})` : ""}: ${design.description}`, { change: "designed", about: "ship" });
       M.remember(mem, `On day ${clock.day} I designed how ${dart.name} looks: ${design.description}`, 0.7, nowISO);
       nudge(0.05);
+      break;
+    }
+    case "craft_part": {
+      const C = (works.crafting ||= emptyCrafting());
+      const memories = M.strongest(mem, 10).map((m) => m.text);
+      const plan = await planPart(sheet(character), detail, { stash: works.stash, reads: works.reads || [], memories, crafting: C }).catch(() => null);
+      if (!plan) { ok = false; feed.entries[0].ok = false; post("noticed", "Sat at the workbench a while but couldn't work out where to start."); break; }
+      // He uses up the materials he picked from his stash.
+      const used = [];
+      for (const m of plan.materials) {
+        const want = m.toLowerCase().replace(/^(an?|the|some) /, "").split(/\s+/).filter((w) => w.length > 3);
+        const i = works.stash.findIndex((p) => want.some((w) => p.what.toLowerCase().includes(w)));
+        if (i >= 0) used.push(works.stash.splice(i, 1)[0]);
+      }
+      const res = tryToMake(plan, { reads: works.reads || [], memories, crafting: C, materialsUsed: used.length });
+      const from = used.length ? ` out of ${used.map((u) => `${u.name} (${u.what})`).join(" and ")}` : "";
+      if (res.ok) {
+        let recipe = res.known;
+        if (!recipe) {
+          recipe = { id: `r${Date.parse(nowISO).toString(36)}`, what: plan.what, how: plan.how, uses: plan.uses, look: plan.look, firstMade: nowISO, day: clock.day, made: 0 };
+          C.recipes.unshift(recipe);
+          C.recipes = C.recipes.slice(0, 30);
+          post("felt", `He invented a new part: ${recipe.what}! ${recipe.how}`);
+          M.remember(mem, `On day ${clock.day} I invented ${recipe.what}: ${recipe.how}`, 0.85, nowISO);
+          nudge(0.12);
+        } else nudge(0.04);
+        recipe.made = (recipe.made || 0) + 1;
+        const p = { name: pick(BOLT_NAMES), what: recipe.what, at: nowISO, custom: recipe.id };
+        works.stash.unshift(p);
+        works.stash = works.stash.slice(0, 20);
+        pop(`+ ${recipe.what} (he made it!)`, "part");
+        post("noticed", `Made ${recipe.what}${from} and named it ${p.name}.`);
+        C.attempts.unshift({ what: recipe.what, result: "worked", at: nowISO });
+      } else {
+        post("noticed", `Tried to make ${plan.what}${from}. It didn't work yet.${plan.how ? ` (His plan: ${plan.how})` : ""}`);
+        C.attempts.unshift({ what: plan.what, how: plan.how, result: "didn't work", at: nowISO });
+        nudge(-0.02);
+      }
+      C.attempts = C.attempts.slice(0, 20);
       break;
     }
     case "improve_thing": {
@@ -749,7 +789,7 @@ async function main() {
     return finish();
   }
   const available = availableActions(notes);
-  const ctx = { character, state, available, notes, newNotes, memories: M.strongest(mem, 12), beliefs: mem.beliefs, works, event, weather: state.weather, clock, creatorMsgs, thread: state.creatorThread, shop, shopCurrency: shopCurrency(), sellable: shop.open ? sellable(works, shop) : [], streakHours: streakHours(), friendText: friendText(friend), buildsText: buildsText(works), gamesText: gamesText(games), interestsText: interestsText(interests) };
+  const ctx = { character, state, available, notes, newNotes, memories: M.strongest(mem, 12), beliefs: mem.beliefs, works, event, weather: state.weather, clock, creatorMsgs, thread: state.creatorThread, shop, shopCurrency: shopCurrency(), sellable: shop.open ? sellable(works, shop) : [], streakHours: streakHours(), friendText: friendText(friend), buildsText: [buildsText(works), craftingText(works.crafting || emptyCrafting())].filter(Boolean).join("\n"), gamesText: gamesText(games), interestsText: interestsText(interests) };
   let d = await decide(ctx);
   state.brain = d ? modelName() : "rules";
   if (d) state.model = currentModel();

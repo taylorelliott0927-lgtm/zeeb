@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794591398922,
+  "lastTick": 1794591578944,
   "asleep": false,
-  "place": "tower",
-  "action": "read_news",
-  "doing": "reading the space news",
-  "actionStartedAt": "2026-11-13T17:36:38.922Z",
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-13T17:39:38.944Z",
   "actionMinutes": 60,
-  "thought": "I'll keep track of this, maybe if I find a celestial pattern I can incorporate into the Little Dart's design.",
-  "feeling": "Neutral, just processing the information in the background.",
-  "say": "Looking forward to seeing what's new in tech.",
-  "mood": 0.115,
-  "energy": -0.132,
+  "thought": "I've been searching the Wire for days now, but I haven't found the perfect heat-resistant cable yet. Maybe in the junk market I'll stumble upon the right one.",
+  "feeling": "impatient but hopeful",
+  "say": "Time to find that elusive cable",
+  "mood": 0.121,
+  "energy": -0.152,
   "needs": {
-    "charge": 0.262,
+    "charge": 0.276,
     "oil": 1,
     "curiosity": 0,
     "company": 1,
-    "craft": 0.04
+    "craft": 0.06
   },
   "credits": 12,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "I head to the junk market, scanning each pile of parts for something that looks ",
+      "at": "2026-11-13T17:39:38.944Z"
+    },
     {
       "id": "read_news",
       "detail": "search_the_wire: 'flexible heat-resistant cables', 'McMaster-Carr', 'heat-resist",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "search_the_wire: 'flexible heat-resistant cables, McMaster-Carr, high temperatur",
       "at": "2026-11-13T16:42:38.843Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "search_the_wire: 'flexible heat-resistant cables, McMaster-Carr, high temperatur",
-      "at": "2026-11-13T16:39:38.883Z"
     }
   ],
   "wants": [
@@ -463,7 +463,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-13T17:36:38.922Z",
+  "lettersCheckedAt": "2026-11-13T17:39:38.944Z",
   "weather": {
     "kind": "clear",
     "temp": 26,
@@ -475,36 +475,36 @@
   "sleepDay": 10,
   "lastReflectDay": 10,
   "brain": "your PC (qwen2.5:3b)",
-  "updatedAt": "2026-11-13T17:36:38.922Z",
+  "updatedAt": "2026-11-13T17:39:38.944Z",
   "clock": {
     "day": 11,
-    "time": "08:54",
-    "hour": 8,
-    "minute": 54
+    "time": "09:18",
+    "hour": 9,
+    "minute": 18
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the junk market",
   "streak": {
-    "action": "read_news",
-    "since": "2026-11-13T17:36:38.922Z"
+    "action": "scavenge",
+    "since": "2026-11-13T17:39:38.944Z"
   },
-  "busyUntil": "2026-11-13T17:44:08.922Z",
-  "busyUntilTown": "09:54",
+  "busyUntil": "2026-11-13T17:47:08.944Z",
+  "busyUntilTown": "10:18",
   "runner": "pc",
   "model": "gemini-3.5-flash-lite",
-  "pcBrainAt": "2026-11-13T17:36:38.922Z",
-  "doingWords": "read news from the Wire",
+  "pcBrainAt": "2026-11-13T17:39:38.944Z",
+  "doingWords": "dig through the piles of junk",
   "newsForCreator": "You FINISHED the Little Dart Mk IV! It hovered off the hangar floor.",
-  "newsPendingTicks": 2,
+  "newsPendingTicks": 3,
   "lastChatAt": "2026-11-13T10:55:38.719Z",
   "body": [],
   "pops": {
-    "at": "2026-11-13T16:42:38.843Z",
+    "at": "2026-11-13T17:39:38.944Z",
     "items": [
       {
-        "text": "+1 credit",
-        "kind": "credits",
-        "at": "2026-11-13T16:42:38.843Z"
+        "text": "+ a cracked navigation chip",
+        "kind": "part",
+        "at": "2026-11-13T17:39:38.944Z"
       }
     ]
   },
@@ -515,6 +515,10 @@
     "at": "2026-11-13T17:36:38.922Z"
   },
   "thoughts": [
+    {
+      "text": "I've been searching the Wire for days now, but I haven't found the perfect heat-resistant cable yet. Maybe in the junk market I'll stumble upon the right one.",
+      "at": "2026-11-13T17:39:38.944Z"
+    },
     {
       "text": "I'll keep track of this, maybe if I find a celestial pattern I can incorporate into the Little Dart's design.",
       "at": "2026-11-13T17:36:38.922Z"
@@ -534,20 +538,17 @@
     {
       "text": "I hope finding these cables will finally solve the problem with the duct seal",
       "at": "2026-11-13T17:24:38.919Z"
-    },
-    {
-      "text": "The new heat-resistant cables found by McMaster-Carr should be perfect for insulating the Little Dart’s engines and exhaust system. I need to incorporate those into the design.",
-      "at": "2026-11-13T17:21:38.960Z"
     }
   ],
-  "sayAt": "2026-11-13T17:36:38.922Z",
+  "sayAt": "2026-11-13T17:39:38.944Z",
   "today": {
     "day": 11,
     "counts": {
       "browse_wire": 5,
       "work_dart": 4,
       "design_ship": 4,
-      "read_news": 1
+      "read_news": 1,
+      "scavenge": 1
     }
   },
   "lastDone": {
@@ -555,7 +556,7 @@
     "read_news": "2026-11-13T17:36:38.922Z",
     "drink_oil": "2026-11-13T05:40:13.639Z",
     "follow_link": "2026-11-13T02:50:40.321Z",
-    "scavenge": "2026-11-13T06:52:40.482Z",
+    "scavenge": "2026-11-13T17:39:38.944Z",
     "fix_job": "2026-11-13T15:53:32.760Z",
     "build_thing": "2026-11-13T16:26:32.807Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -569,6 +570,11 @@
     "send_signal": "2026-11-13T16:17:32.810Z"
   },
   "puzzles": [
+    {
+      "id": "q10",
+      "text": "q8: How to precisely attach the new flexible heat-resistant cables to the metal surfaces of the Little Dart",
+      "at": "2026-11-13T17:39:38.944Z"
+    },
     {
       "id": "q8",
       "text": "I'll search for the perfect flexible heat-resistant cables from McMaster-Carr",
@@ -588,11 +594,6 @@
       "id": "q11",
       "text": "q10: how to precisely attach the heat-resistant hose to the metal surfaces of the Little Dart",
       "at": "2026-11-13T16:39:38.883Z"
-    },
-    {
-      "id": "q7",
-      "text": "How to precisely attach the heat-resistant hose to the metal surfaces of the Little Dart.",
-      "at": "2026-11-13T16:26:32.807Z"
     }
   ],
   "nextSearch": {
@@ -600,6 +601,20 @@
     "at": "2026-11-13T17:36:38.922Z"
   },
   "said": [
+    {
+      "text": "Time to find that elusive cable",
+      "kind": "say",
+      "at": "2026-11-13T17:39:38.944Z",
+      "town": "day 11 09:18",
+      "place": "the junk market"
+    },
+    {
+      "text": "I've been searching the Wire for days now, but I haven't found the perfect heat-resistant cable yet. Maybe in the junk market I'll stumble upon the right one.",
+      "kind": "think",
+      "at": "2026-11-13T17:39:38.944Z",
+      "town": "day 11 09:18",
+      "place": "the junk market"
+    },
     {
       "text": "Looking forward to seeing what's new in tech.",
       "kind": "say",
@@ -1635,20 +1650,6 @@
       "at": "2026-11-13T11:43:38.675Z",
       "town": "day 9 09:50",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "The duct seal looks perfect now, time to move on to the next step and refine the design.",
-      "kind": "think",
-      "at": "2026-11-13T11:43:38.675Z",
-      "town": "day 9 09:50",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "The duct seal and hose look perfect now, it's time to test their fit and functionality.",
-      "kind": "think",
-      "at": "2026-11-13T11:40:38.695Z",
-      "town": "day 9 09:26",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -1659,7 +1660,7 @@
     "at": "2026-11-13T13:07:38.889Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-13T17:36:38.922Z",
+  "feedArchivedAt": "2026-11-13T17:39:38.944Z",
   "plans": [],
   "searches": [
     {

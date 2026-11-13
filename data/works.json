@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk V",
-    "progress": 20,
-    "version": 2,
-    "lastChange": "I spend a long time carefully examining the heat-resistant hose and duct seal, checking for any flaws. Once I'm sure I've found the perfect fit, I begin making the necessary adjustments with my precis (used Fen, a coil of copper wire)",
+    "progress": 30,
+    "version": 3,
+    "lastChange": "I start by carefully checking the flexible heat-resistant cables I got from last week. Once I find a perfect fit, I begin making adjustments with my precis (used Fen). (used Tok, half a thruster nozzle)",
     "log": [
+      {
+        "version": 3,
+        "change": "I start by carefully checking the flexible heat-resistant cables I got from last week. Once I find a perfect fit, I begin making adjustments with my precis (used Fen). (used Tok, half a thruster nozzle)",
+        "progress": 30,
+        "at": "2026-11-13T17:54:40.429Z"
+      },
       {
         "version": 2,
         "change": "I spend a long time carefully examining the heat-resistant hose and duct seal, checking for any flaws. Once I'm sure I've found the perfect fit, I begin making the necessary adjustments with my precis (used Fen, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "tinkered with it",
         "progress": 80,
         "at": "2026-11-13T11:52:38.756Z"
-      },
-      {
-        "version": 22,
-        "change": "tinkered with it",
-        "progress": 76,
-        "at": "2026-11-13T11:49:38.753Z"
       }
     ],
     "launched": [
@@ -592,7 +592,7 @@
         }
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Rusty Jr",
@@ -603,6 +603,11 @@
         "name": "Fen",
         "what": "a coil of copper wire",
         "version": 2
+      },
+      {
+        "name": "Tok",
+        "what": "half a thruster nozzle",
+        "version": 3
       }
     ],
     "design": null
@@ -661,11 +666,6 @@
     {
       "name": "Brakk",
       "what": "a cracked navigation chip",
-      "at": "2026-11-13T17:45:38.990Z"
-    },
-    {
-      "name": "Tok",
-      "what": "half a thruster nozzle",
       "at": "2026-11-13T17:45:38.990Z"
     }
   ],

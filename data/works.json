@@ -192,12 +192,6 @@
       "name": "Dibs",
       "what": "a bent stabiliser fin",
       "at": "2026-11-13T03:00:40.541Z"
-    },
-    {
-      "name": "Brakk",
-      "what": "a strip of hull plating",
-      "at": "2026-11-13T00:36:59.878Z",
-      "good": true
     }
   ],
   "reads": [
@@ -267,7 +261,60 @@
     }
   ],
   "signals": [],
-  "builds": [],
+  "builds": [
+    {
+      "id": "bmwefsd3p",
+      "name": "I've been measuring and testing differen",
+      "description": "a little pile of welded scrap. it's art.",
+      "place": "depot",
+      "parts": [
+        {
+          "shape": "box",
+          "w": 1,
+          "h": 0.5,
+          "d": 1,
+          "x": 0,
+          "y": 0.25,
+          "z": 0,
+          "color": "#7a6a5a",
+          "glow": 0,
+          "spin": false
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.4,
+          "h": 1.2,
+          "d": 0.4,
+          "x": 0,
+          "y": 1.1,
+          "z": 0,
+          "color": "#b06a3a",
+          "glow": 0,
+          "spin": false
+        },
+        {
+          "shape": "ball",
+          "w": 0.5,
+          "h": 0.5,
+          "d": 0.5,
+          "x": 0,
+          "y": 1.9,
+          "z": 0,
+          "color": "#4ef2ff",
+          "glow": 0.8,
+          "spin": true
+        }
+      ],
+      "x": -1.3,
+      "z": 13.9,
+      "rot": 3.36,
+      "day": 6,
+      "at": "2026-11-13T03:48:08.917Z",
+      "usedPart": "a strip of hull plating",
+      "usedPartName": "Brakk",
+      "usedPartGood": true
+    }
+  ],
   "flights": [],
   "lastLinks": [
     {

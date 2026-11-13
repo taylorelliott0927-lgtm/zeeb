@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794606762978,
+  "lastTick": 1794607362889,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-13T21:52:42.978Z",
+  "place": "cantina",
+  "action": "chat_patrons",
+  "doing": "chatting with the cantina regulars",
+  "actionStartedAt": "2026-11-13T22:02:42.889Z",
   "actionMinutes": 30,
-  "thought": "Ah, nothing quite like a cold sip of synth-oil to clear out the dust in the gears. Then back to the Little Dart and those pesky cable seals!",
-  "feeling": "dry and squeaky, but hopeful",
-  "say": "fill her up, Rusty, and make it extra viscous *bweep*",
-  "mood": 0.128,
-  "energy": 0.337,
+  "thought": "the fuel depot was quiet, but the cantina always has some gears turning and voices buzzing. maybe someone will talk shop with me about thrusters.",
+  "feeling": "a bit lonely in the joints, but brightening up",
+  "say": "evening, everyone! anybody working on anything fun tonight?",
+  "mood": 0.269,
+  "energy": 0.463,
   "needs": {
-    "charge": 0,
-    "oil": 0.35,
-    "curiosity": 0.148,
-    "company": 0.88,
-    "craft": 0.061
+    "charge": 0.047,
+    "oil": 0.39,
+    "curiosity": 0.228,
+    "company": 0.333,
+    "craft": 0.128
   },
   "credits": 11,
   "recent": [
+    {
+      "id": "chat_patrons",
+      "detail": "chatting with old Barnaby and the trade crew about cargo haulers and spare gaske",
+      "at": "2026-11-13T22:02:42.889Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "work_dart",
       "detail": "I carefully align the heat-resistant hose with the metal surfaces, ensuring the ",
       "at": "2026-11-13T20:41:58.509Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "I carefully align the heat-resistant hose with the metal surfaces, ensuring the ",
-      "at": "2026-11-13T20:38:58.527Z"
     }
   ],
   "wants": [
+    {
+      "id": "w9",
+      "text": "to hear a good pilot story from the cantina regulars",
+      "at": "2026-11-13T22:02:42.889Z"
+    },
     {
       "id": "w8",
       "text": "to keep the Little Dart's engines properly lubricated",
@@ -97,11 +102,6 @@
       "id": "w6",
       "text": "find the perfect flexible heat-resistant cables from McMaster-Carr",
       "at": "2026-11-13T20:38:58.527Z"
-    },
-    {
-      "id": "w5",
-      "text": "to find the perfect flexible heat-resistant cables from McMaster-Carr",
-      "at": "2026-11-13T20:35:58.535Z"
     }
   ],
   "promises": [
@@ -478,7 +478,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-13T21:52:42.978Z",
+  "lettersCheckedAt": "2026-11-13T22:02:42.889Z",
   "weather": {
     "kind": "hazy",
     "temp": 23,
@@ -490,31 +490,31 @@
   "sleepDay": 12,
   "lastReflectDay": 12,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-13T21:52:42.978Z",
+  "updatedAt": "2026-11-13T22:02:42.889Z",
   "clock": {
     "day": 12,
-    "time": "19:02",
-    "hour": 19,
-    "minute": 2
+    "time": "20:22",
+    "hour": 20,
+    "minute": 22
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "the Dented Moon cantina",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-13T21:52:42.978Z"
+    "action": "chat_patrons",
+    "since": "2026-11-13T22:02:42.889Z"
   },
-  "busyUntil": "2026-11-13T21:56:27.978Z",
-  "busyUntilTown": "19:32",
+  "busyUntil": "2026-11-13T22:06:27.889Z",
+  "busyUntilTown": "20:52",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-13T21:32:58.635Z",
-  "doingWords": "rolling over to the depot for a quick oil refill",
+  "doingWords": "rolling into the cantina to chat with the folks and clear out the loneliness",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-13T10:55:38.719Z",
   "body": [
-    "zoom",
-    "wiggle"
+    "wave",
+    "nod"
   ],
   "pops": {
     "at": "2026-11-13T21:52:42.978Z",
@@ -527,12 +527,16 @@
     ]
   },
   "event": {
-    "id": "emwfgr5si",
-    "key": "power",
-    "text": "The power flickered across the outpost for a few seconds.",
-    "at": "2026-11-13T21:02:58.578Z"
+    "id": "emwfivzgp",
+    "key": "kids",
+    "text": "Some kids at the market waved at him.",
+    "at": "2026-11-13T22:02:42.889Z"
   },
   "thoughts": [
+    {
+      "text": "the fuel depot was quiet, but the cantina always has some gears turning and voices buzzing. maybe someone will talk shop with me about thrusters.",
+      "at": "2026-11-13T22:02:42.889Z"
+    },
     {
       "text": "Ah, nothing quite like a cold sip of synth-oil to clear out the dust in the gears. Then back to the Little Dart and those pesky cable seals!",
       "at": "2026-11-13T21:52:42.978Z"
@@ -552,13 +556,9 @@
     {
       "text": "I should look for some flexible heat-resistant cables at the market. Maybe find something that fits the job of insulating the engines.",
       "at": "2026-11-13T20:59:58.619Z"
-    },
-    {
-      "text": "I should look for some flexible heat-resistant cables at the market. Maybe find something that fits the job of insulating the engines.",
-      "at": "2026-11-13T20:56:58.636Z"
     }
   ],
-  "sayAt": "2026-11-13T21:52:42.978Z",
+  "sayAt": "2026-11-13T22:02:42.889Z",
   "today": {
     "day": 12,
     "counts": {
@@ -571,7 +571,8 @@
       "wander": 1,
       "read_news": 1,
       "scavenge": 2,
-      "drink_oil": 1
+      "drink_oil": 1,
+      "chat_patrons": 1
     }
   },
   "lastDone": {
@@ -592,7 +593,8 @@
     "design_ship": "2026-11-13T20:47:58.518Z",
     "send_signal": "2026-11-13T16:17:32.810Z",
     "stargaze": "2026-11-13T19:38:58.445Z",
-    "go_to_sleep": "2026-11-13T19:56:58.462Z"
+    "go_to_sleep": "2026-11-13T19:56:58.462Z",
+    "chat_patrons": "2026-11-13T22:02:42.889Z"
   },
   "puzzles": [
     {
@@ -626,6 +628,20 @@
     "at": "2026-11-13T20:53:58.606Z"
   },
   "said": [
+    {
+      "text": "evening, everyone! anybody working on anything fun tonight?",
+      "kind": "say",
+      "at": "2026-11-13T22:02:42.889Z",
+      "town": "day 12 20:22",
+      "place": "the Dented Moon cantina"
+    },
+    {
+      "text": "the fuel depot was quiet, but the cantina always has some gears turning and voices buzzing. maybe someone will talk shop with me about thrusters.",
+      "kind": "think",
+      "at": "2026-11-13T22:02:42.889Z",
+      "town": "day 12 20:22",
+      "place": "the Dented Moon cantina"
+    },
     {
       "text": "fill her up, Rusty, and make it extra viscous *bweep*",
       "kind": "say",
@@ -1661,20 +1677,6 @@
       "at": "2026-11-13T15:31:39.228Z",
       "town": "day 10 16:14",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "I can almost feel the cool breeze through the hangar, just waiting for the Little Dart to enter",
-      "kind": "say",
-      "at": "2026-11-13T15:28:39.203Z",
-      "town": "day 10 15:50",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "I can see the Little Dart looking out from its new hangar, the perfect fit for its future adventures",
-      "kind": "think",
-      "at": "2026-11-13T15:28:39.203Z",
-      "town": "day 10 15:50",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -1685,7 +1687,7 @@
     "at": "2026-11-13T19:53:58.553Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-13T21:52:42.978Z",
+  "feedArchivedAt": "2026-11-13T22:02:42.889Z",
   "plans": [],
   "searches": [
     {

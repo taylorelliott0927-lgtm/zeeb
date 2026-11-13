@@ -198,7 +198,9 @@ function linkTarget(detail) {
 // Read one thing off the Wire (a search, a page or the news), react to it, and keep a record with the link.
 async function readTheWire(kind, target, wasSearch) {
   const recentSites = [...new Set((works.reads || []).slice(0, 15).map((r) => { try { return new URL(r.url).hostname.replace(/^www\./, ""); } catch { return ""; } }).filter(Boolean))];
-  let found = await useWire(kind, target, recentSites);
+  const readUrls = (works.reads || []).map((r) => r.url).filter(Boolean);
+  let found = await useWire(kind, target, recentSites, readUrls);
+  if (kind === "search" && target) { state.searches = [{ q: String(target).slice(0, 100), at: nowISO }, ...(state.searches || []).filter((x) => x.q.toLowerCase() !== String(target).toLowerCase())].slice(0, 12); }
   // A page that won't open: try other links he can see (new sites first), then search for what it was about.
   if (found.failed && kind === "page") {
     const site = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
@@ -385,9 +387,18 @@ async function doAction(id, d, notes) {
     case "read_news": {
       const kind = id === "follow_link" ? "page" : a.internet;
       // If he forgot to say what to search for, use what he said he was looking for (never a random page).
-      const searchFor = detail || state.nextSearch?.text || (state.puzzles || [])[0]?.text || String(d.why || "").slice(0, 120) || String(d.doing_words || "");
-      const target = id === "follow_link" ? linkTarget(detail) : id === "browse_wire" ? searchFor : detail;
-      const r = await readTheWire(kind, target, id === "browse_wire");
+      // (skipping anything he's searched in his last few searches, so a forgotten detail doesn't repeat the same search)
+      const recentQ = (state.searches || []).slice(0, 4).map((x) => x.q.toLowerCase());
+      const searchFor = detail || [state.nextSearch?.text, ...(state.puzzles || []).map((p) => p.text), String(d.why || "").slice(0, 120), String(d.doing_words || "")].find((q) => q && !recentQ.includes(q.toLowerCase())) || "";
+      let target = id === "follow_link" ? linkTarget(detail) : id === "browse_wire" ? searchFor : detail;
+      let wireKind = kind;
+      // Nothing new to search for? Open one of the links he hasn't read yet instead of repeating himself.
+      if (id === "browse_wire" && !target) {
+        const readU = new Set((works.reads || []).map((r) => r.url));
+        const link = (works.lastLinks || []).find((l) => !readU.has(l.url));
+        if (link) { target = link.url; wireKind = "page"; }
+      }
+      const r = await readTheWire(wireKind, target, id === "browse_wire" && wireKind === "search");
       if (r.failed) { ok = false; feed.entries[0].ok = false; }
       if (r.thought) d.thought = r.thought;
       if (r.feeling) d.feeling = r.feeling;
@@ -806,8 +817,15 @@ async function main() {
       const next = await surfNext({ character, state, works, clock }).catch(() => null);
       const choice = String(next?.next || "").trim();
       if (choice) {
-        const isLink = /^\d+$/.test(choice) || /^https?:/i.test(choice);
-        const r = await readTheWire(isLink ? "page" : "search", isLink ? linkTarget(choice) : choice, !isLink);
+        let isLink = /^\d+$/.test(choice) || /^https?:/i.test(choice);
+        let target = isLink ? linkTarget(choice) : choice;
+        // The exact same search he just did? He's already read that, so he clicks a link he hasn't opened yet instead.
+        if (!isLink && (state.searches || []).slice(0, 2).some((x) => x.q.toLowerCase() === choice.toLowerCase())) {
+          const readU = new Set((works.reads || []).map((r) => r.url));
+          const link = (works.lastLinks || []).find((l) => !readU.has(l.url));
+          if (link) { isLink = true; target = link.url; }
+        }
+        const r = await readTheWire(isLink ? "page" : "search", target, !isLink);
         if (r.thought) { state.thought = String(r.thought).slice(0, 300); noteThought(state.thought); }
         if (r.feeling) state.feeling = String(r.feeling).slice(0, 80);
         state.say = String(next?.say || "").slice(0, 200);

@@ -89,6 +89,7 @@ ${works.dart.progress}% built, version ${works.dart.version}. Last change: ${wor
 How it looks: ${works.dart.design ? works.dart.design.description : "the plain scrap-dart look (you can design its whole look and name any time, if you want to)"}.
 Recent tunes: ${works.tunes.slice(0, 3).map((t) => `"${t.title}"`).join(", ") || "none yet"}.
 Last thing you read on the Wire: ${works.reads[0] ? `"${works.reads[0].title}" - ${works.reads[0].takeaway || ""}` : "nothing yet"}
+${(state.searches || []).length ? `Your recent searches (you've already looked these up): ${state.searches.slice(0, 6).map((x) => `"${x.q}"`).join(", ")}` : ""}
 ${works.lastLinks?.length ? `LINKS YOU SAW ON THE WIRE (you could follow one):\n${works.lastLinks.slice(0, 10).map((l, i) => `${i + 1}. ${l.title} (${(() => { try { return new URL(l.url).hostname.replace(/^www\./, ""); } catch { return ""; } })()})`).join("\n")}` : ""}
 
 THINGS YOU REMEMBER (id: memory)
@@ -316,6 +317,7 @@ export async function surfNext(ctx) {
 Last thing you read: ${last ? `"${last.title}"${last.takeaway ? ` - ${last.takeaway}` : ""}` : "nothing yet"}.
 ${links.length ? `LINKS YOU CAN SEE:\n${links.map((l, i) => `${i + 1}. ${l.title}${(() => { try { return ` (${new URL(l.url).hostname.replace(/^www\./, "")})`; } catch { return ""; } })()}`).join("\n")}` : "No links on screen."}
 ${state.nextSearch?.text ? `You thought you might look up: "${state.nextSearch.text}"` : ""}
+${(state.searches || []).length ? `You've already searched for: ${state.searches.slice(0, 6).map((x) => `"${x.q}"`).join(", ")}` : ""}
 ${(state.puzzles || []).length ? `Things you want to figure out: ${state.puzzles.map((p) => p.text).join("; ")}` : ""}
 You can open one of the links (its number), search for something (the search words), or read nothing and just think about what you've seen. Whatever you feel like.
 Return JSON: {"next": "a link number, search words, or empty", "thought": "one sentence, first person", "say": "something you mutter out loud, or empty"}`;

@@ -236,13 +236,15 @@ export function parseSearch(html) {
 }
 
 // Search the web, then open one of the results (usually the top one) and read it.
-async function searchAndRead(query, recentSites = []) {
+async function searchAndRead(query, recentSites = [], readUrls = []) {
   let results = [];
   try { results = await webSearch(query); } catch (e) { log("web search failed:", e.message); }
   if (!results.length) return null;
   // Sites he hasn't read lately go first, so he keeps finding new places instead of the same few.
   const site = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
-  const fresh = results.filter((r) => !recentSites.includes(site(r.url))), seen = results.filter((r) => recentSites.includes(site(r.url)));
+  // Pages he's already read go to the very back, then sites he's visited lately; new places first.
+  const unread = results.filter((r) => !readUrls.includes(r.url)), read = results.filter((r) => readUrls.includes(r.url));
+  const fresh = unread.filter((r) => !recentSites.includes(site(r.url))), seen = [...unread.filter((r) => recentSites.includes(site(r.url))), ...read];
   const order = [...(Math.random() < 0.7 ? fresh : [pick(fresh.length ? fresh : results), ...fresh]), ...seen];
   for (const r of order.slice(0, 5)) {
     try {
@@ -253,7 +255,7 @@ async function searchAndRead(query, recentSites = []) {
   return null;
 }
 
-export async function useWire(kind, query, recentSites = []) {
+export async function useWire(kind, query, recentSites = [], readUrls = []) {
   if (process.env.MOCK === "1") {
     if (kind === "page") return { kind, found: true, title: "A test page", url: query || "https://example.com", site: "example.com", text: "This is a page about something. It has words in it.", links: [{ title: "Another page", url: "https://example.com/2" }] };
     return kind === "news"
@@ -264,14 +266,14 @@ export async function useWire(kind, query, recentSites = []) {
     if (kind === "page") return await readPage(query);
     if (kind === "search") {
       if (!query || query.length < 2) return await randomArticle();
-      const web = await searchAndRead(query, recentSites);
+      const web = await searchAndRead(query, recentSites, readUrls);
       if (web) return web;
       const r = await searchWire(query);
       if (r.found) return r;
       // Long, chatty searches often find nothing: try again with just the main words before giving up.
       const short = query.toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter((w) => w.length > 3 && !STOP.has(w)).slice(0, 4).join(" ");
       if (short && short !== query.toLowerCase()) {
-        const again = (await searchAndRead(short, recentSites)) || (await searchWire(short));
+        const again = (await searchAndRead(short, recentSites, readUrls)) || (await searchWire(short));
         if (again && again.found !== false) return { ...again, query };
       }
       return { kind, query, failed: true, error: "nothing came up for that search" };

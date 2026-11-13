@@ -196,7 +196,25 @@ function linkTarget(detail) {
 // Read one thing off the Wire (a search, a page or the news), react to it, and keep a record with the link.
 async function readTheWire(kind, target, wasSearch) {
   const recentSites = [...new Set((works.reads || []).slice(0, 15).map((r) => { try { return new URL(r.url).hostname.replace(/^www\./, ""); } catch { return ""; } }).filter(Boolean))];
-  const found = await useWire(kind, target, recentSites);
+  let found = await useWire(kind, target, recentSites);
+  // A page that won't open: try other links he can see (new sites first), then search for what it was about.
+  if (found.failed && kind === "page") {
+    const site = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
+    const wanted = (works.lastLinks || []).find((l) => l.url === target);
+    const others = (works.lastLinks || []).filter((l) => l.url !== target);
+    const tryOrder = [...others.filter((l) => !recentSites.includes(site(l.url))), ...others.filter((l) => recentSites.includes(site(l.url)))].slice(0, 4);
+    const tried = [site(target) || "that page"];
+    for (const l of tryOrder) {
+      const next = await useWire("page", l.url, recentSites);
+      tried.push(site(l.url));
+      if (!next.failed) { found = { ...next, note: `${tried[0]} wouldn't open, so he tried another link` }; break; }
+    }
+    if (found.failed && wanted?.title) {
+      const s2 = await useWire("search", wanted.title, recentSites);
+      if (!s2.failed) found = { ...s2, note: "the page wouldn't open, so he searched for it instead" };
+    }
+    if (!found.failed) post("noticed", `${tried[0]} wouldn't open, so he ${found.kind === "search" ? `searched for "${wanted?.title}" instead` : `tried ${site(found.url)} instead`}.`);
+  }
   if (!found.failed && found.links?.length) works.lastLinks = found.links.slice(0, 12);
   else if (found.kind === "news" && !found.failed) works.lastLinks = (found.items || []).filter((i) => i.url).map((i) => ({ title: i.title, url: i.url }));
   const r = (await reactToWire({ character, works }, found)) || ruleReact(found);

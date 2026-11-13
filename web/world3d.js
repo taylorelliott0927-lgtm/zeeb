@@ -380,7 +380,7 @@ export class World {
     if (!this.flight) this.parked.visible = this.hasShip;
     this.setBuilds(w.builds || []);
     this.setStash(w.stash || []);
-    this.mountParts(this.dartMounts, w.dart?.parts || [], SHIP_SLOTS, 1);
+    this.mountParts(this.dartMounts, w.dart?.parts || [], SHIP_SLOTS, 1, !first, w.dart?.name);
     const last = (w.dart?.launched || []).slice(-1)[0];
     this.mountParts(this.parkedMounts, last?.parts || [], SHIP_SLOTS, 1);
     this.mountParts(this.flyerMounts, last?.parts || [], SHIP_SLOTS, 1);
@@ -445,24 +445,71 @@ export class World {
     this.shelfLabel.el.textContent = stash.length ? `His parts (${stash.length})` : "His parts shelf (empty)";
     if (sig === this.stashSig) return;
     this.stashSig = sig;
+    // Note which parts just left the shelf and where they were sitting, so they can fly to wherever he used them.
+    const key = (p) => `${p.name}|${p.what}|${p.at || ""}`;
+    const now = new Set(stash.map(key));
+    this.leaving = [];
+    for (const [k, n] of this.shelfNodes || []) if (!now.has(k)) this.leaving.push({ key: k, from: [n.world[12], n.world[13], n.world[14]] });
+    this.shelfNodes = new Map();
     this.shelfParts.children = [];
     // newest on the left of the top shelf; up to 10 per shelf
     stash.slice(0, 20).forEach((p, i) => {
       const row = i < 10 ? 1.29 : 0.59, col = i % 10;
-      this.partModel(this.shelfParts, p.what, p.good, { pos: [-2.45 + col * 0.545, row, 0.05], rot: [0, (i * 0.7) % 1.2 - 0.6, 0], scale: [1.2, 1.2, 1.2] });
+      const n = this.partModel(this.shelfParts, p.what, p.good, { pos: [-2.45 + col * 0.545, row, 0.05], rot: [0, (i * 0.7) % 1.2 - 0.6, 0], scale: [1.2, 1.2, 1.2] });
+      this.shelfNodes.set(key(p), n);
     });
   }
 
-  mountParts(root, parts, slots, size) {
-    const sig = JSON.stringify(parts.map((p) => [p.what, p.good]));
+  mountParts(root, parts, slots, size, fly = false, shipName = "") {
+    const sig = JSON.stringify(parts.map((p) => [p.name, p.what, p.good]));
     if (root.sig === sig) return;
+    const before = root.count ?? null;
     root.sig = sig;
+    root.count = parts.length;
     root.children = [];
     // the most recent parts go on; if he's used more than there are spots, the oldest are tucked inside
-    parts.slice(-slots.length).forEach((p, i) => {
+    const shown = parts.slice(-slots.length);
+    const nodes = shown.map((p, i) => {
       const s = slots[i];
-      this.partModel(root, p.what, p.good, { pos: s.pos, rot: s.rot || [0, 0, 0], scale: [size * 0.8, size * 0.8, size * 0.8] });
+      return this.partModel(root, p.what, p.good, { pos: s.pos, rot: s.rot || [0, 0, 0], scale: [size * 1.1, size * 1.1, size * 1.1] });
     });
+    // Brand new parts (seen live, not on page load) fly over from the shelf and click into place.
+    if (!fly || before === null || parts.length <= before) return;
+    const fresh = parts.slice(before);
+    fresh.forEach((p, j) => {
+      const idx = shown.indexOf(p);
+      if (idx < 0) return;
+      const target = nodes[idx];
+      target.visible = false;
+      const left = (this.leaving || []).find((l) => l.key.startsWith(`${p.name}|${p.what}|`)) || (this.leaving || [])[0];
+      if (left) this.leaving = this.leaving.filter((l) => l !== left);
+      const from = left?.from && (left.from[0] || left.from[2]) ? left.from : (() => { const H = PLACES.hangar; return this.at(H.x, H.z - 5.4, 1.3); })();
+      const flyer = this.partModel(this.root, p.what, p.good, { pos: [...from], scale: [1.4, 1.4, 1.4] });
+      const delay = 0.6 + j * 1.2;
+      this.addFx(3.2 + delay, (u) => {
+        const k = Math.max(0, Math.min(1, ((u * (3.2 + delay)) - delay) / 3.2));
+        const w = target.world, to = [w[12], w[13], w[14]];
+        if (!to[0] && !to[2]) return; // not drawn yet
+        const e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+        flyer.pos = [from[0] + (to[0] - from[0]) * e, from[1] + (to[1] - from[1]) * e + Math.sin(k * Math.PI) * 1.6, from[2] + (to[2] - from[2]) * e];
+        flyer.rot = [0, k * 9, 0];
+      }, () => {
+        this.root.children = this.root.children.filter((c) => c !== flyer);
+        target.visible = true;
+        const w = target.world;
+        this.sparkle([w[12], w[13], w[14]], p.good);
+        if (j === fresh.length - 1) this.showToast(`Bolted ${p.name} (${p.what}) onto ${shipName || "the ship"}${p.good ? " ★" : ""}`);
+      });
+    });
+  }
+
+  // A quick burst of little sparks where a part clicks in.
+  sparkle(at, good) {
+    const col = good ? [1, 0.85, 0.3] : C.cyan;
+    const bits = Array.from({ length: 8 }, (_, i) => ({ a: (i / 8) * Math.PI * 2, n: this.put(this.root, this.meshes.ball, { pos: [...at], scale: [0.08, 0.08, 0.08], color: col, emissive: 1 }) }));
+    this.addFx(0.7, (u) => {
+      for (const b of bits) { b.n.pos = [at[0] + Math.cos(b.a) * u * 0.6, at[1] + Math.sin(u * Math.PI) * 0.3, at[2] + Math.sin(b.a) * u * 0.6]; const sc = 0.08 * (1 - u); b.n.scale = [sc, sc, sc]; }
+    }, () => { const set = new Set(bits.map((b) => b.n)); this.root.children = this.root.children.filter((c) => !set.has(c)); });
   }
 
   setBuilds(builds) {

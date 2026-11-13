@@ -1,0 +1,36 @@
+name: Fetch model library
+
+# Run this once by hand (Actions tab > Fetch model library > Run workflow).
+# It downloads free CC0 low-poly 3D models by Kenney into web/models/ so Zeeb can use them in his builds.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: zeeb-models
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Download and catalogue the models
+        run: node scripts/fetch-models.mjs
+      - name: Save to the repo
+        run: |
+          git config user.name "zeeb-bot"
+          git config user.email "zeeb-bot@users.noreply.github.com"
+          git add web/models
+          git commit -m "Add Zeeb's model library (Kenney, CC0)" || exit 0
+          for i in 1 2 3 4 5; do
+            git pull --rebase --quiet origin main && git push --quiet origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1

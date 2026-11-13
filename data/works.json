@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk III",
-    "progress": 96,
-    "version": 29,
-    "lastChange": "design the exhaust system and make notes on where the heat-resistant hose should fit",
+    "name": "the Little Dart Mk IV",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 30,
+        "change": "design the heat-resistant hose and duct seal, test the flexible heat-resistant cable from McMaster-Carr, and finalize the exhaust system.",
+        "progress": 100,
+        "at": "2026-11-13T13:19:38.928Z"
+      },
       {
         "version": 29,
         "change": "design the exhaust system and make notes on where the heat-resistant hose should fit",
@@ -238,12 +244,6 @@
         "change": "I've been measuring and testing different materials, and the old welding wire seems perfect for sealing the ducts. I'm starting with the first two seals near the fuel depot.",
         "progress": 37,
         "at": "2026-11-13T05:15:08.866Z"
-      },
-      {
-        "version": 4,
-        "change": "tinkered with it (used Brakk, a perfectly good bolt)",
-        "progress": 35,
-        "at": "2026-11-13T04:27:08.745Z"
       }
     ],
     "launched": [
@@ -321,100 +321,107 @@
             "version": 14
           }
         ]
-      }
-    ],
-    "partsUsed": 2,
-    "parts": [
-      {
-        "name": "Sprocket",
-        "what": "a cracked navigation chip",
-        "version": 1
       },
       {
-        "name": "Tok",
-        "what": "a tiny gyroscope",
-        "version": 7
+        "name": "the Little Dart Mk III",
+        "day": 9,
+        "partsUsed": 2,
+        "parts": [
+          {
+            "name": "Sprocket",
+            "what": "a cracked navigation chip",
+            "version": 1
+          },
+          {
+            "name": "Tok",
+            "what": "a tiny gyroscope",
+            "version": 7
+          }
+        ],
+        "design": {
+          "description": "the Little Dart now looks more modern and sleek, with new shapes and features",
+          "parts": [
+            {
+              "shape": "cone",
+              "turn": "forward",
+              "w": 1,
+              "h": 1,
+              "d": 1,
+              "x": 0,
+              "y": 0.3,
+              "z": 0,
+              "color": "#ffffff",
+              "glow": 0.5
+            },
+            {
+              "shape": "box",
+              "turn": "forward",
+              "w": 1,
+              "h": 1,
+              "d": 0.5,
+              "x": 0,
+              "y": 0.6,
+              "z": 0,
+              "color": "#cc0000",
+              "glow": 0.7
+            },
+            {
+              "shape": "cone",
+              "turn": "back",
+              "w": 1,
+              "h": 1,
+              "d": 0.5,
+              "x": 0,
+              "y": 1,
+              "z": 0,
+              "color": "#cccccc",
+              "glow": 0.2
+            },
+            {
+              "shape": "box",
+              "turn": "forward",
+              "w": 1,
+              "h": 1,
+              "d": 0.5,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "color": "#00ff00",
+              "glow": 0.9
+            },
+            {
+              "shape": "cone",
+              "turn": "forward",
+              "w": 1,
+              "h": 1,
+              "d": 0.5,
+              "x": -0.5,
+              "y": 0.5,
+              "z": 0,
+              "color": "#00ffff",
+              "glow": 0.4
+            },
+            {
+              "shape": "box",
+              "turn": "forward",
+              "w": 1,
+              "h": 1,
+              "d": 0.5,
+              "x": 0.5,
+              "y": 0.5,
+              "z": 0,
+              "color": "#000000",
+              "glow": 0.5
+            }
+          ],
+          "at": "2026-11-13T13:16:38.935Z",
+          "day": 9
+        }
       }
     ],
-    "design": {
-      "description": "the Little Dart now looks more modern and sleek, with new shapes and features",
-      "parts": [
-        {
-          "shape": "cone",
-          "turn": "forward",
-          "w": 1,
-          "h": 1,
-          "d": 1,
-          "x": 0,
-          "y": 0.3,
-          "z": 0,
-          "color": "#ffffff",
-          "glow": 0.5
-        },
-        {
-          "shape": "box",
-          "turn": "forward",
-          "w": 1,
-          "h": 1,
-          "d": 0.5,
-          "x": 0,
-          "y": 0.6,
-          "z": 0,
-          "color": "#cc0000",
-          "glow": 0.7
-        },
-        {
-          "shape": "cone",
-          "turn": "back",
-          "w": 1,
-          "h": 1,
-          "d": 0.5,
-          "x": 0,
-          "y": 1,
-          "z": 0,
-          "color": "#cccccc",
-          "glow": 0.2
-        },
-        {
-          "shape": "box",
-          "turn": "forward",
-          "w": 1,
-          "h": 1,
-          "d": 0.5,
-          "x": 0,
-          "y": 0,
-          "z": 0,
-          "color": "#00ff00",
-          "glow": 0.9
-        },
-        {
-          "shape": "cone",
-          "turn": "forward",
-          "w": 1,
-          "h": 1,
-          "d": 0.5,
-          "x": -0.5,
-          "y": 0.5,
-          "z": 0,
-          "color": "#00ffff",
-          "glow": 0.4
-        },
-        {
-          "shape": "box",
-          "turn": "forward",
-          "w": 1,
-          "h": 1,
-          "d": 0.5,
-          "x": 0.5,
-          "y": 0.5,
-          "z": 0,
-          "color": "#000000",
-          "glow": 0.5
-        }
-      ],
-      "at": "2026-11-13T13:16:38.935Z",
-      "day": 9
-    }
+    "partsUsed": 0,
+    "parts": [],
+    "design": null
   },
   "tunes": [
     {

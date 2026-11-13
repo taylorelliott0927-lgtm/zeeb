@@ -1,4 +1,4 @@
-import { World, DEFAULT_SHIP } from "./world3d.js?v=26";
+import { World, DEFAULT_SHIP } from "./world3d.js?v=27";
 
 // ---------- where Zeeb's data lives ----------
 // On GitHub Pages (you.github.io/repo) we read the live files straight from the repo,
@@ -497,6 +497,42 @@ async function playGame(file, holder) {
   holder.replaceChildren(frame);
   frame.focus();
 }
+// Everything he owns: what's on him, what's on his shelf, and everything he's made.
+function renderInventory(w, s, shop, games) {
+  const box = $("inventory");
+  if (!box || !w) return;
+  box.replaceChildren();
+  const part = (p) => { const li = el("li", p.good ? "good-part-text" : p.custom ? "made-part-text" : null, `${p.name}, ${p.what}${p.good ? " ★" : ""}${p.custom ? " (he made this)" : ""}`); return li; };
+  const section = (title, items, empty) => {
+    box.append(el("h4", null, title));
+    const ul = el("ul", "list");
+    for (const it of items) ul.append(typeof it === "string" ? el("li", null, it) : it);
+    if (!items.length) ul.append(el("li", "muted", empty));
+    box.append(ul);
+  };
+  const carrying = (w.stash || []).filter((p) => p.carrying), shelf = (w.stash || []).filter((p) => !p.carrying);
+  box.append(el("p", "muted", "★ = a really good part · green = a part he invented and made himself"));
+  section("On him right now", [`${s.credits ?? 0} credit${s.credits === 1 ? "" : "s"}`, ...carrying.map(part)], "nothing else");
+  if (carrying.length) box.append(el("p", "muted", "Parts he picks up while he's out stay with him until he's back at the hangar."));
+  section(`On his shelf in Hangar Bay 3 (${shelf.length})`, shelf.map(part), "empty");
+  const C = w.crafting || {};
+  section("Parts he's invented", (C.recipes || []).map((r) => `${r.what} (made ${r.made}x)${r.uses ? ` · for ${r.uses}` : ""}`), "none yet");
+  const d = w.dart || {};
+  section("Ships", [
+    `${d.name || "the Little Dart"}: ${d.progress || 0}% built${d.parts?.length ? ` · ${d.parts.length} parts in it` : ""}${d.design ? " · his own design" : ""}`,
+    ...(d.launched || []).map((l) => `${l.name}: finished on day ${l.day}${l.parts?.length ? ` · ${l.parts.length} parts` : ""}${l.design ? " · his own design" : ""}`),
+  ], "none");
+  const where = { hangar: "Hangar Bay 3", cantina: "the cantina", market: "the junk market", tower: "the comms tower", depot: "the fuel depot", ridge: "the dune ridge", flats: "the salt flats", crater: "the old crater", mesa: "the red mesa" };
+  section(`Things he's built (${(w.builds || []).length})`, (w.builds || []).map((b) => {
+    const models = (b.parts || []).filter((p) => p.model).length;
+    return `${b.name} · near ${where[b.place] || "the outpost"} · ${(b.parts || []).length} pieces${models ? ` (${models} from his model library)` : ""}`;
+  }), "nothing yet");
+  section(`Tunes (${(w.tunes || []).length})`, (w.tunes || []).slice(0, 8).map((t) => `"${t.title}"`), "none yet");
+  if (games?.games?.length) section("Games", games.games.map((g) => `${g.title || g.idea}${g.released ? " (released)" : " (in progress)"}`), "none");
+  if (shop?.open) section(`In his shop, "${shop.name || "his shop"}"`, (shop.items || []).map((i) => `${i.name}${i.price ? ` · ${i.price}` : ""}`), "nothing listed yet");
+  section("Signals sent into deep space", [`${(w.signals || []).length} so far`], "none");
+}
+
 function renderArcade(g) {
   const games = g?.games || [];
   $("arcadeTab").hidden = !games.length;
@@ -600,6 +636,7 @@ async function refresh() {
     renderArcade(gm);
     world?.setExtras({ shopOpen: Boolean(sh?.open), gamesCount: gm?.games?.length || 0 });
     renderWorks(works); renderDiary(d); renderMind(s, mem); renderWho(c); renderShop(sh);
+    renderInventory(works, s, sh, gm);
   }
   world?.setState({ ...s, works });
   if (fr) { world?.setFriend(fr); renderFriend(fr); }

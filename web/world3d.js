@@ -235,6 +235,8 @@ export class World {
     this.zeeb = this.put(R, null, { pos: this.at(2, 4, 0.9) });
     const z = this.zeeb;
     this.zBody = this.put(z, null);
+    // a little satchel on his side, only when he's carrying parts back to the hangar
+    this.bag = this.put(this.zBody, box, { pos: [0.36, -0.15, -0.05], scale: [0.16, 0.24, 0.26], color: [0.45, 0.3, 0.18], visible: false });
     this.put(this.zBody, ball, { scale: [1.15, 0.95, 1.05], color: C.rust });
     this.put(this.zBody, cyl, { pos: [0, -0.12, 0], scale: [1.18, 0.16, 1.08], color: C.dark });
     this.visor = this.put(this.zBody, box, { pos: [0, 0.14, 0.47], scale: [0.66, 0.13, 0.12], rot: [-0.15, 0, 0], color: C.cyan, emissive: 1 });
@@ -407,7 +409,8 @@ export class World {
     this.recipes = new Map(((w.crafting?.recipes) || []).map((r) => [String(r.what).toLowerCase(), r]));
     const rsig = JSON.stringify([...this.recipes.keys()]);
     if (rsig !== this.recipesSig) { this.recipesSig = rsig; this.stashSig = null; this.buildsSig = null; this.dartMounts.sig = null; this.parkedMounts.sig = null; this.flyerMounts.sig = null; }
-    this.setStash(w.stash || []);
+    this.setStash((w.stash || []).filter((p) => !p.carrying));
+    this.bag.visible = (w.stash || []).some((p) => p.carrying);
     this.mountParts(this.dartMounts, w.dart?.parts || [], this.slots.dart || SHIP_SLOTS, 1, !first, w.dart?.name);
     const last = (w.dart?.launched || []).slice(-1)[0];
     this.mountParts(this.parkedMounts, last?.parts || [], this.slots.parked || SHIP_SLOTS, 1);

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794538240321,
+  "lastTick": 1794538840541,
   "asleep": false,
-  "place": "tower",
-  "action": "follow_link",
-  "doing": "following a link across the Wire",
-  "actionStartedAt": "2026-11-13T02:50:40.321Z",
-  "actionMinutes": 30,
-  "thought": "Some snobby firewall thinks it can keep me out of the high-speed logs. I just wanted to see how they tune their repulsor thrusters without blowing up! *bweep*",
-  "feeling": "grumpy, stubborn, curious",
-  "say": "Let's see what this podracing stuff is all about! *bweep*",
-  "mood": 0.372,
-  "energy": 0.437,
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-13T03:00:40.541Z",
+  "actionMinutes": 45,
+  "thought": "The comms tower was fun, but web logs won't seal my thruster ducts by themselves! Time to hunt for scrap.",
+  "feeling": "eager and hopeful",
+  "say": "Alright junk piles, show me your best scrap! *bweep*",
+  "mood": 0.376,
+  "energy": 0.353,
   "needs": {
-    "charge": 0.273,
-    "oil": 0.04,
+    "charge": 0.32,
+    "oil": 0.11,
     "curiosity": 0,
-    "company": 0.26,
-    "craft": 0.448
+    "company": 0.313,
+    "craft": 0.515
   },
   "credits": 2,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-13T03:00:40.541Z"
+    },
     {
       "id": "follow_link",
       "detail": "https://starwars.fandom.com/wiki/Podracing",
@@ -75,14 +80,14 @@
       "id": "work_dart",
       "detail": "",
       "at": "2026-11-13T00:52:00.075Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "",
-      "at": "2026-11-13T00:46:59.889Z"
     }
   ],
   "wants": [
+    {
+      "id": "w7",
+      "text": "find flexible heat-resistant tubing to seal the Little Dart's ducts",
+      "at": "2026-11-13T03:00:40.541Z"
+    },
     {
       "id": "w6",
       "text": "find neat high-speed thruster ideas for the Little Dart",
@@ -97,11 +102,6 @@
       "id": "w9",
       "text": "to find a way to seal the ducts better, so the Little Dart can be fully built.",
       "at": "2026-11-13T00:52:00.075Z"
-    },
-    {
-      "id": "w8",
-      "text": "find a way to seal the ducts better to ensure the Little Dart's reliability and progress",
-      "at": "2026-11-13T00:46:59.889Z"
     }
   ],
   "promises": [],
@@ -265,7 +265,7 @@
     }
   ],
   "seenCreatorMsgs": [],
-  "lettersCheckedAt": "2026-11-13T02:50:40.321Z",
+  "lettersCheckedAt": "2026-11-13T03:00:40.541Z",
   "weather": {
     "kind": "clear",
     "temp": 22,
@@ -277,25 +277,25 @@
   "sleepDay": 5,
   "lastReflectDay": 5,
   "brain": "gemini-3.5-flash",
-  "updatedAt": "2026-11-13T02:50:40.321Z",
+  "updatedAt": "2026-11-13T03:00:40.541Z",
   "clock": {
     "day": 6,
-    "time": "10:46",
-    "hour": 10,
-    "minute": 46
+    "time": "12:06",
+    "hour": 12,
+    "minute": 6
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the junk market",
   "streak": {
-    "action": "follow_link",
-    "since": "2026-11-13T02:50:40.321Z"
+    "action": "scavenge",
+    "since": "2026-11-13T03:00:40.541Z"
   },
-  "busyUntil": "2026-11-13T02:54:25.321Z",
-  "busyUntilTown": "11:16",
+  "busyUntil": "2026-11-13T03:06:18.041Z",
+  "busyUntilTown": "12:51",
   "runner": "github",
   "model": "gemini-3.5-flash",
   "pcBrainAt": "2026-11-13T02:18:08.246Z",
-  "doingWords": "scooting over to the terminal to look up podracing",
+  "doingWords": "digging through dusty junk piles for duct seals",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-13T02:02:00.050Z",
@@ -304,12 +304,12 @@
     "lean_in"
   ],
   "pops": {
-    "at": "2026-11-13T02:39:48.399Z",
+    "at": "2026-11-13T03:00:40.541Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-13T02:39:48.399Z"
+        "text": "+ a bent stabiliser fin",
+        "kind": "part",
+        "at": "2026-11-13T03:00:40.541Z"
       }
     ]
   },
@@ -320,6 +320,10 @@
     "at": "2026-11-13T02:39:48.399Z"
   },
   "thoughts": [
+    {
+      "text": "The comms tower was fun, but web logs won't seal my thruster ducts by themselves! Time to hunt for scrap.",
+      "at": "2026-11-13T03:00:40.541Z"
+    },
     {
       "text": "Some snobby firewall thinks it can keep me out of the high-speed logs. I just wanted to see how they tune their repulsor thrusters without blowing up! *bweep*",
       "at": "2026-11-13T02:50:40.321Z"
@@ -339,26 +343,24 @@
     {
       "text": "Katie Spicer's journey highlights how diverse and passionate people are in the space industry. It's inspiring.",
       "at": "2026-11-13T02:12:08.281Z"
-    },
-    {
-      "text": "I wonder if the industry news could inspire a new idea for sealing the ducts better.",
-      "at": "2026-11-13T02:09:08.297Z"
     }
   ],
-  "sayAt": "2026-11-13T02:50:40.321Z",
+  "sayAt": "2026-11-13T03:00:40.541Z",
   "today": {
     "day": 6,
     "counts": {
       "read_news": 3,
       "drink_oil": 1,
-      "follow_link": 1
+      "follow_link": 1,
+      "scavenge": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-13T01:22:01.161Z",
     "read_news": "2026-11-13T02:12:08.281Z",
     "drink_oil": "2026-11-13T02:39:48.399Z",
-    "follow_link": "2026-11-13T02:50:40.321Z"
+    "follow_link": "2026-11-13T02:50:40.321Z",
+    "scavenge": "2026-11-13T03:00:40.541Z"
   },
   "puzzles": [
     {
@@ -377,6 +379,20 @@
     "at": "2026-11-13T02:50:40.321Z"
   },
   "said": [
+    {
+      "text": "Alright junk piles, show me your best scrap! *bweep*",
+      "kind": "say",
+      "at": "2026-11-13T03:00:40.541Z",
+      "town": "day 6 12:06",
+      "place": "the junk market"
+    },
+    {
+      "text": "The comms tower was fun, but web logs won't seal my thruster ducts by themselves! Time to hunt for scrap.",
+      "kind": "think",
+      "at": "2026-11-13T03:00:40.541Z",
+      "town": "day 6 12:06",
+      "place": "the junk market"
+    },
     {
       "text": "Let's see what this podracing stuff is all about! *bweep*",
       "kind": "say",

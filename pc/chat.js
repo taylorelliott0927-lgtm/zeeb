@@ -45,6 +45,8 @@ export async function startChat({ port = 8787, pin, log }) {
     const state = data("state.json", {});
     const mem = data("memories.json", { memories: [] });
     const feed = data("feed.json", { entries: [] }).entries.slice(0, 5);
+    // What he's really read on the Wire (and what didn't load), so he doesn't misremember it in chat.
+    const wire = data("feed.json", { entries: [] }).entries.filter((e) => e.kind === "noticed" && (/^Read "/.test(e.text) || /^Couldn't read it|The Wire was down/.test(e.text))).slice(0, 6).map((e) => e.text.slice(0, 160));
     const history = readJSON(HISTORY, []).slice(-16);
     const asleep = Boolean(state.asleep);
     const system = `${sheet(character)}
@@ -56,6 +58,7 @@ BACKGROUND (only bring this up if it fits; don't keep repeating it):
 ${asleep ? "You were asleep in the charging dock and their message just woke you up." : `You're ${state.doingWords || state.doing || "around"} at ${state.placeName || "the outpost"}.`}
 Mood: ${state.feeling || "fine"}. On your mind: ${state.thought || "nothing much"}
 Lately: ${feed.map((f) => f.text).join("; ")}
+On the Wire lately (only these happened; if a page didn't load, you didn't get to read it): ${wire.join("; ") || "nothing yet"}
 You remember: ${(mem.memories || []).sort((a, b) => b.strength - a.strength).slice(0, 8).map((m) => m.text).join("; ")}
 
 HOW TO CHAT

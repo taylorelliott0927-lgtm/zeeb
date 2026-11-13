@@ -1,4 +1,4 @@
-import { World, DEFAULT_SHIP } from "./world3d.js?v=24";
+import { World, DEFAULT_SHIP } from "./world3d.js?v=25";
 
 // ---------- where Zeeb's data lives ----------
 // On GitHub Pages (you.github.io/repo) we read the live files straight from the repo,
@@ -324,7 +324,7 @@ function renderMind(s, mem) {
   if (mind_interests?.topics?.length) {
     box.append(el("h4", null, "Interests"));
     const ul = el("ul", "list");
-    for (const t of mind_interests.topics.slice(0, 8)) {
+    for (const t of mind_interests.topics.slice(0, 25)) {
       const li = el("li", null, t.name);
       if (t.obsession) li.append(el("span", "badge obsessed", "obsessed"));
       ul.append(li);

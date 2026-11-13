@@ -1,7 +1,7 @@
 // Rustwell Outpost in 3D. Zeeb's body runs here in your browser every frame;
 // his decisions arrive from the brain every few minutes.
-import { Geo, M4, Node, Renderer } from "./engine.js?v=24";
-import { loadGLB } from "./glb.js?v=24";
+import { Geo, M4, Node, Renderer } from "./engine.js?v=25";
+import { loadGLB } from "./glb.js?v=25";
 
 export const PLACES = {
   hangar: { name: "Hangar Bay 3", x: 0, z: 0 },

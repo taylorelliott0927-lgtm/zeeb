@@ -10,7 +10,7 @@ import { PC_DIR, ROOT, git, gpuBusy, loadSettings, ollamaInfo, saveSettings } fr
 const S = loadSettings();
 const OLLAMA_URL = S.OLLAMA_URL || "http://127.0.0.1:11434";
 const MODEL = S.OLLAMA_MODEL || "qwen2.5:3b";
-const EVERY_MIN = Math.max(2, Number(S.PC_INTERVAL_MINUTES || 5));
+const EVERY_MIN = Math.max(2, Number(S.PC_INTERVAL_MINUTES || 3));
 const GAME_GPU = Number(S.GAME_GPU_PERCENT || 40);
 const GAME_MEM = Number(S.GAME_GPU_MEMORY_MB || 2600);
 const LOG = path.join(PC_DIR, "zeeb-pc.log");

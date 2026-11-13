@@ -809,6 +809,17 @@ function save() {
   state.clock = { day: clock.day, time: clock.label, hour: clock.hour, minute: clock.minute };
   state.townDayMinutes = Number(process.env.TOWN_DAY_MINUTES || 180);
   state.placeName = PLACES[state.place]?.name;
+  // Everything he's said out loud or thought (the bubbles over his head), kept so it can be read back later.
+  state.said = state.said || [];
+  const said = (text, kind, at) => {
+    text = String(text || "").trim();
+    if (!text || state.said.slice(0, 12).some((x) => x.text === text)) return;
+    state.said.unshift({ text, kind, at: at || nowISO, town: `day ${clock.day} ${clock.label}`, place: PLACES[state.place]?.name || "" });
+  };
+  for (const t of [...(state.thoughts || [])].reverse()) said(t.text, "think", t.at);
+  said(state.thought, "think");
+  said(state.say, "say");
+  state.said = state.said.slice(0, 150);
   feed.entries = feed.entries.slice(0, FEED_KEEP);
   writeJSON("state.json", state);
   writeJSON("feed.json", feed);

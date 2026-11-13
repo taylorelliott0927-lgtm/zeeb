@@ -133,3 +133,7 @@ h1 { margin: 0; font-size: 20px; letter-spacing: 0.02em; }
 .pop-credits { color: #ffd34d; }
 .pop-spend { color: #ff8a7a; }
 .pop-part { color: #7ff0ff; font-size: 13px; }
+.bubble.think { background: #e9e4f5; color: #3a3350; font-style: italic; border-radius: 18px; }
+.bubble.think::after { border-top-color: #e9e4f5; }
+.bubble.event { background: #2a2433; color: #f1e7da; font-size: 12px; }
+.bubble.event::after { border-top-color: #2a2433; }

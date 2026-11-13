@@ -366,6 +366,19 @@ export class World {
     this.lampOut = s.lampOutUntil && Date.now() < Date.parse(s.lampOutUntil);
   }
 
+  setBubbleLines(state, feedEntries) {
+    const lines = [];
+    const fresh = (iso, mins) => iso && Date.now() - Date.parse(iso) < mins * 60000;
+    if (state.say) lines.push({ text: state.say, kind: "say" });
+    for (const t of (state.thoughts || []).slice(0, 2)) if (fresh(t.at, 45)) lines.push({ text: t.text, kind: "think" });
+    if (!lines.some((l) => l.kind === "think") && state.thought) lines.push({ text: state.thought, kind: "think" });
+    for (const e of (feedEntries || []).slice(0, 8)) {
+      if (!fresh(e.at, 20) || e.who === "friend") continue;
+      if (e.kind === "noticed" || e.kind === "felt") lines.push({ text: e.text, kind: "event" });
+    }
+    this.bubbleLines = lines.slice(0, 6);
+  }
+
   setExtras({ shopOpen, gamesCount }) {
     this.booth.visible = Boolean(shopOpen);
     this.arcade.visible = gamesCount > 0;
@@ -790,7 +803,16 @@ export class World {
       if (bt && bq) { this.buddyBubble.textContent = bt; this.buddyBubble.style.display = ""; this.buddyBubble.style.transform = `translate(${bq.x}px, ${bq.y}px) translate(-50%, -100%)`; }
       else this.buddyBubble.style.display = "none";
     } else this.buddyBubble.style.display = "none";
-    const text = whistled ? "bweep? oh, hi!" : s.asleep ? "zzz" : s.say || "";
+    // The bubble cycles through what he just said, what he's thinking, and what just happened to him.
+    let line = null;
+    if (whistled) line = { text: "bweep? oh, hi!", kind: "say" };
+    else if (s.asleep) line = { text: "zzz", kind: "say" };
+    else {
+      const lines = this.bubbleLines || [];
+      if (lines.length) line = lines[Math.floor(this.t / 7) % lines.length];
+    }
+    const text = line?.text || "";
+    this.bubble.className = `bubble ${line?.kind || "say"}`;
     const bp = this.r.project([this.zeeb.pos[0], this.zeeb.pos[1] + 1.5, this.zeeb.pos[2]]);
     if (text && bp) {
       this.bubble.textContent = text;

@@ -448,6 +448,7 @@ async function refresh() {
   if (fr) { world?.setFriend(fr); renderFriend(fr); }
   renderStats(s);
   renderFeed(feed?.entries || []);
+  world?.setBubbleLines(s, feed?.entries || []);
   $("status").textContent = `last heartbeat ${ago(s.updatedAt || new Date(s.lastTick).toISOString())}`;
 }
 

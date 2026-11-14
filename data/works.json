@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 7",
-    "progress": 76,
-    "version": 14,
-    "lastChange": "I double-check the connections again, using my tape measure. The cables are perfectly sized for the heat shield and main ignition. (used Sprocket, a cracked navigation chip)",
+    "progress": 85,
+    "version": 15,
+    "lastChange": "I double-check the connections again, using my tape measure. The cables are perfectly sized for the heat shield and main ignition. (used Mabel, a bent stabiliser fin)",
     "log": [
+      {
+        "version": 15,
+        "change": "I double-check the connections again, using my tape measure. The cables are perfectly sized for the heat shield and main ignition. (used Mabel, a bent stabiliser fin)",
+        "progress": 85,
+        "at": "2026-11-14T07:12:57.537Z"
+      },
       {
         "version": 14,
         "change": "I double-check the connections again, using my tape measure. The cables are perfectly sized for the heat shield and main ignition. (used Sprocket, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "I carefully align the heat-resistant hose with the metal surfaces, ensuring the perfect fit. Then I measure the length and thickness again to make sure the duct seal will fit securely.",
         "progress": 77,
         "at": "2026-11-13T20:26:58.490Z"
-      },
-      {
-        "version": 18,
-        "change": "tinkered with it",
-        "progress": 75,
-        "at": "2026-11-13T20:23:58.508Z"
       }
     ],
     "launched": [
@@ -1055,7 +1055,7 @@
         }
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Tilly",
@@ -1086,6 +1086,11 @@
         "name": "Sprocket",
         "what": "a cracked navigation chip",
         "version": 14
+      },
+      {
+        "name": "Mabel",
+        "what": "a bent stabiliser fin",
+        "version": 15
       }
     ],
     "design": {
@@ -1346,11 +1351,6 @@
     {
       "name": "Sprocket",
       "what": "a scorched heat tile",
-      "at": "2026-11-14T07:06:57.420Z"
-    },
-    {
-      "name": "Mabel",
-      "what": "a bent stabiliser fin",
       "at": "2026-11-14T07:06:57.420Z"
     }
   ],

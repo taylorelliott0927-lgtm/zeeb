@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 8",
-    "progress": 36,
-    "version": 13,
-    "lastChange": "I carefully inspect the Little Dart Mk 7 for any last-minute adjustments before the next phase of construction. I make sure the duct seal is in perfect condition, and double-check the thermal manageme",
+    "progress": 44,
+    "version": 14,
+    "lastChange": "I carefully inspect the Little Dart Mk 7 one last time, ensuring all its systems are running smoothly. I double-check the duct seal for any imperfections and test the thermal management systems under  (used Brakk, a coil of copper wire)",
     "log": [
+      {
+        "version": 14,
+        "change": "I carefully inspect the Little Dart Mk 7 one last time, ensuring all its systems are running smoothly. I double-check the duct seal for any imperfections and test the thermal management systems under  (used Brakk, a coil of copper wire)",
+        "progress": 44,
+        "at": "2026-11-14T15:27:58.918Z"
+      },
       {
         "version": 13,
         "change": "I carefully inspect the Little Dart Mk 7 for any last-minute adjustments before the next phase of construction. I make sure the duct seal is in perfect condition, and double-check the thermal manageme",
@@ -238,12 +244,6 @@
         "change": "I use a precision tool to measure the cables again, taking extra care to ensure they are the perfect fit.",
         "progress": 71,
         "at": "2026-11-13T23:09:02.304Z"
-      },
-      {
-        "version": 9,
-        "change": "I use the precision tool to measure the cables again, taking extra care to ensure they are the perfect fit.",
-        "progress": 69,
-        "at": "2026-11-13T23:06:02.337Z"
       }
     ],
     "launched": [
@@ -1280,8 +1280,14 @@
         }
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Brakk",
+        "what": "a coil of copper wire",
+        "version": 14
+      }
+    ],
     "design": {
       "description": "The Little Dart Mk 8 retains its sleek design with straight wings for aerodynamics and a protective bubble cockpit for safety and visibility.",
       "parts": [
@@ -1564,14 +1570,7 @@
     {
       "name": "Rusty Jr",
       "what": "a mystery box that hums",
-      "at": "2026-11-14T15:24:58.898Z",
-      "carrying": true
-    },
-    {
-      "name": "Brakk",
-      "what": "a coil of copper wire",
-      "at": "2026-11-14T15:24:58.898Z",
-      "carrying": true
+      "at": "2026-11-14T15:24:58.898Z"
     }
   ],
   "reads": [

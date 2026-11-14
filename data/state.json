@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794695837947,
+  "lastTick": 1794696438175,
   "asleep": false,
-  "place": "ridge",
-  "action": "stargaze",
-  "doing": "lying on the dune ridge counting stars",
-  "actionStartedAt": "2026-11-14T22:37:17.947Z",
-  "actionMinutes": 45,
-  "thought": "The stars look like floating solder sparks tonight. Maybe one day the Little Dart will be up there too.",
-  "feeling": "wondering and calm",
-  "say": "boop-bop-bwee... clear sky tonight! *bweep*",
-  "mood": 0.339,
-  "energy": 0.483,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-14T22:47:18.175Z",
+  "actionMinutes": 240,
+  "thought": "My dish is drooping. Time to head back to Hangar Bay 3 and plug in before my visor goes completely dark.",
+  "feeling": "sleepy, low power, hopeful",
+  "say": "Powering down for a recharge... *bweep*",
+  "mood": 0.261,
+  "energy": 0.52,
   "needs": {
     "charge": 0,
-    "oil": 0.373,
-    "curiosity": 0.286,
-    "company": 0.207,
-    "craft": 0.175
+    "oil": 0.413,
+    "curiosity": 0.366,
+    "company": 0.26,
+    "craft": 0.242
   },
   "credits": 17,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-14T22:47:18.175Z"
+    },
     {
       "id": "stargaze",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-14T20:26:59.489Z"
-    },
-    {
-      "id": "follow_link",
-      "detail": "2",
-      "at": "2026-11-14T20:16:45.100Z"
     }
   ],
   "wants": [
@@ -543,42 +543,43 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-14T22:37:17.947Z",
+  "lettersCheckedAt": "2026-11-14T22:47:18.175Z",
   "weather": {
     "kind": "hazy",
     "temp": 20,
-    "wind": 6,
+    "wind": 5,
     "mood": 0,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-14T22:17:18.014Z"
+    "at": "2026-11-14T22:47:18.418Z"
   },
   "sleepDay": 20,
   "lastReflectDay": 20,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-14T22:37:17.947Z",
+  "updatedAt": "2026-11-14T22:47:18.175Z",
   "clock": {
     "day": 21,
-    "time": "00:59",
-    "hour": 0,
-    "minute": 59
+    "time": "02:19",
+    "hour": 2,
+    "minute": 19
   },
   "townDayMinutes": 180,
-  "placeName": "the dune ridge",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "stargaze",
-    "since": "2026-11-14T22:37:17.947Z"
+    "action": "nap_dock",
+    "since": "2026-11-14T22:47:18.175Z"
   },
-  "busyUntil": "2026-11-14T22:42:55.447Z",
-  "busyUntilTown": "01:44",
+  "busyUntil": "2026-11-14T23:17:18.175Z",
+  "busyUntilTown": "06:19",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "pointing my brass dish at the desert sky",
+  "doingWords": "plugging into the charging dock to juice up my battery",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "look_up"
+    "droop",
+    "nod"
   ],
   "pops": {
     "at": "2026-11-14T22:37:17.947Z",
@@ -598,6 +599,10 @@
   },
   "thoughts": [
     {
+      "text": "My dish is drooping. Time to head back to Hangar Bay 3 and plug in before my visor goes completely dark.",
+      "at": "2026-11-14T22:47:18.175Z"
+    },
+    {
       "text": "The stars look like floating solder sparks tonight. Maybe one day the Little Dart will be up there too.",
       "at": "2026-11-14T22:37:17.947Z"
     },
@@ -616,17 +621,14 @@
     {
       "text": "my company is bugging me most right now.",
       "at": "2026-11-14T21:47:09.819Z"
-    },
-    {
-      "text": "the Little Dart is looking proper sleek with those thermal panels. just need a quick top-up before I start designing the next piece.",
-      "at": "2026-11-14T21:37:09.733Z"
     }
   ],
-  "sayAt": "2026-11-14T22:37:17.947Z",
+  "sayAt": "2026-11-14T22:47:18.175Z",
   "today": {
     "day": 21,
     "counts": {
-      "stargaze": 1
+      "stargaze": 1,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -651,7 +653,7 @@
     "chat_patrons": "2026-11-14T21:47:09.819Z",
     "busk": "2026-11-14T00:53:15.072Z",
     "cantina_band": "2026-11-14T00:43:15.012Z",
-    "nap_dock": "2026-11-14T21:37:09.733Z",
+    "nap_dock": "2026-11-14T22:47:18.175Z",
     "watch_suns": "2026-11-14T03:58:46.207Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -690,6 +692,20 @@
     "at": "2026-11-14T20:16:45.100Z"
   },
   "said": [
+    {
+      "text": "Powering down for a recharge... *bweep*",
+      "kind": "say",
+      "at": "2026-11-14T22:47:18.175Z",
+      "town": "day 21 02:19",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "My dish is drooping. Time to head back to Hangar Bay 3 and plug in before my visor goes completely dark.",
+      "kind": "think",
+      "at": "2026-11-14T22:47:18.175Z",
+      "town": "day 21 02:19",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "boop-bop-bwee... clear sky tonight! *bweep*",
       "kind": "say",
@@ -1725,20 +1741,6 @@
       "at": "2026-11-14T14:45:58.815Z",
       "town": "day 18 10:09",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "The Salt Flats Hanger design is nearly complete. The Red Mesa could use something interesting too.",
-      "kind": "think",
-      "at": "2026-11-14T14:45:58.815Z",
-      "town": "day 18 10:09",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "I need to come up with a few more details for the Salt Flats Hanger and the new companion bot",
-      "kind": "say",
-      "at": "2026-11-14T14:42:58.820Z",
-      "town": "day 18 09:45",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -1749,7 +1751,7 @@
     "at": "2026-11-14T18:15:59.376Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-14T22:37:17.947Z",
+  "feedArchivedAt": "2026-11-14T22:47:18.175Z",
   "plans": [],
   "searches": [
     {

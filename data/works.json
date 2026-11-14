@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 7",
-    "progress": 94,
-    "version": 17,
-    "lastChange": "tinkered with it",
+    "name": "the Little Dart Mk 8",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 18,
+        "change": "I continue sketching out the Salt Flats Hanger, focusing on ventilation and structural integrity, ensuring the Little Dart's performance is optimal under various conditions. (used Mabel, half a thruster nozzle)",
+        "progress": 100,
+        "at": "2026-11-14T09:21:58.119Z"
+      },
       {
         "version": 17,
         "change": "tinkered with it",
@@ -238,12 +244,6 @@
         "change": "I cross-reference the dimensions of the heat-resistant hose and duct seal with the metal surfaces one last time, ensuring the perfect fit before I secure it in place",
         "progress": 87,
         "at": "2026-11-13T20:35:58.535Z"
-      },
-      {
-        "version": 21,
-        "change": "I measure the length and thickness again to make sure the duct seal will fit securely, aligning the heat-resistant hose with the metal surfaces once more",
-        "progress": 84,
-        "at": "2026-11-13T20:32:58.489Z"
       }
     ],
     "launched": [
@@ -1053,224 +1053,236 @@
           "at": "2026-11-14T03:04:44.020Z",
           "day": 14
         }
-      }
-    ],
-    "partsUsed": 8,
-    "parts": [
-      {
-        "name": "Tilly",
-        "what": "a cockpit switch that still clicks",
-        "version": 9
       },
       {
-        "name": "Mabel",
-        "what": "a cracked navigation chip",
-        "version": 10
-      },
-      {
-        "name": "Brakk",
-        "what": "half a thruster nozzle",
-        "version": 11
-      },
-      {
-        "name": "Brakk",
-        "what": "a dented fuel cell",
-        "version": 12
-      },
-      {
-        "name": "Bix",
-        "what": "a bent stabiliser fin",
-        "version": 13
-      },
-      {
-        "name": "Sprocket",
-        "what": "a cracked navigation chip",
-        "version": 14
-      },
-      {
-        "name": "Mabel",
-        "what": "a bent stabiliser fin",
-        "version": 15
-      },
-      {
-        "name": "Sprocket",
-        "what": "a scorched heat tile",
-        "version": 16
-      }
-    ],
-    "design": {
-      "description": "The Little Dart Mk 7 maintains its sleek design with rounded corners and a bubble cockpit, enhanced by streaking stripes.",
-      "parts": [
-        {
-          "shape": "cylinder",
-          "w": 0.65,
-          "h": 2.6,
-          "d": 0.65,
-          "x": 0,
-          "y": 0.5,
-          "z": 0,
-          "color": "#FFD700",
-          "glow": 0,
-          "turn": "forward"
-        },
-        {
-          "shape": "cone",
-          "w": 0.65,
-          "h": 0.91,
-          "d": 0.65,
-          "x": 0,
-          "y": 0.5,
-          "z": 1.76,
-          "color": "#FFD700",
-          "glow": 0,
-          "turn": "forward"
-        },
-        {
-          "shape": "ball",
-          "w": 0.39,
-          "h": 0.33,
-          "d": 0.73,
-          "x": 0,
-          "y": 0.79,
-          "z": 0.45,
-          "color": "#87CEEB",
-          "glow": 0.5,
-          "turn": "up"
-        },
-        {
-          "shape": "box",
-          "w": 0.98,
-          "h": 0.07,
-          "d": 0.83,
-          "x": -0.81,
-          "y": 0.42,
-          "z": -0.51,
-          "color": "#00BFFF",
-          "glow": 0,
-          "turn": "up",
-          "rot": [
-            0,
-            27.149681697783162,
-            0
-          ]
-        },
-        {
-          "shape": "box",
-          "w": 0.06,
-          "h": 0.12,
-          "d": 0.42,
-          "x": -1.3,
-          "y": 0.44,
-          "z": -0.76,
-          "color": "#FFD700",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "box",
-          "w": 0.98,
-          "h": 0.07,
-          "d": 0.83,
-          "x": 0.81,
-          "y": 0.42,
-          "z": -0.51,
-          "color": "#00BFFF",
-          "glow": 0,
-          "turn": "up",
-          "rot": [
-            0,
-            -27.149681697783162,
-            0
-          ]
-        },
-        {
-          "shape": "box",
-          "w": 0.06,
-          "h": 0.12,
-          "d": 0.42,
-          "x": 1.3,
-          "y": 0.44,
-          "z": -0.76,
-          "color": "#FFD700",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.32,
-          "h": 0.55,
-          "d": 0.32,
-          "x": -0.29,
-          "y": 0.5,
-          "z": -1.47,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "back"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.22,
-          "h": 0.06,
-          "d": 0.22,
-          "x": -0.29,
-          "y": 0.5,
-          "z": -1.78,
-          "color": "#FFFFFF",
-          "glow": 1,
-          "turn": "back"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.32,
-          "h": 0.55,
-          "d": 0.32,
-          "x": 0.29,
-          "y": 0.5,
-          "z": -1.47,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "back"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.22,
-          "h": 0.06,
-          "d": 0.22,
-          "x": 0.29,
-          "y": 0.5,
-          "z": -1.78,
-          "color": "#FFFFFF",
-          "glow": 1,
-          "turn": "back"
-        },
-        {
-          "shape": "box",
-          "w": 0.06,
-          "h": 0.5,
-          "d": 0.65,
-          "x": 0,
-          "y": 1.05,
-          "z": -0.94,
-          "color": "#00BFFF",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "box",
-          "w": 0.67,
-          "h": 0.12,
-          "d": 1.82,
-          "x": 0,
-          "y": 0.5,
-          "z": 0,
-          "color": "#00BFFF",
-          "glow": 0,
-          "turn": "up"
+        "name": "the Little Dart Mk 7",
+        "day": 16,
+        "partsUsed": 9,
+        "parts": [
+          {
+            "name": "Tilly",
+            "what": "a cockpit switch that still clicks",
+            "version": 9
+          },
+          {
+            "name": "Mabel",
+            "what": "a cracked navigation chip",
+            "version": 10
+          },
+          {
+            "name": "Brakk",
+            "what": "half a thruster nozzle",
+            "version": 11
+          },
+          {
+            "name": "Brakk",
+            "what": "a dented fuel cell",
+            "version": 12
+          },
+          {
+            "name": "Bix",
+            "what": "a bent stabiliser fin",
+            "version": 13
+          },
+          {
+            "name": "Sprocket",
+            "what": "a cracked navigation chip",
+            "version": 14
+          },
+          {
+            "name": "Mabel",
+            "what": "a bent stabiliser fin",
+            "version": 15
+          },
+          {
+            "name": "Sprocket",
+            "what": "a scorched heat tile",
+            "version": 16
+          },
+          {
+            "name": "Mabel",
+            "what": "half a thruster nozzle",
+            "version": 18
+          }
+        ],
+        "design": {
+          "description": "The Little Dart Mk 7 maintains its sleek design with rounded corners and a bubble cockpit, enhanced by streaking stripes.",
+          "parts": [
+            {
+              "shape": "cylinder",
+              "w": 0.65,
+              "h": 2.6,
+              "d": 0.65,
+              "x": 0,
+              "y": 0.5,
+              "z": 0,
+              "color": "#FFD700",
+              "glow": 0,
+              "turn": "forward"
+            },
+            {
+              "shape": "cone",
+              "w": 0.65,
+              "h": 0.91,
+              "d": 0.65,
+              "x": 0,
+              "y": 0.5,
+              "z": 1.76,
+              "color": "#FFD700",
+              "glow": 0,
+              "turn": "forward"
+            },
+            {
+              "shape": "ball",
+              "w": 0.39,
+              "h": 0.33,
+              "d": 0.73,
+              "x": 0,
+              "y": 0.79,
+              "z": 0.45,
+              "color": "#87CEEB",
+              "glow": 0.5,
+              "turn": "up"
+            },
+            {
+              "shape": "box",
+              "w": 0.98,
+              "h": 0.07,
+              "d": 0.83,
+              "x": -0.81,
+              "y": 0.42,
+              "z": -0.51,
+              "color": "#00BFFF",
+              "glow": 0,
+              "turn": "up",
+              "rot": [
+                0,
+                27.149681697783162,
+                0
+              ]
+            },
+            {
+              "shape": "box",
+              "w": 0.06,
+              "h": 0.12,
+              "d": 0.42,
+              "x": -1.3,
+              "y": 0.44,
+              "z": -0.76,
+              "color": "#FFD700",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "box",
+              "w": 0.98,
+              "h": 0.07,
+              "d": 0.83,
+              "x": 0.81,
+              "y": 0.42,
+              "z": -0.51,
+              "color": "#00BFFF",
+              "glow": 0,
+              "turn": "up",
+              "rot": [
+                0,
+                -27.149681697783162,
+                0
+              ]
+            },
+            {
+              "shape": "box",
+              "w": 0.06,
+              "h": 0.12,
+              "d": 0.42,
+              "x": 1.3,
+              "y": 0.44,
+              "z": -0.76,
+              "color": "#FFD700",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.32,
+              "h": 0.55,
+              "d": 0.32,
+              "x": -0.29,
+              "y": 0.5,
+              "z": -1.47,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "back"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.22,
+              "h": 0.06,
+              "d": 0.22,
+              "x": -0.29,
+              "y": 0.5,
+              "z": -1.78,
+              "color": "#FFFFFF",
+              "glow": 1,
+              "turn": "back"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.32,
+              "h": 0.55,
+              "d": 0.32,
+              "x": 0.29,
+              "y": 0.5,
+              "z": -1.47,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "back"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.22,
+              "h": 0.06,
+              "d": 0.22,
+              "x": 0.29,
+              "y": 0.5,
+              "z": -1.78,
+              "color": "#FFFFFF",
+              "glow": 1,
+              "turn": "back"
+            },
+            {
+              "shape": "box",
+              "w": 0.06,
+              "h": 0.5,
+              "d": 0.65,
+              "x": 0,
+              "y": 1.05,
+              "z": -0.94,
+              "color": "#00BFFF",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "box",
+              "w": 0.67,
+              "h": 0.12,
+              "d": 1.82,
+              "x": 0,
+              "y": 0.5,
+              "z": 0,
+              "color": "#00BFFF",
+              "glow": 0,
+              "turn": "up"
+            }
+          ],
+          "at": "2026-11-14T09:18:58.112Z",
+          "day": 16
         }
-      ],
-      "at": "2026-11-14T09:18:58.112Z",
-      "day": 16
-    }
+      }
+    ],
+    "partsUsed": 0,
+    "parts": [],
+    "design": null
   },
   "tunes": [
     {
@@ -1356,11 +1368,6 @@
     {
       "name": "Tok",
       "what": "a tiny gyroscope",
-      "at": "2026-11-14T09:12:57.943Z"
-    },
-    {
-      "name": "Mabel",
-      "what": "half a thruster nozzle",
       "at": "2026-11-14T09:12:57.943Z"
     }
   ],

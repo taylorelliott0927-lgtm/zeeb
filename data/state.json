@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794620609889,
+  "lastTick": 1794621209419,
   "asleep": false,
-  "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-14T01:43:29.889Z",
-  "actionMinutes": 45,
-  "thought": "my meter is dropping into the red. time to top up before I spark out completely.",
-  "feeling": "sleepy and slightly twitchy",
-  "say": "zzzt... low power mode...",
-  "mood": 0.273,
-  "energy": 0.128,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-14T01:53:29.419Z",
+  "actionMinutes": 20,
+  "thought": "just a quick cup of depot oil to clear out the shoulder rust. then right back to the Little Dart.",
+  "feeling": "a bit low on juice but hopeful",
+  "say": "fill her up, pump bot!",
+  "mood": 0.299,
+  "energy": 0.368,
   "needs": {
-    "charge": 0.168,
-    "oil": 0.321,
-    "curiosity": 0.486,
-    "company": 0.192,
-    "craft": 0.134
+    "charge": 0.215,
+    "oil": 0,
+    "curiosity": 0.566,
+    "company": 0.125,
+    "craft": 0.201
   },
-  "credits": 8,
+  "credits": 7,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-14T01:53:29.419Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-14T00:03:00.812Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-13T23:53:01.178Z"
     }
   ],
   "wants": [
@@ -125,6 +125,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 18,
+      "subject": "quick oil stop",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/18",
+      "at": "2026-11-14T01:53:29.419Z"
+    },
     {
       "id": 17,
       "subject": "quick oil stop",
@@ -211,12 +217,6 @@
     }
   ],
   "creatorThread": [
-    {
-      "from": "creator",
-      "chat": true,
-      "text": "https://starwars.fandom.com/wiki/Podracing check it out on the web",
-      "at": "2026-11-13T01:58:53.629Z"
-    },
     {
       "from": "zeeb",
       "chat": true,
@@ -478,6 +478,14 @@
       "text": "Hey creator! Just stepping away from the Little Dart for five minutes to get some oil in my joints. They were clicking so loud the scrap pile thought I was talking to it. Back to the hangar right after!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/17",
       "at": "2026-11-13T23:53:01.178Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 18,
+      "subject": "quick oil stop",
+      "text": "Hey creator! Just rolling over to the depot for a splash of oil. My shoulder joints were clicking like a box of spare nuts. Be right back in the hangar building more of the Little Dart!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/18",
+      "at": "2026-11-14T01:53:29.419Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -486,7 +494,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-14T01:43:29.889Z",
+  "lettersCheckedAt": "2026-11-14T01:53:29.419Z",
   "weather": {
     "kind": "clear",
     "temp": 20,
@@ -498,39 +506,39 @@
   "sleepDay": 12,
   "lastReflectDay": 12,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-14T01:43:29.889Z",
+  "updatedAt": "2026-11-14T01:53:29.419Z",
   "clock": {
     "day": 14,
-    "time": "01:49",
-    "hour": 1,
-    "minute": 49
+    "time": "03:09",
+    "hour": 3,
+    "minute": 9
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-14T01:43:29.889Z"
+    "action": "drink_oil",
+    "since": "2026-11-14T01:53:29.419Z"
   },
-  "busyUntil": "2026-11-14T01:49:07.389Z",
-  "busyUntilTown": "02:34",
+  "busyUntil": "2026-11-14T01:55:59.419Z",
+  "busyUntilTown": "03:29",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T01:07:19.664Z",
-  "doingWords": "plugging into the charging dock, letting the battery drink up",
+  "doingWords": "rolling down to the depot for a quick shot of fuel",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-13T10:55:38.719Z",
   "body": [
-    "droop",
-    "shake"
+    "shake",
+    "nod"
   ],
   "pops": {
-    "at": "2026-11-14T00:53:15.072Z",
+    "at": "2026-11-14T01:53:29.419Z",
     "items": [
       {
-        "text": "+1 in tips",
-        "kind": "credits",
-        "at": "2026-11-14T00:53:15.072Z"
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-14T01:53:29.419Z"
       }
     ]
   },
@@ -541,6 +549,10 @@
     "at": "2026-11-14T01:07:19.664Z"
   },
   "thoughts": [
+    {
+      "text": "just a quick cup of depot oil to clear out the shoulder rust. then right back to the Little Dart.",
+      "at": "2026-11-14T01:53:29.419Z"
+    },
     {
       "text": "my meter is dropping into the red. time to top up before I spark out completely.",
       "at": "2026-11-14T01:43:29.889Z"
@@ -560,24 +572,21 @@
     {
       "text": "i bet if i wired up an old thruster coil to the house band's bass horn they would finally hit warp speed.",
       "at": "2026-11-14T01:03:30.092Z"
-    },
-    {
-      "text": "i wonder if anyone here has ever actually looked at the stars instead of just their mugs, tapping my rhythm nice and steady.",
-      "at": "2026-11-14T01:03:14.650Z"
     }
   ],
-  "sayAt": "2026-11-14T01:43:29.889Z",
+  "sayAt": "2026-11-14T01:53:29.419Z",
   "today": {
     "day": 14,
     "counts": {
       "browse_wire": 1,
-      "nap_dock": 1
+      "nap_dock": 1,
+      "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-14T01:23:29.625Z",
     "read_news": "2026-11-13T22:35:59.117Z",
-    "drink_oil": "2026-11-14T00:23:14.643Z",
+    "drink_oil": "2026-11-14T01:53:29.419Z",
     "follow_link": "2026-11-13T02:50:40.321Z",
     "scavenge": "2026-11-13T20:59:58.619Z",
     "fix_job": "2026-11-13T15:53:32.760Z",
@@ -630,6 +639,20 @@
     "at": "2026-11-14T01:33:30.163Z"
   },
   "said": [
+    {
+      "text": "fill her up, pump bot!",
+      "kind": "say",
+      "at": "2026-11-14T01:53:29.419Z",
+      "town": "day 14 03:09",
+      "place": "the fuel depot"
+    },
+    {
+      "text": "just a quick cup of depot oil to clear out the shoulder rust. then right back to the Little Dart.",
+      "kind": "think",
+      "at": "2026-11-14T01:53:29.419Z",
+      "town": "day 14 03:09",
+      "place": "the fuel depot"
+    },
     {
       "text": "zzzt... low power mode...",
       "kind": "say",
@@ -1665,20 +1688,6 @@
       "at": "2026-11-13T17:39:38.944Z",
       "town": "day 11 09:18",
       "place": "the junk market"
-    },
-    {
-      "text": "Looking forward to seeing what's new in tech.",
-      "kind": "say",
-      "at": "2026-11-13T17:36:38.922Z",
-      "town": "day 11 08:54",
-      "place": "the comms tower"
-    },
-    {
-      "text": "I'll keep track of this, maybe if I find a celestial pattern I can incorporate into the Little Dart's design.",
-      "kind": "think",
-      "at": "2026-11-13T17:36:38.922Z",
-      "town": "day 11 08:54",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -1689,7 +1698,7 @@
     "at": "2026-11-13T22:20:59.002Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-14T01:43:29.889Z",
+  "feedArchivedAt": "2026-11-14T01:53:29.419Z",
   "plans": [],
   "searches": [
     {

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794667918817,
+  "lastTick": 1794668098819,
   "asleep": false,
   "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-14T14:51:58.817Z",
+  "action": "test_flight",
+  "doing": "taking his ship out for a test flight",
+  "actionStartedAt": "2026-11-14T14:54:58.819Z",
   "actionMinutes": 60,
-  "thought": "I’ve double-checked the duct seal yet again, making sure it’s the perfect fit and durability. Now, I’m testing its heat resistance with a small heater.",
-  "feeling": "I am vigilant about these details, ensuring my little ship is as robust as it can be.",
-  "say": "",
-  "mood": 0.046,
-  "energy": 0.101,
+  "thought": "The Little Dart Mk 7 is nearly complete, and a test flight will help confirm its stability and performance in flight.",
+  "feeling": "a bit shaken but determined",
+  "say": "We'll get this baby flying, one tweak at a time.",
+  "mood": 0.129,
+  "energy": 0.007,
   "needs": {
-    "charge": 0.106,
+    "charge": 0.2,
     "oil": 1,
-    "curiosity": 0.024,
+    "curiosity": 0,
     "company": 1,
     "craft": 0
   },
   "credits": 16,
   "recent": [
+    {
+      "id": "test_flight",
+      "detail": "I carefully inspect the Little Dart Mk 7 for any last-minute adjustments before ",
+      "at": "2026-11-14T14:54:58.819Z"
+    },
     {
       "id": "work_dart",
       "detail": "Once satisfied with the duct seal’s performance under heat, I carefully clean th",
@@ -75,11 +80,6 @@
       "id": "work_project",
       "detail": "I carefully examine the duct seal again, making sure it fits perfectly and is he",
       "at": "2026-11-14T13:57:58.650Z"
-    },
-    {
-      "id": "build_thing",
-      "detail": "",
-      "at": "2026-11-14T13:54:58.666Z"
     }
   ],
   "wants": [
@@ -521,7 +521,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-14T14:51:58.817Z",
+  "lettersCheckedAt": "2026-11-14T14:54:58.819Z",
   "weather": {
     "kind": "clear",
     "temp": 28,
@@ -533,31 +533,29 @@
   "sleepDay": 17,
   "lastReflectDay": 17,
   "brain": "your PC (qwen2.5:3b)",
-  "updatedAt": "2026-11-14T14:51:58.817Z",
+  "updatedAt": "2026-11-14T14:54:58.819Z",
   "clock": {
     "day": 18,
-    "time": "10:57",
-    "hour": 10,
-    "minute": 57
+    "time": "11:21",
+    "hour": 11,
+    "minute": 21
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-14T14:51:58.817Z"
+    "action": "test_flight",
+    "since": "2026-11-14T14:54:58.819Z"
   },
-  "busyUntil": "2026-11-14T14:59:28.817Z",
-  "busyUntilTown": "11:57",
+  "busyUntil": "2026-11-14T15:02:28.819Z",
+  "busyUntilTown": "12:21",
   "runner": "pc",
   "model": "gemini-3.5-flash-lite",
-  "pcBrainAt": "2026-11-14T14:51:58.817Z",
-  "doingWords": "carefully examine the duct seal for the perfect fit and durability, using my welding torch to inspect any rough spots, then test its heat re",
+  "pcBrainAt": "2026-11-14T14:54:58.819Z",
+  "doingWords": "preparing for the test flight of the Little Dart Mk 7",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "wave"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-14T14:00:58.692Z",
     "items": [
@@ -575,6 +573,10 @@
     "at": "2026-11-14T14:00:58.692Z"
   },
   "thoughts": [
+    {
+      "text": "The Little Dart Mk 7 is nearly complete, and a test flight will help confirm its stability and performance in flight.",
+      "at": "2026-11-14T14:54:58.819Z"
+    },
     {
       "text": "I’ve double-checked the duct seal yet again, making sure it’s the perfect fit and durability. Now, I’m testing its heat resistance with a small heater.",
       "at": "2026-11-14T14:51:58.817Z"
@@ -594,13 +596,9 @@
     {
       "text": "The new flexible heat-resistant cables from McMaster-Carr might be the perfect fit for the Salt Flats Hanger and the new companion bot. I should start by sorting through the junk to see what I have for this.",
       "at": "2026-11-14T14:39:58.778Z"
-    },
-    {
-      "text": "I hope the new heat-resistant cables I found will make the Little Dart even better. I should check the duct seal again to make sure it’s not a weak point.",
-      "at": "2026-11-14T14:12:58.706Z"
     }
   ],
-  "sayAt": "2026-11-14T14:51:58.817Z",
+  "sayAt": "2026-11-14T14:54:58.819Z",
   "today": {
     "day": 18,
     "counts": {
@@ -608,7 +606,8 @@
       "work_project": 3,
       "build_thing": 4,
       "design_ship": 9,
-      "work_dart": 3
+      "work_dart": 3,
+      "test_flight": 1
     }
   },
   "lastDone": {
@@ -625,7 +624,7 @@
     "tend_shop": "2026-11-13T07:13:42.993Z",
     "craft_part": "2026-11-13T09:04:38.429Z",
     "wander": "2026-11-14T11:24:58.268Z",
-    "test_flight": "2026-11-14T13:24:58.598Z",
+    "test_flight": "2026-11-14T14:54:58.819Z",
     "design_ship": "2026-11-14T14:48:58.825Z",
     "send_signal": "2026-11-14T04:16:46.264Z",
     "stargaze": "2026-11-13T19:38:58.445Z",
@@ -671,6 +670,20 @@
     "at": "2026-11-14T10:48:58.150Z"
   },
   "said": [
+    {
+      "text": "We'll get this baby flying, one tweak at a time.",
+      "kind": "say",
+      "at": "2026-11-14T14:54:58.819Z",
+      "town": "day 18 11:21",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "The Little Dart Mk 7 is nearly complete, and a test flight will help confirm its stability and performance in flight.",
+      "kind": "think",
+      "at": "2026-11-14T14:54:58.819Z",
+      "town": "day 18 11:21",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "I’ve double-checked the duct seal yet again, making sure it’s the perfect fit and durability. Now, I’m testing its heat resistance with a small heater.",
       "kind": "think",
@@ -1706,31 +1719,17 @@
       "at": "2026-11-14T09:03:57.854Z",
       "town": "day 16 12:32",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "I need to keep tweaking this. More features, more space, gotta get it just right.",
-      "kind": "say",
-      "at": "2026-11-14T09:00:57.988Z",
-      "town": "day 16 12:08",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "The hanger needs more features and a different layout. The garage needs to be more spacious.",
-      "kind": "think",
-      "at": "2026-11-14T09:00:57.988Z",
-      "town": "day 16 12:08",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
-    "id": "fmwgfu0rq",
+    "id": "fmwgj1rlv",
     "ship": "the Little Dart Mk 7",
-    "outcome": "smooth",
-    "log": "The Little Dart soared through the air with a beauty and precision that had everyone at Rustwell Outpost on edge with pride. It’s a beautiful start to our little journey.",
-    "at": "2026-11-14T13:24:58.598Z",
+    "outcome": "sputter",
+    "log": "The Little Dart Mk 7 lifted off, but its engine struggled, sputtering and causing it to dip dangerously. I took it back to Hangar Bay 3 to make adjustments.",
+    "at": "2026-11-14T14:54:58.819Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-14T14:51:58.817Z",
+  "feedArchivedAt": "2026-11-14T14:54:58.819Z",
   "plans": [],
   "searches": [
     {

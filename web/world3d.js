@@ -458,7 +458,7 @@ export class World {
     const hex = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255);
     const parts = design?.parts?.length ? design.parts : DEFAULT_SHIP;
     root.children = [];
-    const pieces = parts.map((pt) => this.put(root, meshFor[pt.shape] || this.meshes.box, { pos: [pt.x, pt.y, pt.z], rot: turnRot[pt.turn] || [0, 0, 0], scale: [pt.w, pt.h, pt.d], color: hex(pt.color || "#cccccc"), emissive: pt.glow || 0 }));
+    const pieces = parts.map((pt) => this.put(root, meshFor[pt.shape] || this.meshes.box, { pos: [pt.x, pt.y, pt.z], rot: Array.isArray(pt.rot) ? pt.rot.map((v) => (Number(v) || 0) * Math.PI / 180) : turnRot[pt.turn] || [0, 0, 0], scale: [pt.w, pt.h, pt.d], color: hex(pt.color || "#cccccc"), emissive: pt.glow || 0 }));
     // where stash parts get bolted on: the default ship has hand-placed spots; his own designs get spots on top of each piece
     let slots = SHIP_SLOTS, tail = -1.05;
     if (design?.parts?.length) {
@@ -481,7 +481,7 @@ export class World {
     // newest is the main parked ship (the one that flies); the rest line up beside it, newest closest
     const older = launched.slice(0, -1).reverse();
     older.forEach((l, i) => {
-      const x = this.PARK.x + 3.4 * (i + 1), z = this.PARK.z + 2.4 * (i + 1);
+      const x = this.PARK.x + 4.6 * (i + 1), z = this.PARK.z + 3.4 * (i + 1);
       const ship = this.put(this.olderShips, null, { pos: this.at(x, z, 0.6), rot: [0, this.PARK.yaw, 0], scale: [1.3, 1.3, 1.3] });
       const b = this.shipBody(this.put(ship, null), l.design);
       const mounts = this.put(ship, null);
@@ -642,7 +642,8 @@ export class World {
       for (const pt of b.parts || []) {
         if (pt.model) { this.placeModel(g, pt); top = Math.max(top, (pt.y || 0) + (pt.height || 1)); continue; }
         const turn = { forward: [Math.PI / 2, 0, 0], back: [-Math.PI / 2, 0, 0], side: [0, 0, Math.PI / 2] }[pt.turn] || [0, 0, 0];
-        const n = this.put(g, meshFor[pt.shape] || this.meshes.box, { pos: [pt.x, pt.y, pt.z], rot: turn, scale: [pt.w, pt.h, pt.d], color: hex(pt.color || "#999999"), emissive: pt.glow || 0 });
+        const rot = Array.isArray(pt.rot) ? pt.rot.map((v) => (Number(v) || 0) * Math.PI / 180) : turn;
+        const n = this.put(g, meshFor[pt.shape] || this.meshes.box, { pos: [pt.x, pt.y, pt.z], rot, scale: [pt.w, pt.h, pt.d], color: hex(pt.color || "#999999"), emissive: pt.glow || 0 });
         if (pt.glow > 0.3) this.lights.push(n);
         if (pt.spin) this.spinners.push(n);
         top = Math.max(top, pt.y + pt.h / 2);

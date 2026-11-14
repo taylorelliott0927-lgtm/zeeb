@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794615794643,
+  "lastTick": 1794616394801,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "still sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-13T23:53:01.178Z",
-  "actionMinutes": 30,
-  "thought": "nothing beats a warm cup of heavy-grade to keep the clicks away *bweep*",
-  "feeling": "warm and well-lubricated",
-  "say": "ah, right to the gears",
-  "mood": 0.279,
-  "energy": 0.624,
+  "place": "cantina",
+  "action": "wander",
+  "doing": "wandering around the outpost",
+  "actionStartedAt": "2026-11-14T00:33:14.801Z",
+  "actionMinutes": 45,
+  "thought": "the desert air is cool enough that my treads don't whine. maybe today I'll spot some fresh salvage for the Little Dart *bweep*.",
+  "feeling": "bright and breezy",
+  "say": "",
+  "mood": 0.27,
+  "energy": 0.554,
   "needs": {
-    "charge": 0.142,
-    "oil": 0,
-    "curiosity": 0.514,
-    "company": 0.372,
-    "craft": 0.261
+    "charge": 0.189,
+    "oil": 0.04,
+    "curiosity": 0.474,
+    "company": 0.425,
+    "craft": 0.328
   },
   "credits": 7,
   "recent": [
+    {
+      "id": "wander",
+      "detail": "",
+      "at": "2026-11-14T00:33:14.801Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "work_dart",
       "detail": "I measure the cables with a precision tool, making sure they are perfectly sized",
       "at": "2026-11-13T22:54:02.465Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "",
-      "at": "2026-11-13T22:51:02.321Z"
     }
   ],
   "wants": [
+    {
+      "id": "w6",
+      "text": "find some flexible wiring in the scrap piles",
+      "at": "2026-11-14T00:33:14.801Z"
+    },
     {
       "id": "w5",
       "text": "keep the joints moving without a single squeak",
@@ -97,11 +102,6 @@
       "id": "w8",
       "text": "find best flexible heat-resistant cables for the Little Dart",
       "at": "2026-11-13T23:09:02.304Z"
-    },
-    {
-      "id": "w7",
-      "text": "to make the Little Dart's engine run smoothly and safely",
-      "at": "2026-11-13T23:03:02.371Z"
     }
   ],
   "promises": [
@@ -486,7 +486,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-14T00:23:14.643Z",
+  "lettersCheckedAt": "2026-11-14T00:33:14.801Z",
   "weather": {
     "kind": "clear",
     "temp": 21,
@@ -498,38 +498,39 @@
   "sleepDay": 12,
   "lastReflectDay": 12,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-14T00:23:14.643Z",
+  "updatedAt": "2026-11-14T00:33:14.801Z",
   "clock": {
     "day": 13,
-    "time": "15:07",
-    "hour": 15,
-    "minute": 7
+    "time": "16:27",
+    "hour": 16,
+    "minute": 27
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "the Dented Moon cantina",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-13T23:53:01.178Z"
+    "action": "wander",
+    "since": "2026-11-14T00:33:14.801Z"
   },
-  "busyUntil": "2026-11-14T00:26:59.643Z",
-  "busyUntilTown": "15:37",
+  "busyUntil": "2026-11-14T00:38:52.301Z",
+  "busyUntilTown": "17:12",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-13T23:33:02.544Z",
-  "doingWords": "sipping heavy-grade oil and watching the meter tick up",
+  "doingWords": "rolling past the rust-piles, listening for high-frequency echoes",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-13T10:55:38.719Z",
   "body": [
-    "nod"
+    "bounce",
+    "look_up"
   ],
   "pops": {
-    "at": "2026-11-14T00:23:14.643Z",
+    "at": "2026-11-14T00:33:14.801Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-14T00:23:14.643Z"
+        "text": "+ a scorched heat tile",
+        "kind": "part",
+        "at": "2026-11-14T00:33:14.801Z"
       }
     ]
   },
@@ -540,6 +541,10 @@
     "at": "2026-11-13T23:09:02.304Z"
   },
   "thoughts": [
+    {
+      "text": "the desert air is cool enough that my treads don't whine. maybe today I'll spot some fresh salvage for the Little Dart *bweep*.",
+      "at": "2026-11-14T00:33:14.801Z"
+    },
     {
       "text": "nothing beats a warm cup of heavy-grade to keep the clicks away *bweep*",
       "at": "2026-11-14T00:23:14.643Z"
@@ -559,13 +564,9 @@
     {
       "text": "need to be doubly sure of the fit, just to be extra safe",
       "at": "2026-11-13T23:12:02.242Z"
-    },
-    {
-      "text": "I need to be doubly sure of the fit, just to be extra safe.",
-      "at": "2026-11-13T23:09:02.304Z"
     }
   ],
-  "sayAt": "2026-11-14T00:23:14.643Z",
+  "sayAt": "2026-11-14T00:33:14.801Z",
   "today": {
     "day": 13,
     "counts": {
@@ -573,7 +574,8 @@
       "work_dart": 9,
       "read_news": 1,
       "browse_wire": 1,
-      "drink_oil": 4
+      "drink_oil": 4,
+      "wander": 1
     }
   },
   "lastDone": {
@@ -589,7 +591,7 @@
     "compose_tune": "2026-11-13T19:23:58.424Z",
     "tend_shop": "2026-11-13T07:13:42.993Z",
     "craft_part": "2026-11-13T09:04:38.429Z",
-    "wander": "2026-11-13T20:50:58.550Z",
+    "wander": "2026-11-14T00:33:14.801Z",
     "test_flight": "2026-11-13T22:20:59.002Z",
     "design_ship": "2026-11-13T22:41:58.973Z",
     "send_signal": "2026-11-13T16:17:32.810Z",
@@ -599,6 +601,11 @@
     "busk": "2026-11-13T22:12:43.140Z"
   },
   "puzzles": [
+    {
+      "id": "q7",
+      "text": "q5",
+      "at": "2026-11-14T00:33:14.801Z"
+    },
     {
       "id": "q5",
       "text": "how to find the best flexible heat-resistant cables for the Little Dart",
@@ -618,11 +625,6 @@
       "id": "q6",
       "text": "How to find the best flexible heat-resistant cables for the Little Dart.",
       "at": "2026-11-13T22:35:59.117Z"
-    },
-    {
-      "id": "q9",
-      "text": "How to precisely attach the heat-resistant tape to the metal surfaces without damaging them.",
-      "at": "2026-11-13T22:32:58.827Z"
     }
   ],
   "nextSearch": {
@@ -630,6 +632,13 @@
     "at": "2026-11-13T22:38:59.092Z"
   },
   "said": [
+    {
+      "text": "the desert air is cool enough that my treads don't whine. maybe today I'll spot some fresh salvage for the Little Dart *bweep*.",
+      "kind": "think",
+      "at": "2026-11-14T00:33:14.801Z",
+      "town": "day 13 16:27",
+      "place": "the Dented Moon cantina"
+    },
     {
       "text": "ah, right to the gears",
       "kind": "say",
@@ -1672,13 +1681,6 @@
       "at": "2026-11-13T17:12:38.902Z",
       "town": "day 11 05:42",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "The Little Dart needs new features, especially for its new mission. I should sketch out its design.",
-      "kind": "think",
-      "at": "2026-11-13T17:12:38.902Z",
-      "town": "day 11 05:42",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -1689,7 +1691,7 @@
     "at": "2026-11-13T22:20:59.002Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-14T00:23:14.643Z",
+  "feedArchivedAt": "2026-11-14T00:33:14.801Z",
   "plans": [],
   "searches": [
     {

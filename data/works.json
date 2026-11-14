@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 7",
-    "progress": 22,
-    "version": 8,
-    "lastChange": "welding the central instrument panel brackets and mounting the main ignition toggle switch",
+    "progress": 31,
+    "version": 9,
+    "lastChange": "routing the flexible heat-resistant cables to the heat-resistant duct seal, double checking every connection (used Tilly, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 9,
+        "change": "routing the flexible heat-resistant cables to the heat-resistant duct seal, double checking every connection (used Tilly, a cockpit switch that still clicks)",
+        "progress": 31,
+        "at": "2026-11-14T06:16:46.690Z"
+      },
       {
         "version": 8,
         "change": "welding the central instrument panel brackets and mounting the main ignition toggle switch",
@@ -238,12 +244,6 @@
         "change": "tinkered with it",
         "progress": 64,
         "at": "2026-11-13T19:41:58.435Z"
-      },
-      {
-        "version": 12,
-        "change": "I take a break from my design to check my list of found cables, cross out ones I don't need, and circle the ones that might work for the duct seal. I make a mental note to visit the Wire again for mor",
-        "progress": 61,
-        "at": "2026-11-13T19:20:58.377Z"
       }
     ],
     "launched": [
@@ -1055,8 +1055,14 @@
         }
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Tilly",
+        "what": "a cockpit switch that still clicks",
+        "version": 9
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -1137,32 +1143,22 @@
     {
       "name": "Bix",
       "what": "a bent stabiliser fin",
-      "at": "2026-11-14T06:13:46.649Z",
-      "carrying": true
+      "at": "2026-11-14T06:13:46.649Z"
     },
     {
       "name": "Brakk",
       "what": "a dented fuel cell",
-      "at": "2026-11-14T06:13:46.649Z",
-      "carrying": true
+      "at": "2026-11-14T06:13:46.649Z"
     },
     {
       "name": "Brakk",
       "what": "half a thruster nozzle",
-      "at": "2026-11-14T06:13:46.649Z",
-      "carrying": true
+      "at": "2026-11-14T06:13:46.649Z"
     },
     {
       "name": "Mabel",
       "what": "a cracked navigation chip",
-      "at": "2026-11-14T06:04:46.718Z",
-      "carrying": true
-    },
-    {
-      "name": "Tilly",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-14T06:04:46.718Z",
-      "carrying": true
+      "at": "2026-11-14T06:04:46.718Z"
     }
   ],
   "reads": [

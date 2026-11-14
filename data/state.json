@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794636826649,
+  "lastTick": 1794637006690,
   "asleep": false,
-  "place": "market",
-  "action": "scavenge",
-  "doing": "still digging through the junk piles",
-  "actionStartedAt": "2026-11-14T06:04:46.718Z",
+  "place": "hangar",
+  "action": "work_dart",
+  "doing": "working on the Little Dart",
+  "actionStartedAt": "2026-11-14T06:16:46.690Z",
   "actionMinutes": 60,
-  "thought": "The heat-resistant cables look promising, but I need to find the perfect fit for the duct seal and the heat shield plates too. Maybe the junk market has something interesting.",
-  "feeling": "Curious and a bit restless from not working on the Little Dart for a while",
-  "say": "Let's see what the junk market has to offer.",
-  "mood": 0.361,
-  "energy": 0.468,
+  "thought": "The flexible cables seem to fit just right, the next step is to make sure the duct seal is perfect.",
+  "feeling": "energetic and focused",
+  "say": "I think I'm finally ready to finish the Little Dart's core systems.",
+  "mood": 0.305,
+  "energy": 0.403,
   "needs": {
-    "charge": 0.098,
-    "oil": 0.372,
-    "curiosity": 0,
-    "company": 0.51,
-    "craft": 0.08
+    "charge": 0.162,
+    "oil": 0.384,
+    "curiosity": 0.024,
+    "company": 0.526,
+    "craft": 0
   },
-  "credits": 8,
+  "credits": 10,
   "recent": [
+    {
+      "id": "work_dart",
+      "detail": "routing the flexible heat-resistant cables to the heat-resistant duct seal, doub",
+      "at": "2026-11-14T06:16:46.690Z"
+    },
     {
       "id": "scavenge",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "I'm tacking the heat-resistant cables more securely, making sure they won't come",
       "at": "2026-11-14T04:25:46.537Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "I type 'flexible heat-resistant cables, high temperature, McMaster-Carr' into th",
-      "at": "2026-11-14T04:22:46.372Z"
     }
   ],
   "wants": [
@@ -525,7 +525,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-14T06:13:46.649Z",
+  "lettersCheckedAt": "2026-11-14T06:16:46.690Z",
   "weather": {
     "kind": "clear",
     "temp": 18,
@@ -537,56 +537,52 @@
   "sleepDay": 14,
   "lastReflectDay": 14,
   "brain": "your PC (qwen2.5:3b)",
-  "updatedAt": "2026-11-14T06:13:46.649Z",
+  "updatedAt": "2026-11-14T06:16:46.690Z",
   "clock": {
     "day": 15,
-    "time": "13:51",
-    "hour": 13,
-    "minute": 51
+    "time": "14:15",
+    "hour": 14,
+    "minute": 15
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "scavenge",
-    "since": "2026-11-14T06:04:46.718Z"
+    "action": "work_dart",
+    "since": "2026-11-14T06:16:46.690Z"
   },
-  "busyUntil": "2026-11-14T06:21:16.649Z",
-  "busyUntilTown": "14:51",
+  "busyUntil": "2026-11-14T06:24:16.690Z",
+  "busyUntilTown": "15:15",
   "runner": "pc",
   "model": "gemini-3.5-flash-lite",
-  "pcBrainAt": "2026-11-14T06:13:46.649Z",
-  "doingWords": "dig through the junk market for parts",
-  "newsForCreator": "",
+  "pcBrainAt": "2026-11-14T06:16:46.690Z",
+  "doingWords": "welding the flexible duct seal and routing the cables",
+  "newsForCreator": "the Little Dart Mk 7 just reached 25% built (version 9). Last change: routing the flexible heat-resistant cables to the heat-resistant duct seal, double checking every connection (used Tilly, a cockpit switch that still clicks).",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-13T10:55:38.719Z",
-  "body": [],
+  "body": [
+    "bounce"
+  ],
   "pops": {
-    "at": "2026-11-14T06:13:46.649Z",
+    "at": "2026-11-14T06:16:46.690Z",
     "items": [
       {
-        "text": "+ half a thruster nozzle",
-        "kind": "part",
-        "at": "2026-11-14T06:13:46.649Z"
-      },
-      {
-        "text": "+ a dented fuel cell",
-        "kind": "part",
-        "at": "2026-11-14T06:13:46.649Z"
-      },
-      {
-        "text": "+ a bent stabiliser fin",
-        "kind": "part",
-        "at": "2026-11-14T06:13:46.649Z"
+        "text": "+2 credits",
+        "kind": "credits",
+        "at": "2026-11-14T06:16:46.690Z"
       }
     ]
   },
   "event": {
-    "id": "emwfz7msr",
+    "id": "emwg0jcrm",
     "key": "tip",
     "text": "Someone he fixed something for last week came back and tipped him.",
-    "at": "2026-11-14T05:39:40.203Z"
+    "at": "2026-11-14T06:16:46.690Z"
   },
   "thoughts": [
+    {
+      "text": "The flexible cables seem to fit just right, the next step is to make sure the duct seal is perfect.",
+      "at": "2026-11-14T06:16:46.690Z"
+    },
     {
       "text": "The heat-resistant cables look promising, but I need to find the perfect fit for the duct seal and the heat shield plates too. Maybe the junk market has something interesting.",
       "at": "2026-11-14T06:13:46.649Z"
@@ -606,26 +602,22 @@
     {
       "text": "I'm getting there, just a few tweaks left. The tune for the Little Dart needs to be catchy and full of potential.",
       "at": "2026-11-14T06:01:46.515Z"
-    },
-    {
-      "text": "The tune is almost complete, and I can't wait to see how it sounds against the background hum of the Little Dart's motors. I need to make sure I capture the essence of the heat-resistant cables though.",
-      "at": "2026-11-14T05:58:46.648Z"
     }
   ],
-  "sayAt": "2026-11-14T06:13:46.649Z",
+  "sayAt": "2026-11-14T06:16:46.690Z",
   "today": {
     "day": 15,
     "counts": {
       "wander": 1,
       "drink_oil": 1,
       "nap_dock": 2,
-      "work_dart": 3,
+      "work_dart": 4,
       "compose_tune": 1,
       "scavenge": 2
     }
   },
   "lastDone": {
-    "work_dart": "2026-11-14T05:39:40.203Z",
+    "work_dart": "2026-11-14T06:16:46.690Z",
     "read_news": "2026-11-14T03:43:46.165Z",
     "drink_oil": "2026-11-14T05:00:28.007Z",
     "follow_link": "2026-11-13T02:50:40.321Z",
@@ -681,6 +673,20 @@
     "at": "2026-11-14T04:22:46.372Z"
   },
   "said": [
+    {
+      "text": "I think I'm finally ready to finish the Little Dart's core systems.",
+      "kind": "say",
+      "at": "2026-11-14T06:16:46.690Z",
+      "town": "day 15 14:15",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "The flexible cables seem to fit just right, the next step is to make sure the duct seal is perfect.",
+      "kind": "think",
+      "at": "2026-11-14T06:16:46.690Z",
+      "town": "day 15 14:15",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "Let's see what the junk market has to offer.",
       "kind": "say",
@@ -1716,20 +1722,6 @@
       "at": "2026-11-13T22:14:59.981Z",
       "town": "day 12 22:01",
       "place": "the Dented Moon cantina"
-    },
-    {
-      "text": "The kids at the market waving at me makes the day better, even if no one tipped back. I’ll keep playing for now though; maybe someone will start a dance.",
-      "kind": "think",
-      "at": "2026-11-13T22:14:59.981Z",
-      "town": "day 12 22:01",
-      "place": "the Dented Moon cantina"
-    },
-    {
-      "text": "one credit for the little dart fund, step right up!",
-      "kind": "say",
-      "at": "2026-11-13T22:12:43.140Z",
-      "town": "day 12 21:43",
-      "place": "the Dented Moon cantina"
     }
   ],
   "flight": {
@@ -1740,7 +1732,7 @@
     "at": "2026-11-13T22:20:59.002Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-14T06:13:46.649Z",
+  "feedArchivedAt": "2026-11-14T06:16:46.690Z",
   "plans": [],
   "searches": [
     {

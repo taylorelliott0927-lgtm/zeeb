@@ -214,6 +214,7 @@ ${Object.entries(KIT).map(([k, v]) => `- ${k}: ${v}`).join("\n")}
 ${found.length ? `MODELS YOU FOUND IN YOUR LIBRARY (use them as "model" pieces):\n${found.map(describeModel).join("\n")}\n` : ""}You can also add a few of your own simple shapes for extra details in "extra_shapes" (x, y, z is the centre in metres; the build is centred on x 0, z 0; front is +z; y is height).
 Return JSON:
 {"name": "what you call it", "description": "one sentence in your voice", "purpose": "what it's for", "place": "${places.join("|")}",
+ "how_long": "quick, or a big project (takes several work sessions)",
  "size": {"width": 4, "depth": 3}, "colors": {"main": "#rrggbb", "accent": "#rrggbb", "trim": "#rrggbb", "glow": "#rrggbb"},
  "pieces": [{"kit": "platform", "height": 0.3}, {"kit": "walls", "sides": "all", "height": 2.2, "door": "front", "windows": 1}, {"kit": "lamp", "where": "front corners"}],
  "extra_shapes": []}

@@ -170,6 +170,11 @@ export const ACTIONS = {
     effects: { craft: -0.5, curiosity: -0.1 }, mood: 0.03,
     about: "try to make a new kind of part yourself at the workbench, if you have an idea how (say what you want to make in 'detail'). It might not work the first time",
   },
+  work_project: {
+    place: "any", doing: "working on his big build", minutes: 60, needsProject: true,
+    effects: { craft: -0.5, charge: 0.06 }, mood: 0.04,
+    about: "keep building one of your big projects (its id if you have more than one, and what you're doing today, in 'detail')",
+  },
   improve_thing: {
     place: "any", doing: "adding to something he built", minutes: 45, needsBuilds: true,
     effects: { craft: -0.4 }, mood: 0.04,

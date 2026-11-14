@@ -102,6 +102,7 @@ function availableActions(notes) {
     if (a.needsShip && !(works.dart.launched || []).length) return false;
     if (a.outdoorFlight && storm) return false;
     if (a.needsBuilds && !(works.builds || []).length) return false;
+    if (a.needsProject && !(works.projects || []).length) return false;
     if (a.needsShop && (a.needsShop === "open") !== Boolean(shop.open)) return false;
     if (a.needsFriend && a.needsFriend !== friend.stage) return false;
     if (a.friendOnly) return false;
@@ -253,6 +254,7 @@ async function doAction(id, d, notes) {
   const a = ACTIONS[id];
   let place = placeFor(id, state);
   if (id === "hang_out" && friend.state && !friend.state.asleep) place = friend.state.place;
+  if (id === "work_project" && (works.projects || []).length) place = ((works.projects || []).find((p) => String(d.detail || "").includes(p.id)) || works.projects[0]).place;
   const detail = String(d.detail || "").slice(0, 200);
   let ok = true;
   // The small AI sometimes copies the example sentence from its instructions word for word; that isn't really him, so use the plain description.
@@ -521,7 +523,20 @@ async function doAction(id, d, notes) {
         const more = await refineThing(sheet(character), design, "", lib.found).catch(() => null);
         if (more) { design.parts = [...design.parts, ...more.add].slice(0, 140); design.description = more.description || design.description; }
       }
-      const spot = spotFor(design.place, works.builds || []);
+      const spot = spotFor(design.place, [...(works.builds || []), ...(works.projects || [])]);
+      // Big builds (he says so, or they're large) become projects that take several work sessions.
+      const area = design.kit ? design.kit.size.width * design.kit.size.depth : 0;
+      const hl = String(bp?.how_long || ""), big = (/big|project|several|long/i.test(hl) && !/quick/i.test(hl)) || area >= 20 || design.parts.length >= 70;
+      if (big && (works.projects || []).length < 3) {
+        const sessions = Math.max(3, Math.min(12, Math.round(area / 6 + (design.kit?.pieces?.length || design.parts.length / 8) / 2)));
+        const proj = { id: `p${Date.parse(nowISO).toString(36)}`, ...design, ...spot, sessions, progress: Math.round(100 / sessions), started: nowISO, day: clock.day, log: [{ progress: Math.round(100 / sessions), note: "laid out the plan and started on it", town: stamp }] };
+        works.projects = [proj, ...(works.projects || [])];
+        place = proj.place;
+        post("mind", `Started a big project near ${PLACES[proj.place].name}: ${proj.name}${proj.description ? ` (${proj.description})` : ""}. It'll take a while.`, { change: "started", about: "world" });
+        M.remember(mem, `On day ${clock.day} I started building ${proj.name} near ${PLACES[proj.place].name}. It's a big one.`, 0.8, nowISO);
+        nudge(0.05);
+        break;
+      }
       const part = works.stash.pop();
       const thing = { id: `b${Date.parse(nowISO).toString(36)}`, ...design, ...spot, day: clock.day, at: nowISO, usedPart: part ? part.what : null, usedPartName: part ? part.name : null, ...(part?.good ? { usedPartGood: true } : {}) };
       works.builds = [thing, ...(works.builds || [])].slice(0, MAX_BUILDS);
@@ -596,6 +611,26 @@ async function doAction(id, d, notes) {
         nudge(-0.02);
       }
       C.attempts = C.attempts.slice(0, 20);
+      break;
+    }
+    case "work_project": {
+      const proj = (works.projects || []).find((p) => detail.includes(p.id)) || (works.projects || [])[0];
+      if (!proj) break;
+      const part = works.stash.pop();
+      const gain = Math.round((100 / proj.sessions) * (part ? (part.good || part.custom ? 1.6 : 1.3) : 1) * (0.8 + Math.random() * 0.4));
+      proj.progress = Math.min(100, proj.progress + gain);
+      const note = (d.doing_words || detail.replace(proj.id, "") || "kept building").trim().slice(0, 160) + (part ? ` (used ${part.name}, ${part.what})` : "");
+      proj.log = [{ progress: proj.progress, note, town: stamp }, ...(proj.log || [])].slice(0, 30);
+      place = proj.place;
+      if (proj.progress >= 100) {
+        works.projects = works.projects.filter((p) => p !== proj);
+        const { sessions, progress, log, started, ...done } = proj;
+        works.builds = [{ ...done, id: proj.id.replace(/^p/, "b"), day: clock.day, at: nowISO, buildLog: log, took: log.length }, ...(works.builds || [])].slice(0, MAX_BUILDS);
+        post("felt", `Finished building ${proj.name}! It took ${log.length} work sessions.`);
+        M.remember(mem, `On day ${clock.day} I finished building ${proj.name} near ${PLACES[proj.place].name}`, 0.9, nowISO);
+        state.newsForCreator = `You finished building ${proj.name} near ${PLACES[proj.place].name}!`;
+        nudge(0.15);
+      } else post("mind", `Worked on ${proj.name} (${proj.progress}% built): ${note}`, { change: "worked", about: "world" });
       break;
     }
     case "improve_thing": {

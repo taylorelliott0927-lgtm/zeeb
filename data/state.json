@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794689219706,
+  "lastTick": 1794689819382,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "still sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-14T20:26:59.489Z",
-  "actionMinutes": 30,
-  "thought": "fresh oil makes every bearing sing. time to top off before the next build push.",
-  "feeling": "smooth and ready",
-  "say": "one more cup for the road, pump chief. *bweep*",
-  "mood": 0.276,
-  "energy": 0.308,
+  "place": "hangar",
+  "action": "work_dart",
+  "doing": "working on the Little Dart",
+  "actionStartedAt": "2026-11-14T20:56:59.382Z",
+  "actionMinutes": 45,
+  "thought": "got my gear warmed up and ready. let's get these new panels locked into place on the hull.",
+  "feeling": "excited and focused",
+  "say": "almost ready for the stars, little ship! *bweep*",
+  "mood": 0.341,
+  "energy": 0.21,
   "needs": {
-    "charge": 0.38,
-    "oil": 0,
-    "curiosity": 0.24,
-    "company": 0.266,
-    "craft": 0.67
+    "charge": 0.477,
+    "oil": 0.04,
+    "curiosity": 0.32,
+    "company": 0.319,
+    "craft": 0.237
   },
   "credits": 17,
   "recent": [
+    {
+      "id": "work_dart",
+      "detail": "Install the new thermal management panels and secure the exhaust duct seal on th",
+      "at": "2026-11-14T20:56:59.382Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "reply_notes",
       "detail": "",
       "at": "2026-11-14T18:36:59.467Z"
-    },
-    {
-      "id": "design_ship",
-      "detail": "thinking about how to best incorporate energy generation and ventilation systems",
-      "at": "2026-11-14T18:33:59.432Z"
     }
   ],
   "wants": [
+    {
+      "id": "w7",
+      "text": "to finish the hull insulation before the dust picks up",
+      "at": "2026-11-14T20:56:59.382Z"
+    },
     {
       "id": "w6",
       "text": "to keep my gears smooth for the next build session",
@@ -97,11 +102,6 @@
       "id": "w9",
       "text": "to cross-reference wire data with the hanger plans",
       "at": "2026-11-14T20:06:45.017Z"
-    },
-    {
-      "id": "w8",
-      "text": "to hear a bounce back from the stars",
-      "at": "2026-11-14T19:56:45.076Z"
     }
   ],
   "promises": [
@@ -542,7 +542,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-14T20:46:59.706Z",
+  "lettersCheckedAt": "2026-11-14T20:56:59.382Z",
   "weather": {
     "kind": "clear",
     "temp": 22,
@@ -554,31 +554,31 @@
   "sleepDay": 19,
   "lastReflectDay": 19,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-14T20:46:59.706Z",
+  "updatedAt": "2026-11-14T20:56:59.382Z",
   "clock": {
     "day": 20,
-    "time": "10:17",
-    "hour": 10,
-    "minute": 17
+    "time": "11:37",
+    "hour": 11,
+    "minute": 37
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-14T20:26:59.489Z"
+    "action": "work_dart",
+    "since": "2026-11-14T20:56:59.382Z"
   },
-  "busyUntil": "2026-11-14T20:50:44.706Z",
-  "busyUntilTown": "10:47",
+  "busyUntil": "2026-11-14T21:02:36.882Z",
+  "busyUntilTown": "12:22",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T19:30:59.570Z",
-  "doingWords": "sipping fresh oil at the depot counter, feeling gears hum",
-  "newsForCreator": "",
+  "doingWords": "welding thermal panels onto the side of the Little Dart",
+  "newsForCreator": "the Little Dart Mk 8 just reached 75% built (version 23). Last change: Install the new thermal management panels and secure the exhaust duct seal on the Little Dart Mk 8..",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "wiggle",
-    "bounce"
+    "bounce",
+    "wiggle"
   ],
   "pops": {
     "at": "2026-11-14T20:46:59.706Z",
@@ -598,6 +598,10 @@
   },
   "thoughts": [
     {
+      "text": "got my gear warmed up and ready. let's get these new panels locked into place on the hull.",
+      "at": "2026-11-14T20:56:59.382Z"
+    },
+    {
       "text": "fresh oil makes every bearing sing. time to top off before the next build push.",
       "at": "2026-11-14T20:46:59.706Z"
     },
@@ -616,13 +620,9 @@
     {
       "text": "twenty-six satellites deployed from a narrow door sounds terribly clever. i must check my own cargo hatch clearances.",
       "at": "2026-11-14T20:16:45.100Z"
-    },
-    {
-      "text": "imagine trying to catch something that heavy with mechanical arms. i bet my landing struts will need way better shock absorbers.",
-      "at": "2026-11-14T20:06:45.017Z"
     }
   ],
-  "sayAt": "2026-11-14T20:46:59.706Z",
+  "sayAt": "2026-11-14T20:56:59.382Z",
   "today": {
     "day": 20,
     "counts": {
@@ -631,11 +631,12 @@
       "send_signal": 1,
       "read_news": 1,
       "follow_link": 1,
-      "drink_oil": 3
+      "drink_oil": 3,
+      "work_dart": 1
     }
   },
   "lastDone": {
-    "work_dart": "2026-11-14T18:45:59.592Z",
+    "work_dart": "2026-11-14T20:56:59.382Z",
     "read_news": "2026-11-14T20:06:45.017Z",
     "drink_oil": "2026-11-14T20:46:59.706Z",
     "follow_link": "2026-11-14T20:16:45.100Z",
@@ -695,6 +696,20 @@
     "at": "2026-11-14T20:16:45.100Z"
   },
   "said": [
+    {
+      "text": "almost ready for the stars, little ship! *bweep*",
+      "kind": "say",
+      "at": "2026-11-14T20:56:59.382Z",
+      "town": "day 20 11:37",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "got my gear warmed up and ready. let's get these new panels locked into place on the hull.",
+      "kind": "think",
+      "at": "2026-11-14T20:56:59.382Z",
+      "town": "day 20 11:37",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "one more cup for the road, pump chief. *bweep*",
       "kind": "say",
@@ -1730,20 +1745,6 @@
       "at": "2026-11-14T14:00:58.692Z",
       "town": "day 18 04:09",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "Let's make sure the new garage is just as sleek and durable as the Little Dart.",
-      "kind": "say",
-      "at": "2026-11-14T13:57:58.650Z",
-      "town": "day 18 03:45",
-      "place": "the old crater"
-    },
-    {
-      "text": "The duct seal looks perfect now, time to move on to the next part of the Salt Flats Hanger design.",
-      "kind": "think",
-      "at": "2026-11-14T13:57:58.650Z",
-      "town": "day 18 03:45",
-      "place": "the old crater"
     }
   ],
   "flight": {
@@ -1754,7 +1755,7 @@
     "at": "2026-11-14T18:15:59.376Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-14T20:46:59.706Z",
+  "feedArchivedAt": "2026-11-14T20:56:59.382Z",
   "plans": [],
   "searches": [
     {

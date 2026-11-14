@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 8",
-    "progress": 59,
-    "version": 20,
-    "lastChange": "tinkered with it",
+    "progress": 65,
+    "version": 21,
+    "lastChange": "Tweaking the Salt Flats Hanger design to incorporate ventilation and energy generation systems, ensuring it's durable and functional. (used Otto, a mystery box that hums)",
     "log": [
+      {
+        "version": 21,
+        "change": "Tweaking the Salt Flats Hanger design to incorporate ventilation and energy generation systems, ensuring it's durable and functional. (used Otto, a mystery box that hums)",
+        "progress": 65,
+        "at": "2026-11-14T18:42:59.443Z"
+      },
       {
         "version": 20,
         "change": "tinkered with it",
@@ -238,12 +244,6 @@
         "change": "I measure the routing of the S180 C HT cable, making sure every bend and curve is just right. The heat-resistant hose will fit snugly in its channel, allowing for perfect performance in extreme temper",
         "progress": 100,
         "at": "2026-11-14T03:13:46.151Z"
-      },
-      {
-        "version": 16,
-        "change": "I'm taking a few more minutes to measure the routing of the S180 C HT cable, just to be extra sure it will fit perfectly when I secure it next.",
-        "progress": 96,
-        "at": "2026-11-14T02:49:19.915Z"
       }
     ],
     "launched": [
@@ -1280,12 +1280,17 @@
         }
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Brakk",
         "what": "a coil of copper wire",
         "version": 14
+      },
+      {
+        "name": "Otto",
+        "what": "a mystery box that hums",
+        "version": 21
       }
     ],
     "design": {
@@ -1572,7 +1577,13 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [],
+  "stash": [
+    {
+      "name": "Pim",
+      "what": "a bent stabiliser fin",
+      "at": "2026-11-14T18:42:59.443Z"
+    }
+  ],
   "reads": [
     {
       "title": "Mesh Reinforcement Chart 2026 - Sizes, Spacing & Application Guide",

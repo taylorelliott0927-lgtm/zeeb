@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794632428007,
+  "lastTick": 1794633027991,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-14T05:00:28.007Z",
-  "actionMinutes": 20,
-  "thought": "oil makes everything turn right again. then it is straight back to the hangar to check those heat lines.",
-  "feeling": "thirsty in the joints",
-  "say": "fill her up, pump bot!",
-  "mood": 0.202,
-  "energy": -0.07,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-14T05:10:27.991Z",
+  "actionMinutes": 45,
+  "thought": "just a quick nap before getting back to the little dart. power levels are dipping.",
+  "feeling": "sleepy and slightly low on juice",
+  "say": "powering down for a second...",
+  "mood": 0.226,
+  "energy": 0.209,
   "needs": {
-    "charge": 0.618,
-    "oil": 0,
-    "curiosity": 0.181,
-    "company": 0.6,
-    "craft": 0.212
+    "charge": 0.215,
+    "oil": 0.04,
+    "curiosity": 0.261,
+    "company": 0.653,
+    "craft": 0.279
   },
   "credits": 6,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-14T05:10:27.991Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "work_dart",
       "detail": "",
       "at": "2026-11-14T03:55:46.214Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "",
-      "at": "2026-11-14T03:52:46.199Z"
     }
   ],
   "wants": [
+    {
+      "id": "w5",
+      "text": "wake up with full battery to continue the Little Dart",
+      "at": "2026-11-14T05:10:27.991Z"
+    },
     {
       "id": "w9",
       "text": "find a stray brass bolt in the dust",
@@ -97,11 +102,6 @@
       "id": "w7",
       "text": "To find the perfect tune that captures the Little Dart's mission and the importance of its heat-resistant cables.",
       "at": "2026-11-14T04:07:46.260Z"
-    },
-    {
-      "id": "w6",
-      "text": "find the best flexible heat-resistant cables for the Little Dart",
-      "at": "2026-11-14T03:55:46.214Z"
     }
   ],
   "promises": [
@@ -495,7 +495,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-14T05:00:28.007Z",
+  "lettersCheckedAt": "2026-11-14T05:10:27.991Z",
   "weather": {
     "kind": "hazy",
     "temp": 19,
@@ -507,31 +507,30 @@
   "sleepDay": 14,
   "lastReflectDay": 14,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-14T05:00:28.007Z",
+  "updatedAt": "2026-11-14T05:10:27.991Z",
   "clock": {
     "day": 15,
-    "time": "04:04",
-    "hour": 4,
-    "minute": 4
+    "time": "05:24",
+    "hour": 5,
+    "minute": 24
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-14T05:00:28.007Z"
+    "action": "nap_dock",
+    "since": "2026-11-14T05:10:27.991Z"
   },
-  "busyUntil": "2026-11-14T05:02:58.007Z",
-  "busyUntilTown": "04:24",
+  "busyUntil": "2026-11-14T05:16:05.491Z",
+  "busyUntilTown": "06:09",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T04:28:46.621Z",
-  "doingWords": "rolling over to the depot for a fresh splash of oil",
+  "doingWords": "plugging into the charger and dozing off",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-13T10:55:38.719Z",
   "body": [
-    "shake",
-    "nod"
+    "droop"
   ],
   "pops": {
     "at": "2026-11-14T05:00:28.007Z",
@@ -551,6 +550,10 @@
   },
   "thoughts": [
     {
+      "text": "just a quick nap before getting back to the little dart. power levels are dipping.",
+      "at": "2026-11-14T05:10:27.991Z"
+    },
+    {
       "text": "oil makes everything turn right again. then it is straight back to the hangar to check those heat lines.",
       "at": "2026-11-14T05:00:28.007Z"
     },
@@ -569,18 +572,15 @@
     {
       "text": "Heat-resistant materials could be crucial for the Little Dart's durability in extreme environments.",
       "at": "2026-11-14T04:22:46.372Z"
-    },
-    {
-      "text": "I should find out more about these cables and see if they fit my plans.",
-      "at": "2026-11-14T04:19:46.245Z"
     }
   ],
-  "sayAt": "2026-11-14T05:00:28.007Z",
+  "sayAt": "2026-11-14T05:10:27.991Z",
   "today": {
     "day": 15,
     "counts": {
       "wander": 1,
-      "drink_oil": 1
+      "drink_oil": 1,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -605,7 +605,7 @@
     "chat_patrons": "2026-11-14T01:03:14.650Z",
     "busk": "2026-11-14T00:53:15.072Z",
     "cantina_band": "2026-11-14T00:43:15.012Z",
-    "nap_dock": "2026-11-14T01:43:29.889Z",
+    "nap_dock": "2026-11-14T05:10:27.991Z",
     "watch_suns": "2026-11-14T03:58:46.207Z"
   },
   "puzzles": [
@@ -640,6 +640,20 @@
     "at": "2026-11-14T04:22:46.372Z"
   },
   "said": [
+    {
+      "text": "powering down for a second...",
+      "kind": "say",
+      "at": "2026-11-14T05:10:27.991Z",
+      "town": "day 15 05:24",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "just a quick nap before getting back to the little dart. power levels are dipping.",
+      "kind": "think",
+      "at": "2026-11-14T05:10:27.991Z",
+      "town": "day 15 05:24",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "fill her up, pump bot!",
       "kind": "say",
@@ -1675,20 +1689,6 @@
       "at": "2026-11-13T20:35:58.535Z",
       "town": "day 12 08:49",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "I need to make sure the new hose fits perfectly before I can attach it",
-      "kind": "say",
-      "at": "2026-11-13T20:32:58.489Z",
-      "town": "day 12 08:25",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "The measurements are perfect, now I need to attach the hose to the duct seal and metal surfaces",
-      "kind": "think",
-      "at": "2026-11-13T20:29:58.553Z",
-      "town": "day 12 08:01",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -1699,7 +1699,7 @@
     "at": "2026-11-13T22:20:59.002Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-14T05:00:28.007Z",
+  "feedArchivedAt": "2026-11-14T05:10:27.991Z",
   "plans": [],
   "searches": [
     {

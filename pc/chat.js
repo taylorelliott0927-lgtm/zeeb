@@ -26,8 +26,8 @@ const isLocal = (req) => /^(::1|127\.|::ffff:127\.)/.test(req.socket.remoteAddre
 const isHomeNetwork = (ip) => /^(::1|127\.|::ffff:127\.|10\.|::ffff:10\.|192\.168\.|::ffff:192\.168\.|172\.(1[6-9]|2\d|3[01])\.|::ffff:172\.(1[6-9]|2\d|3[01])\.|fe80:)/i.test(ip || "");
 
 export async function startChat({ port = 8787, pin, log }) {
-  const { askChat } = await import("../brain/llm.js");
-  const { sheet } = await import("../brain/mind.js");
+  const { askChat } = await import(`../brain/llm.js?v=${Date.now()}`);
+  const { sheet } = await import(`../brain/mind.js?v=${Date.now()}`);
   const fails = new Map();
   let busy = false;
 
@@ -72,8 +72,11 @@ HOW TO CHAT
 - You can ask them things, tell them about your day, joke, disagree, or change the subject.
 - After the chat you go back to your own day and choose what to do yourself. Your options include looking things up on the Wire (the real internet) at the comms tower, scavenging, fixing the Dart, building things and more. Only say you'll do something if you mean it.`;
     const turns = [];
+    // His old replies are cleaned of lists and markdown too, so he doesn't copy that style from them.
+    const plain = (t) => String(t || "").replace(/\*\*|__|^#+\s*/gm, "").replace(/^\s*[-*•]\s+/gm, "").replace(/^\s*\d+\.\s+/gm, "").replace(/\n{2,}/g, "\n").trim().slice(0, 500);
     for (const m of history) {
       const role = m.from === "creator" ? "user" : "assistant";
+      m.text = role === "assistant" ? plain(m.text) : m.text;
       if (turns.length && turns[turns.length - 1].role === role) turns[turns.length - 1].content += "\n" + m.text;
       else turns.push({ role, content: m.text });
     }

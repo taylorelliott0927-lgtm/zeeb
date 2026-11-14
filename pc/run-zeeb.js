@@ -56,6 +56,7 @@ async function heartbeat() {
   if (!f.ok) return log(`Couldn't reach GitHub (${f.err.split("\n")[0]}). Will try again next time.`);
   const reset = git("reset", "--hard", "--quiet", "origin/main");
   if (!reset.ok) return log(`Couldn't update the folder: ${reset.err}`);
+  await reloadChatIfChanged();
 
   const t0 = Date.now();
   // Hand any live chats since last time to this heartbeat (moved aside so new chats aren't lost meanwhile).
@@ -103,6 +104,20 @@ async function heartbeat() {
 }
 
 // Live chat (pc/chat.js). Needs Ollama; the PIN keeps other people on your Wi-Fi out.
+let chatServer = null, chatVersion = 0;
+// When an update changes chat.js, restart the chat with the new version (no need to restart Zeeb).
+async function reloadChatIfChanged() {
+  try {
+    const v = fs.statSync(path.join(PC_DIR, "chat.js")).mtimeMs;
+    if (!chatServer || v === chatVersion) return;
+    chatServer.closeAllConnections?.();
+    await new Promise((res) => chatServer.close(() => res()));
+    chatServer = null;
+    log("Chat was updated: restarting it with the new version.");
+    await startChatServer();
+  } catch (e) { log(`Couldn't reload the chat: ${e.message}`); }
+}
+
 async function startChatServer() {
   if (process.env.ZEEB_NO_CHAT === "1") return;
   let pin = S.CHAT_PIN;
@@ -116,8 +131,9 @@ async function startChatServer() {
     process.env.OLLAMA_URL = OLLAMA_URL;
     process.env.OLLAMA_MODEL = MODEL;
     if (S.GEMINI_API_KEY) process.env.GEMINI_API_KEY = S.GEMINI_API_KEY;
-    const { startChat, lanAddresses } = await import("./chat.js");
-    await startChat({ port, pin, log });
+    chatVersion = fs.statSync(path.join(PC_DIR, "chat.js")).mtimeMs;
+    const { startChat, lanAddresses } = await import(`./chat.js?v=${chatVersion}`);
+    chatServer = await startChat({ port, pin, log });
     log(`Chat with Zeeb on this PC: http://localhost:${port}`);
     const ips = lanAddresses();
     if (ips.length) log(`On your phone (same home Wi-Fi): ${ips.map((ip) => `http://${ip}:${port}`).join("  or  ")}   PIN: ${pin}`);

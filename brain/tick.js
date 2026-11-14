@@ -14,6 +14,7 @@ import { buildStep, designFriend, emptyFriend, friendText, friendTick, startFrie
 import { activeGame, emptyGames, gamesText, startGame, workSession } from "./games.js";
 import { emptyInterests, interestsText, noteInterest } from "./interests.js";
 import { buildShipPart, looksLikeShip, planShip, reviewDesign } from "./builds.js";
+import { addKitPieces, buildKitShip, expandKit, planKitBuild, planKitShip } from "./kit.js";
 import { FLIGHT_SECONDS, MAX_BUILDS, buildComponent, buildsText, cleanBody, designShip, designThing, lookUpModels, planBuild, refineThing, flightLog, flightOutcome, spotFor } from "./builds.js";
 import { sheet } from "./mind.js";
 import { craftingText, emptyCrafting, planPart, tryToMake } from "./crafting.js";
@@ -483,9 +484,19 @@ async function doAction(id, d, notes) {
       const where = PLACES[d.place] ? d.place : place === "any" ? "hangar" : place;
       const lib = await lookUpModels(sheet(character), idea).catch(() => ({ searches: [], found: [] }));
       if (lib.searches.length) post("noticed", `Looked up ${lib.searches.map((q) => `"${q}"`).join(", ")} in his model library${lib.found.length ? `: found ${lib.found.slice(0, 6).map((m) => m.name).join(", ")}${lib.found.length > 6 ? " and more" : ""}` : ", but nothing matched"}.`);
-      // He plans it first, then builds each part of the plan in detail (fewer parts on GitHub, to save the free AI).
+      // He plans it with his builder's kit (ready-made pieces placed where he says, plus his own extra shapes).
       let design = null;
-      const plan = await planBuild(sheet(character), idea, where, works.stash, lib.found);
+      const bp = await planKitBuild(sheet(character), idea, PLACES[where]?.name || "near Hangar Bay 3", Object.keys(PLACES), lib.found, works.stash);
+      if (bp) {
+        const built = expandKit(bp);
+        if (built.parts.length >= 3) design = {
+          name: String(bp.name || idea).slice(0, 50), description: String(bp.description || "").slice(0, 200), place: PLACES[bp.place] ? bp.place : where, parts: built.parts,
+          plan: { purpose: String(bp.purpose || "").slice(0, 160), size: built.frame, components: bp.pieces.slice(0, 30).map((p) => ({ name: `${p.kit}${p.where ? ` (${p.where})` : ""}` })) },
+          kit: { size: { width: built.frame.W, depth: built.frame.D }, colors: bp.colors || {}, pieces: bp.pieces.slice(0, 30), extra_shapes: (bp.extra_shapes || []).slice(0, 12) },
+        };
+      }
+      // (older ways, only if the kit plan didn't work out)
+      const plan = design ? null : await planBuild(sheet(character), idea, where, works.stash, lib.found);
       if (plan) {
         let parts = [];
         for (const comp of plan.components.slice(0, RUNNER === "pc" ? 8 : 4)) parts = [...parts, ...(await buildComponent(sheet(character), plan, comp, parts, lib.found))].slice(0, 120);
@@ -493,9 +504,10 @@ async function doAction(id, d, notes) {
         if (parts.length >= 3 && RUNNER === "pc") parts = (await reviewDesign(sheet(character), `"${plan.name}"`, plan.description, parts, "Build space: centred on x 0, z 0, standing on the ground at y 0 (y is height).")).parts;
         if (parts.length >= 3) design = { name: plan.name, description: plan.description, place: plan.place, parts, plan: { purpose: plan.purpose, size: plan.size, components: plan.components } };
       }
+      const fromKit = Boolean(design);
       design ||= await designThing(sheet(character), idea, where, works.stash, lib.found);
-      // Then a final look where he adds the finishing details.
-      if (design.parts.length >= 2) {
+      // Then a final look where he adds the finishing details (kit builds already have theirs).
+      if (!fromKit && design.parts.length >= 2) {
         const more = await refineThing(sheet(character), design, "", lib.found).catch(() => null);
         if (more) { design.parts = [...design.parts, ...more.add].slice(0, 140); design.description = more.description || design.description; }
       }
@@ -511,9 +523,14 @@ async function doAction(id, d, notes) {
     }
     case "design_ship": {
       const dart = works.dart;
-      // Plan the ship, build it part by part (hull, nose, cockpit, wings, engines...), then take an honest look at it.
+      // He picks every part of his ship (hull, nose, cockpit, wings, engines, fins, extras, colours) and the kit builds it properly.
       let design = null;
-      const plan = await planShip(sheet(character), detail, dart);
+      const kitShip = await planKitShip(sheet(character), detail, dart);
+      if (kitShip?.hull || kitShip?.wings || kitShip?.engines) {
+        const sp = buildKitShip(kitShip);
+        if (looksLikeShip(sp)) design = { name: String(kitShip.name || "").trim().slice(0, 40), description: String(kitShip.description || detail || "").slice(0, 200), parts: sp };
+      }
+      const plan = design ? { parts: [] } : await planShip(sheet(character), detail, dart);
       let parts = [];
       for (const p of plan.parts.slice(0, RUNNER === "pc" ? 8 : 5)) parts = [...parts, ...(await buildShipPart(sheet(character), plan, p, parts))].slice(0, 60);
       if (parts.length >= 4) {
@@ -579,9 +596,19 @@ async function doAction(id, d, notes) {
       const wish = detail.replace(id || "", "").replace(/^[\s:,-]+/, "");
       const lib = await lookUpModels(sheet(character), `${wish || "more detail"} for ${b.name}`).catch(() => ({ searches: [], found: [] }));
       if (lib.searches.length) post("noticed", `Looked up ${lib.searches.map((q) => `"${q}"`).join(", ")} in his model library${lib.found.length ? `: found ${lib.found.slice(0, 6).map((m) => m.name).join(", ")}` : ", but nothing matched"}.`);
-      const more = await refineThing(sheet(character), b, wish, lib.found).catch(() => null);
+      // He adds pieces from his builder's kit; older builds keep what they had and get the new pieces on top.
+      if (!b.kit) {
+        const xs = b.parts.filter((p) => !p.model).map((p) => [Math.abs(p.x) + (p.w || 0) / 2, Math.abs(p.z) + (p.d || 0) / 2]);
+        b.kit = { size: { width: Math.max(2, ...xs.map((v) => v[0] * 2)), depth: Math.max(2, ...xs.map((v) => v[1] * 2)) }, colors: {}, pieces: [], extra_shapes: [] };
+        b.legacyParts = b.parts;
+      }
+      const more = await addKitPieces(sheet(character), b, wish, lib.found);
       if (!more) { ok = false; feed.entries[0].ok = false; post("noticed", `Stared at ${b.name} for a while but didn't change anything.`); break; }
-      b.parts = [...b.parts, ...more.add].slice(0, 140);
+      b.kit.pieces = [...b.kit.pieces, ...(more.pieces || [])].slice(0, 40);
+      b.kit.extra_shapes = [...(b.kit.extra_shapes || []), ...(more.extra_shapes || [])].slice(0, 20);
+      const before = b.parts.length;
+      b.parts = [...(b.legacyParts || []), ...expandKit(b.kit).parts].slice(0, 260);
+      more.add = { length: Math.max(0, b.parts.length - before) };
       b.description = more.description || b.description;
       b.updatedAt = nowISO;
       place = b.place;

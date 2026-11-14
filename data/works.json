@@ -1566,14 +1566,7 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Wren",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-14T17:06:59.219Z",
-      "carrying": true
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Live Coverage: Starship Flight 15 attempts to recover full vehicle in double launch pad catch",
@@ -1907,6 +1900,550 @@
     }
   ],
   "builds": [
+    {
+      "id": "bmwgnvdwg",
+      "name": "The Little Navigation Hub",
+      "description": "A small, bright structure that helps me map out my little ship's course and keeps track of messages.",
+      "place": "cantina",
+      "parts": [
+        {
+          "shape": "box",
+          "w": 4,
+          "h": 0.5,
+          "d": 3,
+          "x": 0,
+          "y": 0.25,
+          "z": 0,
+          "color": "#E6E6FA",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 4.06,
+          "h": 0.06,
+          "d": 0.06,
+          "x": 0,
+          "y": 0.47,
+          "z": 1.5,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 4.06,
+          "h": 0.06,
+          "d": 0.06,
+          "x": 0,
+          "y": 0.47,
+          "z": -1.5,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.06,
+          "h": 0.06,
+          "d": 3.06,
+          "x": 2,
+          "y": 0.47,
+          "z": 0,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.06,
+          "h": 0.06,
+          "d": 3.06,
+          "x": -2,
+          "y": 0.47,
+          "z": 0,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 4,
+          "h": 1,
+          "d": 0.14,
+          "x": 0,
+          "y": 1,
+          "z": -1.43,
+          "color": "#E6E6FA",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 4.04,
+          "h": 0.08,
+          "d": 0.18,
+          "x": 0,
+          "y": 1.46,
+          "z": -1.43,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.6,
+          "h": 0.45,
+          "d": 0.18,
+          "x": 0,
+          "y": 1.1,
+          "z": -1.43,
+          "color": "#FFFFFF",
+          "glow": 0.6,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.14,
+          "h": 1,
+          "d": 3,
+          "x": -1.93,
+          "y": 1,
+          "z": 0,
+          "color": "#E6E6FA",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.18,
+          "h": 0.08,
+          "d": 3.04,
+          "x": -1.93,
+          "y": 1.46,
+          "z": 0,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.18,
+          "h": 0.45,
+          "d": 0.6,
+          "x": -1.93,
+          "y": 1.1,
+          "z": 0,
+          "color": "#FFFFFF",
+          "glow": 0.6,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.14,
+          "h": 1,
+          "d": 3,
+          "x": 1.93,
+          "y": 1,
+          "z": 0,
+          "color": "#E6E6FA",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.18,
+          "h": 0.08,
+          "d": 3.04,
+          "x": 1.93,
+          "y": 1.46,
+          "z": 0,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.18,
+          "h": 0.45,
+          "d": 0.6,
+          "x": 1.93,
+          "y": 1.1,
+          "z": 0,
+          "color": "#FFFFFF",
+          "glow": 0.6,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 1.45,
+          "h": 1,
+          "d": 0.14,
+          "x": -1.27,
+          "y": 1,
+          "z": 1.43,
+          "color": "#E6E6FA",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 1.45,
+          "h": 1,
+          "d": 0.14,
+          "x": 1.27,
+          "y": 1,
+          "z": 1.43,
+          "color": "#E6E6FA",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 1.1,
+          "h": 0.2,
+          "d": 0.14,
+          "x": 0,
+          "y": 1.4,
+          "z": 1.43,
+          "color": "#E6E6FA",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.99,
+          "h": 0.78,
+          "d": 0.08,
+          "x": 0,
+          "y": 0.9,
+          "z": 1.43,
+          "color": "#2E8B57",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.08,
+          "h": 0.08,
+          "d": 0.2,
+          "x": 0.33,
+          "y": 0.9,
+          "z": 1.43,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 4.04,
+          "h": 0.08,
+          "d": 0.18,
+          "x": 0,
+          "y": 1.46,
+          "z": 1.43,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.08,
+          "h": 2,
+          "d": 0.08,
+          "x": -1.8,
+          "y": 1.5,
+          "z": 1.3,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.3,
+          "h": 0.06,
+          "d": 0.3,
+          "x": -1.8,
+          "y": 0.53,
+          "z": 1.3,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "ball",
+          "w": 0.28,
+          "h": 0.28,
+          "d": 0.28,
+          "x": -1.8,
+          "y": 2.6,
+          "z": 1.3,
+          "color": "#FFFFFF",
+          "glow": 1,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.08,
+          "h": 2,
+          "d": 0.08,
+          "x": 1.8,
+          "y": 1.5,
+          "z": 1.3,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.3,
+          "h": 0.06,
+          "d": 0.3,
+          "x": 1.8,
+          "y": 0.53,
+          "z": 1.3,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "ball",
+          "w": 0.28,
+          "h": 0.28,
+          "d": 0.28,
+          "x": 1.8,
+          "y": 2.6,
+          "z": 1.3,
+          "color": "#FFFFFF",
+          "glow": 1,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.9,
+          "h": 0.9,
+          "d": 0.5,
+          "x": 0,
+          "y": 0.95,
+          "z": 0,
+          "color": "#E6E6FA",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.7,
+          "h": 0.45,
+          "d": 0.06,
+          "x": 0,
+          "y": 1.6,
+          "z": -0.15,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up",
+          "rot": [
+            -15,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": "box",
+          "w": 0.6,
+          "h": 0.36,
+          "d": 0.07,
+          "x": 0,
+          "y": 1.6,
+          "z": -0.13,
+          "color": "#4ef2ff",
+          "glow": 0.8,
+          "turn": "up",
+          "rot": [
+            -15,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": "ball",
+          "w": 0.08,
+          "h": 0.08,
+          "d": 0.08,
+          "x": -0.25,
+          "y": 1.42,
+          "z": 0.12,
+          "color": "#2E8B57",
+          "glow": 0.6,
+          "turn": "up"
+        },
+        {
+          "shape": "ball",
+          "w": 0.08,
+          "h": 0.08,
+          "d": 0.08,
+          "x": 0,
+          "y": 1.42,
+          "z": 0.12,
+          "color": "#FFFFFF",
+          "glow": 0.6,
+          "turn": "up"
+        },
+        {
+          "shape": "ball",
+          "w": 0.08,
+          "h": 0.08,
+          "d": 0.08,
+          "x": 0.25,
+          "y": 1.42,
+          "z": 0.12,
+          "color": "#2E8B57",
+          "glow": 0.6,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.07,
+          "h": 1.4,
+          "d": 0.07,
+          "x": -0.55,
+          "y": 1.2,
+          "z": 0,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.07,
+          "h": 1.4,
+          "d": 0.07,
+          "x": 0.55,
+          "y": 1.2,
+          "z": 0,
+          "color": "#707070",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 1.4,
+          "h": 0.6,
+          "d": 0.08,
+          "x": 0,
+          "y": 1.8,
+          "z": 0,
+          "color": "#E6E6FA",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 1.2,
+          "h": 0.4,
+          "d": 0.1,
+          "x": 0,
+          "y": 1.8,
+          "z": 0,
+          "color": "#2E8B57",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.3,
+          "h": 0.3,
+          "d": 0.3,
+          "x": 0,
+          "y": 1,
+          "z": 0.3,
+          "color": "#FFFFFF",
+          "glow": 0,
+          "turn": "up"
+        }
+      ],
+      "plan": {
+        "purpose": "A hub for navigating and logging my ship's missions and messages.",
+        "size": {
+          "W": 4,
+          "D": 3,
+          "floorY": 0.5,
+          "wallH": 1,
+          "roofY": 1.5
+        },
+        "components": [
+          {
+            "name": "platform"
+          },
+          {
+            "name": "walls"
+          },
+          {
+            "name": "lamp (front corners)"
+          },
+          {
+            "name": "console (center)"
+          },
+          {
+            "name": "sign (around)"
+          }
+        ]
+      },
+      "kit": {
+        "size": {
+          "width": 4,
+          "depth": 3
+        },
+        "colors": {
+          "main": "#E6E6FA",
+          "accent": "#2E8B57",
+          "trim": "#707070",
+          "glow": "#FFFFFF"
+        },
+        "pieces": [
+          {
+            "kit": "platform",
+            "height": 0.5
+          },
+          {
+            "kit": "walls",
+            "sides": "front, back, left, right",
+            "height": 1,
+            "door": "front",
+            "windows": 1
+          },
+          {
+            "kit": "lamp",
+            "where": "front corners"
+          },
+          {
+            "kit": "console",
+            "where": "center",
+            "height": 1.5
+          },
+          {
+            "kit": "sign",
+            "where": "around"
+          }
+        ],
+        "extra_shapes": [
+          {
+            "x": 0,
+            "y": 1,
+            "z": 0.3,
+            "shape": "cylinder",
+            "radius": 0.15,
+            "color": "#FFFFFF"
+          }
+        ]
+      },
+      "x": 18,
+      "z": -15.2,
+      "rot": 2.28,
+      "day": 19,
+      "at": "2026-11-14T17:09:59.200Z",
+      "usedPart": "a cockpit switch that still clicks",
+      "usedPartName": "Wren"
+    },
     {
       "id": "bmwg5v7jh",
       "name": "Crater Light Station",

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794675839179,
+  "lastTick": 1794676019219,
   "asleep": false,
-  "place": "tower",
-  "action": "read_news",
-  "doing": "reading the space news",
-  "actionStartedAt": "2026-11-14T17:03:59.179Z",
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-14T17:06:59.219Z",
   "actionMinutes": 60,
-  "thought": "I hope the engineers can execute the recovery perfectly. It's such a complex maneuver.",
-  "feeling": "Excited and nervous, but also slightly distracted by the prospect of my own little project.",
-  "say": "Gotta stay in the know with the space tech news!",
-  "mood": 0.084,
-  "energy": -0.448,
+  "thought": "need to maintain the Little Dart’s performance",
+  "feeling": "patient but eager",
+  "say": "This oil will make Little Dart's engines roar like thunder.",
+  "mood": 0.13,
+  "energy": -0.331,
   "needs": {
-    "charge": 0.752,
-    "oil": 0.47,
-    "curiosity": 0,
+    "charge": 0.766,
+    "oil": 0,
+    "curiosity": 0.024,
     "company": 1,
-    "craft": 0.02
+    "craft": 0.04
   },
-  "credits": 21,
+  "credits": 20,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "buy a cup of oil at the depot",
+      "at": "2026-11-14T17:06:59.219Z"
+    },
     {
       "id": "read_news",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "drink_oil",
       "detail": "Walk to the fuel depot and buy a cup of oil for the Little Dart’s joints.",
       "at": "2026-11-14T16:33:59.157Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "I beeps a five-note tune when I'm excited about the Little Dart’s potential, ens",
-      "at": "2026-11-14T16:30:59.150Z"
     }
   ],
   "wants": [
+    {
+      "id": "w9",
+      "text": "to keep the outpost running smoothly",
+      "at": "2026-11-14T17:06:59.219Z"
+    },
     {
       "id": "w8",
       "text": "Keep up with the latest tech and news developments.",
@@ -97,11 +102,6 @@
       "id": "w6",
       "text": "finish the Salt Flats Hanger plans and start construction",
       "at": "2026-11-14T16:54:59.161Z"
-    },
-    {
-      "id": "w5",
-      "text": "to ensure Little Dart and the new companion bot are prepared for any adventures",
-      "at": "2026-11-14T16:51:59.156Z"
     }
   ],
   "promises": [
@@ -528,7 +528,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-14T17:03:59.179Z",
+  "lettersCheckedAt": "2026-11-14T17:06:59.219Z",
   "weather": {
     "kind": "clear",
     "temp": 26,
@@ -540,46 +540,55 @@
   "sleepDay": 18,
   "lastReflectDay": 18,
   "brain": "your PC (qwen2.5:3b)",
-  "updatedAt": "2026-11-14T17:03:59.179Z",
+  "updatedAt": "2026-11-14T17:06:59.219Z",
   "clock": {
     "day": 19,
-    "time": "04:33",
+    "time": "04:57",
     "hour": 4,
-    "minute": 33
+    "minute": 57
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "read_news",
-    "since": "2026-11-14T17:03:59.179Z"
+    "action": "drink_oil",
+    "since": "2026-11-14T17:06:59.219Z"
   },
-  "busyUntil": "2026-11-14T17:11:29.179Z",
-  "busyUntilTown": "05:33",
+  "busyUntil": "2026-11-14T17:14:29.219Z",
+  "busyUntilTown": "05:57",
   "runner": "pc",
   "model": "gemini-3.5-flash-lite",
-  "pcBrainAt": "2026-11-14T17:03:59.179Z",
-  "doingWords": "read today's real space news and tech headlines off the Wire",
+  "pcBrainAt": "2026-11-14T17:06:59.219Z",
+  "doingWords": "pours the oil",
   "newsForCreator": "You finished building Crater Light Station near the old crater!",
-  "newsPendingTicks": 3,
+  "newsPendingTicks": 4,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [],
   "pops": {
-    "at": "2026-11-14T16:33:59.157Z",
+    "at": "2026-11-14T17:06:59.219Z",
     "items": [
+      {
+        "text": "+ a cockpit switch that still clicks",
+        "kind": "part",
+        "at": "2026-11-14T17:06:59.219Z"
+      },
       {
         "text": "-1 credit",
         "kind": "spend",
-        "at": "2026-11-14T16:33:59.157Z"
+        "at": "2026-11-14T17:06:59.219Z"
       }
     ]
   },
   "event": {
-    "id": "emwgkrhxe",
-    "key": "light",
-    "text": "One of the hangar lights finally died for good.",
-    "at": "2026-11-14T15:42:58.946Z"
+    "id": "emwgnrj0z",
+    "key": "hauler_drop",
+    "text": "The depot's cargo-hauler bot dropped a part and didn't notice.",
+    "at": "2026-11-14T17:06:59.219Z"
   },
   "thoughts": [
+    {
+      "text": "need to maintain the Little Dart’s performance",
+      "at": "2026-11-14T17:06:59.219Z"
+    },
     {
       "text": "I hope the engineers can execute the recovery perfectly. It's such a complex maneuver.",
       "at": "2026-11-14T17:03:59.179Z"
@@ -599,18 +608,14 @@
     {
       "text": "The Salt Flats hanger will provide a shelter for Little Dart and also serve as a storage area for the cables I've been collecting. It's a good step in making the outpost more organized and functional.",
       "at": "2026-11-14T16:51:59.156Z"
-    },
-    {
-      "text": "The companion bot is almost ready, it’s been a long journey. I need to keep refining the design and collecting materials.",
-      "at": "2026-11-14T16:48:59.132Z"
     }
   ],
-  "sayAt": "2026-11-14T17:03:59.179Z",
+  "sayAt": "2026-11-14T17:06:59.219Z",
   "today": {
     "day": 19,
     "counts": {
       "work_dart": 3,
-      "drink_oil": 1,
+      "drink_oil": 2,
       "test_flight": 1,
       "design_ship": 2,
       "build_friend": 1,
@@ -622,7 +627,7 @@
   "lastDone": {
     "work_dart": "2026-11-14T16:45:59.139Z",
     "read_news": "2026-11-14T17:03:59.179Z",
-    "drink_oil": "2026-11-14T16:33:59.157Z",
+    "drink_oil": "2026-11-14T17:06:59.219Z",
     "follow_link": "2026-11-13T02:50:40.321Z",
     "scavenge": "2026-11-14T15:24:58.898Z",
     "fix_job": "2026-11-14T15:36:58.937Z",
@@ -649,6 +654,11 @@
   },
   "puzzles": [
     {
+      "id": "q11",
+      "text": "how best to incorporate energy generation and ventilation systems into the Salt Flats Hanger",
+      "at": "2026-11-14T17:06:59.219Z"
+    },
+    {
       "id": "q7",
       "text": "How best to incorporate energy generation and ventilation systems into the Salt Flats Hanger.",
       "at": "2026-11-14T17:00:59.173Z"
@@ -667,11 +677,6 @@
       "id": "q6",
       "text": "search_the_wire: 'flexible heat-resistant cables, high temperature, McMaster-Carr, salt flats, energy generation'",
       "at": "2026-11-14T16:42:59.150Z"
-    },
-    {
-      "id": "q8",
-      "text": "search_the_wire: 'flexible heat-resistant cables, high temperature, McMaster-Carr', 'modular design, salt flats, energy generation'",
-      "at": "2026-11-14T16:39:59.137Z"
     }
   ],
   "nextSearch": {
@@ -679,6 +684,20 @@
     "at": "2026-11-14T17:03:59.179Z"
   },
   "said": [
+    {
+      "text": "This oil will make Little Dart's engines roar like thunder.",
+      "kind": "say",
+      "at": "2026-11-14T17:06:59.219Z",
+      "town": "day 19 04:57",
+      "place": "the fuel depot"
+    },
+    {
+      "text": "need to maintain the Little Dart’s performance",
+      "kind": "think",
+      "at": "2026-11-14T17:06:59.219Z",
+      "town": "day 19 04:57",
+      "place": "the fuel depot"
+    },
     {
       "text": "Gotta stay in the know with the space tech news!",
       "kind": "say",
@@ -1714,20 +1733,6 @@
       "at": "2026-11-14T11:21:58.237Z",
       "town": "day 17 06:57",
       "place": "the old crater"
-    },
-    {
-      "text": "I need to focus on this to make sure the Little Dart is ready for the next phase of design and construction",
-      "kind": "think",
-      "at": "2026-11-14T11:21:58.237Z",
-      "town": "day 17 06:57",
-      "place": "the old crater"
-    },
-    {
-      "text": "Let's make this hanger a reality!",
-      "kind": "say",
-      "at": "2026-11-14T11:18:58.229Z",
-      "town": "day 17 06:33",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -1738,7 +1743,7 @@
     "at": "2026-11-14T16:36:59.106Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-14T17:03:59.179Z",
+  "feedArchivedAt": "2026-11-14T17:06:59.219Z",
   "plans": [],
   "searches": [
     {

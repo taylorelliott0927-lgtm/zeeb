@@ -262,6 +262,7 @@ export function buildsText(works) {
   const parts = [];
   if (works.dart.launched?.length) parts.push(`FINISHED SHIPS: ${works.dart.launched.map((l) => l.name).join(", ")} (parked outside the hangar). Test flights so far: ${(works.flights || []).length}${works.flights?.[0] ? `, last one: ${works.flights[0].outcome}` : ""}.`);
   parts.push(b.length ? `THINGS YOU'VE BUILT IN THE WORLD: ${b.slice(0, 10).map((x) => `${x.id}: ${x.name} (near ${PLACES[x.place]?.name || "the outpost"})`).join("; ")}.` : "You could build things and put them anywhere in the outpost (build_thing), if you ever want to.");
+  if (hasLibrary()) parts.push(`YOUR MODEL LIBRARY: ${catalog().length} ready-made 3D models (free, by Kenney) you can search and use whenever you build or add to something.`);
   return parts.join("\n");
 }
 

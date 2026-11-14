@@ -1289,19 +1289,31 @@
       }
     ],
     "design": {
-      "description": "The Little Dart Mk 8 retains its sleek look with rounded hull and swept wings, now featuring a more detailed cockpit and a unique set of stripes for added flair.",
+      "description": "The Little Dart Mk 8 maintains its sleek, modern look with a boxy hull, rounded edges, and swept wings for improved aerodynamics.",
       "parts": [
         {
-          "shape": "cylinder",
+          "shape": "box",
           "w": 0.65,
-          "h": 2.6,
-          "d": 0.65,
+          "h": 0.65,
+          "d": 2.6,
           "x": 0,
           "y": 0.5,
           "z": 0,
-          "color": "#80d8ff",
+          "color": "#F87854",
           "glow": 0,
-          "turn": "forward"
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.69,
+          "h": 0.06,
+          "d": 2.34,
+          "x": 0,
+          "y": 0.83,
+          "z": 0,
+          "color": "#FFFFFF",
+          "glow": 0,
+          "turn": "up"
         },
         {
           "shape": "cone",
@@ -1311,7 +1323,7 @@
           "x": 0,
           "y": 0.5,
           "z": 1.76,
-          "color": "#80d8ff",
+          "color": "#F87854",
           "glow": 0,
           "turn": "forward"
         },
@@ -1323,7 +1335,7 @@
           "x": 0,
           "y": 0.79,
           "z": 0.45,
-          "color": "#ffffff",
+          "color": "#FFFFFF",
           "glow": 0.5,
           "turn": "up"
         },
@@ -1335,7 +1347,7 @@
           "x": -0.81,
           "y": 0.42,
           "z": -0.51,
-          "color": "#f5a623",
+          "color": "#FFFFFF",
           "glow": 0,
           "turn": "up",
           "rot": [
@@ -1352,7 +1364,7 @@
           "x": -1.3,
           "y": 0.44,
           "z": -0.76,
-          "color": "#80d8ff",
+          "color": "#F87854",
           "glow": 0,
           "turn": "up"
         },
@@ -1364,7 +1376,7 @@
           "x": 0.81,
           "y": 0.42,
           "z": -0.51,
-          "color": "#f5a623",
+          "color": "#FFFFFF",
           "glow": 0,
           "turn": "up",
           "rot": [
@@ -1381,7 +1393,7 @@
           "x": 1.3,
           "y": 0.44,
           "z": -0.76,
-          "color": "#80d8ff",
+          "color": "#F87854",
           "glow": 0,
           "turn": "up"
         },
@@ -1405,7 +1417,7 @@
           "x": -0.29,
           "y": 0.5,
           "z": -1.78,
-          "color": "#ffffff",
+          "color": "#FFFFFF",
           "glow": 1,
           "turn": "back"
         },
@@ -1429,7 +1441,7 @@
           "x": 0.29,
           "y": 0.5,
           "z": -1.78,
-          "color": "#ffffff",
+          "color": "#FFFFFF",
           "glow": 1,
           "turn": "back"
         },
@@ -1441,7 +1453,7 @@
           "x": 0,
           "y": 1.05,
           "z": -0.94,
-          "color": "#f5a623",
+          "color": "#FFFFFF",
           "glow": 0,
           "turn": "up"
         },
@@ -1453,12 +1465,12 @@
           "x": 0,
           "y": 0.5,
           "z": 0,
-          "color": "#f5a623",
+          "color": "#FFFFFF",
           "glow": 0,
           "turn": "up"
         }
       ],
-      "at": "2026-11-14T17:00:59.173Z",
+      "at": "2026-11-14T17:12:59.233Z",
       "day": 19
     }
   },

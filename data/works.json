@@ -1919,6 +1919,626 @@
   ],
   "builds": [
     {
+      "id": "bmwgp5oms",
+      "name": "The Little Dart Prototype",
+      "description": "A compact yet functional platform to showcase the Little Dart's basic structure and components.",
+      "place": "crater",
+      "parts": [
+        {
+          "shape": "box",
+          "w": 2,
+          "h": 1.2,
+          "d": 1.5,
+          "x": 0,
+          "y": 0.6,
+          "z": 0,
+          "color": "#FFFFFF",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 2.06,
+          "h": 0.06,
+          "d": 0.06,
+          "x": 0,
+          "y": 1.17,
+          "z": 0.75,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 2.06,
+          "h": 0.06,
+          "d": 0.06,
+          "x": 0,
+          "y": 1.17,
+          "z": -0.75,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.06,
+          "h": 0.06,
+          "d": 1.56,
+          "x": 1,
+          "y": 1.17,
+          "z": 0,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.06,
+          "h": 0.06,
+          "d": 1.56,
+          "x": -1,
+          "y": 1.17,
+          "z": 0,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 2,
+          "h": 2.2,
+          "d": 0.14,
+          "x": 0,
+          "y": 2.3,
+          "z": -0.68,
+          "color": "#FFFFFF",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 2.04,
+          "h": 0.08,
+          "d": 0.18,
+          "x": 0,
+          "y": 3.36,
+          "z": -0.68,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.6,
+          "h": 0.45,
+          "d": 0.18,
+          "x": 0,
+          "y": 2.52,
+          "z": -0.68,
+          "color": "#FFFFFF",
+          "glow": 0.6,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.14,
+          "h": 2.2,
+          "d": 1.5,
+          "x": -0.93,
+          "y": 2.3,
+          "z": 0,
+          "color": "#FFFFFF",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.18,
+          "h": 0.08,
+          "d": 1.54,
+          "x": -0.93,
+          "y": 3.36,
+          "z": 0,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.18,
+          "h": 0.45,
+          "d": 0.45,
+          "x": -0.93,
+          "y": 2.52,
+          "z": 0,
+          "color": "#FFFFFF",
+          "glow": 0.6,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.14,
+          "h": 2.2,
+          "d": 1.5,
+          "x": 0.93,
+          "y": 2.3,
+          "z": 0,
+          "color": "#FFFFFF",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.18,
+          "h": 0.08,
+          "d": 1.54,
+          "x": 0.93,
+          "y": 3.36,
+          "z": 0,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.18,
+          "h": 0.45,
+          "d": 0.45,
+          "x": 0.93,
+          "y": 2.52,
+          "z": 0,
+          "color": "#FFFFFF",
+          "glow": 0.6,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.6,
+          "h": 2.2,
+          "d": 0.14,
+          "x": -0.7,
+          "y": 2.3,
+          "z": 0.68,
+          "color": "#FFFFFF",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.6,
+          "h": 2.2,
+          "d": 0.14,
+          "x": 0.7,
+          "y": 2.3,
+          "z": 0.68,
+          "color": "#FFFFFF",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.8,
+          "h": 0.44,
+          "d": 0.14,
+          "x": 0,
+          "y": 3.18,
+          "z": 0.68,
+          "color": "#FFFFFF",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.72,
+          "h": 1.71,
+          "d": 0.08,
+          "x": 0,
+          "y": 2.08,
+          "z": 0.68,
+          "color": "#FF6600",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.08,
+          "h": 0.08,
+          "d": 0.2,
+          "x": 0.24,
+          "y": 2.08,
+          "z": 0.68,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 2.04,
+          "h": 0.08,
+          "d": 0.18,
+          "x": 0,
+          "y": 3.36,
+          "z": 0.68,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.08,
+          "h": 2,
+          "d": 0.08,
+          "x": -0.8,
+          "y": 2.2,
+          "z": 0.55,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.3,
+          "h": 0.06,
+          "d": 0.3,
+          "x": -0.8,
+          "y": 1.23,
+          "z": 0.55,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "ball",
+          "w": 0.28,
+          "h": 0.28,
+          "d": 0.28,
+          "x": -0.8,
+          "y": 3.3,
+          "z": 0.55,
+          "color": "#FFFFFF",
+          "glow": 1,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.08,
+          "h": 2,
+          "d": 0.08,
+          "x": 0.8,
+          "y": 2.2,
+          "z": 0.55,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.3,
+          "h": 0.06,
+          "d": 0.3,
+          "x": 0.8,
+          "y": 1.23,
+          "z": 0.55,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "ball",
+          "w": 0.28,
+          "h": 0.28,
+          "d": 0.28,
+          "x": 0.8,
+          "y": 3.3,
+          "z": 0.55,
+          "color": "#FFFFFF",
+          "glow": 1,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.07,
+          "h": 3,
+          "d": 0.07,
+          "x": 0.8,
+          "y": 2.7,
+          "z": 0.55,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.3,
+          "h": 0.06,
+          "d": 0.3,
+          "x": 0.8,
+          "y": 3.3,
+          "z": 0.55,
+          "color": "#FFFFFF",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "ball",
+          "w": 0.16,
+          "h": 0.16,
+          "d": 0.16,
+          "x": 0.8,
+          "y": 4.25,
+          "z": 0.55,
+          "color": "#ff4a3a",
+          "glow": 1,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.1,
+          "h": 0.6,
+          "d": 0.1,
+          "x": 0,
+          "y": 1.5,
+          "z": 0.25,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "cone",
+          "w": 1.1,
+          "h": 0.35,
+          "d": 1.1,
+          "x": 0,
+          "y": 1.95,
+          "z": 0.25,
+          "color": "#FFFFFF",
+          "glow": 0,
+          "turn": "up",
+          "rot": [
+            215,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.03,
+          "h": 0.5,
+          "d": 0.03,
+          "x": 0,
+          "y": 2.05,
+          "z": 0.35,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up",
+          "rot": [
+            35,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": "box",
+          "w": 0.9,
+          "h": 0.9,
+          "d": 0.5,
+          "x": -0.5,
+          "y": 1.65,
+          "z": -0.25,
+          "color": "#FFFFFF",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.7,
+          "h": 0.45,
+          "d": 0.06,
+          "x": -0.5,
+          "y": 2.3,
+          "z": -0.4,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up",
+          "rot": [
+            -15,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": "box",
+          "w": 0.6,
+          "h": 0.36,
+          "d": 0.07,
+          "x": -0.5,
+          "y": 2.3,
+          "z": -0.38,
+          "color": "#4ef2ff",
+          "glow": 0.8,
+          "turn": "up",
+          "rot": [
+            -15,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": "ball",
+          "w": 0.08,
+          "h": 0.08,
+          "d": 0.08,
+          "x": -0.75,
+          "y": 2.12,
+          "z": -0.13,
+          "color": "#FF6600",
+          "glow": 0.6,
+          "turn": "up"
+        },
+        {
+          "shape": "ball",
+          "w": 0.08,
+          "h": 0.08,
+          "d": 0.08,
+          "x": -0.5,
+          "y": 2.12,
+          "z": -0.13,
+          "color": "#FFFFFF",
+          "glow": 0.6,
+          "turn": "up"
+        },
+        {
+          "shape": "ball",
+          "w": 0.08,
+          "h": 0.08,
+          "d": 0.08,
+          "x": -0.25,
+          "y": 2.12,
+          "z": -0.13,
+          "color": "#FF6600",
+          "glow": 0.6,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 1.4,
+          "h": 0.08,
+          "d": 0.45,
+          "x": 0.5,
+          "y": 1.65,
+          "z": -0.25,
+          "color": "#FFFFFF",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.08,
+          "h": 0.45,
+          "d": 0.4,
+          "x": -0.05,
+          "y": 1.42,
+          "z": -0.25,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.08,
+          "h": 0.45,
+          "d": 0.4,
+          "x": 1.05,
+          "y": 1.42,
+          "z": -0.25,
+          "color": "#000000",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 1.4,
+          "h": 0.35,
+          "d": 0.06,
+          "x": 0.5,
+          "y": 1.95,
+          "z": -0.45,
+          "color": "#FFFFFF",
+          "glow": 0,
+          "turn": "up"
+        }
+      ],
+      "plan": {
+        "purpose": "To serve as a prototype for the Little Dart, showcasing its key features and allowing for adjustments.",
+        "size": {
+          "W": 2,
+          "D": 1.5,
+          "floorY": 1.2,
+          "wallH": 2.2,
+          "roofY": 3.4000000000000004
+        },
+        "components": [
+          {
+            "name": "platform"
+          },
+          {
+            "name": "walls"
+          },
+          {
+            "name": "lamp (front corners)"
+          },
+          {
+            "name": "antenna (front-right)"
+          },
+          {
+            "name": "dish (front)"
+          },
+          {
+            "name": "console (back-left)"
+          },
+          {
+            "name": "bench (back-right)"
+          }
+        ]
+      },
+      "kit": {
+        "size": {
+          "width": 2,
+          "depth": 1.5
+        },
+        "colors": {
+          "main": "#FFFFFF",
+          "accent": "#FF6600",
+          "trim": "#000000",
+          "glow": "#FFFFFF"
+        },
+        "pieces": [
+          {
+            "kit": "platform",
+            "height": 1.2
+          },
+          {
+            "kit": "walls",
+            "sides": "all",
+            "height": 2.2,
+            "door": "front",
+            "windows": 1
+          },
+          {
+            "kit": "lamp",
+            "where": "front corners"
+          },
+          {
+            "kit": "antenna",
+            "where": "front-right",
+            "height": 3
+          },
+          {
+            "kit": "dish",
+            "where": "front"
+          },
+          {
+            "kit": "console",
+            "where": "back-left",
+            "height": 1.5
+          },
+          {
+            "kit": "bench",
+            "where": "back-right"
+          }
+        ],
+        "extra_shapes": []
+      },
+      "x": -36.8,
+      "z": 40.2,
+      "rot": 0.31,
+      "day": 19,
+      "at": "2026-11-14T17:45:59.284Z",
+      "usedPart": null,
+      "usedPartName": null
+    },
+    {
       "id": "bmwgnvdwg",
       "name": "The Little Navigation Hub",
       "description": "A small, bright structure that helps me map out my little ship's course and keeps track of messages.",

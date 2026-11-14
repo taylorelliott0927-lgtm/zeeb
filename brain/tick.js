@@ -189,6 +189,15 @@ function checkPromises() {
   state.promises = state.promises.filter((p) => Date.parse(p.dueAt) >= NOW);
 }
 
+// Everything he's ever looked at on the Wire, kept in data/web-log.json for the website's Web tab.
+function webLog(entry) {
+  const log = readJSON("web-log.json", { entries: [] });
+  if (!log.entries.length && (works.reads || []).length) log.entries = works.reads.map((r) => ({ ...r, town: "" })); // first time: start from what he's read lately
+  log.entries.unshift({ ...entry, at: nowISO, town: stamp });
+  log.entries = log.entries.slice(0, 2000);
+  writeJSON("web-log.json", log);
+}
+
 // Turn "3" or a web address into the link he means (from the links he saw last time on the Wire).
 function linkTarget(detail) {
   detail = String(detail || "");
@@ -224,11 +233,12 @@ async function readTheWire(kind, target, wasSearch) {
   if (!found.failed && found.links?.length) works.lastLinks = found.links.slice(0, 12);
   else if (found.kind === "news" && !found.failed) works.lastLinks = (found.items || []).filter((i) => i.url).map((i) => ({ title: i.title, url: i.url }));
   const r = (await reactToWire({ character, works }, found)) || ruleReact(found);
-  if (found.failed) post("noticed", found.error ? `Couldn't read it: ${found.error}.` : "The Wire was down. Nothing loaded.");
+  if (found.failed) { post("noticed", found.error ? `Couldn't read it: ${found.error}.` : "The Wire was down. Nothing loaded."); webLog({ title: found.url || found.query || "a page", url: found.url || "", query: found.query || "", failed: true, error: found.error || "", kind }); }
   const title = found.kind === "news" ? (r.picked || found.items?.[0]?.title || "the news") : found.title;
   const item = found.kind === "news" ? (found.items.find((i) => i.title === r.picked) || found.items?.[0]) : found;
   if (!found.failed) {
     works.reads.unshift({ title, url: item?.url || "", query: found.query || "", takeaway: r.takeaway || "", kind: found.kind, at: nowISO });
+    webLog({ title, url: item?.url || "", query: found.query || "", takeaway: r.takeaway || "", kind: found.kind });
     works.reads = works.reads.slice(0, 40);
     post("noticed", `Read "${title}"${r.takeaway ? `: ${r.takeaway}` : ""}`, { link: item?.url || "" });
   }

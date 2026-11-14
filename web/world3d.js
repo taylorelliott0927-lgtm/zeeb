@@ -409,7 +409,9 @@ export class World {
     this.hasShip = (w.dart?.launched || []).length > 0;
     if (!this.flight) this.parked.visible = this.hasShip;
     this.setOlderShips(w.dart?.launched || []);
-    this.setBuilds(w.builds || []);
+    // Big projects still being built show up part-built, growing as he works on them.
+    const inProgress = (w.projects || []).map((p) => ({ ...p, parts: (p.parts || []).slice(0, Math.max(1, Math.ceil((p.parts || []).length * (p.progress || 0) / 100))), name: `${p.name} (${p.progress}% built)`, updatedAt: `${p.progress}` }));
+    this.setBuilds([...(w.builds || []), ...inProgress]);
     this.recipes = new Map(((w.crafting?.recipes) || []).map((r) => [String(r.what).toLowerCase(), r]));
     const rsig = JSON.stringify([...this.recipes.keys()]);
     if (rsig !== this.recipesSig) { this.recipesSig = rsig; this.stashSig = null; this.buildsSig = null; this.dartMounts.sig = null; this.parkedMounts.sig = null; this.flyerMounts.sig = null; }

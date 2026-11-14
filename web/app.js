@@ -1,4 +1,4 @@
-import { World, DEFAULT_SHIP } from "./world3d.js?v=33";
+import { World, DEFAULT_SHIP } from "./world3d.js?v=34";
 
 // ---------- where Zeeb's data lives ----------
 // On GitHub Pages (you.github.io/repo) we read the live files straight from the repo,
@@ -319,10 +319,24 @@ function renderWorks(w) {
       box.append(card);
     }
   }
+  if (w.projects?.length) {
+    box.append(el("h4", null, "Big projects he's building"));
+    for (const p of w.projects) {
+      const card = el("div", "flight-card");
+      const bar = el("div", "progress"), fill = el("i"); fill.style.width = `${p.progress}%`; bar.append(fill);
+      card.append(el("div", "title", p.name), bar, el("div", "muted", `${p.progress}% built · near ${({ hangar: "Hangar Bay 3", cantina: "the cantina", market: "the junk market", tower: "the comms tower", depot: "the fuel depot", ridge: "the dune ridge", flats: "the salt flats", crater: "the old crater", mesa: "the red mesa" })[p.place] || "the outpost"} · started day ${p.day}`));
+      if (p.description) card.append(el("p", null, p.description));
+      if (p.plan?.components?.length) card.append(el("div", "muted", `His plan${p.plan.purpose ? ` (for ${p.plan.purpose})` : ""}: ${p.plan.components.map((c) => c.name).join(", ")}`));
+      const ul = el("ul", "list");
+      for (const l of (p.log || []).slice(0, 8)) ul.append(el("li", null, `${l.progress}%: ${l.note}${l.town ? ` (${l.town})` : ""}`));
+      card.append(ul);
+      box.append(card);
+    }
+  }
   if (w.builds?.length) {
     box.append(el("h4", null, "Things he's built"));
     const ul = el("ul", "list");
-    for (const b of w.builds) { const li = el("li", null, `${b.name} (near ${({ hangar: "Hangar Bay 3", cantina: "the cantina", market: "the junk market", tower: "the comms tower", depot: "the fuel depot", ridge: "the dune ridge" })[b.place] || "the outpost"})`); if (b.description) li.append(el("div", "muted", b.description)); if (b.plan?.components?.length) li.append(el("div", "muted", `His plan${b.plan.purpose ? ` (for ${b.plan.purpose})` : ""}: ${b.plan.components.map((c) => c.name).join(", ")} · ${(b.parts || []).length} pieces`)); if (b.usedPart) li.append(el("div", "muted", `built with ${b.usedPartName ? `${b.usedPartName}, ` : ""}${b.usedPart}${b.usedPartGood ? " ★" : ""} (it sits on a plate beside it)`)); ul.append(li); }
+    for (const b of w.builds) { const li = el("li", null, `${b.name} (near ${({ hangar: "Hangar Bay 3", cantina: "the cantina", market: "the junk market", tower: "the comms tower", depot: "the fuel depot", ridge: "the dune ridge" })[b.place] || "the outpost"})`); if (b.description) li.append(el("div", "muted", b.description)); if (b.took) li.append(el("div", "muted", `a big project: took ${b.took} work sessions`)); if (b.plan?.components?.length) li.append(el("div", "muted", `His plan${b.plan.purpose ? ` (for ${b.plan.purpose})` : ""}: ${b.plan.components.map((c) => c.name).join(", ")} · ${(b.parts || []).length} pieces`)); if (b.usedPart) li.append(el("div", "muted", `built with ${b.usedPartName ? `${b.usedPartName}, ` : ""}${b.usedPart}${b.usedPartGood ? " ★" : ""} (it sits on a plate beside it)`)); ul.append(li); }
     box.append(ul);
   }
   box.append(el("h4", null, "Tunes"));
@@ -546,6 +560,7 @@ function renderInventory(w, s, shop, games) {
     const models = (b.parts || []).filter((p) => p.model).length;
     return `${b.name} · near ${where[b.place] || "the outpost"} · ${(b.parts || []).length} pieces${models ? ` (${models} from his model library)` : ""}`;
   }), "nothing yet");
+  if ((w.projects || []).length) section("Big projects in progress", w.projects.map((p) => `${p.name} · ${p.progress}% built`), "none");
   section(`Tunes (${(w.tunes || []).length})`, (w.tunes || []).slice(0, 8).map((t) => `"${t.title}"`), "none yet");
   if (games?.games?.length) section("Games", games.games.map((g) => `${g.title || g.idea}${g.released ? " (released)" : " (in progress)"}`), "none");
   if (shop?.open) section(`In his shop, "${shop.name || "his shop"}"`, (shop.items || []).map((i) => `${i.name}${i.price ? ` · ${i.price}` : ""}`), "nothing listed yet");

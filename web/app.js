@@ -1,4 +1,4 @@
-import { World, DEFAULT_SHIP } from "./world3d.js?v=32";
+import { World, DEFAULT_SHIP } from "./world3d.js?v=33";
 
 // ---------- where Zeeb's data lives ----------
 // On GitHub Pages (you.github.io/repo) we read the live files straight from the repo,
@@ -552,6 +552,39 @@ function renderInventory(w, s, shop, games) {
   section("Signals sent into deep space", [`${(w.signals || []).length} so far`], "none");
 }
 
+// Every page he's opened and every search he's made, newest first, by town day.
+let webEntries = [];
+function renderWeb(log) {
+  if (log?.entries) webEntries = log.entries;
+  const box = $("weblog");
+  if (!box) return;
+  const q = ($("webFilter")?.value || "").toLowerCase().trim();
+  const items = webEntries.filter((e) => !q || `${e.title} ${e.url} ${e.query} ${e.takeaway}`.toLowerCase().includes(q));
+  box.replaceChildren(el("p", "muted", `${webEntries.filter((e) => !e.failed).length} pages read so far${q ? ` · ${items.length} match` : ""}. Things on the internet aren't always true.`));
+  let day = null;
+  const ul = el("ul", "feed");
+  for (const e of items.slice(0, 400)) {
+    const d = (e.town || "").match(/day (\d+)/)?.[1] || "";
+    if (d !== day) { day = d; ul.append(el("li", "day-head", d ? `Day ${d}` : "Earlier")); }
+    const li = el("li", e.failed ? "k-did failed" : "k-noticed");
+    li.append(el("span", "dot"));
+    const body = el("div");
+    const t = el("div", "text");
+    if (e.url && !e.failed) { const a = el("a", null, e.title || e.url); a.href = e.url; a.target = "_blank"; a.rel = "noopener nofollow"; t.append(a); }
+    else t.textContent = e.failed ? `Couldn't open ${e.title || "a page"}${e.error ? ` (${e.error})` : ""}` : e.title;
+    body.append(t);
+    let site = ""; try { site = e.url ? new URL(e.url).hostname.replace(/^www\./, "") : ""; } catch {}
+    const bits = [site, e.query && e.query !== "(random page)" ? `searched "${e.query}"` : e.kind === "news" ? "from the news" : e.kind === "page" ? "followed a link" : "", (e.town || "").replace(/^day \d+\s*/, "")].filter(Boolean);
+    if (e.takeaway) body.append(el("div", "why", e.takeaway));
+    body.append(el("div", "meta", bits.join(" · ")));
+    li.append(body);
+    ul.append(li);
+  }
+  if (!items.length) ul.append(el("li", "muted", q ? "Nothing matches." : "He hasn't read anything on the Wire yet."));
+  box.append(ul);
+}
+setTimeout(() => $("webFilter")?.addEventListener("input", () => renderWeb()), 0);
+
 function renderArcade(g) {
   const games = g?.games || [];
   $("arcadeTab").hidden = !games.length;
@@ -649,13 +682,14 @@ async function refresh() {
   if (!s) { $("status").textContent = "Zeeb's brain hasn't saved anything yet. Run the first heartbeat on GitHub."; return; }
   S = s;
   if (slow++ % 4 === 0 || !works) {
-    const [w, d, mem, c, sh, gm, it] = await Promise.all([load("works.json"), load("diary.json"), load("memories.json"), load("character.json"), load("shop.json"), load("games.json"), load("interests.json")]);
+    const [w, d, mem, c, sh, gm, it, wl] = await Promise.all([load("works.json"), load("diary.json"), load("memories.json"), load("character.json"), load("shop.json"), load("games.json"), load("interests.json"), load("web-log.json")]);
     works = w || works;
     mind_interests = it;
     renderArcade(gm);
     world?.setExtras({ shopOpen: Boolean(sh?.open), gamesCount: gm?.games?.length || 0 });
     renderWorks(works); renderDiary(d); renderMind(s, mem); renderWho(c); renderShop(sh);
     renderInventory(works, s, sh, gm);
+    renderWeb(wl || { entries: (works?.reads || []) });
   }
   world?.setState({ ...s, works });
   if (fr) { world?.setFriend(fr); renderFriend(fr); }

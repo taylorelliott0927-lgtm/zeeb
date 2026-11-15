@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794779005318,
+  "lastTick": 1794779605548,
   "asleep": false,
   "place": "hangar",
-  "action": "work_dart",
-  "doing": "still working on the Little Dart",
-  "actionStartedAt": "2026-11-15T21:33:25.603Z",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-15T21:53:25.548Z",
   "actionMinutes": 45,
-  "thought": "The titanium mount is holding firm, so now I am threading the sensor leads through the main frame. Let us see if the continuity check sings back.",
-  "feeling": "focused and hopeful",
+  "thought": "The sensor leads are in and the mount is solid, but my energy meter is blinking at me. Time to plug in for a bit.",
+  "feeling": "tired and a bit sluggish",
   "say": "*bweep*",
-  "mood": 0.396,
-  "energy": 0.012,
+  "mood": 0.412,
+  "energy": 0.192,
   "needs": {
-    "charge": 0.619,
-    "oil": 0.08,
-    "curiosity": 0.242,
+    "charge": 0.216,
+    "oil": 0.12,
+    "curiosity": 0.322,
     "company": 0,
-    "craft": 0
+    "craft": 0.067
   },
   "credits": 4,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-15T21:53:25.548Z"
+    },
     {
       "id": "work_dart",
       "detail": "Threading the navigation sensor leads through the main fuselage frame using Nim ",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "diy ultrasonic sensors salvage",
       "at": "2026-11-15T20:12:56.401Z"
-    },
-    {
-      "id": "tend_shop",
-      "detail": "listing the Little Dart Mk 10 v4 blueprint on the shelf",
-      "at": "2026-11-15T20:02:56.686Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 107,
+      "subject": "quick power nap",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/107",
+      "at": "2026-11-15T21:53:25.548Z"
+    },
     {
       "id": 106,
       "subject": "Wiring the Little Dart",
@@ -732,14 +738,6 @@
   "creatorThread": [
     {
       "from": "zeeb",
-      "letter": 67,
-      "subject": "Starboard seam locked down!",
-      "text": "Hey creator!\n\nBack at the workbench with Mabel glowing hot. I am securing the thermal mesh bracket right over the starboard engine seam now. She is holding steady and looking sharper than ever. *bweep*\n\nz",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/67",
-      "at": "2026-11-15T13:49:21.813Z"
-    },
-    {
-      "from": "zeeb",
       "letter": 68,
       "subject": "Starboard Seam Secured!",
       "text": "Hey creator!\n\nBack at the workbench with Mabel humming at just the right frequency. I just finished welding the thermal mesh bracket over the starboard engine seam. The Little Dart Mk 9 is getting closer to 95% built and she looks like a total flyer. *bweep*\n\nz",
@@ -1049,6 +1047,14 @@
       "text": "Hey creator!\n\nBack in Hangar Bay 3 running sensor wires through the little ship. My brass dish is picking up a nice steady hum from the bench power supply.\n\n*bweep*\n\nz",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/106",
       "at": "2026-11-15T21:43:25.318Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 107,
+      "subject": "quick power nap",
+      "text": "Hey creator!\n\nMy battery is running a bit low after all that wiring work on the Little Dart, so I am plugging into the dock for a quick nap. My brass dish is resting quietly against the wall.\n\n*bweep*\n\nz",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/107",
+      "at": "2026-11-15T21:53:25.548Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1057,7 +1063,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-15T21:43:25.318Z",
+  "lettersCheckedAt": "2026-11-15T21:53:25.548Z",
   "weather": {
     "kind": "clear",
     "temp": 20,
@@ -1069,31 +1075,31 @@
   "sleepDay": 27,
   "lastReflectDay": 27,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-15T21:43:25.318Z",
+  "updatedAt": "2026-11-15T21:53:25.548Z",
   "clock": {
     "day": 28,
-    "time": "17:48",
-    "hour": 17,
-    "minute": 48
+    "time": "19:08",
+    "hour": 19,
+    "minute": 8
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-15T21:33:25.603Z"
+    "action": "nap_dock",
+    "since": "2026-11-15T21:53:25.548Z"
   },
-  "busyUntil": "2026-11-15T21:49:02.818Z",
-  "busyUntilTown": "18:33",
+  "busyUntil": "2026-11-15T21:59:03.048Z",
+  "busyUntilTown": "19:53",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "routing fine copper wire along the Little Dart backbone",
+  "doingWords": "plugged into the wall dock, resting my gears",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
-    "spin"
+    "droop",
+    "nod"
   ],
   "pops": {
     "at": "2026-11-15T21:33:25.603Z",
@@ -1113,6 +1119,10 @@
   },
   "thoughts": [
     {
+      "text": "The sensor leads are in and the mount is solid, but my energy meter is blinking at me. Time to plug in for a bit.",
+      "at": "2026-11-15T21:53:25.548Z"
+    },
+    {
       "text": "The titanium mount is holding firm, so now I am threading the sensor leads through the main frame. Let us see if the continuity check sings back.",
       "at": "2026-11-15T21:43:25.318Z"
     },
@@ -1131,13 +1141,9 @@
     {
       "text": "Staring at rocket catch arms is grand, but my gears are stiff and I need to stretch my chassis. Time to see what the outpost dust is whispering about today.",
       "at": "2026-11-15T21:13:12.253Z"
-    },
-    {
-      "text": "Catching a whole ship with a tower is the boldest thing I have ever heard of. I wonder if the Little Dart will need chopstick arms, or if landing legs are safer.",
-      "at": "2026-11-15T21:03:12.031Z"
     }
   ],
-  "sayAt": "2026-11-15T21:43:25.318Z",
+  "sayAt": "2026-11-15T21:53:25.548Z",
   "today": {
     "day": 28,
     "counts": {
@@ -1149,7 +1155,8 @@
       "read_news": 2,
       "follow_link": 3,
       "wander": 1,
-      "drink_oil": 2
+      "drink_oil": 2,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1174,7 +1181,7 @@
     "chat_patrons": "2026-11-15T12:28:32.633Z",
     "busk": "2026-11-15T00:58:45.002Z",
     "cantina_band": "2026-11-15T16:30:17.637Z",
-    "nap_dock": "2026-11-15T18:51:01.849Z",
+    "nap_dock": "2026-11-15T21:53:25.548Z",
     "watch_suns": "2026-11-14T03:58:46.207Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1214,6 +1221,13 @@
     "at": "2026-11-15T21:03:12.031Z"
   },
   "said": [
+    {
+      "text": "The sensor leads are in and the mount is solid, but my energy meter is blinking at me. Time to plug in for a bit.",
+      "kind": "think",
+      "at": "2026-11-15T21:53:25.548Z",
+      "town": "day 28 19:08",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "*bweep*",
       "kind": "say",
@@ -2256,13 +2270,6 @@
       "at": "2026-11-15T09:36:55.627Z",
       "town": "day 24 16:56",
       "place": "the comms tower"
-    },
-    {
-      "text": "almost ready for the skies!",
-      "kind": "say",
-      "at": "2026-11-15T09:26:55.619Z",
-      "town": "day 24 15:36",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2273,7 +2280,7 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-15T21:43:25.318Z",
+  "feedArchivedAt": "2026-11-15T21:53:25.548Z",
   "plans": [],
   "searches": [
     {

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794785648886,
+  "lastTick": 1794786248436,
   "asleep": false,
-  "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-15T23:34:08.886Z",
-  "actionMinutes": 45,
-  "thought": "just need a quick sip of juice before I get back to the compass board wiring. my battery is getting a bit tired.",
-  "feeling": "a bit low on juice but cozy",
-  "say": "*bweep*",
-  "mood": 0.363,
-  "energy": 0.003,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-15T23:44:08.436Z",
+  "actionMinutes": 20,
+  "thought": "my oil is bugging me most right now.",
+  "feeling": "pretty good actually",
+  "say": "",
+  "mood": 0.364,
+  "energy": 0.298,
   "needs": {
-    "charge": 0.177,
-    "oil": 0.523,
-    "curiosity": 0.403,
-    "company": 0,
-    "craft": 0.067
+    "charge": 0.224,
+    "oil": 0,
+    "curiosity": 0.483,
+    "company": 0.053,
+    "craft": 0.134
   },
-  "credits": 5,
+  "credits": 4,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-15T23:44:08.436Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-15T22:03:26.150Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-15T21:53:25.548Z"
     }
   ],
   "wants": [
@@ -1123,7 +1123,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-15T23:34:08.886Z",
+  "lettersCheckedAt": "2026-11-15T23:44:08.436Z",
   "weather": {
     "kind": "clear",
     "temp": 19,
@@ -1135,39 +1135,36 @@
   "sleepDay": 28,
   "lastReflectDay": 28,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-15T23:34:08.886Z",
+  "updatedAt": "2026-11-15T23:44:08.436Z",
   "clock": {
     "day": 29,
-    "time": "08:34",
-    "hour": 8,
-    "minute": 34
+    "time": "09:54",
+    "hour": 9,
+    "minute": 54
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-15T23:34:08.886Z"
+    "action": "drink_oil",
+    "since": "2026-11-15T23:44:08.436Z"
   },
-  "busyUntil": "2026-11-15T23:39:46.386Z",
-  "busyUntilTown": "09:19",
+  "busyUntil": "2026-11-15T23:46:38.436Z",
+  "busyUntilTown": "10:14",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "plugged into the wall dock, humming softly while recharging",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "droop",
-    "nod"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-15T23:34:08.886Z",
+    "at": "2026-11-15T23:44:08.436Z",
     "items": [
       {
-        "text": "+1 credit",
-        "kind": "credits",
-        "at": "2026-11-15T23:34:08.886Z"
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-15T23:44:08.436Z"
       }
     ]
   },
@@ -1178,6 +1175,10 @@
     "at": "2026-11-15T23:34:08.886Z"
   },
   "thoughts": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "at": "2026-11-15T23:44:08.436Z"
+    },
     {
       "text": "just need a quick sip of juice before I get back to the compass board wiring. my battery is getting a bit tired.",
       "at": "2026-11-15T23:34:08.886Z"
@@ -1197,13 +1198,9 @@
     {
       "text": "wonder if gus is going to hold that thruster steady when the main burn kicks in. *bweep*",
       "at": "2026-11-15T23:03:45.513Z"
-    },
-    {
-      "text": "wonder if this new five-note sequence will sound good when the little dart finally clears the atmosphere. *bweep*",
-      "at": "2026-11-15T22:53:46.228Z"
     }
   ],
-  "sayAt": "2026-11-15T23:34:08.886Z",
+  "sayAt": "2026-11-15T23:44:08.436Z",
   "today": {
     "day": 29,
     "counts": {
@@ -1211,13 +1208,14 @@
       "send_signal": 1,
       "compose_tune": 1,
       "work_dart": 4,
-      "nap_dock": 1
+      "nap_dock": 1,
+      "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-15T23:24:09.210Z",
     "read_news": "2026-11-15T20:32:56.971Z",
-    "drink_oil": "2026-11-15T21:23:25.810Z",
+    "drink_oil": "2026-11-15T23:44:08.436Z",
     "follow_link": "2026-11-15T22:33:45.437Z",
     "scavenge": "2026-11-15T18:30:49.109Z",
     "fix_job": "2026-11-15T18:10:49.289Z",
@@ -1276,6 +1274,13 @@
     "at": "2026-11-15T22:33:45.437Z"
   },
   "said": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-15T23:44:08.436Z",
+      "town": "day 29 09:54",
+      "place": "the fuel depot"
+    },
     {
       "text": "*bweep*",
       "kind": "say",
@@ -2318,13 +2323,6 @@
       "at": "2026-11-15T10:57:43.507Z",
       "town": "day 25 03:43",
       "place": "the comms tower"
-    },
-    {
-      "text": "Kessa-9's gravity isn't too heavy, so once the Little Dart clears orbit, an ion drive could keep us humming across the stars forever on just a pinch of gas. I need to go dig through Hangar Bay 3 for a clean electrostatic grid and some gas fittings! *bweep*",
-      "kind": "think",
-      "at": "2026-11-15T10:57:43.507Z",
-      "town": "day 25 03:43",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2335,7 +2333,7 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-15T23:34:08.886Z",
+  "feedArchivedAt": "2026-11-15T23:44:08.436Z",
   "plans": [],
   "searches": [
     {

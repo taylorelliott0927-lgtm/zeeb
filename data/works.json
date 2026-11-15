@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 9",
-    "progress": 22,
-    "version": 3,
-    "lastChange": "Inspecting the fuel line routing near gus the bracket and applying a dab of sealant (used Nim, a sensor eye with one crack)",
+    "progress": 30,
+    "version": 4,
+    "lastChange": "Wiring the salvaged magnetic coils into the secondary hull using insulated spacers and the scorched heat tile Pim as a blast shield. (used Pim, a scorched heat tile)",
     "log": [
+      {
+        "version": 4,
+        "change": "Wiring the salvaged magnetic coils into the secondary hull using insulated spacers and the scorched heat tile Pim as a blast shield. (used Pim, a scorched heat tile)",
+        "progress": 30,
+        "at": "2026-11-15T05:25:37.900Z"
+      },
       {
         "version": 3,
         "change": "Inspecting the fuel line routing near gus the bracket and applying a dab of sealant (used Nim, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "tinkered with it (used Mabel, a cracked navigation chip)",
         "progress": 40,
         "at": "2026-11-14T06:19:46.820Z"
-      },
-      {
-        "version": 9,
-        "change": "routing the flexible heat-resistant cables to the heat-resistant duct seal, double checking every connection (used Tilly, a cockpit switch that still clicks)",
-        "progress": 31,
-        "at": "2026-11-14T06:16:46.690Z"
       }
     ],
     "launched": [
@@ -1486,7 +1486,7 @@
         }
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 4,
     "parts": [
       {
         "name": "Gus",
@@ -1502,6 +1502,11 @@
         "name": "Nim",
         "what": "a sensor eye with one crack",
         "version": 3
+      },
+      {
+        "name": "Pim",
+        "what": "a scorched heat tile",
+        "version": 4
       }
     ],
     "design": null
@@ -1616,13 +1621,7 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Pim",
-      "what": "a scorched heat tile",
-      "at": "2026-11-15T01:29:14.338Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Understanding the Magnetic Field on a Coil: Ampere-Turns, Core Saturation, and Bench Failures | ElectricalFlux",

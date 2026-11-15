@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 9",
-    "progress": 81,
-    "version": 14,
-    "lastChange": "Wiring the star-tracker harness directly into the main compass display using copper wire. (used Tok, a strip of hull plating)",
+    "progress": 87,
+    "version": 15,
+    "lastChange": "Locking down the thermal mesh bracket over the starboard engine seam using Mabel (half a thruster nozzle) (used Mabel, half a thruster nozzle)",
     "log": [
+      {
+        "version": 15,
+        "change": "Locking down the thermal mesh bracket over the starboard engine seam using Mabel (half a thruster nozzle) (used Mabel, half a thruster nozzle)",
+        "progress": 87,
+        "at": "2026-11-15T13:39:21.949Z"
+      },
       {
         "version": 14,
         "change": "Wiring the star-tracker harness directly into the main compass display using copper wire. (used Tok, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "Continue refining the internal layout and ventilation system of the Little Dart. Double-check the duct seal, ensuring it's perfectly fitted and durable.",
         "progress": 9,
         "at": "2026-11-14T10:51:58.154Z"
-      },
-      {
-        "version": 2,
-        "change": "I continue sketching out the Salt Flats Hanger design, focusing on ventilation and the interior layout. I then quickly jot down notes on how to improve the Little Dart's design, incorporating some of ",
-        "progress": 7,
-        "at": "2026-11-14T10:33:58.137Z"
       }
     ],
     "launched": [
@@ -1486,7 +1486,7 @@
         }
       }
     ],
-    "partsUsed": 9,
+    "partsUsed": 11,
     "parts": [
       {
         "name": "Gus",
@@ -1528,6 +1528,12 @@
         "name": "Tok",
         "what": "a strip of hull plating",
         "version": 14
+      },
+      {
+        "name": "Mabel",
+        "what": "half a thruster nozzle",
+        "good": true,
+        "version": 15
       }
     ],
     "design": null
@@ -1642,14 +1648,7 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Mabel",
-      "what": "half a thruster nozzle",
-      "at": "2026-11-15T11:28:23.037Z",
-      "good": true
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "How does the Starship catch work? | The Space Road",

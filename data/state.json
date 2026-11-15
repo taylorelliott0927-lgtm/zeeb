@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794780206150,
+  "lastTick": 1794780806153,
   "asleep": false,
-  "place": "hangar",
-  "action": "nap_dock",
-  "doing": "still napping in the charging dock",
-  "actionStartedAt": "2026-11-15T21:53:25.548Z",
-  "actionMinutes": 45,
-  "thought": "Just a quick top up so I am ready to get back to the Little Dart. My brass dish is resting against the bulkhead, catching the low hum of the grid.",
-  "feeling": "recovering energy and feeling steady",
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-15T22:13:26.153Z",
+  "actionMinutes": 35,
+  "thought": "good thing the little dart will have sealed intake valves. cant have fine silt clogging up my rotor bearings during a blow.",
+  "feeling": "cautious and calculating",
   "say": "",
-  "mood": 0.423,
-  "energy": 0.491,
+  "mood": 0.464,
+  "energy": 0.587,
   "needs": {
-    "charge": 0,
-    "oil": 0.16,
-    "curiosity": 0.402,
-    "company": 0,
-    "craft": 0.134
+    "charge": 0.047,
+    "oil": 0.2,
+    "curiosity": 0,
+    "company": 0.053,
+    "craft": 0.201
   },
   "credits": 4,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "sandstorms",
+      "at": "2026-11-15T22:13:26.153Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "read_news",
       "detail": "",
       "at": "2026-11-15T20:32:56.971Z"
-    },
-    {
-      "id": "read_news",
-      "detail": "",
-      "at": "2026-11-15T20:22:56.778Z"
     }
   ],
   "wants": [
@@ -1069,66 +1069,67 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-15T22:03:26.150Z",
+  "lettersCheckedAt": "2026-11-15T22:13:26.153Z",
   "weather": {
     "kind": "clear",
     "temp": 20,
-    "wind": 5,
+    "wind": 6,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-15T21:43:25.529Z"
+    "at": "2026-11-15T22:13:26.482Z"
   },
   "sleepDay": 27,
   "lastReflectDay": 27,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-15T22:03:26.150Z",
+  "updatedAt": "2026-11-15T22:13:26.153Z",
   "clock": {
     "day": 28,
-    "time": "20:28",
-    "hour": 20,
-    "minute": 28
+    "time": "21:48",
+    "hour": 21,
+    "minute": 48
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-15T21:53:25.548Z"
+    "action": "browse_wire",
+    "since": "2026-11-15T22:13:26.153Z"
   },
-  "busyUntil": "2026-11-15T22:09:03.650Z",
-  "busyUntilTown": "21:13",
+  "busyUntil": "2026-11-15T22:17:48.653Z",
+  "busyUntilTown": "22:23",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "plugged into the charging dock, resting my treads and letting the battery drink",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "nod",
-    "lean_in"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-15T22:03:26.150Z",
+    "at": "2026-11-15T22:13:26.153Z",
     "items": [
       {
-        "text": "+ a dented fuel cell",
+        "text": "+ a mystery box that hums",
         "kind": "part",
-        "at": "2026-11-15T22:03:26.150Z"
+        "at": "2026-11-15T22:13:26.153Z"
       },
       {
         "text": "+ a little landing strut",
         "kind": "part",
-        "at": "2026-11-15T22:03:26.150Z"
+        "at": "2026-11-15T22:13:26.153Z"
       }
     ]
   },
   "event": {
-    "id": "emwidsm6e",
-    "key": "crate",
-    "text": "A cargo crate fell off a freighter at the edge of the dunes. Some of it rolled his way.",
-    "at": "2026-11-15T22:03:26.150Z"
+    "id": "emwie5h55",
+    "key": "scrap_box",
+    "text": "A trader left a box of free scrap outside the hangar.",
+    "at": "2026-11-15T22:13:26.153Z"
   },
   "thoughts": [
+    {
+      "text": "good thing the little dart will have sealed intake valves. cant have fine silt clogging up my rotor bearings during a blow.",
+      "at": "2026-11-15T22:13:26.153Z"
+    },
     {
       "text": "Just a quick top up so I am ready to get back to the Little Dart. My brass dish is resting against the bulkhead, catching the low hum of the grid.",
       "at": "2026-11-15T22:03:26.150Z"
@@ -1148,13 +1149,9 @@
     {
       "text": "Fresh oil goes down like magic juice. My joints are already thanking me.",
       "at": "2026-11-15T21:23:25.810Z"
-    },
-    {
-      "text": "Walking all the way from the red mesa back to the depot makes my gears feel dry as bone dust. A quick cup of fresh oil will sort me right out.",
-      "at": "2026-11-15T21:23:11.716Z"
     }
   ],
-  "sayAt": "2026-11-15T22:03:26.150Z",
+  "sayAt": "2026-11-15T22:13:26.153Z",
   "today": {
     "day": 28,
     "counts": {
@@ -1162,7 +1159,7 @@
       "go_to_sleep": 1,
       "compose_tune": 1,
       "tend_shop": 1,
-      "browse_wire": 1,
+      "browse_wire": 2,
       "read_news": 2,
       "follow_link": 3,
       "wander": 1,
@@ -1179,7 +1176,7 @@
     "fix_job": "2026-11-15T18:10:49.289Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-15T20:12:56.401Z",
+    "browse_wire": "2026-11-15T22:13:26.153Z",
     "compose_tune": "2026-11-15T19:52:56.264Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-13T09:04:38.429Z",
@@ -1228,10 +1225,17 @@
     }
   ],
   "nextSearch": {
-    "text": "raptor engine specs",
-    "at": "2026-11-15T21:03:12.031Z"
+    "text": "atmospheric shielding techniques for micro craft",
+    "at": "2026-11-15T22:13:26.153Z"
   },
   "said": [
+    {
+      "text": "good thing the little dart will have sealed intake valves. cant have fine silt clogging up my rotor bearings during a blow.",
+      "kind": "think",
+      "at": "2026-11-15T22:13:26.153Z",
+      "town": "day 28 21:48",
+      "place": "the comms tower"
+    },
     {
       "text": "Just a quick top up so I am ready to get back to the Little Dart. My brass dish is resting against the bulkhead, catching the low hum of the grid.",
       "kind": "think",
@@ -2274,13 +2278,6 @@
       "at": "2026-11-15T09:37:13.420Z",
       "town": "day 24 16:59",
       "place": "the comms tower"
-    },
-    {
-      "text": "just checking the cosmic highway conditions *bweep*",
-      "kind": "say",
-      "at": "2026-11-15T09:36:55.627Z",
-      "town": "day 24 16:56",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2291,9 +2288,13 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-15T22:03:26.150Z",
+  "feedArchivedAt": "2026-11-15T22:13:26.153Z",
   "plans": [],
   "searches": [
+    {
+      "q": "sandstorms",
+      "at": "2026-11-15T22:13:26.153Z"
+    },
     {
       "q": "diy ultrasonic sensors salvage",
       "at": "2026-11-15T20:12:56.401Z"
@@ -2337,10 +2338,6 @@
     {
       "q": "search_the_wire: 'how to wire magnetic coils into starship hull without shorting fuses'",
       "at": "2026-11-15T04:49:53.073Z"
-    },
-    {
-      "q": "starship reentry thermal protection scrap ideas",
-      "at": "2026-11-15T01:18:44.470Z"
     }
   ],
   "lampOutUntil": "2026-11-14T18:42:58.946Z",

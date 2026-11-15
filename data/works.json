@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 9",
-    "progress": 92,
-    "version": 17,
-    "lastChange": "Welding the last section of the thermal mesh bracket to the starboard engine casing with Mabel",
+    "name": "the Little Dart Mk 10",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 18,
+        "change": "Installing the adapted trigger sear blocks into the Little Dart hatch latch mechanism (used Bix, a tiny gyroscope)",
+        "progress": 100,
+        "at": "2026-11-15T15:29:49.177Z"
+      },
       {
         "version": 17,
         "change": "Welding the last section of the thermal mesh bracket to the starboard engine casing with Mabel",
@@ -238,12 +244,6 @@
         "change": "Double-check the duct seal for the perfect fit and durability again, ensuring the thermal management systems are foolproof.",
         "progress": 19,
         "at": "2026-11-14T12:06:58.391Z"
-      },
-      {
-        "version": 5,
-        "change": "Refine the internal layout and ventilation system of the Little Dart. Double-check the duct seal for the perfect fit and durability.",
-        "progress": 16,
-        "at": "2026-11-14T12:03:58.367Z"
       }
     ],
     "launched": [
@@ -1484,58 +1484,69 @@
           "at": "2026-11-14T18:33:59.432Z",
           "day": 19
         }
+      },
+      {
+        "name": "the Little Dart Mk 9",
+        "day": 26,
+        "partsUsed": 12,
+        "parts": [
+          {
+            "name": "Gus",
+            "what": "half a thruster nozzle",
+            "version": 1
+          },
+          {
+            "name": "Gus",
+            "what": "a sensor eye with one crack",
+            "version": 2
+          },
+          {
+            "name": "Nim",
+            "what": "a sensor eye with one crack",
+            "version": 3
+          },
+          {
+            "name": "Pim",
+            "what": "a scorched heat tile",
+            "version": 4
+          },
+          {
+            "name": "Brakk",
+            "what": "a bent stabiliser fin",
+            "version": 9
+          },
+          {
+            "name": "Tilly",
+            "what": "a tiny gyroscope",
+            "good": true,
+            "version": 10
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "a tiny gyroscope",
+            "version": 11
+          },
+          {
+            "name": "Tok",
+            "what": "a strip of hull plating",
+            "version": 14
+          },
+          {
+            "name": "Mabel",
+            "what": "half a thruster nozzle",
+            "good": true,
+            "version": 15
+          },
+          {
+            "name": "Bix",
+            "what": "a tiny gyroscope",
+            "version": 18
+          }
+        ]
       }
     ],
-    "partsUsed": 11,
-    "parts": [
-      {
-        "name": "Gus",
-        "what": "half a thruster nozzle",
-        "version": 1
-      },
-      {
-        "name": "Gus",
-        "what": "a sensor eye with one crack",
-        "version": 2
-      },
-      {
-        "name": "Nim",
-        "what": "a sensor eye with one crack",
-        "version": 3
-      },
-      {
-        "name": "Pim",
-        "what": "a scorched heat tile",
-        "version": 4
-      },
-      {
-        "name": "Brakk",
-        "what": "a bent stabiliser fin",
-        "version": 9
-      },
-      {
-        "name": "Tilly",
-        "what": "a tiny gyroscope",
-        "good": true,
-        "version": 10
-      },
-      {
-        "name": "Rusty Jr",
-        "what": "a tiny gyroscope",
-        "version": 11
-      },
-      {
-        "name": "Tok",
-        "what": "a strip of hull plating",
-        "version": 14
-      },
-      {
-        "name": "Mabel",
-        "what": "half a thruster nozzle",
-        "good": true,
-        "version": 15
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -1651,11 +1662,6 @@
   "stash": [
     {
       "name": "Wren",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-15T14:09:34.135Z"
-    },
-    {
-      "name": "Bix",
       "what": "a tiny gyroscope",
       "at": "2026-11-15T14:09:34.135Z"
     }

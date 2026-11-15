@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794748762198,
-  "asleep": false,
-  "place": "tower",
-  "action": "send_signal",
-  "doing": "sending a signal into deep space",
-  "actionStartedAt": "2026-11-15T13:19:22.198Z",
-  "actionMinutes": 30,
-  "thought": "The star-tracker harness is wired, so the signal telemetry should be crisp. Hoping someone out by the ice-giants catches this one.",
-  "feeling": "hopeful and a bit jittery",
-  "say": "Transmitting five-note sequence now... boop-bop-bop-boop-tee!",
-  "mood": 0.409,
-  "energy": 0.341,
+  "lastTick": 1794749361368,
+  "asleep": true,
+  "place": "hangar",
+  "action": "sleep",
+  "doing": "asleep in the charging dock",
+  "actionStartedAt": "2026-11-15T13:29:21.368Z",
+  "actionMinutes": 420,
+  "thought": "(dreaming) I dream of catching the Little Dart mid-air with huge mechanical arms while star-charts spin across the compass display.",
+  "feeling": "sleepy, satisfied, low power",
+  "say": "",
+  "mood": 0.402,
+  "energy": 0.258,
   "needs": {
-    "charge": 0.336,
-    "oil": 0.08,
-    "curiosity": 0,
-    "company": 0,
-    "craft": 0.383
+    "charge": 0.383,
+    "oil": 0.12,
+    "curiosity": 0.08,
+    "company": 0.053,
+    "craft": 0.45
   },
   "credits": 12,
   "recent": [
+    {
+      "id": "go_to_sleep",
+      "detail": "",
+      "at": "2026-11-15T13:29:21.368Z"
+    },
     {
       "id": "send_signal",
       "detail": "Calling deep space, this is Little Dart home base on Kessa-9! Just wired up our ",
@@ -75,14 +80,14 @@
       "id": "scavenge",
       "detail": "",
       "at": "2026-11-15T11:17:44.012Z"
-    },
-    {
-      "id": "read_news",
-      "detail": "",
-      "at": "2026-11-15T11:07:44.155Z"
     }
   ],
   "wants": [
+    {
+      "id": "w6",
+      "text": "To wake up fully charged and lock down the thermal mesh bracket.",
+      "at": "2026-11-15T13:29:21.368Z"
+    },
     {
       "id": "w5",
       "text": "To hear a clear reply from deep space.",
@@ -97,11 +102,6 @@
       "id": "w8",
       "text": "To lock down the thermal mesh bracket next.",
       "at": "2026-11-15T12:38:33.102Z"
-    },
-    {
-      "id": "w7",
-      "text": "To find someone at the cantina who knows about deep space telemetry.",
-      "at": "2026-11-15T12:28:32.633Z"
     }
   ],
   "promises": [],
@@ -811,7 +811,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-15T13:19:22.198Z",
+  "lettersCheckedAt": "2026-11-15T13:29:21.368Z",
   "weather": {
     "kind": "clear",
     "temp": 27,
@@ -820,34 +820,33 @@
     "source": "Tozeur, Tunisia",
     "at": "2026-11-15T12:59:22.500Z"
   },
-  "sleepDay": 24,
-  "lastReflectDay": 24,
+  "sleepDay": 25,
+  "lastReflectDay": 25,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-15T13:19:22.198Z",
+  "updatedAt": "2026-11-15T13:29:21.368Z",
   "clock": {
     "day": 25,
-    "time": "22:36",
-    "hour": 22,
-    "minute": 36
+    "time": "23:56",
+    "hour": 23,
+    "minute": 56
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "send_signal",
-    "since": "2026-11-15T13:19:22.198Z"
+    "action": "go_to_sleep",
+    "since": "2026-11-15T13:29:21.368Z"
   },
-  "busyUntil": "2026-11-15T13:23:07.198Z",
-  "busyUntilTown": "23:06",
+  "busyUntil": "2026-11-15T14:21:51.368Z",
+  "busyUntilTown": "06:56",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "aiming dish at the starbursts and sending out a five-note ping",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "look_up",
-    "spin"
+    "droop"
   ],
   "pops": {
     "at": "2026-11-15T12:58:32.442Z",
@@ -867,6 +866,10 @@
   },
   "thoughts": [
     {
+      "text": "The star-tracker harness is set and the ping is floating through space. Time to recharge my spark plug for tomorrow's builds.",
+      "at": "2026-11-15T13:29:21.368Z"
+    },
+    {
       "text": "The star-tracker harness is wired, so the signal telemetry should be crisp. Hoping someone out by the ice-giants catches this one.",
       "at": "2026-11-15T13:19:22.198Z"
     },
@@ -885,13 +888,9 @@
     {
       "text": "Chatting at the cantina gave me good ideas. Now I need to lock this star-tracker into the main compass before I lose my train of thought.",
       "at": "2026-11-15T12:38:33.102Z"
-    },
-    {
-      "text": "My battery is nice and full after that recharge dock nap. Time to roll down to the Dented Moon and see who is hanging around.",
-      "at": "2026-11-15T12:28:32.633Z"
     }
   ],
-  "sayAt": "2026-11-15T13:19:22.198Z",
+  "sayAt": "2026-11-15T13:29:21.368Z",
   "today": {
     "day": 25,
     "counts": {
@@ -906,7 +905,8 @@
       "nap_dock": 1,
       "chat_patrons": 1,
       "browse_wire": 1,
-      "send_signal": 1
+      "send_signal": 1,
+      "go_to_sleep": 1
     }
   },
   "lastDone": {
@@ -927,7 +927,7 @@
     "design_ship": "2026-11-14T18:33:59.432Z",
     "send_signal": "2026-11-15T13:19:22.198Z",
     "stargaze": "2026-11-15T10:27:44.248Z",
-    "go_to_sleep": "2026-11-14T22:17:17.790Z",
+    "go_to_sleep": "2026-11-15T13:29:21.368Z",
     "chat_patrons": "2026-11-15T12:28:32.633Z",
     "busk": "2026-11-15T00:58:45.002Z",
     "cantina_band": "2026-11-15T00:18:15.298Z",
@@ -971,6 +971,20 @@
     "at": "2026-11-15T12:48:32.915Z"
   },
   "said": [
+    {
+      "text": "(dreaming) I dream of catching the Little Dart mid-air with huge mechanical arms while star-charts spin across the compass display.",
+      "kind": "think",
+      "at": "2026-11-15T13:29:21.368Z",
+      "town": "day 25 23:56",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "The star-tracker harness is set and the ping is floating through space. Time to recharge my spark plug for tomorrow's builds.",
+      "kind": "think",
+      "at": "2026-11-15T13:29:21.368Z",
+      "town": "day 25 23:56",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "Transmitting five-note sequence now... boop-bop-bop-boop-tee!",
       "kind": "say",
@@ -2006,20 +2020,6 @@
       "at": "2026-11-15T00:58:45.002Z",
       "town": "day 21 19:51",
       "place": "the Dented Moon cantina"
-    },
-    {
-      "text": "Docking clamp engaged, power up that juice... *bweep*.",
-      "kind": "say",
-      "at": "2026-11-15T00:28:45.320Z",
-      "town": "day 21 15:51",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "Ninety-two percent complete means the Little Dart is almost ready to leave this dusty hangar behind.",
-      "kind": "think",
-      "at": "2026-11-15T00:28:45.320Z",
-      "town": "day 21 15:51",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2030,7 +2030,7 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-15T13:19:22.198Z",
+  "feedArchivedAt": "2026-11-15T13:29:21.368Z",
   "plans": [],
   "searches": [
     {

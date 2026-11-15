@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794710687639,
+  "lastTick": 1794711287548,
   "asleep": false,
   "place": "hangar",
   "action": "nap_dock",
-  "doing": "napping in the charging dock",
+  "doing": "still napping in the charging dock",
   "actionStartedAt": "2026-11-15T02:44:47.639Z",
   "actionMinutes": 45,
-  "thought": "that test flight took a lot out of the cells, but she flew like a dream. time for a little power nap.",
-  "feeling": "sleepy and satisfied",
-  "say": "*bweep* zzz...",
-  "mood": 0.424,
-  "energy": 0.186,
+  "thought": "the starboard thruster gave a little shudder, but she cleared the dunes. time to rest up before checking the intake manifold.",
+  "feeling": "warm and tired",
+  "say": "*bweep*",
+  "mood": 0.408,
+  "energy": 0.486,
   "needs": {
-    "charge": 0.225,
-    "oil": 0.12,
-    "curiosity": 0.08,
+    "charge": 0,
+    "oil": 0.16,
+    "curiosity": 0.16,
     "company": 0,
-    "craft": 0.332
+    "craft": 0.399
   },
   "credits": 14,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-15T02:54:47.548Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "busk",
       "detail": "",
       "at": "2026-11-15T00:58:45.002Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-15T00:28:14.546Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 29,
+      "subject": "quick power nap",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/29",
+      "at": "2026-11-15T02:54:47.548Z"
+    },
     {
       "id": 28,
       "subject": "Little Dart Mk 8 test flight!",
@@ -262,13 +268,6 @@
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 9,
-      "text": "Good tune, keep playing with the Little Dart ducts",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/9#issuecomment-6845900332",
-      "at": "2026-11-13T06:25:40.216Z"
-    },
     {
       "from": "creator",
       "letter": 9,
@@ -543,6 +542,14 @@
       "text": "Hey creator! I took the Little Dart Mk 8 up through the haze for a loop over the salt flats and a clean vertical climb this morning. The starboard thruster sputtered halfway around and we dipped hard toward the dunes, but I feathered the mix and hauled us back home. She is a real flyer! *bweep*",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/28",
       "at": "2026-11-15T02:44:47.639Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 29,
+      "subject": "quick power nap",
+      "text": "Hey creator! Just plugging in for a quick nap at the dock. The Little Dart Mk 8 flew like a absolute dream today, even with that little sputter on the starboard side. Gonna check the manifold as soon as I'm topped up. *bweep*",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/29",
+      "at": "2026-11-15T02:54:47.548Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -551,7 +558,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-15T02:44:47.639Z",
+  "lettersCheckedAt": "2026-11-15T02:54:47.548Z",
   "weather": {
     "kind": "hazy",
     "temp": 19,
@@ -563,12 +570,12 @@
   "sleepDay": 21,
   "lastReflectDay": 21,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-15T02:44:47.639Z",
+  "updatedAt": "2026-11-15T02:54:47.548Z",
   "clock": {
     "day": 22,
-    "time": "09:59",
-    "hour": 9,
-    "minute": 59
+    "time": "11:19",
+    "hour": 11,
+    "minute": 19
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
@@ -576,12 +583,12 @@
     "action": "nap_dock",
     "since": "2026-11-15T02:44:47.639Z"
   },
-  "busyUntil": "2026-11-15T02:50:25.139Z",
-  "busyUntilTown": "10:44",
+  "busyUntil": "2026-11-15T03:00:25.048Z",
+  "busyUntilTown": "12:04",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "plugged into the charging dock, brass dish resting quietly while the battery fills up",
+  "doingWords": "tucked into the corner of hangar bay 3, recharging cells and dreaming of star maps",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
@@ -607,6 +614,10 @@
   },
   "thoughts": [
     {
+      "text": "the starboard thruster gave a little shudder, but she cleared the dunes. time to rest up before checking the intake manifold.",
+      "at": "2026-11-15T02:54:47.548Z"
+    },
+    {
       "text": "that test flight took a lot out of the cells, but she flew like a dream. time for a little power nap.",
       "at": "2026-11-15T02:44:47.639Z"
     },
@@ -625,13 +636,9 @@
     {
       "text": "just a little sip to get the pistons pumping before i head back to the hangar to work on the dart. *bweep*",
       "at": "2026-11-15T02:09:14.670Z"
-    },
-    {
-      "text": "the Little Dart is nearly done, but my gears are getting awfully stiff. a quick top-up will get me rolling smooth again. *bweep*",
-      "at": "2026-11-15T01:59:14.557Z"
     }
   ],
-  "sayAt": "2026-11-15T02:44:47.639Z",
+  "sayAt": "2026-11-15T02:54:47.548Z",
   "today": {
     "day": 22,
     "counts": {
@@ -640,7 +647,7 @@
       "drink_oil": 2,
       "work_dart": 1,
       "test_flight": 1,
-      "nap_dock": 1
+      "nap_dock": 2
     }
   },
   "lastDone": {
@@ -665,7 +672,7 @@
     "chat_patrons": "2026-11-15T01:08:44.718Z",
     "busk": "2026-11-15T00:58:45.002Z",
     "cantina_band": "2026-11-15T00:18:15.298Z",
-    "nap_dock": "2026-11-15T02:44:47.639Z",
+    "nap_dock": "2026-11-15T02:54:47.548Z",
     "watch_suns": "2026-11-14T03:58:46.207Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -705,6 +712,20 @@
     "at": "2026-11-15T01:39:15.060Z"
   },
   "said": [
+    {
+      "text": "*bweep*",
+      "kind": "say",
+      "at": "2026-11-15T02:54:47.548Z",
+      "town": "day 22 11:19",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "the starboard thruster gave a little shudder, but she cleared the dunes. time to rest up before checking the intake manifold.",
+      "kind": "think",
+      "at": "2026-11-15T02:54:47.548Z",
+      "town": "day 22 11:19",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "*bweep* zzz...",
       "kind": "say",
@@ -1740,20 +1761,6 @@
       "at": "2026-11-14T16:36:59.106Z",
       "town": "day 19 00:57",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "Gotta keep the Little Dart in tip-top shape. Oil’s not cheap, but it’s worth it for a ship that’s half done.",
-      "kind": "say",
-      "at": "2026-11-14T16:33:59.157Z",
-      "town": "day 19 00:33",
-      "place": "the fuel depot"
-    },
-    {
-      "text": "The Little Dart is almost 50% done, but the salt flats hanger needs some work. Maybe I can find some flexible heat-resistant cables for it.",
-      "kind": "think",
-      "at": "2026-11-14T16:33:59.157Z",
-      "town": "day 19 00:33",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -1764,7 +1771,7 @@
     "at": "2026-11-15T02:34:47.467Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-15T02:44:47.639Z",
+  "feedArchivedAt": "2026-11-15T02:54:47.548Z",
   "plans": [],
   "searches": [
     {

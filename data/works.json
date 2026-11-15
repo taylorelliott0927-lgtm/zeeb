@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 9",
-    "progress": 73,
-    "version": 13,
-    "lastChange": "Welding the star-tracker sensor mount onto the nose cone using copper wire and a fresh rivet named gus-six.",
+    "progress": 81,
+    "version": 14,
+    "lastChange": "Wiring the star-tracker harness directly into the main compass display using copper wire. (used Tok, a strip of hull plating)",
     "log": [
+      {
+        "version": 14,
+        "change": "Wiring the star-tracker harness directly into the main compass display using copper wire. (used Tok, a strip of hull plating)",
+        "progress": 81,
+        "at": "2026-11-15T12:38:33.102Z"
+      },
       {
         "version": 13,
         "change": "Welding the star-tracker sensor mount onto the nose cone using copper wire and a fresh rivet named gus-six.",
@@ -238,12 +244,6 @@
         "change": "I continue sketching out the Salt Flats Hanger design, focusing on ventilation and the interior layout. I then quickly jot down notes on how to improve the Little Dart's design, incorporating some of ",
         "progress": 7,
         "at": "2026-11-14T10:33:58.137Z"
-      },
-      {
-        "version": 1,
-        "change": "I continue sketching out the Salt Flats Hanger design, focusing on ventilation and the interior layout.",
-        "progress": 3,
-        "at": "2026-11-14T10:18:58.064Z"
       }
     ],
     "launched": [
@@ -1486,7 +1486,7 @@
         }
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Gus",
@@ -1523,6 +1523,11 @@
         "name": "Rusty Jr",
         "what": "a tiny gyroscope",
         "version": 11
+      },
+      {
+        "name": "Tok",
+        "what": "a strip of hull plating",
+        "version": 14
       }
     ],
     "design": null
@@ -1643,11 +1648,6 @@
       "what": "half a thruster nozzle",
       "at": "2026-11-15T11:28:23.037Z",
       "good": true
-    },
-    {
-      "name": "Tok",
-      "what": "a strip of hull plating",
-      "at": "2026-11-15T11:17:44.012Z"
     }
   ],
   "reads": [

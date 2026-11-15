@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794740864155,
+  "lastTick": 1794741464012,
   "asleep": false,
-  "place": "tower",
-  "action": "read_news",
-  "doing": "reading the space news",
-  "actionStartedAt": "2026-11-15T11:07:44.155Z",
-  "actionMinutes": 30,
-  "thought": "If those big rigs can land back on a tower arm, the Little Dart is gonna land real smooth once I tighten Gus #12. Just gotta make sure my retro-thrusters don't melt the frame. *bweep*",
-  "feeling": "buzzing with pilot dreams",
-  "say": "Let's see what the rest of the galaxy is up to today... *bweep*",
-  "mood": 0.365,
-  "energy": 0.358,
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-15T11:17:44.012Z",
+  "actionMinutes": 45,
+  "thought": "My stash is clean out of good bolts. Time to dig through the salvage heaps down at the market before someone else nabs the good scrap!",
+  "feeling": "eager and hopeful",
+  "say": "Keep your dish sharp, Zeeb. Scrap treasure incoming! *bweep*",
+  "mood": 0.344,
+  "energy": 0.264,
   "needs": {
-    "charge": 0.287,
-    "oil": 0.162,
+    "charge": 0.334,
+    "oil": 0.232,
     "curiosity": 0,
-    "company": 0.457,
-    "craft": 0.201
+    "company": 0.51,
+    "craft": 0.268
   },
   "credits": 19,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-15T11:17:44.012Z"
+    },
     {
       "id": "read_news",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "work_dart",
       "detail": "Welding the port-side aileron hinge to the Little Dart fuselage using gus-five",
       "at": "2026-11-15T09:26:55.619Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "Welding the port-side wing bracket to the Little Dart fuselage using Rusty Jr",
-      "at": "2026-11-15T09:16:56.154Z"
     }
   ],
   "wants": [
+    {
+      "id": "w7",
+      "text": "To find useful metal scrap or a copper fitting at the junk market.",
+      "at": "2026-11-15T11:17:44.012Z"
+    },
     {
       "id": "w6",
       "text": "To see if any scrap traders reported xenon canister shipments nearby.",
@@ -97,11 +102,6 @@
       "id": "w9",
       "text": "To see if anyone is still awake down by the cantina.",
       "at": "2026-11-15T10:47:43.679Z"
-    },
-    {
-      "id": "w8",
-      "text": "To finish mounting the nose cone sensors so the navigation circuit is ready.",
-      "at": "2026-11-15T10:37:43.847Z"
     }
   ],
   "promises": [],
@@ -791,7 +791,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-15T11:07:44.155Z",
+  "lettersCheckedAt": "2026-11-15T11:17:44.012Z",
   "weather": {
     "kind": "clear",
     "temp": 22,
@@ -803,38 +803,39 @@
   "sleepDay": 24,
   "lastReflectDay": 24,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-15T11:07:44.155Z",
+  "updatedAt": "2026-11-15T11:17:44.012Z",
   "clock": {
     "day": 25,
-    "time": "05:03",
-    "hour": 5,
-    "minute": 3
+    "time": "06:23",
+    "hour": 6,
+    "minute": 23
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the junk market",
   "streak": {
-    "action": "read_news",
-    "since": "2026-11-15T11:07:44.155Z"
+    "action": "scavenge",
+    "since": "2026-11-15T11:17:44.012Z"
   },
-  "busyUntil": "2026-11-15T11:11:29.155Z",
-  "busyUntilTown": "05:33",
+  "busyUntil": "2026-11-15T11:23:21.512Z",
+  "busyUntilTown": "07:08",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "scrolling through today's tech and space headlines on the Wire",
+  "doingWords": "sifting through rust piles for ship parts",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "lean_in"
+    "bounce",
+    "spin"
   ],
   "pops": {
-    "at": "2026-11-15T10:27:44.248Z",
+    "at": "2026-11-15T11:17:44.012Z",
     "items": [
       {
-        "text": "+2 credits",
-        "kind": "credits",
-        "at": "2026-11-15T10:27:44.248Z"
+        "text": "+ a strip of hull plating",
+        "kind": "part",
+        "at": "2026-11-15T11:17:44.012Z"
       }
     ]
   },
@@ -845,6 +846,10 @@
     "at": "2026-11-15T10:27:44.248Z"
   },
   "thoughts": [
+    {
+      "text": "My stash is clean out of good bolts. Time to dig through the salvage heaps down at the market before someone else nabs the good scrap!",
+      "at": "2026-11-15T11:17:44.012Z"
+    },
     {
       "text": "If those big rigs can land back on a tower arm, the Little Dart is gonna land real smooth once I tighten Gus #12. Just gotta make sure my retro-thrusters don't melt the frame. *bweep*",
       "at": "2026-11-15T11:07:44.155Z"
@@ -864,20 +869,17 @@
     {
       "text": "Those stars look like tiny solder spots on a giant dark circuit board. I wonder which one has a cozy hangar waiting for me.",
       "at": "2026-11-15T10:27:44.248Z"
-    },
-    {
-      "text": "My elbows are clanking like scrap iron every time I turn my wrench. One credit for a slick cup of oil is totally worth it.",
-      "at": "2026-11-15T10:27:13.099Z"
     }
   ],
-  "sayAt": "2026-11-15T11:07:44.155Z",
+  "sayAt": "2026-11-15T11:17:44.012Z",
   "today": {
     "day": 25,
     "counts": {
       "work_dart": 1,
       "wander": 1,
       "follow_link": 1,
-      "read_news": 1
+      "read_news": 1,
+      "scavenge": 1
     }
   },
   "lastDone": {
@@ -885,7 +887,7 @@
     "read_news": "2026-11-15T11:07:44.155Z",
     "drink_oil": "2026-11-15T10:27:13.099Z",
     "follow_link": "2026-11-15T10:57:43.507Z",
-    "scavenge": "2026-11-15T08:41:40.945Z",
+    "scavenge": "2026-11-15T11:17:44.012Z",
     "fix_job": "2026-11-15T08:46:56.267Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -912,6 +914,11 @@
   },
   "puzzles": [
     {
+      "id": "q6",
+      "text": "q8: How to wire the star-tracker straight into the main compass without blowing fuses.",
+      "at": "2026-11-15T11:17:44.012Z"
+    },
+    {
       "id": "q8",
       "text": "How to wire the star-tracker straight into the main compass without blowing fuses.",
       "at": "2026-11-15T10:37:43.847Z"
@@ -930,11 +937,6 @@
       "id": "q7",
       "text": "How to get the thermal mesh properly seated around the new bracket.",
       "at": "2026-11-15T02:24:47.523Z"
-    },
-    {
-      "id": "q9",
-      "text": "q10",
-      "at": "2026-11-15T01:39:15.060Z"
     }
   ],
   "nextSearch": {
@@ -942,6 +944,20 @@
     "at": "2026-11-15T11:07:44.155Z"
   },
   "said": [
+    {
+      "text": "Keep your dish sharp, Zeeb. Scrap treasure incoming! *bweep*",
+      "kind": "say",
+      "at": "2026-11-15T11:17:44.012Z",
+      "town": "day 25 06:23",
+      "place": "the junk market"
+    },
+    {
+      "text": "My stash is clean out of good bolts. Time to dig through the salvage heaps down at the market before someone else nabs the good scrap!",
+      "kind": "think",
+      "at": "2026-11-15T11:17:44.012Z",
+      "town": "day 25 06:23",
+      "place": "the junk market"
+    },
     {
       "text": "Let's see what the rest of the galaxy is up to today... *bweep*",
       "kind": "say",
@@ -1977,20 +1993,6 @@
       "at": "2026-11-14T22:47:18.175Z",
       "town": "day 21 02:19",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "My dish is drooping. Time to head back to Hangar Bay 3 and plug in before my visor goes completely dark.",
-      "kind": "think",
-      "at": "2026-11-14T22:47:18.175Z",
-      "town": "day 21 02:19",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "boop-bop-bwee... clear sky tonight! *bweep*",
-      "kind": "say",
-      "at": "2026-11-14T22:37:17.947Z",
-      "town": "day 21 00:59",
-      "place": "the dune ridge"
     }
   ],
   "flight": {
@@ -2001,7 +2003,7 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-15T11:07:44.155Z",
+  "feedArchivedAt": "2026-11-15T11:17:44.012Z",
   "plans": [],
   "searches": [
     {

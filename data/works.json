@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 10",
-    "progress": 53,
-    "version": 7,
-    "lastChange": "Welding the main aft engine brace into place using Gus the landing strut for rigid alignment (used Nim, a cracked navigation chip)",
+    "progress": 60,
+    "version": 8,
+    "lastChange": "Routing the star-tracker sensor wires along the interior spine of the hull, securing them away from the engine heat. (used Brakk, a tiny gyroscope)",
     "log": [
+      {
+        "version": 8,
+        "change": "Routing the star-tracker sensor wires along the interior spine of the hull, securing them away from the engine heat. (used Brakk, a tiny gyroscope)",
+        "progress": 60,
+        "at": "2026-11-15T23:04:08.760Z"
+      },
       {
         "version": 7,
         "change": "Welding the main aft engine brace into place using Gus the landing strut for rigid alignment (used Nim, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "I carefully inspect the Little Dart Mk 7 one last time, ensuring all its systems are running smoothly. I double-check the duct seal for any imperfections and test the thermal management systems under  (used Brakk, a coil of copper wire)",
         "progress": 44,
         "at": "2026-11-14T15:27:58.918Z"
-      },
-      {
-        "version": 13,
-        "change": "I carefully inspect the Little Dart Mk 7 for any last-minute adjustments before the next phase of construction. I make sure the duct seal is in perfect condition, and double-check the thermal manageme",
-        "progress": 36,
-        "at": "2026-11-14T15:15:58.866Z"
       }
     ],
     "launched": [
@@ -1545,7 +1545,7 @@
         ]
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Wren",
@@ -1571,6 +1571,12 @@
         "name": "Nim",
         "what": "a cracked navigation chip",
         "version": 7
+      },
+      {
+        "name": "Brakk",
+        "what": "a tiny gyroscope",
+        "good": true,
+        "version": 8
       }
     ],
     "design": null
@@ -1732,12 +1738,6 @@
       "name": "Mabel",
       "what": "a sensor eye with one crack",
       "at": "2026-11-15T18:51:01.849Z"
-    },
-    {
-      "name": "Brakk",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-15T18:40:48.696Z",
-      "good": true
     }
   ],
   "reads": [

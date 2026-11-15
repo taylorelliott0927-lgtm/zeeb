@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 10",
-    "progress": 15,
-    "version": 3,
-    "lastChange": "Sealing the titanium-alloy forward thruster brackets into the Little Dart nosecone with extra bead welds",
+    "progress": 25,
+    "version": 4,
+    "lastChange": "Wiring Bix the copper wire coil into the forward thruster bracket sensors to smooth out signal spikes. (used Bix, a coil of copper wire)",
     "log": [
+      {
+        "version": 4,
+        "change": "Wiring Bix the copper wire coil into the forward thruster bracket sensors to smooth out signal spikes. (used Bix, a coil of copper wire)",
+        "progress": 25,
+        "at": "2026-11-15T19:31:01.324Z"
+      },
       {
         "version": 3,
         "change": "Sealing the titanium-alloy forward thruster brackets into the Little Dart nosecone with extra bead welds",
@@ -238,12 +244,6 @@
         "change": "I carefully examine the duct seal, using my welding torch to inspect any rough spots. The beeps are a five-note tune of excitement.",
         "progress": 30,
         "at": "2026-11-14T14:09:58.695Z"
-      },
-      {
-        "version": 9,
-        "change": "I carefully examine the duct seal, using my welding torch to inspect any rough spots. The beeps are a five-note tune of excitement.",
-        "progress": 27,
-        "at": "2026-11-14T13:27:58.608Z"
       }
     ],
     "launched": [
@@ -1545,12 +1545,17 @@
         ]
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Wren",
         "what": "a tiny gyroscope",
         "version": 1
+      },
+      {
+        "name": "Bix",
+        "what": "a coil of copper wire",
+        "version": 4
       }
     ],
     "design": null
@@ -1690,11 +1695,6 @@
     {
       "name": "Otto",
       "what": "a sensor eye with one crack",
-      "at": "2026-11-15T18:20:48.457Z"
-    },
-    {
-      "name": "Bix",
-      "what": "a coil of copper wire",
       "at": "2026-11-15T18:20:48.457Z"
     }
   ],

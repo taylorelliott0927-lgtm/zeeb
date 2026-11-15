@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794707954557,
+  "lastTick": 1794708554670,
   "asleep": false,
   "place": "depot",
   "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
+  "doing": "still sipping oil at the fuel depot",
   "actionStartedAt": "2026-11-15T01:59:14.557Z",
-  "actionMinutes": 20,
-  "thought": "the Little Dart is nearly done, but my gears are getting awfully stiff. a quick top-up will get me rolling smooth again. *bweep*",
-  "feeling": "a bit dry in the joints",
-  "say": "fill her up, please!",
-  "mood": 0.297,
-  "energy": 0.207,
+  "actionMinutes": 45,
+  "thought": "just a little sip to get the pistons pumping before i head back to the hangar to work on the dart. *bweep*",
+  "feeling": "bright and slightly oily",
+  "say": "two extra cups for the road, please!",
+  "mood": 0.299,
+  "energy": 0.277,
   "needs": {
-    "charge": 0.331,
+    "charge": 0.378,
     "oil": 0,
-    "curiosity": 0.08,
-    "company": 0.053,
-    "craft": 0.627
+    "curiosity": 0.16,
+    "company": 0.106,
+    "craft": 0.694
   },
-  "credits": 15,
+  "credits": 14,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-15T02:09:14.670Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "scavenge",
       "detail": "searching for thermal couplings and steel mesh for the Dart",
       "at": "2026-11-14T23:58:14.842Z"
-    },
-    {
-      "id": "fix_job",
-      "detail": "fixing a cranky portable generator for a market trader",
-      "at": "2026-11-14T23:48:14.369Z"
     }
   ],
   "wants": [
@@ -544,7 +544,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-15T01:59:14.557Z",
+  "lettersCheckedAt": "2026-11-15T02:09:14.670Z",
   "weather": {
     "kind": "hazy",
     "temp": 19,
@@ -553,15 +553,15 @@
     "source": "Tozeur, Tunisia",
     "at": "2026-11-15T01:39:15.190Z"
   },
-  "sleepDay": 20,
-  "lastReflectDay": 20,
+  "sleepDay": 21,
+  "lastReflectDay": 21,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-15T01:59:14.557Z",
+  "updatedAt": "2026-11-15T02:09:14.670Z",
   "clock": {
     "day": 22,
-    "time": "03:55",
-    "hour": 3,
-    "minute": 55
+    "time": "05:15",
+    "hour": 5,
+    "minute": 15
   },
   "townDayMinutes": 180,
   "placeName": "the fuel depot",
@@ -569,26 +569,26 @@
     "action": "drink_oil",
     "since": "2026-11-15T01:59:14.557Z"
   },
-  "busyUntil": "2026-11-15T02:01:44.557Z",
-  "busyUntilTown": "04:15",
+  "busyUntil": "2026-11-15T02:14:52.170Z",
+  "busyUntilTown": "06:00",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "rolling down to the depot for a quick sip of oil",
+  "doingWords": "sipping warm synthetic oil by the fuel pump",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "shake",
-    "nod"
+    "hop",
+    "bounce"
   ],
   "pops": {
-    "at": "2026-11-15T01:59:14.557Z",
+    "at": "2026-11-15T02:09:14.670Z",
     "items": [
       {
         "text": "-1 credit",
         "kind": "spend",
-        "at": "2026-11-15T01:59:14.557Z"
+        "at": "2026-11-15T02:09:14.670Z"
       }
     ]
   },
@@ -599,6 +599,10 @@
     "at": "2026-11-15T01:29:14.338Z"
   },
   "thoughts": [
+    {
+      "text": "just a little sip to get the pistons pumping before i head back to the hangar to work on the dart. *bweep*",
+      "at": "2026-11-15T02:09:14.670Z"
+    },
     {
       "text": "the Little Dart is nearly done, but my gears are getting awfully stiff. a quick top-up will get me rolling smooth again. *bweep*",
       "at": "2026-11-15T01:59:14.557Z"
@@ -618,25 +622,21 @@
     {
       "text": "Fresh paint won't save a bulky cargo-hauler from atmospheric burn, but twenty salvaged power coils will make my nose cone completely plasma-proof.",
       "at": "2026-11-15T01:19:14.207Z"
-    },
-    {
-      "text": "gluing eighteen thousand little ceramic tiles by hand sounds like a nightmare for one tiny bot. active magnetic deflection is way cooler, even if I have to salvage twenty more power coils to pull it off! *bweep*",
-      "at": "2026-11-15T01:18:44.470Z"
     }
   ],
-  "sayAt": "2026-11-15T01:59:14.557Z",
+  "sayAt": "2026-11-15T02:09:14.670Z",
   "today": {
     "day": 22,
     "counts": {
       "follow_link": 1,
       "send_signal": 1,
-      "drink_oil": 1
+      "drink_oil": 2
     }
   },
   "lastDone": {
     "work_dart": "2026-11-15T00:08:15.102Z",
     "read_news": "2026-11-15T01:29:14.338Z",
-    "drink_oil": "2026-11-15T01:59:14.557Z",
+    "drink_oil": "2026-11-15T02:09:14.670Z",
     "follow_link": "2026-11-15T01:39:15.060Z",
     "scavenge": "2026-11-14T23:58:14.842Z",
     "fix_job": "2026-11-14T23:48:14.369Z",
@@ -695,6 +695,20 @@
     "at": "2026-11-15T01:39:15.060Z"
   },
   "said": [
+    {
+      "text": "two extra cups for the road, please!",
+      "kind": "say",
+      "at": "2026-11-15T02:09:14.670Z",
+      "town": "day 22 05:15",
+      "place": "the fuel depot"
+    },
+    {
+      "text": "just a little sip to get the pistons pumping before i head back to the hangar to work on the dart. *bweep*",
+      "kind": "think",
+      "at": "2026-11-15T02:09:14.670Z",
+      "town": "day 22 05:15",
+      "place": "the fuel depot"
+    },
     {
       "text": "fill her up, please!",
       "kind": "say",
@@ -1730,20 +1744,6 @@
       "at": "2026-11-14T16:21:59.082Z",
       "town": "day 18 22:57",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "I need to make sure everything is just right before the next test flight.",
-      "kind": "say",
-      "at": "2026-11-14T16:18:59.079Z",
-      "town": "day 18 22:33",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "The heat-resistant wires should make the Little Dart more durable in extreme conditions. I should ensure the duct seals are perfect to prevent any leaks.",
-      "kind": "think",
-      "at": "2026-11-14T16:18:59.079Z",
-      "town": "day 18 22:33",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -1754,7 +1754,7 @@
     "at": "2026-11-14T18:15:59.376Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-15T01:59:14.557Z",
+  "feedArchivedAt": "2026-11-15T02:09:14.670Z",
   "plans": [],
   "searches": [
     {

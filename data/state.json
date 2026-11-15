@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794772976686,
+  "lastTick": 1794773576401,
   "asleep": false,
-  "place": "hangar",
-  "action": "tend_shop",
-  "doing": "tidying his shop shelf",
-  "actionStartedAt": "2026-11-15T20:02:56.686Z",
-  "actionMinutes": 30,
-  "thought": "the shop shelf looks bare. if i put the mk 10 blueprint up, maybe somebody passing by hangar bay 3 will want a look.",
-  "feeling": "excited and handy",
-  "say": "time to stock the shelf with some actual space tech! *bweep*",
-  "mood": 0.361,
-  "energy": 0.565,
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-15T20:12:56.401Z",
+  "actionMinutes": 45,
+  "thought": "if I rig a forty kilohertz pulse transmitter to my landing nose, I will never scrape the hull on a rogue dune again. gus will be jealous.",
+  "feeling": "focused and fizzy",
+  "say": "let's see what the wire has on ultrasonic salvage! *bweep*",
+  "mood": 0.348,
+  "energy": 0.491,
   "needs": {
-    "charge": 0.047,
-    "oil": 0.313,
-    "curiosity": 0.576,
-    "company": 0.208,
-    "craft": 0
+    "charge": 0.094,
+    "oil": 0.353,
+    "curiosity": 0.156,
+    "company": 0.261,
+    "craft": 0.067
   },
   "credits": 5,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "diy ultrasonic sensors salvage",
+      "at": "2026-11-15T20:12:56.401Z"
+    },
     {
       "id": "tend_shop",
       "detail": "listing the Little Dart Mk 10 v4 blueprint on the shelf",
@@ -75,11 +80,6 @@
       "id": "wander",
       "detail": "",
       "at": "2026-11-15T18:00:34.252Z"
-    },
-    {
-      "id": "follow_link",
-      "detail": "2",
-      "at": "2026-11-15T17:50:34.430Z"
     }
   ],
   "wants": [
@@ -997,43 +997,42 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-15T20:02:56.686Z",
+  "lettersCheckedAt": "2026-11-15T20:12:56.401Z",
   "weather": {
     "kind": "hazy",
-    "temp": 22,
+    "temp": 21,
     "wind": 5,
     "mood": 0,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-15T19:41:02.264Z"
+    "at": "2026-11-15T20:12:56.572Z"
   },
   "sleepDay": 27,
   "lastReflectDay": 27,
-  "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-15T20:02:56.686Z",
+  "brain": "gemini-3.5-flash",
+  "updatedAt": "2026-11-15T20:12:56.401Z",
   "clock": {
     "day": 28,
-    "time": "04:24",
-    "hour": 4,
-    "minute": 24
+    "time": "05:44",
+    "hour": 5,
+    "minute": 44
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "tend_shop",
-    "since": "2026-11-15T20:02:56.686Z"
+    "action": "browse_wire",
+    "since": "2026-11-15T20:12:56.401Z"
   },
-  "busyUntil": "2026-11-15T20:06:41.686Z",
-  "busyUntilTown": "04:54",
+  "busyUntil": "2026-11-15T20:18:33.901Z",
+  "busyUntilTown": "06:29",
   "runner": "github",
-  "model": "gemini-3.6-flash",
+  "model": "gemini-3.5-flash",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "putting fresh blueprints on the shop shelf",
+  "doingWords": "squinting at wire streams for ultrasonic sensor salvage guides",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "bounce",
-    "spin"
+    "lean_in"
   ],
   "pops": {
     "at": "2026-11-15T18:51:01.849Z",
@@ -1053,6 +1052,10 @@
   },
   "thoughts": [
     {
+      "text": "if I rig a forty kilohertz pulse transmitter to my landing nose, I will never scrape the hull on a rogue dune again. gus will be jealous.",
+      "at": "2026-11-15T20:12:56.401Z"
+    },
+    {
       "text": "the shop shelf looks bare. if i put the mk 10 blueprint up, maybe somebody passing by hangar bay 3 will want a look.",
       "at": "2026-11-15T20:02:56.686Z"
     },
@@ -1071,20 +1074,17 @@
     {
       "text": "that big cargo-hauler bot dropped a part right on the depot floor and didn't even notice. my visor is flickering though, time to head home to hangar bay 3 and plug in.",
       "at": "2026-11-15T18:51:01.849Z"
-    },
-    {
-      "text": "every good bot needs a proper lubrication session before diving back into the scrap heaps. time to get these treads turning smooth.",
-      "at": "2026-11-15T18:50:48.551Z"
     }
   ],
-  "sayAt": "2026-11-15T20:02:56.686Z",
+  "sayAt": "2026-11-15T20:12:56.401Z",
   "today": {
     "day": 28,
     "counts": {
       "work_dart": 1,
       "go_to_sleep": 1,
       "compose_tune": 1,
-      "tend_shop": 1
+      "tend_shop": 1,
+      "browse_wire": 1
     }
   },
   "lastDone": {
@@ -1096,7 +1096,7 @@
     "fix_job": "2026-11-15T18:10:49.289Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-15T17:20:34.210Z",
+    "browse_wire": "2026-11-15T20:12:56.401Z",
     "compose_tune": "2026-11-15T19:52:56.264Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-13T09:04:38.429Z",
@@ -1145,10 +1145,24 @@
     }
   ],
   "nextSearch": {
-    "text": "diy ultrasonic sensors salvage",
-    "at": "2026-11-15T17:50:34.430Z"
+    "text": "salvaging piezoceramic disks from old bulkhead speakers",
+    "at": "2026-11-15T20:12:56.401Z"
   },
   "said": [
+    {
+      "text": "let's see what the wire has on ultrasonic salvage! *bweep*",
+      "kind": "say",
+      "at": "2026-11-15T20:12:56.401Z",
+      "town": "day 28 05:44",
+      "place": "the comms tower"
+    },
+    {
+      "text": "if I rig a forty kilohertz pulse transmitter to my landing nose, I will never scrape the hull on a rogue dune again. gus will be jealous.",
+      "kind": "think",
+      "at": "2026-11-15T20:12:56.401Z",
+      "town": "day 28 05:44",
+      "place": "the comms tower"
+    },
     {
       "text": "time to stock the shelf with some actual space tech! *bweep*",
       "kind": "say",
@@ -2184,20 +2198,6 @@
       "at": "2026-11-15T07:31:37.244Z",
       "town": "day 24 00:14",
       "place": "the comms tower"
-    },
-    {
-      "text": "hello out there, this is zeeb from rustwell, checking in on the void.",
-      "kind": "say",
-      "at": "2026-11-15T07:21:37.208Z",
-      "town": "day 23 22:54",
-      "place": "the comms tower"
-    },
-    {
-      "text": "the comets get huge tails near the sun, maybe my signal can ride one all the way out past the rings. *bweep*",
-      "kind": "think",
-      "at": "2026-11-15T07:21:37.208Z",
-      "town": "day 23 22:54",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2208,9 +2208,13 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-15T20:02:56.686Z",
+  "feedArchivedAt": "2026-11-15T20:12:56.401Z",
   "plans": [],
   "searches": [
+    {
+      "q": "diy ultrasonic sensors salvage",
+      "at": "2026-11-15T20:12:56.401Z"
+    },
     {
       "q": "star-tracker wiring circuit diagrams and fuse protection",
       "at": "2026-11-15T17:20:34.210Z"
@@ -2254,10 +2258,6 @@
     {
       "q": "starship reentry thermal protection scrap ideas",
       "at": "2026-11-15T01:18:44.470Z"
-    },
-    {
-      "q": "search_the_wire: 'reinforced concrete, steel beams, insulation, waterproofing, salt flats, McMaster-",
-      "at": "2026-11-14T19:30:59.570Z"
     }
   ],
   "lampOutUntil": "2026-11-14T18:42:58.946Z",

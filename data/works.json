@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 10",
-    "progress": 25,
-    "version": 4,
-    "lastChange": "Wiring Bix the copper wire coil into the forward thruster bracket sensors to smooth out signal spikes. (used Bix, a coil of copper wire)",
+    "progress": 35,
+    "version": 5,
+    "lastChange": "Welding a reinforced titanium mount onto the main tail thruster bracket using Captain the bolt to hold it steady. (used Otto, a sensor eye with one crack)",
     "log": [
+      {
+        "version": 5,
+        "change": "Welding a reinforced titanium mount onto the main tail thruster bracket using Captain the bolt to hold it steady. (used Otto, a sensor eye with one crack)",
+        "progress": 35,
+        "at": "2026-11-15T21:33:25.603Z"
+      },
       {
         "version": 4,
         "change": "Wiring Bix the copper wire coil into the forward thruster bracket sensors to smooth out signal spikes. (used Bix, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "I carefully examine the duct seal for the perfect fit and durability, using my welding torch to inspect any rough spots, then test its heat resistance with a small heater. Once I'm satisfied, I beeps ",
         "progress": 32,
         "at": "2026-11-14T14:12:58.706Z"
-      },
-      {
-        "version": 10,
-        "change": "I carefully examine the duct seal, using my welding torch to inspect any rough spots. The beeps are a five-note tune of excitement.",
-        "progress": 30,
-        "at": "2026-11-14T14:09:58.695Z"
       }
     ],
     "launched": [
@@ -1545,7 +1545,7 @@
         ]
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Wren",
@@ -1556,6 +1556,11 @@
         "name": "Bix",
         "what": "a coil of copper wire",
         "version": 4
+      },
+      {
+        "name": "Otto",
+        "what": "a sensor eye with one crack",
+        "version": 5
       }
     ],
     "design": null
@@ -1680,14 +1685,12 @@
     {
       "name": "Wren",
       "what": "a dented fuel cell",
-      "at": "2026-11-15T21:23:25.810Z",
-      "carrying": true
+      "at": "2026-11-15T21:23:25.810Z"
     },
     {
       "name": "Rusty Jr",
       "what": "half a thruster nozzle",
-      "at": "2026-11-15T21:23:25.810Z",
-      "carrying": true
+      "at": "2026-11-15T21:23:25.810Z"
     },
     {
       "name": "Mabel",
@@ -1708,11 +1711,6 @@
     {
       "name": "Captain",
       "what": "a perfectly good bolt",
-      "at": "2026-11-15T18:20:48.457Z"
-    },
-    {
-      "name": "Otto",
-      "what": "a sensor eye with one crack",
       "at": "2026-11-15T18:20:48.457Z"
     }
   ],

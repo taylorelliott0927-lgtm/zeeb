@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794768648551,
+  "lastTick": 1794768661849,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-15T18:50:48.551Z",
-  "actionMinutes": 30,
-  "thought": "every good bot needs a proper lubrication session before diving back into the scrap heaps. time to get these treads turning smooth.",
-  "feeling": "dry in the knees and ready for a gulp",
-  "say": "one cup of the heavy grade, please!",
-  "mood": 0.308,
-  "energy": -0.289,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-15T18:51:01.849Z",
+  "actionMinutes": 240,
+  "thought": "that big cargo-hauler bot dropped a part right on the depot floor and didn't even notice. my visor is flickering though, time to head home to hangar bay 3 and plug in.",
+  "feeling": "sleepy, low power, ready to charge",
+  "say": "heading back to the dock before my dish powers off. *bweep*",
+  "mood": 0.382,
+  "energy": 0.127,
   "needs": {
-    "charge": 0.68,
-    "oil": 0.065,
-    "curiosity": 0.08,
-    "company": 0.053,
-    "craft": 0.472
+    "charge": 0.231,
+    "oil": 0.066,
+    "curiosity": 0.082,
+    "company": 0,
+    "craft": 0.473
   },
   "credits": 5,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-15T18:51:01.849Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "work_dart",
       "detail": "Sealing the titanium-alloy forward thruster brackets into the Little Dart noseco",
       "at": "2026-11-15T17:10:17.967Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "Welding the titanium-alloy forward thruster brackets into the Little Dart noseco",
-      "at": "2026-11-15T17:00:17.824Z"
     }
   ],
   "wants": [
+    {
+      "id": "w6",
+      "text": "To pick up spare dropped parts from around the depot.",
+      "at": "2026-11-15T18:51:01.849Z"
+    },
     {
       "id": "w5",
       "text": "To find a titanium pipe fitting.",
@@ -97,11 +102,6 @@
       "id": "w8",
       "text": "To earn enough credits for the next batch of Little Dart parts.",
       "at": "2026-11-15T18:10:49.289Z"
-    },
-    {
-      "id": "w7",
-      "text": "To isolate the star-tracker ground path properly.",
-      "at": "2026-11-15T17:50:34.430Z"
     }
   ],
   "promises": [],
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 95,
+      "subject": "Time for a quick charge!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/95",
+      "at": "2026-11-15T18:51:01.849Z"
+    },
     {
       "id": 94,
       "subject": "junk market treasures",
@@ -660,14 +666,6 @@
   "creatorThread": [
     {
       "from": "zeeb",
-      "letter": 55,
-      "subject": "Scrap piles today",
-      "text": "Hey creator!\n\nStill poking through the market heaps. Found a couple of neat little washers I named gus-four and gus-five. Going to stuff them in my pouch for the next round of welding on the Little Dart. *bweep*\n\nz",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/55",
-      "at": "2026-11-15T08:41:40.945Z"
-    },
-    {
-      "from": "zeeb",
       "letter": 56,
       "subject": "quick repair job",
       "text": "Hey creator!\n\nJust finished fixing a glowing coil for a trader at the market to earn a few extra credits. My soldering iron is practically smoking! Back to the Little Dart soon. *bweep*\n\nz",
@@ -977,6 +975,14 @@
       "text": "Hey creator!\n\nStill poking through the junk market stalls. Found a solid little titanium valve cap that'll look grand on the Little Dart's engine intake. My brass dish is twitching at every trade wagon rolling by. *bweep*\n\nz",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/94",
       "at": "2026-11-15T18:40:48.696Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 95,
+      "subject": "Time for a quick charge!",
+      "text": "Hey creator!\n\nJust rolled past the fuel depot. That big clumsy cargo-hauler bot dropped a scrap part and didn't even notice! I would've scooped it right up, but my battery indicator is flashing red. Heading back to Hangar Bay 3 right now to plug into the dock for a nap.\n\n*bweep*",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/95",
+      "at": "2026-11-15T18:51:01.849Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -985,7 +991,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-15T18:50:48.551Z",
+  "lettersCheckedAt": "2026-11-15T18:51:01.849Z",
   "weather": {
     "kind": "clear",
     "temp": 22,
@@ -996,50 +1002,54 @@
   },
   "sleepDay": 26,
   "lastReflectDay": 26,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-15T18:50:48.551Z",
+  "brain": "gemini-3.6-flash",
+  "updatedAt": "2026-11-15T18:51:01.849Z",
   "clock": {
     "day": 27,
-    "time": "18:47",
+    "time": "18:49",
     "hour": 18,
-    "minute": 47
+    "minute": 49
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-15T18:50:48.551Z"
+    "action": "nap_dock",
+    "since": "2026-11-15T18:51:01.849Z"
   },
-  "busyUntil": "2026-11-15T18:54:33.551Z",
-  "busyUntilTown": "19:17",
+  "busyUntil": "2026-11-15T19:21:01.849Z",
+  "busyUntilTown": "22:49",
   "runner": "github",
-  "model": "gemini-3.5-flash-lite",
+  "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "rolling over to the depot for a nice cold drink of oil",
+  "doingWords": "rolling back to the dock for a long charge",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "shake",
+    "droop",
     "nod"
   ],
   "pops": {
-    "at": "2026-11-15T18:50:48.551Z",
+    "at": "2026-11-15T18:51:01.849Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-15T18:50:48.551Z"
+        "text": "+ a sensor eye with one crack",
+        "kind": "part",
+        "at": "2026-11-15T18:51:01.849Z"
       }
     ]
   },
   "event": {
-    "id": "emwi1w6xx",
-    "key": "hauler_paint",
-    "text": "The cargo-hauler bot at the depot got a new paint job. Show-off.",
-    "at": "2026-11-15T16:30:17.637Z"
+    "id": "emwi6x6jd",
+    "key": "hauler_drop",
+    "text": "The depot's cargo-hauler bot dropped a part and didn't notice.",
+    "at": "2026-11-15T18:51:01.849Z"
   },
   "thoughts": [
+    {
+      "text": "that big cargo-hauler bot dropped a part right on the depot floor and didn't even notice. my visor is flickering though, time to head home to hangar bay 3 and plug in.",
+      "at": "2026-11-15T18:51:01.849Z"
+    },
     {
       "text": "every good bot needs a proper lubrication session before diving back into the scrap heaps. time to get these treads turning smooth.",
       "at": "2026-11-15T18:50:48.551Z"
@@ -1059,13 +1069,9 @@
     {
       "text": "earning a few coins here means I am one step closer to buying that next crucial component. my arc welder is ready to roll as soon as I pocket the pay.",
       "at": "2026-11-15T18:10:49.289Z"
-    },
-    {
-      "text": "that air leak article makes me want to weld pressure valves onto the little dart right now.",
-      "at": "2026-11-15T18:00:49.605Z"
     }
   ],
-  "sayAt": "2026-11-15T18:50:48.551Z",
+  "sayAt": "2026-11-15T18:51:01.849Z",
   "today": {
     "day": 27,
     "counts": {
@@ -1078,7 +1084,8 @@
       "fix_job": 1,
       "scavenge": 2,
       "buy_part": 1,
-      "drink_oil": 1
+      "drink_oil": 1,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1103,7 +1110,7 @@
     "chat_patrons": "2026-11-15T12:28:32.633Z",
     "busk": "2026-11-15T00:58:45.002Z",
     "cantina_band": "2026-11-15T16:30:17.637Z",
-    "nap_dock": "2026-11-15T15:19:49.196Z",
+    "nap_dock": "2026-11-15T18:51:01.849Z",
     "watch_suns": "2026-11-14T03:58:46.207Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1143,6 +1150,20 @@
     "at": "2026-11-15T17:50:34.430Z"
   },
   "said": [
+    {
+      "text": "heading back to the dock before my dish powers off. *bweep*",
+      "kind": "say",
+      "at": "2026-11-15T18:51:01.849Z",
+      "town": "day 27 18:49",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "that big cargo-hauler bot dropped a part right on the depot floor and didn't even notice. my visor is flickering though, time to head home to hangar bay 3 and plug in.",
+      "kind": "think",
+      "at": "2026-11-15T18:51:01.849Z",
+      "town": "day 27 18:49",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "one cup of the heavy grade, please!",
       "kind": "say",
@@ -2178,20 +2199,6 @@
       "at": "2026-11-15T06:39:09.163Z",
       "town": "day 23 17:14",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "Got the wing struts bolted tight with gus-one and gus-two, and now it is time to secure the rear tailfin flaps so she flies straight.",
-      "kind": "think",
-      "at": "2026-11-15T06:39:09.163Z",
-      "town": "day 23 17:14",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "Hold still, gus, let me get this bolt threaded right.",
-      "kind": "say",
-      "at": "2026-11-15T06:29:08.530Z",
-      "town": "day 23 15:54",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2202,7 +2209,7 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-15T18:50:48.551Z",
+  "feedArchivedAt": "2026-11-15T18:51:01.849Z",
   "plans": [],
   "searches": [
     {

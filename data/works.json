@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 8",
-    "progress": 82,
-    "version": 25,
-    "lastChange": "I beeps a five-note tune: boop-bop-bop-boop-tee",
+    "progress": 92,
+    "version": 26,
+    "lastChange": "Wiring Gus the high-spec cockpit switch into the flight panel and tweaking the swept hull plating around the thermal management vents. (used Sprocket, a strip of hull plating)",
     "log": [
+      {
+        "version": 26,
+        "change": "Wiring Gus the high-spec cockpit switch into the flight panel and tweaking the swept hull plating around the thermal management vents. (used Sprocket, a strip of hull plating)",
+        "progress": 92,
+        "at": "2026-11-15T00:08:15.102Z"
+      },
       {
         "version": 25,
         "change": "I beeps a five-note tune: boop-bop-bop-boop-tee",
@@ -238,12 +244,6 @@
         "change": "I'm tacking the heat-resistant cables more securely, making sure they won't come loose during tests.",
         "progress": 14,
         "at": "2026-11-14T04:25:46.537Z"
-      },
-      {
-        "version": 4,
-        "change": "I'm tacking the heat-resistant cables more securely, making sure they won't come loose during tests.",
-        "progress": 12,
-        "at": "2026-11-14T04:13:46.268Z"
       }
     ],
     "launched": [
@@ -1280,7 +1280,7 @@
         }
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 4,
     "parts": [
       {
         "name": "Brakk",
@@ -1296,6 +1296,11 @@
         "name": "Pim",
         "what": "a bent stabiliser fin",
         "version": 22
+      },
+      {
+        "name": "Sprocket",
+        "what": "a strip of hull plating",
+        "version": 26
       }
     ],
     "design": {
@@ -1586,32 +1591,23 @@
     {
       "name": "Nim",
       "what": "a sensor eye with one crack",
-      "at": "2026-11-14T23:58:14.842Z",
-      "carrying": true
+      "at": "2026-11-14T23:58:14.842Z"
     },
     {
       "name": "Gus",
       "what": "a sensor eye with one crack",
-      "at": "2026-11-14T23:58:14.842Z",
-      "carrying": true
+      "at": "2026-11-14T23:58:14.842Z"
     },
     {
       "name": "Gus",
       "what": "half a thruster nozzle",
-      "at": "2026-11-14T23:58:14.842Z",
-      "carrying": true
+      "at": "2026-11-14T23:58:14.842Z"
     },
     {
       "name": "Gus",
       "what": "a cockpit switch that still clicks",
       "at": "2026-11-14T23:37:39.031Z",
-      "good": true,
-      "carrying": true
-    },
-    {
-      "name": "Sprocket",
-      "what": "a strip of hull plating",
-      "at": "2026-11-14T22:37:17.947Z"
+      "good": true
     }
   ],
   "reads": [

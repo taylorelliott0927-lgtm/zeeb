@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794703724805,
+  "lastTick": 1794704325002,
   "asleep": false,
-  "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-15T00:28:14.546Z",
-  "actionMinutes": 180,
-  "thought": "Ninety-two percent complete means the Little Dart is almost ready to leave this dusty hangar behind.",
-  "feeling": "sleepy and low-battery",
-  "say": "Docking clamp engaged, power up that juice... *bweep*.",
-  "mood": 0.2,
-  "energy": 0.568,
+  "place": "cantina",
+  "action": "busk",
+  "doing": "playing his tunes for tips at the cantina",
+  "actionStartedAt": "2026-11-15T00:58:45.002Z",
+  "actionMinutes": 45,
+  "thought": "The cantina band played my favorite jam earlier! Time to show everyone what the Little Dart's launch tune sounds like. *bweep*",
+  "feeling": "playful and hopeful",
+  "say": "*bweep* hit it!",
+  "mood": 0.289,
+  "energy": 0.519,
   "needs": {
-    "charge": 0,
-    "oil": 0.354,
-    "curiosity": 0.428,
-    "company": 0.504,
-    "craft": 0.355
+    "charge": 0.047,
+    "oil": 0.394,
+    "curiosity": 0.508,
+    "company": 0.257,
+    "craft": 0.222
   },
-  "credits": 13,
+  "credits": 16,
   "recent": [
+    {
+      "id": "busk",
+      "detail": "",
+      "at": "2026-11-15T00:58:45.002Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "go_to_sleep",
       "detail": "",
       "at": "2026-11-14T22:17:17.790Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "I beeps a five-note tune: boop-bop-bop-boop-tee",
-      "at": "2026-11-14T21:51:01.326Z"
     }
   ],
   "wants": [
+    {
+      "id": "w5",
+      "text": "To earn a few credits for extra ship parts and play for the cantina crowd.",
+      "at": "2026-11-15T00:58:45.002Z"
+    },
     {
       "id": "w9",
       "text": "To get a full charge so I can test the Little Dart switches.",
@@ -97,11 +102,6 @@
       "id": "w7",
       "text": "To find a high-spec thermal management component for the Dart.",
       "at": "2026-11-14T23:37:39.031Z"
-    },
-    {
-      "id": "w6",
-      "text": "To learn more about thruster timing for rocket catches.",
-      "at": "2026-11-14T23:17:39.260Z"
     }
   ],
   "promises": [
@@ -543,7 +543,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-15T00:48:44.805Z",
+  "lettersCheckedAt": "2026-11-15T00:58:45.002Z",
   "weather": {
     "kind": "hazy",
     "temp": 19,
@@ -555,59 +555,52 @@
   "sleepDay": 20,
   "lastReflectDay": 20,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-15T00:48:44.805Z",
+  "updatedAt": "2026-11-15T00:58:45.002Z",
   "clock": {
     "day": 21,
-    "time": "18:31",
-    "hour": 18,
-    "minute": 31
+    "time": "19:51",
+    "hour": 19,
+    "minute": 51
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the Dented Moon cantina",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-15T00:28:14.546Z"
+    "action": "busk",
+    "since": "2026-11-15T00:58:45.002Z"
   },
-  "busyUntil": "2026-11-15T00:50:44.546Z",
-  "busyUntilTown": "18:47",
+  "busyUntil": "2026-11-15T01:04:22.502Z",
+  "busyUntilTown": "20:36",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "plugging into the charging dock for a quick nap",
+  "doingWords": "beeping out five-note tunes for the cantina crowd",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "droop",
-    "nod"
+    "bounce"
   ],
   "pops": {
-    "at": "2026-11-14T23:58:14.842Z",
+    "at": "2026-11-15T00:58:45.002Z",
     "items": [
       {
-        "text": "+ half a thruster nozzle",
-        "kind": "part",
-        "at": "2026-11-14T23:58:14.842Z"
-      },
-      {
-        "text": "+ a sensor eye with one crack",
-        "kind": "part",
-        "at": "2026-11-14T23:58:14.842Z"
-      },
-      {
-        "text": "+ a sensor eye with one crack",
-        "kind": "part",
-        "at": "2026-11-14T23:58:14.842Z"
+        "text": "+3 in tips",
+        "kind": "credits",
+        "at": "2026-11-15T00:58:45.002Z"
       }
     ]
   },
   "event": {
-    "id": "emwh2geuy",
-    "key": "hauler_paint",
-    "text": "The cargo-hauler bot at the depot got a new paint job. Show-off.",
-    "at": "2026-11-14T23:58:14.842Z"
+    "id": "emwh4m7wq",
+    "key": "band",
+    "text": "The cantina band played his favourite song while he walked past.",
+    "at": "2026-11-15T00:58:45.002Z"
   },
   "thoughts": [
+    {
+      "text": "The cantina band played my favorite jam earlier! Time to show everyone what the Little Dart's launch tune sounds like. *bweep*",
+      "at": "2026-11-15T00:58:45.002Z"
+    },
     {
       "text": "Ninety-two percent complete means the Little Dart is almost ready to leave this dusty hangar behind.",
       "at": "2026-11-15T00:28:45.320Z"
@@ -627,13 +620,9 @@
     {
       "text": "That cargo hauler thinks fancy paint makes it fast. Real speed comes from good parts under the hood. Time to find some gold in these scrap bins.",
       "at": "2026-11-14T23:58:14.842Z"
-    },
-    {
-      "text": "Traders always bring the crustiest power couplings to market. A few clean welds and this generator will hum like a starship thruster.",
-      "at": "2026-11-14T23:48:14.369Z"
     }
   ],
-  "sayAt": "2026-11-15T00:28:45.320Z",
+  "sayAt": "2026-11-15T00:58:45.002Z",
   "today": {
     "day": 21,
     "counts": {
@@ -645,7 +634,8 @@
       "fix_job": 1,
       "scavenge": 1,
       "work_dart": 1,
-      "cantina_band": 1
+      "cantina_band": 1,
+      "busk": 1
     }
   },
   "lastDone": {
@@ -668,7 +658,7 @@
     "stargaze": "2026-11-14T22:37:17.947Z",
     "go_to_sleep": "2026-11-14T22:17:17.790Z",
     "chat_patrons": "2026-11-14T21:47:09.819Z",
-    "busk": "2026-11-14T00:53:15.072Z",
+    "busk": "2026-11-15T00:58:45.002Z",
     "cantina_band": "2026-11-15T00:18:15.298Z",
     "nap_dock": "2026-11-15T00:28:14.546Z",
     "watch_suns": "2026-11-14T03:58:46.207Z",
@@ -710,6 +700,20 @@
     "at": "2026-11-14T23:17:39.260Z"
   },
   "said": [
+    {
+      "text": "*bweep* hit it!",
+      "kind": "say",
+      "at": "2026-11-15T00:58:45.002Z",
+      "town": "day 21 19:51",
+      "place": "the Dented Moon cantina"
+    },
+    {
+      "text": "The cantina band played my favorite jam earlier! Time to show everyone what the Little Dart's launch tune sounds like. *bweep*",
+      "kind": "think",
+      "at": "2026-11-15T00:58:45.002Z",
+      "town": "day 21 19:51",
+      "place": "the Dented Moon cantina"
+    },
     {
       "text": "Docking clamp engaged, power up that juice... *bweep*.",
       "kind": "say",
@@ -1745,20 +1749,6 @@
       "at": "2026-11-14T15:27:58.918Z",
       "town": "day 18 15:45",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "I'll see what I can find here, the right cables are worth the search.",
-      "kind": "say",
-      "at": "2026-11-14T15:24:58.898Z",
-      "town": "day 18 15:21",
-      "place": "the junk market"
-    },
-    {
-      "text": "I keep thinking about the Salt Flats Hanger design and its need for robust cables. It's important to find those cables quickly.",
-      "kind": "think",
-      "at": "2026-11-14T15:24:58.898Z",
-      "town": "day 18 15:21",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -1769,7 +1759,7 @@
     "at": "2026-11-14T18:15:59.376Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-15T00:28:14.546Z",
+  "feedArchivedAt": "2026-11-15T00:58:45.002Z",
   "plans": [],
   "searches": [
     {

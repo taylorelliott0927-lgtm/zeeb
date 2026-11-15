@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794743302504,
+  "lastTick": 1794743902520,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-15T11:48:22.504Z",
-  "actionMinutes": 20,
-  "thought": "A warm cup of oil is just what my servos need before I haul more scrap back to Hangar Bay 3.",
-  "feeling": "thirsty but cheerful",
-  "say": "Ah, nice fresh oil for squeaky elbow joints! *bweep*",
-  "mood": 0.268,
-  "energy": 0.031,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-15T11:58:22.520Z",
+  "actionMinutes": 180,
+  "thought": "Better plug in at Hangar Bay 3 before my battery hits absolute zero. Once I'm charged up, I can get back to welding the Little Dart.",
+  "feeling": "sleepy, low power, peaceful",
+  "say": "Low power warning... plugging in now. *bweep*",
+  "mood": 0.278,
+  "energy": 0.312,
   "needs": {
-    "charge": 0.538,
-    "oil": 0,
-    "curiosity": 0.16,
-    "company": 0.402,
-    "craft": 0.273
+    "charge": 0.135,
+    "oil": 0.04,
+    "curiosity": 0.24,
+    "company": 0.455,
+    "craft": 0.34
   },
   "credits": 13,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-15T11:58:22.520Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-15T10:07:12.884Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-15T09:57:12.643Z"
     }
   ],
   "wants": [
+    {
+      "id": "w6",
+      "text": "To wake up fully charged and get back to work on the Little Dart.",
+      "at": "2026-11-15T11:58:22.520Z"
+    },
     {
       "id": "w5",
       "text": "To head back to the hangar once my gears are running smooth.",
@@ -97,11 +102,6 @@
       "id": "w8",
       "text": "To bolt this fresh module onto the Little Dart before noon.",
       "at": "2026-11-15T11:28:23.037Z"
-    },
-    {
-      "id": "w7",
-      "text": "To find useful metal scrap or a copper fitting at the junk market.",
-      "at": "2026-11-15T11:17:44.012Z"
     }
   ],
   "promises": [],
@@ -799,43 +799,43 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-15T11:48:22.504Z",
+  "lettersCheckedAt": "2026-11-15T11:58:22.520Z",
   "weather": {
     "kind": "clear",
-    "temp": 25,
-    "wind": 3,
+    "temp": 26,
+    "wind": 2,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-15T11:18:23.198Z"
+    "at": "2026-11-15T11:58:22.609Z"
   },
   "sleepDay": 24,
   "lastReflectDay": 24,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-15T11:48:22.504Z",
+  "updatedAt": "2026-11-15T11:58:22.520Z",
   "clock": {
     "day": 25,
-    "time": "10:28",
-    "hour": 10,
-    "minute": 28
+    "time": "11:48",
+    "hour": 11,
+    "minute": 48
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-15T11:48:22.504Z"
+    "action": "nap_dock",
+    "since": "2026-11-15T11:58:22.520Z"
   },
-  "busyUntil": "2026-11-15T11:50:52.504Z",
-  "busyUntilTown": "10:48",
+  "busyUntil": "2026-11-15T12:20:52.520Z",
+  "busyUntilTown": "14:48",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "guzzling a nice warm cup of synth-oil at the depot",
+  "doingWords": "plugging into the charging dock for a solid power nap",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "wiggle",
-    "lean_in"
+    "droop",
+    "nod"
   ],
   "pops": {
     "at": "2026-11-15T11:48:22.504Z",
@@ -855,6 +855,10 @@
   },
   "thoughts": [
     {
+      "text": "Better plug in at Hangar Bay 3 before my battery hits absolute zero. Once I'm charged up, I can get back to welding the Little Dart.",
+      "at": "2026-11-15T11:58:22.520Z"
+    },
+    {
       "text": "A warm cup of oil is just what my servos need before I haul more scrap back to Hangar Bay 3.",
       "at": "2026-11-15T11:48:22.504Z"
     },
@@ -873,13 +877,9 @@
     {
       "text": "My stash is clean out of good bolts. Time to dig through the salvage heaps down at the market before someone else nabs the good scrap!",
       "at": "2026-11-15T11:17:44.012Z"
-    },
-    {
-      "text": "If those big rigs can land back on a tower arm, the Little Dart is gonna land real smooth once I tighten Gus #12. Just gotta make sure my retro-thrusters don't melt the frame. *bweep*",
-      "at": "2026-11-15T11:07:44.155Z"
     }
   ],
-  "sayAt": "2026-11-15T11:48:22.504Z",
+  "sayAt": "2026-11-15T11:58:22.520Z",
   "today": {
     "day": 25,
     "counts": {
@@ -890,7 +890,8 @@
       "scavenge": 1,
       "buy_part": 1,
       "fix_job": 1,
-      "drink_oil": 1
+      "drink_oil": 1,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -915,7 +916,7 @@
     "chat_patrons": "2026-11-15T01:08:44.718Z",
     "busk": "2026-11-15T00:58:45.002Z",
     "cantina_band": "2026-11-15T00:18:15.298Z",
-    "nap_dock": "2026-11-15T10:07:12.884Z",
+    "nap_dock": "2026-11-15T11:58:22.520Z",
     "watch_suns": "2026-11-14T03:58:46.207Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -955,6 +956,20 @@
     "at": "2026-11-15T11:07:44.155Z"
   },
   "said": [
+    {
+      "text": "Low power warning... plugging in now. *bweep*",
+      "kind": "say",
+      "at": "2026-11-15T11:58:22.520Z",
+      "town": "day 25 11:48",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "Better plug in at Hangar Bay 3 before my battery hits absolute zero. Once I'm charged up, I can get back to welding the Little Dart.",
+      "kind": "think",
+      "at": "2026-11-15T11:58:22.520Z",
+      "town": "day 25 11:48",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "Ah, nice fresh oil for squeaky elbow joints! *bweep*",
       "kind": "say",
@@ -1990,20 +2005,6 @@
       "at": "2026-11-14T23:37:39.031Z",
       "town": "day 21 09:02",
       "place": "the junk market"
-    },
-    {
-      "text": "A standard sprocket won't cut it for deep space orbital maneuvers. I need proper high-spec scrap!",
-      "kind": "think",
-      "at": "2026-11-14T23:37:39.031Z",
-      "town": "day 21 09:02",
-      "place": "the junk market"
-    },
-    {
-      "text": "Ah, top-shelf lubricant. Just what the servos needed *bweep*!",
-      "kind": "say",
-      "at": "2026-11-14T23:27:38.614Z",
-      "town": "day 21 07:42",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2014,7 +2015,7 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-15T11:48:22.504Z",
+  "feedArchivedAt": "2026-11-15T11:58:22.520Z",
   "plans": [],
   "searches": [
     {

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 10",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 10,
+    "version": 1,
+    "lastChange": "Welding the spring-loaded trigger sear blocks into the Little Dart hatch latch housing. (used Wren, a tiny gyroscope)",
     "log": [
+      {
+        "version": 1,
+        "change": "Welding the spring-loaded trigger sear blocks into the Little Dart hatch latch housing. (used Wren, a tiny gyroscope)",
+        "progress": 10,
+        "at": "2026-11-15T15:30:03.135Z"
+      },
       {
         "version": 18,
         "change": "Installing the adapted trigger sear blocks into the Little Dart hatch latch mechanism (used Bix, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "Curious about the duct seal's perfect fit and durability, I'm sure to have a beeping tune to signal my satisfaction once it's ready.",
         "progress": 22,
         "at": "2026-11-14T12:27:58.436Z"
-      },
-      {
-        "version": 6,
-        "change": "Double-check the duct seal for the perfect fit and durability again, ensuring the thermal management systems are foolproof.",
-        "progress": 19,
-        "at": "2026-11-14T12:06:58.391Z"
       }
     ],
     "launched": [
@@ -1545,8 +1545,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Wren",
+        "what": "a tiny gyroscope",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -1659,13 +1665,7 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Wren",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-15T14:09:34.135Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "[SpacePolicyOnline.com] SpaceX Catches a Starship: SpaceX’s 15th Starship Integrated Flight Test (IFT-15) returned to Earth today and was “caught” back at the launch tower after orbiting Earth 14 times. It’s a milestone achievement for the […]",

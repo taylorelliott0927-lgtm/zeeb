@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 9",
-    "progress": 56,
-    "version": 10,
-    "lastChange": "Welding the starboard stabilizer fin to the Little Dart fuselage using gus-four (used Brakk, a bent fin) (used Tilly, a tiny gyroscope)",
+    "progress": 66,
+    "version": 11,
+    "lastChange": "Welding the port-side wing bracket to the Little Dart fuselage using Rusty Jr (used Rusty Jr, a tiny gyroscope)",
     "log": [
+      {
+        "version": 11,
+        "change": "Welding the port-side wing bracket to the Little Dart fuselage using Rusty Jr (used Rusty Jr, a tiny gyroscope)",
+        "progress": 66,
+        "at": "2026-11-15T09:16:56.154Z"
+      },
       {
         "version": 10,
         "change": "Welding the starboard stabilizer fin to the Little Dart fuselage using gus-four (used Brakk, a bent fin) (used Tilly, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "tinkered with it",
         "progress": 94,
         "at": "2026-11-14T07:45:57.618Z"
-      },
-      {
-        "version": 16,
-        "change": "tinkered with it (used Sprocket, a scorched heat tile)",
-        "progress": 92,
-        "at": "2026-11-14T07:15:57.698Z"
       }
     ],
     "launched": [
@@ -1486,7 +1486,7 @@
         }
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Gus",
@@ -1518,6 +1518,11 @@
         "what": "a tiny gyroscope",
         "good": true,
         "version": 10
+      },
+      {
+        "name": "Rusty Jr",
+        "what": "a tiny gyroscope",
+        "version": 11
       }
     ],
     "design": null
@@ -1632,13 +1637,7 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Rusty Jr",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-15T08:31:40.672Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Comets",

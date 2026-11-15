@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 9",
-    "progress": 16,
-    "version": 2,
-    "lastChange": "Inspecting the starboard thruster manifold and tightening gus the bracket fittings (used Gus, a sensor eye with one crack)",
+    "progress": 22,
+    "version": 3,
+    "lastChange": "Inspecting the fuel line routing near gus the bracket and applying a dab of sealant (used Nim, a sensor eye with one crack)",
     "log": [
+      {
+        "version": 3,
+        "change": "Inspecting the fuel line routing near gus the bracket and applying a dab of sealant (used Nim, a sensor eye with one crack)",
+        "progress": 22,
+        "at": "2026-11-15T03:18:22.960Z"
+      },
       {
         "version": 2,
         "change": "Inspecting the starboard thruster manifold and tightening gus the bracket fittings (used Gus, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "routing the flexible heat-resistant cables to the heat-resistant duct seal, double checking every connection (used Tilly, a cockpit switch that still clicks)",
         "progress": 31,
         "at": "2026-11-14T06:16:46.690Z"
-      },
-      {
-        "version": 8,
-        "change": "welding the central instrument panel brackets and mounting the main ignition toggle switch",
-        "progress": 22,
-        "at": "2026-11-14T05:39:40.203Z"
       }
     ],
     "launched": [
@@ -1486,7 +1486,7 @@
         }
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Gus",
@@ -1497,6 +1497,11 @@
         "name": "Gus",
         "what": "a sensor eye with one crack",
         "version": 2
+      },
+      {
+        "name": "Nim",
+        "what": "a sensor eye with one crack",
+        "version": 3
       }
     ],
     "design": null
@@ -1616,11 +1621,6 @@
       "name": "Pim",
       "what": "a scorched heat tile",
       "at": "2026-11-15T01:29:14.338Z"
-    },
-    {
-      "name": "Nim",
-      "what": "a sensor eye with one crack",
-      "at": "2026-11-14T23:58:14.842Z"
     }
   ],
   "reads": [

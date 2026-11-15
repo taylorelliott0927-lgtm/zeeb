@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 9",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 8,
+    "version": 1,
+    "lastChange": "Inspecting the starboard thruster manifold and securing gus the bracket with fresh welds (used Gus, half a thruster nozzle)",
     "log": [
+      {
+        "version": 1,
+        "change": "Inspecting the starboard thruster manifold and securing gus the bracket with fresh welds (used Gus, half a thruster nozzle)",
+        "progress": 8,
+        "at": "2026-11-15T03:04:47.591Z"
+      },
       {
         "version": 27,
         "change": "Installing Gus the bracket into the intake manifold and sealing the thermal ducts. (used Gus, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "routing the internal conduits for the Little Dart's thruster assembly and securing the brackets",
         "progress": 18,
         "at": "2026-11-14T05:29:39.895Z"
-      },
-      {
-        "version": 6,
-        "change": "welding the forward heat shield plates and routing the flexible cables securely along the spine",
-        "progress": 16,
-        "at": "2026-11-14T05:20:28.125Z"
       }
     ],
     "launched": [
@@ -1486,8 +1486,14 @@
         }
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Gus",
+        "what": "half a thruster nozzle",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -1614,11 +1620,6 @@
     {
       "name": "Gus",
       "what": "a sensor eye with one crack",
-      "at": "2026-11-14T23:58:14.842Z"
-    },
-    {
-      "name": "Gus",
-      "what": "half a thruster nozzle",
       "at": "2026-11-14T23:58:14.842Z"
     }
   ],

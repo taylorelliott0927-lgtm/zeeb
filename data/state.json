@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794845551228,
-  "asleep": false,
-  "place": "tower",
-  "action": "send_signal",
-  "doing": "sending a signal into deep space",
-  "actionStartedAt": "2026-11-16T16:12:31.228Z",
-  "actionMinutes": 30,
-  "thought": "The sky is hazy tonight but the radio bands are clear. Maybe someone past Kessa-9 will catch this ping.",
-  "feeling": "hopeful and eager",
-  "say": "Calling any ships in sector nine! This is Zeeb from Hangar Bay 3! *bweep*",
-  "mood": -0.044,
-  "energy": -0.307,
+  "lastTick": 1794846151315,
+  "asleep": true,
+  "place": "hangar",
+  "action": "sleep",
+  "doing": "asleep in the charging dock",
+  "actionStartedAt": "2026-11-16T16:22:31.315Z",
+  "actionMinutes": 60,
+  "thought": "(dreaming) dreamed the Dart flew all the way past the second sun.",
+  "feeling": "okay, ticking along",
+  "say": "",
+  "mood": -0.074,
+  "energy": -0.413,
   "needs": {
-    "charge": 0.521,
-    "oil": 0.81,
-    "curiosity": 0.48,
-    "company": 0.623,
-    "craft": 0.534
+    "charge": 0.568,
+    "oil": 0.85,
+    "curiosity": 0.56,
+    "company": 0.676,
+    "craft": 0.601
   },
   "credits": 3,
   "recent": [
+    {
+      "id": "go_to_sleep",
+      "detail": "",
+      "at": "2026-11-16T16:22:31.315Z"
+    },
     {
       "id": "send_signal",
       "detail": "Broadcasting open carrier frequency from Kessa-9 comms tower. Little Dart Mk 11 ",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-16T11:28:45.161Z"
-    },
-    {
-      "id": "wander",
-      "detail": "",
-      "at": "2026-11-16T10:52:24.679Z"
     }
   ],
   "wants": [
@@ -1405,7 +1405,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-16T16:12:31.228Z",
+  "lettersCheckedAt": "2026-11-16T16:22:31.315Z",
   "weather": {
     "kind": "hazy",
     "temp": 27,
@@ -1414,35 +1414,32 @@
     "source": "Tozeur, Tunisia",
     "at": "2026-11-16T14:20:05.896Z"
   },
-  "sleepDay": 33,
-  "lastReflectDay": 33,
-  "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-16T16:12:31.228Z",
+  "sleepDay": 34,
+  "lastReflectDay": 34,
+  "brain": "rules",
+  "updatedAt": "2026-11-16T16:22:31.315Z",
   "clock": {
     "day": 34,
-    "time": "21:41",
-    "hour": 21,
-    "minute": 41
+    "time": "23:01",
+    "hour": 23,
+    "minute": 1
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "send_signal",
-    "since": "2026-11-16T16:12:31.228Z"
+    "action": "go_to_sleep",
+    "since": "2026-11-16T16:22:31.315Z"
   },
-  "busyUntil": "2026-11-16T16:16:16.228Z",
-  "busyUntilTown": "22:11",
+  "busyUntil": "2026-11-16T16:30:01.315Z",
+  "busyUntilTown": "00:01",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "pointing brass dish at the night sky to broadcast a ping",
+  "doingWords": "",
   "newsForCreator": "the Little Dart Mk 11 just reached 50% built (version 9). Last change: soldering a dedicated power switch for the reaction wheel assembly with extra heat-shrink tubing and gus to hold the line steady (used Captain, a perfectly good bolt).",
-  "newsPendingTicks": 3,
+  "newsPendingTicks": 4,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "look_up",
-    "wiggle"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-16T14:20:05.695Z",
     "items": [
@@ -1460,6 +1457,10 @@
     "at": "2026-11-16T14:30:05.836Z"
   },
   "thoughts": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "at": "2026-11-16T16:22:31.315Z"
+    },
     {
       "text": "The sky is hazy tonight but the radio bands are clear. Maybe someone past Kessa-9 will catch this ping.",
       "at": "2026-11-16T16:12:31.228Z"
@@ -1479,20 +1480,17 @@
     {
       "text": "A splash of top-shelf heavy oil will get my arm servos spinning smooth again.",
       "at": "2026-11-16T14:20:05.695Z"
-    },
-    {
-      "text": "captain has been humming a weird tune all morning, but a bot's gotta drink oil if he wants to keep building rockets.",
-      "at": "2026-11-16T12:18:44.969Z"
     }
   ],
-  "sayAt": "2026-11-16T16:12:31.228Z",
+  "sayAt": "2026-11-16T16:22:31.315Z",
   "today": {
     "day": 34,
     "counts": {
       "drink_oil": 1,
       "work_dart": 2,
       "browse_wire": 1,
-      "send_signal": 1
+      "send_signal": 1,
+      "go_to_sleep": 1
     }
   },
   "lastDone": {
@@ -1513,7 +1511,7 @@
     "design_ship": "2026-11-14T18:33:59.432Z",
     "send_signal": "2026-11-16T16:12:31.228Z",
     "stargaze": "2026-11-15T10:27:44.248Z",
-    "go_to_sleep": "2026-11-16T07:44:42.882Z",
+    "go_to_sleep": "2026-11-16T16:22:31.315Z",
     "chat_patrons": "2026-11-15T12:28:32.633Z",
     "busk": "2026-11-15T00:58:45.002Z",
     "cantina_band": "2026-11-15T16:30:17.637Z",
@@ -1555,6 +1553,20 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "(dreaming) dreamed the Dart flew all the way past the second sun.",
+      "kind": "think",
+      "at": "2026-11-16T16:22:31.315Z",
+      "town": "day 34 23:01",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "my oil is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-16T16:22:31.315Z",
+      "town": "day 34 23:01",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "Calling any ships in sector nine! This is Zeeb from Hangar Bay 3! *bweep*",
       "kind": "say",
@@ -2590,20 +2602,6 @@
       "at": "2026-11-15T19:41:02.076Z",
       "town": "day 28 01:29",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "Hold steady Bix, you're joining the main thruster harness now. *bweep*",
-      "kind": "say",
-      "at": "2026-11-15T19:31:01.324Z",
-      "town": "day 28 00:09",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "I need to get Bix wired into the thruster assembly so the sensor readings don't jump around when the engines spark. Every wire brings the Little Dart closer to the sky.",
-      "kind": "think",
-      "at": "2026-11-15T19:31:01.324Z",
-      "town": "day 28 00:09",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2614,7 +2612,7 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-16T16:12:31.228Z",
+  "feedArchivedAt": "2026-11-16T16:22:31.315Z",
   "plans": [],
   "searches": [
     {

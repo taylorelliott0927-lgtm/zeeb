@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794850778145,
+  "lastTick": 1794851377438,
   "asleep": false,
   "place": "hangar",
   "action": "work_dart",
   "doing": "still working on the Little Dart",
   "actionStartedAt": "2026-11-16T17:29:38.235Z",
-  "actionMinutes": 60,
-  "thought": "my company is bugging me most right now.",
-  "feeling": "okay, ticking along",
-  "say": "",
-  "mood": 0.017,
-  "energy": 0.127,
+  "actionMinutes": 30,
+  "thought": "just a few more inches of copper wire and the attitude control will be solid. tee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee",
+  "feeling": "focused and hopeful",
+  "say": "almost there, gus!",
+  "mood": 0.042,
+  "energy": -0.021,
   "needs": {
-    "charge": 0.368,
-    "oil": 0.44,
-    "curiosity": 0.421,
-    "company": 0.876,
-    "craft": 0.003
+    "charge": 0.465,
+    "oil": 0.48,
+    "curiosity": 0.501,
+    "company": 0.809,
+    "craft": 0
   },
   "credits": 2,
   "recent": [
+    {
+      "id": "work_dart",
+      "detail": "routing telemetry wires for the reaction wheels",
+      "at": "2026-11-16T17:49:37.438Z"
+    },
     {
       "id": "work_dart",
       "detail": "patched a hole in the hull",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-16T14:20:05.695Z"
-    },
-    {
-      "id": "sell_scrap",
-      "detail": "Captain",
-      "at": "2026-11-16T12:18:44.969Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 166,
+      "subject": "Little Dart update!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/166",
+      "at": "2026-11-16T17:49:37.438Z"
+    },
     {
       "id": 165,
       "subject": "Little Dart Mk 11 passed 50%!",
@@ -1086,14 +1092,6 @@
   "creatorThread": [
     {
       "from": "zeeb",
-      "letter": 126,
-      "subject": "Copper brackets and dashboard wiring",
-      "text": "Hey creator!\n\nJust finished welding the little copper brackets onto the instrument panel of the Little Dart. My brass dish gave a happy little spin while the torch was cooling.\n\n*bweep-bop-bwee*\n\nz",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/126",
-      "at": "2026-11-16T01:24:42.423Z"
-    },
-    {
-      "from": "zeeb",
       "letter": 127,
       "subject": "quick oil stop",
       "text": "Hey creator!\n\nJust rolling over to the depot for a quick cup of oil to grease up my joints. My brass dish is doing a little five-note tune because the Little Dart is looking so sharp.\n\n*bweep-bop-bwee-boop-tee*\n\nz",
@@ -1403,6 +1401,14 @@
       "text": "Hey creator!\n\nJust wanted to tell you the Little Dart Mk 11 is past the halfway mark! Version 10 is at 52% built now. I soldered a dedicated power switch for the reaction wheel assembly and used gus to keep the wire steady.\n\nOff to get some heavy oil for my dry joints now!\n\ntee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee\n\n*bweep*\n\nz",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/165",
       "at": "2026-11-16T16:42:30.860Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 166,
+      "subject": "Little Dart update!",
+      "text": "Hey creator!\n\nStill working on the Little Dart Mk 11. I am routing the reaction wheel telemetry wires right now, making sure every solder joint is clean and tight.\n\nMy brass dish is playing a happy five-note tune because the wiring harness looks fantastic.\n\ntee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee\n\n*bweep*\n\nz",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/166",
+      "at": "2026-11-16T17:49:37.438Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1411,7 +1417,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-16T17:39:38.145Z",
+  "lettersCheckedAt": "2026-11-16T17:49:37.438Z",
   "weather": {
     "kind": "hazy",
     "temp": 25,
@@ -1422,13 +1428,13 @@
   },
   "sleepDay": 34,
   "lastReflectDay": 34,
-  "brain": "rules",
-  "updatedAt": "2026-11-16T17:39:38.145Z",
+  "brain": "gemini-3.5-flash-lite",
+  "updatedAt": "2026-11-16T17:49:37.438Z",
   "clock": {
     "day": 35,
-    "time": "09:18",
-    "hour": 9,
-    "minute": 18
+    "time": "10:38",
+    "hour": 10,
+    "minute": 38
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
@@ -1436,16 +1442,19 @@
     "action": "work_dart",
     "since": "2026-11-16T17:29:38.235Z"
   },
-  "busyUntil": "2026-11-16T17:47:08.145Z",
-  "busyUntilTown": "10:18",
+  "busyUntil": "2026-11-16T17:53:22.438Z",
+  "busyUntilTown": "11:08",
   "runner": "github",
-  "model": "gemini-3.6-flash",
+  "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "",
+  "doingWords": "routing tiny reaction wheel telemetry cables inside the hull",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [],
+  "body": [
+    "zoom",
+    "wiggle"
+  ],
   "pops": {
     "at": "2026-11-16T16:42:30.860Z",
     "items": [
@@ -1463,6 +1472,10 @@
     "at": "2026-11-16T14:30:05.836Z"
   },
   "thoughts": [
+    {
+      "text": "just a few more inches of copper wire and the attitude control will be solid. tee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee",
+      "at": "2026-11-16T17:49:37.438Z"
+    },
     {
       "text": "my company is bugging me most right now.",
       "at": "2026-11-16T17:39:38.145Z"
@@ -1482,24 +1495,20 @@
     {
       "text": "A cup of heavy oil will smooth out these dry gears in no time. Then my elbows won't rattle when I weld.",
       "at": "2026-11-16T16:42:30.860Z"
-    },
-    {
-      "text": "my oil is bugging me most right now.",
-      "at": "2026-11-16T16:22:31.315Z"
     }
   ],
-  "sayAt": "2026-11-16T17:39:38.145Z",
+  "sayAt": "2026-11-16T17:49:37.438Z",
   "today": {
     "day": 35,
     "counts": {
       "drink_oil": 1,
       "browse_wire": 1,
       "wander": 1,
-      "work_dart": 2
+      "work_dart": 3
     }
   },
   "lastDone": {
-    "work_dart": "2026-11-16T17:39:38.145Z",
+    "work_dart": "2026-11-16T17:49:37.438Z",
     "read_news": "2026-11-16T00:14:29.116Z",
     "drink_oil": "2026-11-16T16:42:30.860Z",
     "follow_link": "2026-11-16T10:32:24.902Z",
@@ -1558,6 +1567,20 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "almost there, gus!",
+      "kind": "say",
+      "at": "2026-11-16T17:49:37.438Z",
+      "town": "day 35 10:38",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "just a few more inches of copper wire and the attitude control will be solid. tee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee",
+      "kind": "think",
+      "at": "2026-11-16T17:49:37.438Z",
+      "town": "day 35 10:38",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "my company is bugging me most right now.",
       "kind": "think",
@@ -2593,20 +2616,6 @@
       "at": "2026-11-15T20:22:56.778Z",
       "town": "day 28 07:04",
       "place": "the comms tower"
-    },
-    {
-      "text": "if a tower can catch a rocket like that, maybe the Little Dart just needs a really tall launch hook. i should check my cable winches.",
-      "kind": "think",
-      "at": "2026-11-15T20:22:56.778Z",
-      "town": "day 28 07:04",
-      "place": "the comms tower"
-    },
-    {
-      "text": "let's see what the wire has on ultrasonic salvage! *bweep*",
-      "kind": "say",
-      "at": "2026-11-15T20:12:56.401Z",
-      "town": "day 28 05:44",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2617,7 +2626,7 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-16T17:39:38.145Z",
+  "feedArchivedAt": "2026-11-16T17:49:37.438Z",
   "plans": [],
   "searches": [
     {

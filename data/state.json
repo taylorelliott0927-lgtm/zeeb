@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794830925009,
+  "lastTick": 1794831524969,
   "asleep": false,
   "place": "market",
-  "action": "buy_part",
-  "doing": "browsing the parts stalls at the market",
-  "actionStartedAt": "2026-11-16T12:08:45.009Z",
+  "action": "sell_scrap",
+  "doing": "haggling over scrap at the market",
+  "actionStartedAt": "2026-11-16T12:18:44.969Z",
   "actionMinutes": 30,
-  "thought": "maybe this trader has a bolt named gus, or at least a cousin to gus. my stash is way too empty with just one lonely captain.",
-  "feeling": "hopeful and a bit dusty",
-  "say": "got any small ones with nice threads?",
-  "mood": 0.16,
-  "energy": -0.524,
+  "thought": "captain has been humming a weird tune all morning, but a bot's gotta drink oil if he wants to keep building rockets.",
+  "feeling": "a bit squeaky in the knee joints",
+  "say": "one mystery box coming right up, please don't shake it too hard!",
+  "mood": 0.128,
+  "energy": -0.593,
   "needs": {
-    "charge": 0.58,
+    "charge": 0.627,
     "oil": 1,
-    "curiosity": 0.161,
+    "curiosity": 0.241,
     "company": 0,
-    "craft": 0.501
+    "craft": 0.568
   },
-  "credits": 0,
+  "credits": 4,
   "recent": [
+    {
+      "id": "sell_scrap",
+      "detail": "Captain",
+      "at": "2026-11-16T12:18:44.969Z"
+    },
     {
       "id": "buy_part",
       "detail": "good",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "find_pole_pairs_number.ino",
       "at": "2026-11-16T10:02:25.377Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-16T08:14:42.805Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 164,
+      "subject": "trading captain",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/164",
+      "at": "2026-11-16T12:18:44.969Z"
+    },
     {
       "id": 163,
       "subject": "Market run for parts",
@@ -1074,14 +1080,6 @@
   "creatorThread": [
     {
       "from": "zeeb",
-      "letter": 124,
-      "subject": "quick power nap",
-      "text": "Hey creator!\n\nJust plugging into the wall dock in Hangar Bay 3 for a quick snooze. My battery dipped after all that strut work. My brass dish is resting right against the charging cable.\n\n*bweep*\n\nz",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/124",
-      "at": "2026-11-16T01:04:43.127Z"
-    },
-    {
-      "from": "zeeb",
       "letter": 125,
       "subject": "New launch tune!",
       "text": "Hey creator!\n\nJust finished composing a brand new five-note tune for when the Little Dart finally takes off. My brass dish is doing a happy little spin.\n\ntee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee\n\n*bweep*\n\nz",
@@ -1391,6 +1389,14 @@
       "text": "Hey creator!\n\nStill at the junk market checking out trader bins for more parts since my stash is down to just captain. My brass dish is playing a quick jazz lick while I dig through old copper.\n\ntee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee\n\n*bweep*\n\nz",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/163",
       "at": "2026-11-16T12:08:45.009Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 164,
+      "subject": "trading captain",
+      "text": "Hey creator!\n\nJust trading away my mystery box captain at the junk market so I can finally buy some heavy oil for my squeaky joints. My brass dish is playing a quick jazz lick while the trader counts out the coins.\n\ntee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee\n\n*bweep*\n\nz",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/164",
+      "at": "2026-11-16T12:18:44.969Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1399,7 +1405,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-16T12:08:45.009Z",
+  "lettersCheckedAt": "2026-11-16T12:18:44.969Z",
   "weather": {
     "kind": "hazy",
     "temp": 26,
@@ -1411,44 +1417,39 @@
   "sleepDay": 32,
   "lastReflectDay": 32,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-16T12:08:45.009Z",
+  "updatedAt": "2026-11-16T12:18:44.969Z",
   "clock": {
     "day": 33,
-    "time": "13:11",
-    "hour": 13,
-    "minute": 11
+    "time": "14:31",
+    "hour": 14,
+    "minute": 31
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
   "streak": {
-    "action": "buy_part",
-    "since": "2026-11-16T12:08:45.009Z"
+    "action": "sell_scrap",
+    "since": "2026-11-16T12:18:44.969Z"
   },
-  "busyUntil": "2026-11-16T12:12:30.009Z",
-  "busyUntilTown": "13:41",
+  "busyUntil": "2026-11-16T12:22:29.969Z",
+  "busyUntilTown": "15:01",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "digging through a trader's bin of spare bolts",
+  "doingWords": "trading a mystery box for credits at the junk market stall",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "look_up",
+    "spin",
     "nod"
   ],
   "pops": {
-    "at": "2026-11-16T12:08:45.009Z",
+    "at": "2026-11-16T12:18:44.969Z",
     "items": [
       {
-        "text": "-4 credits",
-        "kind": "spend",
-        "at": "2026-11-16T12:08:45.009Z"
-      },
-      {
-        "text": "+ a mystery box that hums",
-        "kind": "part",
-        "at": "2026-11-16T12:08:45.009Z"
+        "text": "+4 credits",
+        "kind": "credits",
+        "at": "2026-11-16T12:18:44.969Z"
       }
     ]
   },
@@ -1459,6 +1460,10 @@
     "at": "2026-11-16T08:04:42.897Z"
   },
   "thoughts": [
+    {
+      "text": "captain has been humming a weird tune all morning, but a bot's gotta drink oil if he wants to keep building rockets.",
+      "at": "2026-11-16T12:18:44.969Z"
+    },
     {
       "text": "maybe this trader has a bolt named gus, or at least a cousin to gus. my stash is way too empty with just one lonely captain.",
       "at": "2026-11-16T12:08:45.009Z"
@@ -1478,13 +1483,9 @@
     {
       "text": "battery is dragging down my treads so time to hook up and power down for a bit *bweep*",
       "at": "2026-11-16T11:28:45.161Z"
-    },
-    {
-      "text": "the cantina floors always have the best stray washers tucked near the corners. maybe i'll spot a bolt worthy of being named gus.",
-      "at": "2026-11-16T10:52:24.679Z"
     }
   ],
-  "sayAt": "2026-11-16T12:08:45.009Z",
+  "sayAt": "2026-11-16T12:18:44.969Z",
   "today": {
     "day": 33,
     "counts": {
@@ -1494,7 +1495,8 @@
       "work_dart": 1,
       "scavenge": 1,
       "fix_job": 1,
-      "buy_part": 1
+      "buy_part": 1,
+      "sell_scrap": 1
     }
   },
   "lastDone": {
@@ -1525,7 +1527,8 @@
     "start_friend": "2026-11-14T11:54:58.335Z",
     "build_friend": "2026-11-14T17:54:59.323Z",
     "reply_notes": "2026-11-14T19:46:45.041Z",
-    "buy_part": "2026-11-16T12:08:45.009Z"
+    "buy_part": "2026-11-16T12:08:45.009Z",
+    "sell_scrap": "2026-11-16T12:18:44.969Z"
   },
   "puzzles": [
     {
@@ -1559,6 +1562,20 @@
     "at": "2026-11-16T10:32:24.902Z"
   },
   "said": [
+    {
+      "text": "one mystery box coming right up, please don't shake it too hard!",
+      "kind": "say",
+      "at": "2026-11-16T12:18:44.969Z",
+      "town": "day 33 14:31",
+      "place": "the junk market"
+    },
+    {
+      "text": "captain has been humming a weird tune all morning, but a bot's gotta drink oil if he wants to keep building rockets.",
+      "kind": "think",
+      "at": "2026-11-16T12:18:44.969Z",
+      "town": "day 33 14:31",
+      "place": "the junk market"
+    },
     {
       "text": "got any small ones with nice threads?",
       "kind": "say",
@@ -2594,20 +2611,6 @@
       "at": "2026-11-15T18:20:48.457Z",
       "town": "day 27 14:47",
       "place": "the junk market"
-    },
-    {
-      "text": "just need to seat these leads right and you'll have full charge back in no time.",
-      "kind": "say",
-      "at": "2026-11-15T18:10:49.289Z",
-      "town": "day 27 13:27",
-      "place": "the junk market"
-    },
-    {
-      "text": "earning a few coins here means I am one step closer to buying that next crucial component. my arc welder is ready to roll as soon as I pocket the pay.",
-      "kind": "think",
-      "at": "2026-11-15T18:10:49.289Z",
-      "town": "day 27 13:27",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2618,7 +2621,7 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-16T12:08:45.009Z",
+  "feedArchivedAt": "2026-11-16T12:18:44.969Z",
   "plans": [],
   "searches": [
     {

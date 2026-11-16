@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 11",
-    "progress": 32,
-    "version": 6,
-    "lastChange": "soldering the stepper driver control wires onto the central avionics bay using gus to steady the iron (used Tok, a cockpit switch that still clicks)",
+    "progress": 40,
+    "version": 7,
+    "lastChange": "soldering the micro telemetry bus wires onto the reaction wheel driver board using gus to steady the circuit board (used Wren, a scorched heat tile)",
     "log": [
+      {
+        "version": 7,
+        "change": "soldering the micro telemetry bus wires onto the reaction wheel driver board using gus to steady the circuit board (used Wren, a scorched heat tile)",
+        "progress": 40,
+        "at": "2026-11-16T07:34:43.131Z"
+      },
       {
         "version": 6,
         "change": "soldering the stepper driver control wires onto the central avionics bay using gus to steady the iron (used Tok, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "Wiring Gus the high-spec cockpit switch into the flight panel and tweaking the swept hull plating around the thermal management vents. (used Sprocket, a strip of hull plating)",
         "progress": 92,
         "at": "2026-11-15T00:08:15.102Z"
-      },
-      {
-        "version": 25,
-        "change": "I beeps a five-note tune: boop-bop-bop-boop-tee",
-        "progress": 82,
-        "at": "2026-11-14T21:51:01.326Z"
       }
     ],
     "launched": [
@@ -1608,7 +1608,7 @@
         ]
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 4,
     "parts": [
       {
         "name": "Brakk",
@@ -1624,6 +1624,11 @@
         "name": "Tok",
         "what": "a cockpit switch that still clicks",
         "version": 6
+      },
+      {
+        "name": "Wren",
+        "what": "a scorched heat tile",
+        "version": 7
       }
     ],
     "design": null
@@ -1756,13 +1761,7 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Wren",
-      "what": "a scorched heat tile",
-      "at": "2026-11-16T06:25:37.976Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Stepper Motors | Arduino-FOC",

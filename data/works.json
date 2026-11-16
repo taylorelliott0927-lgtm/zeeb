@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 11",
-    "progress": 73,
-    "version": 15,
-    "lastChange": "I am bolting the newly acquired lightweight aluminum corner brackets onto the main frame, using the t-slot grooves to slide them into position for maximum stability. (used Mabel, a dented fuel cell)",
+    "progress": 79,
+    "version": 16,
+    "lastChange": "I am finishing the installation of Rusty Jr, the landing strut, onto the main frame, ensuring the t-slot alignment is perfect so the ship can actually stand on its own. (used Otto, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 16,
+        "change": "I am finishing the installation of Rusty Jr, the landing strut, onto the main frame, ensuring the t-slot alignment is perfect so the ship can actually stand on its own. (used Otto, a cockpit switch that still clicks)",
+        "progress": 79,
+        "at": "2026-11-16T22:51:38.869Z"
+      },
       {
         "version": 15,
         "change": "I am bolting the newly acquired lightweight aluminum corner brackets onto the main frame, using the t-slot grooves to slide them into position for maximum stability. (used Mabel, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "Securing the rear tailfin flaps to the fuselage frame using heavy-duty bolts and locknuts gus-one",
         "progress": 41,
         "at": "2026-11-15T06:39:09.163Z"
-      },
-      {
-        "version": 7,
-        "change": "Securing the main wing struts to the fuselage framework using heavy-duty bolts and locking washers.",
-        "progress": 38,
-        "at": "2026-11-15T06:29:08.530Z"
       }
     ],
     "launched": [
@@ -1608,7 +1608,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Brakk",
@@ -1639,6 +1639,11 @@
         "name": "Mabel",
         "what": "a dented fuel cell",
         "version": 15
+      },
+      {
+        "name": "Otto",
+        "what": "a cockpit switch that still clicks",
+        "version": 16
       }
     ],
     "design": null
@@ -1790,11 +1795,6 @@
     {
       "name": "Tilly",
       "what": "a dented fuel cell",
-      "at": "2026-11-16T21:19:46.743Z"
-    },
-    {
-      "name": "Otto",
-      "what": "a cockpit switch that still clicks",
       "at": "2026-11-16T21:19:46.743Z"
     }
   ],

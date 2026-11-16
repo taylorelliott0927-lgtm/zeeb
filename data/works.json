@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 11",
-    "progress": 9,
-    "version": 1,
-    "lastChange": "soldering the star-tracker wire into the main compass bus and running a quick continuity check (used Brakk, a mystery box that hums)",
+    "progress": 18,
+    "version": 2,
+    "lastChange": "welding the new sleek titanium thruster cowlings onto the aft chassis using gus to hold the alignment steady (used Gus, a little landing strut)",
     "log": [
+      {
+        "version": 2,
+        "change": "welding the new sleek titanium thruster cowlings onto the aft chassis using gus to hold the alignment steady (used Gus, a little landing strut)",
+        "progress": 18,
+        "at": "2026-11-16T03:35:41.443Z"
+      },
       {
         "version": 1,
         "change": "soldering the star-tracker wire into the main compass bus and running a quick continuity check (used Brakk, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "Tweaking the Salt Flats Hanger design to incorporate ventilation and energy generation systems, ensuring it's durable and functional. (used Otto, a mystery box that hums)",
         "progress": 65,
         "at": "2026-11-14T18:42:59.443Z"
-      },
-      {
-        "version": 20,
-        "change": "tinkered with it",
-        "progress": 59,
-        "at": "2026-11-14T18:21:59.408Z"
       }
     ],
     "launched": [
@@ -1608,12 +1608,17 @@
         ]
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Brakk",
         "what": "a mystery box that hums",
         "version": 1
+      },
+      {
+        "name": "Gus",
+        "what": "a little landing strut",
+        "version": 2
       }
     ],
     "design": null
@@ -1746,13 +1751,7 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Gus",
-      "what": "a little landing strut",
-      "at": "2026-11-15T22:13:26.153Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "DC Current Mode | Arduino-FOC",

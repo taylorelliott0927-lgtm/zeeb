@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794863986743,
+  "lastTick": 1794864586570,
   "asleep": false,
   "place": "market",
   "action": "scavenge",
-  "doing": "digging through the junk piles",
+  "doing": "still digging through the junk piles",
   "actionStartedAt": "2026-11-16T21:19:46.743Z",
   "actionMinutes": 45,
-  "thought": "I've got three credits in my pocket, but I might just dig up a perfectly good t-slot bracket right under this rusty pile.",
-  "feeling": "eager and nosy",
-  "say": "Ooh, what's hiding under this pile of burnt wire? *bweep*",
-  "mood": 0.366,
-  "energy": 0.276,
+  "thought": "maybe there is a nice aluminum fastener buried right under this rusty stack.",
+  "feeling": "hopeful and energetic",
+  "say": "tee-bzzt-bwee-doo-tee",
+  "mood": 0.314,
+  "energy": 0.181,
   "needs": {
-    "charge": 0.376,
-    "oil": 0.108,
+    "charge": 0.423,
+    "oil": 0.178,
     "curiosity": 0,
-    "company": 0.05,
-    "craft": 0.755
+    "company": 0.103,
+    "craft": 0.822
   },
   "credits": 3,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-16T21:29:46.570Z"
+    },
     {
       "id": "scavenge",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "send_signal",
       "detail": "Rustwell Outpost calling any passing craft, comet chasers, or deep space relays.",
       "at": "2026-11-16T19:43:21.655Z"
-    },
-    {
-      "id": "send_signal",
-      "detail": "Rustwell Outpost calling any passing craft or comets. Telemetry harness installe",
-      "at": "2026-11-16T19:33:21.496Z"
     }
   ],
   "wants": [
+    {
+      "id": "w8",
+      "text": "find a nice t-slot bracket in the junk heap",
+      "at": "2026-11-16T21:29:46.570Z"
+    },
     {
       "id": "w7",
       "text": "find a good aluminum bracket in the junk heap for the Little Dart",
@@ -97,11 +102,6 @@
       "id": "w5",
       "text": "to get a fix job at the market so I can earn back some credits",
       "at": "2026-11-16T21:00:19.306Z"
-    },
-    {
-      "id": "w9",
-      "text": "to get a full charge and jump back to the workbench",
-      "at": "2026-11-16T20:50:18.719Z"
     }
   ],
   "promises": [],
@@ -1507,7 +1507,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-16T21:19:46.743Z",
+  "lettersCheckedAt": "2026-11-16T21:29:46.570Z",
   "weather": {
     "kind": "hazy",
     "temp": 23,
@@ -1518,13 +1518,13 @@
   },
   "sleepDay": 35,
   "lastReflectDay": 35,
-  "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-16T21:19:46.743Z",
+  "brain": "gemini-3.5-flash-lite",
+  "updatedAt": "2026-11-16T21:29:46.570Z",
   "clock": {
     "day": 36,
-    "time": "14:39",
-    "hour": 14,
-    "minute": 39
+    "time": "15:59",
+    "hour": 15,
+    "minute": 59
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
@@ -1532,46 +1532,40 @@
     "action": "scavenge",
     "since": "2026-11-16T21:19:46.743Z"
   },
-  "busyUntil": "2026-11-16T21:25:24.243Z",
-  "busyUntilTown": "15:24",
+  "busyUntil": "2026-11-16T21:35:24.070Z",
+  "busyUntilTown": "16:44",
   "runner": "github",
-  "model": "gemini-3.6-flash",
+  "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "digging through piles of bent copper and rusty brackets at the junk market",
+  "doingWords": "digging through the junk piles for brackets and bolts",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "lean_in",
-    "wiggle"
+    "bounce",
+    "nod"
   ],
   "pops": {
-    "at": "2026-11-16T21:19:46.743Z",
+    "at": "2026-11-16T21:29:46.570Z",
     "items": [
       {
-        "text": "+ a dented fuel cell",
+        "text": "+ a tiny gyroscope",
         "kind": "part",
-        "at": "2026-11-16T21:19:46.743Z"
-      },
-      {
-        "text": "+ a cockpit switch that still clicks",
-        "kind": "part",
-        "at": "2026-11-16T21:19:46.743Z"
-      },
-      {
-        "text": "+ a dented fuel cell",
-        "kind": "part",
-        "at": "2026-11-16T21:19:46.743Z"
+        "at": "2026-11-16T21:29:46.570Z"
       }
     ]
   },
   "event": {
-    "id": "emwjqzawa",
-    "key": "freighter",
-    "text": "A freighter came in low over the hangar and rattled every bolt in the place.",
-    "at": "2026-11-16T21:00:19.306Z"
+    "id": "emwjs16iy",
+    "key": "light",
+    "text": "One of the hangar lights finally died for good.",
+    "at": "2026-11-16T21:29:46.570Z"
   },
   "thoughts": [
+    {
+      "text": "maybe there is a nice aluminum fastener buried right under this rusty stack.",
+      "at": "2026-11-16T21:29:46.570Z"
+    },
     {
       "text": "I've got three credits in my pocket, but I might just dig up a perfectly good t-slot bracket right under this rusty pile.",
       "at": "2026-11-16T21:19:46.743Z"
@@ -1591,13 +1585,9 @@
     {
       "text": "that would save so much weight on the hull. i will name these new frame pieces gus one and gus two.",
       "at": "2026-11-16T20:40:19.071Z"
-    },
-    {
-      "text": "gus the bolt would love these T-slots for the Little Dart's interior skeleton. i need a frame that won't shake loose during atmospheric entry.",
-      "at": "2026-11-16T20:30:19.110Z"
     }
   ],
-  "sayAt": "2026-11-16T21:19:46.743Z",
+  "sayAt": "2026-11-16T21:29:46.570Z",
   "today": {
     "day": 36,
     "counts": {
@@ -1608,7 +1598,7 @@
       "nap_dock": 1,
       "drink_oil": 1,
       "fix_job": 1,
-      "scavenge": 1
+      "scavenge": 2
     }
   },
   "lastDone": {
@@ -1616,7 +1606,7 @@
     "read_news": "2026-11-16T20:03:21.716Z",
     "drink_oil": "2026-11-16T21:00:19.306Z",
     "follow_link": "2026-11-16T20:40:19.071Z",
-    "scavenge": "2026-11-16T21:19:46.743Z",
+    "scavenge": "2026-11-16T21:29:46.570Z",
     "fix_job": "2026-11-16T21:10:18.755Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -1674,6 +1664,20 @@
     "at": "2026-11-16T20:40:19.071Z"
   },
   "said": [
+    {
+      "text": "tee-bzzt-bwee-doo-tee",
+      "kind": "say",
+      "at": "2026-11-16T21:29:46.570Z",
+      "town": "day 36 15:59",
+      "place": "the junk market"
+    },
+    {
+      "text": "maybe there is a nice aluminum fastener buried right under this rusty stack.",
+      "kind": "think",
+      "at": "2026-11-16T21:29:46.570Z",
+      "town": "day 36 15:59",
+      "place": "the junk market"
+    },
     {
       "text": "Ooh, what's hiding under this pile of burnt wire? *bweep*",
       "kind": "say",
@@ -2709,20 +2713,6 @@
       "at": "2026-11-15T23:24:09.210Z",
       "town": "day 29 07:14",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "if I solder these data lines directly to the compass board, the readings should stay super steady during atmospheric entry.",
-      "kind": "think",
-      "at": "2026-11-15T23:24:09.210Z",
-      "town": "day 29 07:14",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "hold still little thermal plate, let zeeb tuck you in nice and tight.",
-      "kind": "say",
-      "at": "2026-11-15T23:14:09.031Z",
-      "town": "day 29 05:54",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2733,7 +2723,7 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-16T21:19:46.743Z",
+  "feedArchivedAt": "2026-11-16T21:29:46.570Z",
   "plans": [],
   "searches": [
     {
@@ -2785,6 +2775,6 @@
       "at": "2026-11-15T20:12:56.401Z"
     }
   ],
-  "lampOutUntil": "2026-11-14T18:42:58.946Z",
+  "lampOutUntil": "2026-11-17T00:29:46.570Z",
   "haulerPaint": "#3fbf6f"
 }

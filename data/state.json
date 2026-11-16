@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794840005740,
+  "lastTick": 1794844951280,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "still working on the Little Dart",
-  "actionStartedAt": "2026-11-16T14:30:05.836Z",
-  "actionMinutes": 60,
-  "thought": "my curiosity is bugging me most right now.",
-  "feeling": "okay, ticking along",
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-16T16:02:31.280Z",
+  "actionMinutes": 35,
+  "thought": "read about List of radio telescopes - Wikipedia. filing that away.",
+  "feeling": "curious",
   "say": "",
-  "mood": 0.042,
-  "energy": 0.281,
+  "mood": -0.035,
+  "energy": -0.139,
   "needs": {
-    "charge": 0.194,
-    "oil": 0.53,
-    "curiosity": 0.917,
-    "company": 0.45,
-    "craft": 0.067
+    "charge": 0.474,
+    "oil": 0.77,
+    "curiosity": 0.5,
+    "company": 0.77,
+    "craft": 0.467
   },
   "credits": 3,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "radio telescopes",
+      "at": "2026-11-16T16:02:31.280Z"
+    },
     {
       "id": "work_dart",
       "detail": "patched a hole in the hull",
@@ -75,11 +80,6 @@
       "id": "wander",
       "detail": "",
       "at": "2026-11-16T10:42:25.242Z"
-    },
-    {
-      "id": "follow_link",
-      "detail": "2",
-      "at": "2026-11-16T10:32:24.902Z"
     }
   ],
   "wants": [
@@ -1405,7 +1405,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-16T14:40:05.740Z",
+  "lettersCheckedAt": "2026-11-16T16:02:31.280Z",
   "weather": {
     "kind": "hazy",
     "temp": 27,
@@ -1417,27 +1417,27 @@
   "sleepDay": 33,
   "lastReflectDay": 33,
   "brain": "rules",
-  "updatedAt": "2026-11-16T14:40:05.740Z",
+  "updatedAt": "2026-11-16T16:02:31.280Z",
   "clock": {
     "day": 34,
-    "time": "09:22",
-    "hour": 9,
-    "minute": 22
+    "time": "20:21",
+    "hour": 20,
+    "minute": 21
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-16T14:30:05.836Z"
+    "action": "browse_wire",
+    "since": "2026-11-16T16:02:31.280Z"
   },
-  "busyUntil": "2026-11-16T14:47:35.740Z",
-  "busyUntilTown": "10:22",
+  "busyUntil": "2026-11-16T16:06:53.780Z",
+  "busyUntilTown": "20:56",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
   "doingWords": "",
   "newsForCreator": "the Little Dart Mk 11 just reached 50% built (version 9). Last change: soldering a dedicated power switch for the reaction wheel assembly with extra heat-shrink tubing and gus to hold the line steady (used Captain, a perfectly good bolt).",
-  "newsPendingTicks": 1,
+  "newsPendingTicks": 2,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [],
   "pops": {
@@ -1458,6 +1458,10 @@
   },
   "thoughts": [
     {
+      "text": "read about List of radio telescopes - Wikipedia. filing that away.",
+      "at": "2026-11-16T16:02:31.280Z"
+    },
+    {
       "text": "my curiosity is bugging me most right now.",
       "at": "2026-11-16T14:40:05.740Z"
     },
@@ -1476,18 +1480,15 @@
     {
       "text": "maybe this trader has a bolt named gus, or at least a cousin to gus. my stash is way too empty with just one lonely captain.",
       "at": "2026-11-16T12:08:45.009Z"
-    },
-    {
-      "text": "this power relay is fried good, but a quick jumper and a bolt named gus should hold it. hope they pay me in heavy oil or at least enough credits to buy a cup.",
-      "at": "2026-11-16T11:58:44.525Z"
     }
   ],
-  "sayAt": "2026-11-16T14:40:05.740Z",
+  "sayAt": "2026-11-16T16:02:31.280Z",
   "today": {
     "day": 34,
     "counts": {
       "drink_oil": 1,
-      "work_dart": 2
+      "work_dart": 2,
+      "browse_wire": 1
     }
   },
   "lastDone": {
@@ -1499,7 +1500,7 @@
     "fix_job": "2026-11-16T11:58:44.525Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-16T10:02:25.377Z",
+    "browse_wire": "2026-11-16T16:02:31.280Z",
     "compose_tune": "2026-11-16T01:14:43.207Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-13T09:04:38.429Z",
@@ -1548,11 +1549,15 @@
       "at": "2026-11-16T04:28:31.121Z"
     }
   ],
-  "nextSearch": {
-    "text": "stm32 pinouts for brushless motor drivers",
-    "at": "2026-11-16T10:32:24.902Z"
-  },
+  "nextSearch": null,
   "said": [
+    {
+      "text": "read about List of radio telescopes - Wikipedia. filing that away.",
+      "kind": "think",
+      "at": "2026-11-16T16:02:31.280Z",
+      "town": "day 34 20:21",
+      "place": "the comms tower"
+    },
     {
       "text": "my curiosity is bugging me most right now.",
       "kind": "think",
@@ -2595,13 +2600,6 @@
       "at": "2026-11-15T18:51:01.849Z",
       "town": "day 27 18:49",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "one cup of the heavy grade, please!",
-      "kind": "say",
-      "at": "2026-11-15T18:50:48.551Z",
-      "town": "day 27 18:47",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2612,9 +2610,13 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-16T14:40:05.740Z",
+  "feedArchivedAt": "2026-11-16T16:02:31.280Z",
   "plans": [],
   "searches": [
+    {
+      "q": "radio telescopes",
+      "at": "2026-11-16T16:02:31.280Z"
+    },
     {
       "q": "find_pole_pairs_number.ino",
       "at": "2026-11-16T10:02:25.377Z"
@@ -2658,10 +2660,6 @@
     {
       "q": "adjustable trigger sear blueprints",
       "at": "2026-11-15T14:19:34.167Z"
-    },
-    {
-      "q": "Design and Simulation of a New Detent Catch Mechanism",
-      "at": "2026-11-15T14:09:34.135Z"
     }
   ],
   "lampOutUntil": "2026-11-14T18:42:58.946Z",

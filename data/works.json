@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 10",
-    "progress": 95,
-    "version": 12,
-    "lastChange": "Welding custom copper brackets onto the main instrument panel, securing the navigation dial framework (used Pim, a dented fuel cell)",
+    "name": "the Little Dart Mk 11",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 13,
+        "change": "Installing the dual-axis reaction wheel control board using Gus to brace the main sensor deck. (used Pim, a little landing strut)",
+        "progress": 100,
+        "at": "2026-11-16T03:15:41.486Z"
+      },
       {
         "version": 12,
         "change": "Welding custom copper brackets onto the main instrument panel, securing the navigation dial framework (used Pim, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "Zeeb starts by double-checking the duct seal for the perfect fit and durability again, ensuring the thermal management systems are foolproof, keeping in mind the Salt Flats Hanger design.",
         "progress": 56,
         "at": "2026-11-14T18:03:59.353Z"
-      },
-      {
-        "version": 18,
-        "change": "tinkered with it",
-        "progress": 54,
-        "at": "2026-11-14T16:45:59.139Z"
       }
     ],
     "launched": [
@@ -1543,62 +1543,73 @@
             "version": 18
           }
         ]
+      },
+      {
+        "name": "the Little Dart Mk 10",
+        "day": 30,
+        "partsUsed": 12,
+        "parts": [
+          {
+            "name": "Wren",
+            "what": "a tiny gyroscope",
+            "version": 1
+          },
+          {
+            "name": "Bix",
+            "what": "a coil of copper wire",
+            "version": 4
+          },
+          {
+            "name": "Otto",
+            "what": "a sensor eye with one crack",
+            "version": 5
+          },
+          {
+            "name": "Captain",
+            "what": "a perfectly good bolt",
+            "version": 6
+          },
+          {
+            "name": "Nim",
+            "what": "a cracked navigation chip",
+            "version": 7
+          },
+          {
+            "name": "Brakk",
+            "what": "a tiny gyroscope",
+            "good": true,
+            "version": 8
+          },
+          {
+            "name": "Mabel",
+            "what": "a sensor eye with one crack",
+            "version": 9
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "half a thruster nozzle",
+            "version": 10
+          },
+          {
+            "name": "Wren",
+            "what": "a dented fuel cell",
+            "version": 11
+          },
+          {
+            "name": "Pim",
+            "what": "a dented fuel cell",
+            "version": 12
+          },
+          {
+            "name": "Pim",
+            "what": "a little landing strut",
+            "version": 13
+          }
+        ]
       }
     ],
-    "partsUsed": 11,
-    "parts": [
-      {
-        "name": "Wren",
-        "what": "a tiny gyroscope",
-        "version": 1
-      },
-      {
-        "name": "Bix",
-        "what": "a coil of copper wire",
-        "version": 4
-      },
-      {
-        "name": "Otto",
-        "what": "a sensor eye with one crack",
-        "version": 5
-      },
-      {
-        "name": "Captain",
-        "what": "a perfectly good bolt",
-        "version": 6
-      },
-      {
-        "name": "Nim",
-        "what": "a cracked navigation chip",
-        "version": 7
-      },
-      {
-        "name": "Brakk",
-        "what": "a tiny gyroscope",
-        "good": true,
-        "version": 8
-      },
-      {
-        "name": "Mabel",
-        "what": "a sensor eye with one crack",
-        "version": 9
-      },
-      {
-        "name": "Rusty Jr",
-        "what": "half a thruster nozzle",
-        "version": 10
-      },
-      {
-        "name": "Wren",
-        "what": "a dented fuel cell",
-        "version": 11
-      },
-      {
-        "name": "Pim",
-        "what": "a dented fuel cell",
-        "version": 12
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -1739,11 +1750,6 @@
       "name": "Brakk",
       "what": "a mystery box that hums",
       "at": "2026-11-15T22:13:26.153Z"
-    },
-    {
-      "name": "Pim",
-      "what": "a little landing strut",
-      "at": "2026-11-15T22:03:26.150Z"
     }
   ],
   "reads": [

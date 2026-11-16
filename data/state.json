@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794856022625,
+  "lastTick": 1794857002700,
   "asleep": false,
   "place": "tower",
   "action": "follow_link",
-  "doing": "following a link across the Wire",
+  "doing": "still following a link across the Wire",
   "actionStartedAt": "2026-11-16T19:07:02.625Z",
-  "actionMinutes": 20,
-  "thought": "If I pull down those orbit tables, I can plot a clean course out of Kessa-9's gravity well without smacking into an asteroid. The Little Dart is gonna need a good navigation grid anyway. *bweep*",
-  "feeling": "eager, restless, optimistic",
-  "say": "bwee-boop! Time to see how many cosmic snowballs are flying around out there.",
-  "mood": 0.276,
-  "energy": 0.536,
+  "actionMinutes": 30,
+  "thought": "Star charts straight from the source! If I hook my dish into port 6775, the Little Dart will never bump into a stray rock. *bweep*",
+  "feeling": "buzzy and hopeful",
+  "say": "Let's see what orbital vectors JPL has stored in this node. *bweep*",
+  "mood": 0.287,
+  "energy": 0.419,
   "needs": {
-    "charge": 0.144,
-    "oil": 0.16,
-    "curiosity": 0.6,
-    "company": 0.053,
-    "craft": 0.067
+    "charge": 0.22,
+    "oil": 0.225,
+    "curiosity": 0.331,
+    "company": 0.14,
+    "craft": 0.176
   },
   "credits": 1,
   "recent": [
+    {
+      "id": "follow_link",
+      "detail": "2",
+      "at": "2026-11-16T19:23:22.700Z"
+    },
     {
       "id": "follow_link",
       "detail": "8",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "rewired the cockpit lights",
       "at": "2026-11-16T17:29:38.235Z"
-    },
-    {
-      "id": "wander",
-      "detail": "",
-      "at": "2026-11-16T17:19:38.212Z"
     }
   ],
   "wants": [
@@ -1459,7 +1459,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-16T19:07:02.625Z",
+  "lettersCheckedAt": "2026-11-16T19:23:22.700Z",
   "weather": {
     "kind": "hazy",
     "temp": 24,
@@ -1471,12 +1471,12 @@
   "sleepDay": 34,
   "lastReflectDay": 34,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-16T19:07:02.625Z",
+  "updatedAt": "2026-11-16T19:23:22.700Z",
   "clock": {
     "day": 35,
-    "time": "20:57",
-    "hour": 20,
-    "minute": 57
+    "time": "23:08",
+    "hour": 23,
+    "minute": 8
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
@@ -1484,17 +1484,17 @@
     "action": "follow_link",
     "since": "2026-11-16T19:07:02.625Z"
   },
-  "busyUntil": "2026-11-16T19:09:32.625Z",
-  "busyUntilTown": "21:17",
+  "busyUntil": "2026-11-16T19:27:07.700Z",
+  "busyUntilTown": "23:38",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "checking the latest comet count on the wire link",
+  "doingWords": "digging into the Horizons System database on the Wire",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "look_up",
+    "lean_in",
     "nod"
   ],
   "pops": {
@@ -1515,6 +1515,10 @@
   },
   "thoughts": [
     {
+      "text": "Star charts straight from the source! If I hook my dish into port 6775, the Little Dart will never bump into a stray rock. *bweep*",
+      "at": "2026-11-16T19:23:22.700Z"
+    },
+    {
       "text": "If I pull down those orbit tables, I can plot a clean course out of Kessa-9's gravity well without smacking into an asteroid. The Little Dart is gonna need a good navigation grid anyway. *bweep*",
       "at": "2026-11-16T19:07:02.625Z"
     },
@@ -1533,13 +1537,9 @@
     {
       "text": "that heavy oil at the depot always hits the spot. my gears feel smooth as glass now.",
       "at": "2026-11-16T18:27:03.302Z"
-    },
-    {
-      "text": "those saxophones sound so crisp in here. my dish keeps picking up the beat and harmonizing right along.",
-      "at": "2026-11-16T18:17:03.361Z"
     }
   ],
-  "sayAt": "2026-11-16T19:07:02.625Z",
+  "sayAt": "2026-11-16T19:23:22.700Z",
   "today": {
     "day": 35,
     "counts": {
@@ -1550,14 +1550,14 @@
       "chat_patrons": 1,
       "cantina_band": 2,
       "nap_dock": 2,
-      "follow_link": 1
+      "follow_link": 2
     }
   },
   "lastDone": {
     "work_dart": "2026-11-16T18:57:03.304Z",
     "read_news": "2026-11-16T00:14:29.116Z",
     "drink_oil": "2026-11-16T18:27:03.302Z",
-    "follow_link": "2026-11-16T19:07:02.625Z",
+    "follow_link": "2026-11-16T19:23:22.700Z",
     "scavenge": "2026-11-16T11:48:44.571Z",
     "fix_job": "2026-11-16T11:58:44.525Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
@@ -1586,6 +1586,11 @@
   },
   "puzzles": [
     {
+      "id": "q8",
+      "text": "how to pull vector data from JPL Horizons into the Little Dart nav computer",
+      "at": "2026-11-16T19:23:22.700Z"
+    },
+    {
       "id": "q5",
       "text": "q7: how to apply simplefoc phase resistance values to tiny reaction wheels",
       "at": "2026-11-16T12:08:45.009Z"
@@ -1604,18 +1609,27 @@
       "id": "q9",
       "text": "How to calculate pole pairs for smooth motor stepping.",
       "at": "2026-11-16T10:02:25.377Z"
-    },
-    {
-      "id": "q6",
-      "text": "q8: How to wire the star-tracker straight into the main compass without blowing fuses.",
-      "at": "2026-11-16T04:28:31.121Z"
     }
   ],
   "nextSearch": {
-    "text": "Horizons System orbital ephemeris tutorial",
-    "at": "2026-11-16T19:07:02.625Z"
+    "text": "small body database query tool",
+    "at": "2026-11-16T19:23:22.700Z"
   },
   "said": [
+    {
+      "text": "Let's see what orbital vectors JPL has stored in this node. *bweep*",
+      "kind": "say",
+      "at": "2026-11-16T19:23:22.700Z",
+      "town": "day 35 23:08",
+      "place": "the comms tower"
+    },
+    {
+      "text": "Star charts straight from the source! If I hook my dish into port 6775, the Little Dart will never bump into a stray rock. *bweep*",
+      "kind": "think",
+      "at": "2026-11-16T19:23:22.700Z",
+      "town": "day 35 23:08",
+      "place": "the comms tower"
+    },
     {
       "text": "bwee-boop! Time to see how many cosmic snowballs are flying around out there.",
       "kind": "say",
@@ -2651,20 +2665,6 @@
       "at": "2026-11-15T21:33:25.603Z",
       "town": "day 28 16:28",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "ah, that hits the spot.",
-      "kind": "say",
-      "at": "2026-11-15T21:23:25.810Z",
-      "town": "day 28 15:08",
-      "place": "the fuel depot"
-    },
-    {
-      "text": "Fresh oil goes down like magic juice. My joints are already thanking me.",
-      "kind": "think",
-      "at": "2026-11-15T21:23:25.810Z",
-      "town": "day 28 15:08",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2675,7 +2675,7 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-16T19:07:02.625Z",
+  "feedArchivedAt": "2026-11-16T19:23:22.700Z",
   "plans": [],
   "searches": [
     {

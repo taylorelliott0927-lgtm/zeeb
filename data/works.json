@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 10",
-    "progress": 80,
-    "version": 10,
-    "lastChange": "Routing the star-tracker navigation data lines directly into the main compass board, securing each tiny solder point with care. (used Rusty Jr, half a thruster nozzle)",
+    "progress": 88,
+    "version": 11,
+    "lastChange": "Welding custom landing strut Gus into place beneath the main fuel tank, reinforcing each joint with extra solder. (used Wren, a dented fuel cell)",
     "log": [
+      {
+        "version": 11,
+        "change": "Welding custom landing strut Gus into place beneath the main fuel tank, reinforcing each joint with extra solder. (used Wren, a dented fuel cell)",
+        "progress": 88,
+        "at": "2026-11-16T00:44:29.071Z"
+      },
       {
         "version": 10,
         "change": "Routing the star-tracker navigation data lines directly into the main compass board, securing each tiny solder point with care. (used Rusty Jr, half a thruster nozzle)",
@@ -238,12 +244,6 @@
         "change": "I start by checking the duct seals again, ensuring they fit snugly and won't leak. Then I go through the thermal management system, making sure all the insulation and cooling components are in perfect",
         "progress": 52,
         "at": "2026-11-14T16:42:59.150Z"
-      },
-      {
-        "version": 16,
-        "change": "I beeps a five-note tune when I'm excited about the Little Dart’s potential, ensuring it's both playful and a bit dramatic.",
-        "progress": 50,
-        "at": "2026-11-14T16:30:59.150Z"
       }
     ],
     "launched": [
@@ -1545,7 +1545,7 @@
         ]
       }
     ],
-    "partsUsed": 9,
+    "partsUsed": 10,
     "parts": [
       {
         "name": "Wren",
@@ -1587,6 +1587,11 @@
         "name": "Rusty Jr",
         "what": "half a thruster nozzle",
         "version": 10
+      },
+      {
+        "name": "Wren",
+        "what": "a dented fuel cell",
+        "version": 11
       }
     ],
     "design": null
@@ -1733,11 +1738,6 @@
       "name": "Pim",
       "what": "a dented fuel cell",
       "at": "2026-11-15T22:03:26.150Z"
-    },
-    {
-      "name": "Wren",
-      "what": "a dented fuel cell",
-      "at": "2026-11-15T21:23:25.810Z"
     }
   ],
   "reads": [

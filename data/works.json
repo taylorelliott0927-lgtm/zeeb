@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 11",
-    "progress": 26,
-    "version": 5,
-    "lastChange": "mounting the reaction wheel controller board onto the central frame using gus to hold the tiny screws steady.",
+    "progress": 32,
+    "version": 6,
+    "lastChange": "soldering the stepper driver control wires onto the central avionics bay using gus to steady the iron (used Tok, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 6,
+        "change": "soldering the stepper driver control wires onto the central avionics bay using gus to steady the iron (used Tok, a cockpit switch that still clicks)",
+        "progress": 32,
+        "at": "2026-11-16T07:24:43.000Z"
+      },
       {
         "version": 5,
         "change": "mounting the reaction wheel controller board onto the central frame using gus to hold the tiny screws steady.",
@@ -238,12 +244,6 @@
         "change": "I beeps a five-note tune: boop-bop-bop-boop-tee",
         "progress": 82,
         "at": "2026-11-14T21:51:01.326Z"
-      },
-      {
-        "version": 24,
-        "change": "I beeps a five-note tune: boop-bop-bop-boop-tee",
-        "progress": 79,
-        "at": "2026-11-14T21:04:02.206Z"
       }
     ],
     "launched": [
@@ -1608,7 +1608,7 @@
         ]
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Brakk",
@@ -1619,6 +1619,11 @@
         "name": "Gus",
         "what": "a little landing strut",
         "version": 2
+      },
+      {
+        "name": "Tok",
+        "what": "a cockpit switch that still clicks",
+        "version": 6
       }
     ],
     "design": null
@@ -1756,11 +1761,6 @@
       "name": "Wren",
       "what": "a scorched heat tile",
       "at": "2026-11-16T06:25:37.976Z"
-    },
-    {
-      "name": "Tok",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-16T06:15:37.309Z"
     }
   ],
   "reads": [

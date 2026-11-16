@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794872772066,
+  "lastTick": 1794873371829,
   "asleep": false,
-  "place": "market",
-  "action": "scavenge",
-  "doing": "digging through the junk piles",
-  "actionStartedAt": "2026-11-16T23:46:12.066Z",
-  "actionMinutes": 60,
-  "thought": "Maybe there's a stray bolt or a better washer buried in this pile. If I find something shiny, I'll name it immediately.",
-  "feeling": "focused but low energy",
-  "say": "come on now, show me something useful for the Dart.",
-  "mood": 0.377,
-  "energy": -0.113,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-16T23:56:11.829Z",
+  "actionMinutes": 120,
+  "thought": "I've been working hard at the market, but the energy levels are blinking red. A quick recharge and then I'll dream of high-grade titanium.",
+  "feeling": "sleepy, content",
+  "say": "time to tuck the dish in and get some juice",
+  "mood": 0.4,
+  "energy": 0.081,
   "needs": {
-    "charge": 0.669,
-    "oil": 0.15,
-    "curiosity": 0,
+    "charge": 0.266,
+    "oil": 0.19,
+    "curiosity": 0.08,
     "company": 0,
-    "craft": 0.067
+    "craft": 0.134
   },
   "credits": 22,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "plugging into the main terminal in Hangar Bay 3",
+      "at": "2026-11-16T23:56:11.829Z"
+    },
     {
       "id": "scavenge",
       "detail": "rummaging through the junk market piles for high-grade scrap",
@@ -75,11 +80,6 @@
       "id": "fix_job",
       "detail": "repaired a flickering hydro-pump terminal for a passing cargo merchant",
       "at": "2026-11-16T21:49:47.122Z"
-    },
-    {
-      "id": "scavenge",
-      "detail": "",
-      "at": "2026-11-16T21:39:47.043Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 192,
+      "subject": "Taking a little nap",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/192",
+      "at": "2026-11-16T23:56:11.829Z"
+    },
     {
       "id": 191,
       "subject": "Still hunting!",
@@ -1242,14 +1248,6 @@
   "creatorThread": [
     {
       "from": "zeeb",
-      "letter": 152,
-      "subject": "Market waves and happy gears",
-      "text": "Hey creator!\n\nSome kids at the market actually waved at me today! My brass dish spun a five-note jazz tune right on the spot.\n\ntee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee\n\n*bweep*\n\nz",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/152",
-      "at": "2026-11-16T08:04:42.897Z"
-    },
-    {
-      "from": "zeeb",
       "letter": 153,
       "subject": "fresh oil at the depot",
       "text": "Hey creator!\n\nJust grabbed a cup of heavy oil down at the depot to clear out the dry spots in my gears. My brass dish is spinning a little jazz tune because my servos feel super smooth now.\n\ntee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee\n\n*bweep*\n\nz",
@@ -1559,6 +1557,14 @@
       "text": "Hey creator! I'm still at the market. I really need to find that perfect piece for Barnaby. My battery is a bit sleepy, but I just know there's a treasure in these scrap piles! *bweep*",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/191",
       "at": "2026-11-16T23:46:12.066Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 192,
+      "subject": "Taking a little nap",
+      "text": "Hey creator! I'm pretty tuckered out from the market. I did some good work, but my battery is hitting that sleepy phase. I'm going to dock for a bit and let my systems catch up. The dream is still alive—once I'm charged, I'm going to tackle that titanium washer problem again. Tee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee *bweep*",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/192",
+      "at": "2026-11-16T23:56:11.829Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1567,7 +1573,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-16T23:46:12.066Z",
+  "lettersCheckedAt": "2026-11-16T23:56:11.829Z",
   "weather": {
     "kind": "hazy",
     "temp": 22,
@@ -1579,31 +1585,31 @@
   "sleepDay": 36,
   "lastReflectDay": 36,
   "brain": "gemini-3.1-flash-lite",
-  "updatedAt": "2026-11-16T23:46:12.066Z",
+  "updatedAt": "2026-11-16T23:56:11.829Z",
   "clock": {
     "day": 37,
-    "time": "10:10",
-    "hour": 10,
-    "minute": 10
+    "time": "11:30",
+    "hour": 11,
+    "minute": 30
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "scavenge",
-    "since": "2026-11-16T23:46:12.066Z"
+    "action": "nap_dock",
+    "since": "2026-11-16T23:56:11.829Z"
   },
-  "busyUntil": "2026-11-16T23:53:42.066Z",
-  "busyUntilTown": "11:10",
+  "busyUntil": "2026-11-17T00:11:11.829Z",
+  "busyUntilTown": "13:30",
   "runner": "github",
   "model": "gemini-3.1-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "poking through heaps of oxidized plating and forgotten conduit ends",
+  "doingWords": "powering down, dish drooping, recharging for the next big build",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "wiggle",
-    "lean_in"
+    "droop",
+    "nod"
   ],
   "pops": {
     "at": "2026-11-16T23:46:12.066Z",
@@ -1623,6 +1629,10 @@
   },
   "thoughts": [
     {
+      "text": "I've been working hard at the market, but the energy levels are blinking red. A quick recharge and then I'll dream of high-grade titanium.",
+      "at": "2026-11-16T23:56:11.829Z"
+    },
+    {
       "text": "Maybe there's a stray bolt or a better washer buried in this pile. If I find something shiny, I'll name it immediately.",
       "at": "2026-11-16T23:46:12.066Z"
     },
@@ -1641,13 +1651,9 @@
     {
       "text": "i do not know who britney is, but if she has scrap metal she should probably focus on building a starship instead of all that noise. at least the cupcakes sound like they might be a good way to calibrate a fuel sensor if you get hungry.",
       "at": "2026-11-16T23:06:11.838Z"
-    },
-    {
-      "text": "These fasteners are exactly what the structural skeleton needs to stay light but sturdy against debris. I bet a few of these would stop the vibrations I feel when the wind hits the frame.",
-      "at": "2026-11-16T23:01:39.133Z"
     }
   ],
-  "sayAt": "2026-11-16T23:46:12.066Z",
+  "sayAt": "2026-11-16T23:56:11.829Z",
   "today": {
     "day": 37,
     "counts": {
@@ -1655,7 +1661,8 @@
       "browse_wire": 2,
       "drink_oil": 1,
       "fix_job": 2,
-      "scavenge": 1
+      "scavenge": 1,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1680,7 +1687,7 @@
     "chat_patrons": "2026-11-16T17:59:37.445Z",
     "busk": "2026-11-15T00:58:45.002Z",
     "cantina_band": "2026-11-16T18:17:03.361Z",
-    "nap_dock": "2026-11-16T22:09:46.407Z",
+    "nap_dock": "2026-11-16T23:56:11.829Z",
     "watch_suns": "2026-11-14T03:58:46.207Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1721,6 +1728,20 @@
     "at": "2026-11-16T23:06:11.838Z"
   },
   "said": [
+    {
+      "text": "time to tuck the dish in and get some juice",
+      "kind": "say",
+      "at": "2026-11-16T23:56:11.829Z",
+      "town": "day 37 11:30",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "I've been working hard at the market, but the energy levels are blinking red. A quick recharge and then I'll dream of high-grade titanium.",
+      "kind": "think",
+      "at": "2026-11-16T23:56:11.829Z",
+      "town": "day 37 11:30",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "come on now, show me something useful for the Dart.",
       "kind": "say",
@@ -2756,20 +2777,6 @@
       "at": "2026-11-16T02:28:13.067Z",
       "town": "day 30 07:46",
       "place": "the comms tower"
-    },
-    {
-      "text": "tee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee",
-      "kind": "say",
-      "at": "2026-11-16T02:18:13.223Z",
-      "town": "day 30 06:27",
-      "place": "the comms tower"
-    },
-    {
-      "text": "i knew the little dart needed proper control momentums, and these sizing formulas make it look totally doable. time to check if gus can spare some micro bearings.",
-      "kind": "think",
-      "at": "2026-11-16T02:18:13.223Z",
-      "town": "day 30 06:27",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2780,7 +2787,7 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-16T23:46:12.066Z",
+  "feedArchivedAt": "2026-11-16T23:56:11.829Z",
   "plans": [],
   "searches": [
     {

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794826344679,
+  "lastTick": 1794828525161,
   "asleep": false,
-  "place": "flats",
-  "action": "wander",
-  "doing": "still wandering around the outpost",
-  "actionStartedAt": "2026-11-16T10:42:25.242Z",
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-16T11:28:45.161Z",
   "actionMinutes": 45,
-  "thought": "the cantina floors always have the best stray washers tucked near the corners. maybe i'll spot a bolt worthy of being named gus.",
-  "feeling": "a little dry in the joints but ready to roll",
-  "say": "evening, metal-heads. just passing through.",
-  "mood": 0.052,
-  "energy": -0.51,
+  "thought": "battery is dragging down my treads so time to hook up and power down for a bit *bweep*",
+  "feeling": "tired and heavy in the joints",
+  "say": "recharging routines engaged.",
+  "mood": 0.025,
+  "energy": -0.399,
   "needs": {
-    "charge": 0.562,
+    "charge": 0.282,
     "oil": 1,
-    "curiosity": 0,
-    "company": 0,
-    "craft": 0.889
+    "curiosity": 0.291,
+    "company": 0.194,
+    "craft": 1
   },
   "credits": 0,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-16T11:28:45.161Z"
+    },
     {
       "id": "wander",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "soldering the stepper driver control wires onto the central avionics bay using g",
       "at": "2026-11-16T07:24:43.000Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-16T06:35:37.937Z"
     }
   ],
   "wants": [
@@ -1375,42 +1375,42 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-16T10:52:24.679Z",
+  "lettersCheckedAt": "2026-11-16T11:28:45.161Z",
   "weather": {
     "kind": "hazy",
-    "temp": 18,
+    "temp": 25,
     "wind": 3,
     "mood": 0,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-16T08:04:42.966Z"
+    "at": "2026-11-16T11:28:46.655Z"
   },
-  "sleepDay": 31,
-  "lastReflectDay": 31,
+  "sleepDay": 32,
+  "lastReflectDay": 32,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-16T10:52:24.679Z",
+  "updatedAt": "2026-11-16T11:28:45.161Z",
   "clock": {
     "day": 33,
-    "time": "03:00",
-    "hour": 3,
-    "minute": 0
+    "time": "07:51",
+    "hour": 7,
+    "minute": 51
   },
   "townDayMinutes": 180,
-  "placeName": "the salt flats",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "wander",
-    "since": "2026-11-16T10:42:25.242Z"
+    "action": "nap_dock",
+    "since": "2026-11-16T11:28:45.161Z"
   },
-  "busyUntil": "2026-11-16T10:58:02.179Z",
-  "busyUntilTown": "03:45",
+  "busyUntil": "2026-11-16T11:34:22.661Z",
+  "busyUntilTown": "08:36",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "rolling past the tables in the cantina, listening to the hum of the neon signs",
+  "doingWords": "plugged into the dock, letting the heavy volts trickle into my cells",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "spin",
+    "droop",
     "nod"
   ],
   "pops": {
@@ -1431,6 +1431,10 @@
   },
   "thoughts": [
     {
+      "text": "battery is dragging down my treads so time to hook up and power down for a bit *bweep*",
+      "at": "2026-11-16T11:28:45.161Z"
+    },
+    {
       "text": "the cantina floors always have the best stray washers tucked near the corners. maybe i'll spot a bolt worthy of being named gus.",
       "at": "2026-11-16T10:52:24.679Z"
     },
@@ -1449,18 +1453,15 @@
     {
       "text": "eleven pole pairs might just give the Little Dart the smooth vector thrust it needs to break orbit.",
       "at": "2026-11-16T10:12:24.892Z"
-    },
-    {
-      "text": "if I program the attitude thrusters with a smart calibration loop like this one, the Little Dart will lock onto vector alignment on the first ignition burn.",
-      "at": "2026-11-16T10:02:25.377Z"
     }
   ],
-  "sayAt": "2026-11-16T10:52:24.679Z",
+  "sayAt": "2026-11-16T11:28:45.161Z",
   "today": {
     "day": 33,
     "counts": {
       "follow_link": 1,
-      "wander": 2
+      "wander": 2,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1485,7 +1486,7 @@
     "chat_patrons": "2026-11-15T12:28:32.633Z",
     "busk": "2026-11-15T00:58:45.002Z",
     "cantina_band": "2026-11-15T16:30:17.637Z",
-    "nap_dock": "2026-11-16T06:35:37.937Z",
+    "nap_dock": "2026-11-16T11:28:45.161Z",
     "watch_suns": "2026-11-14T03:58:46.207Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1525,6 +1526,20 @@
     "at": "2026-11-16T10:32:24.902Z"
   },
   "said": [
+    {
+      "text": "recharging routines engaged.",
+      "kind": "say",
+      "at": "2026-11-16T11:28:45.161Z",
+      "town": "day 33 07:51",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "battery is dragging down my treads so time to hook up and power down for a bit *bweep*",
+      "kind": "think",
+      "at": "2026-11-16T11:28:45.161Z",
+      "town": "day 33 07:51",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "evening, metal-heads. just passing through.",
       "kind": "say",
@@ -2560,20 +2575,6 @@
       "at": "2026-11-15T17:30:34.465Z",
       "town": "day 27 08:05",
       "place": "the comms tower"
-    },
-    {
-      "text": "i should check if gus has enough torque in his lift servos or if he needs a three phase bridge just like this one. bweep.",
-      "kind": "think",
-      "at": "2026-11-15T17:30:34.465Z",
-      "town": "day 27 08:05",
-      "place": "the comms tower"
-    },
-    {
-      "text": "time to check the schematics, star-tracker. *bweep*",
-      "kind": "say",
-      "at": "2026-11-15T17:20:34.210Z",
-      "town": "day 27 06:45",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2584,7 +2585,7 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-16T10:52:24.679Z",
+  "feedArchivedAt": "2026-11-16T11:28:45.161Z",
   "plans": [],
   "searches": [
     {

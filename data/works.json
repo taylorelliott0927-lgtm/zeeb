@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 10",
-    "progress": 88,
-    "version": 11,
-    "lastChange": "Welding custom landing strut Gus into place beneath the main fuel tank, reinforcing each joint with extra solder. (used Wren, a dented fuel cell)",
+    "progress": 95,
+    "version": 12,
+    "lastChange": "Welding custom copper brackets onto the main instrument panel, securing the navigation dial framework (used Pim, a dented fuel cell)",
     "log": [
+      {
+        "version": 12,
+        "change": "Welding custom copper brackets onto the main instrument panel, securing the navigation dial framework (used Pim, a dented fuel cell)",
+        "progress": 95,
+        "at": "2026-11-16T01:24:42.423Z"
+      },
       {
         "version": 11,
         "change": "Welding custom landing strut Gus into place beneath the main fuel tank, reinforcing each joint with extra solder. (used Wren, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "tinkered with it",
         "progress": 54,
         "at": "2026-11-14T16:45:59.139Z"
-      },
-      {
-        "version": 17,
-        "change": "I start by checking the duct seals again, ensuring they fit snugly and won't leak. Then I go through the thermal management system, making sure all the insulation and cooling components are in perfect",
-        "progress": 52,
-        "at": "2026-11-14T16:42:59.150Z"
       }
     ],
     "launched": [
@@ -1545,7 +1545,7 @@
         ]
       }
     ],
-    "partsUsed": 10,
+    "partsUsed": 11,
     "parts": [
       {
         "name": "Wren",
@@ -1592,6 +1592,11 @@
         "name": "Wren",
         "what": "a dented fuel cell",
         "version": 11
+      },
+      {
+        "name": "Pim",
+        "what": "a dented fuel cell",
+        "version": 12
       }
     ],
     "design": null
@@ -1738,11 +1743,6 @@
     {
       "name": "Pim",
       "what": "a little landing strut",
-      "at": "2026-11-15T22:03:26.150Z"
-    },
-    {
-      "name": "Pim",
-      "what": "a dented fuel cell",
       "at": "2026-11-15T22:03:26.150Z"
     }
   ],

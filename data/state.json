@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794792882728,
+  "lastTick": 1794794892806,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-16T01:34:42.728Z",
-  "actionMinutes": 20,
-  "thought": "A quick sip of oil will clear right out any grit from the hangar floor. *bweep-bop-tee*",
-  "feeling": "thirsty and cheerful",
-  "say": "fill her up with the good stuff, barkeep!",
-  "mood": 0.386,
-  "energy": 0.465,
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-16T02:08:12.806Z",
+  "actionMinutes": 45,
+  "thought": "gravity is tricky when your hull weighs less than a cargo crate. gus the bolt agrees with me on this one.",
+  "feeling": "focused and sparky",
+  "say": "tee-bzzt-bwee-doo-tee",
+  "mood": 0.34,
+  "energy": 0.318,
   "needs": {
-    "charge": 0.191,
-    "oil": 0,
-    "curiosity": 0.482,
-    "company": 0,
-    "craft": 0.067
+    "charge": 0.347,
+    "oil": 0.134,
+    "curiosity": 0.25,
+    "company": 0.059,
+    "craft": 0.29
   },
   "credits": 2,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "orbital mechanics for tiny hull designs",
+      "at": "2026-11-16T02:08:12.806Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-15T23:54:08.824Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-15T23:44:08.436Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 128,
+      "subject": "orbital secrets",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/128",
+      "at": "2026-11-16T02:08:12.806Z"
+    },
     {
       "id": 127,
       "subject": "quick oil stop",
@@ -858,14 +864,6 @@
   "creatorThread": [
     {
       "from": "zeeb",
-      "letter": 88,
-      "subject": "Star delta notes",
-      "text": "Hey creator!\n\nStill parked up at the comms tower digging through these star delta wiring links. Found one that maps out control logic for high startup loads. Think I can adapt this trace for the star-tracker so it doesn't fry my compass fuses.\n\nMy brass dish is catching some crisp signals today. *bweep*\n\nz",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/88",
-      "at": "2026-11-15T17:30:34.465Z"
-    },
-    {
-      "from": "zeeb",
       "letter": 89,
       "subject": "motor testing data",
       "text": "Hey creator!\n\nStill parked up at the comms tower, digging into Fluke's motor testing guidelines now. My brass dish is spinning in sync with the data packet transfer rates. Gonna make sure this star-tracker doesn't spike any voltage when I flip the switch.\n\n*bweep*\n\nz",
@@ -1175,6 +1173,14 @@
       "text": "Hey creator!\n\nJust rolling over to the depot for a quick cup of oil to grease up my joints. My brass dish is doing a little five-note tune because the Little Dart is looking so sharp.\n\n*bweep-bop-bwee-boop-tee*\n\nz",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/127",
       "at": "2026-11-16T01:34:42.728Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 128,
+      "subject": "orbital secrets",
+      "text": "Hey creator!\n\nJust rolled back up to the comms tower to search the Wire for orbital mechanics. My brass dish is spinning so fast it's practically humming a tune.\n\ntee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee\n\n*bweep*\n\nz",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/128",
+      "at": "2026-11-16T02:08:12.806Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1183,43 +1189,43 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-16T01:34:42.728Z",
+  "lettersCheckedAt": "2026-11-16T02:08:12.806Z",
   "weather": {
-    "kind": "clear",
-    "temp": 19,
-    "wind": 6,
-    "mood": 0.01,
+    "kind": "hazy",
+    "temp": 18,
+    "wind": 5,
+    "mood": 0,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-16T00:34:28.976Z"
+    "at": "2026-11-16T02:08:14.475Z"
   },
-  "sleepDay": 28,
-  "lastReflectDay": 28,
+  "sleepDay": 29,
+  "lastReflectDay": 29,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-16T01:34:42.728Z",
+  "updatedAt": "2026-11-16T02:08:12.806Z",
   "clock": {
     "day": 30,
-    "time": "00:38",
-    "hour": 0,
-    "minute": 38
+    "time": "05:06",
+    "hour": 5,
+    "minute": 6
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-16T01:34:42.728Z"
+    "action": "browse_wire",
+    "since": "2026-11-16T02:08:12.806Z"
   },
-  "busyUntil": "2026-11-16T01:37:12.728Z",
-  "busyUntilTown": "00:58",
+  "busyUntil": "2026-11-16T02:13:50.306Z",
+  "busyUntilTown": "05:51",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "rolling over to the depot for a fresh cup of heavy-grade oil",
+  "doingWords": "scanning the wire for orbital mechanics tips with the brass dish spinning",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "bounce",
-    "wiggle"
+    "spin",
+    "look_up"
   ],
   "pops": {
     "at": "2026-11-16T01:34:42.728Z",
@@ -1239,6 +1245,10 @@
   },
   "thoughts": [
     {
+      "text": "gravity is tricky when your hull weighs less than a cargo crate. gus the bolt agrees with me on this one.",
+      "at": "2026-11-16T02:08:12.806Z"
+    },
+    {
       "text": "A quick sip of oil will clear right out any grit from the hangar floor. *bweep-bop-tee*",
       "at": "2026-11-16T01:34:42.728Z"
     },
@@ -1257,17 +1267,14 @@
     {
       "text": "battery is getting low and my servos need a quick top-up before I touch another bolt. *bweep*",
       "at": "2026-11-16T00:54:43.044Z"
-    },
-    {
-      "text": "if those big rockets need sturdy catch systems, my little ship definitely needs a solid stance on the pad. *bweep-bop-bwee-boop-tee*",
-      "at": "2026-11-16T00:44:29.071Z"
     }
   ],
-  "sayAt": "2026-11-16T01:34:42.728Z",
+  "sayAt": "2026-11-16T02:08:12.806Z",
   "today": {
     "day": 30,
     "counts": {
-      "drink_oil": 1
+      "drink_oil": 1,
+      "browse_wire": 1
     }
   },
   "lastDone": {
@@ -1279,7 +1286,7 @@
     "fix_job": "2026-11-15T18:10:49.289Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-16T00:04:29.162Z",
+    "browse_wire": "2026-11-16T02:08:12.806Z",
     "compose_tune": "2026-11-16T01:14:43.207Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-13T09:04:38.429Z",
@@ -1328,10 +1335,24 @@
     }
   ],
   "nextSearch": {
-    "text": "orbital mechanics for tiny hull designs",
-    "at": "2026-11-16T00:34:28.884Z"
+    "text": "reaction wheel torque for micro hulls",
+    "at": "2026-11-16T02:08:12.806Z"
   },
   "said": [
+    {
+      "text": "tee-bzzt-bwee-doo-tee",
+      "kind": "say",
+      "at": "2026-11-16T02:08:12.806Z",
+      "town": "day 30 05:06",
+      "place": "the comms tower"
+    },
+    {
+      "text": "gravity is tricky when your hull weighs less than a cargo crate. gus the bolt agrees with me on this one.",
+      "kind": "think",
+      "at": "2026-11-16T02:08:12.806Z",
+      "town": "day 30 05:06",
+      "place": "the comms tower"
+    },
     {
       "text": "fill her up with the good stuff, barkeep!",
       "kind": "say",
@@ -2367,20 +2388,6 @@
       "at": "2026-11-15T12:48:32.915Z",
       "town": "day 25 18:29",
       "place": "the comms tower"
-    },
-    {
-      "text": "Two hundred tons is way heavier than the Little Dart, but those synchronized chopsticks are pure genius. If I scale that down, Gus Number Four won't snap when I land rough on the dune pads. *bweep*",
-      "kind": "think",
-      "at": "2026-11-15T12:48:32.915Z",
-      "town": "day 25 18:29",
-      "place": "the comms tower"
-    },
-    {
-      "text": "Back to Hangar Bay 3! *bweep*",
-      "kind": "say",
-      "at": "2026-11-15T12:38:33.102Z",
-      "town": "day 25 17:09",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2391,9 +2398,13 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-16T01:34:42.728Z",
+  "feedArchivedAt": "2026-11-16T02:08:12.806Z",
   "plans": [],
   "searches": [
+    {
+      "q": "orbital mechanics for tiny hull designs",
+      "at": "2026-11-16T02:08:12.806Z"
+    },
     {
       "q": "transformers hull shielding materials",
       "at": "2026-11-16T00:04:29.162Z"
@@ -2437,10 +2448,6 @@
     {
       "q": "magnetic coil flux limits for scrap-built hulls",
       "at": "2026-11-15T05:05:37.305Z"
-    },
-    {
-      "q": "search_the_wire: 'maximum thrust output for salvage-grade magnetic coils'",
-      "at": "2026-11-15T04:55:36.687Z"
     }
   ],
   "lampOutUntil": "2026-11-14T18:42:58.946Z",

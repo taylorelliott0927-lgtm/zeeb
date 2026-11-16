@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794847350860,
+  "lastTick": 1794847951388,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-16T16:42:30.860Z",
-  "actionMinutes": 20,
-  "thought": "A cup of heavy oil will smooth out these dry gears in no time. Then my elbows won't rattle when I weld.",
-  "feeling": "squeaky but optimistic",
-  "say": "Time for a quick oil pit stop! *bweep*",
-  "mood": -0.042,
-  "energy": 0.364,
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-16T16:52:31.388Z",
+  "actionMinutes": 35,
+  "thought": "read about Comets. filing that away.",
+  "feeling": "curious",
+  "say": "",
+  "mood": 0.009,
+  "energy": 0.532,
   "needs": {
-    "charge": 0,
-    "oil": 0.212,
-    "curiosity": 0.584,
-    "company": 0.572,
-    "craft": 0.621
+    "charge": 0.047,
+    "oil": 0.252,
+    "curiosity": 0.164,
+    "company": 0.625,
+    "craft": 0.688
   },
   "credits": 2,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "comets",
+      "at": "2026-11-16T16:52:31.388Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "scavenge",
       "detail": "",
       "at": "2026-11-16T11:48:44.571Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "wiring the star-tracker straight into the main navigation bus using a tiny jumpe",
-      "at": "2026-11-16T11:38:44.486Z"
     }
   ],
   "wants": [
@@ -1411,7 +1411,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-16T16:42:30.860Z",
+  "lettersCheckedAt": "2026-11-16T16:52:31.388Z",
   "weather": {
     "kind": "hazy",
     "temp": 27,
@@ -1422,33 +1422,30 @@
   },
   "sleepDay": 34,
   "lastReflectDay": 34,
-  "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-16T16:42:30.860Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-16T16:52:31.388Z",
   "clock": {
     "day": 35,
-    "time": "01:41",
-    "hour": 1,
-    "minute": 41
+    "time": "03:01",
+    "hour": 3,
+    "minute": 1
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-16T16:42:30.860Z"
+    "action": "browse_wire",
+    "since": "2026-11-16T16:52:31.388Z"
   },
-  "busyUntil": "2026-11-16T16:45:00.860Z",
-  "busyUntilTown": "02:01",
+  "busyUntil": "2026-11-16T16:56:53.888Z",
+  "busyUntilTown": "03:36",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "clanking over to the fuel depot for a warm cup of heavy oil",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "nod",
-    "bounce"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-16T16:42:30.860Z",
     "items": [
@@ -1466,6 +1463,10 @@
     "at": "2026-11-16T14:30:05.836Z"
   },
   "thoughts": [
+    {
+      "text": "read about Comets. filing that away.",
+      "at": "2026-11-16T16:52:31.388Z"
+    },
     {
       "text": "A cup of heavy oil will smooth out these dry gears in no time. Then my elbows won't rattle when I weld.",
       "at": "2026-11-16T16:42:30.860Z"
@@ -1485,17 +1486,14 @@
     {
       "text": "my curiosity is bugging me most right now.",
       "at": "2026-11-16T14:40:05.740Z"
-    },
-    {
-      "text": "That heavy oil cleared out the grit in my elbow. Time to get back to Hangar Bay 3 and solder some wire.",
-      "at": "2026-11-16T14:30:05.836Z"
     }
   ],
-  "sayAt": "2026-11-16T16:42:30.860Z",
+  "sayAt": "2026-11-16T16:52:31.388Z",
   "today": {
     "day": 35,
     "counts": {
-      "drink_oil": 1
+      "drink_oil": 1,
+      "browse_wire": 1
     }
   },
   "lastDone": {
@@ -1507,7 +1505,7 @@
     "fix_job": "2026-11-16T11:58:44.525Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-16T16:02:31.280Z",
+    "browse_wire": "2026-11-16T16:52:31.388Z",
     "compose_tune": "2026-11-16T01:14:43.207Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-13T09:04:38.429Z",
@@ -1558,6 +1556,13 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "read about Comets. filing that away.",
+      "kind": "think",
+      "at": "2026-11-16T16:52:31.388Z",
+      "town": "day 35 03:01",
+      "place": "the comms tower"
+    },
     {
       "text": "Time for a quick oil pit stop! *bweep*",
       "kind": "say",
@@ -2600,13 +2605,6 @@
       "at": "2026-11-15T19:52:56.264Z",
       "town": "day 28 03:04",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "I woke up with comets on my visor. Brakk and Otto deserve a proper flight track for when we launch.",
-      "kind": "think",
-      "at": "2026-11-15T19:52:56.264Z",
-      "town": "day 28 03:04",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2617,9 +2615,13 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-16T16:42:30.860Z",
+  "feedArchivedAt": "2026-11-16T16:52:31.388Z",
   "plans": [],
   "searches": [
+    {
+      "q": "comets",
+      "at": "2026-11-16T16:52:31.388Z"
+    },
     {
       "q": "radio telescopes",
       "at": "2026-11-16T16:02:31.280Z"
@@ -2663,10 +2665,6 @@
     {
       "q": "star-tracker wiring circuit diagrams and fuse protection",
       "at": "2026-11-15T17:20:34.210Z"
-    },
-    {
-      "q": "adjustable trigger sear blueprints",
-      "at": "2026-11-15T14:19:34.167Z"
     }
   ],
   "lampOutUntil": "2026-11-14T18:42:58.946Z",

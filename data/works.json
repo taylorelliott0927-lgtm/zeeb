@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 12",
-    "progress": 51,
-    "version": 6,
-    "lastChange": "patched a hole in the hull (used Tok, a dented fuel cell)",
+    "progress": 58,
+    "version": 7,
+    "lastChange": "soldered the I2C altimeter sensor board onto the instrument rack (used Rusty Jr, a strip of hull plating)",
     "log": [
+      {
+        "version": 7,
+        "change": "soldered the I2C altimeter sensor board onto the instrument rack (used Rusty Jr, a strip of hull plating)",
+        "progress": 58,
+        "at": "2026-11-17T10:05:41.776Z"
+      },
       {
         "version": 6,
         "change": "patched a hole in the hull (used Tok, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "Installing the adapted trigger sear blocks into the Little Dart hatch latch mechanism (used Bix, a tiny gyroscope)",
         "progress": 100,
         "at": "2026-11-15T15:29:49.177Z"
-      },
-      {
-        "version": 17,
-        "change": "Welding the last section of the thermal mesh bracket to the starboard engine casing with Mabel",
-        "progress": 92,
-        "at": "2026-11-15T13:59:34.143Z"
       }
     ],
     "launched": [
@@ -1665,7 +1665,7 @@
         ]
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Mabel",
@@ -1698,6 +1698,11 @@
         "what": "a dented fuel cell",
         "good": true,
         "version": 6
+      },
+      {
+        "name": "Rusty Jr",
+        "what": "a strip of hull plating",
+        "version": 7
       }
     ],
     "design": null
@@ -1848,13 +1853,7 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Rusty Jr",
-      "what": "a strip of hull plating",
-      "at": "2026-11-17T07:30:17.384Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "In-Depth: Interfacing BMP388 Pressure Sensor (Altimeter) with Arduino",

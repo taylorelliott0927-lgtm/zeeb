@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 12",
-    "progress": 19,
-    "version": 2,
-    "lastChange": "mounting Nim the cockpit switch onto the dash frame and wiring it to the VFD display power bus (used Wren, a perfectly good bolt)",
+    "progress": 29,
+    "version": 3,
+    "lastChange": "soldering the negative bias rail and anode driver ICs for the multi-digit VFD panel on the dash frame (used Bix, a dented fuel cell)",
     "log": [
+      {
+        "version": 3,
+        "change": "soldering the negative bias rail and anode driver ICs for the multi-digit VFD panel on the dash frame (used Bix, a dented fuel cell)",
+        "progress": 29,
+        "at": "2026-11-17T07:10:17.468Z"
+      },
       {
         "version": 2,
         "change": "mounting Nim the cockpit switch onto the dash frame and wiring it to the VFD display power bus (used Wren, a perfectly good bolt)",
@@ -238,12 +244,6 @@
         "change": "Wiring the star-tracker harness directly into the main compass display using copper wire. (used Tok, a strip of hull plating)",
         "progress": 81,
         "at": "2026-11-15T12:38:33.102Z"
-      },
-      {
-        "version": 13,
-        "change": "Welding the star-tracker sensor mount onto the nose cone using copper wire and a fresh rivet named gus-six.",
-        "progress": 73,
-        "at": "2026-11-15T10:37:43.847Z"
       }
     ],
     "launched": [
@@ -1665,7 +1665,7 @@
         ]
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 4,
     "parts": [
       {
         "name": "Mabel",
@@ -1677,6 +1677,11 @@
         "name": "Wren",
         "what": "a perfectly good bolt",
         "version": 2
+      },
+      {
+        "name": "Bix",
+        "what": "a dented fuel cell",
+        "version": 3
       }
     ],
     "design": null
@@ -1831,11 +1836,6 @@
       "name": "Nim",
       "what": "a cockpit switch that still clicks",
       "at": "2026-11-17T03:28:46.854Z"
-    },
-    {
-      "name": "Bix",
-      "what": "a dented fuel cell",
-      "at": "2026-11-17T01:36:34.558Z"
     }
   ],
   "reads": [

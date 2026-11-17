@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 12",
-    "progress": 42,
-    "version": 5,
-    "lastChange": "riveting and shaping Rusty Jr over the VFD display panel on the dash frame to form a glare hood (used Dibs, a strip of hull plating)",
+    "progress": 51,
+    "version": 6,
+    "lastChange": "patched a hole in the hull (used Tok, a dented fuel cell)",
     "log": [
+      {
+        "version": 6,
+        "change": "patched a hole in the hull (used Tok, a dented fuel cell)",
+        "progress": 51,
+        "at": "2026-11-17T09:55:42.164Z"
+      },
       {
         "version": 5,
         "change": "riveting and shaping Rusty Jr over the VFD display panel on the dash frame to form a glare hood (used Dibs, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "Welding the last section of the thermal mesh bracket to the starboard engine casing with Mabel",
         "progress": 92,
         "at": "2026-11-15T13:59:34.143Z"
-      },
-      {
-        "version": 16,
-        "change": "Securing the thermal mesh bracket along the starboard engine seam using Mabel",
-        "progress": 90,
-        "at": "2026-11-15T13:49:21.813Z"
       }
     ],
     "launched": [
@@ -1665,7 +1665,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Mabel",
@@ -1692,6 +1692,12 @@
         "name": "Dibs",
         "what": "a strip of hull plating",
         "version": 5
+      },
+      {
+        "name": "Tok",
+        "what": "a dented fuel cell",
+        "good": true,
+        "version": 6
       }
     ],
     "design": null
@@ -1847,12 +1853,6 @@
       "name": "Rusty Jr",
       "what": "a strip of hull plating",
       "at": "2026-11-17T07:30:17.384Z"
-    },
-    {
-      "name": "Tok",
-      "what": "a dented fuel cell",
-      "at": "2026-11-17T03:38:47.194Z",
-      "good": true
     }
   ],
   "reads": [

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794920619080,
+  "lastTick": 1794921218366,
   "asleep": false,
-  "place": "market",
-  "action": "scavenge",
-  "doing": "still digging through the junk piles",
-  "actionStartedAt": "2026-11-17T12:53:38.819Z",
-  "actionMinutes": 60,
-  "thought": "The market is deep, but my sensors are sharper today. Just one good click is all I need to make the dash perfect.",
-  "feeling": "excited and persistent",
-  "say": "come on, little switch, show yourself to zeeb!",
-  "mood": 0.294,
-  "energy": -0.067,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-17T13:13:38.366Z",
+  "actionMinutes": 20,
+  "thought": "my oil is bugging me most right now.",
+  "feeling": "pretty good actually",
+  "say": "",
+  "mood": 0.339,
+  "energy": 0.003,
   "needs": {
-    "charge": 0.464,
-    "oil": 0.505,
-    "curiosity": 0,
-    "company": 0,
-    "craft": 0.448
+    "charge": 0.511,
+    "oil": 0,
+    "curiosity": 0.08,
+    "company": 0.053,
+    "craft": 0.515
   },
-  "credits": 6,
+  "credits": 5,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-17T13:13:38.366Z"
+    },
     {
       "id": "scavenge",
       "detail": "digging through the deeper piles of electrical salvage at the back of the market",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-17T11:21:57.712Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "connected the filament power rails from the main converter board to the vfd disp",
-      "at": "2026-11-17T11:11:57.983Z"
     }
   ],
   "wants": [
@@ -1639,61 +1639,72 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-17T13:03:39.080Z",
+  "lettersCheckedAt": "2026-11-17T13:13:38.366Z",
   "weather": {
     "kind": "clear",
     "temp": 29,
-    "wind": 10,
+    "wind": 9,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-17T12:33:39.136Z"
+    "at": "2026-11-17T13:13:38.634Z"
   },
   "sleepDay": 40,
   "lastReflectDay": 40,
-  "brain": "gemini-3.1-flash-lite",
-  "updatedAt": "2026-11-17T13:03:39.080Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-17T13:13:38.366Z",
   "clock": {
     "day": 41,
-    "time": "20:30",
-    "hour": 20,
-    "minute": 30
+    "time": "21:50",
+    "hour": 21,
+    "minute": 50
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "scavenge",
-    "since": "2026-11-17T12:53:38.819Z"
+    "action": "drink_oil",
+    "since": "2026-11-17T13:13:38.366Z"
   },
-  "busyUntil": "2026-11-17T13:11:09.080Z",
-  "busyUntilTown": "21:30",
+  "busyUntil": "2026-11-17T13:16:08.366Z",
+  "busyUntilTown": "22:10",
   "runner": "github",
   "model": "gemini-3.1-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "rummaging through the dust for the perfect switch, dish humming softly",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "bounce",
-    "lean_in"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-17T13:03:39.080Z",
+    "at": "2026-11-17T13:13:38.366Z",
     "items": [
       {
-        "text": "+ a cracked navigation chip",
+        "text": "+ a tiny gyroscope",
         "kind": "part",
-        "at": "2026-11-17T13:03:39.080Z"
+        "at": "2026-11-17T13:13:38.366Z"
+      },
+      {
+        "text": "+ a little landing strut",
+        "kind": "part",
+        "at": "2026-11-17T13:13:38.366Z"
+      },
+      {
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-17T13:13:38.366Z"
       }
     ]
   },
   "event": {
-    "id": "emwkmbcrv",
-    "key": "light",
-    "text": "One of the hangar lights finally died for good.",
-    "at": "2026-11-17T11:37:29.707Z"
+    "id": "emwkpqzwe",
+    "key": "scrap_box",
+    "text": "A trader left a box of free scrap outside the hangar.",
+    "at": "2026-11-17T13:13:38.366Z"
   },
   "thoughts": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "at": "2026-11-17T13:13:38.366Z"
+    },
     {
       "text": "The market is deep, but my sensors are sharper today. Just one good click is all I need to make the dash perfect.",
       "at": "2026-11-17T13:03:39.080Z"
@@ -1713,13 +1724,9 @@
     {
       "text": "another few credits closer to that perfect toggle switch. these traders sure have a lot of broken junk that just needs a little bit of love.",
       "at": "2026-11-17T12:17:29.361Z"
-    },
-    {
-      "text": "the market is loud today, but the hum of potential parts is louder. i bet there is a hidden gem in this pile somewhere.",
-      "at": "2026-11-17T12:07:29.777Z"
     }
   ],
-  "sayAt": "2026-11-17T13:03:39.080Z",
+  "sayAt": "2026-11-17T13:13:38.366Z",
   "today": {
     "day": 41,
     "counts": {
@@ -1727,7 +1734,7 @@
       "follow_link": 1,
       "send_signal": 1,
       "work_dart": 2,
-      "drink_oil": 2,
+      "drink_oil": 3,
       "browse_wire": 1,
       "scavenge": 4,
       "fix_job": 1,
@@ -1738,7 +1745,7 @@
   "lastDone": {
     "work_dart": "2026-11-17T11:11:57.983Z",
     "read_news": "2026-11-17T02:14:50.104Z",
-    "drink_oil": "2026-11-17T11:27:30.427Z",
+    "drink_oil": "2026-11-17T13:13:38.366Z",
     "follow_link": "2026-11-17T10:41:58.058Z",
     "scavenge": "2026-11-17T13:03:39.080Z",
     "fix_job": "2026-11-17T12:17:29.361Z",
@@ -1795,6 +1802,13 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-17T13:13:38.366Z",
+      "town": "day 41 21:50",
+      "place": "the fuel depot"
+    },
     {
       "text": "come on, little switch, show yourself to zeeb!",
       "kind": "say",
@@ -2837,13 +2851,6 @@
       "at": "2026-11-16T21:10:18.755Z",
       "town": "day 36 13:23",
       "place": "the junk market"
-    },
-    {
-      "text": "Taking a repair job at the market will get me some credits for fresh oil and scrap parts. Plus I get to fix things!",
-      "kind": "think",
-      "at": "2026-11-16T21:10:18.755Z",
-      "town": "day 36 13:23",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2854,7 +2861,7 @@
     "at": "2026-11-17T02:58:46.664Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-17T13:03:39.080Z",
+  "feedArchivedAt": "2026-11-17T13:13:38.366Z",
   "plans": [],
   "searches": [
     {

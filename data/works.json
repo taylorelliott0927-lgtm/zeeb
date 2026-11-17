@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 13",
-    "progress": 39,
-    "version": 5,
-    "lastChange": "Carefully connecting the navigation chip to the flight computer and sealing the wire harness with heat-shrink tubing. (used Gus, a cracked navigation chip)",
+    "progress": 48,
+    "version": 6,
+    "lastChange": "Carefully applying the high-grade sealant around the canopy base to ensure an airtight, pressurized environment for high-altitude flight. (used Otto, a tiny gyroscope)",
     "log": [
+      {
+        "version": 6,
+        "change": "Carefully applying the high-grade sealant around the canopy base to ensure an airtight, pressurized environment for high-altitude flight. (used Otto, a tiny gyroscope)",
+        "progress": 48,
+        "at": "2026-11-17T21:34:29.157Z"
+      },
       {
         "version": 5,
         "change": "Carefully connecting the navigation chip to the flight computer and sealing the wire harness with heat-shrink tubing. (used Gus, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "Welding custom copper brackets onto the main instrument panel, securing the navigation dial framework (used Pim, a dented fuel cell)",
         "progress": 95,
         "at": "2026-11-16T01:24:42.423Z"
-      },
-      {
-        "version": 11,
-        "change": "Welding custom landing strut Gus into place beneath the main fuel tank, reinforcing each joint with extra solder. (used Wren, a dented fuel cell)",
-        "progress": 88,
-        "at": "2026-11-16T00:44:29.071Z"
       }
     ],
     "launched": [
@@ -1734,7 +1734,7 @@
         ]
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Fen",
@@ -1762,6 +1762,11 @@
         "name": "Gus",
         "what": "a cracked navigation chip",
         "version": 5
+      },
+      {
+        "name": "Otto",
+        "what": "a tiny gyroscope",
+        "version": 6
       }
     ],
     "design": null
@@ -1917,21 +1922,18 @@
       "name": "Fen",
       "what": "a cracked navigation chip",
       "at": "2026-11-17T21:30:00.901Z",
-      "good": true,
-      "carrying": true
+      "good": true
     },
     {
       "name": "Wren",
       "what": "a strip of hull plating",
       "at": "2026-11-17T21:10:00.914Z",
-      "good": true,
-      "carrying": true
+      "good": true
     },
     {
       "name": "Sprocket",
       "what": "a scorched heat tile",
-      "at": "2026-11-17T21:10:00.914Z",
-      "carrying": true
+      "at": "2026-11-17T21:10:00.914Z"
     },
     {
       "name": "Tilly",
@@ -1983,11 +1985,6 @@
     {
       "name": "Tok",
       "what": "a little landing strut",
-      "at": "2026-11-17T13:13:38.366Z"
-    },
-    {
-      "name": "Otto",
-      "what": "a tiny gyroscope",
       "at": "2026-11-17T13:13:38.366Z"
     }
   ],

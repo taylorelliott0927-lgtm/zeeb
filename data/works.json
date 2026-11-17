@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 13",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 7,
+    "version": 1,
+    "lastChange": "Adding a custom-bent scrap-metal gasket frame around the cockpit rim to provide a solid base for the future airtight sealant. (used Fen, a cracked navigation chip)",
     "log": [
+      {
+        "version": 1,
+        "change": "Adding a custom-bent scrap-metal gasket frame around the cockpit rim to provide a solid base for the future airtight sealant. (used Fen, a cracked navigation chip)",
+        "progress": 7,
+        "at": "2026-11-17T17:58:01.255Z"
+      },
       {
         "version": 13,
         "change": "Adding a layer of reinforced plating near the cockpit seam to prep for the airtight sealant, ensuring the structure is sound for potential vacuum stress. (used Sprocket, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "Welding the main aft engine brace into place using Gus the landing strut for rigid alignment (used Nim, a cracked navigation chip)",
         "progress": 53,
         "at": "2026-11-15T23:03:45.513Z"
-      },
-      {
-        "version": 6,
-        "change": "Threading the navigation sensor leads through the main fuselage frame using Nim the cracked chip for spacing guidance (used Captain, a perfectly good bolt)",
-        "progress": 44,
-        "at": "2026-11-15T21:43:25.318Z"
       }
     ],
     "launched": [
@@ -1734,8 +1734,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Fen",
+        "what": "a cracked navigation chip",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -1942,11 +1948,6 @@
       "what": "a dented fuel cell",
       "at": "2026-11-17T12:17:29.361Z",
       "good": true
-    },
-    {
-      "name": "Fen",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-17T12:07:29.777Z"
     }
   ],
   "reads": [

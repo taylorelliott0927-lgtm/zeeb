@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 12",
-    "progress": 75,
-    "version": 10,
-    "lastChange": "connected the filament power rails from the main converter board to the vfd display sockets (used Nim, a cockpit switch that still clicks)",
+    "progress": 85,
+    "version": 11,
+    "lastChange": "mounting the VFD driver board onto the main chassis using Rusty Jr the bolt and refining the alignment of the display so it glows clearly. (used Rusty Jr, a perfectly good bolt)",
     "log": [
+      {
+        "version": 11,
+        "change": "mounting the VFD driver board onto the main chassis using Rusty Jr the bolt and refining the alignment of the display so it glows clearly. (used Rusty Jr, a perfectly good bolt)",
+        "progress": 85,
+        "at": "2026-11-17T14:05:10.068Z"
+      },
       {
         "version": 10,
         "change": "connected the filament power rails from the main converter board to the vfd display sockets (used Nim, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "Wiring Bix the copper wire coil into the forward thruster bracket sensors to smooth out signal spikes. (used Bix, a coil of copper wire)",
         "progress": 25,
         "at": "2026-11-15T19:31:01.324Z"
-      },
-      {
-        "version": 3,
-        "change": "Sealing the titanium-alloy forward thruster brackets into the Little Dart nosecone with extra bead welds",
-        "progress": 15,
-        "at": "2026-11-15T17:10:17.967Z"
       }
     ],
     "launched": [
@@ -1665,7 +1665,7 @@
         ]
       }
     ],
-    "partsUsed": 11,
+    "partsUsed": 12,
     "parts": [
       {
         "name": "Mabel",
@@ -1713,6 +1713,11 @@
         "name": "Nim",
         "what": "a cockpit switch that still clicks",
         "version": 10
+      },
+      {
+        "name": "Rusty Jr",
+        "what": "a perfectly good bolt",
+        "version": 11
       }
     ],
     "design": null
@@ -1909,11 +1914,6 @@
     {
       "name": "Tok",
       "what": "half a thruster nozzle",
-      "at": "2026-11-17T11:57:29.338Z"
-    },
-    {
-      "name": "Rusty Jr",
-      "what": "a perfectly good bolt",
       "at": "2026-11-17T11:57:29.338Z"
     }
   ],

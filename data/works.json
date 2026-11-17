@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 12",
-    "progress": 95,
-    "version": 12,
-    "lastChange": "Wiring in a high-quality toggle switch salvaged from the market to the VFD driver board, ensuring the negative bias rail is rock-solid for the display grid. (used Tok, half a thruster nozzle)",
+    "name": "the Little Dart Mk 13",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 13,
+        "change": "Adding a layer of reinforced plating near the cockpit seam to prep for the airtight sealant, ensuring the structure is sound for potential vacuum stress. (used Sprocket, a scorched heat tile)",
+        "progress": 100,
+        "at": "2026-11-17T17:48:02.553Z"
+      },
       {
         "version": 12,
         "change": "Wiring in a high-quality toggle switch salvaged from the market to the VFD driver board, ensuring the negative bias rail is rock-solid for the display grid. (used Tok, half a thruster nozzle)",
@@ -238,12 +244,6 @@
         "change": "Threading the navigation sensor leads through the main fuselage frame using Nim the cracked chip for spacing guidance (used Captain, a perfectly good bolt)",
         "progress": 44,
         "at": "2026-11-15T21:43:25.318Z"
-      },
-      {
-        "version": 5,
-        "change": "Welding a reinforced titanium mount onto the main tail thruster bracket using Captain the bolt to hold it steady. (used Otto, a sensor eye with one crack)",
-        "progress": 35,
-        "at": "2026-11-15T21:33:25.603Z"
       }
     ],
     "launched": [
@@ -1663,68 +1663,79 @@
             "version": 19
           }
         ]
+      },
+      {
+        "name": "the Little Dart Mk 12",
+        "day": 43,
+        "partsUsed": 14,
+        "parts": [
+          {
+            "name": "Mabel",
+            "what": "high-grade titanium washer",
+            "custom": "rmwjzf519",
+            "version": 1
+          },
+          {
+            "name": "Wren",
+            "what": "a perfectly good bolt",
+            "version": 2
+          },
+          {
+            "name": "Bix",
+            "what": "a dented fuel cell",
+            "version": 3
+          },
+          {
+            "name": "Nim",
+            "what": "a cockpit switch that still clicks",
+            "version": 4
+          },
+          {
+            "name": "Dibs",
+            "what": "a strip of hull plating",
+            "version": 5
+          },
+          {
+            "name": "Tok",
+            "what": "a dented fuel cell",
+            "good": true,
+            "version": 6
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "a strip of hull plating",
+            "version": 7
+          },
+          {
+            "name": "Gus",
+            "what": "a coil of copper wire",
+            "version": 9
+          },
+          {
+            "name": "Nim",
+            "what": "a cockpit switch that still clicks",
+            "version": 10
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "a perfectly good bolt",
+            "version": 11
+          },
+          {
+            "name": "Tok",
+            "what": "half a thruster nozzle",
+            "version": 12
+          },
+          {
+            "name": "Sprocket",
+            "what": "a scorched heat tile",
+            "version": 13
+          }
+        ]
       }
     ],
-    "partsUsed": 13,
-    "parts": [
-      {
-        "name": "Mabel",
-        "what": "high-grade titanium washer",
-        "custom": "rmwjzf519",
-        "version": 1
-      },
-      {
-        "name": "Wren",
-        "what": "a perfectly good bolt",
-        "version": 2
-      },
-      {
-        "name": "Bix",
-        "what": "a dented fuel cell",
-        "version": 3
-      },
-      {
-        "name": "Nim",
-        "what": "a cockpit switch that still clicks",
-        "version": 4
-      },
-      {
-        "name": "Dibs",
-        "what": "a strip of hull plating",
-        "version": 5
-      },
-      {
-        "name": "Tok",
-        "what": "a dented fuel cell",
-        "good": true,
-        "version": 6
-      },
-      {
-        "name": "Rusty Jr",
-        "what": "a strip of hull plating",
-        "version": 7
-      },
-      {
-        "name": "Gus",
-        "what": "a coil of copper wire",
-        "version": 9
-      },
-      {
-        "name": "Nim",
-        "what": "a cockpit switch that still clicks",
-        "version": 10
-      },
-      {
-        "name": "Rusty Jr",
-        "what": "a perfectly good bolt",
-        "version": 11
-      },
-      {
-        "name": "Tok",
-        "what": "half a thruster nozzle",
-        "version": 12
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -1935,11 +1946,6 @@
     {
       "name": "Fen",
       "what": "a cracked navigation chip",
-      "at": "2026-11-17T12:07:29.777Z"
-    },
-    {
-      "name": "Sprocket",
-      "what": "a scorched heat tile",
       "at": "2026-11-17T12:07:29.777Z"
     }
   ],

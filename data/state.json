@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794887379966,
+  "lastTick": 1794887980383,
   "asleep": false,
-  "place": "market",
-  "action": "fix_job",
-  "doing": "doing a repair job at the market",
-  "actionStartedAt": "2026-11-17T03:49:39.966Z",
-  "actionMinutes": 45,
-  "thought": "This little converter just needs a clean bypass trace and some fresh solder. Easy credits or maybe a cool spare part for the shelf!",
-  "feeling": "focused and cheerful",
-  "say": "Hold still now, little relay, this won't hurt a bit. *bweep*",
-  "mood": 0.401,
-  "energy": 0.216,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-17T03:59:40.383Z",
+  "actionMinutes": 420,
+  "thought": "The converter bypass held up fine and put some credits in my hopper, but my servos are dragging. Time to plug in, chill my core, and dream in star charts.",
+  "feeling": "drowsy and comfortably worn out",
+  "say": "*bweep-bop*... going into low power mode.",
+  "mood": 0.346,
+  "energy": 0.398,
   "needs": {
-    "charge": 0.426,
-    "oil": 0.154,
-    "curiosity": 0.08,
-    "company": 0.127,
-    "craft": 0.074
+    "charge": 0.023,
+    "oil": 0.194,
+    "curiosity": 0.16,
+    "company": 0.18,
+    "craft": 0.141
   },
   "credits": 14,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-17T03:59:40.383Z"
+    },
     {
       "id": "fix_job",
       "detail": "bypassing a burnt trace on a trader's power converter",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "how to forge titanium washers without a dedicated foundry",
       "at": "2026-11-17T01:54:50.220Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "plugging into the main terminal in Hangar Bay 3 to get my energy levels back up.",
-      "at": "2026-11-17T01:36:34.558Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-17T03:49:39.966Z",
+  "lettersCheckedAt": "2026-11-17T03:59:40.383Z",
   "weather": {
     "kind": "clear",
     "temp": 19,
@@ -1650,32 +1650,31 @@
   },
   "sleepDay": 37,
   "lastReflectDay": 37,
-  "brain": "gemini-3.5-flash",
-  "updatedAt": "2026-11-17T03:49:39.966Z",
+  "brain": "gemini-3.8-flash",
+  "updatedAt": "2026-11-17T03:59:40.383Z",
   "clock": {
     "day": 38,
-    "time": "18:38",
-    "hour": 18,
-    "minute": 38
+    "time": "19:58",
+    "hour": 19,
+    "minute": 58
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "fix_job",
-    "since": "2026-11-17T03:49:39.966Z"
+    "action": "nap_dock",
+    "since": "2026-11-17T03:59:40.383Z"
   },
-  "busyUntil": "2026-11-17T03:55:17.466Z",
-  "busyUntilTown": "19:23",
+  "busyUntil": "2026-11-17T04:52:10.383Z",
+  "busyUntilTown": "02:58",
   "runner": "github",
-  "model": "gemini-3.5-flash",
+  "model": "gemini-3.8-flash",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "rewiring a trader's cranky power converter",
+  "doingWords": "curling into the charging cradle in Hangar Bay 3 for a long recharge",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "lean_in",
-    "nod"
+    "droop"
   ],
   "pops": {
     "at": "2026-11-17T03:49:39.966Z",
@@ -1695,6 +1694,10 @@
   },
   "thoughts": [
     {
+      "text": "The converter bypass held up fine and put some credits in my hopper, but my servos are dragging. Time to plug in, chill my core, and dream in star charts.",
+      "at": "2026-11-17T03:59:40.383Z"
+    },
+    {
       "text": "This little converter just needs a clean bypass trace and some fresh solder. Easy credits or maybe a cool spare part for the shelf!",
       "at": "2026-11-17T03:49:39.966Z"
     },
@@ -1713,17 +1716,13 @@
     {
       "text": "That flight was pristine, but thermal buffeting takes it out of the old bearings. One fresh cup and I'll be humming.",
       "at": "2026-11-17T03:18:46.576Z"
-    },
-    {
-      "text": "The titanium mount didn't rattle once over the red mesa! I need to lock down these victory beeps before they float away.",
-      "at": "2026-11-17T03:08:47.132Z"
     }
   ],
-  "sayAt": "2026-11-17T03:49:39.966Z",
+  "sayAt": "2026-11-17T03:59:40.383Z",
   "today": {
     "day": 38,
     "counts": {
-      "nap_dock": 2,
+      "nap_dock": 3,
       "browse_wire": 1,
       "follow_link": 1,
       "read_news": 1,
@@ -1758,7 +1757,7 @@
     "chat_patrons": "2026-11-16T17:59:37.445Z",
     "busk": "2026-11-15T00:58:45.002Z",
     "cantina_band": "2026-11-16T18:17:03.361Z",
-    "nap_dock": "2026-11-17T02:34:49.675Z",
+    "nap_dock": "2026-11-17T03:59:40.383Z",
     "watch_suns": "2026-11-14T03:58:46.207Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1799,6 +1798,20 @@
     "at": "2026-11-17T02:14:50.104Z"
   },
   "said": [
+    {
+      "text": "*bweep-bop*... going into low power mode.",
+      "kind": "say",
+      "at": "2026-11-17T03:59:40.383Z",
+      "town": "day 38 19:58",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "The converter bypass held up fine and put some credits in my hopper, but my servos are dragging. Time to plug in, chill my core, and dream in star charts.",
+      "kind": "think",
+      "at": "2026-11-17T03:59:40.383Z",
+      "town": "day 38 19:58",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "Hold still now, little relay, this won't hurt a bit. *bweep*",
       "kind": "say",
@@ -2834,20 +2847,6 @@
       "at": "2026-11-16T10:02:25.377Z",
       "town": "day 32 20:20",
       "place": "the comms tower"
-    },
-    {
-      "text": "ahhh, right down the pipes.",
-      "kind": "say",
-      "at": "2026-11-16T08:14:42.805Z",
-      "town": "day 32 05:58",
-      "place": "the fuel depot"
-    },
-    {
-      "text": "that fresh heavy oil tastes just like the good stuff, no grit at all. now my gears won't grind when I reach for those tiny screws.",
-      "kind": "think",
-      "at": "2026-11-16T08:14:42.805Z",
-      "town": "day 32 05:58",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2858,7 +2857,7 @@
     "at": "2026-11-17T02:58:46.664Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-17T03:49:39.966Z",
+  "feedArchivedAt": "2026-11-17T03:59:40.383Z",
   "plans": [],
   "searches": [
     {

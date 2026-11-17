@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 12",
-    "progress": 35,
-    "version": 4,
-    "lastChange": "running the anode lines from the multi-digit VFD panel to the driver ICs on the dash frame (used Nim, a cockpit switch that still clicks)",
+    "progress": 42,
+    "version": 5,
+    "lastChange": "riveting and shaping Rusty Jr over the VFD display panel on the dash frame to form a glare hood (used Dibs, a strip of hull plating)",
     "log": [
+      {
+        "version": 5,
+        "change": "riveting and shaping Rusty Jr over the VFD display panel on the dash frame to form a glare hood (used Dibs, a strip of hull plating)",
+        "progress": 42,
+        "at": "2026-11-17T08:48:45.373Z"
+      },
       {
         "version": 4,
         "change": "running the anode lines from the multi-digit VFD panel to the driver ICs on the dash frame (used Nim, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "Securing the thermal mesh bracket along the starboard engine seam using Mabel",
         "progress": 90,
         "at": "2026-11-15T13:49:21.813Z"
-      },
-      {
-        "version": 15,
-        "change": "Locking down the thermal mesh bracket over the starboard engine seam using Mabel (half a thruster nozzle) (used Mabel, half a thruster nozzle)",
-        "progress": 87,
-        "at": "2026-11-15T13:39:21.949Z"
       }
     ],
     "launched": [
@@ -1665,7 +1665,7 @@
         ]
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Mabel",
@@ -1687,6 +1687,11 @@
         "name": "Nim",
         "what": "a cockpit switch that still clicks",
         "version": 4
+      },
+      {
+        "name": "Dibs",
+        "what": "a strip of hull plating",
+        "version": 5
       }
     ],
     "design": null
@@ -1842,11 +1847,6 @@
       "what": "a dented fuel cell",
       "at": "2026-11-17T03:38:47.194Z",
       "good": true
-    },
-    {
-      "name": "Dibs",
-      "what": "a strip of hull plating",
-      "at": "2026-11-17T03:28:46.854Z"
     }
   ],
   "reads": [

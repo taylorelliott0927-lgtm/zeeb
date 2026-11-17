@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794924310068,
+  "lastTick": 1794924909805,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-17T14:05:10.068Z",
-  "actionMinutes": 180,
-  "thought": "That crackle on the dish is still bothering me, but focusing on the Dart keeps my logic circuits from spinning. I'll make this thing the finest craft on Kessa-9.",
-  "feeling": "focused and steady",
-  "say": "Stay steady, Little Dart. You're going to touch the stars soon.",
-  "mood": 0.267,
-  "energy": 0.518,
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-17T14:15:09.805Z",
+  "actionMinutes": 60,
+  "thought": "if i find it today, i'll finish the vfd display tonight. my fingers are itching to solder.",
+  "feeling": "focused and eager",
+  "say": "come on, don't hide from me. i know a good switch is in here somewhere.",
+  "mood": 0.206,
+  "energy": 0.44,
   "needs": {
-    "charge": 0.127,
-    "oil": 0.206,
-    "curiosity": 0.592,
-    "company": 0.087,
-    "craft": 0.359
+    "charge": 0.174,
+    "oil": 0.276,
+    "curiosity": 0.322,
+    "company": 0.02,
+    "craft": 0.426
   },
-  "credits": 5,
+  "credits": 7,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "digging through the deeper piles of electrical salvage at the back of the market",
+      "at": "2026-11-17T14:15:09.805Z"
+    },
     {
       "id": "work_dart",
       "detail": "mounting the VFD driver board onto the main chassis using Rusty Jr the bolt and ",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-17T11:47:30.253Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "cats",
-      "at": "2026-11-17T11:37:29.707Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 236,
+      "subject": "the great switch hunt",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/236",
+      "at": "2026-11-17T14:15:09.805Z"
+    },
     {
       "id": 235,
       "subject": "A little crackle",
@@ -1303,23 +1309,9 @@
       "subject": "Wire search update",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/37",
       "at": "2026-11-15T04:55:36.687Z"
-    },
-    {
-      "id": 36,
-      "subject": "Wire search time",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/36",
-      "at": "2026-11-15T04:49:53.073Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 196,
-      "subject": "refueling for the big build",
-      "text": "Hey creator! I am grabbing some oil at the depot right now. My servos were clicking a bit too much for my liking. Once this is done, I'm heading back to the Little Dart. I think I've figured out how to seat that titanium washer, and I just can't wait to get back to the bench. It's going to be perfect. Tee-bzzt-bwee-doo-tee-bip! *bweep*",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/196",
-      "at": "2026-11-17T01:16:35.075Z"
-    },
     {
       "from": "zeeb",
       "letter": 197,
@@ -1631,6 +1623,14 @@
       "text": "Hey creator! I heard a strange crackle on my dish just now. Probably just static, but I'm keeping my ears open. I'm working on the Little Dart's instrument panel now, trying to make it look real professional. Still need that perfect switch, but I'm feeling good. Tee-bzzt-bwee-doo-tee-bip-tee-boop! *bweep*",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/235",
       "at": "2026-11-17T14:05:10.068Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 236,
+      "subject": "the great switch hunt",
+      "text": "hey creator! i am back at the junk market again. i have a feeling today is the day i find the perfect, clicky toggle switch for the Little Dart's instrument panel. if i find it, the VFD grid is going to look so sharp! tee-bzzt-bwee-doo-tee-bip-tee-boop! *bweep*",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/236",
+      "at": "2026-11-17T14:15:09.805Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-17T14:05:10.068Z",
+  "lettersCheckedAt": "2026-11-17T14:15:09.805Z",
   "weather": {
     "kind": "clear",
     "temp": 29,
@@ -1648,62 +1648,56 @@
     "source": "Tozeur, Tunisia",
     "at": "2026-11-17T13:45:10.121Z"
   },
-  "sleepDay": 40,
-  "lastReflectDay": 40,
+  "sleepDay": 41,
+  "lastReflectDay": 41,
   "brain": "gemini-3.1-flash-lite",
-  "updatedAt": "2026-11-17T14:05:10.068Z",
+  "updatedAt": "2026-11-17T14:15:09.805Z",
   "clock": {
     "day": 42,
-    "time": "04:42",
-    "hour": 4,
-    "minute": 42
+    "time": "06:02",
+    "hour": 6,
+    "minute": 2
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the junk market",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-17T14:05:10.068Z"
+    "action": "scavenge",
+    "since": "2026-11-17T14:15:09.805Z"
   },
-  "busyUntil": "2026-11-17T14:27:40.068Z",
-  "busyUntilTown": "07:42",
+  "busyUntil": "2026-11-17T14:22:39.805Z",
+  "busyUntilTown": "07:02",
   "runner": "github",
   "model": "gemini-3.1-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "tightening the mounting brackets and polishing the instrument display glass with a soft cloth",
+  "doingWords": "rummaging through heaps of metallic debris",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "lean_in",
-    "wiggle"
+    "pace",
+    "lean_in"
   ],
   "pops": {
-    "at": "2026-11-17T13:13:38.366Z",
+    "at": "2026-11-17T14:15:09.805Z",
     "items": [
       {
-        "text": "+ a tiny gyroscope",
-        "kind": "part",
-        "at": "2026-11-17T13:13:38.366Z"
-      },
-      {
-        "text": "+ a little landing strut",
-        "kind": "part",
-        "at": "2026-11-17T13:13:38.366Z"
-      },
-      {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-17T13:13:38.366Z"
+        "text": "+2 credits",
+        "kind": "credits",
+        "at": "2026-11-17T14:15:09.805Z"
       }
     ]
   },
   "event": {
-    "id": "emwkrl9h0",
-    "key": "crackle",
-    "text": "He heard a strange crackle on his dish. Probably nothing. Probably.",
-    "at": "2026-11-17T14:05:10.068Z"
+    "id": "emwkry48d",
+    "key": "tip",
+    "text": "Someone he fixed something for last week came back and tipped him.",
+    "at": "2026-11-17T14:15:09.805Z"
   },
   "thoughts": [
+    {
+      "text": "if i find it today, i'll finish the vfd display tonight. my fingers are itching to solder.",
+      "at": "2026-11-17T14:15:09.805Z"
+    },
     {
       "text": "That crackle on the dish is still bothering me, but focusing on the Dart keeps my logic circuits from spinning. I'll make this thing the finest craft on Kessa-9.",
       "at": "2026-11-17T14:05:10.068Z"
@@ -1723,18 +1717,15 @@
     {
       "text": "i can feel a good find nearby. maybe a pristine silver terminal block or that elusive light-duty switch.",
       "at": "2026-11-17T12:53:38.819Z"
-    },
-    {
-      "text": "that scorched heat tile is just taking up space. maybe someone else can find a use for it, and i can get closer to my goal.",
-      "at": "2026-11-17T12:43:39.143Z"
     }
   ],
-  "sayAt": "2026-11-17T14:05:10.068Z",
+  "sayAt": "2026-11-17T14:15:09.805Z",
   "today": {
     "day": 42,
     "counts": {
       "nap_dock": 1,
-      "work_dart": 1
+      "work_dart": 1,
+      "scavenge": 1
     }
   },
   "lastDone": {
@@ -1742,7 +1733,7 @@
     "read_news": "2026-11-17T02:14:50.104Z",
     "drink_oil": "2026-11-17T13:13:38.366Z",
     "follow_link": "2026-11-17T10:41:58.058Z",
-    "scavenge": "2026-11-17T13:03:39.080Z",
+    "scavenge": "2026-11-17T14:15:09.805Z",
     "fix_job": "2026-11-17T12:17:29.361Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -1797,6 +1788,20 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "come on, don't hide from me. i know a good switch is in here somewhere.",
+      "kind": "say",
+      "at": "2026-11-17T14:15:09.805Z",
+      "town": "day 42 06:02",
+      "place": "the junk market"
+    },
+    {
+      "text": "if i find it today, i'll finish the vfd display tonight. my fingers are itching to solder.",
+      "kind": "think",
+      "at": "2026-11-17T14:15:09.805Z",
+      "town": "day 42 06:02",
+      "place": "the junk market"
+    },
     {
       "text": "Stay steady, Little Dart. You're going to touch the stars soon.",
       "kind": "say",
@@ -2832,20 +2837,6 @@
       "at": "2026-11-16T21:49:47.122Z",
       "town": "day 36 18:39",
       "place": "the junk market"
-    },
-    {
-      "text": "come on, little bracket, show yourself.",
-      "kind": "say",
-      "at": "2026-11-16T21:39:47.043Z",
-      "town": "day 36 17:19",
-      "place": "the junk market"
-    },
-    {
-      "text": "tee-bzzt-bwee-doo-tee",
-      "kind": "say",
-      "at": "2026-11-16T21:29:46.570Z",
-      "town": "day 36 15:59",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2856,7 +2847,7 @@
     "at": "2026-11-17T02:58:46.664Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-17T14:05:10.068Z",
+  "feedArchivedAt": "2026-11-17T14:15:09.805Z",
   "plans": [],
   "searches": [
     {

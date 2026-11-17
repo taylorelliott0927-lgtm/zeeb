@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 12",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 10,
+    "version": 1,
+    "lastChange": "checking and soldering reaction wheel telemetry wires for dead accurate attitude control (used Mabel, high-grade titanium washer)",
     "log": [
+      {
+        "version": 1,
+        "change": "checking and soldering reaction wheel telemetry wires for dead accurate attitude control (used Mabel, high-grade titanium washer)",
+        "progress": 10,
+        "at": "2026-11-17T05:00:32.450Z"
+      },
       {
         "version": 19,
         "change": "finalizing the installation of the titanium washer and reinforcement shim onto the engine mount, checking for stress-cracks. (used Tok, a bent stabiliser fin)",
@@ -238,12 +244,6 @@
         "change": "Welding the port-side aileron hinge to the Little Dart fuselage using gus-five",
         "progress": 69,
         "at": "2026-11-15T09:26:55.619Z"
-      },
-      {
-        "version": 11,
-        "change": "Welding the port-side wing bracket to the Little Dart fuselage using Rusty Jr (used Rusty Jr, a tiny gyroscope)",
-        "progress": 66,
-        "at": "2026-11-15T09:16:56.154Z"
       }
     ],
     "launched": [
@@ -1665,8 +1665,15 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 2,
+    "parts": [
+      {
+        "name": "Mabel",
+        "what": "high-grade titanium washer",
+        "custom": "rmwjzf519",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -1829,12 +1836,6 @@
       "name": "Wren",
       "what": "a perfectly good bolt",
       "at": "2026-11-17T01:36:34.558Z"
-    },
-    {
-      "name": "Mabel",
-      "what": "high-grade titanium washer",
-      "at": "2026-11-17T00:56:35.133Z",
-      "custom": "rmwjzf519"
     }
   ],
   "reads": [

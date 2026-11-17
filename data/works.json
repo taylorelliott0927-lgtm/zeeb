@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 12",
-    "progress": 29,
-    "version": 3,
-    "lastChange": "soldering the negative bias rail and anode driver ICs for the multi-digit VFD panel on the dash frame (used Bix, a dented fuel cell)",
+    "progress": 35,
+    "version": 4,
+    "lastChange": "running the anode lines from the multi-digit VFD panel to the driver ICs on the dash frame (used Nim, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 4,
+        "change": "running the anode lines from the multi-digit VFD panel to the driver ICs on the dash frame (used Nim, a cockpit switch that still clicks)",
+        "progress": 35,
+        "at": "2026-11-17T07:20:17.984Z"
+      },
       {
         "version": 3,
         "change": "soldering the negative bias rail and anode driver ICs for the multi-digit VFD panel on the dash frame (used Bix, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "Locking down the thermal mesh bracket over the starboard engine seam using Mabel (half a thruster nozzle) (used Mabel, half a thruster nozzle)",
         "progress": 87,
         "at": "2026-11-15T13:39:21.949Z"
-      },
-      {
-        "version": 14,
-        "change": "Wiring the star-tracker harness directly into the main compass display using copper wire. (used Tok, a strip of hull plating)",
-        "progress": 81,
-        "at": "2026-11-15T12:38:33.102Z"
       }
     ],
     "launched": [
@@ -1665,7 +1665,7 @@
         ]
       }
     ],
-    "partsUsed": 4,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Mabel",
@@ -1682,6 +1682,11 @@
         "name": "Bix",
         "what": "a dented fuel cell",
         "version": 3
+      },
+      {
+        "name": "Nim",
+        "what": "a cockpit switch that still clicks",
+        "version": 4
       }
     ],
     "design": null
@@ -1830,11 +1835,6 @@
     {
       "name": "Dibs",
       "what": "a strip of hull plating",
-      "at": "2026-11-17T03:28:46.854Z"
-    },
-    {
-      "name": "Nim",
-      "what": "a cockpit switch that still clicks",
       "at": "2026-11-17T03:28:46.854Z"
     }
   ],

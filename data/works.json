@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 12",
-    "progress": 68,
-    "version": 9,
-    "lastChange": "connected the anode driver lines from the main board to the VFD tube grid sockets (used Gus, a coil of copper wire)",
+    "progress": 75,
+    "version": 10,
+    "lastChange": "connected the filament power rails from the main converter board to the vfd display sockets (used Nim, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 10,
+        "change": "connected the filament power rails from the main converter board to the vfd display sockets (used Nim, a cockpit switch that still clicks)",
+        "progress": 75,
+        "at": "2026-11-17T11:11:57.983Z"
+      },
       {
         "version": 9,
         "change": "connected the anode driver lines from the main board to the VFD tube grid sockets (used Gus, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "Sealing the titanium-alloy forward thruster brackets into the Little Dart nosecone with extra bead welds",
         "progress": 15,
         "at": "2026-11-15T17:10:17.967Z"
-      },
-      {
-        "version": 2,
-        "change": "Welding the titanium-alloy forward thruster brackets into the Little Dart nosecone",
-        "progress": 13,
-        "at": "2026-11-15T17:00:17.824Z"
       }
     ],
     "launched": [
@@ -1665,7 +1665,7 @@
         ]
       }
     ],
-    "partsUsed": 10,
+    "partsUsed": 11,
     "parts": [
       {
         "name": "Mabel",
@@ -1708,6 +1708,11 @@
         "name": "Gus",
         "what": "a coil of copper wire",
         "version": 9
+      },
+      {
+        "name": "Nim",
+        "what": "a cockpit switch that still clicks",
+        "version": 10
       }
     ],
     "design": null
@@ -1858,13 +1863,7 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Nim",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-17T11:01:57.600Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "GitHub - adafruit/Adafruit_BMP3XX · GitHub",

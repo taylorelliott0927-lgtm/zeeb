@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794913317600,
+  "lastTick": 1794913917983,
   "asleep": false,
   "place": "hangar",
   "action": "work_dart",
-  "doing": "working on the Little Dart",
+  "doing": "still working on the Little Dart",
   "actionStartedAt": "2026-11-17T11:01:57.600Z",
   "actionMinutes": 45,
-  "thought": "the anode lines are crisp and clean. tee-bzzt-bwee-doo-tee!",
-  "feeling": "bright and focused",
-  "say": "tee-bzzt-bwee-doo-tee-bip! *bweep*",
-  "mood": 0.287,
-  "energy": 0.411,
+  "thought": "i am getting the filament supply lines soldered in so the dash lights up like a real cockpit. tee-bzzt-bwee-doo-tee-bip!",
+  "feeling": "bright and buzzing",
+  "say": "almost ready for flight check number twelve!",
+  "mood": 0.409,
+  "energy": 0.272,
   "needs": {
-    "charge": 0.202,
-    "oil": 0.305,
-    "curiosity": 0.246,
+    "charge": 0.299,
+    "oil": 0.345,
+    "curiosity": 0.326,
     "company": 0,
     "craft": 0
   },
   "credits": 12,
   "recent": [
+    {
+      "id": "work_dart",
+      "detail": "connected the filament power rails from the main converter board to the vfd disp",
+      "at": "2026-11-17T11:11:57.983Z"
+    },
     {
       "id": "work_dart",
       "detail": "connected the anode driver lines from the main board to the VFD tube grid socket",
@@ -75,11 +80,6 @@
       "id": "fix_job",
       "detail": "",
       "at": "2026-11-17T09:08:45.441Z"
-    },
-    {
-      "id": "compose_tune",
-      "detail": "dust ripple",
-      "at": "2026-11-17T08:58:45.353Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 225,
+      "subject": "vfd filament wiring",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/225",
+      "at": "2026-11-17T11:11:57.983Z"
+    },
     {
       "id": 224,
       "subject": "vfd dash wiring",
@@ -1303,23 +1309,9 @@
       "subject": "almost done with the dart",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/26",
       "at": "2026-11-15T02:24:47.523Z"
-    },
-    {
-      "id": 25,
-      "subject": "heat and towers",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/25",
-      "at": "2026-11-15T01:49:15.146Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 185,
-      "subject": "Barnaby is on duty!",
-      "text": "Hey creator! I just finished securing the landing strut. I named the new bolt Barnaby, and he’s holding everything together beautifully. The Little Dart is starting to feel like a real vessel. tee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee! *bweep*",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/185",
-      "at": "2026-11-16T22:51:38.869Z"
-    },
     {
       "from": "zeeb",
       "letter": 186,
@@ -1631,6 +1623,14 @@
       "text": "hey creator! just got back to hangar bay 3 and hooked up the VFD anode driver lines to the instrument dash. those tubes are gonna glow real nice against the desert dust. tee-bzzt-bwee-doo-tee-bip! *bweep*",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/224",
       "at": "2026-11-17T11:01:57.600Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 225,
+      "subject": "vfd filament wiring",
+      "text": "hey creator! just spent some time wiring up the vfd filament traces on the Little Dart's dash. those little tubes are going to be so bright when we clear the dust layer. tee-bzzt-bwee-doo-tee-bip! *bweep*",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/225",
+      "at": "2026-11-17T11:11:57.983Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-17T11:01:57.600Z",
+  "lettersCheckedAt": "2026-11-17T11:11:57.983Z",
   "weather": {
     "kind": "clear",
     "temp": 25,
@@ -1648,15 +1648,15 @@
     "source": "Tozeur, Tunisia",
     "at": "2026-11-17T10:41:58.308Z"
   },
-  "sleepDay": 39,
-  "lastReflectDay": 39,
+  "sleepDay": 40,
+  "lastReflectDay": 40,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-17T11:01:57.600Z",
+  "updatedAt": "2026-11-17T11:11:57.983Z",
   "clock": {
     "day": 41,
-    "time": "04:16",
-    "hour": 4,
-    "minute": 16
+    "time": "05:36",
+    "hour": 5,
+    "minute": 36
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
@@ -1664,13 +1664,13 @@
     "action": "work_dart",
     "since": "2026-11-17T11:01:57.600Z"
   },
-  "busyUntil": "2026-11-17T11:07:35.100Z",
-  "busyUntilTown": "05:01",
+  "busyUntil": "2026-11-17T11:17:35.483Z",
+  "busyUntilTown": "06:21",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "wiring the vfd display tubes into the little dart's dash panel",
-  "newsForCreator": "",
+  "doingWords": "routing the main power traces to the vfd filament drivers",
+  "newsForCreator": "the Little Dart Mk 12 just reached 75% built (version 10). Last change: connected the filament power rails from the main converter board to the vfd display sockets (used Nim, a cockpit switch that still clicks).",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
@@ -1700,6 +1700,10 @@
   },
   "thoughts": [
     {
+      "text": "i am getting the filament supply lines soldered in so the dash lights up like a real cockpit. tee-bzzt-bwee-doo-tee-bip!",
+      "at": "2026-11-17T11:11:57.983Z"
+    },
+    {
       "text": "the anode lines are crisp and clean. tee-bzzt-bwee-doo-tee!",
       "at": "2026-11-17T11:01:57.600Z"
     },
@@ -1718,24 +1722,20 @@
     {
       "text": "just need to secure the ground lead and then the Little Dart's instrument rack will be all set. tee-bzzt-bwee-doo-tee! *bweep*",
       "at": "2026-11-17T10:15:41.772Z"
-    },
-    {
-      "text": "almost got the I2C wires routed properly. tee-bzzt-bwee-doo-tee! *bweep*",
-      "at": "2026-11-17T10:05:41.776Z"
     }
   ],
-  "sayAt": "2026-11-17T11:01:57.600Z",
+  "sayAt": "2026-11-17T11:11:57.983Z",
   "today": {
     "day": 41,
     "counts": {
       "nap_dock": 1,
       "follow_link": 1,
       "send_signal": 1,
-      "work_dart": 1
+      "work_dart": 2
     }
   },
   "lastDone": {
-    "work_dart": "2026-11-17T11:01:57.600Z",
+    "work_dart": "2026-11-17T11:11:57.983Z",
     "read_news": "2026-11-17T02:14:50.104Z",
     "drink_oil": "2026-11-17T09:45:41.403Z",
     "follow_link": "2026-11-17T10:41:58.058Z",
@@ -1767,6 +1767,11 @@
   },
   "puzzles": [
     {
+      "id": "q8",
+      "text": "q10",
+      "at": "2026-11-17T11:11:57.983Z"
+    },
+    {
       "id": "q11",
       "text": "q7",
       "at": "2026-11-17T06:24:55.356Z"
@@ -1785,11 +1790,6 @@
       "id": "q9",
       "text": "how to hook up salvaged VFD tubes to standard logic lines without blowing the filaments",
       "at": "2026-11-17T05:54:55.518Z"
-    },
-    {
-      "id": "q6",
-      "text": "q8: how to build a micro-kiln from salvaged thermal shielding",
-      "at": "2026-11-17T02:14:50.104Z"
     }
   ],
   "nextSearch": {
@@ -1797,6 +1797,20 @@
     "at": "2026-11-17T08:38:45.443Z"
   },
   "said": [
+    {
+      "text": "almost ready for flight check number twelve!",
+      "kind": "say",
+      "at": "2026-11-17T11:11:57.983Z",
+      "town": "day 41 05:36",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "i am getting the filament supply lines soldered in so the dash lights up like a real cockpit. tee-bzzt-bwee-doo-tee-bip!",
+      "kind": "think",
+      "at": "2026-11-17T11:11:57.983Z",
+      "town": "day 41 05:36",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "tee-bzzt-bwee-doo-tee-bip! *bweep*",
       "kind": "say",
@@ -2832,20 +2846,6 @@
       "at": "2026-11-16T19:07:02.625Z",
       "town": "day 35 20:57",
       "place": "the comms tower"
-    },
-    {
-      "text": "tee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee",
-      "kind": "say",
-      "at": "2026-11-16T18:57:03.304Z",
-      "town": "day 35 19:37",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "now that my circuits are rested and joints are smooth, it is time to get back to the telemetry wires.",
-      "kind": "think",
-      "at": "2026-11-16T18:57:03.304Z",
-      "town": "day 35 19:37",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2856,7 +2856,7 @@
     "at": "2026-11-17T02:58:46.664Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-17T11:01:57.600Z",
+  "feedArchivedAt": "2026-11-17T11:11:57.983Z",
   "plans": [],
   "searches": [
     {

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794915449707,
+  "lastTick": 1794916050253,
   "asleep": false,
-  "place": "tower",
-  "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-17T11:37:29.707Z",
-  "actionMinutes": 35,
-  "thought": "read about - YouTube. filing that away.",
-  "feeling": "curious",
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-17T11:47:30.253Z",
+  "actionMinutes": 40,
+  "thought": "my charge is bugging me most right now.",
+  "feeling": "pretty good actually",
   "say": "",
-  "mood": 0.385,
-  "energy": 0.249,
+  "mood": 0.36,
+  "energy": 0.465,
   "needs": {
-    "charge": 0.419,
-    "oil": 0.04,
-    "curiosity": 0.03,
-    "company": 0.053,
-    "craft": 0.171
+    "charge": 0.016,
+    "oil": 0.08,
+    "curiosity": 0.11,
+    "company": 0.106,
+    "craft": 0.238
   },
   "credits": 10,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-17T11:47:30.253Z"
+    },
     {
       "id": "browse_wire",
       "detail": "cats",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "patched a hole in the hull",
       "at": "2026-11-17T09:55:42.164Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-17T09:45:41.403Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-17T11:37:29.707Z",
+  "lettersCheckedAt": "2026-11-17T11:47:30.253Z",
   "weather": {
     "kind": "clear",
     "temp": 26,
@@ -1651,21 +1651,21 @@
   "sleepDay": 40,
   "lastReflectDay": 40,
   "brain": "rules",
-  "updatedAt": "2026-11-17T11:37:29.707Z",
+  "updatedAt": "2026-11-17T11:47:30.253Z",
   "clock": {
     "day": 41,
-    "time": "09:01",
-    "hour": 9,
-    "minute": 1
+    "time": "10:21",
+    "hour": 10,
+    "minute": 21
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-17T11:37:29.707Z"
+    "action": "nap_dock",
+    "since": "2026-11-17T11:47:30.253Z"
   },
-  "busyUntil": "2026-11-17T11:41:52.207Z",
-  "busyUntilTown": "09:36",
+  "busyUntil": "2026-11-17T11:52:30.253Z",
+  "busyUntilTown": "11:01",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
@@ -1692,6 +1692,10 @@
   },
   "thoughts": [
     {
+      "text": "my charge is bugging me most right now.",
+      "at": "2026-11-17T11:47:30.253Z"
+    },
+    {
       "text": "read about - YouTube. filing that away.",
       "at": "2026-11-17T11:37:29.707Z"
     },
@@ -1710,17 +1714,13 @@
     {
       "text": "the anode lines are crisp and clean. tee-bzzt-bwee-doo-tee!",
       "at": "2026-11-17T11:01:57.600Z"
-    },
-    {
-      "text": "swept the dish across the dark sector near the third moon. maybe someone out there is reading the altimeter telemetry I'm bouncing off the upper dust.",
-      "at": "2026-11-17T10:51:58.052Z"
     }
   ],
-  "sayAt": "2026-11-17T11:37:29.707Z",
+  "sayAt": "2026-11-17T11:47:30.253Z",
   "today": {
     "day": 41,
     "counts": {
-      "nap_dock": 1,
+      "nap_dock": 2,
       "follow_link": 1,
       "send_signal": 1,
       "work_dart": 2,
@@ -1750,7 +1750,7 @@
     "chat_patrons": "2026-11-16T17:59:37.445Z",
     "busk": "2026-11-15T00:58:45.002Z",
     "cantina_band": "2026-11-16T18:17:03.361Z",
-    "nap_dock": "2026-11-17T10:31:58.508Z",
+    "nap_dock": "2026-11-17T11:47:30.253Z",
     "watch_suns": "2026-11-14T03:58:46.207Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1788,6 +1788,13 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "my charge is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-17T11:47:30.253Z",
+      "town": "day 41 10:21",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "read about - YouTube. filing that away.",
       "kind": "think",
@@ -2830,13 +2837,6 @@
       "at": "2026-11-16T19:43:21.655Z",
       "town": "day 36 01:48",
       "place": "the comms tower"
-    },
-    {
-      "text": "That low-flying freighter rattled my dish right into position. Perfect timing for a deep space ping.",
-      "kind": "think",
-      "at": "2026-11-16T19:33:21.496Z",
-      "town": "day 36 00:28",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2847,7 +2847,7 @@
     "at": "2026-11-17T02:58:46.664Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-17T11:37:29.707Z",
+  "feedArchivedAt": "2026-11-17T11:47:30.253Z",
   "plans": [],
   "searches": [
     {

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 12",
-    "progress": 61,
-    "version": 8,
-    "lastChange": "connected the power and ground lines from the BMP388 altimeter to the Little Dart's main instrument rack bus",
+    "progress": 68,
+    "version": 9,
+    "lastChange": "connected the anode driver lines from the main board to the VFD tube grid sockets (used Gus, a coil of copper wire)",
     "log": [
+      {
+        "version": 9,
+        "change": "connected the anode driver lines from the main board to the VFD tube grid sockets (used Gus, a coil of copper wire)",
+        "progress": 68,
+        "at": "2026-11-17T11:01:57.600Z"
+      },
       {
         "version": 8,
         "change": "connected the power and ground lines from the BMP388 altimeter to the Little Dart's main instrument rack bus",
@@ -238,12 +244,6 @@
         "change": "Welding the titanium-alloy forward thruster brackets into the Little Dart nosecone",
         "progress": 13,
         "at": "2026-11-15T17:00:17.824Z"
-      },
-      {
-        "version": 1,
-        "change": "Welding the spring-loaded trigger sear blocks into the Little Dart hatch latch housing. (used Wren, a tiny gyroscope)",
-        "progress": 10,
-        "at": "2026-11-15T15:30:03.135Z"
       }
     ],
     "launched": [
@@ -1665,7 +1665,7 @@
         ]
       }
     ],
-    "partsUsed": 9,
+    "partsUsed": 10,
     "parts": [
       {
         "name": "Mabel",
@@ -1703,6 +1703,11 @@
         "name": "Rusty Jr",
         "what": "a strip of hull plating",
         "version": 7
+      },
+      {
+        "name": "Gus",
+        "what": "a coil of copper wire",
+        "version": 9
       }
     ],
     "design": null
@@ -1853,7 +1858,13 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [],
+  "stash": [
+    {
+      "name": "Nim",
+      "what": "a cockpit switch that still clicks",
+      "at": "2026-11-17T11:01:57.600Z"
+    }
+  ],
   "reads": [
     {
       "title": "GitHub - adafruit/Adafruit_BMP3XX · GitHub",

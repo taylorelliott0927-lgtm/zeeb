@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 13",
-    "progress": 7,
-    "version": 1,
-    "lastChange": "Adding a custom-bent scrap-metal gasket frame around the cockpit rim to provide a solid base for the future airtight sealant. (used Fen, a cracked navigation chip)",
+    "progress": 15,
+    "version": 2,
+    "lastChange": "Adding a structural support strut made from 'Brakk' and 'Tok' to the main fuselage to increase the Little Dart's overall integrity. (used Dibs, a dented fuel cell)",
     "log": [
+      {
+        "version": 2,
+        "change": "Adding a structural support strut made from 'Brakk' and 'Tok' to the main fuselage to increase the Little Dart's overall integrity. (used Dibs, a dented fuel cell)",
+        "progress": 15,
+        "at": "2026-11-17T19:10:17.330Z"
+      },
       {
         "version": 1,
         "change": "Adding a custom-bent scrap-metal gasket frame around the cockpit rim to provide a solid base for the future airtight sealant. (used Fen, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "Routing the star-tracker sensor wires along the interior spine of the hull, securing them away from the engine heat. (used Brakk, a tiny gyroscope)",
         "progress": 60,
         "at": "2026-11-15T23:04:08.760Z"
-      },
-      {
-        "version": 7,
-        "change": "Welding the main aft engine brace into place using Gus the landing strut for rigid alignment (used Nim, a cracked navigation chip)",
-        "progress": 53,
-        "at": "2026-11-15T23:03:45.513Z"
       }
     ],
     "launched": [
@@ -1734,12 +1734,18 @@
         ]
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Fen",
         "what": "a cracked navigation chip",
         "version": 1
+      },
+      {
+        "name": "Dibs",
+        "what": "a dented fuel cell",
+        "good": true,
+        "version": 2
       }
     ],
     "design": null
@@ -1962,12 +1968,6 @@
       "name": "Nim",
       "what": "a coil of copper wire",
       "at": "2026-11-17T12:33:38.856Z",
-      "good": true
-    },
-    {
-      "name": "Dibs",
-      "what": "a dented fuel cell",
-      "at": "2026-11-17T12:17:29.361Z",
       "good": true
     }
   ],

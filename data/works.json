@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 13",
-    "progress": 32,
-    "version": 4,
-    "lastChange": "installing the 'Gus' navigation chip (the cracked one, carefully re-soldered) onto the instrument rack with a steady hand. (used Lorna, a cockpit switch that still clicks)",
+    "progress": 39,
+    "version": 5,
+    "lastChange": "Carefully connecting the navigation chip to the flight computer and sealing the wire harness with heat-shrink tubing. (used Gus, a cracked navigation chip)",
     "log": [
+      {
+        "version": 5,
+        "change": "Carefully connecting the navigation chip to the flight computer and sealing the wire harness with heat-shrink tubing. (used Gus, a cracked navigation chip)",
+        "progress": 39,
+        "at": "2026-11-17T20:50:00.920Z"
+      },
       {
         "version": 4,
         "change": "installing the 'Gus' navigation chip (the cracked one, carefully re-soldered) onto the instrument rack with a steady hand. (used Lorna, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "Welding custom landing strut Gus into place beneath the main fuel tank, reinforcing each joint with extra solder. (used Wren, a dented fuel cell)",
         "progress": 88,
         "at": "2026-11-16T00:44:29.071Z"
-      },
-      {
-        "version": 10,
-        "change": "Routing the star-tracker navigation data lines directly into the main compass board, securing each tiny solder point with care. (used Rusty Jr, half a thruster nozzle)",
-        "progress": 80,
-        "at": "2026-11-15T23:24:09.210Z"
       }
     ],
     "launched": [
@@ -1734,7 +1734,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Fen",
@@ -1757,6 +1757,11 @@
         "name": "Lorna",
         "what": "a cockpit switch that still clicks",
         "version": 4
+      },
+      {
+        "name": "Gus",
+        "what": "a cracked navigation chip",
+        "version": 5
       }
     ],
     "design": null
@@ -1964,11 +1969,6 @@
       "name": "Otto",
       "what": "a tiny gyroscope",
       "at": "2026-11-17T13:13:38.366Z"
-    },
-    {
-      "name": "Gus",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-17T13:03:39.080Z"
     }
   ],
   "reads": [

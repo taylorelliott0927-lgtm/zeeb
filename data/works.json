@@ -1783,9 +1783,15 @@
   ],
   "stash": [
     {
+      "name": "Mabel",
+      "what": "high-grade titanium washer",
+      "at": "2026-11-17T00:56:35.133Z",
+      "custom": "rmwjzf519"
+    },
+    {
       "name": "Tok",
-      "what": "a mystery box that hums",
-      "at": "2026-11-16T23:46:12.066Z"
+      "what": "a bent stabiliser fin",
+      "at": "2026-11-17T00:56:35.133Z"
     },
     {
       "name": "Rusty Jr",
@@ -21408,8 +21414,49 @@
     }
   ],
   "crafting": {
-    "recipes": [],
+    "recipes": [
+      {
+        "id": "rmwjzf519",
+        "what": "high-grade titanium washer",
+        "how": "i'll trim the hull plating into a ring and use the hum from the mystery box to heat-treat it until it's hardened. then i'll polish it with a scrap file until it shines like a star.",
+        "uses": "securing barnaby's engine mount",
+        "look": [
+          {
+            "shape": "cylinder",
+            "turn": "up",
+            "w": 0.1,
+            "h": 0.02,
+            "d": 0.1,
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "color": "#C0C0C0",
+            "glow": 0
+          },
+          {
+            "shape": "cylinder",
+            "turn": "up",
+            "w": 0.04,
+            "h": 0.02,
+            "d": 0.04,
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "color": "#222222",
+            "glow": 0
+          }
+        ],
+        "firstMade": "2026-11-17T00:56:35.133Z",
+        "day": 37,
+        "made": 1
+      }
+    ],
     "attempts": [
+      {
+        "what": "high-grade titanium washer",
+        "result": "worked",
+        "at": "2026-11-17T00:56:35.133Z"
+      },
       {
         "what": "titanium-grade engine mount washer",
         "how": "i will melt down the tiny gyroscope and the cracked navigation chip to fuse them into a high-density alloy disk, then bore a precision hole through the center. the mystery box hums with just the right frequency to vibrate the metal into a p",

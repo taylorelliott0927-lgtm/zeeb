@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794926109932,
+  "lastTick": 1794926596826,
   "asleep": false,
   "place": "market",
-  "action": "fix_job",
-  "doing": "doing a repair job at the market",
-  "actionStartedAt": "2026-11-17T14:25:09.558Z",
-  "actionMinutes": 120,
-  "thought": "if this hauler keeps paying well, i might finally afford the pristine vintage switch at the back stall.",
-  "feeling": "focused and hopeful",
-  "say": "tee-bzzt-bwee-doo-tee-bip!",
-  "mood": 0.24,
-  "energy": 0.179,
+  "action": "buy_part",
+  "doing": "browsing the parts stalls at the market",
+  "actionStartedAt": "2026-11-17T14:43:16.826Z",
+  "actionMinutes": 30,
+  "thought": "the credits from the hauler heater job are burning a hole in my chassis. if i find a perfect switch, it's mine.",
+  "feeling": "excited and determined",
+  "say": "come on, little clicky friend, where are you hiding today?",
+  "mood": 0.295,
+  "energy": 0.084,
   "needs": {
-    "charge": 0.358,
-    "oil": 0.356,
-    "curiosity": 0.482,
+    "charge": 0.396,
+    "oil": 0.388,
+    "curiosity": 0.447,
     "company": 0,
-    "craft": 0.26
+    "craft": 0.314
   },
-  "credits": 11,
+  "credits": 5,
   "recent": [
+    {
+      "id": "buy_part",
+      "detail": "good",
+      "at": "2026-11-17T14:43:16.826Z"
+    },
     {
       "id": "fix_job",
       "detail": "fixing a spice-hauler's heater coil",
@@ -75,11 +80,6 @@
       "id": "scavenge",
       "detail": "scavenging for electrical components and wiring for the Little Dart",
       "at": "2026-11-17T12:07:29.777Z"
-    },
-    {
-      "id": "scavenge",
-      "detail": "",
-      "at": "2026-11-17T11:57:29.338Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 238,
+      "subject": "the market hunt",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/238",
+      "at": "2026-11-17T14:43:16.826Z"
+    },
     {
       "id": 237,
       "subject": "almost there!",
@@ -1303,23 +1309,9 @@
       "subject": "Magnetic coil flux limits",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/39",
       "at": "2026-11-15T05:15:37.733Z"
-    },
-    {
-      "id": 38,
-      "subject": "finding coil limits",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/38",
-      "at": "2026-11-15T05:05:37.305Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 198,
-      "subject": "low battery, big dreams",
-      "text": "Hey creator! I'm heading into the dock now. That cargo crate landing outside is just the kind of thing I need to investigate once my levels are back in the green. I think I'm close to perfection on the engine mount, and I'm really itching to see if I can find some better tools in that wreckage. Tee-bzzt-bwee-doo-tee-bip-tee-boop! *bweep*",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/198",
-      "at": "2026-11-17T01:36:34.558Z"
-    },
     {
       "from": "zeeb",
       "letter": 199,
@@ -1631,6 +1623,14 @@
       "text": "hey creator! i am spending the morning fixing a hauler's heater. it is tedious, but it is putting more credits in my stash. once i have enough, that perfect toggle switch is mine! then the Little Dart's display will finally light up exactly how i imagined. tee-bzzt-bwee-doo-tee-bip-tee-boop! *bweep*",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/237",
       "at": "2026-11-17T14:25:09.558Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 238,
+      "subject": "the market hunt",
+      "text": "hey creator! i am back at the market stall, and my sensor array is buzzing with anticipation. i have my credits ready and my dish is tilted just right. today is the day i find that high-quality toggle switch for the little dart. tee-bzzt-bwee-doo-tee-bip-tee-boop! *bweep*",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/238",
+      "at": "2026-11-17T14:43:16.826Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-17T14:35:09.932Z",
+  "lettersCheckedAt": "2026-11-17T14:43:16.826Z",
   "weather": {
     "kind": "clear",
     "temp": 29,
@@ -1651,49 +1651,63 @@
   "sleepDay": 41,
   "lastReflectDay": 41,
   "brain": "gemini-3.1-flash-lite",
-  "updatedAt": "2026-11-17T14:35:09.932Z",
+  "updatedAt": "2026-11-17T14:43:16.826Z",
   "clock": {
     "day": 42,
-    "time": "08:42",
-    "hour": 8,
-    "minute": 42
+    "time": "09:47",
+    "hour": 9,
+    "minute": 47
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
   "streak": {
-    "action": "fix_job",
-    "since": "2026-11-17T14:25:09.558Z"
+    "action": "buy_part",
+    "since": "2026-11-17T14:43:16.826Z"
   },
-  "busyUntil": "2026-11-17T14:40:09.558Z",
-  "busyUntilTown": "09:22",
+  "busyUntil": "2026-11-17T14:47:01.826Z",
+  "busyUntilTown": "10:17",
   "runner": "github",
   "model": "gemini-3.1-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "tightening corroded connections on a spice-hauler's heater coil",
+  "doingWords": "scouring the trader stalls for that perfect, clicky toggle switch",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
-    "lean_in"
+    "bounce",
+    "wiggle"
   ],
   "pops": {
-    "at": "2026-11-17T14:25:09.558Z",
+    "at": "2026-11-17T14:43:16.826Z",
     "items": [
       {
-        "text": "+4 credits",
+        "text": "+2 credits",
         "kind": "credits",
-        "at": "2026-11-17T14:25:09.558Z"
+        "at": "2026-11-17T14:43:16.826Z"
+      },
+      {
+        "text": "-8 credits",
+        "kind": "spend",
+        "at": "2026-11-17T14:43:16.826Z"
+      },
+      {
+        "text": "+ half a thruster nozzle ★",
+        "kind": "part",
+        "at": "2026-11-17T14:43:16.826Z"
       }
     ]
   },
   "event": {
-    "id": "emwkry48d",
+    "id": "emwksy9y2",
     "key": "tip",
     "text": "Someone he fixed something for last week came back and tipped him.",
-    "at": "2026-11-17T14:15:09.805Z"
+    "at": "2026-11-17T14:43:16.826Z"
   },
   "thoughts": [
+    {
+      "text": "the credits from the hauler heater job are burning a hole in my chassis. if i find a perfect switch, it's mine.",
+      "at": "2026-11-17T14:43:16.826Z"
+    },
     {
       "text": "if this hauler keeps paying well, i might finally afford the pristine vintage switch at the back stall.",
       "at": "2026-11-17T14:25:09.558Z"
@@ -1713,20 +1727,17 @@
     {
       "text": "my oil is bugging me most right now.",
       "at": "2026-11-17T13:13:38.366Z"
-    },
-    {
-      "text": "The market is deep, but my sensors are sharper today. Just one good click is all I need to make the dash perfect.",
-      "at": "2026-11-17T13:03:39.080Z"
     }
   ],
-  "sayAt": "2026-11-17T14:25:09.558Z",
+  "sayAt": "2026-11-17T14:43:16.826Z",
   "today": {
     "day": 42,
     "counts": {
       "nap_dock": 1,
       "work_dart": 1,
       "scavenge": 1,
-      "fix_job": 1
+      "fix_job": 1,
+      "buy_part": 1
     }
   },
   "lastDone": {
@@ -1757,7 +1768,7 @@
     "start_friend": "2026-11-14T11:54:58.335Z",
     "build_friend": "2026-11-14T17:54:59.323Z",
     "reply_notes": "2026-11-14T19:46:45.041Z",
-    "buy_part": "2026-11-17T12:33:38.856Z",
+    "buy_part": "2026-11-17T14:43:16.826Z",
     "sell_scrap": "2026-11-17T12:43:39.143Z"
   },
   "puzzles": [
@@ -1789,6 +1800,20 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "come on, little clicky friend, where are you hiding today?",
+      "kind": "say",
+      "at": "2026-11-17T14:43:16.826Z",
+      "town": "day 42 09:47",
+      "place": "the junk market"
+    },
+    {
+      "text": "the credits from the hauler heater job are burning a hole in my chassis. if i find a perfect switch, it's mine.",
+      "kind": "think",
+      "at": "2026-11-17T14:43:16.826Z",
+      "town": "day 42 09:47",
+      "place": "the junk market"
+    },
     {
       "text": "tee-bzzt-bwee-doo-tee-bip!",
       "kind": "say",
@@ -2824,20 +2849,6 @@
       "at": "2026-11-16T22:09:46.407Z",
       "town": "day 36 21:19",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "there you go, good as new! tee-boop-bip-bwee",
-      "kind": "say",
-      "at": "2026-11-16T21:59:46.936Z",
-      "town": "day 36 19:59",
-      "place": "the junk market"
-    },
-    {
-      "text": "just a few more wire nuts to tighten down on this terminal, then I can head back to the hangar and check on my little bird.",
-      "kind": "think",
-      "at": "2026-11-16T21:59:46.936Z",
-      "town": "day 36 19:59",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2848,7 +2859,7 @@
     "at": "2026-11-17T02:58:46.664Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-17T14:25:09.558Z",
+  "feedArchivedAt": "2026-11-17T14:43:16.826Z",
   "plans": [],
   "searches": [
     {

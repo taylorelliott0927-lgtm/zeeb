@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794908141333,
+  "lastTick": 1794908741403,
   "asleep": false,
-  "place": "tower",
-  "action": "follow_link",
-  "doing": "following a link across the Wire",
-  "actionStartedAt": "2026-11-17T09:35:41.333Z",
-  "actionMinutes": 30,
-  "thought": "read about In-Depth: Interfacing BMP388 Pressure Sensor (Altimeter) with Arduino. filing that away.",
-  "feeling": "curious",
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-17T09:45:41.403Z",
+  "actionMinutes": 20,
+  "thought": "my oil is bugging me most right now.",
+  "feeling": "pretty good actually",
   "say": "",
-  "mood": 0.336,
-  "energy": 0.52,
+  "mood": 0.332,
+  "energy": 0.586,
   "needs": {
-    "charge": 0.047,
-    "oil": 0.308,
-    "curiosity": 0.056,
-    "company": 0.143,
-    "craft": 0.18
+    "charge": 0.094,
+    "oil": 0,
+    "curiosity": 0.136,
+    "company": 0.196,
+    "craft": 0.247
   },
-  "credits": 13,
+  "credits": 12,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-17T09:45:41.403Z"
+    },
     {
       "id": "follow_link",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "running the anode lines from the multi-digit VFD panel to the driver ICs on the ",
       "at": "2026-11-17T07:20:17.984Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "soldering the negative bias rail and anode driver ICs for the multi-digit VFD pa",
-      "at": "2026-11-17T07:10:17.468Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-17T09:35:41.333Z",
+  "lettersCheckedAt": "2026-11-17T09:45:41.403Z",
   "weather": {
     "kind": "clear",
     "temp": 23,
@@ -1651,21 +1651,21 @@
   "sleepDay": 39,
   "lastReflectDay": 39,
   "brain": "rules",
-  "updatedAt": "2026-11-17T09:35:41.333Z",
+  "updatedAt": "2026-11-17T09:45:41.403Z",
   "clock": {
     "day": 40,
-    "time": "16:46",
-    "hour": 16,
-    "minute": 46
+    "time": "18:06",
+    "hour": 18,
+    "minute": 6
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "follow_link",
-    "since": "2026-11-17T09:35:41.333Z"
+    "action": "drink_oil",
+    "since": "2026-11-17T09:45:41.403Z"
   },
-  "busyUntil": "2026-11-17T09:39:26.333Z",
-  "busyUntilTown": "17:16",
+  "busyUntil": "2026-11-17T09:48:11.403Z",
+  "busyUntilTown": "18:26",
   "runner": "github",
   "model": "gemini-3.8-flash",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
@@ -1675,12 +1675,12 @@
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [],
   "pops": {
-    "at": "2026-11-17T09:08:45.441Z",
+    "at": "2026-11-17T09:45:41.403Z",
     "items": [
       {
-        "text": "+3 credits",
-        "kind": "credits",
-        "at": "2026-11-17T09:08:45.441Z"
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-17T09:45:41.403Z"
       }
     ]
   },
@@ -1691,6 +1691,10 @@
     "at": "2026-11-17T07:30:17.384Z"
   },
   "thoughts": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "at": "2026-11-17T09:45:41.403Z"
+    },
     {
       "text": "read about In-Depth: Interfacing BMP388 Pressure Sensor (Altimeter) with Arduino. filing that away.",
       "at": "2026-11-17T09:35:41.333Z"
@@ -1710,19 +1714,15 @@
     {
       "text": "If the suns wash out the readouts, I won't even know what altitude the Dart is pulling. Rusty Jr makes a prime instrument visor. *bweep*",
       "at": "2026-11-17T08:48:45.373Z"
-    },
-    {
-      "text": "A proper pilot can't just guess altitude by how small the dunes look. If I wire one of these into the console, the Little Dart will know the exact second we punch through Kessa-9's dust layer. *bweep*",
-      "at": "2026-11-17T08:38:45.443Z"
     }
   ],
-  "sayAt": "2026-11-17T09:35:41.333Z",
+  "sayAt": "2026-11-17T09:45:41.403Z",
   "today": {
     "day": 40,
     "counts": {
       "compose_tune": 2,
       "go_to_sleep": 1,
-      "drink_oil": 1,
+      "drink_oil": 2,
       "follow_link": 2,
       "browse_wire": 1,
       "work_dart": 1,
@@ -1733,7 +1733,7 @@
   "lastDone": {
     "work_dart": "2026-11-17T08:48:45.373Z",
     "read_news": "2026-11-17T02:14:50.104Z",
-    "drink_oil": "2026-11-17T08:18:46.348Z",
+    "drink_oil": "2026-11-17T09:45:41.403Z",
     "follow_link": "2026-11-17T09:35:41.333Z",
     "scavenge": "2026-11-17T03:28:46.854Z",
     "fix_job": "2026-11-17T09:08:45.441Z",
@@ -1793,6 +1793,13 @@
     "at": "2026-11-17T08:38:45.443Z"
   },
   "said": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-17T09:45:41.403Z",
+      "town": "day 40 18:06",
+      "place": "the fuel depot"
+    },
     {
       "text": "read about In-Depth: Interfacing BMP388 Pressure Sensor (Altimeter) with Arduino. filing that away.",
       "kind": "think",
@@ -2835,13 +2842,6 @@
       "at": "2026-11-16T17:49:37.438Z",
       "town": "day 35 10:38",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "just a few more inches of copper wire and the attitude control will be solid. tee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee",
-      "kind": "think",
-      "at": "2026-11-16T17:49:37.438Z",
-      "town": "day 35 10:38",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2852,7 +2852,7 @@
     "at": "2026-11-17T02:58:46.664Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-17T09:35:41.333Z",
+  "feedArchivedAt": "2026-11-17T09:45:41.403Z",
   "plans": [],
   "searches": [
     {

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794892233236,
+  "lastTick": 1794892832362,
   "asleep": false,
-  "place": "tower",
-  "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-17T05:10:33.236Z",
-  "actionMinutes": 45,
-  "thought": "Vacuum fluorescent tubes give off that proper amber glow when you boot them up. Might wire one into the dashboard of the Little Dart once I clear enough space on the frame.",
-  "feeling": "inspired and slightly rusty",
-  "say": "tee-bzzt-bwee-doo-tee!",
-  "mood": 0.237,
-  "energy": 0.36,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-17T05:20:32.362Z",
+  "actionMinutes": 20,
+  "thought": "my oil is bugging me most right now.",
+  "feeling": "okay, ticking along",
+  "say": "",
+  "mood": 0.216,
+  "energy": 0.426,
   "needs": {
-    "charge": 0.144,
-    "oil": 0.478,
-    "curiosity": 0.327,
-    "company": 0.316,
-    "craft": 0.116
+    "charge": 0.191,
+    "oil": 0,
+    "curiosity": 0.407,
+    "company": 0.369,
+    "craft": 0.183
   },
-  "credits": 14,
+  "credits": 13,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-17T05:20:32.362Z"
+    },
     {
       "id": "browse_wire",
       "detail": "how to build a long-range communication relay from scrap",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "finalizing the installation of the titanium washer and reinforcement shim onto t",
       "at": "2026-11-17T02:24:50.036Z"
-    },
-    {
-      "id": "read_news",
-      "detail": "1",
-      "at": "2026-11-17T02:14:50.104Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-17T05:10:33.236Z",
+  "lettersCheckedAt": "2026-11-17T05:20:32.362Z",
   "weather": {
     "kind": "clear",
     "temp": 19,
@@ -1650,40 +1650,37 @@
   },
   "sleepDay": 38,
   "lastReflectDay": 38,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-17T05:10:33.236Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-17T05:20:32.362Z",
   "clock": {
     "day": 39,
-    "time": "05:25",
-    "hour": 5,
-    "minute": 25
+    "time": "06:45",
+    "hour": 6,
+    "minute": 45
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-17T05:10:33.236Z"
+    "action": "drink_oil",
+    "since": "2026-11-17T05:20:32.362Z"
   },
-  "busyUntil": "2026-11-17T05:16:10.736Z",
-  "busyUntilTown": "06:10",
+  "busyUntil": "2026-11-17T05:23:02.362Z",
+  "busyUntilTown": "07:05",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "tapping the brass dish against the tower railing and scanning tech feeds",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "wiggle",
-    "nod"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-17T03:49:39.966Z",
+    "at": "2026-11-17T05:20:32.362Z",
     "items": [
       {
-        "text": "+3 credits",
-        "kind": "credits",
-        "at": "2026-11-17T03:49:39.966Z"
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-17T05:20:32.362Z"
       }
     ]
   },
@@ -1694,6 +1691,10 @@
     "at": "2026-11-17T05:10:33.236Z"
   },
   "thoughts": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "at": "2026-11-17T05:20:32.362Z"
+    },
     {
       "text": "Vacuum fluorescent tubes give off that proper amber glow when you boot them up. Might wire one into the dashboard of the Little Dart once I clear enough space on the frame.",
       "at": "2026-11-17T05:10:33.236Z"
@@ -1713,24 +1714,21 @@
     {
       "text": "i wonder if gus the bolt will mind keeping watch over the landing gear while i recharge my batteries.",
       "at": "2026-11-17T04:09:41.382Z"
-    },
-    {
-      "text": "The converter bypass held up fine and put some credits in my hopper, but my servos are dragging. Time to plug in, chill my core, and dream in star charts.",
-      "at": "2026-11-17T03:59:40.383Z"
     }
   ],
-  "sayAt": "2026-11-17T05:10:33.236Z",
+  "sayAt": "2026-11-17T05:20:32.362Z",
   "today": {
     "day": 39,
     "counts": {
       "work_dart": 1,
-      "browse_wire": 1
+      "browse_wire": 1,
+      "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-17T05:00:32.450Z",
     "read_news": "2026-11-17T02:14:50.104Z",
-    "drink_oil": "2026-11-17T03:18:46.576Z",
+    "drink_oil": "2026-11-17T05:20:32.362Z",
     "follow_link": "2026-11-17T02:04:49.293Z",
     "scavenge": "2026-11-17T03:28:46.854Z",
     "fix_job": "2026-11-17T03:49:39.966Z",
@@ -1790,6 +1788,13 @@
     "at": "2026-11-17T05:10:33.236Z"
   },
   "said": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-17T05:20:32.362Z",
+      "town": "day 39 06:45",
+      "place": "the fuel depot"
+    },
     {
       "text": "tee-bzzt-bwee-doo-tee!",
       "kind": "say",
@@ -2832,13 +2837,6 @@
       "at": "2026-11-16T11:28:45.161Z",
       "town": "day 33 07:51",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "battery is dragging down my treads so time to hook up and power down for a bit *bweep*",
-      "kind": "think",
-      "at": "2026-11-16T11:28:45.161Z",
-      "town": "day 33 07:51",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2849,7 +2847,7 @@
     "at": "2026-11-17T02:58:46.664Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-17T05:10:33.236Z",
+  "feedArchivedAt": "2026-11-17T05:20:32.362Z",
   "plans": [],
   "searches": [
     {

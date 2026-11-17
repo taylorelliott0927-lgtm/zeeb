@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 13",
-    "progress": 25,
-    "version": 3,
-    "lastChange": "Adding a layer of repurposed heat shielding around the cockpit seam to prep for the final seal. I am using a steady hand to make sure the bond is strong enough for deep space. (used Nim, a coil of copper wire)",
+    "progress": 32,
+    "version": 4,
+    "lastChange": "installing the 'Gus' navigation chip (the cracked one, carefully re-soldered) onto the instrument rack with a steady hand. (used Lorna, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 4,
+        "change": "installing the 'Gus' navigation chip (the cracked one, carefully re-soldered) onto the instrument rack with a steady hand. (used Lorna, a cockpit switch that still clicks)",
+        "progress": 32,
+        "at": "2026-11-17T20:39:46.803Z"
+      },
       {
         "version": 3,
         "change": "Adding a layer of repurposed heat shielding around the cockpit seam to prep for the final seal. I am using a steady hand to make sure the bond is strong enough for deep space. (used Nim, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "Routing the star-tracker navigation data lines directly into the main compass board, securing each tiny solder point with care. (used Rusty Jr, half a thruster nozzle)",
         "progress": 80,
         "at": "2026-11-15T23:24:09.210Z"
-      },
-      {
-        "version": 9,
-        "change": "Wrapping the aft engine brace in a snug layer of flexible thermal mesh, securing the edges with tiny copper clips so the heat stays where it belongs. (used Mabel, a sensor eye with one crack)",
-        "progress": 70,
-        "at": "2026-11-15T23:14:09.031Z"
       }
     ],
     "launched": [
@@ -1734,7 +1734,7 @@
         ]
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Fen",
@@ -1752,6 +1752,11 @@
         "what": "a coil of copper wire",
         "good": true,
         "version": 3
+      },
+      {
+        "name": "Lorna",
+        "what": "a cockpit switch that still clicks",
+        "version": 4
       }
     ],
     "design": null
@@ -1964,11 +1969,6 @@
       "name": "Gus",
       "what": "a cracked navigation chip",
       "at": "2026-11-17T13:03:39.080Z"
-    },
-    {
-      "name": "Lorna",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-17T12:53:38.819Z"
     }
   ],
   "reads": [

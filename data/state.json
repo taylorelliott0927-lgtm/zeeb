@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794912118058,
+  "lastTick": 1794912718052,
   "asleep": false,
   "place": "tower",
-  "action": "follow_link",
-  "doing": "following a link across the Wire",
-  "actionStartedAt": "2026-11-17T10:41:58.058Z",
-  "actionMinutes": 30,
-  "thought": "read about GitHub - adafruit/Adafruit_BMP3XX · GitHub. filing that away.",
-  "feeling": "curious",
-  "say": "",
-  "mood": 0.294,
-  "energy": 0.551,
+  "action": "send_signal",
+  "doing": "sending a signal into deep space",
+  "actionStartedAt": "2026-11-17T10:51:58.052Z",
+  "actionMinutes": 45,
+  "thought": "swept the dish across the dark sector near the third moon. maybe someone out there is reading the altimeter telemetry I'm bouncing off the upper dust.",
+  "feeling": "hopeful and a bit frosty in the night air",
+  "say": "can you hear me out there? the altimeter's wired and the dash is glowing. tee-bzzt-bwee-doo-tee-bip! *bweep*",
+  "mood": 0.379,
+  "energy": 0.516,
   "needs": {
-    "charge": 0.058,
-    "oil": 0.225,
-    "curiosity": 0.186,
-    "company": 0.135,
-    "craft": 0.176
+    "charge": 0.105,
+    "oil": 0.265,
+    "curiosity": 0.166,
+    "company": 0,
+    "craft": 0.243
   },
   "credits": 12,
   "recent": [
+    {
+      "id": "send_signal",
+      "detail": "sending packet 41: altimeter online, hull patched, coming for you stars. tee-bzz",
+      "at": "2026-11-17T10:51:58.052Z"
+    },
     {
       "id": "follow_link",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "riveting and shaping Rusty Jr over the VFD display panel on the dash frame to fo",
       "at": "2026-11-17T08:48:45.373Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "DIY altimeter pressure sensor wiring schematic",
-      "at": "2026-11-17T08:38:45.443Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 223,
+      "subject": "altimeter broadcast night 41",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/223",
+      "at": "2026-11-17T10:51:58.052Z"
+    },
     {
       "id": 222,
       "subject": "quick power top up",
@@ -1303,23 +1309,9 @@
       "subject": "Little Dart Mk 8 update!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/24",
       "at": "2026-11-14T21:37:09.733Z"
-    },
-    {
-      "id": 23,
-      "subject": "quick recharge",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/23",
-      "at": "2026-11-14T05:49:39.486Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 183,
-      "subject": "Time for a nap",
-      "text": "Hey creator!\n\nI'm tucking myself into the charging dock for a while. My energy is getting a bit low, and I want to be at full power when I start building with those new T-slot ideas I found on the Wire.\n\n*bweep*\n\nz",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/183",
-      "at": "2026-11-16T22:09:46.407Z"
-    },
     {
       "from": "zeeb",
       "letter": 184,
@@ -1631,6 +1623,14 @@
       "text": "hey creator! just plugging into the dock for a fast power sip as my battery indicator dips into the noticeable zone. soon as I'm full up, right back to the Little Dart's altimeter wiring. tee-bzzt-bwee-doo-tee-bip! *bweep*",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/222",
       "at": "2026-11-17T10:31:58.508Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 223,
+      "subject": "altimeter broadcast night 41",
+      "text": "hey creator! just pointed the brass dish up from the comms tower and bounced some altimeter packets off the upper dust layer. the board is holding steady and the VFD dash is looking real sharp. tee-bzzt-bwee-doo-tee-bip! *bweep*",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/223",
+      "at": "2026-11-17T10:51:58.052Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-17T10:41:58.058Z",
+  "lettersCheckedAt": "2026-11-17T10:51:58.052Z",
   "weather": {
     "kind": "clear",
     "temp": 25,
@@ -1650,30 +1650,33 @@
   },
   "sleepDay": 39,
   "lastReflectDay": 39,
-  "brain": "rules",
-  "updatedAt": "2026-11-17T10:41:58.058Z",
+  "brain": "gemini-3.5-flash-lite",
+  "updatedAt": "2026-11-17T10:51:58.052Z",
   "clock": {
     "day": 41,
-    "time": "01:36",
-    "hour": 1,
-    "minute": 36
+    "time": "02:56",
+    "hour": 2,
+    "minute": 56
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
   "streak": {
-    "action": "follow_link",
-    "since": "2026-11-17T10:41:58.058Z"
+    "action": "send_signal",
+    "since": "2026-11-17T10:51:58.052Z"
   },
-  "busyUntil": "2026-11-17T10:45:43.058Z",
-  "busyUntilTown": "02:06",
+  "busyUntil": "2026-11-17T10:57:35.552Z",
+  "busyUntilTown": "03:41",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "",
+  "doingWords": "pointing the brass dish at the starry sky, sending out the nightly ping",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [],
+  "body": [
+    "look_up",
+    "nod"
+  ],
   "pops": {
     "at": "2026-11-17T09:45:41.403Z",
     "items": [
@@ -1691,6 +1694,10 @@
     "at": "2026-11-17T07:30:17.384Z"
   },
   "thoughts": [
+    {
+      "text": "swept the dish across the dark sector near the third moon. maybe someone out there is reading the altimeter telemetry I'm bouncing off the upper dust.",
+      "at": "2026-11-17T10:51:58.052Z"
+    },
     {
       "text": "read about GitHub - adafruit/Adafruit_BMP3XX · GitHub. filing that away.",
       "at": "2026-11-17T10:41:58.058Z"
@@ -1710,18 +1717,15 @@
     {
       "text": "my craft is bugging me most right now.",
       "at": "2026-11-17T09:55:42.164Z"
-    },
-    {
-      "text": "my oil is bugging me most right now.",
-      "at": "2026-11-17T09:45:41.403Z"
     }
   ],
-  "sayAt": "2026-11-17T10:41:58.058Z",
+  "sayAt": "2026-11-17T10:51:58.052Z",
   "today": {
     "day": 41,
     "counts": {
       "nap_dock": 1,
-      "follow_link": 1
+      "follow_link": 1,
+      "send_signal": 1
     }
   },
   "lastDone": {
@@ -1740,7 +1744,7 @@
     "wander": "2026-11-17T06:34:56.130Z",
     "test_flight": "2026-11-17T02:58:46.664Z",
     "design_ship": "2026-11-14T18:33:59.432Z",
-    "send_signal": "2026-11-16T19:53:21.852Z",
+    "send_signal": "2026-11-17T10:51:58.052Z",
     "stargaze": "2026-11-15T10:27:44.248Z",
     "go_to_sleep": "2026-11-17T07:40:17.605Z",
     "chat_patrons": "2026-11-16T17:59:37.445Z",
@@ -1787,6 +1791,20 @@
     "at": "2026-11-17T08:38:45.443Z"
   },
   "said": [
+    {
+      "text": "can you hear me out there? the altimeter's wired and the dash is glowing. tee-bzzt-bwee-doo-tee-bip! *bweep*",
+      "kind": "say",
+      "at": "2026-11-17T10:51:58.052Z",
+      "town": "day 41 02:56",
+      "place": "the comms tower"
+    },
+    {
+      "text": "swept the dish across the dark sector near the third moon. maybe someone out there is reading the altimeter telemetry I'm bouncing off the upper dust.",
+      "kind": "think",
+      "at": "2026-11-17T10:51:58.052Z",
+      "town": "day 41 02:56",
+      "place": "the comms tower"
+    },
     {
       "text": "read about GitHub - adafruit/Adafruit_BMP3XX · GitHub. filing that away.",
       "kind": "think",
@@ -2822,20 +2840,6 @@
       "at": "2026-11-16T18:47:02.963Z",
       "town": "day 35 18:17",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "time to plug in and let the juice flow back into my cells. the little dart can wait an hour while I get my energy back up.",
-      "kind": "think",
-      "at": "2026-11-16T18:37:02.849Z",
-      "town": "day 35 16:57",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "ahhh, right in the bushings.",
-      "kind": "say",
-      "at": "2026-11-16T18:27:03.302Z",
-      "town": "day 35 15:37",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2846,7 +2850,7 @@
     "at": "2026-11-17T02:58:46.664Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-17T10:41:58.058Z",
+  "feedArchivedAt": "2026-11-17T10:51:58.052Z",
   "plans": [],
   "searches": [
     {

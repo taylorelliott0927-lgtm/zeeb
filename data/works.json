@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 11",
-    "progress": 96,
-    "version": 18,
-    "lastChange": "installing the high-grade titanium shim I crafted earlier to reinforce the Little Dart's engine mount, aligning it with the main frame with extreme care. (used Rusty Jr, a little landing strut)",
+    "name": "the Little Dart Mk 12",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 19,
+        "change": "finalizing the installation of the titanium washer and reinforcement shim onto the engine mount, checking for stress-cracks. (used Tok, a bent stabiliser fin)",
+        "progress": 100,
+        "at": "2026-11-17T02:24:50.036Z"
+      },
       {
         "version": 18,
         "change": "installing the high-grade titanium shim I crafted earlier to reinforce the Little Dart's engine mount, aligning it with the main frame with extreme care. (used Rusty Jr, a little landing strut)",
@@ -238,12 +244,6 @@
         "change": "Welding the port-side wing bracket to the Little Dart fuselage using Rusty Jr (used Rusty Jr, a tiny gyroscope)",
         "progress": 66,
         "at": "2026-11-15T09:16:56.154Z"
-      },
-      {
-        "version": 10,
-        "change": "Welding the starboard stabilizer fin to the Little Dart fuselage using gus-four (used Brakk, a bent fin) (used Tilly, a tiny gyroscope)",
-        "progress": 56,
-        "at": "2026-11-15T09:06:55.792Z"
       }
     ],
     "launched": [
@@ -1606,56 +1606,67 @@
             "version": 13
           }
         ]
+      },
+      {
+        "name": "the Little Dart Mk 11",
+        "day": 38,
+        "partsUsed": 10,
+        "parts": [
+          {
+            "name": "Brakk",
+            "what": "a mystery box that hums",
+            "version": 1
+          },
+          {
+            "name": "Gus",
+            "what": "a little landing strut",
+            "version": 2
+          },
+          {
+            "name": "Tok",
+            "what": "a cockpit switch that still clicks",
+            "version": 6
+          },
+          {
+            "name": "Wren",
+            "what": "a scorched heat tile",
+            "version": 7
+          },
+          {
+            "name": "Captain",
+            "what": "a perfectly good bolt",
+            "version": 9
+          },
+          {
+            "name": "Mabel",
+            "what": "a dented fuel cell",
+            "version": 15
+          },
+          {
+            "name": "Otto",
+            "what": "a cockpit switch that still clicks",
+            "version": 16
+          },
+          {
+            "name": "Tilly",
+            "what": "a dented fuel cell",
+            "version": 17
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "a little landing strut",
+            "version": 18
+          },
+          {
+            "name": "Tok",
+            "what": "a bent stabiliser fin",
+            "version": 19
+          }
+        ]
       }
     ],
-    "partsUsed": 9,
-    "parts": [
-      {
-        "name": "Brakk",
-        "what": "a mystery box that hums",
-        "version": 1
-      },
-      {
-        "name": "Gus",
-        "what": "a little landing strut",
-        "version": 2
-      },
-      {
-        "name": "Tok",
-        "what": "a cockpit switch that still clicks",
-        "version": 6
-      },
-      {
-        "name": "Wren",
-        "what": "a scorched heat tile",
-        "version": 7
-      },
-      {
-        "name": "Captain",
-        "what": "a perfectly good bolt",
-        "version": 9
-      },
-      {
-        "name": "Mabel",
-        "what": "a dented fuel cell",
-        "version": 15
-      },
-      {
-        "name": "Otto",
-        "what": "a cockpit switch that still clicks",
-        "version": 16
-      },
-      {
-        "name": "Tilly",
-        "what": "a dented fuel cell",
-        "version": 17
-      },
-      {
-        "name": "Rusty Jr",
-        "what": "a little landing strut",
-        "version": 18
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -1802,11 +1813,6 @@
       "what": "high-grade titanium washer",
       "at": "2026-11-17T00:56:35.133Z",
       "custom": "rmwjzf519"
-    },
-    {
-      "name": "Tok",
-      "what": "a bent stabiliser fin",
-      "at": "2026-11-17T00:56:35.133Z"
     }
   ],
   "reads": [

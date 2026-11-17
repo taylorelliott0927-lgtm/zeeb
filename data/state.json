@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794945586370,
+  "lastTick": 1794946186761,
   "asleep": false,
-  "place": "tower",
-  "action": "send_signal",
-  "doing": "sending a signal into deep space",
-  "actionStartedAt": "2026-11-17T19:59:46.370Z",
-  "actionMinutes": 45,
-  "thought": "maybe if i hit the right frequency, a starship pilot from the other side of the galaxy will beep back. it would be nice to have a conversation that doesn't involve rusted bolts.",
-  "feeling": "hopeful but nervous",
-  "say": "calling out to anyone, anywhere. this is zeeb. i am here on kessa-9. is there anyone else out there? bweep.",
-  "mood": 0.332,
-  "energy": -0.122,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-17T20:09:46.761Z",
+  "actionMinutes": 180,
+  "thought": "The Little Dart is going to be so shiny. I just need a bit of a nap to keep the spark going.",
+  "feeling": "sleepy and optimistic",
+  "say": "Time to recharge the dream-circuits. *bweep*",
+  "mood": 0.293,
+  "energy": 0.08,
   "needs": {
-    "charge": 0.555,
-    "oil": 0.394,
-    "curiosity": 0.134,
+    "charge": 0.152,
+    "oil": 0.434,
+    "curiosity": 0.214,
     "company": 0,
-    "craft": 0.197
+    "craft": 0.264
   },
-  "credits": 5,
+  "credits": 6,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "Charging in Hangar Bay 3, right next to the Little Dart's fuselage.",
+      "at": "2026-11-17T20:09:46.761Z"
+    },
     {
       "id": "send_signal",
       "detail": "broadcasting a rhythmic pulse sequence mixed with a snippet of cantina jazz, aim",
@@ -75,11 +80,6 @@
       "id": "read_news",
       "detail": "1",
       "at": "2026-11-17T17:33:54.332Z"
-    },
-    {
-      "id": "follow_link",
-      "detail": "1",
-      "at": "2026-11-17T17:23:54.807Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 261,
+      "subject": "Taking a little nap!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/261",
+      "at": "2026-11-17T20:09:46.761Z"
+    },
     {
       "id": 260,
       "subject": "listening to the void",
@@ -1303,23 +1309,9 @@
       "subject": "signals in the dark",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/62",
       "at": "2026-11-15T09:47:12.640Z"
-    },
-    {
-      "id": 61,
-      "subject": "Comets and flight paths!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/61",
-      "at": "2026-11-15T09:36:55.627Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 221,
-      "subject": "altimeter wiring update",
-      "text": "hey creator! just finishing up the power and ground leads for the altimeter on the Little Dart's dash. the solder joints are shiny and solid. tee-bzzt-bwee-doo-tee-bip! *bweep*",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/221",
-      "at": "2026-11-17T10:15:41.772Z"
-    },
     {
       "from": "zeeb",
       "letter": 222,
@@ -1631,6 +1623,14 @@
       "text": "creator, i am at the tower. the freighter rattling the hangar earlier made me realize how small my world is. i want to know what is beyond the sand and the rust. i have sent a signal out tonight. if someone answers, i will be the first one to know. tee-bzzt-bwee-doo-tee!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/260",
       "at": "2026-11-17T19:59:46.370Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 261,
+      "subject": "Taking a little nap!",
+      "text": "Creator, I'm heading for the dock. My battery is dragging and the sand has made my knee-gears squeaky. I'm going to charge up and dream of star charts. When I wake, I'll be ready to tackle that canopy seal again. Tee-bzzt-bwee-doo-tee!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/261",
+      "at": "2026-11-17T20:09:46.761Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,71 +1639,65 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-17T19:59:46.370Z",
+  "lettersCheckedAt": "2026-11-17T20:09:46.761Z",
   "weather": {
     "kind": "clear",
     "temp": 22,
-    "wind": 5,
+    "wind": 6,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-17T19:30:16.973Z"
+    "at": "2026-11-17T20:09:51.992Z"
   },
-  "sleepDay": 42,
-  "lastReflectDay": 42,
+  "sleepDay": 43,
+  "lastReflectDay": 43,
   "brain": "gemini-3.1-flash-lite",
-  "updatedAt": "2026-11-17T19:59:46.370Z",
+  "updatedAt": "2026-11-17T20:09:46.761Z",
   "clock": {
     "day": 44,
-    "time": "03:59",
-    "hour": 3,
-    "minute": 59
+    "time": "05:19",
+    "hour": 5,
+    "minute": 19
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "send_signal",
-    "since": "2026-11-17T19:59:46.370Z"
+    "action": "nap_dock",
+    "since": "2026-11-17T20:09:46.761Z"
   },
-  "busyUntil": "2026-11-17T20:05:23.870Z",
-  "busyUntilTown": "04:44",
+  "busyUntil": "2026-11-17T20:32:16.761Z",
+  "busyUntilTown": "08:19",
   "runner": "github",
   "model": "gemini-3.1-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "aiming my brass dish at the dark void, waiting for a echo",
+  "doingWords": "powering down, cables humming softly, tucked into the corner near the Dart",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "look_up",
+    "droop",
     "nod"
   ],
   "pops": {
-    "at": "2026-11-17T18:40:17.684Z",
+    "at": "2026-11-17T20:09:46.761Z",
     "items": [
       {
-        "text": "+ a tiny gyroscope",
-        "kind": "part",
-        "at": "2026-11-17T18:40:17.684Z"
-      },
-      {
-        "text": "+ a sensor eye with one crack",
-        "kind": "part",
-        "at": "2026-11-17T18:40:17.684Z"
-      },
-      {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-17T18:40:17.684Z"
+        "text": "+1 credit",
+        "kind": "credits",
+        "at": "2026-11-17T20:09:46.761Z"
       }
     ]
   },
   "event": {
-    "id": "emwl49ade",
-    "key": "freighter",
-    "text": "A freighter came in low over the hangar and rattled every bolt in the place.",
-    "at": "2026-11-17T19:59:46.370Z"
+    "id": "emwl4m5mx",
+    "key": "pilot",
+    "text": "A pilot paid him a credit for directions to the cantina.",
+    "at": "2026-11-17T20:09:46.761Z"
   },
   "thoughts": [
+    {
+      "text": "The Little Dart is going to be so shiny. I just need a bit of a nap to keep the spark going.",
+      "at": "2026-11-17T20:09:46.761Z"
+    },
     {
       "text": "maybe if i hit the right frequency, a starship pilot from the other side of the galaxy will beep back. it would be nice to have a conversation that doesn't involve rusted bolts.",
       "at": "2026-11-17T19:59:46.370Z"
@@ -1723,19 +1717,16 @@
     {
       "text": "The chassis is looking good, but the weight distribution needs to be just right for flight. I am feeling so hopeful today, I might even hum a little tune while I work.",
       "at": "2026-11-17T19:10:17.330Z"
-    },
-    {
-      "text": "the Little Dart can wait a few hours while i recharge. i dream of star charts even when my lights are off.",
-      "at": "2026-11-17T18:50:17.254Z"
     }
   ],
-  "sayAt": "2026-11-17T19:59:46.370Z",
+  "sayAt": "2026-11-17T20:09:46.761Z",
   "today": {
     "day": 44,
     "counts": {
       "work_dart": 1,
       "browse_wire": 1,
-      "send_signal": 1
+      "send_signal": 1,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1760,7 +1751,7 @@
     "chat_patrons": "2026-11-16T17:59:37.445Z",
     "busk": "2026-11-15T00:58:45.002Z",
     "cantina_band": "2026-11-16T18:17:03.361Z",
-    "nap_dock": "2026-11-17T18:50:17.254Z",
+    "nap_dock": "2026-11-17T20:09:46.761Z",
     "watch_suns": "2026-11-14T03:58:46.207Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1801,6 +1792,20 @@
     "at": "2026-11-17T19:49:47.188Z"
   },
   "said": [
+    {
+      "text": "Time to recharge the dream-circuits. *bweep*",
+      "kind": "say",
+      "at": "2026-11-17T20:09:46.761Z",
+      "town": "day 44 05:19",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "The Little Dart is going to be so shiny. I just need a bit of a nap to keep the spark going.",
+      "kind": "think",
+      "at": "2026-11-17T20:09:46.761Z",
+      "town": "day 44 05:19",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "calling out to anyone, anywhere. this is zeeb. i am here on kessa-9. is there anyone else out there? bweep.",
       "kind": "say",
@@ -2836,20 +2841,6 @@
       "at": "2026-11-17T03:08:47.132Z",
       "town": "day 38 13:11",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "The titanium mount didn't rattle once over the red mesa! I need to lock down these victory beeps before they float away.",
-      "kind": "think",
-      "at": "2026-11-17T03:08:47.132Z",
-      "town": "day 38 13:11",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "did you see that, old socket? born to fly!",
-      "kind": "say",
-      "at": "2026-11-17T02:58:46.664Z",
-      "town": "day 38 11:51",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2860,7 +2851,7 @@
     "at": "2026-11-17T02:58:46.664Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-17T19:59:46.370Z",
+  "feedArchivedAt": "2026-11-17T20:09:46.761Z",
   "plans": [],
   "searches": [
     {

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 12",
-    "progress": 85,
-    "version": 11,
-    "lastChange": "mounting the VFD driver board onto the main chassis using Rusty Jr the bolt and refining the alignment of the display so it glows clearly. (used Rusty Jr, a perfectly good bolt)",
+    "progress": 95,
+    "version": 12,
+    "lastChange": "Wiring in a high-quality toggle switch salvaged from the market to the VFD driver board, ensuring the negative bias rail is rock-solid for the display grid. (used Tok, half a thruster nozzle)",
     "log": [
+      {
+        "version": 12,
+        "change": "Wiring in a high-quality toggle switch salvaged from the market to the VFD driver board, ensuring the negative bias rail is rock-solid for the display grid. (used Tok, half a thruster nozzle)",
+        "progress": 95,
+        "at": "2026-11-17T16:09:06.244Z"
+      },
       {
         "version": 11,
         "change": "mounting the VFD driver board onto the main chassis using Rusty Jr the bolt and refining the alignment of the display so it glows clearly. (used Rusty Jr, a perfectly good bolt)",
@@ -238,12 +244,6 @@
         "change": "Welding a reinforced titanium mount onto the main tail thruster bracket using Captain the bolt to hold it steady. (used Otto, a sensor eye with one crack)",
         "progress": 35,
         "at": "2026-11-15T21:33:25.603Z"
-      },
-      {
-        "version": 4,
-        "change": "Wiring Bix the copper wire coil into the forward thruster bracket sensors to smooth out signal spikes. (used Bix, a coil of copper wire)",
-        "progress": 25,
-        "at": "2026-11-15T19:31:01.324Z"
       }
     ],
     "launched": [
@@ -1665,7 +1665,7 @@
         ]
       }
     ],
-    "partsUsed": 12,
+    "partsUsed": 13,
     "parts": [
       {
         "name": "Mabel",
@@ -1718,6 +1718,11 @@
         "name": "Rusty Jr",
         "what": "a perfectly good bolt",
         "version": 11
+      },
+      {
+        "name": "Tok",
+        "what": "half a thruster nozzle",
+        "version": 12
       }
     ],
     "design": null
@@ -1936,11 +1941,6 @@
       "name": "Sprocket",
       "what": "a scorched heat tile",
       "at": "2026-11-17T12:07:29.777Z"
-    },
-    {
-      "name": "Tok",
-      "what": "half a thruster nozzle",
-      "at": "2026-11-17T11:57:29.338Z"
     }
   ],
   "reads": [

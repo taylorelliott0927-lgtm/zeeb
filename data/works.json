@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 11",
-    "progress": 79,
-    "version": 16,
-    "lastChange": "I am finishing the installation of Rusty Jr, the landing strut, onto the main frame, ensuring the t-slot alignment is perfect so the ship can actually stand on its own. (used Otto, a cockpit switch that still clicks)",
+    "progress": 86,
+    "version": 17,
+    "lastChange": "I am carefully installing a high-grade titanium shim behind the engine mount to ensure the thrust vector is perfectly centered, making sure every bolt is torqued just right. (used Tilly, a dented fuel cell)",
     "log": [
+      {
+        "version": 17,
+        "change": "I am carefully installing a high-grade titanium shim behind the engine mount to ensure the thrust vector is perfectly centered, making sure every bolt is torqued just right. (used Tilly, a dented fuel cell)",
+        "progress": 86,
+        "at": "2026-11-17T00:16:24.353Z"
+      },
       {
         "version": 16,
         "change": "I am finishing the installation of Rusty Jr, the landing strut, onto the main frame, ensuring the t-slot alignment is perfect so the ship can actually stand on its own. (used Otto, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "Welding the forward heat shields to the Little Dart fuselage using reinforced clamps and gus-three (used Brakk, a bent stabiliser fin)",
         "progress": 47,
         "at": "2026-11-15T08:01:40.729Z"
-      },
-      {
-        "version": 8,
-        "change": "Securing the rear tailfin flaps to the fuselage frame using heavy-duty bolts and locknuts gus-one",
-        "progress": 41,
-        "at": "2026-11-15T06:39:09.163Z"
       }
     ],
     "launched": [
@@ -1608,7 +1608,7 @@
         ]
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Brakk",
@@ -1644,6 +1644,11 @@
         "name": "Otto",
         "what": "a cockpit switch that still clicks",
         "version": 16
+      },
+      {
+        "name": "Tilly",
+        "what": "a dented fuel cell",
+        "version": 17
       }
     ],
     "design": null
@@ -1796,11 +1801,6 @@
       "name": "Brakk",
       "what": "a tiny gyroscope",
       "at": "2026-11-16T21:29:46.570Z"
-    },
-    {
-      "name": "Tilly",
-      "what": "a dented fuel cell",
-      "at": "2026-11-16T21:19:46.743Z"
     }
   ],
   "reads": [

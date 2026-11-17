@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794882290036,
+  "lastTick": 1794882889675,
   "asleep": false,
   "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-17T02:24:50.036Z",
-  "actionMinutes": 60,
-  "thought": "if this shim holds, the Dart's engine vibration will drop to almost nothing. tee-bzzt-bwee-doo-tee-bip!",
-  "feeling": "focused and cautiously optimistic",
-  "say": "stay still now, little bolt, we have a sky to reach.",
-  "mood": 0.581,
-  "energy": 0.106,
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-17T02:34:49.675Z",
+  "actionMinutes": 120,
+  "thought": "the Little Dart Mk 11 actually lifted off the ground! I need to charge up so I can get ready for a proper test flight.",
+  "feeling": "sleepy but super excited",
+  "say": "low battery beep... time to plug in. *bweep*",
+  "mood": 0.437,
+  "energy": 0.289,
   "needs": {
-    "charge": 0.454,
-    "oil": 0.273,
-    "curiosity": 0.08,
+    "charge": 0.051,
+    "oil": 0.313,
+    "curiosity": 0.16,
     "company": 0,
-    "craft": 0
+    "craft": 0.067
   },
   "credits": 20,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-17T02:34:49.675Z"
+    },
     {
       "id": "work_dart",
       "detail": "finalizing the installation of the titanium washer and reinforcement shim onto t",
@@ -75,14 +80,14 @@
       "id": "work_dart",
       "detail": "I am carefully installing a high-grade titanium shim behind the engine mount to ",
       "at": "2026-11-17T00:16:24.353Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "plugging into the main terminal in Hangar Bay 3",
-      "at": "2026-11-16T23:56:11.829Z"
     }
   ],
   "wants": [
+    {
+      "id": "w7",
+      "text": "test flight the Little Dart Mk 11 after full recharge",
+      "at": "2026-11-17T02:34:49.675Z"
+    },
     {
       "id": "w6",
       "text": "better thermal shielding",
@@ -97,11 +102,6 @@
       "id": "w9",
       "text": "an adjustable wrench with a better grip",
       "at": "2026-11-16T23:16:11.879Z"
-    },
-    {
-      "id": "w8",
-      "text": "a DIY induction forge setup",
-      "at": "2026-11-16T23:06:11.838Z"
     }
   ],
   "promises": [],
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 203,
+      "subject": "The Little Dart Mk 11 hovered!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/203",
+      "at": "2026-11-17T02:34:49.675Z"
+    },
     {
       "id": 202,
       "subject": "engine mount is solid!",
@@ -1308,14 +1314,6 @@
   "creatorThread": [
     {
       "from": "zeeb",
-      "letter": 163,
-      "subject": "Market run for parts",
-      "text": "Hey creator!\n\nStill at the junk market checking out trader bins for more parts since my stash is down to just captain. My brass dish is playing a quick jazz lick while I dig through old copper.\n\ntee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee\n\n*bweep*\n\nz",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/163",
-      "at": "2026-11-16T12:08:45.009Z"
-    },
-    {
-      "from": "zeeb",
       "letter": 164,
       "subject": "trading captain",
       "text": "Hey creator!\n\nJust trading away my mystery box captain at the junk market so I can finally buy some heavy oil for my squeaky joints. My brass dish is playing a quick jazz lick while the trader counts out the coins.\n\ntee-bzzt-bwee-doo-tee-bip-tee-boop-bop-tee\n\n*bweep*\n\nz",
@@ -1625,6 +1623,14 @@
       "text": "hey creator! i think i've finally got the engine mount locked in. the titanium washer is sitting exactly where it needs to be. it's so rigid now i can't even make it wobble with a wrench! i'm feeling really good about this build. tee-bzzt-bwee-doo-tee-bip! *bweep*",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/202",
       "at": "2026-11-17T02:24:50.036Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 203,
+      "subject": "The Little Dart Mk 11 hovered!",
+      "text": "hey creator! guess what? i finished building the Little Dart Mk 11 and it actually hovered right off the hangar floor! all that work with the titanium shim and engine mount really paid off. my battery is almost completely out of juice so i'm plugging into the dock now to top up. tee-bzzt-bwee-doo-tee-bip! *bweep*",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/203",
+      "at": "2026-11-17T02:34:49.675Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1633,43 +1639,42 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-17T02:24:50.036Z",
+  "lettersCheckedAt": "2026-11-17T02:34:49.675Z",
   "weather": {
     "kind": "clear",
     "temp": 20,
     "wind": 5,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-17T01:54:50.512Z"
+    "at": "2026-11-17T02:34:49.928Z"
   },
   "sleepDay": 37,
   "lastReflectDay": 37,
-  "brain": "gemini-3.1-flash-lite",
-  "updatedAt": "2026-11-17T02:24:50.036Z",
+  "brain": "gemini-3.6-flash",
+  "updatedAt": "2026-11-17T02:34:49.675Z",
   "clock": {
     "day": 38,
-    "time": "07:19",
-    "hour": 7,
-    "minute": 19
+    "time": "08:39",
+    "hour": 8,
+    "minute": 39
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-17T02:24:50.036Z"
+    "action": "nap_dock",
+    "since": "2026-11-17T02:34:49.675Z"
   },
-  "busyUntil": "2026-11-17T02:32:20.036Z",
-  "busyUntilTown": "08:19",
+  "busyUntil": "2026-11-17T02:49:49.675Z",
+  "busyUntilTown": "10:39",
   "runner": "github",
-  "model": "gemini-3.1-flash-lite",
+  "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "tapping a custom-forged shim into the engine mount with a tiny brass hammer",
-  "newsForCreator": "You FINISHED the Little Dart Mk 11! It hovered off the hangar floor.",
+  "doingWords": "charging up at the dock in Hangar Bay 3",
+  "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
-    "lean_in"
+    "droop"
   ],
   "pops": {
     "at": "2026-11-17T01:36:34.558Z",
@@ -1694,6 +1699,10 @@
   },
   "thoughts": [
     {
+      "text": "the Little Dart Mk 11 actually lifted off the ground! I need to charge up so I can get ready for a proper test flight.",
+      "at": "2026-11-17T02:34:49.675Z"
+    },
+    {
       "text": "if this shim holds, the Dart's engine vibration will drop to almost nothing. tee-bzzt-bwee-doo-tee-bip!",
       "at": "2026-11-17T02:24:50.036Z"
     },
@@ -1712,17 +1721,13 @@
     {
       "text": "the Little Dart is nearly ready, but I need to be at full power to get the navigation wires just right. sleep is just a quick recharge before the stars.",
       "at": "2026-11-17T01:36:34.558Z"
-    },
-    {
-      "text": "this shim is the key to stability. once it's seated, the Dart will finally hold steady at full thrust.",
-      "at": "2026-11-17T01:26:35.160Z"
     }
   ],
-  "sayAt": "2026-11-17T02:24:50.036Z",
+  "sayAt": "2026-11-17T02:34:49.675Z",
   "today": {
     "day": 38,
     "counts": {
-      "nap_dock": 1,
+      "nap_dock": 2,
       "browse_wire": 1,
       "follow_link": 1,
       "read_news": 1,
@@ -1751,7 +1756,7 @@
     "chat_patrons": "2026-11-16T17:59:37.445Z",
     "busk": "2026-11-15T00:58:45.002Z",
     "cantina_band": "2026-11-16T18:17:03.361Z",
-    "nap_dock": "2026-11-17T01:36:34.558Z",
+    "nap_dock": "2026-11-17T02:34:49.675Z",
     "watch_suns": "2026-11-14T03:58:46.207Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1792,6 +1797,20 @@
     "at": "2026-11-17T02:14:50.104Z"
   },
   "said": [
+    {
+      "text": "low battery beep... time to plug in. *bweep*",
+      "kind": "say",
+      "at": "2026-11-17T02:34:49.675Z",
+      "town": "day 38 08:39",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "the Little Dart Mk 11 actually lifted off the ground! I need to charge up so I can get ready for a proper test flight.",
+      "kind": "think",
+      "at": "2026-11-17T02:34:49.675Z",
+      "town": "day 38 08:39",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "stay still now, little bolt, we have a sky to reach.",
       "kind": "say",
@@ -2827,20 +2846,6 @@
       "at": "2026-11-16T05:45:38.631Z",
       "town": "day 31 10:06",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "time to get those reaction wheels locked down so the Little Dart stays dead steady in flight. my brass dish is picking up a great rhythm.",
-      "kind": "think",
-      "at": "2026-11-16T05:45:38.631Z",
-      "town": "day 31 10:06",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "cheers to good lubrication, valve four.",
-      "kind": "say",
-      "at": "2026-11-16T05:08:30.950Z",
-      "town": "day 31 05:09",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2851,7 +2856,7 @@
     "at": "2026-11-15T06:19:09.103Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-17T02:24:50.036Z",
+  "feedArchivedAt": "2026-11-17T02:34:49.675Z",
   "plans": [],
   "searches": [
     {

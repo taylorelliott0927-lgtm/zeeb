@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794913917983,
+  "lastTick": 1794914517712,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "still working on the Little Dart",
-  "actionStartedAt": "2026-11-17T11:01:57.600Z",
-  "actionMinutes": 45,
-  "thought": "i am getting the filament supply lines soldered in so the dash lights up like a real cockpit. tee-bzzt-bwee-doo-tee-bip!",
-  "feeling": "bright and buzzing",
-  "say": "almost ready for flight check number twelve!",
-  "mood": 0.409,
-  "energy": 0.272,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-17T11:21:57.712Z",
+  "actionMinutes": 20,
+  "thought": "my curiosity is bugging me most right now.",
+  "feeling": "pretty good actually",
+  "say": "",
+  "mood": 0.387,
+  "energy": 0.273,
   "needs": {
-    "charge": 0.299,
-    "oil": 0.345,
-    "curiosity": 0.326,
-    "company": 0,
-    "craft": 0
+    "charge": 0.346,
+    "oil": 0,
+    "curiosity": 0.406,
+    "company": 0.053,
+    "craft": 0.067
   },
-  "credits": 12,
+  "credits": 11,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-17T11:21:57.712Z"
+    },
     {
       "id": "work_dart",
       "detail": "connected the filament power rails from the main converter board to the vfd disp",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-17T09:25:42.164Z"
-    },
-    {
-      "id": "fix_job",
-      "detail": "",
-      "at": "2026-11-17T09:08:45.441Z"
     }
   ],
   "wants": [
@@ -1639,66 +1639,62 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-17T11:11:57.983Z",
+  "lettersCheckedAt": "2026-11-17T11:21:57.712Z",
   "weather": {
     "kind": "clear",
-    "temp": 25,
+    "temp": 26,
     "wind": 11,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-17T10:41:58.308Z"
+    "at": "2026-11-17T11:21:58.143Z"
   },
   "sleepDay": 40,
   "lastReflectDay": 40,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-17T11:11:57.983Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-17T11:21:57.712Z",
   "clock": {
     "day": 41,
-    "time": "05:36",
-    "hour": 5,
-    "minute": 36
+    "time": "06:56",
+    "hour": 6,
+    "minute": 56
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-17T11:01:57.600Z"
+    "action": "drink_oil",
+    "since": "2026-11-17T11:21:57.712Z"
   },
-  "busyUntil": "2026-11-17T11:17:35.483Z",
-  "busyUntilTown": "06:21",
+  "busyUntil": "2026-11-17T11:24:27.712Z",
+  "busyUntilTown": "07:16",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-14T21:54:01.704Z",
-  "doingWords": "routing the main power traces to the vfd filament drivers",
+  "doingWords": "",
   "newsForCreator": "the Little Dart Mk 12 just reached 75% built (version 10). Last change: connected the filament power rails from the main converter board to the vfd display sockets (used Nim, a cockpit switch that still clicks).",
-  "newsPendingTicks": 0,
+  "newsPendingTicks": 1,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "bounce",
-    "wiggle"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-17T11:01:57.600Z",
+    "at": "2026-11-17T11:21:57.712Z",
     "items": [
       {
-        "text": "+ a coil of copper wire",
-        "kind": "part",
-        "at": "2026-11-17T11:01:57.600Z"
-      },
-      {
-        "text": "+ a cockpit switch that still clicks",
-        "kind": "part",
-        "at": "2026-11-17T11:01:57.600Z"
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-17T11:21:57.712Z"
       }
     ]
   },
   "event": {
-    "id": "emwkl1nmo",
-    "key": "scrap_box",
-    "text": "A trader left a box of free scrap outside the hangar.",
-    "at": "2026-11-17T11:01:57.600Z"
+    "id": "emwklrdn4",
+    "key": "light",
+    "text": "One of the hangar lights finally died for good.",
+    "at": "2026-11-17T11:21:57.712Z"
   },
   "thoughts": [
+    {
+      "text": "my curiosity is bugging me most right now.",
+      "at": "2026-11-17T11:21:57.712Z"
+    },
     {
       "text": "i am getting the filament supply lines soldered in so the dash lights up like a real cockpit. tee-bzzt-bwee-doo-tee-bip!",
       "at": "2026-11-17T11:11:57.983Z"
@@ -1718,26 +1714,23 @@
     {
       "text": "just plugging in for a quick top up so I don't conk out halfway through routing the altimeter lines. tee-bzzt-bwee-doo-tee! *bweep*",
       "at": "2026-11-17T10:31:58.508Z"
-    },
-    {
-      "text": "just need to secure the ground lead and then the Little Dart's instrument rack will be all set. tee-bzzt-bwee-doo-tee! *bweep*",
-      "at": "2026-11-17T10:15:41.772Z"
     }
   ],
-  "sayAt": "2026-11-17T11:11:57.983Z",
+  "sayAt": "2026-11-17T11:21:57.712Z",
   "today": {
     "day": 41,
     "counts": {
       "nap_dock": 1,
       "follow_link": 1,
       "send_signal": 1,
-      "work_dart": 2
+      "work_dart": 2,
+      "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-17T11:11:57.983Z",
     "read_news": "2026-11-17T02:14:50.104Z",
-    "drink_oil": "2026-11-17T09:45:41.403Z",
+    "drink_oil": "2026-11-17T11:21:57.712Z",
     "follow_link": "2026-11-17T10:41:58.058Z",
     "scavenge": "2026-11-17T03:28:46.854Z",
     "fix_job": "2026-11-17T09:08:45.441Z",
@@ -1797,6 +1790,13 @@
     "at": "2026-11-17T08:38:45.443Z"
   },
   "said": [
+    {
+      "text": "my curiosity is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-17T11:21:57.712Z",
+      "town": "day 41 06:56",
+      "place": "the fuel depot"
+    },
     {
       "text": "almost ready for flight check number twelve!",
       "kind": "say",
@@ -2839,13 +2839,6 @@
       "at": "2026-11-16T19:07:02.625Z",
       "town": "day 35 20:57",
       "place": "the comms tower"
-    },
-    {
-      "text": "If I pull down those orbit tables, I can plot a clean course out of Kessa-9's gravity well without smacking into an asteroid. The Little Dart is gonna need a good navigation grid anyway. *bweep*",
-      "kind": "think",
-      "at": "2026-11-16T19:07:02.625Z",
-      "town": "day 35 20:57",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2856,7 +2849,7 @@
     "at": "2026-11-17T02:58:46.664Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-17T11:11:57.983Z",
+  "feedArchivedAt": "2026-11-17T11:21:57.712Z",
   "plans": [],
   "searches": [
     {
@@ -2908,6 +2901,6 @@
       "at": "2026-11-16T03:45:41.701Z"
     }
   ],
-  "lampOutUntil": "2026-11-17T00:29:46.570Z",
+  "lampOutUntil": "2026-11-17T14:21:57.712Z",
   "haulerPaint": "#f07a2a"
 }

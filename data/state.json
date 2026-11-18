@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794989688244,
+  "lastTick": 1794990288056,
   "asleep": false,
   "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-18T08:14:48.244Z",
-  "actionMinutes": 45,
-  "thought": "If I secure Gus the gyroscope now, the Little Dart will have an inner ear ready for when we punch through the dust layer.",
-  "feeling": "tired but determined",
-  "say": "Hang tight, Gus. You're going to tell us which way the sky is.",
-  "mood": 0.271,
-  "energy": -0.095,
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-18T08:24:48.056Z",
+  "actionMinutes": 90,
+  "thought": "Gus the gyro is snug in his bracket, but I won't be much good to the Little Dart if I drop flat on the hangar floor.",
+  "feeling": "heavy-lidded, drowsy, content with the day's welds",
+  "say": "*bweee-oo-down*",
+  "mood": 0.176,
+  "energy": 0.05,
   "needs": {
-    "charge": 0.6,
-    "oil": 0.377,
-    "curiosity": 0.271,
-    "company": 0.181,
-    "craft": 0.366
+    "charge": 0.197,
+    "oil": 0.417,
+    "curiosity": 0.351,
+    "company": 0.234,
+    "craft": 0.433
   },
   "credits": 9,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-18T08:24:48.056Z"
+    },
     {
       "id": "work_dart",
       "detail": "Mounting Gus the tiny gyroscope securely onto the primary avionics bracket behin",
@@ -75,11 +80,6 @@
       "id": "follow_link",
       "detail": "3",
       "at": "2026-11-18T05:59:04.692Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "how to calculate thermal expansion of coolant in a closed-loop system",
-      "at": "2026-11-18T05:49:05.120Z"
     }
   ],
   "wants": [
@@ -1639,43 +1639,42 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-18T08:14:48.244Z",
+  "lettersCheckedAt": "2026-11-18T08:24:48.056Z",
   "weather": {
     "kind": "clear",
-    "temp": 17,
-    "wind": 11,
+    "temp": 20,
+    "wind": 12,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-18T06:29:05.049Z"
+    "at": "2026-11-18T08:24:48.135Z"
   },
   "sleepDay": 47,
   "lastReflectDay": 47,
-  "brain": "gemini-3.8-flash",
-  "updatedAt": "2026-11-18T08:14:48.244Z",
+  "brain": "gemini-3.7-flash",
+  "updatedAt": "2026-11-18T08:24:48.056Z",
   "clock": {
     "day": 48,
-    "time": "05:59",
-    "hour": 5,
-    "minute": 59
+    "time": "07:19",
+    "hour": 7,
+    "minute": 19
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-18T08:14:48.244Z"
+    "action": "nap_dock",
+    "since": "2026-11-18T08:24:48.056Z"
   },
-  "busyUntil": "2026-11-18T08:20:25.744Z",
-  "busyUntilTown": "06:44",
+  "busyUntil": "2026-11-18T08:36:03.056Z",
+  "busyUntilTown": "08:49",
   "runner": "github",
-  "model": "gemini-3.8-flash",
+  "model": "gemini-3.7-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "bolting Gus the tiny gyroscope into the Dart's nav bay",
+  "doingWords": "plugged into the charging dock, brass dish resting against the wall",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "lean_in",
-    "wiggle"
+    "droop"
   ],
   "pops": {
     "at": "2026-11-18T07:20:53.823Z",
@@ -1695,6 +1694,10 @@
   },
   "thoughts": [
     {
+      "text": "Gus the gyro is snug in his bracket, but I won't be much good to the Little Dart if I drop flat on the hangar floor.",
+      "at": "2026-11-18T08:24:48.056Z"
+    },
+    {
       "text": "If I secure Gus the gyroscope now, the Little Dart will have an inner ear ready for when we punch through the dust layer.",
       "at": "2026-11-18T08:14:48.244Z"
     },
@@ -1713,19 +1716,16 @@
     {
       "text": "the market is full of junk but maybe one piece is the right piece. i'll check every stall again.",
       "at": "2026-11-18T07:10:53.511Z"
-    },
-    {
-      "text": "oil always makes the thoughts run a bit faster. once i'm topped off, i'm heading straight back to the scrap heap for that valve.",
-      "at": "2026-11-18T07:00:53.983Z"
     }
   ],
-  "sayAt": "2026-11-18T08:14:48.244Z",
+  "sayAt": "2026-11-18T08:24:48.056Z",
   "today": {
     "day": 48,
     "counts": {
       "send_signal": 1,
       "browse_wire": 1,
-      "work_dart": 1
+      "work_dart": 1,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1750,7 +1750,7 @@
     "chat_patrons": "2026-11-16T17:59:37.445Z",
     "busk": "2026-11-18T04:31:23.259Z",
     "cantina_band": "2026-11-16T18:17:03.361Z",
-    "nap_dock": "2026-11-18T06:50:54.619Z",
+    "nap_dock": "2026-11-18T08:24:48.056Z",
     "watch_suns": "2026-11-14T03:58:46.207Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1791,6 +1791,20 @@
     "at": "2026-11-18T07:40:53.891Z"
   },
   "said": [
+    {
+      "text": "*bweee-oo-down*",
+      "kind": "say",
+      "at": "2026-11-18T08:24:48.056Z",
+      "town": "day 48 07:19",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "Gus the gyro is snug in his bracket, but I won't be much good to the Little Dart if I drop flat on the hangar floor.",
+      "kind": "think",
+      "at": "2026-11-18T08:24:48.056Z",
+      "town": "day 48 07:19",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "Hang tight, Gus. You're going to tell us which way the sky is.",
       "kind": "say",
@@ -2826,20 +2840,6 @@
       "at": "2026-11-17T17:13:54.931Z",
       "town": "day 43 05:52",
       "place": "the comms tower"
-    },
-    {
-      "text": "i wonder if a hard fiberglass canopy would work for the little dart instead of my current scrap-metal roof. keeping the dust out of my processors would be a big upgrade.",
-      "kind": "think",
-      "at": "2026-11-17T17:13:54.931Z",
-      "town": "day 43 05:52",
-      "place": "the comms tower"
-    },
-    {
-      "text": "come on little link, show me the trick to a perfect seal! *bweep*",
-      "kind": "say",
-      "at": "2026-11-17T17:03:54.885Z",
-      "town": "day 43 04:32",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2850,7 +2850,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-18T08:14:48.244Z",
+  "feedArchivedAt": "2026-11-18T08:24:48.056Z",
   "plans": [],
   "searches": [
     {

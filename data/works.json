@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 13",
-    "progress": 58,
-    "version": 7,
-    "lastChange": "mounting the miniature liquid pump I just bought to the sensor array with the heat tiles and copper coils; rerouting the tiny tubes to ensure a smooth, closed-loop flow. (used Tok, a little landing strut)",
+    "progress": 66,
+    "version": 8,
+    "lastChange": "mounting the liquid pump firmly to the frame and verifying the seal on the copper tubing loops, making sure there's no vibration that could loosen a connection. (used Pim, half a thruster nozzle)",
     "log": [
+      {
+        "version": 8,
+        "change": "mounting the liquid pump firmly to the frame and verifying the seal on the copper tubing loops, making sure there's no vibration that could loosen a connection. (used Pim, half a thruster nozzle)",
+        "progress": 66,
+        "at": "2026-11-18T00:42:31.644Z"
+      },
       {
         "version": 7,
         "change": "mounting the miniature liquid pump I just bought to the sensor array with the heat tiles and copper coils; rerouting the tiny tubes to ensure a smooth, closed-loop flow. (used Tok, a little landing strut)",
@@ -238,12 +244,6 @@
         "change": "soldering the star-tracker wire into the main compass bus and running a quick continuity check (used Brakk, a mystery box that hums)",
         "progress": 9,
         "at": "2026-11-16T03:25:42.221Z"
-      },
-      {
-        "version": 13,
-        "change": "Installing the dual-axis reaction wheel control board using Gus to brace the main sensor deck. (used Pim, a little landing strut)",
-        "progress": 100,
-        "at": "2026-11-16T03:15:41.486Z"
       }
     ],
     "launched": [
@@ -1734,7 +1734,7 @@
         ]
       }
     ],
-    "partsUsed": 9,
+    "partsUsed": 11,
     "parts": [
       {
         "name": "Fen",
@@ -1772,6 +1772,12 @@
         "name": "Tok",
         "what": "a little landing strut",
         "version": 7
+      },
+      {
+        "name": "Pim",
+        "what": "half a thruster nozzle",
+        "good": true,
+        "version": 8
       }
     ],
     "design": null
@@ -1995,12 +2001,6 @@
       "name": "Rusty Jr",
       "what": "a dented fuel cell",
       "at": "2026-11-17T14:53:16.844Z"
-    },
-    {
-      "name": "Pim",
-      "what": "half a thruster nozzle",
-      "at": "2026-11-17T14:43:16.826Z",
-      "good": true
     }
   ],
   "reads": [

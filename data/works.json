@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 14",
-    "progress": 40,
-    "version": 5,
-    "lastChange": "Installing hand-bent copper shielding coils around the primary navigation bus to block solar flare static. (used Wren, a strip of hull plating)",
+    "progress": 48,
+    "version": 6,
+    "lastChange": "bolted a new fin on (used Fen, a cracked navigation chip)",
     "log": [
+      {
+        "version": 6,
+        "change": "bolted a new fin on (used Fen, a cracked navigation chip)",
+        "progress": 48,
+        "at": "2026-11-18T15:12:41.710Z"
+      },
       {
         "version": 5,
         "change": "Installing hand-bent copper shielding coils around the primary navigation bus to block solar flare static. (used Wren, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "patched a hole in the hull",
         "progress": 59,
         "at": "2026-11-16T17:39:38.145Z"
-      },
-      {
-        "version": 11,
-        "change": "rewired the cockpit lights",
-        "progress": 55,
-        "at": "2026-11-16T17:29:38.235Z"
       }
     ],
     "launched": [
@@ -1809,7 +1809,7 @@
         ]
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Gus",
@@ -1837,6 +1837,12 @@
         "what": "a strip of hull plating",
         "good": true,
         "version": 5
+      },
+      {
+        "name": "Fen",
+        "what": "a cracked navigation chip",
+        "good": true,
+        "version": 6
       }
     ],
     "design": null
@@ -2084,12 +2090,6 @@
       "name": "Mabel",
       "what": "a cockpit switch that still clicks",
       "at": "2026-11-17T23:28:56.384Z"
-    },
-    {
-      "name": "Fen",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-17T21:30:00.901Z",
-      "good": true
     }
   ],
   "reads": [

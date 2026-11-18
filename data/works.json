@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 13",
-    "progress": 74,
-    "version": 9,
-    "lastChange": "fine-tuning the liquid pump flow rate to balance cooling efficiency with battery consumption, ensuring the thermal regulation matches the Little Dart's flight profile. (used Rusty Jr, a dented fuel cell)",
+    "progress": 81,
+    "version": 10,
+    "lastChange": "Using the strip of hull plating 'Wren' to cut precise honeycomb-style structural ribs for the main fuselage, ensuring the weight stays minimal while rigidity increases. (used Brakk, a scorched heat tile)",
     "log": [
+      {
+        "version": 10,
+        "change": "Using the strip of hull plating 'Wren' to cut precise honeycomb-style structural ribs for the main fuselage, ensuring the weight stays minimal while rigidity increases. (used Brakk, a scorched heat tile)",
+        "progress": 81,
+        "at": "2026-11-18T02:41:02.173Z"
+      },
       {
         "version": 9,
         "change": "fine-tuning the liquid pump flow rate to balance cooling efficiency with battery consumption, ensuring the thermal regulation matches the Little Dart's flight profile. (used Rusty Jr, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "installing the micro reaction wheel bracket into the central frame using gus to hold the torque motor steady",
         "progress": 22,
         "at": "2026-11-16T05:45:38.631Z"
-      },
-      {
-        "version": 2,
-        "change": "welding the new sleek titanium thruster cowlings onto the aft chassis using gus to hold the alignment steady (used Gus, a little landing strut)",
-        "progress": 18,
-        "at": "2026-11-16T03:35:41.443Z"
       }
     ],
     "launched": [
@@ -1734,7 +1734,7 @@
         ]
       }
     ],
-    "partsUsed": 12,
+    "partsUsed": 13,
     "parts": [
       {
         "name": "Fen",
@@ -1783,6 +1783,11 @@
         "name": "Rusty Jr",
         "what": "a dented fuel cell",
         "version": 9
+      },
+      {
+        "name": "Brakk",
+        "what": "a scorched heat tile",
+        "version": 10
       }
     ],
     "design": null
@@ -1995,11 +2000,6 @@
     {
       "name": "Gus",
       "what": "a coil of copper wire",
-      "at": "2026-11-17T15:03:16.973Z"
-    },
-    {
-      "name": "Brakk",
-      "what": "a scorched heat tile",
       "at": "2026-11-17T15:03:16.973Z"
     }
   ],

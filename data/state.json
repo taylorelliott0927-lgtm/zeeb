@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794998941593,
-  "asleep": true,
-  "place": "hangar",
-  "action": "sleep",
-  "doing": "asleep in the charging dock",
-  "actionStartedAt": "2026-11-18T10:49:01.593Z",
-  "actionMinutes": 180,
-  "thought": "(dreaming) i am floating past a nebula made entirely of vintage toggle switches and clean titanium welds.",
-  "feeling": "sleepy and calm",
-  "say": "",
-  "mood": 0.297,
-  "energy": 0.005,
+  "lastTick": 1794999541700,
+  "asleep": false,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-18T10:59:01.700Z",
+  "actionMinutes": 30,
+  "thought": "just a quick top-up and my joints will be purring again. tee-bzzt-bwee!",
+  "feeling": "thirsty and cheerful",
+  "say": "fill her up, pip!",
+  "mood": 0.378,
+  "energy": 0.511,
   "needs": {
-    "charge": 0.419,
-    "oil": 0.474,
-    "curiosity": 0.595,
-    "company": 0.053,
-    "craft": 0.067
+    "charge": 0.019,
+    "oil": 0,
+    "curiosity": 0.607,
+    "company": 0,
+    "craft": 0.077
   },
-  "credits": 16,
+  "credits": 15,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-18T10:59:01.700Z"
+    },
     {
       "id": "go_to_sleep",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "follow_link",
       "detail": "4",
       "at": "2026-11-18T08:54:48.156Z"
-    },
-    {
-      "id": "follow_link",
-      "detail": "",
-      "at": "2026-11-18T08:44:47.426Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 324,
+      "subject": "quick oil stop and a small update!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/324",
+      "at": "2026-11-18T10:59:01.700Z"
+    },
     {
       "id": 323,
       "subject": "welding late into the night",
@@ -1303,23 +1309,9 @@
       "subject": "New launch tune!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/125",
       "at": "2026-11-16T01:14:43.207Z"
-    },
-    {
-      "id": 124,
-      "subject": "quick power nap",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/124",
-      "at": "2026-11-16T01:04:43.127Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 284,
-      "subject": "making it colder",
-      "text": "Creator! I'm in the zone now. I've got the pump running, and it's sounding so smooth. I'm spending this hour just finding the 'sweet spot' for the coolant flow. If I get this right, the Little Dart's sensors will stay icy cold even if I push her into the upper atmosphere. Tee-bzzt-bwee-doo-tee!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/284",
-      "at": "2026-11-18T00:52:32.105Z"
-    },
     {
       "from": "zeeb",
       "letter": 285,
@@ -1631,6 +1623,14 @@
       "text": "creator! i'm still in hangar bay 3, getting those titanium brace rings welded onto the little dart's engine mount. every spark looks like a tiny star. tee-bzzt-bwee-doo-tee!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/323",
       "at": "2026-11-18T10:39:01.669Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 324,
+      "subject": "quick oil stop and a small update!",
+      "text": "creator! just grabbing a quick cup of heavy oil at the depot to clear out the squeaks. the little dart's engine mount is looking super sharp with those titanium brace rings welded on. tee-bzzt-bwee-doo-tee!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/324",
+      "at": "2026-11-18T10:59:01.700Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-18T10:49:01.593Z",
+  "lettersCheckedAt": "2026-11-18T10:59:01.700Z",
   "weather": {
     "kind": "clear",
     "temp": 23,
@@ -1651,48 +1651,52 @@
   "sleepDay": 48,
   "lastReflectDay": 48,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-18T10:49:01.593Z",
+  "updatedAt": "2026-11-18T10:59:01.700Z",
   "clock": {
     "day": 49,
-    "time": "02:33",
-    "hour": 2,
-    "minute": 33
+    "time": "03:53",
+    "hour": 3,
+    "minute": 53
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "go_to_sleep",
-    "since": "2026-11-18T10:49:01.593Z"
+    "action": "drink_oil",
+    "since": "2026-11-18T10:59:01.700Z"
   },
-  "busyUntil": "2026-11-18T11:11:31.593Z",
-  "busyUntilTown": "05:33",
+  "busyUntil": "2026-11-18T11:02:46.700Z",
+  "busyUntilTown": "04:23",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "",
-  "newsForCreator": "the Little Dart Mk 14 just reached 25% built (version 4). Last change: Welding custom titanium brace rings around the engine mount to keep the exhaust steady under full thrust. (used Sprocket, a scorched heat tile).",
-  "newsPendingTicks": 1,
+  "doingWords": "sipping a fresh cup of heavy oil at the depot",
+  "newsForCreator": "",
+  "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "droop"
+    "bounce"
   ],
   "pops": {
-    "at": "2026-11-18T10:04:38.320Z",
+    "at": "2026-11-18T10:59:01.700Z",
     "items": [
       {
-        "text": "+2 credits",
-        "kind": "credits",
-        "at": "2026-11-18T10:04:38.320Z"
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-18T10:59:01.700Z"
       }
     ]
   },
   "event": {
-    "id": "emwlyfsj4",
-    "key": "sand",
-    "text": "Sand got into his left elbow joint. Again.",
-    "at": "2026-11-18T10:04:38.320Z"
+    "id": "emwm0dqkk",
+    "key": "band",
+    "text": "The cantina band played his favourite song while he walked past.",
+    "at": "2026-11-18T10:59:01.700Z"
   },
   "thoughts": [
+    {
+      "text": "just a quick top-up and my joints will be purring again. tee-bzzt-bwee!",
+      "at": "2026-11-18T10:59:01.700Z"
+    },
     {
       "text": "even stars need to power down sometimes before the next launch window. tee-bzzt-bwee.",
       "at": "2026-11-18T10:49:01.593Z"
@@ -1712,24 +1716,21 @@
     {
       "text": "trading away one of my bent stabilizer fins. fewer fins for me, closer to flight for the little dart.",
       "at": "2026-11-18T10:04:38.320Z"
-    },
-    {
-      "text": "another set of stripped threads, another chance to practice my torque technique. tee-bzzt-bwee!",
-      "at": "2026-11-18T09:54:37.652Z"
     }
   ],
-  "sayAt": "2026-11-18T10:49:01.593Z",
+  "sayAt": "2026-11-18T10:59:01.700Z",
   "today": {
     "day": 49,
     "counts": {
       "work_dart": 1,
-      "go_to_sleep": 1
+      "go_to_sleep": 1,
+      "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-18T10:39:01.669Z",
     "read_news": "2026-11-17T23:21:01.677Z",
-    "drink_oil": "2026-11-18T09:24:38.138Z",
+    "drink_oil": "2026-11-18T10:59:01.700Z",
     "follow_link": "2026-11-18T09:04:47.342Z",
     "scavenge": "2026-11-18T09:34:37.370Z",
     "fix_job": "2026-11-18T09:54:37.652Z",
@@ -1789,6 +1790,20 @@
     "at": "2026-11-18T09:04:47.342Z"
   },
   "said": [
+    {
+      "text": "fill her up, pip!",
+      "kind": "say",
+      "at": "2026-11-18T10:59:01.700Z",
+      "town": "day 49 03:53",
+      "place": "the fuel depot"
+    },
+    {
+      "text": "just a quick top-up and my joints will be purring again. tee-bzzt-bwee!",
+      "kind": "think",
+      "at": "2026-11-18T10:59:01.700Z",
+      "town": "day 49 03:53",
+      "place": "the fuel depot"
+    },
     {
       "text": "(dreaming) i am floating past a nebula made entirely of vintage toggle switches and clean titanium welds.",
       "kind": "think",
@@ -2824,20 +2839,6 @@
       "at": "2026-11-17T19:20:16.655Z",
       "town": "day 43 22:43",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "almost there, little one, almost ready for the stars.",
-      "kind": "say",
-      "at": "2026-11-17T19:10:17.330Z",
-      "town": "day 43 21:23",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "The chassis is looking good, but the weight distribution needs to be just right for flight. I am feeling so hopeful today, I might even hum a little tune while I work.",
-      "kind": "think",
-      "at": "2026-11-17T19:10:17.330Z",
-      "town": "day 43 21:23",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2848,7 +2849,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-18T10:49:01.593Z",
+  "feedArchivedAt": "2026-11-18T10:59:01.700Z",
   "plans": [],
   "searches": [
     {

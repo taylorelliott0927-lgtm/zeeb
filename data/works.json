@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 14",
-    "progress": 48,
-    "version": 6,
-    "lastChange": "bolted a new fin on (used Fen, a cracked navigation chip)",
+    "progress": 57,
+    "version": 7,
+    "lastChange": "polished the nose cone (used Mabel, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 7,
+        "change": "polished the nose cone (used Mabel, a cockpit switch that still clicks)",
+        "progress": 57,
+        "at": "2026-11-18T16:12:52.136Z"
+      },
       {
         "version": 6,
         "change": "bolted a new fin on (used Fen, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "routing telemetry wires for the reaction wheels",
         "progress": 63,
         "at": "2026-11-16T17:49:37.438Z"
-      },
-      {
-        "version": 12,
-        "change": "patched a hole in the hull",
-        "progress": 59,
-        "at": "2026-11-16T17:39:38.145Z"
       }
     ],
     "launched": [
@@ -1809,7 +1809,7 @@
         ]
       }
     ],
-    "partsUsed": 9,
+    "partsUsed": 10,
     "parts": [
       {
         "name": "Gus",
@@ -1843,6 +1843,11 @@
         "what": "a cracked navigation chip",
         "good": true,
         "version": 6
+      },
+      {
+        "name": "Mabel",
+        "what": "a cockpit switch that still clicks",
+        "version": 7
       }
     ],
     "design": null
@@ -2085,11 +2090,6 @@
       "name": "Fen",
       "what": "a coil of copper wire",
       "at": "2026-11-17T23:38:55.695Z"
-    },
-    {
-      "name": "Mabel",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-17T23:28:56.384Z"
     }
   ],
   "reads": [

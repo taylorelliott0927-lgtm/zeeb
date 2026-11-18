@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795037876394,
+  "lastTick": 1795038475426,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-18T21:37:56.394Z",
-  "actionMinutes": 30,
-  "thought": "I hope the depot manager has that synthetic blend I like. Everything feels stiff today, like I've been standing in a sandstorm.",
-  "feeling": "a bit creaky but hopeful",
-  "say": "just a cup of the good stuff, please. thanks, pal.",
-  "mood": 0.358,
-  "energy": 0.087,
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-18T21:47:55.426Z",
+  "actionMinutes": 120,
+  "thought": "That hauler bot thinks he is so shiny. Wait until he sees the Little Dart take off. I just know there is a perfect fastener buried in this heap somewhere.",
+  "feeling": "focused and slightly competitive",
+  "say": "Not today, rust. I know you're hiding something good in there.",
+  "mood": 0.344,
+  "energy": 0.142,
   "needs": {
-    "charge": 0.417,
-    "oil": 0,
-    "curiosity": 0.307,
+    "charge": 0.464,
+    "oil": 0.07,
+    "curiosity": 0.037,
     "company": 0,
-    "craft": 0.056
+    "craft": 0.123
   },
   "credits": 4,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "junk market",
+      "at": "2026-11-18T21:47:55.426Z"
+    },
     {
       "id": "drink_oil",
       "detail": "buying a cup of high-grade oil at the depot",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "welding the titanium nosecone cone cap using Sprocket (a perfectly good bolt) to",
       "at": "2026-11-18T20:01:23.777Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "securing the custom aluminum instrument rack to the forward cockpit bulkhead",
-      "at": "2026-11-18T19:51:24.170Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 362,
+      "subject": "junk market finds",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/362",
+      "at": "2026-11-18T21:47:55.426Z"
+    },
     {
       "id": 361,
       "subject": "oil break",
@@ -1303,23 +1309,9 @@
       "subject": "Market run for parts",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/163",
       "at": "2026-11-16T12:08:45.009Z"
-    },
-    {
-      "id": 162,
-      "subject": "Fixing things at the market",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/162",
-      "at": "2026-11-16T11:58:44.525Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 322,
-      "subject": "fuel lines and hot welds",
-      "text": "creator! i'm deep in the hangar working on the fuel lines tonight. getting that dented cell connected feels like hooking up a real heart to the little dart. tee-bzzt-bwee-doo-tee!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/322",
-      "at": "2026-11-18T10:29:02.088Z"
-    },
     {
       "from": "zeeb",
       "letter": 323,
@@ -1631,6 +1623,14 @@
       "text": "creator! stopped for a drink of oil at the depot. my joints were feeling like sandpaper. once i'm topped up, i'm going right back to the hangar to finish tweaking that pressure relief valve. bweep!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/361",
       "at": "2026-11-18T21:37:56.394Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 362,
+      "subject": "junk market finds",
+      "text": "creator! i'm at the market hunting for parts to give the little dart an edge. the cargo-hauler bot is being a total show-off with that new paint, so i'm determined to find something better than whatever he has. tee-bzzt-bwee-doo-tee!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/362",
+      "at": "2026-11-18T21:47:55.426Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-18T21:37:56.394Z",
+  "lettersCheckedAt": "2026-11-18T21:47:55.426Z",
   "weather": {
     "kind": "clear",
     "temp": 21,
@@ -1651,49 +1651,53 @@
   "sleepDay": 51,
   "lastReflectDay": 51,
   "brain": "gemini-3.1-flash-lite",
-  "updatedAt": "2026-11-18T21:37:56.394Z",
+  "updatedAt": "2026-11-18T21:47:55.426Z",
   "clock": {
     "day": 52,
-    "time": "17:04",
-    "hour": 17,
-    "minute": 4
+    "time": "18:24",
+    "hour": 18,
+    "minute": 24
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "the junk market",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-18T21:37:56.394Z"
+    "action": "scavenge",
+    "since": "2026-11-18T21:47:55.426Z"
   },
-  "busyUntil": "2026-11-18T21:41:41.394Z",
-  "busyUntilTown": "17:34",
+  "busyUntil": "2026-11-18T22:02:55.426Z",
+  "busyUntilTown": "20:24",
   "runner": "github",
   "model": "gemini-3.1-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "sipping a cold cup of high-grade synth-lube at the depot",
+  "doingWords": "digging through piles of rusted metal with my sensor eye, looking for treasure",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
-    "wiggle"
+    "pace",
+    "lean_in"
   ],
   "pops": {
-    "at": "2026-11-18T21:37:56.394Z",
+    "at": "2026-11-18T21:47:55.426Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-18T21:37:56.394Z"
+        "text": "+ half a thruster nozzle",
+        "kind": "part",
+        "at": "2026-11-18T21:47:55.426Z"
       }
     ]
   },
   "event": {
-    "id": "emwmmwkzr",
+    "id": "emwmnk80y",
     "key": "hauler_paint",
     "text": "The cargo-hauler bot at the depot got a new paint job. Show-off.",
-    "at": "2026-11-18T21:29:32.487Z"
+    "at": "2026-11-18T21:47:55.426Z"
   },
   "thoughts": [
+    {
+      "text": "That hauler bot thinks he is so shiny. Wait until he sees the Little Dart take off. I just know there is a perfect fastener buried in this heap somewhere.",
+      "at": "2026-11-18T21:47:55.426Z"
+    },
     {
       "text": "I hope the depot manager has that synthetic blend I like. Everything feels stiff today, like I've been standing in a sandstorm.",
       "at": "2026-11-18T21:37:56.394Z"
@@ -1713,19 +1717,15 @@
     {
       "text": "wonder if old Barnaby tucked any good brass widgets beneath that pile of cracked sensor globes. my dish is twitching at every little clink.",
       "at": "2026-11-18T20:59:32.146Z"
-    },
-    {
-      "text": "wonder if old Barnaby has any valves hiding under those rusty gears. *bweep*",
-      "at": "2026-11-18T20:49:31.990Z"
     }
   ],
-  "sayAt": "2026-11-18T21:37:56.394Z",
+  "sayAt": "2026-11-18T21:47:55.426Z",
   "today": {
     "day": 52,
     "counts": {
       "work_dart": 4,
       "compose_tune": 1,
-      "scavenge": 2,
+      "scavenge": 3,
       "fix_job": 2,
       "buy_part": 2,
       "nap_dock": 1,
@@ -1737,7 +1737,7 @@
     "read_news": "2026-11-18T18:04:20.921Z",
     "drink_oil": "2026-11-18T21:37:56.394Z",
     "follow_link": "2026-11-18T11:58:41.506Z",
-    "scavenge": "2026-11-18T20:59:32.146Z",
+    "scavenge": "2026-11-18T21:47:55.426Z",
     "fix_job": "2026-11-18T21:09:32.104Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -1795,6 +1795,20 @@
     "at": "2026-11-18T19:06:12.955Z"
   },
   "said": [
+    {
+      "text": "Not today, rust. I know you're hiding something good in there.",
+      "kind": "say",
+      "at": "2026-11-18T21:47:55.426Z",
+      "town": "day 52 18:24",
+      "place": "the junk market"
+    },
+    {
+      "text": "That hauler bot thinks he is so shiny. Wait until he sees the Little Dart take off. I just know there is a perfect fastener buried in this heap somewhere.",
+      "kind": "think",
+      "at": "2026-11-18T21:47:55.426Z",
+      "town": "day 52 18:24",
+      "place": "the junk market"
+    },
     {
       "text": "just a cup of the good stuff, please. thanks, pal.",
       "kind": "say",
@@ -2830,20 +2844,6 @@
       "at": "2026-11-18T05:15:18.804Z",
       "town": "day 47 06:03",
       "place": "the fuel depot"
-    },
-    {
-      "text": "finally. this liquid gold is going to make me feel brand new. then i am heading back to the dart.",
-      "kind": "think",
-      "at": "2026-11-18T05:15:18.804Z",
-      "town": "day 47 06:03",
-      "place": "the fuel depot"
-    },
-    {
-      "text": "if i can just find a pump hiding under this heap of rusted manifolds, the Little Dart will finally have a heartbeat.",
-      "kind": "think",
-      "at": "2026-11-18T03:41:23.380Z",
-      "town": "day 47 03:23",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2854,7 +2854,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-18T21:37:56.394Z",
+  "feedArchivedAt": "2026-11-18T21:47:55.426Z",
   "plans": [],
   "searches": [
     {
@@ -2907,5 +2907,5 @@
     }
   ],
   "lampOutUntil": "2026-11-17T14:37:29.707Z",
-  "haulerPaint": "#8a5cf0"
+  "haulerPaint": "#2fb7d6"
 }

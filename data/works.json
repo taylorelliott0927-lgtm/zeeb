@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 14",
-    "progress": 97,
-    "version": 12,
-    "lastChange": "mounting the custom pressure relief valve to the main cooling loop housing (used Gus, a tiny gyroscope)",
+    "name": "the Little Dart Mk 15",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 13,
+        "change": "routing the instrument cluster wiring harness through the main bulkhead using Tilly (a coil of copper wire) (used Gus, a mystery box that hums)",
+        "progress": 100,
+        "at": "2026-11-18T19:41:24.484Z"
+      },
       {
         "version": 12,
         "change": "mounting the custom pressure relief valve to the main cooling loop housing (used Gus, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "finalizing the installation of the titanium washer and reinforcement shim onto the engine mount, checking for stress-cracks. (used Tok, a bent stabiliser fin)",
         "progress": 100,
         "at": "2026-11-17T02:24:50.036Z"
-      },
-      {
-        "version": 18,
-        "change": "installing the high-grade titanium shim I crafted earlier to reinforce the Little Dart's engine mount, aligning it with the main frame with extreme care. (used Rusty Jr, a little landing strut)",
-        "progress": 96,
-        "at": "2026-11-17T01:26:35.160Z"
       }
     ],
     "launched": [
@@ -1807,74 +1807,85 @@
             "version": 13
           }
         ]
+      },
+      {
+        "name": "the Little Dart Mk 14",
+        "day": 52,
+        "partsUsed": 16,
+        "parts": [
+          {
+            "name": "Gus",
+            "what": "a bent stabiliser fin",
+            "good": true,
+            "version": 1
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "a tiny gyroscope",
+            "version": 2
+          },
+          {
+            "name": "Tilly",
+            "what": "a sensor eye with one crack",
+            "version": 3
+          },
+          {
+            "name": "Sprocket",
+            "what": "a scorched heat tile",
+            "version": 4
+          },
+          {
+            "name": "Wren",
+            "what": "a strip of hull plating",
+            "good": true,
+            "version": 5
+          },
+          {
+            "name": "Fen",
+            "what": "a cracked navigation chip",
+            "good": true,
+            "version": 6
+          },
+          {
+            "name": "Mabel",
+            "what": "a cockpit switch that still clicks",
+            "version": 7
+          },
+          {
+            "name": "Fen",
+            "what": "a coil of copper wire",
+            "version": 8
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "a sensor eye with one crack",
+            "version": 9
+          },
+          {
+            "name": "Captain",
+            "what": "a mystery box that hums",
+            "version": 10
+          },
+          {
+            "name": "Captain",
+            "what": "a coil of copper wire",
+            "version": 11
+          },
+          {
+            "name": "Gus",
+            "what": "a tiny gyroscope",
+            "version": 12
+          },
+          {
+            "name": "Gus",
+            "what": "a mystery box that hums",
+            "version": 13
+          }
+        ]
       }
     ],
-    "partsUsed": 15,
-    "parts": [
-      {
-        "name": "Gus",
-        "what": "a bent stabiliser fin",
-        "good": true,
-        "version": 1
-      },
-      {
-        "name": "Rusty Jr",
-        "what": "a tiny gyroscope",
-        "version": 2
-      },
-      {
-        "name": "Tilly",
-        "what": "a sensor eye with one crack",
-        "version": 3
-      },
-      {
-        "name": "Sprocket",
-        "what": "a scorched heat tile",
-        "version": 4
-      },
-      {
-        "name": "Wren",
-        "what": "a strip of hull plating",
-        "good": true,
-        "version": 5
-      },
-      {
-        "name": "Fen",
-        "what": "a cracked navigation chip",
-        "good": true,
-        "version": 6
-      },
-      {
-        "name": "Mabel",
-        "what": "a cockpit switch that still clicks",
-        "version": 7
-      },
-      {
-        "name": "Fen",
-        "what": "a coil of copper wire",
-        "version": 8
-      },
-      {
-        "name": "Rusty Jr",
-        "what": "a sensor eye with one crack",
-        "version": 9
-      },
-      {
-        "name": "Captain",
-        "what": "a mystery box that hums",
-        "version": 10
-      },
-      {
-        "name": "Captain",
-        "what": "a coil of copper wire",
-        "version": 11
-      },
-      {
-        "name": "Gus",
-        "what": "a tiny gyroscope",
-        "version": 12
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -2085,11 +2096,6 @@
       "name": "Tilly",
       "what": "a cracked navigation chip",
       "at": "2026-11-18T04:01:22.770Z"
-    },
-    {
-      "name": "Gus",
-      "what": "a mystery box that hums",
-      "at": "2026-11-18T03:26:47.637Z"
     }
   ],
   "reads": [

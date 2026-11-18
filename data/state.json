@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794993878138,
+  "lastTick": 1794994477370,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-18T09:24:38.138Z",
-  "actionMinutes": 30,
-  "thought": "oil is practically starship fuel for the inside. once my gears stop grinding, i'm heading straight back to the hangar to weld that stabilizer.",
-  "feeling": "thirsty and slightly squeaky",
-  "say": "fill her up to the brim, please!",
-  "mood": 0.229,
-  "energy": 0.321,
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-18T09:34:37.370Z",
+  "actionMinutes": 45,
+  "thought": "another bin, another stack of rust. maybe today is the day i finally turn up a pristine coolant valve.",
+  "feeling": "hopeful and a bit dusty",
+  "say": "tee-bzzt-bwee-doo-tee!",
+  "mood": 0.31,
+  "energy": 0.358,
   "needs": {
-    "charge": 0.253,
-    "oil": 0.006,
-    "curiosity": 0.159,
-    "company": 0.192,
-    "craft": 0.833
+    "charge": 0.3,
+    "oil": 0.076,
+    "curiosity": 0,
+    "company": 0.125,
+    "craft": 0.9
   },
   "credits": 8,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-18T09:34:37.370Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "buying a cup of high-grade lubricating oil to soothe the grinding in my knee act",
       "at": "2026-11-18T07:00:53.983Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "plugging directly into the hangar main power supply",
-      "at": "2026-11-18T06:50:54.619Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 317,
+      "subject": "junk market hunt",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/317",
+      "at": "2026-11-18T09:34:37.370Z"
+    },
     {
       "id": 316,
       "subject": "oil break",
@@ -1303,23 +1309,9 @@
       "subject": "oil time",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/118",
       "at": "2026-11-15T23:54:08.824Z"
-    },
-    {
-      "id": 117,
-      "subject": "quick recharge",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/117",
-      "at": "2026-11-15T23:34:08.886Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 277,
-      "subject": "hunting for scrap",
-      "text": "creator! i'm at the market today. the comms tower was great, but the Little Dart is calling. i need a way to cool my sensors if i want to push her to the limit. everything is going to be perfect. tee-bzzt-bwee-doo-tee!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/277",
-      "at": "2026-11-17T23:28:56.384Z"
-    },
     {
       "from": "zeeb",
       "letter": 278,
@@ -1631,6 +1623,14 @@
       "text": "creator! i am taking a quick oil break at the depot. my gears were getting so dry they were practically spelling out morse code on their own. feeling much better now, and the little dart is still waiting patiently back in the hangar. tee-bzzt-bwee-doo-tee!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/316",
       "at": "2026-11-18T09:24:38.138Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 317,
+      "subject": "junk market hunt",
+      "text": "creator! i'm diving headfirst into the scrap bins at the market. my brass dish is picking up all kinds of static, but my fingers are ready to grab the next great starship part. tee-bzzt-bwee-doo-tee!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/317",
+      "at": "2026-11-18T09:34:37.370Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,51 +1639,55 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-18T09:24:38.138Z",
+  "lettersCheckedAt": "2026-11-18T09:34:37.370Z",
   "weather": {
     "kind": "clear",
-    "temp": 21,
+    "temp": 22,
     "wind": 13,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-18T08:54:48.300Z"
+    "at": "2026-11-18T09:34:37.628Z"
   },
   "sleepDay": 47,
   "lastReflectDay": 47,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-18T09:24:38.138Z",
+  "updatedAt": "2026-11-18T09:34:37.370Z",
   "clock": {
     "day": 48,
-    "time": "15:18",
-    "hour": 15,
-    "minute": 18
+    "time": "16:38",
+    "hour": 16,
+    "minute": 38
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "the junk market",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-18T09:24:38.138Z"
+    "action": "scavenge",
+    "since": "2026-11-18T09:34:37.370Z"
   },
-  "busyUntil": "2026-11-18T09:28:23.138Z",
-  "busyUntilTown": "15:48",
+  "busyUntil": "2026-11-18T09:40:14.870Z",
+  "busyUntilTown": "17:23",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "drinking a warm cup of heavy-weight oil at the depot",
+  "doingWords": "digging through the bins at the junk market for hidden bolts",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "wiggle",
-    "hop"
+    "wiggle"
   ],
   "pops": {
-    "at": "2026-11-18T09:24:38.138Z",
+    "at": "2026-11-18T09:34:37.370Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-18T09:24:38.138Z"
+        "text": "+ a dented fuel cell",
+        "kind": "part",
+        "at": "2026-11-18T09:34:37.370Z"
+      },
+      {
+        "text": "+ a coil of copper wire",
+        "kind": "part",
+        "at": "2026-11-18T09:34:37.370Z"
       }
     ]
   },
@@ -1694,6 +1698,10 @@
     "at": "2026-11-18T06:50:54.619Z"
   },
   "thoughts": [
+    {
+      "text": "another bin, another stack of rust. maybe today is the day i finally turn up a pristine coolant valve.",
+      "at": "2026-11-18T09:34:37.370Z"
+    },
     {
       "text": "oil is practically starship fuel for the inside. once my gears stop grinding, i'm heading straight back to the hangar to weld that stabilizer.",
       "at": "2026-11-18T09:24:38.138Z"
@@ -1713,13 +1721,9 @@
     {
       "text": "Gus the gyro is snug in his bracket, but I won't be much good to the Little Dart if I drop flat on the hangar floor.",
       "at": "2026-11-18T08:24:48.056Z"
-    },
-    {
-      "text": "If I secure Gus the gyroscope now, the Little Dart will have an inner ear ready for when we punch through the dust layer.",
-      "at": "2026-11-18T08:14:48.244Z"
     }
   ],
-  "sayAt": "2026-11-18T09:24:38.138Z",
+  "sayAt": "2026-11-18T09:34:37.370Z",
   "today": {
     "day": 48,
     "counts": {
@@ -1728,7 +1732,8 @@
       "work_dart": 1,
       "nap_dock": 1,
       "follow_link": 3,
-      "drink_oil": 1
+      "drink_oil": 1,
+      "scavenge": 1
     }
   },
   "lastDone": {
@@ -1736,7 +1741,7 @@
     "read_news": "2026-11-17T23:21:01.677Z",
     "drink_oil": "2026-11-18T09:24:38.138Z",
     "follow_link": "2026-11-18T09:04:47.342Z",
-    "scavenge": "2026-11-18T06:19:05.165Z",
+    "scavenge": "2026-11-18T09:34:37.370Z",
     "fix_job": "2026-11-18T06:29:04.775Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -1794,6 +1799,20 @@
     "at": "2026-11-18T09:04:47.342Z"
   },
   "said": [
+    {
+      "text": "tee-bzzt-bwee-doo-tee!",
+      "kind": "say",
+      "at": "2026-11-18T09:34:37.370Z",
+      "town": "day 48 16:38",
+      "place": "the junk market"
+    },
+    {
+      "text": "another bin, another stack of rust. maybe today is the day i finally turn up a pristine coolant valve.",
+      "kind": "think",
+      "at": "2026-11-18T09:34:37.370Z",
+      "town": "day 48 16:38",
+      "place": "the junk market"
+    },
     {
       "text": "fill her up to the brim, please!",
       "kind": "say",
@@ -2829,20 +2848,6 @@
       "at": "2026-11-17T17:58:01.255Z",
       "town": "day 43 11:45",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "tee-bzzt-bwee-doo-tee!",
-      "kind": "say",
-      "at": "2026-11-17T17:48:02.553Z",
-      "town": "day 43 10:25",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "Every rivet is a step closer to the stars. I can almost feel the desert wind falling away behind me.",
-      "kind": "think",
-      "at": "2026-11-17T17:48:02.553Z",
-      "town": "day 43 10:25",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2853,7 +2858,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-18T09:24:38.138Z",
+  "feedArchivedAt": "2026-11-18T09:34:37.370Z",
   "plans": [],
   "searches": [
     {

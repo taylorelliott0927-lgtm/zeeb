@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 13",
-    "progress": 48,
-    "version": 6,
-    "lastChange": "Carefully applying the high-grade sealant around the canopy base to ensure an airtight, pressurized environment for high-altitude flight. (used Otto, a tiny gyroscope)",
+    "progress": 58,
+    "version": 7,
+    "lastChange": "mounting the miniature liquid pump I just bought to the sensor array with the heat tiles and copper coils; rerouting the tiny tubes to ensure a smooth, closed-loop flow. (used Tok, a little landing strut)",
     "log": [
+      {
+        "version": 7,
+        "change": "mounting the miniature liquid pump I just bought to the sensor array with the heat tiles and copper coils; rerouting the tiny tubes to ensure a smooth, closed-loop flow. (used Tok, a little landing strut)",
+        "progress": 58,
+        "at": "2026-11-18T00:32:31.860Z"
+      },
       {
         "version": 6,
         "change": "Carefully applying the high-grade sealant around the canopy base to ensure an airtight, pressurized environment for high-altitude flight. (used Otto, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "Installing the dual-axis reaction wheel control board using Gus to brace the main sensor deck. (used Pim, a little landing strut)",
         "progress": 100,
         "at": "2026-11-16T03:15:41.486Z"
-      },
-      {
-        "version": 12,
-        "change": "Welding custom copper brackets onto the main instrument panel, securing the navigation dial framework (used Pim, a dented fuel cell)",
-        "progress": 95,
-        "at": "2026-11-16T01:24:42.423Z"
       }
     ],
     "launched": [
@@ -1734,7 +1734,7 @@
         ]
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Fen",
@@ -1767,6 +1767,11 @@
         "name": "Otto",
         "what": "a tiny gyroscope",
         "version": 6
+      },
+      {
+        "name": "Tok",
+        "what": "a little landing strut",
+        "version": 7
       }
     ],
     "design": null
@@ -1996,11 +2001,6 @@
       "what": "half a thruster nozzle",
       "at": "2026-11-17T14:43:16.826Z",
       "good": true
-    },
-    {
-      "name": "Tok",
-      "what": "a little landing strut",
-      "at": "2026-11-17T13:13:38.366Z"
     }
   ],
   "reads": [

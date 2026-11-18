@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 13",
-    "progress": 90,
-    "version": 11,
-    "lastChange": "Carefully welding the honeycomb ribs into the main fuselage, ensuring each joint is reinforced for the structural integrity required for atmospheric exit. (used Gus, a coil of copper wire)",
+    "progress": 99,
+    "version": 12,
+    "lastChange": "Carefully welding the final honeycomb ribs into the main fuselage, ensuring the structural reinforcement is symmetrical to handle atmospheric exit pressures. (used Fen, a scorched heat tile)",
     "log": [
+      {
+        "version": 12,
+        "change": "Carefully welding the final honeycomb ribs into the main fuselage, ensuring the structural reinforcement is symmetrical to handle atmospheric exit pressures. (used Fen, a scorched heat tile)",
+        "progress": 99,
+        "at": "2026-11-18T02:56:47.683Z"
+      },
       {
         "version": 11,
         "change": "Carefully welding the honeycomb ribs into the main fuselage, ensuring each joint is reinforced for the structural integrity required for atmospheric exit. (used Gus, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "mounting the reaction wheel controller board onto the central frame using gus to hold the tiny screws steady.",
         "progress": 26,
         "at": "2026-11-16T06:05:37.393Z"
-      },
-      {
-        "version": 4,
-        "change": "soldering the step and direction pins for the reaction wheel controller onto the Little Dart central frame using gus to hold the iron steady.",
-        "progress": 24,
-        "at": "2026-11-16T05:55:38.137Z"
       }
     ],
     "launched": [
@@ -1734,7 +1734,7 @@
         ]
       }
     ],
-    "partsUsed": 14,
+    "partsUsed": 15,
     "parts": [
       {
         "name": "Fen",
@@ -1793,6 +1793,11 @@
         "name": "Gus",
         "what": "a coil of copper wire",
         "version": 11
+      },
+      {
+        "name": "Fen",
+        "what": "a scorched heat tile",
+        "version": 12
       }
     ],
     "design": null
@@ -1996,11 +2001,6 @@
       "name": "Captain",
       "what": "a dented fuel cell",
       "at": "2026-11-17T18:18:02.106Z"
-    },
-    {
-      "name": "Fen",
-      "what": "a scorched heat tile",
-      "at": "2026-11-17T15:03:16.973Z"
     }
   ],
   "reads": [

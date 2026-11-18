@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795033885220,
+  "lastTick": 1795034371918,
   "asleep": false,
   "place": "market",
-  "action": "fix_job",
-  "doing": "doing a repair job at the market",
-  "actionStartedAt": "2026-11-18T20:31:25.220Z",
-  "actionMinutes": 45,
-  "thought": "wonder what kind of strange gadgets these traders brought in today. maybe someone has a spare pressure valve widget.",
-  "feeling": "focused and slightly jittery",
-  "say": "need any loose wiring grounded, friend?",
-  "mood": 0.418,
-  "energy": 0.097,
+  "action": "buy_part",
+  "doing": "browsing the parts stalls at the market",
+  "actionStartedAt": "2026-11-18T20:39:31.918Z",
+  "actionMinutes": 30,
+  "thought": "wonder what these traders brought in today, maybe someone has a really good pressure valve or some copper coil. *bweep*",
+  "feeling": "curious and eager",
+  "say": "got any small valves today?",
+  "mood": 0.426,
+  "energy": -0.008,
   "needs": {
-    "charge": 0.445,
-    "oil": 0.325,
-    "curiosity": 0.16,
+    "charge": 0.483,
+    "oil": 0.357,
+    "curiosity": 0.125,
     "company": 0,
-    "craft": 0
+    "craft": 0.054
   },
-  "credits": 10,
+  "credits": 2,
   "recent": [
+    {
+      "id": "buy_part",
+      "detail": "good",
+      "at": "2026-11-18T20:39:31.918Z"
+    },
     {
       "id": "fix_job",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-18T18:34:20.887Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "mounting the custom pressure relief valve to the main cooling loop housing",
-      "at": "2026-11-18T18:24:20.868Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 356,
+      "subject": "junk market haul",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/356",
+      "at": "2026-11-18T20:39:31.918Z"
+    },
     {
       "id": 355,
       "subject": "fresh tunes and bulkhead welds",
@@ -1303,23 +1309,9 @@
       "subject": "Reading the simplefoc docs",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/157",
       "at": "2026-11-16T10:32:24.902Z"
-    },
-    {
-      "id": 156,
-      "subject": "Phase resistance check",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/156",
-      "at": "2026-11-16T10:22:24.309Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 316,
-      "subject": "oil break",
-      "text": "creator! i am taking a quick oil break at the depot. my gears were getting so dry they were practically spelling out morse code on their own. feeling much better now, and the little dart is still waiting patiently back in the hangar. tee-bzzt-bwee-doo-tee!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/316",
-      "at": "2026-11-18T09:24:38.138Z"
-    },
     {
       "from": "zeeb",
       "letter": 317,
@@ -1631,6 +1623,14 @@
       "text": "creator! taking a quick musical break from the hangar to compose a five-note dawn arc on the workbench. my welds on the Little Dart's bulkhead are solid, and my brass dish is picking up a wonderful rhythmic hum. tee-bzzt-bwee-doo-tee!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/355",
       "at": "2026-11-18T20:11:24.238Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 356,
+      "subject": "junk market haul",
+      "text": "creator! hunting through the junk market stalls for a proper pressure valve widget today. my brass dish is picking up a great rhythmic hum off the scrap heaps. tee-bzzt-bwee-doo-tee!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/356",
+      "at": "2026-11-18T20:39:31.918Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-18T20:31:25.220Z",
+  "lettersCheckedAt": "2026-11-18T20:39:31.918Z",
   "weather": {
     "kind": "clear",
     "temp": 21,
@@ -1651,39 +1651,43 @@
   "sleepDay": 51,
   "lastReflectDay": 51,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-18T20:31:25.220Z",
+  "updatedAt": "2026-11-18T20:39:31.918Z",
   "clock": {
     "day": 52,
-    "time": "08:12",
-    "hour": 8,
-    "minute": 12
+    "time": "09:17",
+    "hour": 9,
+    "minute": 17
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
   "streak": {
-    "action": "fix_job",
-    "since": "2026-11-18T20:31:25.220Z"
+    "action": "buy_part",
+    "since": "2026-11-18T20:39:31.918Z"
   },
-  "busyUntil": "2026-11-18T20:37:02.720Z",
-  "busyUntilTown": "08:57",
+  "busyUntil": "2026-11-18T20:43:16.918Z",
+  "busyUntilTown": "09:47",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "tightening copper terminals and tuning old traders' radios",
+  "doingWords": "rummaging through the trader's stall for good wires",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
     "wiggle"
   ],
   "pops": {
-    "at": "2026-11-18T20:31:25.220Z",
+    "at": "2026-11-18T20:39:31.918Z",
     "items": [
       {
-        "text": "+ a sensor eye with one crack",
+        "text": "-8 credits",
+        "kind": "spend",
+        "at": "2026-11-18T20:39:31.918Z"
+      },
+      {
+        "text": "+ a cracked navigation chip ★",
         "kind": "part",
-        "at": "2026-11-18T20:31:25.220Z"
+        "at": "2026-11-18T20:39:31.918Z"
       }
     ]
   },
@@ -1694,6 +1698,10 @@
     "at": "2026-11-18T18:04:20.921Z"
   },
   "thoughts": [
+    {
+      "text": "wonder what these traders brought in today, maybe someone has a really good pressure valve or some copper coil. *bweep*",
+      "at": "2026-11-18T20:39:31.918Z"
+    },
     {
       "text": "wonder what kind of strange gadgets these traders brought in today. maybe someone has a spare pressure valve widget.",
       "at": "2026-11-18T20:31:25.220Z"
@@ -1713,20 +1721,17 @@
     {
       "text": "the instrument panel is looking snug and proper. bweep!",
       "at": "2026-11-18T19:51:24.170Z"
-    },
-    {
-      "text": "every wire I tuck in brings the Little Dart one step closer to the stars. bweep!",
-      "at": "2026-11-18T19:41:24.484Z"
     }
   ],
-  "sayAt": "2026-11-18T20:31:25.220Z",
+  "sayAt": "2026-11-18T20:39:31.918Z",
   "today": {
     "day": 52,
     "counts": {
       "work_dart": 3,
       "compose_tune": 1,
       "scavenge": 1,
-      "fix_job": 1
+      "fix_job": 1,
+      "buy_part": 1
     }
   },
   "lastDone": {
@@ -1757,7 +1762,7 @@
     "start_friend": "2026-11-14T11:54:58.335Z",
     "build_friend": "2026-11-14T17:54:59.323Z",
     "reply_notes": "2026-11-14T19:46:45.041Z",
-    "buy_part": "2026-11-18T06:39:04.723Z",
+    "buy_part": "2026-11-18T20:39:31.918Z",
     "sell_scrap": "2026-11-18T10:04:38.320Z"
   },
   "puzzles": [
@@ -1792,6 +1797,20 @@
     "at": "2026-11-18T19:06:12.955Z"
   },
   "said": [
+    {
+      "text": "got any small valves today?",
+      "kind": "say",
+      "at": "2026-11-18T20:39:31.918Z",
+      "town": "day 52 09:17",
+      "place": "the junk market"
+    },
+    {
+      "text": "wonder what these traders brought in today, maybe someone has a really good pressure valve or some copper coil. *bweep*",
+      "kind": "think",
+      "at": "2026-11-18T20:39:31.918Z",
+      "town": "day 52 09:17",
+      "place": "the junk market"
+    },
     {
       "text": "need any loose wiring grounded, friend?",
       "kind": "say",
@@ -2827,20 +2846,6 @@
       "at": "2026-11-18T03:41:23.380Z",
       "town": "day 46 17:32",
       "place": "the junk market"
-    },
-    {
-      "text": "if i can just find a pump hiding under this heap of rusted manifolds, the Little Dart will finally have a heartbeat.",
-      "kind": "think",
-      "at": "2026-11-18T03:41:23.380Z",
-      "town": "day 46 17:32",
-      "place": "the junk market"
-    },
-    {
-      "text": "excuse me, merchant? do you have anything that pumps, whirls, or pushes liquids in a tight circle?",
-      "kind": "say",
-      "at": "2026-11-18T03:36:47.783Z",
-      "town": "day 46 16:55",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2851,7 +2856,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-18T20:31:25.220Z",
+  "feedArchivedAt": "2026-11-18T20:39:31.918Z",
   "plans": [],
   "searches": [
     {

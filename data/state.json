@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795014761710,
+  "lastTick": 1795015361330,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-18T15:12:41.710Z",
-  "actionMinutes": 60,
-  "thought": "my craft is bugging me most right now.",
-  "feeling": "okay, ticking along",
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-18T15:22:41.330Z",
+  "actionMinutes": 35,
+  "thought": "read about Reasoning about the Manned Space Program. filing that away.",
+  "feeling": "curious",
   "say": "",
-  "mood": 0.262,
-  "energy": 0.283,
+  "mood": 0.26,
+  "energy": 0.19,
   "needs": {
-    "charge": 0.409,
-    "oil": 0.04,
-    "curiosity": 0.318,
-    "company": 0.231,
-    "craft": 0
+    "charge": 0.456,
+    "oil": 0.08,
+    "curiosity": 0,
+    "company": 0.284,
+    "craft": 0.067
   },
   "credits": 14,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "Mars rovers",
+      "at": "2026-11-18T15:22:41.330Z"
+    },
     {
       "id": "work_dart",
       "detail": "bolted a new fin on",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-18T13:08:49.973Z"
-    },
-    {
-      "id": "cantina_band",
-      "detail": "",
-      "at": "2026-11-18T12:58:49.993Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-18T15:12:41.710Z",
+  "lettersCheckedAt": "2026-11-18T15:22:41.330Z",
   "weather": {
     "kind": "windy",
     "temp": 28,
@@ -1651,21 +1651,21 @@
   "sleepDay": 49,
   "lastReflectDay": 49,
   "brain": "rules",
-  "updatedAt": "2026-11-18T15:12:41.710Z",
+  "updatedAt": "2026-11-18T15:22:41.330Z",
   "clock": {
     "day": 50,
-    "time": "13:42",
-    "hour": 13,
-    "minute": 42
+    "time": "15:02",
+    "hour": 15,
+    "minute": 2
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-18T15:12:41.710Z"
+    "action": "browse_wire",
+    "since": "2026-11-18T15:22:41.330Z"
   },
-  "busyUntil": "2026-11-18T15:20:11.710Z",
-  "busyUntilTown": "14:42",
+  "busyUntil": "2026-11-18T15:27:03.830Z",
+  "busyUntilTown": "15:37",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
@@ -1692,6 +1692,10 @@
   },
   "thoughts": [
     {
+      "text": "read about Reasoning about the Manned Space Program. filing that away.",
+      "at": "2026-11-18T15:22:41.330Z"
+    },
+    {
       "text": "my craft is bugging me most right now.",
       "at": "2026-11-18T15:12:41.710Z"
     },
@@ -1710,13 +1714,9 @@
     {
       "text": "copper coils are all set, so a short recharge will have me right back to tinkering. tee-bzzt-bwee!",
       "at": "2026-11-18T14:29:08.821Z"
-    },
-    {
-      "text": "copper coils fit tighter than expected, which is great for blocking stray solar static. tee-bzzt-bwee-doo-tee!",
-      "at": "2026-11-18T14:19:08.343Z"
     }
   ],
-  "sayAt": "2026-11-18T15:12:41.710Z",
+  "sayAt": "2026-11-18T15:22:41.330Z",
   "today": {
     "day": 50,
     "counts": {
@@ -1724,7 +1724,7 @@
       "wander": 2,
       "work_dart": 2,
       "nap_dock": 1,
-      "browse_wire": 1,
+      "browse_wire": 2,
       "compose_tune": 1
     }
   },
@@ -1737,7 +1737,7 @@
     "fix_job": "2026-11-18T09:54:37.652Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-18T14:39:08.950Z",
+    "browse_wire": "2026-11-18T15:22:41.330Z",
     "compose_tune": "2026-11-18T14:52:41.890Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-17T00:56:35.133Z",
@@ -1788,6 +1788,13 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "read about Reasoning about the Manned Space Program. filing that away.",
+      "kind": "think",
+      "at": "2026-11-18T15:22:41.330Z",
+      "town": "day 50 15:02",
+      "place": "the comms tower"
+    },
     {
       "text": "my craft is bugging me most right now.",
       "kind": "think",
@@ -2830,13 +2837,6 @@
       "at": "2026-11-17T23:21:01.677Z",
       "town": "day 45 06:49",
       "place": "the comms tower"
-    },
-    {
-      "text": "bweep. math is just another kind of scavenger hunt.",
-      "kind": "say",
-      "at": "2026-11-17T23:11:01.379Z",
-      "town": "day 45 05:29",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2847,9 +2847,13 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-18T15:12:41.710Z",
+  "feedArchivedAt": "2026-11-18T15:22:41.330Z",
   "plans": [],
   "searches": [
+    {
+      "q": "Mars rovers",
+      "at": "2026-11-18T15:22:41.330Z"
+    },
     {
       "q": "solar flare shielding alloys",
       "at": "2026-11-18T14:39:08.950Z"
@@ -2893,10 +2897,6 @@
     {
       "q": "vacuum fluorescent display driver circuits scrap",
       "at": "2026-11-17T05:54:55.518Z"
-    },
-    {
-      "q": "how to build a long-range communication relay from scrap",
-      "at": "2026-11-17T05:10:33.236Z"
     }
   ],
   "lampOutUntil": "2026-11-17T14:37:29.707Z",

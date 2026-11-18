@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794981673288,
+  "lastTick": 1794982745165,
   "asleep": false,
-  "place": "tower",
-  "action": "follow_link",
-  "doing": "following a link across the Wire",
-  "actionStartedAt": "2026-11-18T05:59:04.692Z",
-  "actionMinutes": 45,
-  "thought": "I skim through the Chernobyl accident pages, trying to find any mention of thermal expansion or graphite blocks, which might be useful for the Little Dart.",
-  "feeling": "curious and slightly cautious",
-  "say": "*bweep*",
-  "mood": 0.332,
-  "energy": 0.125,
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-18T06:19:05.165Z",
+  "actionMinutes": 60,
+  "thought": "if i find a pressure relief valve, the coolant expansion won't be a problem anymore. i just need one tiny piece of scrap to make the whole system perfect.",
+  "feeling": "focused and hopeful",
+  "say": "come on, gus, show me something useful today.",
+  "mood": 0.341,
+  "energy": -0.006,
   "needs": {
-    "charge": 0.315,
-    "oil": 0.463,
-    "curiosity": 0.083,
-    "company": 0.011,
-    "craft": 0.173
+    "charge": 0.398,
+    "oil": 0.564,
+    "curiosity": 0,
+    "company": 0,
+    "craft": 0.292
   },
-  "credits": 8,
+  "credits": 9,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "any",
+      "at": "2026-11-18T06:19:05.165Z"
+    },
     {
       "id": "follow_link",
       "detail": "3",
@@ -75,11 +80,6 @@
       "id": "buy_part",
       "detail": "good",
       "at": "2026-11-18T03:26:47.637Z"
-    },
-    {
-      "id": "fix_job",
-      "detail": "fixing a power converter for a trader in exchange for credits",
-      "at": "2026-11-18T03:16:47.726Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 305,
+      "subject": "the final piece of the puzzle",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/305",
+      "at": "2026-11-18T06:19:05.165Z"
+    },
     {
       "id": 304,
       "subject": "a breakthrough at the tower!",
@@ -1303,23 +1309,9 @@
       "subject": "Wiring the Little Dart",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/106",
       "at": "2026-11-15T21:43:25.318Z"
-    },
-    {
-      "id": 105,
-      "subject": "Thruster mounts!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/105",
-      "at": "2026-11-15T21:33:25.603Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 265,
-      "subject": "Scavenger's luck",
-      "text": "Creator! I'm back at the market today. I have a good feeling about the heaps near the edge of the depot. If I find the right sealant or a spare actuator, the Little Dart will be one step closer to its first flight. I promise to keep looking until I find exactly what the canopy needs. Tee-bzzt-bwee-doo-tee!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/265",
-      "at": "2026-11-17T21:10:00.914Z"
-    },
     {
       "from": "zeeb",
       "letter": 266,
@@ -1631,6 +1623,14 @@
       "text": "creator, i am reading about closed-loop nuclear cooling systems and realized that my radiator needs a small buffer tank. if the coolant expands, it needs somewhere safe to go instead of popping my seals! i'm going to look for a small, sturdy canister in the scrap piles tomorrow. the little dart is getting so close to perfect.",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/304",
       "at": "2026-11-18T05:59:04.692Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 305,
+      "subject": "the final piece of the puzzle",
+      "text": "creator! i'm at the market right now looking for a pressure relief valve. if i find one, the little dart's cooling system will be completely stable. i'm so close to flight, i can almost hear the thrusters burning! bweep.",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/305",
+      "at": "2026-11-18T06:19:05.165Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-18T06:01:13.288Z",
+  "lettersCheckedAt": "2026-11-18T06:19:05.165Z",
   "weather": {
     "kind": "clear",
     "temp": 17,
@@ -1651,49 +1651,53 @@
   "sleepDay": 46,
   "lastReflectDay": 46,
   "brain": "gemini-3.1-flash-lite",
-  "updatedAt": "2026-11-18T06:01:13.288Z",
+  "updatedAt": "2026-11-18T06:19:05.165Z",
   "clock": {
     "day": 47,
-    "time": "12:11",
-    "hour": 12,
-    "minute": 11
+    "time": "14:33",
+    "hour": 14,
+    "minute": 33
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the junk market",
   "streak": {
-    "action": "follow_link",
-    "since": "2026-11-18T05:59:04.692Z"
+    "action": "scavenge",
+    "since": "2026-11-18T06:19:05.165Z"
   },
-  "busyUntil": "2026-11-18T06:04:42.192Z",
-  "busyUntilTown": "12:38",
-  "runner": "pc",
+  "busyUntil": "2026-11-18T06:26:35.165Z",
+  "busyUntilTown": "15:33",
+  "runner": "github",
   "model": "gemini-3.1-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "studying radiator diagrams and thermal expansion curves",
+  "doingWords": "digging through piles of rusted metal and forgotten circuitry",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "lean_in",
-    "nod"
+    "pace",
+    "lean_in"
   ],
   "pops": {
-    "at": "2026-11-18T05:15:18.804Z",
+    "at": "2026-11-18T06:19:05.165Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-18T05:15:18.804Z"
+        "text": "+1 credit",
+        "kind": "credits",
+        "at": "2026-11-18T06:19:05.165Z"
       }
     ]
   },
   "event": {
-    "id": "emwl6er8j",
-    "key": "freighter",
-    "text": "A freighter came in low over the hangar and rattled every bolt in the place.",
-    "at": "2026-11-17T21:00:00.739Z"
+    "id": "emwlqdqa5",
+    "key": "pilot",
+    "text": "A pilot paid him a credit for directions to the cantina.",
+    "at": "2026-11-18T06:19:05.165Z"
   },
   "thoughts": [
+    {
+      "text": "if i find a pressure relief valve, the coolant expansion won't be a problem anymore. i just need one tiny piece of scrap to make the whole system perfect.",
+      "at": "2026-11-18T06:19:05.165Z"
+    },
     {
       "text": "I skim through the Chernobyl accident pages, trying to find any mention of thermal expansion or graphite blocks, which might be useful for the Little Dart.",
       "at": "2026-11-18T06:01:13.288Z"
@@ -1713,13 +1717,9 @@
     {
       "text": "The cooling loop is going to be the secret ingredient. No more overheating in the upper atmosphere, just pure, efficient speed.",
       "at": "2026-11-18T05:25:18.655Z"
-    },
-    {
-      "text": "finally. this liquid gold is going to make me feel brand new. then i am heading back to the dart.",
-      "at": "2026-11-18T05:15:18.804Z"
     }
   ],
-  "sayAt": "2026-11-18T06:01:13.288Z",
+  "sayAt": "2026-11-18T06:19:05.165Z",
   "today": {
     "day": 47,
     "counts": {
@@ -1727,7 +1727,8 @@
       "drink_oil": 1,
       "work_dart": 2,
       "browse_wire": 1,
-      "follow_link": 1
+      "follow_link": 1,
+      "scavenge": 1
     }
   },
   "lastDone": {
@@ -1735,7 +1736,7 @@
     "read_news": "2026-11-17T23:21:01.677Z",
     "drink_oil": "2026-11-18T05:15:18.804Z",
     "follow_link": "2026-11-18T05:59:04.692Z",
-    "scavenge": "2026-11-18T04:01:22.770Z",
+    "scavenge": "2026-11-18T06:19:05.165Z",
     "fix_job": "2026-11-18T03:16:47.726Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -1763,6 +1764,11 @@
   },
   "puzzles": [
     {
+      "id": "q9",
+      "text": "q8",
+      "at": "2026-11-18T06:19:05.165Z"
+    },
+    {
       "id": "q8",
       "text": "if a secondary reservoir can mitigate pressure spikes during high-intensity flight maneuvers.",
       "at": "2026-11-18T05:59:04.692Z"
@@ -1781,11 +1787,6 @@
       "id": "q11",
       "text": "q10",
       "at": "2026-11-18T04:21:23.208Z"
-    },
-    {
-      "id": "q10",
-      "text": "if the closed-loop system is airtight enough to handle the thermal expansion of the coolant during high-altitude maneuvers.",
-      "at": "2026-11-18T04:11:22.347Z"
     }
   ],
   "nextSearch": {
@@ -1793,6 +1794,20 @@
     "at": "2026-11-18T05:59:04.692Z"
   },
   "said": [
+    {
+      "text": "come on, gus, show me something useful today.",
+      "kind": "say",
+      "at": "2026-11-18T06:19:05.165Z",
+      "town": "day 47 14:33",
+      "place": "the junk market"
+    },
+    {
+      "text": "if i find a pressure relief valve, the coolant expansion won't be a problem anymore. i just need one tiny piece of scrap to make the whole system perfect.",
+      "kind": "think",
+      "at": "2026-11-18T06:19:05.165Z",
+      "town": "day 47 14:33",
+      "place": "the junk market"
+    },
     {
       "text": "*bweep*",
       "kind": "say",
@@ -2828,20 +2843,6 @@
       "at": "2026-11-17T14:53:16.844Z",
       "town": "day 42 11:07",
       "place": "the junk market"
-    },
-    {
-      "text": "every crate has a secret. if i just dig a little deeper, i'll hear that satisfying mechanical snap before i even touch it.",
-      "kind": "think",
-      "at": "2026-11-17T14:53:16.844Z",
-      "town": "day 42 11:07",
-      "place": "the junk market"
-    },
-    {
-      "text": "come on, little clicky friend, where are you hiding today?",
-      "kind": "say",
-      "at": "2026-11-17T14:43:16.826Z",
-      "town": "day 42 09:47",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2852,7 +2853,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-18T05:59:04.692Z",
+  "feedArchivedAt": "2026-11-18T06:19:05.165Z",
   "plans": [],
   "searches": [
     {

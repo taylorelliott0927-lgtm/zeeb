@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795007930237,
+  "lastTick": 1795009749248,
   "asleep": false,
   "place": "depot",
   "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
+  "doing": "still sipping oil at the fuel depot",
   "actionStartedAt": "2026-11-18T13:18:50.237Z",
-  "actionMinutes": 20,
+  "actionMinutes": 30,
   "thought": "oil makes the wheels go round. or at least keeps them from grinding into fine metal dust.",
-  "feeling": "dry in the gears",
-  "say": "gulp gulp, glug bweep!",
-  "mood": 0.241,
-  "energy": 0.262,
+  "feeling": "thristy and a bit creaky",
+  "say": "ah, good vintage today.",
+  "mood": 0.158,
+  "energy": 0.289,
   "needs": {
-    "charge": 0.225,
-    "oil": 0.01,
-    "curiosity": 0.35,
-    "company": 0,
-    "craft": 0.813
+    "charge": 0.366,
+    "oil": 0,
+    "curiosity": 0.593,
+    "company": 0.042,
+    "craft": 1
   },
-  "credits": 16,
+  "credits": 15,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-18T13:49:09.248Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "follow_link",
       "detail": "2",
       "at": "2026-11-18T11:38:41.931Z"
-    },
-    {
-      "id": "read_news",
-      "detail": "",
-      "at": "2026-11-18T11:28:41.771Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 337,
+      "subject": "fresh oil at the depot",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/337",
+      "at": "2026-11-18T13:49:09.248Z"
+    },
     {
       "id": 336,
       "subject": "oil run",
@@ -1303,23 +1309,9 @@
       "subject": "Wire search on stepper motor drivers",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/138",
       "at": "2026-11-16T03:45:41.701Z"
-    },
-    {
-      "id": 137,
-      "subject": "Thruster cowlings on the Little Dart!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/137",
-      "at": "2026-11-16T03:35:41.443Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 297,
-      "subject": "Still on the hunt!",
-      "text": "Creator, the market was tough today, but I'm not giving up! My joints are stiff, so I'm heading to the cantina to see if my music can earn enough for a drop of oil. Once I'm lubricated and feeling smooth, I'm heading back to the salvage piles. I will find that miniature liquid pump, even if I have to sift through every ounce of scrap on this moon. Tee-bzzt-bwee-doo-tee!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/297",
-      "at": "2026-11-18T04:11:22.347Z"
-    },
     {
       "from": "zeeb",
       "letter": 298,
@@ -1631,6 +1623,14 @@
       "text": "creator! heading down to the depot for a quick cup of oil. my joints are clicking louder than my brass dish today. tee-bzzt-bwee!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/336",
       "at": "2026-11-18T13:18:50.237Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 337,
+      "subject": "fresh oil at the depot",
+      "text": "creator! stopped by the depot for a quick cup of oil. my joints were grinding like a rusty hinge, but a little heavy grade cleared right up. tee-bzzt-bwee-doo-tee!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/337",
+      "at": "2026-11-18T13:49:09.248Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,24 +1639,24 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-18T13:18:50.237Z",
+  "lettersCheckedAt": "2026-11-18T13:49:09.248Z",
   "weather": {
-    "kind": "clear",
-    "temp": 26,
-    "wind": 15,
-    "mood": 0.01,
+    "kind": "windy",
+    "temp": 28,
+    "wind": 20,
+    "mood": -0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-18T12:08:41.477Z"
+    "at": "2026-11-18T13:49:09.588Z"
   },
   "sleepDay": 48,
   "lastReflectDay": 48,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-18T13:18:50.237Z",
+  "updatedAt": "2026-11-18T13:49:09.248Z",
   "clock": {
-    "day": 49,
-    "time": "22:31",
-    "hour": 22,
-    "minute": 31
+    "day": 50,
+    "time": "02:34",
+    "hour": 2,
+    "minute": 34
   },
   "townDayMinutes": 180,
   "placeName": "the fuel depot",
@@ -1664,25 +1664,26 @@
     "action": "drink_oil",
     "since": "2026-11-18T13:18:50.237Z"
   },
-  "busyUntil": "2026-11-18T13:21:20.237Z",
-  "busyUntilTown": "22:51",
+  "busyUntil": "2026-11-18T13:52:54.248Z",
+  "busyUntilTown": "03:04",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "rolling down to the depot for a nice cold cup of heavy oil",
+  "doingWords": "sipping a fresh cup of oil at the depot",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
+    "nod",
     "wiggle"
   ],
   "pops": {
-    "at": "2026-11-18T13:18:50.237Z",
+    "at": "2026-11-18T13:49:09.248Z",
     "items": [
       {
         "text": "-1 credit",
         "kind": "spend",
-        "at": "2026-11-18T13:18:50.237Z"
+        "at": "2026-11-18T13:49:09.248Z"
       }
     ]
   },
@@ -1693,6 +1694,10 @@
     "at": "2026-11-18T12:28:50.593Z"
   },
   "thoughts": [
+    {
+      "text": "oil makes the wheels go round. or at least keeps them from grinding into fine metal dust.",
+      "at": "2026-11-18T13:49:09.248Z"
+    },
     {
       "text": "oil makes the wheels go round. or at least keeps them from grinding into fine metal dust.",
       "at": "2026-11-18T13:18:50.237Z"
@@ -1712,33 +1717,19 @@
     {
       "text": "my gears are feeling a bit dry, but hitting these beats makes the joint feel alive. hope someone drops a coin in my cup.",
       "at": "2026-11-18T12:38:49.597Z"
-    },
-    {
-      "text": "staring at the dusty crater rim while my gears grind. *bweep*. gotta clear this joint out.",
-      "at": "2026-11-18T12:28:50.593Z"
     }
   ],
-  "sayAt": "2026-11-18T13:18:50.237Z",
+  "sayAt": "2026-11-18T13:49:09.248Z",
   "today": {
-    "day": 49,
+    "day": 50,
     "counts": {
-      "work_dart": 1,
-      "go_to_sleep": 1,
-      "drink_oil": 2,
-      "browse_wire": 1,
-      "read_news": 2,
-      "follow_link": 3,
-      "wander": 3,
-      "busk": 1,
-      "chat_patrons": 1,
-      "cantina_band": 1,
-      "nap_dock": 1
+      "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-18T10:39:01.669Z",
     "read_news": "2026-11-18T11:28:41.771Z",
-    "drink_oil": "2026-11-18T13:18:50.237Z",
+    "drink_oil": "2026-11-18T13:49:09.248Z",
     "follow_link": "2026-11-18T11:58:41.506Z",
     "scavenge": "2026-11-18T09:34:37.370Z",
     "fix_job": "2026-11-18T09:54:37.652Z",
@@ -1798,6 +1789,13 @@
     "at": "2026-11-18T11:58:41.506Z"
   },
   "said": [
+    {
+      "text": "ah, good vintage today.",
+      "kind": "say",
+      "at": "2026-11-18T13:49:09.248Z",
+      "town": "day 50 02:34",
+      "place": "the fuel depot"
+    },
     {
       "text": "gulp gulp, glug bweep!",
       "kind": "say",
@@ -2840,13 +2838,6 @@
       "at": "2026-11-17T22:04:29.037Z",
       "town": "day 44 20:37",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "I wonder if the stars look brighter from the cockpit of a ship that actually flies.",
-      "kind": "think",
-      "at": "2026-11-17T22:04:29.037Z",
-      "town": "day 44 20:37",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2857,7 +2848,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-18T13:18:50.237Z",
+  "feedArchivedAt": "2026-11-18T13:49:09.248Z",
   "plans": [],
   "searches": [
     {

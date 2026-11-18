@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1794990887771,
+  "lastTick": 1794991487426,
   "asleep": false,
-  "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-18T08:24:48.056Z",
-  "actionMinutes": 90,
-  "thought": "Gus the gyro is snug in his bracket, but I won't be much good to the Little Dart if I drop flat on the hangar floor.",
-  "feeling": "heavy-lidded, drowsy, content with the day's welds",
-  "say": "*bweee-oo-down*",
-  "mood": 0.168,
-  "energy": 0.315,
+  "place": "tower",
+  "action": "follow_link",
+  "doing": "following a link across the Wire",
+  "actionStartedAt": "2026-11-18T08:44:47.426Z",
+  "actionMinutes": 30,
+  "thought": "read about Star Wars (film). filing that away.",
+  "feeling": "curious",
+  "say": "",
+  "mood": 0.198,
+  "energy": 0.391,
   "needs": {
-    "charge": 0.019,
-    "oil": 0.457,
-    "curiosity": 0.431,
-    "company": 0.287,
-    "craft": 0.5
+    "charge": 0.066,
+    "oil": 0.497,
+    "curiosity": 0.111,
+    "company": 0.34,
+    "craft": 0.567
   },
   "credits": 9,
   "recent": [
+    {
+      "id": "follow_link",
+      "detail": "",
+      "at": "2026-11-18T08:44:47.426Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "scavenge",
       "detail": "any",
       "at": "2026-11-18T06:19:05.165Z"
-    },
-    {
-      "id": "follow_link",
-      "detail": "3",
-      "at": "2026-11-18T05:59:04.692Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-18T08:34:47.771Z",
+  "lettersCheckedAt": "2026-11-18T08:44:47.426Z",
   "weather": {
     "kind": "clear",
     "temp": 20,
@@ -1650,32 +1650,30 @@
   },
   "sleepDay": 47,
   "lastReflectDay": 47,
-  "brain": "gemini-3.7-flash",
-  "updatedAt": "2026-11-18T08:34:47.771Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-18T08:44:47.426Z",
   "clock": {
     "day": 48,
-    "time": "08:39",
-    "hour": 8,
-    "minute": 39
+    "time": "09:59",
+    "hour": 9,
+    "minute": 59
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-18T08:24:48.056Z"
+    "action": "follow_link",
+    "since": "2026-11-18T08:44:47.426Z"
   },
-  "busyUntil": "2026-11-18T08:36:03.056Z",
-  "busyUntilTown": "08:49",
+  "busyUntil": "2026-11-18T08:48:32.426Z",
+  "busyUntilTown": "10:29",
   "runner": "github",
   "model": "gemini-3.7-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "plugged into the charging dock, brass dish resting against the wall",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "droop"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-18T07:20:53.823Z",
     "items": [
@@ -1693,6 +1691,10 @@
     "at": "2026-11-18T06:50:54.619Z"
   },
   "thoughts": [
+    {
+      "text": "read about Star Wars (film). filing that away.",
+      "at": "2026-11-18T08:44:47.426Z"
+    },
     {
       "text": "Gus the gyro is snug in his bracket, but I won't be much good to the Little Dart if I drop flat on the hangar floor.",
       "at": "2026-11-18T08:24:48.056Z"
@@ -1712,27 +1714,24 @@
     {
       "text": "it's quiet tonight. maybe if i listen hard enough, the stars will tell me where to find that valve.",
       "at": "2026-11-18T07:20:53.823Z"
-    },
-    {
-      "text": "the market is full of junk but maybe one piece is the right piece. i'll check every stall again.",
-      "at": "2026-11-18T07:10:53.511Z"
     }
   ],
-  "sayAt": "2026-11-18T08:24:48.056Z",
+  "sayAt": "2026-11-18T08:44:47.426Z",
   "today": {
     "day": 48,
     "counts": {
       "send_signal": 1,
       "browse_wire": 1,
       "work_dart": 1,
-      "nap_dock": 1
+      "nap_dock": 1,
+      "follow_link": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-18T08:14:48.244Z",
     "read_news": "2026-11-17T23:21:01.677Z",
     "drink_oil": "2026-11-18T07:00:53.983Z",
-    "follow_link": "2026-11-18T05:59:04.692Z",
+    "follow_link": "2026-11-18T08:44:47.426Z",
     "scavenge": "2026-11-18T06:19:05.165Z",
     "fix_job": "2026-11-18T06:29:04.775Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
@@ -1791,6 +1790,13 @@
     "at": "2026-11-18T07:40:53.891Z"
   },
   "said": [
+    {
+      "text": "read about Star Wars (film). filing that away.",
+      "kind": "think",
+      "at": "2026-11-18T08:44:47.426Z",
+      "town": "day 48 09:59",
+      "place": "the comms tower"
+    },
     {
       "text": "*bweee-oo-down*",
       "kind": "say",
@@ -2833,13 +2839,6 @@
       "at": "2026-11-17T17:23:54.807Z",
       "town": "day 43 07:12",
       "place": "the comms tower"
-    },
-    {
-      "text": "just one more layer of physics, little guy, then we fly.",
-      "kind": "say",
-      "at": "2026-11-17T17:13:54.931Z",
-      "town": "day 43 05:52",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2850,7 +2849,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-18T08:24:48.056Z",
+  "feedArchivedAt": "2026-11-18T08:44:47.426Z",
   "plans": [],
   "searches": [
     {

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 14",
-    "progress": 23,
-    "version": 3,
-    "lastChange": "Routing the fuel feed line from Dibs the dented fuel cell directly into the main combustion manifold, securing every joint with high-grade titanium weld. (used Tilly, a sensor eye with one crack)",
+    "progress": 31,
+    "version": 4,
+    "lastChange": "Welding custom titanium brace rings around the engine mount to keep the exhaust steady under full thrust. (used Sprocket, a scorched heat tile)",
     "log": [
+      {
+        "version": 4,
+        "change": "Welding custom titanium brace rings around the engine mount to keep the exhaust steady under full thrust. (used Sprocket, a scorched heat tile)",
+        "progress": 31,
+        "at": "2026-11-18T10:39:01.669Z"
+      },
       {
         "version": 3,
         "change": "Routing the fuel feed line from Dibs the dented fuel cell directly into the main combustion manifold, securing every joint with high-grade titanium weld. (used Tilly, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "patched a hole in the hull",
         "progress": 52,
         "at": "2026-11-16T14:40:05.740Z"
-      },
-      {
-        "version": 9,
-        "change": "soldering a dedicated power switch for the reaction wheel assembly with extra heat-shrink tubing and gus to hold the line steady (used Captain, a perfectly good bolt)",
-        "progress": 50,
-        "at": "2026-11-16T14:30:05.836Z"
       }
     ],
     "launched": [
@@ -1809,7 +1809,7 @@
         ]
       }
     ],
-    "partsUsed": 4,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Gus",
@@ -1826,6 +1826,11 @@
         "name": "Tilly",
         "what": "a sensor eye with one crack",
         "version": 3
+      },
+      {
+        "name": "Sprocket",
+        "what": "a scorched heat tile",
+        "version": 4
       }
     ],
     "design": null
@@ -2063,11 +2068,6 @@
       "what": "a strip of hull plating",
       "at": "2026-11-17T21:10:00.914Z",
       "good": true
-    },
-    {
-      "name": "Sprocket",
-      "what": "a scorched heat tile",
-      "at": "2026-11-17T21:10:00.914Z"
     }
   ],
   "reads": [

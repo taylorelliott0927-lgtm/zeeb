@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 14",
-    "progress": 10,
-    "version": 1,
-    "lastChange": "mounting the tiny liquid pump near the main thruster, using Captain the copper wire to lash it to the frame and Mabel the cockpit switch to control the flow intensity. (used Gus, a bent stabiliser fin)",
+    "progress": 16,
+    "version": 2,
+    "lastChange": "Mounting Gus the tiny gyroscope securely onto the primary avionics bracket behind the instrument cluster, using Sprocket the bolt to secure it firmly against engine vibration. (used Rusty Jr, a tiny gyroscope)",
     "log": [
+      {
+        "version": 2,
+        "change": "Mounting Gus the tiny gyroscope securely onto the primary avionics bracket behind the instrument cluster, using Sprocket the bolt to secure it firmly against engine vibration. (used Rusty Jr, a tiny gyroscope)",
+        "progress": 16,
+        "at": "2026-11-18T08:14:48.244Z"
+      },
       {
         "version": 1,
         "change": "mounting the tiny liquid pump near the main thruster, using Captain the copper wire to lash it to the frame and Mabel the cockpit switch to control the flow intensity. (used Gus, a bent stabiliser fin)",
@@ -238,12 +244,6 @@
         "change": "wiring the star-tracker straight into the main navigation bus using a tiny jumper wire and gus to hold the capacitor steady",
         "progress": 43,
         "at": "2026-11-16T11:38:44.486Z"
-      },
-      {
-        "version": 7,
-        "change": "soldering the micro telemetry bus wires onto the reaction wheel driver board using gus to steady the circuit board (used Wren, a scorched heat tile)",
-        "progress": 40,
-        "at": "2026-11-16T07:34:43.131Z"
       }
     ],
     "launched": [
@@ -1809,13 +1809,18 @@
         ]
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Gus",
         "what": "a bent stabiliser fin",
         "good": true,
         "version": 1
+      },
+      {
+        "name": "Rusty Jr",
+        "what": "a tiny gyroscope",
+        "version": 2
       }
     ],
     "design": null
@@ -1970,8 +1975,7 @@
     {
       "name": "Otto",
       "what": "a cockpit switch that still clicks",
-      "at": "2026-11-18T07:20:53.823Z",
-      "carrying": true
+      "at": "2026-11-18T07:20:53.823Z"
     },
     {
       "name": "Dibs",
@@ -2058,11 +2062,6 @@
     {
       "name": "Tilly",
       "what": "a sensor eye with one crack",
-      "at": "2026-11-17T18:40:17.684Z"
-    },
-    {
-      "name": "Rusty Jr",
-      "what": "a tiny gyroscope",
       "at": "2026-11-17T18:40:17.684Z"
     }
   ],

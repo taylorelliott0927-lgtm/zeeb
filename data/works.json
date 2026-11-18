@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 14",
-    "progress": 16,
-    "version": 2,
-    "lastChange": "Mounting Gus the tiny gyroscope securely onto the primary avionics bracket behind the instrument cluster, using Sprocket the bolt to secure it firmly against engine vibration. (used Rusty Jr, a tiny gyroscope)",
+    "progress": 23,
+    "version": 3,
+    "lastChange": "Routing the fuel feed line from Dibs the dented fuel cell directly into the main combustion manifold, securing every joint with high-grade titanium weld. (used Tilly, a sensor eye with one crack)",
     "log": [
+      {
+        "version": 3,
+        "change": "Routing the fuel feed line from Dibs the dented fuel cell directly into the main combustion manifold, securing every joint with high-grade titanium weld. (used Tilly, a sensor eye with one crack)",
+        "progress": 23,
+        "at": "2026-11-18T10:29:02.088Z"
+      },
       {
         "version": 2,
         "change": "Mounting Gus the tiny gyroscope securely onto the primary avionics bracket behind the instrument cluster, using Sprocket the bolt to secure it firmly against engine vibration. (used Rusty Jr, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "soldering a dedicated power switch for the reaction wheel assembly with extra heat-shrink tubing and gus to hold the line steady (used Captain, a perfectly good bolt)",
         "progress": 50,
         "at": "2026-11-16T14:30:05.836Z"
-      },
-      {
-        "version": 8,
-        "change": "wiring the star-tracker straight into the main navigation bus using a tiny jumper wire and gus to hold the capacitor steady",
-        "progress": 43,
-        "at": "2026-11-16T11:38:44.486Z"
       }
     ],
     "launched": [
@@ -1809,7 +1809,7 @@
         ]
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 4,
     "parts": [
       {
         "name": "Gus",
@@ -1821,6 +1821,11 @@
         "name": "Rusty Jr",
         "what": "a tiny gyroscope",
         "version": 2
+      },
+      {
+        "name": "Tilly",
+        "what": "a sensor eye with one crack",
+        "version": 3
       }
     ],
     "design": null
@@ -2063,11 +2068,6 @@
       "name": "Sprocket",
       "what": "a scorched heat tile",
       "at": "2026-11-17T21:10:00.914Z"
-    },
-    {
-      "name": "Tilly",
-      "what": "a sensor eye with one crack",
-      "at": "2026-11-17T18:40:17.684Z"
     }
   ],
   "reads": [

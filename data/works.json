@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 14",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 10,
+    "version": 1,
+    "lastChange": "mounting the tiny liquid pump near the main thruster, using Captain the copper wire to lash it to the frame and Mabel the cockpit switch to control the flow intensity. (used Gus, a bent stabiliser fin)",
     "log": [
+      {
+        "version": 1,
+        "change": "mounting the tiny liquid pump near the main thruster, using Captain the copper wire to lash it to the frame and Mabel the cockpit switch to control the flow intensity. (used Gus, a bent stabiliser fin)",
+        "progress": 10,
+        "at": "2026-11-18T05:35:18.604Z"
+      },
       {
         "version": 13,
         "change": "Routing the flexible piping around the main thruster assembly and securing the joints with the salvaged sealant tape. I'm taking extra care to ensure it's a closed loop, tight enough to handle the pre (used Captain, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "soldering the micro telemetry bus wires onto the reaction wheel driver board using gus to steady the circuit board (used Wren, a scorched heat tile)",
         "progress": 40,
         "at": "2026-11-16T07:34:43.131Z"
-      },
-      {
-        "version": 6,
-        "change": "soldering the stepper driver control wires onto the central avionics bay using gus to steady the iron (used Tok, a cockpit switch that still clicks)",
-        "progress": 32,
-        "at": "2026-11-16T07:24:43.000Z"
       }
     ],
     "launched": [
@@ -1809,8 +1809,15 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 2,
+    "parts": [
+      {
+        "name": "Gus",
+        "what": "a bent stabiliser fin",
+        "good": true,
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -2036,12 +2043,6 @@
       "name": "Rusty Jr",
       "what": "a tiny gyroscope",
       "at": "2026-11-17T18:40:17.684Z"
-    },
-    {
-      "name": "Gus",
-      "what": "a bent stabiliser fin",
-      "at": "2026-11-17T18:38:01.450Z",
-      "good": true
     }
   ],
   "reads": [

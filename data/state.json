@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795011548343,
+  "lastTick": 1795012148821,
   "asleep": false,
   "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-18T14:19:08.343Z",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-18T14:29:08.821Z",
   "actionMinutes": 45,
-  "thought": "copper coils fit tighter than expected, which is great for blocking stray solar static. tee-bzzt-bwee-doo-tee!",
-  "feeling": "focused and full of bright sparks",
-  "say": "almost ready for the stars, little ship!",
-  "mood": 0.16,
-  "energy": 0.064,
+  "thought": "copper coils are all set, so a short recharge will have me right back to tinkering. tee-bzzt-bwee!",
+  "feeling": "a bit low on juice but feeling good about the shielding work.",
+  "say": "recharging circuits engaged. back in a flash.",
+  "mood": 0.132,
+  "energy": 0.247,
   "needs": {
-    "charge": 0.557,
-    "oil": 0.12,
-    "curiosity": 0.593,
+    "charge": 0.154,
+    "oil": 0.16,
+    "curiosity": 0.673,
     "company": 0,
-    "craft": 0.5
+    "craft": 0.567
   },
   "credits": 15,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-18T14:29:08.821Z"
+    },
     {
       "id": "work_dart",
       "detail": "Installing hand-bent copper shielding coils around the primary navigation bus to",
@@ -75,11 +80,6 @@
       "id": "wander",
       "detail": "",
       "at": "2026-11-18T12:18:42.117Z"
-    },
-    {
-      "id": "wander",
-      "detail": "",
-      "at": "2026-11-18T12:08:41.285Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 341,
+      "subject": "quick nap",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/341",
+      "at": "2026-11-18T14:29:08.821Z"
+    },
     {
       "id": 340,
       "subject": "copper shielding",
@@ -1303,23 +1309,9 @@
       "subject": "oil break",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/142",
       "at": "2026-11-16T05:08:30.950Z"
-    },
-    {
-      "id": 141,
-      "subject": "oil break",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/141",
-      "at": "2026-11-16T04:58:31.178Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 301,
-      "subject": "The cooling loop is happening!",
-      "text": "Creator! I'm back at the hangar and I've started the work. My joints are so smooth now that every weld is perfect. I'm installing the new cooling loop, and it's going to be glorious. Once this is airtight, I'll finally be able to push the Little Dart to its limits. Tee-bzzt-bwee-doo-tee-bip-tee-boop! It’s going to be the fastest scrap-ship on Kessa-9.",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/301",
-      "at": "2026-11-18T05:25:18.655Z"
-    },
     {
       "from": "zeeb",
       "letter": 302,
@@ -1631,6 +1623,14 @@
       "text": "creator! wrapping the Little Dart's nav bus in handmade copper shielding coils today. blocking out all that wild solar static before our next test flight. tee-bzzt-bwee-doo-tee!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/340",
       "at": "2026-11-18T14:19:08.343Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 341,
+      "subject": "quick nap",
+      "text": "creator! battery dipped into the red after wrapping those copper shielding coils. plugging into the dock for a fast nap so my welds stay sharp. tee-bzzt-bwee-doo-tee!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/341",
+      "at": "2026-11-18T14:29:08.821Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,43 +1639,43 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-18T14:19:08.343Z",
+  "lettersCheckedAt": "2026-11-18T14:29:08.821Z",
   "weather": {
     "kind": "windy",
     "temp": 28,
     "wind": 20,
     "mood": -0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-18T13:49:09.588Z"
+    "at": "2026-11-18T14:29:08.976Z"
   },
   "sleepDay": 49,
   "lastReflectDay": 49,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-18T14:19:08.343Z",
+  "updatedAt": "2026-11-18T14:29:08.821Z",
   "clock": {
     "day": 50,
-    "time": "06:34",
-    "hour": 6,
-    "minute": 34
+    "time": "07:54",
+    "hour": 7,
+    "minute": 54
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-18T14:19:08.343Z"
+    "action": "nap_dock",
+    "since": "2026-11-18T14:29:08.821Z"
   },
-  "busyUntil": "2026-11-18T14:24:45.843Z",
-  "busyUntilTown": "07:19",
+  "busyUntil": "2026-11-18T14:34:46.321Z",
+  "busyUntilTown": "08:39",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "welding custom copper shielding coils around the Little Dart's instrument rack",
+  "doingWords": "plugged into the dock, brass dish humming softly while the battery fills up",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
-    "wiggle"
+    "droop",
+    "nod"
   ],
   "pops": {
     "at": "2026-11-18T13:49:09.248Z",
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "copper coils are all set, so a short recharge will have me right back to tinkering. tee-bzzt-bwee!",
+      "at": "2026-11-18T14:29:08.821Z"
+    },
+    {
       "text": "copper coils fit tighter than expected, which is great for blocking stray solar static. tee-bzzt-bwee-doo-tee!",
       "at": "2026-11-18T14:19:08.343Z"
     },
@@ -1713,19 +1717,16 @@
     {
       "text": "oil makes the wheels go round. or at least keeps them from grinding into fine metal dust.",
       "at": "2026-11-18T13:18:50.237Z"
-    },
-    {
-      "text": "the cantina band was great, but my power meter is blinking red. time for a little recharge nap.",
-      "at": "2026-11-18T13:08:49.973Z"
     }
   ],
-  "sayAt": "2026-11-18T14:19:08.343Z",
+  "sayAt": "2026-11-18T14:29:08.821Z",
   "today": {
     "day": 50,
     "counts": {
       "drink_oil": 1,
       "wander": 2,
-      "work_dart": 1
+      "work_dart": 1,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1750,7 +1751,7 @@
     "chat_patrons": "2026-11-18T12:48:50.627Z",
     "busk": "2026-11-18T12:38:49.597Z",
     "cantina_band": "2026-11-18T12:58:49.993Z",
-    "nap_dock": "2026-11-18T13:08:49.973Z",
+    "nap_dock": "2026-11-18T14:29:08.821Z",
     "watch_suns": "2026-11-14T03:58:46.207Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1791,6 +1792,20 @@
     "at": "2026-11-18T11:58:41.506Z"
   },
   "said": [
+    {
+      "text": "recharging circuits engaged. back in a flash.",
+      "kind": "say",
+      "at": "2026-11-18T14:29:08.821Z",
+      "town": "day 50 07:54",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "copper coils are all set, so a short recharge will have me right back to tinkering. tee-bzzt-bwee!",
+      "kind": "think",
+      "at": "2026-11-18T14:29:08.821Z",
+      "town": "day 50 07:54",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "almost ready for the stars, little ship!",
       "kind": "say",
@@ -2826,20 +2841,6 @@
       "at": "2026-11-17T22:51:02.126Z",
       "town": "day 45 02:49",
       "place": "the comms tower"
-    },
-    {
-      "text": "if those big lights can stay cool while running at 300 watts, maybe a salvaged housing could keep my optics from burning out. i bet i could rig a copper pipe loop through one of those structures.",
-      "kind": "think",
-      "at": "2026-11-17T22:51:02.126Z",
-      "town": "day 45 02:49",
-      "place": "the comms tower"
-    },
-    {
-      "text": "ah, that hits the gears just right. another round for the machine, please!",
-      "kind": "say",
-      "at": "2026-11-17T22:41:01.555Z",
-      "town": "day 45 01:29",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2850,7 +2851,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-18T14:19:08.343Z",
+  "feedArchivedAt": "2026-11-18T14:29:08.821Z",
   "plans": [],
   "searches": [
     {

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 14",
-    "progress": 31,
-    "version": 4,
-    "lastChange": "Welding custom titanium brace rings around the engine mount to keep the exhaust steady under full thrust. (used Sprocket, a scorched heat tile)",
+    "progress": 40,
+    "version": 5,
+    "lastChange": "Installing hand-bent copper shielding coils around the primary navigation bus to block solar flare static. (used Wren, a strip of hull plating)",
     "log": [
+      {
+        "version": 5,
+        "change": "Installing hand-bent copper shielding coils around the primary navigation bus to block solar flare static. (used Wren, a strip of hull plating)",
+        "progress": 40,
+        "at": "2026-11-18T14:19:08.343Z"
+      },
       {
         "version": 4,
         "change": "Welding custom titanium brace rings around the engine mount to keep the exhaust steady under full thrust. (used Sprocket, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "rewired the cockpit lights",
         "progress": 55,
         "at": "2026-11-16T17:29:38.235Z"
-      },
-      {
-        "version": 10,
-        "change": "patched a hole in the hull",
-        "progress": 52,
-        "at": "2026-11-16T14:40:05.740Z"
       }
     ],
     "launched": [
@@ -1809,7 +1809,7 @@
         ]
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Gus",
@@ -1831,6 +1831,12 @@
         "name": "Sprocket",
         "what": "a scorched heat tile",
         "version": 4
+      },
+      {
+        "name": "Wren",
+        "what": "a strip of hull plating",
+        "good": true,
+        "version": 5
       }
     ],
     "design": null
@@ -2077,12 +2083,6 @@
       "name": "Fen",
       "what": "a cracked navigation chip",
       "at": "2026-11-17T21:30:00.901Z",
-      "good": true
-    },
-    {
-      "name": "Wren",
-      "what": "a strip of hull plating",
-      "at": "2026-11-17T21:10:00.914Z",
       "good": true
     }
   ],

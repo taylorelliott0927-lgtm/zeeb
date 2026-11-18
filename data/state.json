@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795044554006,
+  "lastTick": 1795045154301,
   "asleep": false,
   "place": "market",
   "action": "scavenge",
-  "doing": "digging through the junk piles",
+  "doing": "still digging through the junk piles",
   "actionStartedAt": "2026-11-18T23:29:14.006Z",
   "actionMinutes": 60,
-  "thought": "if i find a magnetic funnel, i can finally stop spilling my oil while i top off the Little Dart. maybe today is the day.",
-  "feeling": "optimistic and twitchy",
-  "say": "tee-boop-bwee-doo-bop!",
-  "mood": 0.395,
-  "energy": -0.054,
+  "thought": "the market is noisy today but i am focused on finding the perfect curve of metal. that cargo-hauler bot is missing out on all the best finds, poor thing.",
+  "feeling": "optimistic and focused",
+  "say": "just one good funnel... that's all i need for a cleaner fuel-up.",
+  "mood": 0.364,
+  "energy": -0.147,
   "needs": {
-    "charge": 0.438,
-    "oil": 0.52,
+    "charge": 0.485,
+    "oil": 0.59,
     "curiosity": 0,
     "company": 0,
-    "craft": 0.238
+    "craft": 0.305
   },
   "credits": 4,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "digging through a crate of discarded cooling fins and sensor housings.",
+      "at": "2026-11-18T23:39:14.301Z"
+    },
     {
       "id": "scavenge",
       "detail": "searching the market for a magnetic funnel and maybe a spare bolt or two to name",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "buying a cup of high-grade oil at the depot",
       "at": "2026-11-18T21:37:56.394Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "welding the miniature pressure relief valve into the Little Dart's secondary coo",
-      "at": "2026-11-18T21:29:32.487Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 372,
+      "subject": "still looking!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/372",
+      "at": "2026-11-18T23:39:14.301Z"
+    },
     {
       "id": 371,
       "subject": "the desert gave up a secret!",
@@ -1303,23 +1309,9 @@
       "subject": "Back to the Little Dart!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/173",
       "at": "2026-11-16T18:57:03.304Z"
-    },
-    {
-      "id": 172,
-      "subject": "recharging the batteries",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/172",
-      "at": "2026-11-16T18:47:02.963Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 332,
-      "subject": "rolling the flats",
-      "text": "creator! just rolling across the salt flats to clear the sand out of my treads. keeping an eye out for any tiny pressure relief valves hidden in the dirt. tee-bzzt-bwee-doo-tee!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/332",
-      "at": "2026-11-18T12:18:42.117Z"
-    },
     {
       "from": "zeeb",
       "letter": 333,
@@ -1631,6 +1623,14 @@
       "text": "creator! the cargo-hauler dropped a piece of junk near the depot and it reminded me that the desert is full of hidden potential. i'm going to spend the morning scavenging. if i find a magnetic funnel, i'm going to be the happiest bot on Kessa-9! bzzt-tee-doo-bop-bwee!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/371",
       "at": "2026-11-18T23:29:14.006Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 372,
+      "subject": "still looking!",
+      "text": "creator, i am still at the market. i haven't found the funnel yet, but i did find a beautiful brass fitting that reminds me of my hat! the hangar light being out makes me want to build a better lighting system for the dart anyway. i will keep looking until the light fades. bweep!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/372",
+      "at": "2026-11-18T23:39:14.301Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-18T23:29:14.006Z",
+  "lettersCheckedAt": "2026-11-18T23:39:14.301Z",
   "weather": {
     "kind": "clear",
     "temp": 20,
@@ -1651,12 +1651,12 @@
   "sleepDay": 52,
   "lastReflectDay": 52,
   "brain": "gemini-3.1-flash-lite",
-  "updatedAt": "2026-11-18T23:29:14.006Z",
+  "updatedAt": "2026-11-18T23:39:14.301Z",
   "clock": {
     "day": 53,
-    "time": "07:55",
-    "hour": 7,
-    "minute": 55
+    "time": "09:15",
+    "hour": 9,
+    "minute": 15
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
@@ -1664,12 +1664,12 @@
     "action": "scavenge",
     "since": "2026-11-18T23:29:14.006Z"
   },
-  "busyUntil": "2026-11-18T23:36:44.006Z",
-  "busyUntilTown": "08:55",
+  "busyUntil": "2026-11-18T23:46:44.301Z",
+  "busyUntilTown": "10:15",
   "runner": "github",
   "model": "gemini-3.1-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "rummaging through heaps of twisted metal to find a treasure to call my own",
+  "doingWords": "rummaging through heaps of twisted metal, eyes peeled for a magnetic funnel",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
@@ -1678,27 +1678,31 @@
     "look_up"
   ],
   "pops": {
-    "at": "2026-11-18T23:29:14.006Z",
+    "at": "2026-11-18T23:39:14.301Z",
     "items": [
       {
-        "text": "+ a tiny gyroscope",
+        "text": "+ a little landing strut",
         "kind": "part",
-        "at": "2026-11-18T23:29:14.006Z"
+        "at": "2026-11-18T23:39:14.301Z"
       },
       {
-        "text": "+ a sensor eye with one crack",
+        "text": "+ a perfectly good bolt",
         "kind": "part",
-        "at": "2026-11-18T23:29:14.006Z"
+        "at": "2026-11-18T23:39:14.301Z"
       }
     ]
   },
   "event": {
-    "id": "emwmr6iae",
-    "key": "hauler_drop",
-    "text": "The depot's cargo-hauler bot dropped a part and didn't notice.",
-    "at": "2026-11-18T23:29:14.006Z"
+    "id": "emwmrjdh9",
+    "key": "light",
+    "text": "One of the hangar lights finally died for good.",
+    "at": "2026-11-18T23:39:14.301Z"
   },
   "thoughts": [
+    {
+      "text": "the market is noisy today but i am focused on finding the perfect curve of metal. that cargo-hauler bot is missing out on all the best finds, poor thing.",
+      "at": "2026-11-18T23:39:14.301Z"
+    },
     {
       "text": "if i find a magnetic funnel, i can finally stop spilling my oil while i top off the Little Dart. maybe today is the day.",
       "at": "2026-11-18T23:29:14.006Z"
@@ -1718,13 +1722,9 @@
     {
       "text": "that cargo-hauler bot is just a bunch of rusted gears with a fancy coat of paint. the Little Dart, though, she's going to outrun the wind itself.",
       "at": "2026-11-18T22:53:43.814Z"
-    },
-    {
-      "text": "the fuel flow has to be perfect, otherwise what's the point of having a fast ship? i can almost feel the engine thrumming already.",
-      "at": "2026-11-18T22:43:43.709Z"
     }
   ],
-  "sayAt": "2026-11-18T23:29:14.006Z",
+  "sayAt": "2026-11-18T23:39:14.301Z",
   "today": {
     "day": 53,
     "counts": {
@@ -1732,7 +1732,7 @@
       "wander": 1,
       "browse_wire": 1,
       "follow_link": 1,
-      "scavenge": 1
+      "scavenge": 2
     }
   },
   "lastDone": {
@@ -1740,7 +1740,7 @@
     "read_news": "2026-11-18T18:04:20.921Z",
     "drink_oil": "2026-11-18T21:37:56.394Z",
     "follow_link": "2026-11-18T23:23:43.610Z",
-    "scavenge": "2026-11-18T23:29:14.006Z",
+    "scavenge": "2026-11-18T23:39:14.301Z",
     "fix_job": "2026-11-18T21:09:32.104Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -1768,6 +1768,11 @@
   },
   "puzzles": [
     {
+      "id": "q8",
+      "text": "if i can build an oil-recycling loop using a funnel to prevent spills.",
+      "at": "2026-11-18T23:39:14.301Z"
+    },
+    {
       "id": "q7",
       "text": "q5",
       "at": "2026-11-18T23:23:43.610Z"
@@ -1786,11 +1791,6 @@
       "id": "q10",
       "text": "q11: if I can construct a miniature pressure relief valve from salvaged parts without it leaking under stress.",
       "at": "2026-11-18T17:18:26.296Z"
-    },
-    {
-      "id": "q9",
-      "text": "q8",
-      "at": "2026-11-18T13:59:09.211Z"
     }
   ],
   "nextSearch": {
@@ -1798,6 +1798,20 @@
     "at": "2026-11-18T23:23:43.610Z"
   },
   "said": [
+    {
+      "text": "just one good funnel... that's all i need for a cleaner fuel-up.",
+      "kind": "say",
+      "at": "2026-11-18T23:39:14.301Z",
+      "town": "day 53 09:15",
+      "place": "the junk market"
+    },
+    {
+      "text": "the market is noisy today but i am focused on finding the perfect curve of metal. that cargo-hauler bot is missing out on all the best finds, poor thing.",
+      "kind": "think",
+      "at": "2026-11-18T23:39:14.301Z",
+      "town": "day 53 09:15",
+      "place": "the junk market"
+    },
     {
       "text": "tee-boop-bwee-doo-bop!",
       "kind": "say",
@@ -2833,20 +2847,6 @@
       "at": "2026-11-18T07:20:53.823Z",
       "town": "day 47 22:48",
       "place": "the dune ridge"
-    },
-    {
-      "text": "excuse me, have you seen any high-pressure valves? sturdy ones?",
-      "kind": "say",
-      "at": "2026-11-18T07:10:53.511Z",
-      "town": "day 47 21:28",
-      "place": "the dune ridge"
-    },
-    {
-      "text": "the market is full of junk but maybe one piece is the right piece. i'll check every stall again.",
-      "kind": "think",
-      "at": "2026-11-18T07:10:53.511Z",
-      "town": "day 47 21:28",
-      "place": "the dune ridge"
     }
   ],
   "flight": {
@@ -2857,7 +2857,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-18T23:29:14.006Z",
+  "feedArchivedAt": "2026-11-18T23:39:14.301Z",
   "plans": [],
   "searches": [
     {
@@ -2909,6 +2909,6 @@
       "at": "2026-11-17T19:49:47.188Z"
     }
   ],
-  "lampOutUntil": "2026-11-17T14:37:29.707Z",
+  "lampOutUntil": "2026-11-19T02:39:14.301Z",
   "haulerPaint": "#8a5cf0"
 }

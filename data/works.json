@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 15",
-    "progress": 32,
-    "version": 4,
-    "lastChange": "welding the primary thruster frame mounts using Dibs (a strip of hull plating) and Otto (a cockpit switch that still clicks) to ensure structural rigidity during high-g maneuvers. (used Sprocket, a perfectly good bolt)",
+    "progress": 40,
+    "version": 5,
+    "lastChange": "mounting Mabel the sensor eye to the secondary cooling loop to monitor for pressure spikes in the fuel line. (used Dibs, half a thruster nozzle)",
     "log": [
+      {
+        "version": 5,
+        "change": "mounting Mabel the sensor eye to the secondary cooling loop to monitor for pressure spikes in the fuel line. (used Dibs, half a thruster nozzle)",
+        "progress": 40,
+        "at": "2026-11-18T22:43:43.709Z"
+      },
       {
         "version": 4,
         "change": "welding the primary thruster frame mounts using Dibs (a strip of hull plating) and Otto (a cockpit switch that still clicks) to ensure structural rigidity during high-g maneuvers. (used Sprocket, a perfectly good bolt)",
@@ -238,12 +244,6 @@
         "change": "riveting and shaping Rusty Jr over the VFD display panel on the dash frame to form a glare hood (used Dibs, a strip of hull plating)",
         "progress": 42,
         "at": "2026-11-17T08:48:45.373Z"
-      },
-      {
-        "version": 4,
-        "change": "running the anode lines from the multi-digit VFD panel to the driver ICs on the dash frame (used Nim, a cockpit switch that still clicks)",
-        "progress": 35,
-        "at": "2026-11-17T07:20:17.984Z"
       }
     ],
     "launched": [
@@ -1884,7 +1884,7 @@
         ]
       }
     ],
-    "partsUsed": 4,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Tilly",
@@ -1905,6 +1905,11 @@
         "name": "Sprocket",
         "what": "a perfectly good bolt",
         "version": 4
+      },
+      {
+        "name": "Dibs",
+        "what": "half a thruster nozzle",
+        "version": 5
       }
     ],
     "design": null
@@ -2129,11 +2134,6 @@
       "name": "Otto",
       "what": "a cockpit switch that still clicks",
       "at": "2026-11-18T07:20:53.823Z"
-    },
-    {
-      "name": "Dibs",
-      "what": "half a thruster nozzle",
-      "at": "2026-11-18T06:50:54.619Z"
     }
   ],
   "reads": [

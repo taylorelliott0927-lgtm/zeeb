@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 14",
-    "progress": 57,
-    "version": 7,
-    "lastChange": "polished the nose cone (used Mabel, a cockpit switch that still clicks)",
+    "progress": 67,
+    "version": 8,
+    "lastChange": "tuned the left thruster (used Fen, a coil of copper wire)",
     "log": [
+      {
+        "version": 8,
+        "change": "tuned the left thruster (used Fen, a coil of copper wire)",
+        "progress": 67,
+        "at": "2026-11-18T17:08:26.928Z"
+      },
       {
         "version": 7,
         "change": "polished the nose cone (used Mabel, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "soldered the main telemetry harness and secured the reaction wheel controller board",
         "progress": 66,
         "at": "2026-11-16T18:57:03.304Z"
-      },
-      {
-        "version": 13,
-        "change": "routing telemetry wires for the reaction wheels",
-        "progress": 63,
-        "at": "2026-11-16T17:49:37.438Z"
       }
     ],
     "launched": [
@@ -1809,7 +1809,7 @@
         ]
       }
     ],
-    "partsUsed": 10,
+    "partsUsed": 11,
     "parts": [
       {
         "name": "Gus",
@@ -1848,6 +1848,11 @@
         "name": "Mabel",
         "what": "a cockpit switch that still clicks",
         "version": 7
+      },
+      {
+        "name": "Fen",
+        "what": "a coil of copper wire",
+        "version": 8
       }
     ],
     "design": null
@@ -2085,11 +2090,6 @@
       "name": "Rusty Jr",
       "what": "a sensor eye with one crack",
       "at": "2026-11-17T23:58:55.694Z"
-    },
-    {
-      "name": "Fen",
-      "what": "a coil of copper wire",
-      "at": "2026-11-17T23:38:55.695Z"
     }
   ],
   "reads": [

@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 13",
-    "progress": 99,
-    "version": 12,
-    "lastChange": "Carefully welding the final honeycomb ribs into the main fuselage, ensuring the structural reinforcement is symmetrical to handle atmospheric exit pressures. (used Fen, a scorched heat tile)",
+    "name": "the Little Dart Mk 14",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 13,
+        "change": "Routing the flexible piping around the main thruster assembly and securing the joints with the salvaged sealant tape. I'm taking extra care to ensure it's a closed loop, tight enough to handle the pre (used Captain, a dented fuel cell)",
+        "progress": 100,
+        "at": "2026-11-18T05:25:18.655Z"
+      },
       {
         "version": 12,
         "change": "Carefully welding the final honeycomb ribs into the main fuselage, ensuring the structural reinforcement is symmetrical to handle atmospheric exit pressures. (used Fen, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "soldering the stepper driver control wires onto the central avionics bay using gus to steady the iron (used Tok, a cockpit switch that still clicks)",
         "progress": 32,
         "at": "2026-11-16T07:24:43.000Z"
-      },
-      {
-        "version": 5,
-        "change": "mounting the reaction wheel controller board onto the central frame using gus to hold the tiny screws steady.",
-        "progress": 26,
-        "at": "2026-11-16T06:05:37.393Z"
       }
     ],
     "launched": [
@@ -1732,74 +1732,85 @@
             "version": 13
           }
         ]
+      },
+      {
+        "name": "the Little Dart Mk 13",
+        "day": 47,
+        "partsUsed": 16,
+        "parts": [
+          {
+            "name": "Fen",
+            "what": "a cracked navigation chip",
+            "version": 1
+          },
+          {
+            "name": "Dibs",
+            "what": "a dented fuel cell",
+            "good": true,
+            "version": 2
+          },
+          {
+            "name": "Nim",
+            "what": "a coil of copper wire",
+            "good": true,
+            "version": 3
+          },
+          {
+            "name": "Lorna",
+            "what": "a cockpit switch that still clicks",
+            "version": 4
+          },
+          {
+            "name": "Gus",
+            "what": "a cracked navigation chip",
+            "version": 5
+          },
+          {
+            "name": "Otto",
+            "what": "a tiny gyroscope",
+            "version": 6
+          },
+          {
+            "name": "Tok",
+            "what": "a little landing strut",
+            "version": 7
+          },
+          {
+            "name": "Pim",
+            "what": "half a thruster nozzle",
+            "good": true,
+            "version": 8
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "a dented fuel cell",
+            "version": 9
+          },
+          {
+            "name": "Brakk",
+            "what": "a scorched heat tile",
+            "version": 10
+          },
+          {
+            "name": "Gus",
+            "what": "a coil of copper wire",
+            "version": 11
+          },
+          {
+            "name": "Fen",
+            "what": "a scorched heat tile",
+            "version": 12
+          },
+          {
+            "name": "Captain",
+            "what": "a dented fuel cell",
+            "version": 13
+          }
+        ]
       }
     ],
-    "partsUsed": 15,
-    "parts": [
-      {
-        "name": "Fen",
-        "what": "a cracked navigation chip",
-        "version": 1
-      },
-      {
-        "name": "Dibs",
-        "what": "a dented fuel cell",
-        "good": true,
-        "version": 2
-      },
-      {
-        "name": "Nim",
-        "what": "a coil of copper wire",
-        "good": true,
-        "version": 3
-      },
-      {
-        "name": "Lorna",
-        "what": "a cockpit switch that still clicks",
-        "version": 4
-      },
-      {
-        "name": "Gus",
-        "what": "a cracked navigation chip",
-        "version": 5
-      },
-      {
-        "name": "Otto",
-        "what": "a tiny gyroscope",
-        "version": 6
-      },
-      {
-        "name": "Tok",
-        "what": "a little landing strut",
-        "version": 7
-      },
-      {
-        "name": "Pim",
-        "what": "half a thruster nozzle",
-        "good": true,
-        "version": 8
-      },
-      {
-        "name": "Rusty Jr",
-        "what": "a dented fuel cell",
-        "version": 9
-      },
-      {
-        "name": "Brakk",
-        "what": "a scorched heat tile",
-        "version": 10
-      },
-      {
-        "name": "Gus",
-        "what": "a coil of copper wire",
-        "version": 11
-      },
-      {
-        "name": "Fen",
-        "what": "a scorched heat tile",
-        "version": 12
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -2031,11 +2042,6 @@
       "what": "a bent stabiliser fin",
       "at": "2026-11-17T18:38:01.450Z",
       "good": true
-    },
-    {
-      "name": "Captain",
-      "what": "a dented fuel cell",
-      "at": "2026-11-17T18:18:02.106Z"
     }
   ],
   "reads": [

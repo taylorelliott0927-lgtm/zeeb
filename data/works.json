@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 14",
-    "progress": 82,
-    "version": 10,
-    "lastChange": "welding the upper intake manifold and securing the fuel regulator valve (used Captain, a mystery box that hums)",
+    "progress": 91,
+    "version": 11,
+    "lastChange": "riveting the aft heat shielding plates to protect the exhaust manifolds (used Captain, a coil of copper wire)",
     "log": [
+      {
+        "version": 11,
+        "change": "riveting the aft heat shielding plates to protect the exhaust manifolds (used Captain, a coil of copper wire)",
+        "progress": 91,
+        "at": "2026-11-18T17:38:26.336Z"
+      },
       {
         "version": 10,
         "change": "welding the upper intake manifold and securing the fuel regulator valve (used Captain, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "I am carefully installing a high-grade titanium shim behind the engine mount to ensure the thrust vector is perfectly centered, making sure every bolt is torqued just right. (used Tilly, a dented fuel cell)",
         "progress": 86,
         "at": "2026-11-17T00:16:24.353Z"
-      },
-      {
-        "version": 16,
-        "change": "I am finishing the installation of Rusty Jr, the landing strut, onto the main frame, ensuring the t-slot alignment is perfect so the ship can actually stand on its own. (used Otto, a cockpit switch that still clicks)",
-        "progress": 79,
-        "at": "2026-11-16T22:51:38.869Z"
       }
     ],
     "launched": [
@@ -1809,7 +1809,7 @@
         ]
       }
     ],
-    "partsUsed": 13,
+    "partsUsed": 14,
     "parts": [
       {
         "name": "Gus",
@@ -1863,6 +1863,11 @@
         "name": "Captain",
         "what": "a mystery box that hums",
         "version": 10
+      },
+      {
+        "name": "Captain",
+        "what": "a coil of copper wire",
+        "version": 11
       }
     ],
     "design": null
@@ -2084,11 +2089,6 @@
     {
       "name": "Gus",
       "what": "a tiny gyroscope",
-      "at": "2026-11-18T03:06:47.483Z"
-    },
-    {
-      "name": "Captain",
-      "what": "a coil of copper wire",
       "at": "2026-11-18T03:06:47.483Z"
     }
   ],

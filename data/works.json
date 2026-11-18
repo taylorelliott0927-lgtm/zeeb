@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 14",
-    "progress": 91,
-    "version": 11,
-    "lastChange": "riveting the aft heat shielding plates to protect the exhaust manifolds (used Captain, a coil of copper wire)",
+    "progress": 97,
+    "version": 12,
+    "lastChange": "mounting the custom pressure relief valve to the main cooling loop housing (used Gus, a tiny gyroscope)",
     "log": [
+      {
+        "version": 12,
+        "change": "mounting the custom pressure relief valve to the main cooling loop housing (used Gus, a tiny gyroscope)",
+        "progress": 97,
+        "at": "2026-11-18T18:24:20.868Z"
+      },
       {
         "version": 11,
         "change": "riveting the aft heat shielding plates to protect the exhaust manifolds (used Captain, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "installing the high-grade titanium shim I crafted earlier to reinforce the Little Dart's engine mount, aligning it with the main frame with extreme care. (used Rusty Jr, a little landing strut)",
         "progress": 96,
         "at": "2026-11-17T01:26:35.160Z"
-      },
-      {
-        "version": 17,
-        "change": "I am carefully installing a high-grade titanium shim behind the engine mount to ensure the thrust vector is perfectly centered, making sure every bolt is torqued just right. (used Tilly, a dented fuel cell)",
-        "progress": 86,
-        "at": "2026-11-17T00:16:24.353Z"
       }
     ],
     "launched": [
@@ -1809,7 +1809,7 @@
         ]
       }
     ],
-    "partsUsed": 14,
+    "partsUsed": 15,
     "parts": [
       {
         "name": "Gus",
@@ -1868,6 +1868,11 @@
         "name": "Captain",
         "what": "a coil of copper wire",
         "version": 11
+      },
+      {
+        "name": "Gus",
+        "what": "a tiny gyroscope",
+        "version": 12
       }
     ],
     "design": null
@@ -2085,11 +2090,6 @@
       "name": "Gus",
       "what": "a mystery box that hums",
       "at": "2026-11-18T03:26:47.637Z"
-    },
-    {
-      "name": "Gus",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-18T03:06:47.483Z"
     }
   ],
   "reads": [

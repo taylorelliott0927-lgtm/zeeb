@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 14",
-    "progress": 67,
-    "version": 8,
-    "lastChange": "tuned the left thruster (used Fen, a coil of copper wire)",
+    "progress": 76,
+    "version": 9,
+    "lastChange": "routing the main fuel feed line through the lower hull plates (used Rusty Jr, a sensor eye with one crack)",
     "log": [
+      {
+        "version": 9,
+        "change": "routing the main fuel feed line through the lower hull plates (used Rusty Jr, a sensor eye with one crack)",
+        "progress": 76,
+        "at": "2026-11-18T17:18:26.296Z"
+      },
       {
         "version": 8,
         "change": "tuned the left thruster (used Fen, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "I am bolting the newly acquired lightweight aluminum corner brackets onto the main frame, using the t-slot grooves to slide them into position for maximum stability. (used Mabel, a dented fuel cell)",
         "progress": 73,
         "at": "2026-11-16T22:31:39.143Z"
-      },
-      {
-        "version": 14,
-        "change": "soldered the main telemetry harness and secured the reaction wheel controller board",
-        "progress": 66,
-        "at": "2026-11-16T18:57:03.304Z"
       }
     ],
     "launched": [
@@ -1809,7 +1809,7 @@
         ]
       }
     ],
-    "partsUsed": 11,
+    "partsUsed": 12,
     "parts": [
       {
         "name": "Gus",
@@ -1853,6 +1853,11 @@
         "name": "Fen",
         "what": "a coil of copper wire",
         "version": 8
+      },
+      {
+        "name": "Rusty Jr",
+        "what": "a sensor eye with one crack",
+        "version": 9
       }
     ],
     "design": null
@@ -2085,11 +2090,6 @@
       "name": "Captain",
       "what": "a mystery box that hums",
       "at": "2026-11-18T03:06:47.483Z"
-    },
-    {
-      "name": "Rusty Jr",
-      "what": "a sensor eye with one crack",
-      "at": "2026-11-17T23:58:55.694Z"
     }
   ],
   "reads": [

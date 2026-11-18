@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 15",
-    "progress": 7,
-    "version": 1,
-    "lastChange": "securing the custom aluminum instrument rack to the forward cockpit bulkhead (used Tilly, a cracked navigation chip)",
+    "progress": 16,
+    "version": 2,
+    "lastChange": "welding the titanium nosecone cone cap using Sprocket (a perfectly good bolt) to secure the alignment flange (used Otto, a bent stabiliser fin)",
     "log": [
+      {
+        "version": 2,
+        "change": "welding the titanium nosecone cone cap using Sprocket (a perfectly good bolt) to secure the alignment flange (used Otto, a bent stabiliser fin)",
+        "progress": 16,
+        "at": "2026-11-18T20:01:23.777Z"
+      },
       {
         "version": 1,
         "change": "securing the custom aluminum instrument rack to the forward cockpit bulkhead (used Tilly, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "mounting Nim the cockpit switch onto the dash frame and wiring it to the VFD display power bus (used Wren, a perfectly good bolt)",
         "progress": 19,
         "at": "2026-11-17T07:00:17.536Z"
-      },
-      {
-        "version": 1,
-        "change": "checking and soldering reaction wheel telemetry wires for dead accurate attitude control (used Mabel, high-grade titanium washer)",
-        "progress": 10,
-        "at": "2026-11-17T05:00:32.450Z"
       }
     ],
     "launched": [
@@ -1884,12 +1884,17 @@
         ]
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Tilly",
         "what": "a cracked navigation chip",
         "version": 1
+      },
+      {
+        "name": "Otto",
+        "what": "a bent stabiliser fin",
+        "version": 2
       }
     ],
     "design": null
@@ -2092,11 +2097,6 @@
       "name": "Lorna",
       "what": "a cockpit switch that still clicks",
       "at": "2026-11-18T06:39:04.723Z"
-    },
-    {
-      "name": "Otto",
-      "what": "a bent stabiliser fin",
-      "at": "2026-11-18T04:01:22.770Z"
     }
   ],
   "reads": [

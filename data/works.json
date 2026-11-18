@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 13",
-    "progress": 66,
-    "version": 8,
-    "lastChange": "mounting the liquid pump firmly to the frame and verifying the seal on the copper tubing loops, making sure there's no vibration that could loosen a connection. (used Pim, half a thruster nozzle)",
+    "progress": 74,
+    "version": 9,
+    "lastChange": "fine-tuning the liquid pump flow rate to balance cooling efficiency with battery consumption, ensuring the thermal regulation matches the Little Dart's flight profile. (used Rusty Jr, a dented fuel cell)",
     "log": [
+      {
+        "version": 9,
+        "change": "fine-tuning the liquid pump flow rate to balance cooling efficiency with battery consumption, ensuring the thermal regulation matches the Little Dart's flight profile. (used Rusty Jr, a dented fuel cell)",
+        "progress": 74,
+        "at": "2026-11-18T00:52:32.105Z"
+      },
       {
         "version": 8,
         "change": "mounting the liquid pump firmly to the frame and verifying the seal on the copper tubing loops, making sure there's no vibration that could loosen a connection. (used Pim, half a thruster nozzle)",
@@ -238,12 +244,6 @@
         "change": "welding the new sleek titanium thruster cowlings onto the aft chassis using gus to hold the alignment steady (used Gus, a little landing strut)",
         "progress": 18,
         "at": "2026-11-16T03:35:41.443Z"
-      },
-      {
-        "version": 1,
-        "change": "soldering the star-tracker wire into the main compass bus and running a quick continuity check (used Brakk, a mystery box that hums)",
-        "progress": 9,
-        "at": "2026-11-16T03:25:42.221Z"
       }
     ],
     "launched": [
@@ -1734,7 +1734,7 @@
         ]
       }
     ],
-    "partsUsed": 11,
+    "partsUsed": 12,
     "parts": [
       {
         "name": "Fen",
@@ -1778,6 +1778,11 @@
         "what": "half a thruster nozzle",
         "good": true,
         "version": 8
+      },
+      {
+        "name": "Rusty Jr",
+        "what": "a dented fuel cell",
+        "version": 9
       }
     ],
     "design": null
@@ -1996,11 +2001,6 @@
       "name": "Brakk",
       "what": "a scorched heat tile",
       "at": "2026-11-17T15:03:16.973Z"
-    },
-    {
-      "name": "Rusty Jr",
-      "what": "a dented fuel cell",
-      "at": "2026-11-17T14:53:16.844Z"
     }
   ],
   "reads": [

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 13",
-    "progress": 81,
-    "version": 10,
-    "lastChange": "Using the strip of hull plating 'Wren' to cut precise honeycomb-style structural ribs for the main fuselage, ensuring the weight stays minimal while rigidity increases. (used Brakk, a scorched heat tile)",
+    "progress": 90,
+    "version": 11,
+    "lastChange": "Carefully welding the honeycomb ribs into the main fuselage, ensuring each joint is reinforced for the structural integrity required for atmospheric exit. (used Gus, a coil of copper wire)",
     "log": [
+      {
+        "version": 11,
+        "change": "Carefully welding the honeycomb ribs into the main fuselage, ensuring each joint is reinforced for the structural integrity required for atmospheric exit. (used Gus, a coil of copper wire)",
+        "progress": 90,
+        "at": "2026-11-18T02:46:48.224Z"
+      },
       {
         "version": 10,
         "change": "Using the strip of hull plating 'Wren' to cut precise honeycomb-style structural ribs for the main fuselage, ensuring the weight stays minimal while rigidity increases. (used Brakk, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "soldering the step and direction pins for the reaction wheel controller onto the Little Dart central frame using gus to hold the iron steady.",
         "progress": 24,
         "at": "2026-11-16T05:55:38.137Z"
-      },
-      {
-        "version": 3,
-        "change": "installing the micro reaction wheel bracket into the central frame using gus to hold the torque motor steady",
-        "progress": 22,
-        "at": "2026-11-16T05:45:38.631Z"
       }
     ],
     "launched": [
@@ -1734,7 +1734,7 @@
         ]
       }
     ],
-    "partsUsed": 13,
+    "partsUsed": 14,
     "parts": [
       {
         "name": "Fen",
@@ -1788,6 +1788,11 @@
         "name": "Brakk",
         "what": "a scorched heat tile",
         "version": 10
+      },
+      {
+        "name": "Gus",
+        "what": "a coil of copper wire",
+        "version": 11
       }
     ],
     "design": null
@@ -1995,11 +2000,6 @@
     {
       "name": "Fen",
       "what": "a scorched heat tile",
-      "at": "2026-11-17T15:03:16.973Z"
-    },
-    {
-      "name": "Gus",
-      "what": "a coil of copper wire",
       "at": "2026-11-17T15:03:16.973Z"
     }
   ],

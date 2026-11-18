@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 15",
-    "progress": 40,
-    "version": 5,
-    "lastChange": "mounting Mabel the sensor eye to the secondary cooling loop to monitor for pressure spikes in the fuel line. (used Dibs, half a thruster nozzle)",
+    "progress": 50,
+    "version": 6,
+    "lastChange": "installing Tok (a tiny gyroscope) into the navigation core to keep the flight path steady during long-range burns. (used Otto, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 6,
+        "change": "installing Tok (a tiny gyroscope) into the navigation core to keep the flight path steady during long-range burns. (used Otto, a cockpit switch that still clicks)",
+        "progress": 50,
+        "at": "2026-11-18T22:53:43.814Z"
+      },
       {
         "version": 5,
         "change": "mounting Mabel the sensor eye to the secondary cooling loop to monitor for pressure spikes in the fuel line. (used Dibs, half a thruster nozzle)",
@@ -238,12 +244,6 @@
         "change": "patched a hole in the hull (used Tok, a dented fuel cell)",
         "progress": 51,
         "at": "2026-11-17T09:55:42.164Z"
-      },
-      {
-        "version": 5,
-        "change": "riveting and shaping Rusty Jr over the VFD display panel on the dash frame to form a glare hood (used Dibs, a strip of hull plating)",
-        "progress": 42,
-        "at": "2026-11-17T08:48:45.373Z"
       }
     ],
     "launched": [
@@ -1884,7 +1884,7 @@
         ]
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Tilly",
@@ -1910,6 +1910,11 @@
         "name": "Dibs",
         "what": "half a thruster nozzle",
         "version": 5
+      },
+      {
+        "name": "Otto",
+        "what": "a cockpit switch that still clicks",
+        "version": 6
       }
     ],
     "design": null
@@ -2074,6 +2079,11 @@
   ],
   "stash": [
     {
+      "name": "Tilly",
+      "what": "a mystery box that hums",
+      "at": "2026-11-18T22:53:43.814Z"
+    },
+    {
       "name": "Nim",
       "what": "half a thruster nozzle",
       "at": "2026-11-18T21:47:55.426Z"
@@ -2129,11 +2139,6 @@
       "name": "Dibs",
       "what": "a dented fuel cell",
       "at": "2026-11-18T09:34:37.370Z"
-    },
-    {
-      "name": "Otto",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-18T07:20:53.823Z"
     }
   ],
   "reads": [

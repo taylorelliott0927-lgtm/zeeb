@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 15",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 7,
+    "version": 1,
+    "lastChange": "securing the custom aluminum instrument rack to the forward cockpit bulkhead (used Tilly, a cracked navigation chip)",
     "log": [
+      {
+        "version": 1,
+        "change": "securing the custom aluminum instrument rack to the forward cockpit bulkhead (used Tilly, a cracked navigation chip)",
+        "progress": 7,
+        "at": "2026-11-18T19:51:24.170Z"
+      },
       {
         "version": 13,
         "change": "routing the instrument cluster wiring harness through the main bulkhead using Tilly (a coil of copper wire) (used Gus, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "checking and soldering reaction wheel telemetry wires for dead accurate attitude control (used Mabel, high-grade titanium washer)",
         "progress": 10,
         "at": "2026-11-17T05:00:32.450Z"
-      },
-      {
-        "version": 19,
-        "change": "finalizing the installation of the titanium washer and reinforcement shim onto the engine mount, checking for stress-cracks. (used Tok, a bent stabiliser fin)",
-        "progress": 100,
-        "at": "2026-11-17T02:24:50.036Z"
       }
     ],
     "launched": [
@@ -1884,8 +1884,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Tilly",
+        "what": "a cracked navigation chip",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -2090,11 +2096,6 @@
     {
       "name": "Otto",
       "what": "a bent stabiliser fin",
-      "at": "2026-11-18T04:01:22.770Z"
-    },
-    {
-      "name": "Tilly",
-      "what": "a cracked navigation chip",
       "at": "2026-11-18T04:01:22.770Z"
     }
   ],

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 16",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 8,
+    "version": 1,
+    "lastChange": "finishing the application of the industrial sealant around the secondary cooling loop and giving the hull a final buffing to ensure it handles the heat of high-atmospheric exit. (used Mabel, a cracked navigation chip)",
     "log": [
+      {
+        "version": 1,
+        "change": "finishing the application of the industrial sealant around the secondary cooling loop and giving the hull a final buffing to ensure it handles the heat of high-atmospheric exit. (used Mabel, a cracked navigation chip)",
+        "progress": 8,
+        "at": "2026-11-19T06:06:11.998Z"
+      },
       {
         "version": 13,
         "change": "I am finishing the integration of Pim the gyroscope into the navigation manifold, ensuring the copper lining is perfectly seated to dampen any electrical interference from the thrusters. (used Captain, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "Adding a custom-bent scrap-metal gasket frame around the cockpit rim to provide a solid base for the future airtight sealant. (used Fen, a cracked navigation chip)",
         "progress": 7,
         "at": "2026-11-17T17:58:01.255Z"
-      },
-      {
-        "version": 13,
-        "change": "Adding a layer of reinforced plating near the cockpit seam to prep for the airtight sealant, ensuring the structure is sound for potential vacuum stress. (used Sprocket, a scorched heat tile)",
-        "progress": 100,
-        "at": "2026-11-17T17:48:02.553Z"
       }
     ],
     "launched": [
@@ -1958,8 +1958,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Mabel",
+        "what": "a cracked navigation chip",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -2198,11 +2204,6 @@
       "name": "Mabel",
       "what": "a coil of copper wire",
       "at": "2026-11-18T20:59:32.146Z"
-    },
-    {
-      "name": "Mabel",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-18T20:49:31.990Z"
     }
   ],
   "reads": [

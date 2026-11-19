@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 17",
-    "progress": 60,
-    "version": 7,
-    "lastChange": "welding a heat shield plate to the upper fuselage using Fen, a cockpit switch that still clicks, to secure the access hatch (used Fen, a cockpit switch that still clicks)",
+    "progress": 70,
+    "version": 8,
+    "lastChange": "welding the main thruster cowling with Lorna, a cracked navigation chip, to anchor the exhaust housing (used Lorna, a little landing strut)",
     "log": [
+      {
+        "version": 8,
+        "change": "welding the main thruster cowling with Lorna, a cracked navigation chip, to anchor the exhaust housing (used Lorna, a little landing strut)",
+        "progress": 70,
+        "at": "2026-11-19T23:34:25.883Z"
+      },
       {
         "version": 7,
         "change": "welding a heat shield plate to the upper fuselage using Fen, a cockpit switch that still clicks, to secure the access hatch (used Fen, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "tuned the left thruster (used Fen, a coil of copper wire)",
         "progress": 67,
         "at": "2026-11-18T17:08:26.928Z"
-      },
-      {
-        "version": 7,
-        "change": "polished the nose cone (used Mabel, a cockpit switch that still clicks)",
-        "progress": 57,
-        "at": "2026-11-18T16:12:52.136Z"
       }
     ],
     "launched": [
@@ -2031,7 +2031,7 @@
         ]
       }
     ],
-    "partsUsed": 9,
+    "partsUsed": 10,
     "parts": [
       {
         "name": "Otto",
@@ -2069,6 +2069,11 @@
         "name": "Fen",
         "what": "a cockpit switch that still clicks",
         "version": 7
+      },
+      {
+        "name": "Lorna",
+        "what": "a little landing strut",
+        "version": 8
       }
     ],
     "design": null
@@ -2281,11 +2286,6 @@
     {
       "name": "Rusty Jr",
       "what": "a cracked navigation chip",
-      "at": "2026-11-19T11:45:42.255Z"
-    },
-    {
-      "name": "Lorna",
-      "what": "a little landing strut",
       "at": "2026-11-19T11:45:42.255Z"
     }
   ],

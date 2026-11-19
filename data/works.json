@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 16",
-    "progress": 81,
-    "version": 10,
-    "lastChange": "wrapped Pim, a coil of copper wire, tightly around the secondary coolant line to stabilize thermal expansion (used Captain, a little landing strut)",
+    "progress": 88,
+    "version": 11,
+    "lastChange": "connected Lorna, a cracked navigation chip, to the main sensor relay using strands of copper wire to test pulsar frequency locking (used Gus, half a thruster nozzle)",
     "log": [
+      {
+        "version": 11,
+        "change": "connected Lorna, a cracked navigation chip, to the main sensor relay using strands of copper wire to test pulsar frequency locking (used Gus, half a thruster nozzle)",
+        "progress": 88,
+        "at": "2026-11-19T18:14:22.448Z"
+      },
       {
         "version": 10,
         "change": "wrapped Pim, a coil of copper wire, tightly around the secondary coolant line to stabilize thermal expansion (used Captain, a little landing strut)",
@@ -238,12 +244,6 @@
         "change": "Carefully welding the honeycomb ribs into the main fuselage, ensuring each joint is reinforced for the structural integrity required for atmospheric exit. (used Gus, a coil of copper wire)",
         "progress": 90,
         "at": "2026-11-18T02:46:48.224Z"
-      },
-      {
-        "version": 10,
-        "change": "Using the strip of hull plating 'Wren' to cut precise honeycomb-style structural ribs for the main fuselage, ensuring the weight stays minimal while rigidity increases. (used Brakk, a scorched heat tile)",
-        "progress": 81,
-        "at": "2026-11-18T02:41:02.173Z"
       }
     ],
     "launched": [
@@ -1958,7 +1958,7 @@
         ]
       }
     ],
-    "partsUsed": 10,
+    "partsUsed": 11,
     "parts": [
       {
         "name": "Mabel",
@@ -2009,6 +2009,11 @@
         "name": "Captain",
         "what": "a little landing strut",
         "version": 10
+      },
+      {
+        "name": "Gus",
+        "what": "half a thruster nozzle",
+        "version": 11
       }
     ],
     "design": null
@@ -2265,11 +2270,6 @@
       "what": "half a thruster nozzle",
       "at": "2026-11-19T02:49:18.175Z",
       "good": true
-    },
-    {
-      "name": "Gus",
-      "what": "half a thruster nozzle",
-      "at": "2026-11-19T02:18:37.400Z"
     }
   ],
   "reads": [

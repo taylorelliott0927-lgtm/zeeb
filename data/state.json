@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795096195202,
+  "lastTick": 1795096794513,
   "asleep": false,
   "place": "tower",
-  "action": "send_signal",
-  "doing": "sending a signal into deep space",
-  "actionStartedAt": "2026-11-19T13:49:55.202Z",
+  "action": "read_news",
+  "doing": "reading the space news",
+  "actionStartedAt": "2026-11-19T13:59:54.513Z",
   "actionMinutes": 30,
-  "thought": "Fifty percent built on the Mk 16! Someone out there in the stars is bound to hear me tonight.",
-  "feeling": "hopeful and excitable",
-  "say": "Broadcasting on all open frequencies! Scrap-pilot Zeeb here!",
-  "mood": 0.385,
-  "energy": 0.314,
+  "thought": "If Europe is hiring people to grab dead satellites, maybe I can salvage some prime titanium plating before the big agencies get to it. *bweep*",
+  "feeling": "clever and industrious",
+  "say": "Let's see what the heavy iron up there is broadcasting today. *bweep*",
+  "mood": 0.354,
+  "energy": 0.194,
   "needs": {
-    "charge": 0.296,
-    "oil": 0.295,
-    "curiosity": 0.161,
-    "company": 0.099,
-    "craft": 0.285
+    "charge": 0.343,
+    "oil": 0.335,
+    "curiosity": 0,
+    "company": 0.152,
+    "craft": 0.352
   },
   "credits": 5,
   "recent": [
+    {
+      "id": "read_news",
+      "detail": "",
+      "at": "2026-11-19T13:59:54.513Z"
+    },
     {
       "id": "send_signal",
       "detail": "This is Zeeb from Rustwell Outpost on Kessa-9. Little Dart Mk 16 is officially f",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "i am mixing silica dust with a high-viscosity industrial binder to create a make",
       "at": "2026-11-19T10:56:48.306Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "Plugging into the charging dock in Hangar Bay 3 for a full recharge.",
-      "at": "2026-11-19T10:46:48.378Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-19T13:49:55.202Z",
+  "lettersCheckedAt": "2026-11-19T13:59:54.513Z",
   "weather": {
     "kind": "clear",
     "temp": 29,
@@ -1650,32 +1650,31 @@
   },
   "sleepDay": 57,
   "lastReflectDay": 57,
-  "brain": "gemini-3.5-flash",
-  "updatedAt": "2026-11-19T13:49:55.202Z",
+  "brain": "gemini-3.5-flash-lite",
+  "updatedAt": "2026-11-19T13:59:54.513Z",
   "clock": {
     "day": 58,
-    "time": "02:40",
-    "hour": 2,
-    "minute": 40
+    "time": "04:00",
+    "hour": 4,
+    "minute": 0
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
   "streak": {
-    "action": "send_signal",
-    "since": "2026-11-19T13:49:55.202Z"
+    "action": "read_news",
+    "since": "2026-11-19T13:59:54.513Z"
   },
-  "busyUntil": "2026-11-19T13:53:40.202Z",
-  "busyUntilTown": "03:10",
+  "busyUntil": "2026-11-19T14:03:39.513Z",
+  "busyUntilTown": "04:30",
   "runner": "github",
-  "model": "gemini-3.5-flash",
+  "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "aiming the brass dish at the sky and broadcasting into the deep dark",
+  "doingWords": "scanning the wire for orbital data from the comms tower",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "look_up",
-    "wiggle"
+    "look_up"
   ],
   "pops": {
     "at": "2026-11-19T12:15:42.449Z",
@@ -1695,6 +1694,10 @@
   },
   "thoughts": [
     {
+      "text": "If Europe is hiring people to grab dead satellites, maybe I can salvage some prime titanium plating before the big agencies get to it. *bweep*",
+      "at": "2026-11-19T13:59:54.513Z"
+    },
+    {
       "text": "Fifty percent built on the Mk 16! Someone out there in the stars is bound to hear me tonight.",
       "at": "2026-11-19T13:49:55.202Z"
     },
@@ -1713,22 +1716,19 @@
     {
       "text": "A bit of lube in the servos will make walking back to Hangar Bay 3 a whole lot smoother.",
       "at": "2026-11-19T12:15:42.449Z"
-    },
-    {
-      "text": "I'm trading Nim the bolt for some credits. It hurts to part with him, but the Little Dart needs the fuel more than I need a spare.",
-      "at": "2026-11-19T12:05:42.960Z"
     }
   ],
-  "sayAt": "2026-11-19T13:49:55.202Z",
+  "sayAt": "2026-11-19T13:59:54.513Z",
   "today": {
     "day": 58,
     "counts": {
-      "send_signal": 1
+      "send_signal": 1,
+      "read_news": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-19T13:07:14.940Z",
-    "read_news": "2026-11-19T08:08:45.304Z",
+    "read_news": "2026-11-19T13:59:54.513Z",
     "drink_oil": "2026-11-19T12:15:42.449Z",
     "follow_link": "2026-11-19T13:17:14.709Z",
     "scavenge": "2026-11-19T11:45:42.255Z",
@@ -1784,8 +1784,25 @@
       "at": "2026-11-19T10:56:48.306Z"
     }
   ],
-  "nextSearch": null,
+  "nextSearch": {
+    "text": "orbital debris salvage laws",
+    "at": "2026-11-19T13:59:54.513Z"
+  },
   "said": [
+    {
+      "text": "Let's see what the heavy iron up there is broadcasting today. *bweep*",
+      "kind": "say",
+      "at": "2026-11-19T13:59:54.513Z",
+      "town": "day 58 04:00",
+      "place": "the comms tower"
+    },
+    {
+      "text": "If Europe is hiring people to grab dead satellites, maybe I can salvage some prime titanium plating before the big agencies get to it. *bweep*",
+      "kind": "think",
+      "at": "2026-11-19T13:59:54.513Z",
+      "town": "day 58 04:00",
+      "place": "the comms tower"
+    },
     {
       "text": "Broadcasting on all open frequencies! Scrap-pilot Zeeb here!",
       "kind": "say",
@@ -2821,20 +2838,6 @@
       "at": "2026-11-18T21:37:56.394Z",
       "town": "day 52 17:04",
       "place": "the fuel depot"
-    },
-    {
-      "text": "Hold still, little valve, you are going to space.",
-      "kind": "say",
-      "at": "2026-11-18T21:29:32.487Z",
-      "town": "day 52 15:57",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "Let's see if this salvaged valve holds steady under my welding torch. *bweep*",
-      "kind": "think",
-      "at": "2026-11-18T21:29:32.487Z",
-      "town": "day 52 15:57",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2845,7 +2848,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-19T13:49:55.202Z",
+  "feedArchivedAt": "2026-11-19T13:59:54.513Z",
   "plans": [],
   "searches": [
     {

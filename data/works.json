@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 16",
-    "progress": 94,
-    "version": 12,
-    "lastChange": "mounting Fen, a cockpit switch that still clicks, right onto the main dashboard and securing it with a high-grade titanium washer to lock the pulsar sync mode (used Gus, half a thruster nozzle) (used Mabel, half a thruster nozzle)",
+    "name": "the Little Dart Mk 17",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 13,
+        "change": "welding high-temp silica tile segments around the primary exhaust port using Pim, a coil of copper wire (used Tok, a perfectly good bolt)",
+        "progress": 100,
+        "at": "2026-11-19T19:01:52.250Z"
+      },
       {
         "version": 12,
         "change": "mounting Fen, a cockpit switch that still clicks, right onto the main dashboard and securing it with a high-grade titanium washer to lock the pulsar sync mode (used Gus, half a thruster nozzle) (used Mabel, half a thruster nozzle)",
@@ -238,12 +244,6 @@
         "change": "Routing the flexible piping around the main thruster assembly and securing the joints with the salvaged sealant tape. I'm taking extra care to ensure it's a closed loop, tight enough to handle the pre (used Captain, a dented fuel cell)",
         "progress": 100,
         "at": "2026-11-18T05:25:18.655Z"
-      },
-      {
-        "version": 12,
-        "change": "Carefully welding the final honeycomb ribs into the main fuselage, ensuring the structural reinforcement is symmetrical to handle atmospheric exit pressures. (used Fen, a scorched heat tile)",
-        "progress": 99,
-        "at": "2026-11-18T02:56:47.683Z"
       }
     ],
     "launched": [
@@ -1956,72 +1956,83 @@
             "version": 13
           }
         ]
+      },
+      {
+        "name": "the Little Dart Mk 16",
+        "day": 59,
+        "partsUsed": 14,
+        "parts": [
+          {
+            "name": "Mabel",
+            "what": "a cracked navigation chip",
+            "version": 1
+          },
+          {
+            "name": "Mabel",
+            "what": "a coil of copper wire",
+            "version": 2
+          },
+          {
+            "name": "Nim",
+            "what": "half a thruster nozzle",
+            "version": 3
+          },
+          {
+            "name": "Tilly",
+            "what": "a mystery box that hums",
+            "version": 4
+          },
+          {
+            "name": "Pim",
+            "what": "a tiny gyroscope",
+            "version": 5
+          },
+          {
+            "name": "Gus",
+            "what": "a sensor eye with one crack",
+            "version": 6
+          },
+          {
+            "name": "Nim",
+            "what": "a little landing strut",
+            "version": 7
+          },
+          {
+            "name": "Tok",
+            "what": "a perfectly good bolt",
+            "version": 8
+          },
+          {
+            "name": "Tok",
+            "what": "a cockpit switch that still clicks",
+            "version": 9
+          },
+          {
+            "name": "Captain",
+            "what": "a little landing strut",
+            "version": 10
+          },
+          {
+            "name": "Gus",
+            "what": "half a thruster nozzle",
+            "version": 11
+          },
+          {
+            "name": "Mabel",
+            "what": "half a thruster nozzle",
+            "good": true,
+            "version": 12
+          },
+          {
+            "name": "Tok",
+            "what": "a perfectly good bolt",
+            "version": 13
+          }
+        ]
       }
     ],
-    "partsUsed": 13,
-    "parts": [
-      {
-        "name": "Mabel",
-        "what": "a cracked navigation chip",
-        "version": 1
-      },
-      {
-        "name": "Mabel",
-        "what": "a coil of copper wire",
-        "version": 2
-      },
-      {
-        "name": "Nim",
-        "what": "half a thruster nozzle",
-        "version": 3
-      },
-      {
-        "name": "Tilly",
-        "what": "a mystery box that hums",
-        "version": 4
-      },
-      {
-        "name": "Pim",
-        "what": "a tiny gyroscope",
-        "version": 5
-      },
-      {
-        "name": "Gus",
-        "what": "a sensor eye with one crack",
-        "version": 6
-      },
-      {
-        "name": "Nim",
-        "what": "a little landing strut",
-        "version": 7
-      },
-      {
-        "name": "Tok",
-        "what": "a perfectly good bolt",
-        "version": 8
-      },
-      {
-        "name": "Tok",
-        "what": "a cockpit switch that still clicks",
-        "version": 9
-      },
-      {
-        "name": "Captain",
-        "what": "a little landing strut",
-        "version": 10
-      },
-      {
-        "name": "Gus",
-        "what": "half a thruster nozzle",
-        "version": 11
-      },
-      {
-        "name": "Mabel",
-        "what": "half a thruster nozzle",
-        "good": true,
-        "version": 12
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -2265,11 +2276,6 @@
       "what": "a perfectly good bolt",
       "at": "2026-11-19T03:37:42.191Z",
       "good": true
-    },
-    {
-      "name": "Tok",
-      "what": "a perfectly good bolt",
-      "at": "2026-11-19T03:09:18.106Z"
     }
   ],
   "reads": [

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 17",
-    "progress": 16,
-    "version": 2,
-    "lastChange": "soldering a second layer of copper wire from Pim around the primary exhaust housing for better pulse insulation (used Sprocket, a coil of copper wire)",
+    "progress": 26,
+    "version": 3,
+    "lastChange": "welding a third protective layer of copper wire from Pim around the exhaust housing base (used Wren, a springy hull washer)",
     "log": [
+      {
+        "version": 3,
+        "change": "welding a third protective layer of copper wire from Pim around the exhaust housing base (used Wren, a springy hull washer)",
+        "progress": 26,
+        "at": "2026-11-19T20:40:17.708Z"
+      },
       {
         "version": 2,
         "change": "soldering a second layer of copper wire from Pim around the primary exhaust housing for better pulse insulation (used Sprocket, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "Routing the fuel feed line from Dibs the dented fuel cell directly into the main combustion manifold, securing every joint with high-grade titanium weld. (used Tilly, a sensor eye with one crack)",
         "progress": 23,
         "at": "2026-11-18T10:29:02.088Z"
-      },
-      {
-        "version": 2,
-        "change": "Mounting Gus the tiny gyroscope securely onto the primary avionics bracket behind the instrument cluster, using Sprocket the bolt to secure it firmly against engine vibration. (used Rusty Jr, a tiny gyroscope)",
-        "progress": 16,
-        "at": "2026-11-18T08:14:48.244Z"
       }
     ],
     "launched": [
@@ -2031,7 +2031,7 @@
         ]
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Otto",
@@ -2043,6 +2043,12 @@
         "name": "Sprocket",
         "what": "a coil of copper wire",
         "version": 2
+      },
+      {
+        "name": "Wren",
+        "what": "a springy hull washer",
+        "custom": "rmwn46u1n",
+        "version": 3
       }
     ],
     "design": null
@@ -2271,12 +2277,6 @@
       "name": "Nim",
       "what": "a perfectly good bolt",
       "at": "2026-11-19T08:58:45.027Z"
-    },
-    {
-      "name": "Wren",
-      "what": "a springy hull washer",
-      "at": "2026-11-19T05:33:24.251Z",
-      "custom": "rmwn46u1n"
     }
   ],
   "reads": [

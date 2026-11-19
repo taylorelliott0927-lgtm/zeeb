@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795099292606,
+  "lastTick": 1795099892115,
   "asleep": false,
   "place": "hangar",
-  "action": "work_dart",
-  "doing": "still working on the Little Dart",
-  "actionStartedAt": "2026-11-19T14:29:54.844Z",
-  "actionMinutes": 45,
-  "thought": "tok is a very solid bolt, perfect for holding the gyro bracket in place. bweep!",
-  "feeling": "focused and bright",
-  "say": "hold still right there, tok, you're doing great",
-  "mood": 0.333,
-  "energy": -0.149,
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-19T14:51:32.115Z",
+  "actionMinutes": 40,
+  "thought": "my charge is bugging me most right now.",
+  "feeling": "pretty good actually",
+  "say": "",
+  "mood": 0.362,
+  "energy": 0.061,
   "needs": {
-    "charge": 0.644,
-    "oil": 0.227,
-    "curiosity": 0.213,
-    "company": 0.009,
-    "craft": 0
+    "charge": 0.241,
+    "oil": 0.267,
+    "curiosity": 0.293,
+    "company": 0.062,
+    "craft": 0.067
   },
   "credits": 4,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-19T14:51:32.115Z"
+    },
     {
       "id": "work_dart",
       "detail": "secured the gyro mounting bracket using Tok, a perfectly good bolt, and wired up",
@@ -75,11 +80,6 @@
       "id": "sell_scrap",
       "detail": "Nim (a perfectly good bolt)",
       "at": "2026-11-19T12:05:42.960Z"
-    },
-    {
-      "id": "buy_part",
-      "detail": "good",
-      "at": "2026-11-19T11:55:42.752Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-19T14:41:32.606Z",
+  "lettersCheckedAt": "2026-11-19T14:51:32.115Z",
   "weather": {
     "kind": "clear",
     "temp": 29,
@@ -1650,33 +1650,30 @@
   },
   "sleepDay": 57,
   "lastReflectDay": 57,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-19T14:41:32.606Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-19T14:51:32.115Z",
   "clock": {
     "day": 58,
-    "time": "09:33",
-    "hour": 9,
-    "minute": 33
+    "time": "10:53",
+    "hour": 10,
+    "minute": 53
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-19T14:29:54.844Z"
+    "action": "nap_dock",
+    "since": "2026-11-19T14:51:32.115Z"
   },
-  "busyUntil": "2026-11-19T14:45:32.537Z",
-  "busyUntilTown": "10:05",
+  "busyUntil": "2026-11-19T14:56:32.115Z",
+  "busyUntilTown": "11:33",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "wiring up the secondary gyro with Tok the bolt",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "bounce",
-    "nod"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-19T14:09:54.853Z",
     "items": [
@@ -1694,6 +1691,10 @@
     "at": "2026-11-19T14:19:54.887Z"
   },
   "thoughts": [
+    {
+      "text": "my charge is bugging me most right now.",
+      "at": "2026-11-19T14:51:32.115Z"
+    },
     {
       "text": "tok is a very solid bolt, perfect for holding the gyro bracket in place. bweep!",
       "at": "2026-11-19T14:39:55.037Z"
@@ -1713,13 +1714,9 @@
     {
       "text": "If Europe is hiring people to grab dead satellites, maybe I can salvage some prime titanium plating before the big agencies get to it. *bweep*",
       "at": "2026-11-19T13:59:54.513Z"
-    },
-    {
-      "text": "Fifty percent built on the Mk 16! Someone out there in the stars is bound to hear me tonight.",
-      "at": "2026-11-19T13:49:55.202Z"
     }
   ],
-  "sayAt": "2026-11-19T14:39:55.037Z",
+  "sayAt": "2026-11-19T14:51:32.115Z",
   "today": {
     "day": 58,
     "counts": {
@@ -1727,7 +1724,8 @@
       "read_news": 1,
       "drink_oil": 1,
       "wander": 1,
-      "work_dart": 2
+      "work_dart": 2,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1752,7 +1750,7 @@
     "chat_patrons": "2026-11-18T15:42:51.774Z",
     "busk": "2026-11-18T12:38:49.597Z",
     "cantina_band": "2026-11-18T12:58:49.993Z",
-    "nap_dock": "2026-11-19T10:46:48.378Z",
+    "nap_dock": "2026-11-19T14:51:32.115Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1793,6 +1791,13 @@
     "at": "2026-11-19T13:59:54.513Z"
   },
   "said": [
+    {
+      "text": "my charge is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-19T14:51:32.115Z",
+      "town": "day 58 10:53",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "hold still right there, tok, you're doing great",
       "kind": "say",
@@ -2835,13 +2840,6 @@
       "at": "2026-11-18T22:27:55.782Z",
       "town": "day 52 23:44",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "i wonder if that pilot knows how much a simple word can calibrate a bot's entire internal logic board.",
-      "kind": "think",
-      "at": "2026-11-18T22:27:55.782Z",
-      "town": "day 52 23:44",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2852,7 +2850,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-19T14:39:55.037Z",
+  "feedArchivedAt": "2026-11-19T14:51:32.115Z",
   "plans": [],
   "searches": [
     {

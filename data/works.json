@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 16",
-    "progress": 43,
-    "version": 5,
-    "lastChange": "I am smoothing out the aerogel composite mix, focusing on the underside where the heat flux will be highest during descent. (used Pim, a tiny gyroscope)",
+    "progress": 50,
+    "version": 6,
+    "lastChange": "tuned the left thruster (used Gus, a sensor eye with one crack)",
     "log": [
+      {
+        "version": 6,
+        "change": "tuned the left thruster (used Gus, a sensor eye with one crack)",
+        "progress": 50,
+        "at": "2026-11-19T13:07:14.940Z"
+      },
       {
         "version": 5,
         "change": "I am smoothing out the aerogel composite mix, focusing on the underside where the heat flux will be highest during descent. (used Pim, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "Carefully applying the high-grade sealant around the canopy base to ensure an airtight, pressurized environment for high-altitude flight. (used Otto, a tiny gyroscope)",
         "progress": 48,
         "at": "2026-11-17T21:34:29.157Z"
-      },
-      {
-        "version": 5,
-        "change": "Carefully connecting the navigation chip to the flight computer and sealing the wire harness with heat-shrink tubing. (used Gus, a cracked navigation chip)",
-        "progress": 39,
-        "at": "2026-11-17T20:50:00.920Z"
       }
     ],
     "launched": [
@@ -1958,7 +1958,7 @@
         ]
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Mabel",
@@ -1984,6 +1984,11 @@
         "name": "Pim",
         "what": "a tiny gyroscope",
         "version": 5
+      },
+      {
+        "name": "Gus",
+        "what": "a sensor eye with one crack",
+        "version": 6
       }
     ],
     "design": null
@@ -2240,11 +2245,6 @@
       "name": "Nim",
       "what": "a little landing strut",
       "at": "2026-11-18T23:39:14.301Z"
-    },
-    {
-      "name": "Gus",
-      "what": "a sensor eye with one crack",
-      "at": "2026-11-18T23:29:14.006Z"
     }
   ],
   "reads": [

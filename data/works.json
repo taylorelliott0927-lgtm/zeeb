@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 15",
-    "progress": 59,
-    "version": 7,
-    "lastChange": "installing the copper coil shielding around Tok the gyroscope in the navigation core to prevent interference. (used Dibs, a dented fuel cell)",
+    "progress": 67,
+    "version": 8,
+    "lastChange": "finishing the copper coil shielding around Tok the gyroscope and sealing it with the remaining industrial sealant to ensure zero interference for long-range navigation. (used Tilly, a coil of copper wire)",
     "log": [
+      {
+        "version": 8,
+        "change": "finishing the copper coil shielding around Tok the gyroscope and sealing it with the remaining industrial sealant to ensure zero interference for long-range navigation. (used Tilly, a coil of copper wire)",
+        "progress": 67,
+        "at": "2026-11-19T00:44:42.914Z"
+      },
       {
         "version": 7,
         "change": "installing the copper coil shielding around Tok the gyroscope in the navigation core to prevent interference. (used Dibs, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "connected the power and ground lines from the BMP388 altimeter to the Little Dart's main instrument rack bus",
         "progress": 61,
         "at": "2026-11-17T10:15:41.772Z"
-      },
-      {
-        "version": 7,
-        "change": "soldered the I2C altimeter sensor board onto the instrument rack (used Rusty Jr, a strip of hull plating)",
-        "progress": 58,
-        "at": "2026-11-17T10:05:41.776Z"
       }
     ],
     "launched": [
@@ -1884,7 +1884,7 @@
         ]
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Tilly",
@@ -1920,6 +1920,11 @@
         "name": "Dibs",
         "what": "a dented fuel cell",
         "version": 7
+      },
+      {
+        "name": "Tilly",
+        "what": "a coil of copper wire",
+        "version": 8
       }
     ],
     "design": null
@@ -2154,11 +2159,6 @@
       "name": "Tok",
       "what": "a cracked navigation chip",
       "at": "2026-11-18T12:08:41.285Z"
-    },
-    {
-      "name": "Tilly",
-      "what": "a coil of copper wire",
-      "at": "2026-11-18T09:34:37.370Z"
     }
   ],
   "reads": [

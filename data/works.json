@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 15",
-    "progress": 83,
-    "version": 10,
-    "lastChange": "I am using the remaining salvaged copper to reinforce the gyro housing. I've named the new shielding plate 'Rusty' because it reminds me of the hangar walls. (used Tok, a tiny gyroscope)",
+    "progress": 90,
+    "version": 11,
+    "lastChange": "I am integrating the tiny gyroscope Pim into the navigation manifold and wrapping the internal wiring with salvaged copper strips to prevent signal ghosting. (used Dibs, a dented fuel cell)",
     "log": [
+      {
+        "version": 11,
+        "change": "I am integrating the tiny gyroscope Pim into the navigation manifold and wrapping the internal wiring with salvaged copper strips to prevent signal ghosting. (used Dibs, a dented fuel cell)",
+        "progress": 90,
+        "at": "2026-11-19T04:27:42.079Z"
+      },
       {
         "version": 10,
         "change": "I am using the remaining salvaged copper to reinforce the gyro housing. I've named the new shielding plate 'Rusty' because it reminds me of the hangar walls. (used Tok, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "mounting the VFD driver board onto the main chassis using Rusty Jr the bolt and refining the alignment of the display so it glows clearly. (used Rusty Jr, a perfectly good bolt)",
         "progress": 85,
         "at": "2026-11-17T14:05:10.068Z"
-      },
-      {
-        "version": 10,
-        "change": "connected the filament power rails from the main converter board to the vfd display sockets (used Nim, a cockpit switch that still clicks)",
-        "progress": 75,
-        "at": "2026-11-17T11:11:57.983Z"
       }
     ],
     "launched": [
@@ -1884,7 +1884,7 @@
         ]
       }
     ],
-    "partsUsed": 11,
+    "partsUsed": 12,
     "parts": [
       {
         "name": "Tilly",
@@ -1936,6 +1936,11 @@
         "what": "a tiny gyroscope",
         "good": true,
         "version": 10
+      },
+      {
+        "name": "Dibs",
+        "what": "a dented fuel cell",
+        "version": 11
       }
     ],
     "design": null
@@ -2186,11 +2191,6 @@
       "name": "Dibs",
       "what": "a strip of hull plating",
       "at": "2026-11-18T20:21:24.440Z"
-    },
-    {
-      "name": "Dibs",
-      "what": "a dented fuel cell",
-      "at": "2026-11-18T12:28:50.593Z"
     }
   ],
   "reads": [

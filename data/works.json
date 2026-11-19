@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 16",
-    "progress": 88,
-    "version": 11,
-    "lastChange": "connected Lorna, a cracked navigation chip, to the main sensor relay using strands of copper wire to test pulsar frequency locking (used Gus, half a thruster nozzle)",
+    "progress": 94,
+    "version": 12,
+    "lastChange": "mounting Fen, a cockpit switch that still clicks, right onto the main dashboard and securing it with a high-grade titanium washer to lock the pulsar sync mode (used Gus, half a thruster nozzle) (used Mabel, half a thruster nozzle)",
     "log": [
+      {
+        "version": 12,
+        "change": "mounting Fen, a cockpit switch that still clicks, right onto the main dashboard and securing it with a high-grade titanium washer to lock the pulsar sync mode (used Gus, half a thruster nozzle) (used Mabel, half a thruster nozzle)",
+        "progress": 94,
+        "at": "2026-11-19T18:24:22.930Z"
+      },
       {
         "version": 11,
         "change": "connected Lorna, a cracked navigation chip, to the main sensor relay using strands of copper wire to test pulsar frequency locking (used Gus, half a thruster nozzle)",
@@ -238,12 +244,6 @@
         "change": "Carefully welding the final honeycomb ribs into the main fuselage, ensuring the structural reinforcement is symmetrical to handle atmospheric exit pressures. (used Fen, a scorched heat tile)",
         "progress": 99,
         "at": "2026-11-18T02:56:47.683Z"
-      },
-      {
-        "version": 11,
-        "change": "Carefully welding the honeycomb ribs into the main fuselage, ensuring each joint is reinforced for the structural integrity required for atmospheric exit. (used Gus, a coil of copper wire)",
-        "progress": 90,
-        "at": "2026-11-18T02:46:48.224Z"
       }
     ],
     "launched": [
@@ -1958,7 +1958,7 @@
         ]
       }
     ],
-    "partsUsed": 11,
+    "partsUsed": 13,
     "parts": [
       {
         "name": "Mabel",
@@ -2014,6 +2014,12 @@
         "name": "Gus",
         "what": "half a thruster nozzle",
         "version": 11
+      },
+      {
+        "name": "Mabel",
+        "what": "half a thruster nozzle",
+        "good": true,
+        "version": 12
       }
     ],
     "design": null
@@ -2264,12 +2270,6 @@
       "name": "Tok",
       "what": "a perfectly good bolt",
       "at": "2026-11-19T03:09:18.106Z"
-    },
-    {
-      "name": "Mabel",
-      "what": "half a thruster nozzle",
-      "at": "2026-11-19T02:49:18.175Z",
-      "good": true
     }
   ],
   "reads": [

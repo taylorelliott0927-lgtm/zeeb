@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 16",
-    "progress": 72,
-    "version": 9,
-    "lastChange": "riveted Dibs, a strip of hull plating, right along the nosecone apex to deflect micrometeors (used Tok, a cockpit switch that still clicks)",
+    "progress": 81,
+    "version": 10,
+    "lastChange": "wrapped Pim, a coil of copper wire, tightly around the secondary coolant line to stabilize thermal expansion (used Captain, a little landing strut)",
     "log": [
+      {
+        "version": 10,
+        "change": "wrapped Pim, a coil of copper wire, tightly around the secondary coolant line to stabilize thermal expansion (used Captain, a little landing strut)",
+        "progress": 81,
+        "at": "2026-11-19T16:49:12.468Z"
+      },
       {
         "version": 9,
         "change": "riveted Dibs, a strip of hull plating, right along the nosecone apex to deflect micrometeors (used Tok, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "Using the strip of hull plating 'Wren' to cut precise honeycomb-style structural ribs for the main fuselage, ensuring the weight stays minimal while rigidity increases. (used Brakk, a scorched heat tile)",
         "progress": 81,
         "at": "2026-11-18T02:41:02.173Z"
-      },
-      {
-        "version": 9,
-        "change": "fine-tuning the liquid pump flow rate to balance cooling efficiency with battery consumption, ensuring the thermal regulation matches the Little Dart's flight profile. (used Rusty Jr, a dented fuel cell)",
-        "progress": 74,
-        "at": "2026-11-18T00:52:32.105Z"
       }
     ],
     "launched": [
@@ -1958,7 +1958,7 @@
         ]
       }
     ],
-    "partsUsed": 9,
+    "partsUsed": 10,
     "parts": [
       {
         "name": "Mabel",
@@ -2004,6 +2004,11 @@
         "name": "Tok",
         "what": "a cockpit switch that still clicks",
         "version": 9
+      },
+      {
+        "name": "Captain",
+        "what": "a little landing strut",
+        "version": 10
       }
     ],
     "design": null
@@ -2264,11 +2269,6 @@
     {
       "name": "Gus",
       "what": "half a thruster nozzle",
-      "at": "2026-11-19T02:18:37.400Z"
-    },
-    {
-      "name": "Captain",
-      "what": "a little landing strut",
       "at": "2026-11-19T02:18:37.400Z"
     }
   ],

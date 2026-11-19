@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 15",
-    "progress": 50,
-    "version": 6,
-    "lastChange": "installing Tok (a tiny gyroscope) into the navigation core to keep the flight path steady during long-range burns. (used Otto, a cockpit switch that still clicks)",
+    "progress": 59,
+    "version": 7,
+    "lastChange": "installing the copper coil shielding around Tok the gyroscope in the navigation core to prevent interference. (used Dibs, a dented fuel cell)",
     "log": [
+      {
+        "version": 7,
+        "change": "installing the copper coil shielding around Tok the gyroscope in the navigation core to prevent interference. (used Dibs, a dented fuel cell)",
+        "progress": 59,
+        "at": "2026-11-19T00:24:43.521Z"
+      },
       {
         "version": 6,
         "change": "installing Tok (a tiny gyroscope) into the navigation core to keep the flight path steady during long-range burns. (used Otto, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "soldered the I2C altimeter sensor board onto the instrument rack (used Rusty Jr, a strip of hull plating)",
         "progress": 58,
         "at": "2026-11-17T10:05:41.776Z"
-      },
-      {
-        "version": 6,
-        "change": "patched a hole in the hull (used Tok, a dented fuel cell)",
-        "progress": 51,
-        "at": "2026-11-17T09:55:42.164Z"
       }
     ],
     "launched": [
@@ -1884,7 +1884,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Tilly",
@@ -1915,6 +1915,11 @@
         "name": "Otto",
         "what": "a cockpit switch that still clicks",
         "version": 6
+      },
+      {
+        "name": "Dibs",
+        "what": "a dented fuel cell",
+        "version": 7
       }
     ],
     "design": null
@@ -2153,11 +2158,6 @@
     {
       "name": "Tilly",
       "what": "a coil of copper wire",
-      "at": "2026-11-18T09:34:37.370Z"
-    },
-    {
-      "name": "Dibs",
-      "what": "a dented fuel cell",
       "at": "2026-11-18T09:34:37.370Z"
     }
   ],

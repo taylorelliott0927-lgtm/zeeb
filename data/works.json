@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 17",
-    "progress": 26,
-    "version": 3,
-    "lastChange": "welding a third protective layer of copper wire from Pim around the exhaust housing base (used Wren, a springy hull washer)",
+    "progress": 32,
+    "version": 4,
+    "lastChange": "welding a high-temp silica insulation tile onto the Little Dart's nose cone using Tilly (a scorched heat tile) (used Nim, a perfectly good bolt)",
     "log": [
+      {
+        "version": 4,
+        "change": "welding a high-temp silica insulation tile onto the Little Dart's nose cone using Tilly (a scorched heat tile) (used Nim, a perfectly good bolt)",
+        "progress": 32,
+        "at": "2026-11-19T22:29:08.272Z"
+      },
       {
         "version": 3,
         "change": "welding a third protective layer of copper wire from Pim around the exhaust housing base (used Wren, a springy hull washer)",
@@ -238,12 +244,6 @@
         "change": "Welding custom titanium brace rings around the engine mount to keep the exhaust steady under full thrust. (used Sprocket, a scorched heat tile)",
         "progress": 31,
         "at": "2026-11-18T10:39:01.669Z"
-      },
-      {
-        "version": 3,
-        "change": "Routing the fuel feed line from Dibs the dented fuel cell directly into the main combustion manifold, securing every joint with high-grade titanium weld. (used Tilly, a sensor eye with one crack)",
-        "progress": 23,
-        "at": "2026-11-18T10:29:02.088Z"
       }
     ],
     "launched": [
@@ -2031,7 +2031,7 @@
         ]
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Otto",
@@ -2049,6 +2049,11 @@
         "what": "a springy hull washer",
         "custom": "rmwn46u1n",
         "version": 3
+      },
+      {
+        "name": "Nim",
+        "what": "a perfectly good bolt",
+        "version": 4
       }
     ],
     "design": null
@@ -2281,11 +2286,6 @@
     {
       "name": "Dibs",
       "what": "a strip of hull plating",
-      "at": "2026-11-19T08:58:45.027Z"
-    },
-    {
-      "name": "Nim",
-      "what": "a perfectly good bolt",
       "at": "2026-11-19T08:58:45.027Z"
     }
   ],

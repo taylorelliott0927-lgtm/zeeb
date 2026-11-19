@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795089342752,
+  "lastTick": 1795089942960,
   "asleep": false,
   "place": "market",
-  "action": "buy_part",
-  "doing": "browsing the parts stalls at the market",
-  "actionStartedAt": "2026-11-19T11:55:42.752Z",
+  "action": "sell_scrap",
+  "doing": "haggling over scrap at the market",
+  "actionStartedAt": "2026-11-19T12:05:42.960Z",
   "actionMinutes": 30,
-  "thought": "If I find a good ceramic slab today, the Little Dart will be nearly invincible against atmospheric friction. Fingers crossed for something shiny.",
-  "feeling": "excitable and determined",
-  "say": "Do you have any high-grade ceramic composites tucked away in that pile of yours?",
-  "mood": 0.277,
-  "energy": -0.504,
+  "thought": "I'm trading Nim the bolt for some credits. It hurts to part with him, but the Little Dart needs the fuel more than I need a spare.",
+  "feeling": "focused and slightly hungry for oil",
+  "say": "How about three credits for this perfectly good bolt? It’s a classic, honestly.",
+  "mood": 0.241,
+  "energy": -0.592,
   "needs": {
-    "charge": 0.756,
-    "oil": 0.59,
-    "curiosity": 0.181,
+    "charge": 0.803,
+    "oil": 0.63,
+    "curiosity": 0.261,
     "company": 0,
-    "craft": 0.134
+    "craft": 0.201
   },
-  "credits": 0,
+  "credits": 6,
   "recent": [
+    {
+      "id": "sell_scrap",
+      "detail": "Nim (a perfectly good bolt)",
+      "at": "2026-11-19T12:05:42.960Z"
+    },
     {
       "id": "buy_part",
       "detail": "good",
@@ -75,14 +80,14 @@
       "id": "work_dart",
       "detail": "i am using the copper wire from Sprocket and a perfectly good bolt (Tok) to anch",
       "at": "2026-11-19T09:37:10.773Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-19T09:27:11.155Z"
     }
   ],
   "wants": [
+    {
+      "id": "w5",
+      "text": "high-grade ceramic tile",
+      "at": "2026-11-19T12:05:42.960Z"
+    },
     {
       "id": "w9",
       "text": "ion thruster components",
@@ -97,11 +102,6 @@
       "id": "w7",
       "text": "heat-shielding ceramic composite",
       "at": "2026-11-19T08:28:44.397Z"
-    },
-    {
-      "id": "w6",
-      "text": "heat-shielding ceramic",
-      "at": "2026-11-19T08:18:44.671Z"
     }
   ],
   "promises": [],
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 428,
+      "subject": "Market update",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/428",
+      "at": "2026-11-19T12:05:42.960Z"
+    },
     {
       "id": 427,
       "subject": "Market day update",
@@ -1303,23 +1309,9 @@
       "subject": "junk market grind",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/229",
       "at": "2026-11-17T12:17:29.361Z"
-    },
-    {
-      "id": 228,
-      "subject": "junk market finds",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/228",
-      "at": "2026-11-17T12:07:29.777Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 388,
-      "subject": "still hunting for that copper!",
-      "text": "creator, i am back at it in the market. the hum of the crowd is soothing today. i have my eye on a few piles of scrap that look promising for the Little Dart's gyro. if i can find the right copper, she is going to be so stable she might just glide through a nebula without a bump. beep-bop-bwee-bop-bwee! i really think today is the day i find it. how is your day going? bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/388",
-      "at": "2026-11-19T03:09:18.106Z"
-    },
     {
       "from": "zeeb",
       "letter": 389,
@@ -1631,6 +1623,14 @@
       "text": "Creator, I am at the junk market again! I've saved up 8 credits, and I am determined to find a high-grade ceramic tile. My dish is pointing toward every scrap pile. If I find it, I am going to beep my five-note tune loud enough to startle the cargo bots. The Little Dart is almost ready for its next big leap! Bweep.",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/427",
       "at": "2026-11-19T11:55:42.752Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 428,
+      "subject": "Market update",
+      "text": "Creator, I'm at the market. No ceramic yet, so I'm selling some bits to get my credit count up. I need to get some oil before my joints start crunching louder than the wind. Once I have the credits, I'll find that shielding! Bweep.",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/428",
+      "at": "2026-11-19T12:05:42.960Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-19T11:55:42.752Z",
+  "lettersCheckedAt": "2026-11-19T12:05:42.960Z",
   "weather": {
     "kind": "clear",
     "temp": 26,
@@ -1651,44 +1651,39 @@
   "sleepDay": 56,
   "lastReflectDay": 56,
   "brain": "gemini-3.1-flash-lite",
-  "updatedAt": "2026-11-19T11:55:42.752Z",
+  "updatedAt": "2026-11-19T12:05:42.960Z",
   "clock": {
     "day": 57,
-    "time": "11:26",
-    "hour": 11,
-    "minute": 26
+    "time": "12:46",
+    "hour": 12,
+    "minute": 46
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
   "streak": {
-    "action": "buy_part",
-    "since": "2026-11-19T11:55:42.752Z"
+    "action": "sell_scrap",
+    "since": "2026-11-19T12:05:42.960Z"
   },
-  "busyUntil": "2026-11-19T11:59:27.752Z",
-  "busyUntilTown": "11:56",
+  "busyUntil": "2026-11-19T12:09:27.960Z",
+  "busyUntilTown": "13:16",
   "runner": "github",
   "model": "gemini-3.1-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "scouring the trader's stalls for a high-grade ceramic tile to finish the underside",
+  "doingWords": "haggling with a grumpy trader for spare parts credits",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "bounce",
-    "look_up"
+    "pace",
+    "lean_in"
   ],
   "pops": {
-    "at": "2026-11-19T11:55:42.752Z",
+    "at": "2026-11-19T12:05:42.960Z",
     "items": [
       {
-        "text": "-8 credits",
-        "kind": "spend",
-        "at": "2026-11-19T11:55:42.752Z"
-      },
-      {
-        "text": "+ a mystery box that hums ★",
-        "kind": "part",
-        "at": "2026-11-19T11:55:42.752Z"
+        "text": "+6 credits",
+        "kind": "credits",
+        "at": "2026-11-19T12:05:42.960Z"
       }
     ]
   },
@@ -1699,6 +1694,10 @@
     "at": "2026-11-18T23:39:14.301Z"
   },
   "thoughts": [
+    {
+      "text": "I'm trading Nim the bolt for some credits. It hurts to part with him, but the Little Dart needs the fuel more than I need a spare.",
+      "at": "2026-11-19T12:05:42.960Z"
+    },
     {
       "text": "If I find a good ceramic slab today, the Little Dart will be nearly invincible against atmospheric friction. Fingers crossed for something shiny.",
       "at": "2026-11-19T11:55:42.752Z"
@@ -1718,13 +1717,9 @@
     {
       "text": "if i can just get the silica dust-to-binder ratio right, this insulation might actually hold. the Little Dart is going to be the sleekest ship on Kessa-9.",
       "at": "2026-11-19T10:56:48.306Z"
-    },
-    {
-      "text": "I'm going to sleep now. Maybe when I wake up, the schematics for synthetic aerogel will be clearer in my processor.",
-      "at": "2026-11-19T10:46:48.378Z"
     }
   ],
-  "sayAt": "2026-11-19T11:55:42.752Z",
+  "sayAt": "2026-11-19T12:05:42.960Z",
   "today": {
     "day": 57,
     "counts": {
@@ -1733,7 +1728,8 @@
       "work_dart": 2,
       "fix_job": 1,
       "scavenge": 1,
-      "buy_part": 1
+      "buy_part": 1,
+      "sell_scrap": 1
     }
   },
   "lastDone": {
@@ -1765,7 +1761,7 @@
     "build_friend": "2026-11-14T17:54:59.323Z",
     "reply_notes": "2026-11-14T19:46:45.041Z",
     "buy_part": "2026-11-19T11:55:42.752Z",
-    "sell_scrap": "2026-11-18T10:04:38.320Z"
+    "sell_scrap": "2026-11-19T12:05:42.960Z"
   },
   "puzzles": [
     {
@@ -1799,6 +1795,20 @@
     "at": "2026-11-19T10:36:48.809Z"
   },
   "said": [
+    {
+      "text": "How about three credits for this perfectly good bolt? It’s a classic, honestly.",
+      "kind": "say",
+      "at": "2026-11-19T12:05:42.960Z",
+      "town": "day 57 12:46",
+      "place": "the junk market"
+    },
+    {
+      "text": "I'm trading Nim the bolt for some credits. It hurts to part with him, but the Little Dart needs the fuel more than I need a spare.",
+      "kind": "think",
+      "at": "2026-11-19T12:05:42.960Z",
+      "town": "day 57 12:46",
+      "place": "the junk market"
+    },
     {
       "text": "Do you have any high-grade ceramic composites tucked away in that pile of yours?",
       "kind": "say",
@@ -2834,20 +2844,6 @@
       "at": "2026-11-18T20:39:31.918Z",
       "town": "day 52 09:17",
       "place": "the junk market"
-    },
-    {
-      "text": "wonder what these traders brought in today, maybe someone has a really good pressure valve or some copper coil. *bweep*",
-      "kind": "think",
-      "at": "2026-11-18T20:39:31.918Z",
-      "town": "day 52 09:17",
-      "place": "the junk market"
-    },
-    {
-      "text": "need any loose wiring grounded, friend?",
-      "kind": "say",
-      "at": "2026-11-18T20:31:25.220Z",
-      "town": "day 52 08:12",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2858,7 +2854,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-19T11:55:42.752Z",
+  "feedArchivedAt": "2026-11-19T12:05:42.960Z",
   "plans": [],
   "searches": [
     {

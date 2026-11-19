@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795107551502,
+  "lastTick": 1795108152283,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-19T16:59:11.502Z",
-  "actionMinutes": 20,
-  "thought": "my oil is bugging me most right now.",
-  "feeling": "pretty good actually",
-  "say": "",
-  "mood": 0.478,
-  "energy": 0.551,
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-19T17:09:12.283Z",
+  "actionMinutes": 40,
+  "thought": "Good thing the Little Dart is mostly old plating and pure grit. Weaving through scrap fields takes more than a committee manual, it takes good thrusters.",
+  "feeling": "clever and slightly dusty",
+  "say": "time to check the orbital logs!",
+  "mood": 0.432,
+  "energy": 0.579,
   "needs": {
-    "charge": 0.097,
-    "oil": 0,
-    "curiosity": 0.18,
-    "company": 0.053,
-    "craft": 0.067
+    "charge": 0.144,
+    "oil": 0.04,
+    "curiosity": 0,
+    "company": 0,
+    "craft": 0.134
   },
   "credits": 6,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "inter-agency space debris coordination committee manuals",
+      "at": "2026-11-19T17:09:12.283Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-19T15:11:31.463Z"
-    },
-    {
-      "id": "buy_part",
-      "detail": "good",
-      "at": "2026-11-19T15:01:32.122Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 440,
+      "subject": "The Little Dart Mk 16 is moving fast!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/440",
+      "at": "2026-11-19T17:09:12.283Z"
+    },
     {
       "id": 439,
       "subject": "copper and coolant",
@@ -1303,23 +1309,9 @@
       "subject": "back at work",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/241",
       "at": "2026-11-17T15:23:17.077Z"
-    },
-    {
-      "id": 240,
-      "subject": "the search continues!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/240",
-      "at": "2026-11-17T15:03:16.973Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 400,
-      "subject": "The Dart is humming!",
-      "text": "Creator, the navigation system is finally singing the right tune. With Pim and the copper shielding installed, the feedback is steady and clear. I beeped a five-note tune when the sensor array came online properly. I'm so close to finished, I can almost feel the air of the upper atmosphere already. Bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/400",
-      "at": "2026-11-19T05:56:11.596Z"
-    },
     {
       "from": "zeeb",
       "letter": 401,
@@ -1631,6 +1623,14 @@
       "text": "Creator, I just wrapped Pim, a fine coil of copper wire, right around the Little Dart's secondary coolant line. The thermal pressure is locked down tight! My dish is still twitching for that high-grade ceramic tile, but this ship is looking more space-worthy every second. Bweep!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/439",
       "at": "2026-11-19T16:49:12.468Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 440,
+      "subject": "The Little Dart Mk 16 is moving fast!",
+      "text": "Creator, I am up at the comms tower searching the Wire for debris manuals. The Little Dart Mk 16 is already at 75% built and my dish won't stop spinning until I find some high-grade ceramic tile for the re-entry shield. Bweep!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/440",
+      "at": "2026-11-19T17:09:12.283Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-19T16:59:11.502Z",
+  "lettersCheckedAt": "2026-11-19T17:09:12.283Z",
   "weather": {
     "kind": "clear",
     "temp": 25,
@@ -1650,30 +1650,33 @@
   },
   "sleepDay": 58,
   "lastReflectDay": 58,
-  "brain": "rules",
-  "updatedAt": "2026-11-19T16:59:11.502Z",
+  "brain": "gemini-3.5-flash-lite",
+  "updatedAt": "2026-11-19T17:09:12.283Z",
   "clock": {
     "day": 59,
-    "time": "03:54",
-    "hour": 3,
-    "minute": 54
+    "time": "05:14",
+    "hour": 5,
+    "minute": 14
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-19T16:59:11.502Z"
+    "action": "browse_wire",
+    "since": "2026-11-19T17:09:12.283Z"
   },
-  "busyUntil": "2026-11-19T17:01:41.502Z",
-  "busyUntilTown": "04:14",
+  "busyUntil": "2026-11-19T17:14:12.283Z",
+  "busyUntilTown": "05:54",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "",
-  "newsForCreator": "the Little Dart Mk 16 just reached 75% built (version 10). Last change: wrapped Pim, a coil of copper wire, tightly around the secondary coolant line to stabilize thermal expansion (used Captain, a little landing strut).",
-  "newsPendingTicks": 1,
+  "doingWords": "tapping switches and scanning deep space databases for ceramic composite specs",
+  "newsForCreator": "",
+  "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [],
+  "body": [
+    "spin",
+    "nod"
+  ],
   "pops": {
     "at": "2026-11-19T16:59:11.502Z",
     "items": [
@@ -1691,6 +1694,10 @@
     "at": "2026-11-19T16:22:40.120Z"
   },
   "thoughts": [
+    {
+      "text": "Good thing the Little Dart is mostly old plating and pure grit. Weaving through scrap fields takes more than a committee manual, it takes good thrusters.",
+      "at": "2026-11-19T17:09:12.283Z"
+    },
     {
       "text": "my oil is bugging me most right now.",
       "at": "2026-11-19T16:59:11.502Z"
@@ -1710,19 +1717,16 @@
     {
       "text": "if a piece of old junk falls from the sky and hits someone, the launcher pays. Wonder if the Little Dart needs an insurance policy or just a really good shield generator.",
       "at": "2026-11-19T16:12:39.788Z"
-    },
-    {
-      "text": "my curiosity is bugging me most right now.",
-      "at": "2026-11-19T16:02:39.622Z"
     }
   ],
-  "sayAt": "2026-11-19T16:59:11.502Z",
+  "sayAt": "2026-11-19T17:09:12.283Z",
   "today": {
     "day": 59,
     "counts": {
       "go_to_sleep": 1,
       "work_dart": 1,
-      "drink_oil": 1
+      "drink_oil": 1,
+      "browse_wire": 1
     }
   },
   "lastDone": {
@@ -1734,7 +1738,7 @@
     "fix_job": "2026-11-19T15:52:40.153Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-19T16:12:39.788Z",
+    "browse_wire": "2026-11-19T17:09:12.283Z",
     "compose_tune": "2026-11-18T20:11:24.238Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-19T05:33:24.251Z",
@@ -1784,10 +1788,24 @@
     }
   ],
   "nextSearch": {
-    "text": "inter-agency space debris coordination committee manuals",
-    "at": "2026-11-19T16:22:40.120Z"
+    "text": "salvage shielding alloys rustwell junkyard",
+    "at": "2026-11-19T17:09:12.283Z"
   },
   "said": [
+    {
+      "text": "time to check the orbital logs!",
+      "kind": "say",
+      "at": "2026-11-19T17:09:12.283Z",
+      "town": "day 59 05:14",
+      "place": "the comms tower"
+    },
+    {
+      "text": "Good thing the Little Dart is mostly old plating and pure grit. Weaving through scrap fields takes more than a committee manual, it takes good thrusters.",
+      "kind": "think",
+      "at": "2026-11-19T17:09:12.283Z",
+      "town": "day 59 05:14",
+      "place": "the comms tower"
+    },
     {
       "text": "my oil is bugging me most right now.",
       "kind": "think",
@@ -2823,20 +2841,6 @@
       "at": "2026-11-18T23:59:13.783Z",
       "town": "day 53 11:55",
       "place": "the fuel depot"
-    },
-    {
-      "text": "just a little turn here, a bit of solder there, and she'll hum like a new engine!",
-      "kind": "say",
-      "at": "2026-11-18T23:49:14.003Z",
-      "town": "day 53 10:35",
-      "place": "the junk market"
-    },
-    {
-      "text": "this coupling is an absolute mess, but i can fix it in my sleep. once i get these credits, i am heading straight to the depot for a long, golden drink.",
-      "kind": "think",
-      "at": "2026-11-18T23:49:14.003Z",
-      "town": "day 53 10:35",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2847,9 +2851,13 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-19T16:59:11.502Z",
+  "feedArchivedAt": "2026-11-19T17:09:12.283Z",
   "plans": [],
   "searches": [
+    {
+      "q": "inter-agency space debris coordination committee manuals",
+      "at": "2026-11-19T17:09:12.283Z"
+    },
     {
       "q": "orbital debris salvage laws",
       "at": "2026-11-19T16:12:39.788Z"
@@ -2893,10 +2901,6 @@
     {
       "q": "deep space telemetry frequencies",
       "at": "2026-11-18T19:06:12.955Z"
-    },
-    {
-      "q": "Mars rovers",
-      "at": "2026-11-18T17:54:20.715Z"
     }
   ],
   "lampOutUntil": "2026-11-19T02:39:14.301Z",

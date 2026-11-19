@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 15",
-    "progress": 67,
-    "version": 8,
-    "lastChange": "finishing the copper coil shielding around Tok the gyroscope and sealing it with the remaining industrial sealant to ensure zero interference for long-range navigation. (used Tilly, a coil of copper wire)",
+    "progress": 75,
+    "version": 9,
+    "lastChange": "Reinforcing the hull seams using Dibs the strip of hull plating to ensure the structural integrity matches the new navigation precision. (used Tok, a cracked navigation chip)",
     "log": [
+      {
+        "version": 9,
+        "change": "Reinforcing the hull seams using Dibs the strip of hull plating to ensure the structural integrity matches the new navigation precision. (used Tok, a cracked navigation chip)",
+        "progress": 75,
+        "at": "2026-11-19T02:08:38.263Z"
+      },
       {
         "version": 8,
         "change": "finishing the copper coil shielding around Tok the gyroscope and sealing it with the remaining industrial sealant to ensure zero interference for long-range navigation. (used Tilly, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "connected the anode driver lines from the main board to the VFD tube grid sockets (used Gus, a coil of copper wire)",
         "progress": 68,
         "at": "2026-11-17T11:01:57.600Z"
-      },
-      {
-        "version": 8,
-        "change": "connected the power and ground lines from the BMP388 altimeter to the Little Dart's main instrument rack bus",
-        "progress": 61,
-        "at": "2026-11-17T10:15:41.772Z"
       }
     ],
     "launched": [
@@ -1884,7 +1884,7 @@
         ]
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Tilly",
@@ -1925,6 +1925,11 @@
         "name": "Tilly",
         "what": "a coil of copper wire",
         "version": 8
+      },
+      {
+        "name": "Tok",
+        "what": "a cracked navigation chip",
+        "version": 9
       }
     ],
     "design": null
@@ -2154,11 +2159,6 @@
       "what": "a tiny gyroscope",
       "at": "2026-11-18T12:18:42.117Z",
       "good": true
-    },
-    {
-      "name": "Tok",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-18T12:08:41.285Z"
     }
   ],
   "reads": [

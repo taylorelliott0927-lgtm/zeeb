@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 16",
-    "progress": 18,
-    "version": 2,
-    "lastChange": "I am retrofitting the secondary cooling loop with a high-pressure cryogenic pump salvaged from the depot, ensuring it is braced with Gus the thruster nozzle to prevent vibration fatigue. (used Mabel, a coil of copper wire)",
+    "progress": 26,
+    "version": 3,
+    "lastChange": "i am using the copper wire from Sprocket and a perfectly good bolt (Tok) to anchor the cooling lines to the hull, ensuring they are vibration-proof. (used Nim, half a thruster nozzle)",
     "log": [
+      {
+        "version": 3,
+        "change": "i am using the copper wire from Sprocket and a perfectly good bolt (Tok) to anchor the cooling lines to the hull, ensuring they are vibration-proof. (used Nim, half a thruster nozzle)",
+        "progress": 26,
+        "at": "2026-11-19T09:37:10.773Z"
+      },
       {
         "version": 2,
         "change": "I am retrofitting the secondary cooling loop with a high-pressure cryogenic pump salvaged from the depot, ensuring it is braced with Gus the thruster nozzle to prevent vibration fatigue. (used Mabel, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "Adding a layer of repurposed heat shielding around the cockpit seam to prep for the final seal. I am using a steady hand to make sure the bond is strong enough for deep space. (used Nim, a coil of copper wire)",
         "progress": 25,
         "at": "2026-11-17T19:30:16.756Z"
-      },
-      {
-        "version": 2,
-        "change": "Adding a structural support strut made from 'Brakk' and 'Tok' to the main fuselage to increase the Little Dart's overall integrity. (used Dibs, a dented fuel cell)",
-        "progress": 15,
-        "at": "2026-11-17T19:10:17.330Z"
       }
     ],
     "launched": [
@@ -1958,7 +1958,7 @@
         ]
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Mabel",
@@ -1969,6 +1969,11 @@
         "name": "Mabel",
         "what": "a coil of copper wire",
         "version": 2
+      },
+      {
+        "name": "Nim",
+        "what": "half a thruster nozzle",
+        "version": 3
       }
     ],
     "design": null
@@ -2220,11 +2225,6 @@
       "name": "Tilly",
       "what": "a mystery box that hums",
       "at": "2026-11-18T22:53:43.814Z"
-    },
-    {
-      "name": "Nim",
-      "what": "half a thruster nozzle",
-      "at": "2026-11-18T21:47:55.426Z"
     }
   ],
   "reads": [

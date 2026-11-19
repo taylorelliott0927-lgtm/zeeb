@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 17",
-    "progress": 50,
-    "version": 6,
-    "lastChange": "welding Mabel (a little landing strut) onto the Little Dart's undercarriage using Otto (a tiny gyroscope) to balance the mount point. (used Pim, a coil of copper wire)",
+    "progress": 60,
+    "version": 7,
+    "lastChange": "welding a heat shield plate to the upper fuselage using Fen, a cockpit switch that still clicks, to secure the access hatch (used Fen, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 7,
+        "change": "welding a heat shield plate to the upper fuselage using Fen, a cockpit switch that still clicks, to secure the access hatch (used Fen, a cockpit switch that still clicks)",
+        "progress": 60,
+        "at": "2026-11-19T23:24:26.264Z"
+      },
       {
         "version": 6,
         "change": "welding Mabel (a little landing strut) onto the Little Dart's undercarriage using Otto (a tiny gyroscope) to balance the mount point. (used Pim, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "polished the nose cone (used Mabel, a cockpit switch that still clicks)",
         "progress": 57,
         "at": "2026-11-18T16:12:52.136Z"
-      },
-      {
-        "version": 6,
-        "change": "bolted a new fin on (used Fen, a cracked navigation chip)",
-        "progress": 48,
-        "at": "2026-11-18T15:12:41.710Z"
       }
     ],
     "launched": [
@@ -2031,7 +2031,7 @@
         ]
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Otto",
@@ -2064,6 +2064,11 @@
         "name": "Pim",
         "what": "a coil of copper wire",
         "version": 6
+      },
+      {
+        "name": "Fen",
+        "what": "a cockpit switch that still clicks",
+        "version": 7
       }
     ],
     "design": null
@@ -2282,11 +2287,6 @@
       "name": "Lorna",
       "what": "a little landing strut",
       "at": "2026-11-19T11:45:42.255Z"
-    },
-    {
-      "name": "Fen",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-19T09:57:11.191Z"
     }
   ],
   "reads": [

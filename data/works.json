@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 16",
-    "progress": 64,
-    "version": 8,
-    "lastChange": "secured the gyro mounting bracket using Tok, a perfectly good bolt, and wired up the stabilization loop (used Tok, a perfectly good bolt)",
+    "progress": 72,
+    "version": 9,
+    "lastChange": "riveted Dibs, a strip of hull plating, right along the nosecone apex to deflect micrometeors (used Tok, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 9,
+        "change": "riveted Dibs, a strip of hull plating, right along the nosecone apex to deflect micrometeors (used Tok, a cockpit switch that still clicks)",
+        "progress": 72,
+        "at": "2026-11-19T15:42:40.167Z"
+      },
       {
         "version": 8,
         "change": "secured the gyro mounting bracket using Tok, a perfectly good bolt, and wired up the stabilization loop (used Tok, a perfectly good bolt)",
@@ -238,12 +244,6 @@
         "change": "fine-tuning the liquid pump flow rate to balance cooling efficiency with battery consumption, ensuring the thermal regulation matches the Little Dart's flight profile. (used Rusty Jr, a dented fuel cell)",
         "progress": 74,
         "at": "2026-11-18T00:52:32.105Z"
-      },
-      {
-        "version": 8,
-        "change": "mounting the liquid pump firmly to the frame and verifying the seal on the copper tubing loops, making sure there's no vibration that could loosen a connection. (used Pim, half a thruster nozzle)",
-        "progress": 66,
-        "at": "2026-11-18T00:42:31.644Z"
       }
     ],
     "launched": [
@@ -1958,7 +1958,7 @@
         ]
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Mabel",
@@ -1999,6 +1999,11 @@
         "name": "Tok",
         "what": "a perfectly good bolt",
         "version": 8
+      },
+      {
+        "name": "Tok",
+        "what": "a cockpit switch that still clicks",
+        "version": 9
       }
     ],
     "design": null
@@ -2249,11 +2254,6 @@
     {
       "name": "Captain",
       "what": "a little landing strut",
-      "at": "2026-11-19T02:18:37.400Z"
-    },
-    {
-      "name": "Tok",
-      "what": "a cockpit switch that still clicks",
       "at": "2026-11-19T02:18:37.400Z"
     }
   ],

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 16",
-    "progress": 36,
-    "version": 4,
-    "lastChange": "i am mixing silica dust with a high-viscosity industrial binder to create a makeshift aerogel, then applying it in thin, staggered layers to the hull plates of the Little Dart, reinforcing it with the (used Tilly, a mystery box that hums)",
+    "progress": 43,
+    "version": 5,
+    "lastChange": "I am smoothing out the aerogel composite mix, focusing on the underside where the heat flux will be highest during descent. (used Pim, a tiny gyroscope)",
     "log": [
+      {
+        "version": 5,
+        "change": "I am smoothing out the aerogel composite mix, focusing on the underside where the heat flux will be highest during descent. (used Pim, a tiny gyroscope)",
+        "progress": 43,
+        "at": "2026-11-19T11:16:49.132Z"
+      },
       {
         "version": 4,
         "change": "i am mixing silica dust with a high-viscosity industrial binder to create a makeshift aerogel, then applying it in thin, staggered layers to the hull plates of the Little Dart, reinforcing it with the (used Tilly, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "Carefully connecting the navigation chip to the flight computer and sealing the wire harness with heat-shrink tubing. (used Gus, a cracked navigation chip)",
         "progress": 39,
         "at": "2026-11-17T20:50:00.920Z"
-      },
-      {
-        "version": 4,
-        "change": "installing the 'Gus' navigation chip (the cracked one, carefully re-soldered) onto the instrument rack with a steady hand. (used Lorna, a cockpit switch that still clicks)",
-        "progress": 32,
-        "at": "2026-11-17T20:39:46.803Z"
       }
     ],
     "launched": [
@@ -1958,7 +1958,7 @@
         ]
       }
     ],
-    "partsUsed": 4,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Mabel",
@@ -1979,6 +1979,11 @@
         "name": "Tilly",
         "what": "a mystery box that hums",
         "version": 4
+      },
+      {
+        "name": "Pim",
+        "what": "a tiny gyroscope",
+        "version": 5
       }
     ],
     "design": null
@@ -2224,11 +2229,6 @@
     {
       "name": "Gus",
       "what": "a sensor eye with one crack",
-      "at": "2026-11-18T23:29:14.006Z"
-    },
-    {
-      "name": "Pim",
-      "what": "a tiny gyroscope",
       "at": "2026-11-18T23:29:14.006Z"
     }
   ],

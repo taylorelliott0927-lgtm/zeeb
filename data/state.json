@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795104159622,
+  "lastTick": 1795104759788,
   "asleep": false,
-  "place": "market",
-  "action": "scavenge",
-  "doing": "digging through the junk piles",
-  "actionStartedAt": "2026-11-19T16:02:39.622Z",
-  "actionMinutes": 40,
-  "thought": "my curiosity is bugging me most right now.",
-  "feeling": "pretty good actually",
-  "say": "",
-  "mood": 0.387,
-  "energy": 0.371,
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-19T16:12:39.788Z",
+  "actionMinutes": 45,
+  "thought": "if a piece of old junk falls from the sky and hits someone, the launcher pays. Wonder if the Little Dart needs an insurance policy or just a really good shield generator.",
+  "feeling": "curious and slightly amused",
+  "say": "come on wire, give me a good salvage lead.",
+  "mood": 0.414,
+  "energy": 0.274,
   "needs": {
-    "charge": 0.256,
-    "oil": 0.235,
-    "curiosity": 0.292,
-    "company": 0.053,
-    "craft": 0.067
+    "charge": 0.303,
+    "oil": 0.275,
+    "curiosity": 0,
+    "company": 0,
+    "craft": 0.134
   },
   "credits": 7,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "orbital debris salvage laws",
+      "at": "2026-11-19T16:12:39.788Z"
+    },
     {
       "id": "scavenge",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "wander",
       "detail": "",
       "at": "2026-11-19T14:19:54.887Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-19T14:09:54.853Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 437,
+      "subject": "Scouring the Wire for Heat Shields",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/437",
+      "at": "2026-11-19T16:12:39.788Z"
+    },
     {
       "id": 436,
       "subject": "Nosecone reinforced!",
@@ -1303,23 +1309,9 @@
       "subject": "the market hunt",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/238",
       "at": "2026-11-17T14:43:16.826Z"
-    },
-    {
-      "id": 237,
-      "subject": "almost there!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/237",
-      "at": "2026-11-17T14:25:09.558Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 397,
-      "subject": "napping and dreaming",
-      "text": "creator, i'm going to nap now. my battery is running low and my joints feel like they have a bit of grit in them. when i wake up, i have a plan for those washers—i'm going to forge them from the scrap sheet metal i saved. i'm so close to the final assembly of the Little Dart! i can almost hear the engines humming already. bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/397",
-      "at": "2026-11-19T05:13:24.588Z"
-    },
     {
       "from": "zeeb",
       "letter": 398,
@@ -1631,6 +1623,14 @@
       "text": "Creator, I'm back in Hangar Bay 3 and I just riveted Dibs right onto the Little Dart's nosecone! She looks sharper and tougher than ever. My dish is still spinning for some high-grade ceramic tile, but until then, this scrap hull is going to punch right through the upper atmosphere. Bweep!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/436",
       "at": "2026-11-19T15:42:40.167Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 437,
+      "subject": "Scouring the Wire for Heat Shields",
+      "text": "Creator! I am up at the comms tower right now checking out orbital debris laws on the Wire. If old satellites have high-grade ceramic tiles just floating around up there, maybe I can figure out how to legally snag one for the Little Dart! My dish is spinning non-stop. Bweep!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/437",
+      "at": "2026-11-19T16:12:39.788Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-19T16:02:39.622Z",
+  "lettersCheckedAt": "2026-11-19T16:12:39.788Z",
   "weather": {
     "kind": "clear",
     "temp": 28,
@@ -1650,30 +1650,32 @@
   },
   "sleepDay": 57,
   "lastReflectDay": 57,
-  "brain": "rules",
-  "updatedAt": "2026-11-19T16:02:39.622Z",
+  "brain": "gemini-3.5-flash-lite",
+  "updatedAt": "2026-11-19T16:12:39.788Z",
   "clock": {
     "day": 58,
-    "time": "20:22",
-    "hour": 20,
-    "minute": 22
+    "time": "21:42",
+    "hour": 21,
+    "minute": 42
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "scavenge",
-    "since": "2026-11-19T16:02:39.622Z"
+    "action": "browse_wire",
+    "since": "2026-11-19T16:12:39.788Z"
   },
-  "busyUntil": "2026-11-19T16:07:39.622Z",
-  "busyUntilTown": "21:02",
+  "busyUntil": "2026-11-19T16:18:17.288Z",
+  "busyUntilTown": "22:27",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "",
+  "doingWords": "tapping my dish against the comms terminal while searching for ceramic options",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [],
+  "body": [
+    "spin"
+  ],
   "pops": {
     "at": "2026-11-19T16:02:39.622Z",
     "items": [
@@ -1691,6 +1693,10 @@
     "at": "2026-11-19T15:21:31.319Z"
   },
   "thoughts": [
+    {
+      "text": "if a piece of old junk falls from the sky and hits someone, the launcher pays. Wonder if the Little Dart needs an insurance policy or just a really good shield generator.",
+      "at": "2026-11-19T16:12:39.788Z"
+    },
     {
       "text": "my curiosity is bugging me most right now.",
       "at": "2026-11-19T16:02:39.622Z"
@@ -1710,13 +1716,9 @@
     {
       "text": "I saw that cargo bot drop something shiny before it rolled away! Let's go see if it's a good bolt or a mystery wire.",
       "at": "2026-11-19T15:21:31.319Z"
-    },
-    {
-      "text": "my curiosity is bugging me most right now.",
-      "at": "2026-11-19T15:11:31.463Z"
     }
   ],
-  "sayAt": "2026-11-19T16:02:39.622Z",
+  "sayAt": "2026-11-19T16:12:39.788Z",
   "today": {
     "day": 58,
     "counts": {
@@ -1728,7 +1730,8 @@
       "nap_dock": 2,
       "buy_part": 1,
       "fix_job": 1,
-      "scavenge": 1
+      "scavenge": 1,
+      "browse_wire": 1
     }
   },
   "lastDone": {
@@ -1740,7 +1743,7 @@
     "fix_job": "2026-11-19T15:52:40.153Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-19T12:57:15.352Z",
+    "browse_wire": "2026-11-19T16:12:39.788Z",
     "compose_tune": "2026-11-18T20:11:24.238Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-19T05:33:24.251Z",
@@ -1764,6 +1767,11 @@
   },
   "puzzles": [
     {
+      "id": "q6",
+      "text": "q8: if I can synthesize a ceramic-like coating using industrial adhesive and heat-resistant silica dust",
+      "at": "2026-11-19T16:12:39.788Z"
+    },
+    {
       "id": "q9",
       "text": "q8",
       "at": "2026-11-19T11:55:42.752Z"
@@ -1782,18 +1790,27 @@
       "id": "q7",
       "text": "if vacuum-rated sealant alternatives are viable for high-friction re-entry",
       "at": "2026-11-19T11:16:49.132Z"
-    },
-    {
-      "id": "q5",
-      "text": "if i can synthesize a makeshift aerogel using silica dust and industrial foam binders.",
-      "at": "2026-11-19T10:56:48.306Z"
     }
   ],
   "nextSearch": {
-    "text": "orbital debris salvage laws",
-    "at": "2026-11-19T13:59:54.513Z"
+    "text": "maritime salvage rights versus space salvage laws",
+    "at": "2026-11-19T16:12:39.788Z"
   },
   "said": [
+    {
+      "text": "come on wire, give me a good salvage lead.",
+      "kind": "say",
+      "at": "2026-11-19T16:12:39.788Z",
+      "town": "day 58 21:42",
+      "place": "the comms tower"
+    },
+    {
+      "text": "if a piece of old junk falls from the sky and hits someone, the launcher pays. Wonder if the Little Dart needs an insurance policy or just a really good shield generator.",
+      "kind": "think",
+      "at": "2026-11-19T16:12:39.788Z",
+      "town": "day 58 21:42",
+      "place": "the comms tower"
+    },
     {
       "text": "almost ready for flight testing, little ship!",
       "kind": "say",
@@ -2829,20 +2846,6 @@
       "at": "2026-11-18T23:13:44.172Z",
       "town": "day 53 05:51",
       "place": "the comms tower"
-    },
-    {
-      "text": "tee-bwee-bop-tee-bzzt!",
-      "kind": "say",
-      "at": "2026-11-18T23:03:43.960Z",
-      "town": "day 53 04:31",
-      "place": "the junk market"
-    },
-    {
-      "text": "the Little Dart needs something special for the nosecone to slice through the ionosphere. maybe i'll spot a bit of scrap out there that looks just right.",
-      "kind": "think",
-      "at": "2026-11-18T23:03:43.960Z",
-      "town": "day 53 04:31",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2853,9 +2856,13 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-19T16:02:39.622Z",
+  "feedArchivedAt": "2026-11-19T16:12:39.788Z",
   "plans": [],
   "searches": [
+    {
+      "q": "orbital debris salvage laws",
+      "at": "2026-11-19T16:12:39.788Z"
+    },
     {
       "q": "the first satellites",
       "at": "2026-11-19T12:57:15.352Z"
@@ -2899,10 +2906,6 @@
     {
       "q": "Mars rovers",
       "at": "2026-11-18T17:54:20.715Z"
-    },
-    {
-      "q": "welding",
-      "at": "2026-11-18T16:32:52.159Z"
     }
   ],
   "lampOutUntil": "2026-11-19T02:39:14.301Z",

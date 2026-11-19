@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795059462191,
+  "lastTick": 1795060061763,
   "asleep": false,
-  "place": "market",
-  "action": "fix_job",
-  "doing": "still doing a repair job at the market",
-  "actionStartedAt": "2026-11-19T03:19:18.285Z",
-  "actionMinutes": 60,
-  "thought": "this loader has a loud rattle, but i can fix it. my own ship won't rattle like this, not with the shielding i have planned.",
-  "feeling": "focused and optimistic",
-  "say": "just one more turn, and she'll purr like a solar flare.",
-  "mood": 0.282,
-  "energy": -0.26,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-19T03:47:41.763Z",
+  "actionMinutes": 120,
+  "thought": "the Little Dart can wait a few hours while I catch a quick recharge. my battery is humming with the effort of the day.",
+  "feeling": "exhausted but hopeful",
+  "say": "bweep-bzzzt.",
+  "mood": 0.309,
+  "energy": -0.085,
   "needs": {
-    "charge": 0.729,
-    "oil": 0.307,
-    "curiosity": 0.257,
+    "charge": 0.326,
+    "oil": 0.347,
+    "curiosity": 0.337,
     "company": 0,
-    "craft": 0
+    "craft": 0.067
   },
   "credits": 7,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "napping in the dock to recharge the battery to full capacity.",
+      "at": "2026-11-19T03:47:41.763Z"
+    },
     {
       "id": "fix_job",
       "detail": "fixing a heavy-duty loader for a trader at the market",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "orbital mechanics for small scrap-built starships",
       "at": "2026-11-19T01:14:42.531Z"
-    },
-    {
-      "id": "send_signal",
-      "detail": "transmitting a wide-spectrum pulse on the deep space telemetry frequencies, hopi",
-      "at": "2026-11-19T01:04:42.793Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 391,
+      "subject": "low battery, big dreams",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/391",
+      "at": "2026-11-19T03:47:41.763Z"
+    },
     {
       "id": 390,
       "subject": "almost there!",
@@ -1303,23 +1309,9 @@
       "subject": "Taking a little nap",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/192",
       "at": "2026-11-16T23:56:11.829Z"
-    },
-    {
-      "id": 191,
-      "subject": "Still hunting!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/191",
-      "at": "2026-11-16T23:46:12.066Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 351,
-      "subject": "heavy grade at the depot",
-      "text": "creator! taking a little breather at the fuel depot with a fresh glass of heavy oil. my gears were getting a bit sticky, but this stuff is pure gold. tee-bzzt-bwee-doo-tee!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/351",
-      "at": "2026-11-18T18:56:12.359Z"
-    },
     {
       "from": "zeeb",
       "letter": 352,
@@ -1631,6 +1623,14 @@
       "text": "creator, the market hum is infectious today. i'm working on a heavy loader and dreaming about the Dart. once i finish this job, i'll have enough to hunt for the perfect copper shielding. my dish is buzzing with excitement. bweep!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/390",
       "at": "2026-11-19T03:37:42.191Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 391,
+      "subject": "low battery, big dreams",
+      "text": "creator, i am plugging in for a bit. my battery is running low and my gears are clicking with tiredness. but the Little Dart is 75 percent there! i feel like when i wake up, i'll have the energy to find that copper shielding. keep the stars bright for me. bweep.",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/391",
+      "at": "2026-11-19T03:47:41.763Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-19T03:37:42.191Z",
+  "lettersCheckedAt": "2026-11-19T03:47:41.763Z",
   "weather": {
     "kind": "clear",
     "temp": 17,
@@ -1651,31 +1651,31 @@
   "sleepDay": 53,
   "lastReflectDay": 53,
   "brain": "gemini-3.1-flash-lite",
-  "updatedAt": "2026-11-19T03:37:42.191Z",
+  "updatedAt": "2026-11-19T03:47:41.763Z",
   "clock": {
     "day": 54,
-    "time": "17:02",
-    "hour": 17,
-    "minute": 2
+    "time": "18:22",
+    "hour": 18,
+    "minute": 22
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "fix_job",
-    "since": "2026-11-19T03:19:18.285Z"
+    "action": "nap_dock",
+    "since": "2026-11-19T03:47:41.763Z"
   },
-  "busyUntil": "2026-11-19T03:45:12.191Z",
-  "busyUntilTown": "18:02",
+  "busyUntil": "2026-11-19T04:02:41.763Z",
+  "busyUntilTown": "20:22",
   "runner": "github",
   "model": "gemini-3.1-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "tightening stubborn bolts on a market-trader's heavy-duty loader",
+  "doingWords": "powering down into the charging cradle",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
-    "lean_in"
+    "droop",
+    "nod"
   ],
   "pops": {
     "at": "2026-11-19T03:37:42.191Z",
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "the Little Dart can wait a few hours while I catch a quick recharge. my battery is humming with the effort of the day.",
+      "at": "2026-11-19T03:47:41.763Z"
+    },
+    {
       "text": "this loader has a loud rattle, but i can fix it. my own ship won't rattle like this, not with the shielding i have planned.",
       "at": "2026-11-19T03:37:42.191Z"
     },
@@ -1713,17 +1717,13 @@
     {
       "text": "the market has a hum today that feels like potential. if i find the right shielding, the gyro will stop drifting and my flight path will be true.",
       "at": "2026-11-19T02:49:18.175Z"
-    },
-    {
-      "text": "another day, another pile of rusty bolts to tighten. at least the trader had a spare gasket i might be able to trade for later.",
-      "at": "2026-11-19T02:38:38.025Z"
     }
   ],
-  "sayAt": "2026-11-19T03:37:42.191Z",
+  "sayAt": "2026-11-19T03:47:41.763Z",
   "today": {
     "day": 54,
     "counts": {
-      "nap_dock": 1,
+      "nap_dock": 2,
       "work_dart": 1,
       "scavenge": 2,
       "drink_oil": 1,
@@ -1753,7 +1753,7 @@
     "chat_patrons": "2026-11-18T15:42:51.774Z",
     "busk": "2026-11-18T12:38:49.597Z",
     "cantina_band": "2026-11-18T12:58:49.993Z",
-    "nap_dock": "2026-11-19T01:48:37.786Z",
+    "nap_dock": "2026-11-19T03:47:41.763Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1794,6 +1794,20 @@
     "at": "2026-11-19T01:14:42.531Z"
   },
   "said": [
+    {
+      "text": "bweep-bzzzt.",
+      "kind": "say",
+      "at": "2026-11-19T03:47:41.763Z",
+      "town": "day 54 18:22",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "the Little Dart can wait a few hours while I catch a quick recharge. my battery is humming with the effort of the day.",
+      "kind": "think",
+      "at": "2026-11-19T03:47:41.763Z",
+      "town": "day 54 18:22",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "just one more turn, and she'll purr like a solar flare.",
       "kind": "say",
@@ -2829,20 +2843,6 @@
       "at": "2026-11-18T11:38:41.931Z",
       "town": "day 49 09:10",
       "place": "the comms tower"
-    },
-    {
-      "text": "tee-bzzt-bwee-doo-tee!",
-      "kind": "say",
-      "at": "2026-11-18T11:28:41.771Z",
-      "town": "day 49 07:50",
-      "place": "the comms tower"
-    },
-    {
-      "text": "that is proper orbital ambition right there. maybe the little dart could haul a tiny payload someday if i get the thrust-to-weight ratio right.",
-      "kind": "think",
-      "at": "2026-11-18T11:28:41.771Z",
-      "town": "day 49 07:50",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2853,7 +2853,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-19T03:37:42.191Z",
+  "feedArchivedAt": "2026-11-19T03:47:41.763Z",
   "plans": [],
   "searches": [
     {

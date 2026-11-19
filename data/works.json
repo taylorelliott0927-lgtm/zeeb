@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 15",
-    "progress": 90,
-    "version": 11,
-    "lastChange": "I am integrating the tiny gyroscope Pim into the navigation manifold and wrapping the internal wiring with salvaged copper strips to prevent signal ghosting. (used Dibs, a dented fuel cell)",
+    "progress": 97,
+    "version": 12,
+    "lastChange": "I am carefully installing the Belleville washers I forged into the main strut housing of the Little Dart, adjusting the torque on Otto and Tok to ensure even compression across the assembly. (used Mabel, a sensor eye with one crack)",
     "log": [
+      {
+        "version": 12,
+        "change": "I am carefully installing the Belleville washers I forged into the main strut housing of the Little Dart, adjusting the torque on Otto and Tok to ensure even compression across the assembly. (used Mabel, a sensor eye with one crack)",
+        "progress": 97,
+        "at": "2026-11-19T05:46:11.868Z"
+      },
       {
         "version": 11,
         "change": "I am integrating the tiny gyroscope Pim into the navigation manifold and wrapping the internal wiring with salvaged copper strips to prevent signal ghosting. (used Dibs, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "Wiring in a high-quality toggle switch salvaged from the market to the VFD driver board, ensuring the negative bias rail is rock-solid for the display grid. (used Tok, half a thruster nozzle)",
         "progress": 95,
         "at": "2026-11-17T16:09:06.244Z"
-      },
-      {
-        "version": 11,
-        "change": "mounting the VFD driver board onto the main chassis using Rusty Jr the bolt and refining the alignment of the display so it glows clearly. (used Rusty Jr, a perfectly good bolt)",
-        "progress": 85,
-        "at": "2026-11-17T14:05:10.068Z"
       }
     ],
     "launched": [
@@ -1884,7 +1884,7 @@
         ]
       }
     ],
-    "partsUsed": 12,
+    "partsUsed": 13,
     "parts": [
       {
         "name": "Tilly",
@@ -1941,6 +1941,11 @@
         "name": "Dibs",
         "what": "a dented fuel cell",
         "version": 11
+      },
+      {
+        "name": "Mabel",
+        "what": "a sensor eye with one crack",
+        "version": 12
       }
     ],
     "design": null
@@ -2192,11 +2197,6 @@
       "what": "a cracked navigation chip",
       "at": "2026-11-18T20:39:31.918Z",
       "good": true
-    },
-    {
-      "name": "Mabel",
-      "what": "a sensor eye with one crack",
-      "at": "2026-11-18T20:31:25.220Z"
     }
   ],
   "reads": [

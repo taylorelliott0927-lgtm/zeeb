@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 16",
-    "progress": 50,
-    "version": 6,
-    "lastChange": "tuned the left thruster (used Gus, a sensor eye with one crack)",
+    "progress": 57,
+    "version": 7,
+    "lastChange": "welded a strip of hull plating (Dibs) along the starboard seam to reinforce the frame (used Nim, a little landing strut)",
     "log": [
+      {
+        "version": 7,
+        "change": "welded a strip of hull plating (Dibs) along the starboard seam to reinforce the frame (used Nim, a little landing strut)",
+        "progress": 57,
+        "at": "2026-11-19T14:29:54.844Z"
+      },
       {
         "version": 6,
         "change": "tuned the left thruster (used Gus, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "mounting the miniature liquid pump I just bought to the sensor array with the heat tiles and copper coils; rerouting the tiny tubes to ensure a smooth, closed-loop flow. (used Tok, a little landing strut)",
         "progress": 58,
         "at": "2026-11-18T00:32:31.860Z"
-      },
-      {
-        "version": 6,
-        "change": "Carefully applying the high-grade sealant around the canopy base to ensure an airtight, pressurized environment for high-altitude flight. (used Otto, a tiny gyroscope)",
-        "progress": 48,
-        "at": "2026-11-17T21:34:29.157Z"
       }
     ],
     "launched": [
@@ -1958,7 +1958,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Mabel",
@@ -1989,6 +1989,11 @@
         "name": "Gus",
         "what": "a sensor eye with one crack",
         "version": 6
+      },
+      {
+        "name": "Nim",
+        "what": "a little landing strut",
+        "version": 7
       }
     ],
     "design": null
@@ -2239,11 +2244,6 @@
     {
       "name": "Tok",
       "what": "a perfectly good bolt",
-      "at": "2026-11-18T23:39:14.301Z"
-    },
-    {
-      "name": "Nim",
-      "what": "a little landing strut",
       "at": "2026-11-18T23:39:14.301Z"
     }
   ],

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 16",
-    "progress": 8,
-    "version": 1,
-    "lastChange": "finishing the application of the industrial sealant around the secondary cooling loop and giving the hull a final buffing to ensure it handles the heat of high-atmospheric exit. (used Mabel, a cracked navigation chip)",
+    "progress": 18,
+    "version": 2,
+    "lastChange": "I am retrofitting the secondary cooling loop with a high-pressure cryogenic pump salvaged from the depot, ensuring it is braced with Gus the thruster nozzle to prevent vibration fatigue. (used Mabel, a coil of copper wire)",
     "log": [
+      {
+        "version": 2,
+        "change": "I am retrofitting the secondary cooling loop with a high-pressure cryogenic pump salvaged from the depot, ensuring it is braced with Gus the thruster nozzle to prevent vibration fatigue. (used Mabel, a coil of copper wire)",
+        "progress": 18,
+        "at": "2026-11-19T06:48:15.386Z"
+      },
       {
         "version": 1,
         "change": "finishing the application of the industrial sealant around the secondary cooling loop and giving the hull a final buffing to ensure it handles the heat of high-atmospheric exit. (used Mabel, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "Adding a structural support strut made from 'Brakk' and 'Tok' to the main fuselage to increase the Little Dart's overall integrity. (used Dibs, a dented fuel cell)",
         "progress": 15,
         "at": "2026-11-17T19:10:17.330Z"
-      },
-      {
-        "version": 1,
-        "change": "Adding a custom-bent scrap-metal gasket frame around the cockpit rim to provide a solid base for the future airtight sealant. (used Fen, a cracked navigation chip)",
-        "progress": 7,
-        "at": "2026-11-17T17:58:01.255Z"
       }
     ],
     "launched": [
@@ -1958,12 +1958,17 @@
         ]
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Mabel",
         "what": "a cracked navigation chip",
         "version": 1
+      },
+      {
+        "name": "Mabel",
+        "what": "a coil of copper wire",
+        "version": 2
       }
     ],
     "design": null
@@ -2199,11 +2204,6 @@
       "name": "Nim",
       "what": "half a thruster nozzle",
       "at": "2026-11-18T21:47:55.426Z"
-    },
-    {
-      "name": "Mabel",
-      "what": "a coil of copper wire",
-      "at": "2026-11-18T20:59:32.146Z"
     }
   ],
   "reads": [

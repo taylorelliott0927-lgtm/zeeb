@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 15",
-    "progress": 97,
-    "version": 12,
-    "lastChange": "I am carefully installing the Belleville washers I forged into the main strut housing of the Little Dart, adjusting the torque on Otto and Tok to ensure even compression across the assembly. (used Mabel, a sensor eye with one crack)",
+    "name": "the Little Dart Mk 16",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 13,
+        "change": "I am finishing the integration of Pim the gyroscope into the navigation manifold, ensuring the copper lining is perfectly seated to dampen any electrical interference from the thrusters. (used Captain, a cracked navigation chip)",
+        "progress": 100,
+        "at": "2026-11-19T05:56:11.596Z"
+      },
       {
         "version": 12,
         "change": "I am carefully installing the Belleville washers I forged into the main strut housing of the Little Dart, adjusting the torque on Otto and Tok to ensure even compression across the assembly. (used Mabel, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "Adding a layer of reinforced plating near the cockpit seam to prep for the airtight sealant, ensuring the structure is sound for potential vacuum stress. (used Sprocket, a scorched heat tile)",
         "progress": 100,
         "at": "2026-11-17T17:48:02.553Z"
-      },
-      {
-        "version": 12,
-        "change": "Wiring in a high-quality toggle switch salvaged from the market to the VFD driver board, ensuring the negative bias rail is rock-solid for the display grid. (used Tok, half a thruster nozzle)",
-        "progress": 95,
-        "at": "2026-11-17T16:09:06.244Z"
       }
     ],
     "launched": [
@@ -1882,72 +1882,84 @@
             "version": 13
           }
         ]
+      },
+      {
+        "name": "the Little Dart Mk 15",
+        "day": 55,
+        "partsUsed": 15,
+        "parts": [
+          {
+            "name": "Tilly",
+            "what": "a cracked navigation chip",
+            "version": 1
+          },
+          {
+            "name": "Otto",
+            "what": "a bent stabiliser fin",
+            "version": 2
+          },
+          {
+            "name": "Lorna",
+            "what": "a cockpit switch that still clicks",
+            "version": 3
+          },
+          {
+            "name": "Sprocket",
+            "what": "a perfectly good bolt",
+            "version": 4
+          },
+          {
+            "name": "Dibs",
+            "what": "half a thruster nozzle",
+            "version": 5
+          },
+          {
+            "name": "Otto",
+            "what": "a cockpit switch that still clicks",
+            "version": 6
+          },
+          {
+            "name": "Dibs",
+            "what": "a dented fuel cell",
+            "version": 7
+          },
+          {
+            "name": "Tilly",
+            "what": "a coil of copper wire",
+            "version": 8
+          },
+          {
+            "name": "Tok",
+            "what": "a cracked navigation chip",
+            "version": 9
+          },
+          {
+            "name": "Tok",
+            "what": "a tiny gyroscope",
+            "good": true,
+            "version": 10
+          },
+          {
+            "name": "Dibs",
+            "what": "a dented fuel cell",
+            "version": 11
+          },
+          {
+            "name": "Mabel",
+            "what": "a sensor eye with one crack",
+            "version": 12
+          },
+          {
+            "name": "Captain",
+            "what": "a cracked navigation chip",
+            "good": true,
+            "version": 13
+          }
+        ]
       }
     ],
-    "partsUsed": 13,
-    "parts": [
-      {
-        "name": "Tilly",
-        "what": "a cracked navigation chip",
-        "version": 1
-      },
-      {
-        "name": "Otto",
-        "what": "a bent stabiliser fin",
-        "version": 2
-      },
-      {
-        "name": "Lorna",
-        "what": "a cockpit switch that still clicks",
-        "version": 3
-      },
-      {
-        "name": "Sprocket",
-        "what": "a perfectly good bolt",
-        "version": 4
-      },
-      {
-        "name": "Dibs",
-        "what": "half a thruster nozzle",
-        "version": 5
-      },
-      {
-        "name": "Otto",
-        "what": "a cockpit switch that still clicks",
-        "version": 6
-      },
-      {
-        "name": "Dibs",
-        "what": "a dented fuel cell",
-        "version": 7
-      },
-      {
-        "name": "Tilly",
-        "what": "a coil of copper wire",
-        "version": 8
-      },
-      {
-        "name": "Tok",
-        "what": "a cracked navigation chip",
-        "version": 9
-      },
-      {
-        "name": "Tok",
-        "what": "a tiny gyroscope",
-        "good": true,
-        "version": 10
-      },
-      {
-        "name": "Dibs",
-        "what": "a dented fuel cell",
-        "version": 11
-      },
-      {
-        "name": "Mabel",
-        "what": "a sensor eye with one crack",
-        "version": 12
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -2191,12 +2203,6 @@
       "name": "Mabel",
       "what": "a cracked navigation chip",
       "at": "2026-11-18T20:49:31.990Z"
-    },
-    {
-      "name": "Captain",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-18T20:39:31.918Z",
-      "good": true
     }
   ],
   "reads": [

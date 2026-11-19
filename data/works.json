@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 17",
-    "progress": 41,
-    "version": 5,
-    "lastChange": "welding another high-temp silica insulation tile onto the Little Dart's nose cone using Fen (a cockpit switch that still clicks) to secure the alignment bracket (used Dibs, a strip of hull plating)",
+    "progress": 50,
+    "version": 6,
+    "lastChange": "welding Mabel (a little landing strut) onto the Little Dart's undercarriage using Otto (a tiny gyroscope) to balance the mount point. (used Pim, a coil of copper wire)",
     "log": [
+      {
+        "version": 6,
+        "change": "welding Mabel (a little landing strut) onto the Little Dart's undercarriage using Otto (a tiny gyroscope) to balance the mount point. (used Pim, a coil of copper wire)",
+        "progress": 50,
+        "at": "2026-11-19T23:20:39.533Z"
+      },
       {
         "version": 5,
         "change": "welding another high-temp silica insulation tile onto the Little Dart's nose cone using Fen (a cockpit switch that still clicks) to secure the alignment bracket (used Dibs, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "bolted a new fin on (used Fen, a cracked navigation chip)",
         "progress": 48,
         "at": "2026-11-18T15:12:41.710Z"
-      },
-      {
-        "version": 5,
-        "change": "Installing hand-bent copper shielding coils around the primary navigation bus to block solar flare static. (used Wren, a strip of hull plating)",
-        "progress": 40,
-        "at": "2026-11-18T14:19:08.343Z"
       }
     ],
     "launched": [
@@ -2031,7 +2031,7 @@
         ]
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Otto",
@@ -2059,6 +2059,11 @@
         "name": "Dibs",
         "what": "a strip of hull plating",
         "version": 5
+      },
+      {
+        "name": "Pim",
+        "what": "a coil of copper wire",
+        "version": 6
       }
     ],
     "design": null
@@ -2282,11 +2287,6 @@
       "name": "Fen",
       "what": "a cockpit switch that still clicks",
       "at": "2026-11-19T09:57:11.191Z"
-    },
-    {
-      "name": "Pim",
-      "what": "a coil of copper wire",
-      "at": "2026-11-19T09:17:10.830Z"
     }
   ],
   "reads": [

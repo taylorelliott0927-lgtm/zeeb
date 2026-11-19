@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 17",
-    "progress": 8,
-    "version": 1,
-    "lastChange": "wrapping Pim (a coil of copper wire) around the primary thruster nozzle for better electromagnetic shielding (used Otto, a perfectly good bolt)",
+    "progress": 16,
+    "version": 2,
+    "lastChange": "soldering a second layer of copper wire from Pim around the primary exhaust housing for better pulse insulation (used Sprocket, a coil of copper wire)",
     "log": [
+      {
+        "version": 2,
+        "change": "soldering a second layer of copper wire from Pim around the primary exhaust housing for better pulse insulation (used Sprocket, a coil of copper wire)",
+        "progress": 16,
+        "at": "2026-11-19T20:30:17.367Z"
+      },
       {
         "version": 1,
         "change": "wrapping Pim (a coil of copper wire) around the primary thruster nozzle for better electromagnetic shielding (used Otto, a perfectly good bolt)",
@@ -238,12 +244,6 @@
         "change": "Mounting Gus the tiny gyroscope securely onto the primary avionics bracket behind the instrument cluster, using Sprocket the bolt to secure it firmly against engine vibration. (used Rusty Jr, a tiny gyroscope)",
         "progress": 16,
         "at": "2026-11-18T08:14:48.244Z"
-      },
-      {
-        "version": 1,
-        "change": "mounting the tiny liquid pump near the main thruster, using Captain the copper wire to lash it to the frame and Mabel the cockpit switch to control the flow intensity. (used Gus, a bent stabiliser fin)",
-        "progress": 10,
-        "at": "2026-11-18T05:35:18.604Z"
       }
     ],
     "launched": [
@@ -2031,13 +2031,18 @@
         ]
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Otto",
         "what": "a perfectly good bolt",
         "good": true,
         "version": 1
+      },
+      {
+        "name": "Sprocket",
+        "what": "a coil of copper wire",
+        "version": 2
       }
     ],
     "design": null
@@ -2272,11 +2277,6 @@
       "what": "a springy hull washer",
       "at": "2026-11-19T05:33:24.251Z",
       "custom": "rmwn46u1n"
-    },
-    {
-      "name": "Sprocket",
-      "what": "a coil of copper wire",
-      "at": "2026-11-19T05:03:24.800Z"
     }
   ],
   "reads": [

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 16",
-    "progress": 57,
-    "version": 7,
-    "lastChange": "welded a strip of hull plating (Dibs) along the starboard seam to reinforce the frame (used Nim, a little landing strut)",
+    "progress": 64,
+    "version": 8,
+    "lastChange": "secured the gyro mounting bracket using Tok, a perfectly good bolt, and wired up the stabilization loop (used Tok, a perfectly good bolt)",
     "log": [
+      {
+        "version": 8,
+        "change": "secured the gyro mounting bracket using Tok, a perfectly good bolt, and wired up the stabilization loop (used Tok, a perfectly good bolt)",
+        "progress": 64,
+        "at": "2026-11-19T14:39:55.037Z"
+      },
       {
         "version": 7,
         "change": "welded a strip of hull plating (Dibs) along the starboard seam to reinforce the frame (used Nim, a little landing strut)",
@@ -238,12 +244,6 @@
         "change": "mounting the liquid pump firmly to the frame and verifying the seal on the copper tubing loops, making sure there's no vibration that could loosen a connection. (used Pim, half a thruster nozzle)",
         "progress": 66,
         "at": "2026-11-18T00:42:31.644Z"
-      },
-      {
-        "version": 7,
-        "change": "mounting the miniature liquid pump I just bought to the sensor array with the heat tiles and copper coils; rerouting the tiny tubes to ensure a smooth, closed-loop flow. (used Tok, a little landing strut)",
-        "progress": 58,
-        "at": "2026-11-18T00:32:31.860Z"
       }
     ],
     "launched": [
@@ -1958,7 +1958,7 @@
         ]
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Mabel",
@@ -1994,6 +1994,11 @@
         "name": "Nim",
         "what": "a little landing strut",
         "version": 7
+      },
+      {
+        "name": "Tok",
+        "what": "a perfectly good bolt",
+        "version": 8
       }
     ],
     "design": null
@@ -2240,11 +2245,6 @@
       "name": "Tok",
       "what": "a cockpit switch that still clicks",
       "at": "2026-11-19T02:18:37.400Z"
-    },
-    {
-      "name": "Tok",
-      "what": "a perfectly good bolt",
-      "at": "2026-11-18T23:39:14.301Z"
     }
   ],
   "reads": [

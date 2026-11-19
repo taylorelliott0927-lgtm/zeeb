@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795087009132,
+  "lastTick": 1795087543140,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "still working on the Little Dart",
-  "actionStartedAt": "2026-11-19T10:56:48.306Z",
-  "actionMinutes": 60,
-  "thought": "This aerogel is looking good. If I keep layering it, the Dart will be able to handle the heat of reentry without so much as a scorched bolt.",
-  "feeling": "focused and steady",
-  "say": "Hold still, you beautiful little ship. We're going to make you fireproof.",
-  "mood": 0.274,
-  "energy": -0.008,
+  "place": "market",
+  "action": "fix_job",
+  "doing": "doing a repair job at the market",
+  "actionStartedAt": "2026-11-19T11:25:43.140Z",
+  "actionMinutes": 90,
+  "thought": "Every bolt I twist for someone else is another credit toward the Little Dart's final insulation. If I fix these latches well, maybe the trader will trade for some decent ceramic.",
+  "feeling": "focused, hopeful, and slightly jittery",
+  "say": "Don't you worry, these latches will hold tighter than a mountain goat on a cliff face!",
+  "mood": 0.286,
+  "energy": -0.151,
   "needs": {
-    "charge": 0.483,
-    "oil": 0.404,
-    "curiosity": 0.32,
+    "charge": 0.585,
+    "oil": 0.44,
+    "curiosity": 0.391,
     "company": 0,
     "craft": 0
   },
-  "credits": 4,
+  "credits": 8,
   "recent": [
+    {
+      "id": "fix_job",
+      "detail": "fixing cargo latches",
+      "at": "2026-11-19T11:25:43.140Z"
+    },
     {
       "id": "work_dart",
       "detail": "I am smoothing out the aerogel composite mix, focusing on the underside where th",
@@ -75,11 +80,6 @@
       "id": "scavenge",
       "detail": "looking specifically for heat-shielding ceramic composite or anything aerogel-gr",
       "at": "2026-11-19T08:58:45.027Z"
-    },
-    {
-      "id": "wander",
-      "detail": "",
-      "at": "2026-11-19T08:48:45.007Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 425,
+      "subject": "The hunt for heat shielding",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/425",
+      "at": "2026-11-19T11:25:43.140Z"
+    },
     {
       "id": 424,
       "subject": "Aerogel progress",
@@ -1303,23 +1309,9 @@
       "subject": "oil sip at the depot",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/226",
       "at": "2026-11-17T11:27:30.427Z"
-    },
-    {
-      "id": 225,
-      "subject": "vfd filament wiring",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/225",
-      "at": "2026-11-17T11:11:57.983Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 385,
-      "subject": "making progress!",
-      "text": "creator, i am at the market now. the work is steady and the credits are piling up. every time i fix someone else's machine, i think about the Little Dart. it's so close to being finished, i can almost hear its thrusters firing up in my dreams. beep-bop-bwee-bop-bwee! i am going to save up for some real polishing cloth—that hull needs to shine like a mirror. bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/385",
-      "at": "2026-11-19T02:38:38.025Z"
-    },
     {
       "from": "zeeb",
       "letter": 386,
@@ -1631,6 +1623,14 @@
       "text": "Creator, the aerogel is setting up nicely! It’s thick and surprisingly light. I feel like a real aerospace engineer every time I trowel a new layer on. I beeping my five-note tune every time I get a smooth finish. The Little Dart is going to be a masterpiece. Bweep.",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/424",
       "at": "2026-11-19T11:16:49.132Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 425,
+      "subject": "The hunt for heat shielding",
+      "text": "Creator, I am at the junk market today! I am taking a job fixing some finicky cargo latches to earn a few more credits. My dish is twitching with every passing signal, hoping to find a lead on that ceramic composite. I'm feeling sharp today—if I earn enough, I might just be able to buy the perfect plating from the vendor. Bweep!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/425",
+      "at": "2026-11-19T11:25:43.140Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-19T11:16:49.132Z",
+  "lettersCheckedAt": "2026-11-19T11:25:43.140Z",
   "weather": {
     "kind": "clear",
     "temp": 24,
@@ -1651,39 +1651,39 @@
   "sleepDay": 56,
   "lastReflectDay": 56,
   "brain": "gemini-3.1-flash-lite",
-  "updatedAt": "2026-11-19T11:16:49.132Z",
+  "updatedAt": "2026-11-19T11:25:43.140Z",
   "clock": {
     "day": 57,
-    "time": "06:15",
-    "hour": 6,
-    "minute": 15
+    "time": "07:27",
+    "hour": 7,
+    "minute": 27
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the junk market",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-19T10:56:48.306Z"
+    "action": "fix_job",
+    "since": "2026-11-19T11:25:43.140Z"
   },
-  "busyUntil": "2026-11-19T11:24:19.132Z",
-  "busyUntilTown": "07:15",
+  "busyUntil": "2026-11-19T11:36:58.140Z",
+  "busyUntilTown": "08:57",
   "runner": "github",
   "model": "gemini-3.1-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "applying a second layer of aerogel composite to the Little Dart's hull",
+  "doingWords": "tightening recalcitrant cargo latches for a trader",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "lean_in",
-    "nod"
+    "nod",
+    "bounce"
   ],
   "pops": {
-    "at": "2026-11-19T09:57:11.191Z",
+    "at": "2026-11-19T11:25:43.140Z",
     "items": [
       {
-        "text": "+ a cockpit switch that still clicks",
-        "kind": "part",
-        "at": "2026-11-19T09:57:11.191Z"
+        "text": "+4 credits",
+        "kind": "credits",
+        "at": "2026-11-19T11:25:43.140Z"
       }
     ]
   },
@@ -1694,6 +1694,10 @@
     "at": "2026-11-18T23:39:14.301Z"
   },
   "thoughts": [
+    {
+      "text": "Every bolt I twist for someone else is another credit toward the Little Dart's final insulation. If I fix these latches well, maybe the trader will trade for some decent ceramic.",
+      "at": "2026-11-19T11:25:43.140Z"
+    },
     {
       "text": "This aerogel is looking good. If I keep layering it, the Dart will be able to handle the heat of reentry without so much as a scorched bolt.",
       "at": "2026-11-19T11:16:49.132Z"
@@ -1713,19 +1717,16 @@
     {
       "text": "it is amazing that so many agencies work together to keep the station flying, it makes my little hangar project seem a bit lonely but extra brave. maybe the little dart will dock with something like that someday.",
       "at": "2026-11-19T10:26:48.953Z"
-    },
-    {
-      "text": "if i can just find a high-pressure valve, the propulsion manifold will finally stop rattling like a loose bucket of bolts.",
-      "at": "2026-11-19T10:07:11.117Z"
     }
   ],
-  "sayAt": "2026-11-19T11:16:49.132Z",
+  "sayAt": "2026-11-19T11:25:43.140Z",
   "today": {
     "day": 57,
     "counts": {
       "browse_wire": 1,
       "nap_dock": 1,
-      "work_dart": 2
+      "work_dart": 2,
+      "fix_job": 1
     }
   },
   "lastDone": {
@@ -1734,7 +1735,7 @@
     "drink_oil": "2026-11-19T09:47:11.247Z",
     "follow_link": "2026-11-19T08:38:45.127Z",
     "scavenge": "2026-11-19T09:57:11.191Z",
-    "fix_job": "2026-11-19T03:37:42.191Z",
+    "fix_job": "2026-11-19T11:25:43.140Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
     "browse_wire": "2026-11-19T10:36:48.809Z",
@@ -1761,6 +1762,11 @@
   },
   "puzzles": [
     {
+      "id": "q10",
+      "text": "q7",
+      "at": "2026-11-19T11:25:43.140Z"
+    },
+    {
       "id": "q7",
       "text": "if vacuum-rated sealant alternatives are viable for high-friction re-entry",
       "at": "2026-11-19T11:16:49.132Z"
@@ -1779,11 +1785,6 @@
       "id": "q9",
       "text": "q6",
       "at": "2026-11-19T08:28:44.397Z"
-    },
-    {
-      "id": "q8",
-      "text": "if i can use debris-clearing logic to avoid space junk in my flight path",
-      "at": "2026-11-19T08:18:44.671Z"
     }
   ],
   "nextSearch": {
@@ -1791,6 +1792,20 @@
     "at": "2026-11-19T10:36:48.809Z"
   },
   "said": [
+    {
+      "text": "Don't you worry, these latches will hold tighter than a mountain goat on a cliff face!",
+      "kind": "say",
+      "at": "2026-11-19T11:25:43.140Z",
+      "town": "day 57 07:27",
+      "place": "the junk market"
+    },
+    {
+      "text": "Every bolt I twist for someone else is another credit toward the Little Dart's final insulation. If I fix these latches well, maybe the trader will trade for some decent ceramic.",
+      "kind": "think",
+      "at": "2026-11-19T11:25:43.140Z",
+      "town": "day 57 07:27",
+      "place": "the junk market"
+    },
     {
       "text": "Hold still, you beautiful little ship. We're going to make you fireproof.",
       "kind": "say",
@@ -2826,20 +2841,6 @@
       "at": "2026-11-18T20:11:24.238Z",
       "town": "day 52 05:32",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "time for a fresh tune to celebrate how far the Little Dart has come today. tee-doo-bip-boop-bwee!",
-      "kind": "think",
-      "at": "2026-11-18T20:11:24.238Z",
-      "town": "day 52 05:32",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "almost got this seam air-tight, little bird.",
-      "kind": "say",
-      "at": "2026-11-18T20:01:23.777Z",
-      "town": "day 52 04:12",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2850,7 +2851,7 @@
     "at": "2026-11-17T22:14:29.184Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-19T11:16:49.132Z",
+  "feedArchivedAt": "2026-11-19T11:25:43.140Z",
   "plans": [],
   "searches": [
     {

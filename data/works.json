@@ -2105,6 +2105,12 @@
   ],
   "stash": [
     {
+      "name": "Wren",
+      "what": "a springy hull washer",
+      "at": "2026-11-19T05:33:24.251Z",
+      "custom": "rmwn46u1n"
+    },
+    {
       "name": "Sprocket",
       "what": "a coil of copper wire",
       "at": "2026-11-19T05:03:24.800Z"
@@ -2191,11 +2197,6 @@
       "name": "Mabel",
       "what": "a sensor eye with one crack",
       "at": "2026-11-18T20:31:25.220Z"
-    },
-    {
-      "name": "Dibs",
-      "what": "a strip of hull plating",
-      "at": "2026-11-18T20:21:24.440Z"
     }
   ],
   "reads": [
@@ -21847,6 +21848,41 @@
   "crafting": {
     "recipes": [
       {
+        "id": "rmwn46u1n",
+        "what": "a springy hull washer",
+        "how": "I cut rings from the hull plating strip and use my welding torch to press them into a shallow, conical shape that gives them a nice, snappy flex. The heat treatment makes them strong enough to keep the Little Dart's panels tight even when t",
+        "uses": "to keep the hull panels from rattling during atmospheric exit, absorbing the vibration so my bolts don't come loose.",
+        "look": [
+          {
+            "shape": "cone",
+            "turn": "up",
+            "w": 0.05,
+            "h": 0.02,
+            "d": 0.05,
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "color": "#d2691e",
+            "glow": 0
+          },
+          {
+            "shape": "cylinder",
+            "turn": "up",
+            "w": 0.02,
+            "h": 0.02,
+            "d": 0.02,
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "color": "#8b4513",
+            "glow": 0
+          }
+        ],
+        "firstMade": "2026-11-19T05:33:24.251Z",
+        "day": 55,
+        "made": 1
+      },
+      {
         "id": "rmwjzf519",
         "what": "high-grade titanium washer",
         "how": "i'll trim the hull plating into a ring and use the hum from the mystery box to heat-treat it until it's hardened. then i'll polish it with a scrap file until it shines like a star.",
@@ -21883,6 +21919,11 @@
       }
     ],
     "attempts": [
+      {
+        "what": "a springy hull washer",
+        "result": "worked",
+        "at": "2026-11-19T05:33:24.251Z"
+      },
       {
         "what": "high-grade titanium washer",
         "result": "worked",

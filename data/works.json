@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 17",
-    "progress": 32,
-    "version": 4,
-    "lastChange": "welding a high-temp silica insulation tile onto the Little Dart's nose cone using Tilly (a scorched heat tile) (used Nim, a perfectly good bolt)",
+    "progress": 41,
+    "version": 5,
+    "lastChange": "welding another high-temp silica insulation tile onto the Little Dart's nose cone using Fen (a cockpit switch that still clicks) to secure the alignment bracket (used Dibs, a strip of hull plating)",
     "log": [
+      {
+        "version": 5,
+        "change": "welding another high-temp silica insulation tile onto the Little Dart's nose cone using Fen (a cockpit switch that still clicks) to secure the alignment bracket (used Dibs, a strip of hull plating)",
+        "progress": 41,
+        "at": "2026-11-19T22:40:39.914Z"
+      },
       {
         "version": 4,
         "change": "welding a high-temp silica insulation tile onto the Little Dart's nose cone using Tilly (a scorched heat tile) (used Nim, a perfectly good bolt)",
@@ -238,12 +244,6 @@
         "change": "Installing hand-bent copper shielding coils around the primary navigation bus to block solar flare static. (used Wren, a strip of hull plating)",
         "progress": 40,
         "at": "2026-11-18T14:19:08.343Z"
-      },
-      {
-        "version": 4,
-        "change": "Welding custom titanium brace rings around the engine mount to keep the exhaust steady under full thrust. (used Sprocket, a scorched heat tile)",
-        "progress": 31,
-        "at": "2026-11-18T10:39:01.669Z"
       }
     ],
     "launched": [
@@ -2031,7 +2031,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Otto",
@@ -2054,6 +2054,11 @@
         "name": "Nim",
         "what": "a perfectly good bolt",
         "version": 4
+      },
+      {
+        "name": "Dibs",
+        "what": "a strip of hull plating",
+        "version": 5
       }
     ],
     "design": null
@@ -2282,11 +2287,6 @@
       "name": "Pim",
       "what": "a coil of copper wire",
       "at": "2026-11-19T09:17:10.830Z"
-    },
-    {
-      "name": "Dibs",
-      "what": "a strip of hull plating",
-      "at": "2026-11-19T08:58:45.027Z"
     }
   ],
   "reads": [

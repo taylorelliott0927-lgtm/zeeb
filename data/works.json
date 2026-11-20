@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "Little Dart Mk 18",
-    "progress": 91,
-    "version": 11,
-    "lastChange": "installing custom thermal insulation panels and copper grounding lines around the Little Dart's aft thruster mount (used Tok, a strip of hull plating)",
+    "name": "the Little Dart Mk 19",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 12,
+        "change": "installing a scorched heat tile onto the Little Dart's nose assembly using high-temp adhesive (used Tok, a scorched heat tile)",
+        "progress": 100,
+        "at": "2026-11-20T12:10:26.289Z"
+      },
       {
         "version": 11,
         "change": "installing custom thermal insulation panels and copper grounding lines around the Little Dart's aft thruster mount (used Tok, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "I am carefully installing the Belleville washers I forged into the main strut housing of the Little Dart, adjusting the torque on Otto and Tok to ensure even compression across the assembly. (used Mabel, a sensor eye with one crack)",
         "progress": 97,
         "at": "2026-11-19T05:46:11.868Z"
-      },
-      {
-        "version": 11,
-        "change": "I am integrating the tiny gyroscope Pim into the navigation manifold and wrapping the internal wiring with salvaged copper strips to prevent signal ghosting. (used Dibs, a dented fuel cell)",
-        "progress": 90,
-        "at": "2026-11-19T04:27:42.079Z"
       }
     ],
     "launched": [
@@ -2104,381 +2104,393 @@
             "version": 13
           }
         ]
-      }
-    ],
-    "partsUsed": 11,
-    "parts": [
-      {
-        "name": "Mabel",
-        "what": "a little landing strut",
-        "version": 1
       },
       {
-        "name": "Rusty Jr",
-        "what": "a mystery box that hums",
-        "version": 2
-      },
-      {
-        "name": "Mabel",
-        "what": "a dented fuel cell",
-        "version": 3
-      },
-      {
-        "name": "Tilly",
-        "what": "a scorched heat tile",
-        "version": 4
-      },
-      {
-        "name": "Wren",
-        "what": "a strip of hull plating",
-        "version": 5
-      },
-      {
-        "name": "Mabel",
-        "what": "a coil of copper wire",
-        "version": 6
-      },
-      {
-        "name": "Tok",
-        "what": "a strip of hull plating",
-        "version": 7
-      },
-      {
-        "name": "Sprocket",
-        "what": "a scorched heat tile",
-        "version": 8
-      },
-      {
-        "name": "Rusty Jr",
-        "what": "a cracked navigation chip",
-        "version": 9
-      },
-      {
-        "name": "Tilly",
-        "what": "a tiny gyroscope",
-        "version": 10
-      },
-      {
-        "name": "Tok",
-        "what": "a strip of hull plating",
-        "version": 11
-      }
-    ],
-    "design": {
-      "description": "a sleek, dagger-shaped hull with swept-back copper stabilizer fins, an offset bubble canopy, and twin aft thrusters glowing bright blue.",
-      "parts": [
-        {
-          "shape": "cylinder",
-          "w": 0.4,
-          "h": 3.2,
-          "d": 0.4,
-          "x": 0,
-          "y": 0.5,
-          "z": 0,
-          "color": "#b87333",
-          "glow": 0,
-          "turn": "forward"
-        },
-        {
-          "shape": "cone",
-          "w": 0.4,
-          "h": 1.12,
-          "d": 0.4,
-          "x": 0,
-          "y": 0.5,
-          "z": 2.16,
-          "color": "#b87333",
-          "glow": 0,
-          "turn": "forward"
-        },
-        {
-          "shape": "ball",
-          "w": 0.24,
-          "h": 0.2,
-          "d": 0.9,
-          "x": 0,
-          "y": 0.68,
-          "z": 0.56,
-          "color": "#00ffff",
-          "glow": 0.5,
-          "turn": "up"
-        },
-        {
-          "shape": "box",
-          "w": 1.2,
-          "h": 0.07,
-          "d": 1.02,
-          "x": -0.8,
-          "y": 0.42,
-          "z": -0.57,
-          "color": "#ff4500",
-          "glow": 0,
-          "turn": "up",
-          "rot": [
-            0,
-            22.619864948040426,
-            0
-          ]
-        },
-        {
-          "shape": "box",
-          "w": 0.06,
-          "h": 0.12,
-          "d": 0.51,
-          "x": -1.4,
-          "y": 0.44,
-          "z": -0.82,
-          "color": "#b87333",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "box",
-          "w": 1.2,
-          "h": 0.07,
-          "d": 1.02,
-          "x": 0.8,
-          "y": 0.42,
-          "z": -0.57,
-          "color": "#ff4500",
-          "glow": 0,
-          "turn": "up",
-          "rot": [
-            0,
-            -22.619864948040426,
-            0
-          ]
-        },
-        {
-          "shape": "box",
-          "w": 0.06,
-          "h": 0.12,
-          "d": 0.51,
-          "x": 1.4,
-          "y": 0.44,
-          "z": -0.82,
-          "color": "#b87333",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.32,
-          "h": 0.55,
-          "d": 0.32,
-          "x": -0.18,
-          "y": 0.5,
-          "z": -1.77,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "back"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.22,
-          "h": 0.06,
-          "d": 0.22,
-          "x": -0.18,
-          "y": 0.5,
-          "z": -2.08,
-          "color": "#00ffff",
-          "glow": 1,
-          "turn": "back"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.32,
-          "h": 0.55,
-          "d": 0.32,
-          "x": 0.18,
-          "y": 0.5,
-          "z": -1.77,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "back"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.22,
-          "h": 0.06,
-          "d": 0.22,
-          "x": 0.18,
-          "y": 0.5,
-          "z": -2.08,
-          "color": "#00ffff",
-          "glow": 1,
-          "turn": "back"
-        },
-        {
-          "shape": "box",
-          "w": 0.06,
-          "h": 0.45,
-          "d": 0.7,
-          "x": -0.14,
-          "y": 0.9,
-          "z": -1.2,
-          "color": "#ff4500",
-          "glow": 0,
-          "turn": "up",
-          "rot": [
-            0,
-            0,
-            -15
-          ]
-        },
-        {
-          "shape": "box",
-          "w": 0.06,
-          "h": 0.45,
-          "d": 0.7,
-          "x": 0.14,
-          "y": 0.9,
-          "z": -1.2,
-          "color": "#ff4500",
-          "glow": 0,
-          "turn": "up",
-          "rot": [
-            0,
-            0,
-            15
-          ]
-        },
-        {
-          "shape": "box",
-          "w": 0.42,
-          "h": 0.07,
-          "d": 2.24,
-          "x": 0,
-          "y": 0.5,
-          "z": 0,
-          "color": "#ff4500",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.03,
-          "h": 0.5,
-          "d": 0.03,
-          "x": 0.08,
-          "y": 0.95,
-          "z": -0.32,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "ball",
-          "w": 0.07,
-          "h": 0.07,
-          "d": 0.07,
-          "x": 0.08,
-          "y": 1.22,
-          "z": -0.32,
-          "color": "#ff4a3a",
-          "glow": 1,
-          "turn": "up"
-        },
-        {
-          "shape": "ball",
-          "w": 0.1,
-          "h": 0.1,
-          "d": 0.1,
-          "x": -1.4,
-          "y": 0.45,
-          "z": -0.32,
-          "color": "#ff4a3a",
-          "glow": 1,
-          "turn": "up"
-        },
-        {
-          "shape": "ball",
-          "w": 0.1,
-          "h": 0.1,
-          "d": 0.1,
-          "x": 1.4,
-          "y": 0.45,
-          "z": -0.32,
-          "color": "#4aff7a",
-          "glow": 1,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.05,
-          "h": 0.3,
-          "d": 0.05,
-          "x": -0.16,
-          "y": 0.15,
-          "z": 0.8,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.16,
-          "h": 0.04,
-          "d": 0.16,
-          "x": -0.16,
-          "y": 0.02,
-          "z": 0.8,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.05,
-          "h": 0.3,
-          "d": 0.05,
-          "x": 0.16,
-          "y": 0.15,
-          "z": 0.8,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.16,
-          "h": 0.04,
-          "d": 0.16,
-          "x": 0.16,
-          "y": 0.02,
-          "z": 0.8,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.05,
-          "h": 0.3,
-          "d": 0.05,
-          "x": 0,
-          "y": 0.15,
-          "z": -0.96,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.16,
-          "h": 0.04,
-          "d": 0.16,
-          "x": 0,
-          "y": 0.02,
-          "z": -0.96,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "up"
+        "name": "Little Dart Mk 18",
+        "day": 65,
+        "partsUsed": 12,
+        "parts": [
+          {
+            "name": "Mabel",
+            "what": "a little landing strut",
+            "version": 1
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "a mystery box that hums",
+            "version": 2
+          },
+          {
+            "name": "Mabel",
+            "what": "a dented fuel cell",
+            "version": 3
+          },
+          {
+            "name": "Tilly",
+            "what": "a scorched heat tile",
+            "version": 4
+          },
+          {
+            "name": "Wren",
+            "what": "a strip of hull plating",
+            "version": 5
+          },
+          {
+            "name": "Mabel",
+            "what": "a coil of copper wire",
+            "version": 6
+          },
+          {
+            "name": "Tok",
+            "what": "a strip of hull plating",
+            "version": 7
+          },
+          {
+            "name": "Sprocket",
+            "what": "a scorched heat tile",
+            "version": 8
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "a cracked navigation chip",
+            "version": 9
+          },
+          {
+            "name": "Tilly",
+            "what": "a tiny gyroscope",
+            "version": 10
+          },
+          {
+            "name": "Tok",
+            "what": "a strip of hull plating",
+            "version": 11
+          },
+          {
+            "name": "Tok",
+            "what": "a scorched heat tile",
+            "version": 12
+          }
+        ],
+        "design": {
+          "description": "a sleek, dagger-shaped hull with swept-back copper stabilizer fins, an offset bubble canopy, and twin aft thrusters glowing bright blue.",
+          "parts": [
+            {
+              "shape": "cylinder",
+              "w": 0.4,
+              "h": 3.2,
+              "d": 0.4,
+              "x": 0,
+              "y": 0.5,
+              "z": 0,
+              "color": "#b87333",
+              "glow": 0,
+              "turn": "forward"
+            },
+            {
+              "shape": "cone",
+              "w": 0.4,
+              "h": 1.12,
+              "d": 0.4,
+              "x": 0,
+              "y": 0.5,
+              "z": 2.16,
+              "color": "#b87333",
+              "glow": 0,
+              "turn": "forward"
+            },
+            {
+              "shape": "ball",
+              "w": 0.24,
+              "h": 0.2,
+              "d": 0.9,
+              "x": 0,
+              "y": 0.68,
+              "z": 0.56,
+              "color": "#00ffff",
+              "glow": 0.5,
+              "turn": "up"
+            },
+            {
+              "shape": "box",
+              "w": 1.2,
+              "h": 0.07,
+              "d": 1.02,
+              "x": -0.8,
+              "y": 0.42,
+              "z": -0.57,
+              "color": "#ff4500",
+              "glow": 0,
+              "turn": "up",
+              "rot": [
+                0,
+                22.619864948040426,
+                0
+              ]
+            },
+            {
+              "shape": "box",
+              "w": 0.06,
+              "h": 0.12,
+              "d": 0.51,
+              "x": -1.4,
+              "y": 0.44,
+              "z": -0.82,
+              "color": "#b87333",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "box",
+              "w": 1.2,
+              "h": 0.07,
+              "d": 1.02,
+              "x": 0.8,
+              "y": 0.42,
+              "z": -0.57,
+              "color": "#ff4500",
+              "glow": 0,
+              "turn": "up",
+              "rot": [
+                0,
+                -22.619864948040426,
+                0
+              ]
+            },
+            {
+              "shape": "box",
+              "w": 0.06,
+              "h": 0.12,
+              "d": 0.51,
+              "x": 1.4,
+              "y": 0.44,
+              "z": -0.82,
+              "color": "#b87333",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.32,
+              "h": 0.55,
+              "d": 0.32,
+              "x": -0.18,
+              "y": 0.5,
+              "z": -1.77,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "back"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.22,
+              "h": 0.06,
+              "d": 0.22,
+              "x": -0.18,
+              "y": 0.5,
+              "z": -2.08,
+              "color": "#00ffff",
+              "glow": 1,
+              "turn": "back"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.32,
+              "h": 0.55,
+              "d": 0.32,
+              "x": 0.18,
+              "y": 0.5,
+              "z": -1.77,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "back"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.22,
+              "h": 0.06,
+              "d": 0.22,
+              "x": 0.18,
+              "y": 0.5,
+              "z": -2.08,
+              "color": "#00ffff",
+              "glow": 1,
+              "turn": "back"
+            },
+            {
+              "shape": "box",
+              "w": 0.06,
+              "h": 0.45,
+              "d": 0.7,
+              "x": -0.14,
+              "y": 0.9,
+              "z": -1.2,
+              "color": "#ff4500",
+              "glow": 0,
+              "turn": "up",
+              "rot": [
+                0,
+                0,
+                -15
+              ]
+            },
+            {
+              "shape": "box",
+              "w": 0.06,
+              "h": 0.45,
+              "d": 0.7,
+              "x": 0.14,
+              "y": 0.9,
+              "z": -1.2,
+              "color": "#ff4500",
+              "glow": 0,
+              "turn": "up",
+              "rot": [
+                0,
+                0,
+                15
+              ]
+            },
+            {
+              "shape": "box",
+              "w": 0.42,
+              "h": 0.07,
+              "d": 2.24,
+              "x": 0,
+              "y": 0.5,
+              "z": 0,
+              "color": "#ff4500",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.03,
+              "h": 0.5,
+              "d": 0.03,
+              "x": 0.08,
+              "y": 0.95,
+              "z": -0.32,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "ball",
+              "w": 0.07,
+              "h": 0.07,
+              "d": 0.07,
+              "x": 0.08,
+              "y": 1.22,
+              "z": -0.32,
+              "color": "#ff4a3a",
+              "glow": 1,
+              "turn": "up"
+            },
+            {
+              "shape": "ball",
+              "w": 0.1,
+              "h": 0.1,
+              "d": 0.1,
+              "x": -1.4,
+              "y": 0.45,
+              "z": -0.32,
+              "color": "#ff4a3a",
+              "glow": 1,
+              "turn": "up"
+            },
+            {
+              "shape": "ball",
+              "w": 0.1,
+              "h": 0.1,
+              "d": 0.1,
+              "x": 1.4,
+              "y": 0.45,
+              "z": -0.32,
+              "color": "#4aff7a",
+              "glow": 1,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.05,
+              "h": 0.3,
+              "d": 0.05,
+              "x": -0.16,
+              "y": 0.15,
+              "z": 0.8,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.16,
+              "h": 0.04,
+              "d": 0.16,
+              "x": -0.16,
+              "y": 0.02,
+              "z": 0.8,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.05,
+              "h": 0.3,
+              "d": 0.05,
+              "x": 0.16,
+              "y": 0.15,
+              "z": 0.8,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.16,
+              "h": 0.04,
+              "d": 0.16,
+              "x": 0.16,
+              "y": 0.02,
+              "z": 0.8,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.05,
+              "h": 0.3,
+              "d": 0.05,
+              "x": 0,
+              "y": 0.15,
+              "z": -0.96,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.16,
+              "h": 0.04,
+              "d": 0.16,
+              "x": 0,
+              "y": 0.02,
+              "z": -0.96,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "up"
+            }
+          ],
+          "at": "2026-11-20T11:20:26.803Z",
+          "day": 65
         }
-      ],
-      "at": "2026-11-20T11:20:26.803Z",
-      "day": 65
-    }
+      }
+    ],
+    "partsUsed": 0,
+    "parts": [],
+    "design": null
   },
   "tunes": [
     {
@@ -2660,8 +2672,7 @@
     {
       "name": "Bix",
       "what": "a little landing strut",
-      "at": "2026-11-20T12:00:26.846Z",
-      "carrying": true
+      "at": "2026-11-20T12:00:26.846Z"
     },
     {
       "name": "Tok",
@@ -2682,11 +2693,6 @@
       "name": "Mabel",
       "what": "half a thruster nozzle",
       "at": "2026-11-20T07:16:39.550Z"
-    },
-    {
-      "name": "Tok",
-      "what": "a scorched heat tile",
-      "at": "2026-11-20T05:53:32.785Z"
     }
   ],
   "reads": [

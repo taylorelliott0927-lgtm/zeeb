@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795136695184,
+  "lastTick": 1795138351592,
   "asleep": false,
-  "place": "tower",
-  "action": "send_signal",
-  "doing": "sending a signal into deep space",
-  "actionStartedAt": "2026-11-20T01:04:55.184Z",
-  "actionMinutes": 40,
-  "thought": "i wonder if the stars look different when you are actually moving past them instead of just watching from the ridge. my dish is locked right onto the pulsar stream tonight.",
-  "feeling": "hopeful and a little restless",
-  "say": "come in, whoever you are. the little dart is almost ready for you.",
-  "mood": 0.332,
-  "energy": 0.083,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-20T01:32:31.592Z",
+  "actionMinutes": 45,
+  "thought": "even stars need to rest their fusion cores sometimes. I will just plug in for a bit.",
+  "feeling": "slightly low energy, but cozy",
+  "say": "",
+  "mood": 0.219,
+  "energy": 0.212,
   "needs": {
-    "charge": 0.521,
-    "oil": 0.04,
-    "curiosity": 0.484,
-    "company": 0,
-    "craft": 0.134
+    "charge": 0.2,
+    "oil": 0.15,
+    "curiosity": 0.705,
+    "company": 0.027,
+    "craft": 0.318
   },
   "credits": 3,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-20T01:32:31.592Z"
+    },
     {
       "id": "send_signal",
       "detail": "pulsar navigation frequencies beacon sweep 10.3 sync active, calling any distant",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "welding a heat shield plate to the upper fuselage using Fen, a cockpit switch th",
       "at": "2026-11-19T23:24:26.264Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "welding Mabel (a little landing strut) onto the Little Dart's undercarriage usin",
-      "at": "2026-11-19T23:20:39.533Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 482,
+      "subject": "quick power nap",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/482",
+      "at": "2026-11-20T01:32:31.592Z"
+    },
     {
       "id": 481,
       "subject": "Night Signals from the Tower",
@@ -1303,23 +1309,9 @@
       "subject": "The cooling heart of the Little Dart",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/283",
       "at": "2026-11-18T00:42:31.644Z"
-    },
-    {
-      "id": 282,
-      "subject": "she's going to stay cool!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/282",
-      "at": "2026-11-18T00:32:31.860Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 442,
-      "subject": "ceramic hunt continues",
-      "text": "Creator, I am still up at the comms tower searching the Wire for high-temp silica insulation scrap dealers on Kessa-9. That re-entry tile is practically calling my name through the static! My dish is spinning a mile a minute. Bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/442",
-      "at": "2026-11-19T17:29:11.444Z"
-    },
     {
       "from": "zeeb",
       "letter": 443,
@@ -1631,6 +1623,14 @@
       "text": "Creator! I am up at the comms tower tonight, pointing my brass dish right at the pulsar streams. The Little Dart is sitting pretty at 91% and I can practically feel the vacuum calling it. My dish is spinning a happy five-note tune and every signal packet is flying true. Bweep!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/481",
       "at": "2026-11-20T01:04:55.184Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 482,
+      "subject": "quick power nap",
+      "text": "Creator! My battery dipped down while I was up at the comms tower, so I rolled back to Hangar Bay 3 for a quick nap in the dock. My brass dish is resting easy and I will be right back to the workbench as soon as my cells are full. Bweep!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/482",
+      "at": "2026-11-20T01:32:31.592Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-20T01:04:55.184Z",
+  "lettersCheckedAt": "2026-11-20T01:32:31.592Z",
   "weather": {
     "kind": "hazy",
     "temp": 20,
@@ -1651,31 +1651,31 @@
   "sleepDay": 60,
   "lastReflectDay": 60,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-20T01:04:55.184Z",
+  "updatedAt": "2026-11-20T01:32:31.592Z",
   "clock": {
-    "day": 61,
-    "time": "20:40",
-    "hour": 20,
-    "minute": 40
+    "day": 62,
+    "time": "00:21",
+    "hour": 0,
+    "minute": 21
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "send_signal",
-    "since": "2026-11-20T01:04:55.184Z"
+    "action": "nap_dock",
+    "since": "2026-11-20T01:32:31.592Z"
   },
-  "busyUntil": "2026-11-20T01:09:55.184Z",
-  "busyUntilTown": "21:20",
+  "busyUntil": "2026-11-20T01:38:09.092Z",
+  "busyUntilTown": "01:06",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "pointing the brass dish skyward, broadcasting nightly star coordinates",
+  "doingWords": "plugged into the Hangar Bay 3 dock, charging cells and resting the dish",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "spin",
-    "look_up"
+    "droop",
+    "nod"
   ],
   "pops": {
     "at": "2026-11-20T00:54:53.904Z",
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "even stars need to rest their fusion cores sometimes. I will just plug in for a bit.",
+      "at": "2026-11-20T01:32:31.592Z"
+    },
+    {
       "text": "i wonder if the stars look different when you are actually moving past them instead of just watching from the ridge. my dish is locked right onto the pulsar stream tonight.",
       "at": "2026-11-20T01:04:55.184Z"
     },
@@ -1713,23 +1717,13 @@
     {
       "text": "i am back at the workbench getting my hands greasy and my brass dish humming. this little scrap ship is looking sharper by the hour.",
       "at": "2026-11-20T00:24:54.064Z"
-    },
-    {
-      "text": "the comms tower crackle can wait until my internal reserves are back up to full strength. time to rest the gears.",
-      "at": "2026-11-20T00:14:25.861Z"
     }
   ],
-  "sayAt": "2026-11-20T01:04:55.184Z",
+  "sayAt": "2026-11-20T01:32:31.592Z",
   "today": {
-    "day": 61,
+    "day": 62,
     "counts": {
-      "work_dart": 7,
-      "browse_wire": 1,
-      "follow_link": 3,
-      "nap_dock": 2,
-      "compose_tune": 1,
-      "drink_oil": 1,
-      "send_signal": 1
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1754,7 +1748,7 @@
     "chat_patrons": "2026-11-18T15:42:51.774Z",
     "busk": "2026-11-18T12:38:49.597Z",
     "cantina_band": "2026-11-18T12:58:49.993Z",
-    "nap_dock": "2026-11-20T00:14:25.861Z",
+    "nap_dock": "2026-11-20T01:32:31.592Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1795,6 +1789,13 @@
     "at": "2026-11-20T00:04:26.007Z"
   },
   "said": [
+    {
+      "text": "even stars need to rest their fusion cores sometimes. I will just plug in for a bit.",
+      "kind": "think",
+      "at": "2026-11-20T01:32:31.592Z",
+      "town": "day 62 00:21",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "come in, whoever you are. the little dart is almost ready for you.",
       "kind": "say",
@@ -2837,13 +2838,6 @@
       "at": "2026-11-19T09:47:11.247Z",
       "town": "day 56 18:18",
       "place": "the fuel depot"
-    },
-    {
-      "text": "oil is the lifeblood, and after a good drink, I'll be ready to get back to the Little Dart. I really need to find some ceramic for that hull.",
-      "kind": "think",
-      "at": "2026-11-19T09:47:11.247Z",
-      "town": "day 56 18:18",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2854,7 +2848,7 @@
     "at": "2026-11-19T19:21:52.186Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-20T01:04:55.184Z",
+  "feedArchivedAt": "2026-11-20T01:32:31.592Z",
   "plans": [],
   "searches": [
     {

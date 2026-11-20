@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 18",
-    "progress": 49,
-    "version": 6,
-    "lastChange": "welding a high-temp silica tile nose cone onto the Little Dart using Mabel the copper wire for reinforced grounding (used Mabel, a coil of copper wire)",
+    "progress": 56,
+    "version": 7,
+    "lastChange": "welding a titanium reinforcement rib onto the Little Dart's ventral seam using Mabel the copper wire for joint stability (used Tok, a strip of hull plating)",
     "log": [
+      {
+        "version": 7,
+        "change": "welding a titanium reinforcement rib onto the Little Dart's ventral seam using Mabel the copper wire for joint stability (used Tok, a strip of hull plating)",
+        "progress": 56,
+        "at": "2026-11-20T08:13:49.711Z"
+      },
       {
         "version": 6,
         "change": "welding a high-temp silica tile nose cone onto the Little Dart using Mabel the copper wire for reinforced grounding (used Mabel, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "installing the copper coil shielding around Tok the gyroscope in the navigation core to prevent interference. (used Dibs, a dented fuel cell)",
         "progress": 59,
         "at": "2026-11-19T00:24:43.521Z"
-      },
-      {
-        "version": 6,
-        "change": "installing Tok (a tiny gyroscope) into the navigation core to keep the flight path steady during long-range burns. (used Otto, a cockpit switch that still clicks)",
-        "progress": 50,
-        "at": "2026-11-18T22:53:43.814Z"
       }
     ],
     "launched": [
@@ -2106,7 +2106,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Mabel",
@@ -2137,6 +2137,11 @@
         "name": "Mabel",
         "what": "a coil of copper wire",
         "version": 6
+      },
+      {
+        "name": "Tok",
+        "what": "a strip of hull plating",
+        "version": 7
       }
     ],
     "design": null
@@ -2352,11 +2357,6 @@
       "name": "Sprocket",
       "what": "a scorched heat tile",
       "at": "2026-11-20T04:20:07.325Z"
-    },
-    {
-      "name": "Tok",
-      "what": "a strip of hull plating",
-      "at": "2026-11-20T04:00:07.266Z"
     }
   ],
   "reads": [

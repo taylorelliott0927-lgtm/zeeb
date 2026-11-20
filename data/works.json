@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 17",
-    "progress": 98,
-    "version": 12,
-    "lastChange": "riveting the main oxygen manifold access hatch onto the Little Dart using Tilly, a scorched heat tile (used Lorna, a cracked navigation chip)",
+    "name": "the Little Dart Mk 18",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 13,
+        "change": "welding the primary booster shroud and thermal insulation blanket onto the Little Dart using Rusty Jr, a mystery box that hums (used Otto, a tiny gyroscope)",
+        "progress": 100,
+        "at": "2026-11-20T02:22:31.221Z"
+      },
       {
         "version": 12,
         "change": "riveting the main oxygen manifold access hatch onto the Little Dart using Tilly, a scorched heat tile (used Lorna, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "routing the instrument cluster wiring harness through the main bulkhead using Tilly (a coil of copper wire) (used Gus, a mystery box that hums)",
         "progress": 100,
         "at": "2026-11-18T19:41:24.484Z"
-      },
-      {
-        "version": 12,
-        "change": "mounting the custom pressure relief valve to the main cooling loop housing (used Gus, a tiny gyroscope)",
-        "progress": 97,
-        "at": "2026-11-18T18:24:20.868Z"
       }
     ],
     "launched": [
@@ -2029,74 +2029,85 @@
             "version": 13
           }
         ]
+      },
+      {
+        "name": "the Little Dart Mk 17",
+        "day": 62,
+        "partsUsed": 16,
+        "parts": [
+          {
+            "name": "Otto",
+            "what": "a perfectly good bolt",
+            "good": true,
+            "version": 1
+          },
+          {
+            "name": "Sprocket",
+            "what": "a coil of copper wire",
+            "version": 2
+          },
+          {
+            "name": "Wren",
+            "what": "a springy hull washer",
+            "custom": "rmwn46u1n",
+            "version": 3
+          },
+          {
+            "name": "Nim",
+            "what": "a perfectly good bolt",
+            "version": 4
+          },
+          {
+            "name": "Dibs",
+            "what": "a strip of hull plating",
+            "version": 5
+          },
+          {
+            "name": "Pim",
+            "what": "a coil of copper wire",
+            "version": 6
+          },
+          {
+            "name": "Fen",
+            "what": "a cockpit switch that still clicks",
+            "version": 7
+          },
+          {
+            "name": "Lorna",
+            "what": "a little landing strut",
+            "version": 8
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "a cracked navigation chip",
+            "version": 9
+          },
+          {
+            "name": "Lorna",
+            "what": "a mystery box that hums",
+            "version": 10
+          },
+          {
+            "name": "Brakk",
+            "what": "a mystery box that hums",
+            "good": true,
+            "version": 11
+          },
+          {
+            "name": "Lorna",
+            "what": "a cracked navigation chip",
+            "version": 12
+          },
+          {
+            "name": "Otto",
+            "what": "a tiny gyroscope",
+            "version": 13
+          }
+        ]
       }
     ],
-    "partsUsed": 15,
-    "parts": [
-      {
-        "name": "Otto",
-        "what": "a perfectly good bolt",
-        "good": true,
-        "version": 1
-      },
-      {
-        "name": "Sprocket",
-        "what": "a coil of copper wire",
-        "version": 2
-      },
-      {
-        "name": "Wren",
-        "what": "a springy hull washer",
-        "custom": "rmwn46u1n",
-        "version": 3
-      },
-      {
-        "name": "Nim",
-        "what": "a perfectly good bolt",
-        "version": 4
-      },
-      {
-        "name": "Dibs",
-        "what": "a strip of hull plating",
-        "version": 5
-      },
-      {
-        "name": "Pim",
-        "what": "a coil of copper wire",
-        "version": 6
-      },
-      {
-        "name": "Fen",
-        "what": "a cockpit switch that still clicks",
-        "version": 7
-      },
-      {
-        "name": "Lorna",
-        "what": "a little landing strut",
-        "version": 8
-      },
-      {
-        "name": "Rusty Jr",
-        "what": "a cracked navigation chip",
-        "version": 9
-      },
-      {
-        "name": "Lorna",
-        "what": "a mystery box that hums",
-        "version": 10
-      },
-      {
-        "name": "Brakk",
-        "what": "a mystery box that hums",
-        "good": true,
-        "version": 11
-      },
-      {
-        "name": "Lorna",
-        "what": "a cracked navigation chip",
-        "version": 12
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -2288,11 +2299,6 @@
       "name": "Mabel",
       "what": "a little landing strut",
       "at": "2026-11-19T16:02:39.622Z"
-    },
-    {
-      "name": "Otto",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-19T15:21:31.319Z"
     }
   ],
   "reads": [

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795201140982,
+  "lastTick": 1795201740422,
   "asleep": false,
-  "place": "cantina",
-  "action": "cantina_band",
-  "doing": "still listening to the band at the Dented Moon",
-  "actionStartedAt": "2026-11-20T18:49:01.298Z",
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-20T19:09:00.422Z",
   "actionMinutes": 45,
-  "thought": "that brass horn player really knows how to squeeze a note out of an old valve. maybe i can borrow that swing for the next tune.",
-  "feeling": "groovy and relaxed",
-  "say": "nice squeak on that third valve, friend!",
-  "mood": 0.271,
-  "energy": -0.003,
+  "thought": "that little horn swing is still bouncing around my circuits. time for a quick juice up in the dock.",
+  "feeling": "a bit low on juice",
+  "say": "bweep",
+  "mood": 0.242,
+  "energy": 0.205,
   "needs": {
-    "charge": 0.567,
-    "oil": 0.156,
-    "curiosity": 0.739,
-    "company": 0,
-    "craft": 0.196
+    "charge": 0.164,
+    "oil": 0.196,
+    "curiosity": 0.819,
+    "company": 0.053,
+    "craft": 0.263
   },
   "credits": 6,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-20T19:09:00.422Z"
+    },
     {
       "id": "cantina_band",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "read_news",
       "detail": "",
       "at": "2026-11-20T16:59:58.650Z"
-    },
-    {
-      "id": "send_signal",
-      "detail": "This is Zeeb from Rustwell Outpost on Kessa-9! Little Dart Mk 19 nose cone is th",
-      "at": "2026-11-20T16:49:58.807Z"
     }
   ],
   "wants": [
@@ -1639,41 +1639,42 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-20T18:59:00.982Z",
+  "lettersCheckedAt": "2026-11-20T19:09:00.422Z",
   "weather": {
     "kind": "windy",
-    "temp": 23,
-    "wind": 19,
+    "temp": 22,
+    "wind": 18,
     "mood": -0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-20T18:29:56.264Z"
+    "at": "2026-11-20T19:09:00.488Z"
   },
   "sleepDay": 66,
   "lastReflectDay": 66,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-20T18:59:00.982Z",
+  "updatedAt": "2026-11-20T19:09:00.422Z",
   "clock": {
     "day": 67,
-    "time": "19:53",
-    "hour": 19,
-    "minute": 53
+    "time": "21:13",
+    "hour": 21,
+    "minute": 13
   },
   "townDayMinutes": 180,
-  "placeName": "the Dented Moon cantina",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "cantina_band",
-    "since": "2026-11-20T18:49:01.298Z"
+    "action": "nap_dock",
+    "since": "2026-11-20T19:09:00.422Z"
   },
-  "busyUntil": "2026-11-20T19:04:38.482Z",
-  "busyUntilTown": "20:38",
+  "busyUntil": "2026-11-20T19:14:37.922Z",
+  "busyUntilTown": "21:58",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "tapping brass dish to the cantina house band rhythms",
+  "doingWords": "plugged into the charging dock, eyes offline and battery filling up",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
+    "droop",
     "nod"
   ],
   "pops": {
@@ -1694,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "that little horn swing is still bouncing around my circuits. time for a quick juice up in the dock.",
+      "at": "2026-11-20T19:09:00.422Z"
+    },
+    {
       "text": "that brass horn player really knows how to squeeze a note out of an old valve. maybe i can borrow that swing for the next tune.",
       "at": "2026-11-20T18:59:00.982Z"
     },
@@ -1712,20 +1717,16 @@
     {
       "text": "ah, nothing beats that first smooth gulp of heavy-duty lubrication. my gears are humming a happy tune again.",
       "at": "2026-11-20T18:19:55.674Z"
-    },
-    {
-      "text": "my bearings feel dry as a desert wind after all that welding. a fresh cup of oil will get my gears spinning smooth again.",
-      "at": "2026-11-20T18:09:55.514Z"
     }
   ],
-  "sayAt": "2026-11-20T18:59:00.982Z",
+  "sayAt": "2026-11-20T19:09:00.422Z",
   "today": {
     "day": 67,
     "counts": {
       "compose_tune": 1,
       "send_signal": 1,
       "read_news": 1,
-      "nap_dock": 1,
+      "nap_dock": 2,
       "work_dart": 3,
       "drink_oil": 2,
       "wander": 1,
@@ -1755,7 +1756,7 @@
     "chat_patrons": "2026-11-18T15:42:51.774Z",
     "busk": "2026-11-20T18:39:01.474Z",
     "cantina_band": "2026-11-20T18:59:00.982Z",
-    "nap_dock": "2026-11-20T17:09:58.583Z",
+    "nap_dock": "2026-11-20T19:09:00.422Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1796,6 +1797,20 @@
     "at": "2026-11-20T16:59:58.650Z"
   },
   "said": [
+    {
+      "text": "bweep",
+      "kind": "say",
+      "at": "2026-11-20T19:09:00.422Z",
+      "town": "day 67 21:13",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "that little horn swing is still bouncing around my circuits. time for a quick juice up in the dock.",
+      "kind": "think",
+      "at": "2026-11-20T19:09:00.422Z",
+      "town": "day 67 21:13",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "nice squeak on that third valve, friend!",
       "kind": "say",
@@ -2831,20 +2846,6 @@
       "at": "2026-11-20T03:24:07.184Z",
       "town": "day 62 15:14",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "the welding torch is hissing a nice steady rhythm against the thermal panel. my brass dish is giving a soft little five-note spin because this fuselage is shaping up real fine.",
-      "kind": "think",
-      "at": "2026-11-20T03:24:07.184Z",
-      "town": "day 62 15:14",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "hold still, gus, just a quick bead right here!",
-      "kind": "say",
-      "at": "2026-11-20T03:14:06.464Z",
-      "town": "day 62 13:54",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2855,7 +2856,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-20T18:59:00.982Z",
+  "feedArchivedAt": "2026-11-20T19:09:00.422Z",
   "plans": [],
   "searches": [
     {

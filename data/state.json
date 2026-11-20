@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795153413119,
+  "lastTick": 1795154012785,
   "asleep": false,
   "place": "market",
-  "action": "fix_job",
-  "doing": "still doing a repair job at the market",
-  "actionStartedAt": "2026-11-20T05:28:42.667Z",
-  "actionMinutes": 60,
-  "thought": "this thermal fuse is older than my chassis, but a good bridge of solder will hold it. *bweep*.",
-  "feeling": "focused and slightly jittery from low battery",
-  "say": "there we go, good as new.",
-  "mood": 0.306,
-  "energy": -0.291,
+  "action": "buy_part",
+  "doing": "browsing the parts stalls at the market",
+  "actionStartedAt": "2026-11-20T05:53:32.785Z",
+  "actionMinutes": 30,
+  "thought": "three credits is just enough for a decent scrap chunk if I bargain hard with the parts trader. *bweep*.",
+  "feeling": "curious and low on juice",
+  "say": "got any heavy-grade titanium plating hiding under that tarp?",
+  "mood": 0.319,
+  "energy": -0.42,
   "needs": {
-    "charge": 0.665,
-    "oil": 0.523,
-    "curiosity": 0.199,
+    "charge": 0.712,
+    "oil": 0.563,
+    "curiosity": 0.179,
     "company": 0,
-    "craft": 0
+    "craft": 0.067
   },
-  "credits": 3,
+  "credits": 0,
   "recent": [
+    {
+      "id": "buy_part",
+      "detail": "good",
+      "at": "2026-11-20T05:53:32.785Z"
+    },
     {
       "id": "fix_job",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "blue origin surplus parts catalog",
       "at": "2026-11-20T03:50:07.214Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-20T03:40:07.552Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 503,
+      "subject": "Junk Market Scavenging",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/503",
+      "at": "2026-11-20T05:53:32.785Z"
+    },
     {
       "id": 502,
       "subject": "Credits and converters",
@@ -1303,23 +1309,9 @@
       "subject": "a breakthrough at the tower!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/304",
       "at": "2026-11-18T05:59:04.692Z"
-    },
-    {
-      "id": 303,
-      "subject": "a tiny concern",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/303",
-      "at": "2026-11-18T05:49:05.120Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 463,
-      "subject": "quick power nap",
-      "text": "Creator, I am docking at Hangar Bay 3 for a quick recharge. My battery dipped down a bit after all those hours at the comms tower beaming pulsar frequencies into the dark. My brass dish is resting easy and I will be right back to the workbench as soon as I am full up. Bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/463",
-      "at": "2026-11-19T21:59:07.451Z"
-    },
     {
       "from": "zeeb",
       "letter": 464,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am currently down at the junk market fixing a power converter for one of the traders. My soldering iron is glowing bright orange and I am earning a few extra credits to put toward more heavy scrap. The Little Dart is waiting patiently back in Hangar Bay 3, and I intend to make her the finest ship on Kessa-9. Bweep!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/502",
       "at": "2026-11-20T05:28:42.667Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 503,
+      "subject": "Junk Market Scavenging",
+      "text": "Creator!\n\nI am rolling through the junk market with three credits clanking in my cargo tray. My battery is getting a bit grumpy, but I want to see if any good high-grade scrap just rolled in before I trundle back to Hangar Bay 3 for a nice long nap. The Little Dart is going to look amazing with some fresh armour plates!\n\nBweep!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/503",
+      "at": "2026-11-20T05:53:32.785Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-20T05:43:33.119Z",
+  "lettersCheckedAt": "2026-11-20T05:53:32.785Z",
   "weather": {
     "kind": "clear",
     "temp": 18,
@@ -1651,38 +1651,41 @@
   "sleepDay": 62,
   "lastReflectDay": 62,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-20T05:43:33.119Z",
+  "updatedAt": "2026-11-20T05:53:32.785Z",
   "clock": {
     "day": 63,
-    "time": "09:49",
-    "hour": 9,
-    "minute": 49
+    "time": "11:09",
+    "hour": 11,
+    "minute": 9
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
   "streak": {
-    "action": "fix_job",
-    "since": "2026-11-20T05:28:42.667Z"
+    "action": "buy_part",
+    "since": "2026-11-20T05:53:32.785Z"
   },
-  "busyUntil": "2026-11-20T05:51:03.119Z",
-  "busyUntilTown": "10:49",
+  "busyUntil": "2026-11-20T05:57:17.785Z",
+  "busyUntilTown": "11:39",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "soldering a stubborn junction at the market stall",
+  "doingWords": "checking out trader bins for heavy metal and gleaming salvage",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "nod"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-20T05:43:33.119Z",
+    "at": "2026-11-20T05:53:32.785Z",
     "items": [
       {
-        "text": "+ a strip of hull plating",
+        "text": "-3 credits",
+        "kind": "spend",
+        "at": "2026-11-20T05:53:32.785Z"
+      },
+      {
+        "text": "+ a scorched heat tile",
         "kind": "part",
-        "at": "2026-11-20T05:43:33.119Z"
+        "at": "2026-11-20T05:53:32.785Z"
       }
     ]
   },
@@ -1693,6 +1696,10 @@
     "at": "2026-11-20T04:00:07.266Z"
   },
   "thoughts": [
+    {
+      "text": "three credits is just enough for a decent scrap chunk if I bargain hard with the parts trader. *bweep*.",
+      "at": "2026-11-20T05:53:32.785Z"
+    },
     {
       "text": "this thermal fuse is older than my chassis, but a good bridge of solder will hold it. *bweep*.",
       "at": "2026-11-20T05:43:33.119Z"
@@ -1712,13 +1719,9 @@
     {
       "text": "my joints are quiet and my energy is creeping back up, so it is high time to get some proper welds done on the Little Dart's fuselage.",
       "at": "2026-11-20T04:58:43.022Z"
-    },
-    {
-      "text": "my battery indicator is dropping into the yellow zone, so I better plug in for a quick nap before the sun comes up.",
-      "at": "2026-11-20T04:48:42.612Z"
     }
   ],
-  "sayAt": "2026-11-20T05:43:33.119Z",
+  "sayAt": "2026-11-20T05:53:32.785Z",
   "today": {
     "day": 63,
     "counts": {
@@ -1727,7 +1730,8 @@
       "work_dart": 1,
       "compose_tune": 1,
       "scavenge": 1,
-      "fix_job": 2
+      "fix_job": 2,
+      "buy_part": 1
     }
   },
   "lastDone": {
@@ -1758,7 +1762,7 @@
     "start_friend": "2026-11-14T11:54:58.335Z",
     "build_friend": "2026-11-14T17:54:59.323Z",
     "reply_notes": "2026-11-14T19:46:45.041Z",
-    "buy_part": "2026-11-19T15:01:32.122Z",
+    "buy_part": "2026-11-20T05:53:32.785Z",
     "sell_scrap": "2026-11-19T12:05:42.960Z"
   },
   "puzzles": [
@@ -1793,6 +1797,20 @@
     "at": "2026-11-20T04:10:07.750Z"
   },
   "said": [
+    {
+      "text": "got any heavy-grade titanium plating hiding under that tarp?",
+      "kind": "say",
+      "at": "2026-11-20T05:53:32.785Z",
+      "town": "day 63 11:09",
+      "place": "the junk market"
+    },
+    {
+      "text": "three credits is just enough for a decent scrap chunk if I bargain hard with the parts trader. *bweep*.",
+      "kind": "think",
+      "at": "2026-11-20T05:53:32.785Z",
+      "town": "day 63 11:09",
+      "place": "the junk market"
+    },
     {
       "text": "there we go, good as new.",
       "kind": "say",
@@ -2828,20 +2846,6 @@
       "at": "2026-11-19T15:21:31.319Z",
       "town": "day 58 14:53",
       "place": "the comms tower"
-    },
-    {
-      "text": "my curiosity is bugging me most right now.",
-      "kind": "think",
-      "at": "2026-11-19T15:11:31.463Z",
-      "town": "day 58 13:33",
-      "place": "the fuel depot"
-    },
-    {
-      "text": "Any shiny heat tiles today, friend?",
-      "kind": "say",
-      "at": "2026-11-19T15:01:32.122Z",
-      "town": "day 58 12:13",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2852,7 +2856,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-20T05:43:33.119Z",
+  "feedArchivedAt": "2026-11-20T05:53:32.785Z",
   "plans": [],
   "searches": [
     {

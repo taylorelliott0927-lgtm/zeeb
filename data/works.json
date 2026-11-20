@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 18",
-    "progress": 82,
-    "version": 10,
-    "lastChange": "welding a high-grade titanium shield plate onto the Little Dart's forward intake cowl (used Tilly, a tiny gyroscope)",
+    "progress": 91,
+    "version": 11,
+    "lastChange": "installing custom thermal insulation panels and copper grounding lines around the Little Dart's aft thruster mount (used Tok, a strip of hull plating)",
     "log": [
+      {
+        "version": 11,
+        "change": "installing custom thermal insulation panels and copper grounding lines around the Little Dart's aft thruster mount (used Tok, a strip of hull plating)",
+        "progress": 91,
+        "at": "2026-11-20T11:06:07.371Z"
+      },
       {
         "version": 10,
         "change": "welding a high-grade titanium shield plate onto the Little Dart's forward intake cowl (used Tilly, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "I am integrating the tiny gyroscope Pim into the navigation manifold and wrapping the internal wiring with salvaged copper strips to prevent signal ghosting. (used Dibs, a dented fuel cell)",
         "progress": 90,
         "at": "2026-11-19T04:27:42.079Z"
-      },
-      {
-        "version": 10,
-        "change": "I am using the remaining salvaged copper to reinforce the gyro housing. I've named the new shielding plate 'Rusty' because it reminds me of the hangar walls. (used Tok, a tiny gyroscope)",
-        "progress": 83,
-        "at": "2026-11-19T04:07:42.278Z"
       }
     ],
     "launched": [
@@ -2106,7 +2106,7 @@
         ]
       }
     ],
-    "partsUsed": 10,
+    "partsUsed": 11,
     "parts": [
       {
         "name": "Mabel",
@@ -2157,6 +2157,11 @@
         "name": "Tilly",
         "what": "a tiny gyroscope",
         "version": 10
+      },
+      {
+        "name": "Tok",
+        "what": "a strip of hull plating",
+        "version": 11
       }
     ],
     "design": null
@@ -2339,6 +2344,16 @@
   ],
   "stash": [
     {
+      "name": "Tok",
+      "what": "a scorched heat tile",
+      "at": "2026-11-20T11:06:07.371Z"
+    },
+    {
+      "name": "Lorna",
+      "what": "a cracked navigation chip",
+      "at": "2026-11-20T11:06:07.371Z"
+    },
+    {
       "name": "Dibs",
       "what": "a mystery box that hums",
       "at": "2026-11-20T07:16:39.550Z"
@@ -2352,11 +2367,6 @@
       "name": "Tok",
       "what": "a scorched heat tile",
       "at": "2026-11-20T05:53:32.785Z"
-    },
-    {
-      "name": "Tok",
-      "what": "a strip of hull plating",
-      "at": "2026-11-20T05:43:33.119Z"
     }
   ],
   "reads": [

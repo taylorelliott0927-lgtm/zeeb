@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 17",
-    "progress": 85,
-    "version": 10,
-    "lastChange": "welding the lateral stabilization fins onto the little dart using Brakk (a mystery box that hums, a really good one) to reinforce the aerodynamic profile. (used Lorna, a mystery box that hums)",
+    "progress": 91,
+    "version": 11,
+    "lastChange": "securing the instrument panel and internal wire harnesses into the Little Dart (used Brakk, a mystery box that hums)",
     "log": [
+      {
+        "version": 11,
+        "change": "securing the instrument panel and internal wire harnesses into the Little Dart (used Brakk, a mystery box that hums)",
+        "progress": 91,
+        "at": "2026-11-20T00:44:53.699Z"
+      },
       {
         "version": 10,
         "change": "welding the lateral stabilization fins onto the little dart using Brakk (a mystery box that hums, a really good one) to reinforce the aerodynamic profile. (used Lorna, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "riveting the aft heat shielding plates to protect the exhaust manifolds (used Captain, a coil of copper wire)",
         "progress": 91,
         "at": "2026-11-18T17:38:26.336Z"
-      },
-      {
-        "version": 10,
-        "change": "welding the upper intake manifold and securing the fuel regulator valve (used Captain, a mystery box that hums)",
-        "progress": 82,
-        "at": "2026-11-18T17:28:26.424Z"
       }
     ],
     "launched": [
@@ -2031,7 +2031,7 @@
         ]
       }
     ],
-    "partsUsed": 12,
+    "partsUsed": 14,
     "parts": [
       {
         "name": "Otto",
@@ -2084,6 +2084,12 @@
         "name": "Lorna",
         "what": "a mystery box that hums",
         "version": 10
+      },
+      {
+        "name": "Brakk",
+        "what": "a mystery box that hums",
+        "good": true,
+        "version": 11
       }
     ],
     "design": null
@@ -2287,12 +2293,6 @@
       "name": "Lorna",
       "what": "a cracked navigation chip",
       "at": "2026-11-19T15:01:32.122Z"
-    },
-    {
-      "name": "Brakk",
-      "what": "a mystery box that hums",
-      "at": "2026-11-19T11:55:42.752Z",
-      "good": true
     }
   ],
   "reads": [

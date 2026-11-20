@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 19",
-    "progress": 26,
-    "version": 4,
-    "lastChange": "polished the nose cone (used Tok, a scorched heat tile)",
+    "progress": 34,
+    "version": 5,
+    "lastChange": "bolted Bix the little landing strut onto the lower airframe (used Bix, a little landing strut)",
     "log": [
+      {
+        "version": 5,
+        "change": "bolted Bix the little landing strut onto the lower airframe (used Bix, a little landing strut)",
+        "progress": 34,
+        "at": "2026-11-20T17:39:55.558Z"
+      },
       {
         "version": 4,
         "change": "polished the nose cone (used Tok, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "i am mixing silica dust with a high-viscosity industrial binder to create a makeshift aerogel, then applying it in thin, staggered layers to the hull plates of the Little Dart, reinforcing it with the (used Tilly, a mystery box that hums)",
         "progress": 36,
         "at": "2026-11-19T10:56:48.306Z"
-      },
-      {
-        "version": 3,
-        "change": "i am using the copper wire from Sprocket and a perfectly good bolt (Tok) to anchor the cooling lines to the hull, ensuring they are vibration-proof. (used Nim, half a thruster nozzle)",
-        "progress": 26,
-        "at": "2026-11-19T09:37:10.773Z"
       }
     ],
     "launched": [
@@ -2488,7 +2488,7 @@
         }
       }
     ],
-    "partsUsed": 4,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Mabel",
@@ -2509,6 +2509,11 @@
         "name": "Tok",
         "what": "a scorched heat tile",
         "version": 4
+      },
+      {
+        "name": "Bix",
+        "what": "a little landing strut",
+        "version": 5
       }
     ],
     "design": null
@@ -2707,13 +2712,7 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Bix",
-      "what": "a little landing strut",
-      "at": "2026-11-20T12:00:26.846Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "NASA’s Curiosity Mars Rover Collects Samples",

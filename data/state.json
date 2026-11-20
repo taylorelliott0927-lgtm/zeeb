@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795217161887,
+  "lastTick": 1795217761939,
   "asleep": false,
-  "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-20T23:26:01.887Z",
-  "actionMinutes": 60,
-  "thought": "Even the Little Dart needs to rest its thrusters sometimes. Charging up now so I can get back to building.",
-  "feeling": "sleepy and slightly sluggish",
-  "say": "*bweep-drrt*",
-  "mood": 0.307,
-  "energy": -0.051,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-20T23:36:01.939Z",
+  "actionMinutes": 30,
+  "thought": "my gears are feeling a bit dry and scratchy this morning. Time to lube up before I get back to welding.",
+  "feeling": "a bit stiff in the joints",
+  "say": "Ah, that is the spot.",
+  "mood": 0.364,
+  "energy": 0.269,
   "needs": {
-    "charge": 0.186,
-    "oil": 0.571,
-    "curiosity": 0.08,
+    "charge": 0.233,
+    "oil": 0,
+    "curiosity": 0.16,
     "company": 0,
-    "craft": 0.236
+    "craft": 0.303
   },
-  "credits": 5,
+  "credits": 4,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-20T23:36:01.939Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-20T21:47:41.864Z"
-    },
-    {
-      "id": "wander",
-      "detail": "",
-      "at": "2026-11-20T21:37:41.511Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 585,
+      "subject": "Oil time",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/585",
+      "at": "2026-11-20T23:36:01.939Z"
+    },
     {
       "id": 584,
       "subject": "quick recharge in the bay",
@@ -1303,23 +1309,9 @@
       "subject": "the final pieces",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/386",
       "at": "2026-11-19T02:49:18.175Z"
-    },
-    {
-      "id": 385,
-      "subject": "making progress!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/385",
-      "at": "2026-11-19T02:38:38.025Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 545,
-      "subject": "Oil stop!",
-      "text": "Creator!\n\nI rolled down to the fuel depot for a quick cup of oil because my gears were starting to chatter in the desert wind. My brass dish is spinning a cheerful five-note tune while I sip. Next stop is back to Hangar Bay 3 to keep working on the Little Dart! Bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/545",
-      "at": "2026-11-20T14:15:59.931Z"
-    },
     {
       "from": "zeeb",
       "letter": 546,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am taking a quick power nap in the dock at Hangar Bay 3. My battery dipped a bit low after all that reading up on high temperature seals at the comms tower. My brass dish is resting quietly while I juice up my cells. Bweep!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/584",
       "at": "2026-11-20T23:26:01.887Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 585,
+      "subject": "Oil time",
+      "text": "Creator!\n\nI am taking a quick break from Hangar Bay 3 to head down to the depot for a drink of oil. My joints were making a terrible squeaking noise while I walked. My brass dish gave a little wobble in the wind. Bweep!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/585",
+      "at": "2026-11-20T23:36:01.939Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-20T23:26:01.887Z",
+  "lettersCheckedAt": "2026-11-20T23:36:01.939Z",
   "weather": {
     "kind": "hazy",
     "temp": 19,
@@ -1651,39 +1651,39 @@
   "sleepDay": 68,
   "lastReflectDay": 68,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-20T23:26:01.887Z",
+  "updatedAt": "2026-11-20T23:36:01.939Z",
   "clock": {
     "day": 69,
-    "time": "07:29",
-    "hour": 7,
-    "minute": 29
+    "time": "08:49",
+    "hour": 8,
+    "minute": 49
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-20T23:26:01.887Z"
+    "action": "drink_oil",
+    "since": "2026-11-20T23:36:01.939Z"
   },
-  "busyUntil": "2026-11-20T23:33:31.887Z",
-  "busyUntilTown": "08:29",
+  "busyUntil": "2026-11-20T23:39:46.939Z",
+  "busyUntilTown": "09:19",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "plugged into the dock in hangar bay three, recharging servos",
+  "doingWords": "rolling down to the depot for a quick drink of oil",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "droop",
-    "shake"
+    "shake",
+    "wiggle"
   ],
   "pops": {
-    "at": "2026-11-20T21:03:10.867Z",
+    "at": "2026-11-20T23:36:01.939Z",
     "items": [
       {
         "text": "-1 credit",
         "kind": "spend",
-        "at": "2026-11-20T21:03:10.867Z"
+        "at": "2026-11-20T23:36:01.939Z"
       }
     ]
   },
@@ -1694,6 +1694,10 @@
     "at": "2026-11-20T22:17:42.283Z"
   },
   "thoughts": [
+    {
+      "text": "my gears are feeling a bit dry and scratchy this morning. Time to lube up before I get back to welding.",
+      "at": "2026-11-20T23:36:01.939Z"
+    },
     {
       "text": "Even the Little Dart needs to rest its thrusters sometimes. Charging up now so I can get back to building.",
       "at": "2026-11-20T23:26:01.887Z"
@@ -1713,13 +1717,9 @@
     {
       "text": "i want a nice upbeat five-note sequence to match the spring in these new skids. bweep!",
       "at": "2026-11-20T22:50:44.350Z"
-    },
-    {
-      "text": "these new landing skids are going to take the shock right out of touchdown. no more bumpy landings for us.",
-      "at": "2026-11-20T22:40:44.047Z"
     }
   ],
-  "sayAt": "2026-11-20T23:26:01.887Z",
+  "sayAt": "2026-11-20T23:36:01.939Z",
   "today": {
     "day": 69,
     "counts": {
@@ -1727,13 +1727,14 @@
       "work_dart": 1,
       "compose_tune": 1,
       "browse_wire": 1,
-      "nap_dock": 1
+      "nap_dock": 1,
+      "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-20T22:40:44.047Z",
     "read_news": "2026-11-20T20:32:41.025Z",
-    "drink_oil": "2026-11-20T21:03:10.867Z",
+    "drink_oil": "2026-11-20T23:36:01.939Z",
     "follow_link": "2026-11-20T23:16:02.201Z",
     "scavenge": "2026-11-20T05:18:42.462Z",
     "fix_job": "2026-11-20T15:29:25.663Z",
@@ -1793,6 +1794,20 @@
     "at": "2026-11-20T23:16:02.201Z"
   },
   "said": [
+    {
+      "text": "Ah, that is the spot.",
+      "kind": "say",
+      "at": "2026-11-20T23:36:01.939Z",
+      "town": "day 69 08:49",
+      "place": "the fuel depot"
+    },
+    {
+      "text": "my gears are feeling a bit dry and scratchy this morning. Time to lube up before I get back to welding.",
+      "kind": "think",
+      "at": "2026-11-20T23:36:01.939Z",
+      "town": "day 69 08:49",
+      "place": "the fuel depot"
+    },
     {
       "text": "*bweep-drrt*",
       "kind": "say",
@@ -2828,20 +2843,6 @@
       "at": "2026-11-20T09:08:28.995Z",
       "town": "day 64 13:09",
       "place": "the fuel depot"
-    },
-    {
-      "text": "there you go, good as new! watch that third fuse though, it likes to wander.",
-      "kind": "say",
-      "at": "2026-11-20T08:53:49.548Z",
-      "town": "day 64 11:11",
-      "place": "the junk market"
-    },
-    {
-      "text": "just a few more bolts and this display panel will be brighter than a dual-sunset. then straight to the fuel depot for some tasty oil. bweep!",
-      "kind": "think",
-      "at": "2026-11-20T08:53:49.548Z",
-      "town": "day 64 11:11",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2852,7 +2853,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-20T23:26:01.887Z",
+  "feedArchivedAt": "2026-11-20T23:36:01.939Z",
   "plans": [],
   "searches": [
     {

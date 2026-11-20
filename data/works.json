@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 18",
-    "progress": 42,
-    "version": 5,
-    "lastChange": "welding a lightweight titanium-alloy bracket onto the Little Dart's tail assembly (using Tok, a scorched heat tile) (used Wren, a strip of hull plating)",
+    "progress": 49,
+    "version": 6,
+    "lastChange": "welding a high-temp silica tile nose cone onto the Little Dart using Mabel the copper wire for reinforced grounding (used Mabel, a coil of copper wire)",
     "log": [
+      {
+        "version": 6,
+        "change": "welding a high-temp silica tile nose cone onto the Little Dart using Mabel the copper wire for reinforced grounding (used Mabel, a coil of copper wire)",
+        "progress": 49,
+        "at": "2026-11-20T06:33:33.315Z"
+      },
       {
         "version": 5,
         "change": "welding a lightweight titanium-alloy bracket onto the Little Dart's tail assembly (using Tok, a scorched heat tile) (used Wren, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "installing Tok (a tiny gyroscope) into the navigation core to keep the flight path steady during long-range burns. (used Otto, a cockpit switch that still clicks)",
         "progress": 50,
         "at": "2026-11-18T22:53:43.814Z"
-      },
-      {
-        "version": 5,
-        "change": "mounting Mabel the sensor eye to the secondary cooling loop to monitor for pressure spikes in the fuel line. (used Dibs, half a thruster nozzle)",
-        "progress": 40,
-        "at": "2026-11-18T22:43:43.709Z"
       }
     ],
     "launched": [
@@ -2106,7 +2106,7 @@
         ]
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Mabel",
@@ -2132,6 +2132,11 @@
         "name": "Wren",
         "what": "a strip of hull plating",
         "version": 5
+      },
+      {
+        "name": "Mabel",
+        "what": "a coil of copper wire",
+        "version": 6
       }
     ],
     "design": null
@@ -2335,11 +2340,6 @@
     {
       "name": "Tok",
       "what": "a strip of hull plating",
-      "at": "2026-11-20T04:00:07.266Z"
-    },
-    {
-      "name": "Mabel",
-      "what": "a coil of copper wire",
       "at": "2026-11-20T04:00:07.266Z"
     }
   ],

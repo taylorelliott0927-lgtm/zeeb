@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 17",
-    "progress": 76,
-    "version": 9,
-    "lastChange": "welding the upper hull plating onto the Little Dart using Otto, a tiny gyroscope, to keep the balance true (used Rusty Jr, a cracked navigation chip)",
+    "progress": 85,
+    "version": 10,
+    "lastChange": "welding the lateral stabilization fins onto the little dart using Brakk (a mystery box that hums, a really good one) to reinforce the aerodynamic profile. (used Lorna, a mystery box that hums)",
     "log": [
+      {
+        "version": 10,
+        "change": "welding the lateral stabilization fins onto the little dart using Brakk (a mystery box that hums, a really good one) to reinforce the aerodynamic profile. (used Lorna, a mystery box that hums)",
+        "progress": 85,
+        "at": "2026-11-20T00:34:54.246Z"
+      },
       {
         "version": 9,
         "change": "welding the upper hull plating onto the Little Dart using Otto, a tiny gyroscope, to keep the balance true (used Rusty Jr, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "welding the upper intake manifold and securing the fuel regulator valve (used Captain, a mystery box that hums)",
         "progress": 82,
         "at": "2026-11-18T17:28:26.424Z"
-      },
-      {
-        "version": 9,
-        "change": "routing the main fuel feed line through the lower hull plates (used Rusty Jr, a sensor eye with one crack)",
-        "progress": 76,
-        "at": "2026-11-18T17:18:26.296Z"
       }
     ],
     "launched": [
@@ -2031,7 +2031,7 @@
         ]
       }
     ],
-    "partsUsed": 11,
+    "partsUsed": 12,
     "parts": [
       {
         "name": "Otto",
@@ -2079,6 +2079,11 @@
         "name": "Rusty Jr",
         "what": "a cracked navigation chip",
         "version": 9
+      },
+      {
+        "name": "Lorna",
+        "what": "a mystery box that hums",
+        "version": 10
       }
     ],
     "design": null
@@ -2288,11 +2293,6 @@
       "what": "a mystery box that hums",
       "at": "2026-11-19T11:55:42.752Z",
       "good": true
-    },
-    {
-      "name": "Lorna",
-      "what": "a mystery box that hums",
-      "at": "2026-11-19T11:45:42.255Z"
     }
   ],
   "reads": [

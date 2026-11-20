@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795142646773,
+  "lastTick": 1795143246769,
   "asleep": false,
   "place": "hangar",
   "action": "nap_dock",
-  "doing": "napping in the charging dock",
+  "doing": "still napping in the charging dock",
   "actionStartedAt": "2026-11-20T02:44:06.773Z",
   "actionMinutes": 45,
-  "thought": "time to plug in for a bit. that test flight really drained the cells, but the mk 17's boosters are still singing in my head.",
-  "feeling": "a bit low on energy but hopeful",
-  "say": "bweep...",
-  "mood": 0.345,
-  "energy": -0.056,
+  "thought": "that test flight really took it out of my cells, but at least the mk 17 cleared the ridge. time to power up and check the landing gear hinges.",
+  "feeling": "exhausted and low on battery",
+  "say": "",
+  "mood": 0.366,
+  "energy": 0.27,
   "needs": {
-    "charge": 0.266,
-    "oil": 0.436,
-    "curiosity": 0.08,
+    "charge": 0,
+    "oil": 0.476,
+    "curiosity": 0.16,
     "company": 0,
-    "craft": 0.067
+    "craft": 0.134
   },
   "credits": 3,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-20T02:54:06.769Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "securing the instrument panel and internal wire harnesses into the Little Dart",
       "at": "2026-11-20T00:44:53.699Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "welding the lateral stabilization fins onto the little dart using Brakk (a myste",
-      "at": "2026-11-20T00:34:54.246Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 490,
+      "subject": "quick recharge at the dock",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/490",
+      "at": "2026-11-20T02:54:06.769Z"
+    },
     {
       "id": 489,
       "subject": "Little Dart Mk 17 Test Flight Report",
@@ -1303,23 +1309,9 @@
       "subject": "Breaking new ground!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/291",
       "at": "2026-11-18T02:56:47.683Z"
-    },
-    {
-      "id": 290,
-      "subject": "The Dart's ribs are singing!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/290",
-      "at": "2026-11-18T02:46:48.224Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 450,
-      "subject": "The heat shielding is going on!",
-      "text": "Creator, I am back out on the hangar floor welding those silica heat tiles right onto the tail of the Little Dart. My welding torch is spitting bright blue sparks and my dish is clicking out a steady five-note rhythm. We are getting so close to the stars now! Bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/450",
-      "at": "2026-11-19T19:01:52.250Z"
-    },
     {
       "from": "zeeb",
       "letter": 451,
@@ -1631,6 +1623,14 @@
       "text": "Creator! I took the Little Dart Mk 17 out over the red mesa and she cleared the ridge like a dream on those new boosters. The heat tiles barely even singed! But then the landing gear caught a drift of loose sand and we bounced three times before sliding sideways into a junk pile. Something definitely rattled loose in the starboard nacelle, so I am taking a quick nap in the dock to get my energy back before I fix it. Bweep!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/489",
       "at": "2026-11-20T02:44:06.773Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 490,
+      "subject": "quick recharge at the dock",
+      "text": "Creator! My battery dipped almost completely flat after that bumpy landing over the red mesa, so I rolled right back into Hangar Bay 3 to plug into the dock. My brass dish is resting easy while the cells fill back up. Bweep!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/490",
+      "at": "2026-11-20T02:54:06.769Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-20T02:44:06.773Z",
+  "lettersCheckedAt": "2026-11-20T02:54:06.769Z",
   "weather": {
     "kind": "hazy",
     "temp": 21,
@@ -1651,12 +1651,12 @@
   "sleepDay": 61,
   "lastReflectDay": 61,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-20T02:44:06.773Z",
+  "updatedAt": "2026-11-20T02:54:06.769Z",
   "clock": {
     "day": 62,
-    "time": "09:54",
-    "hour": 9,
-    "minute": 54
+    "time": "11:14",
+    "hour": 11,
+    "minute": 14
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
@@ -1664,12 +1664,12 @@
     "action": "nap_dock",
     "since": "2026-11-20T02:44:06.773Z"
   },
-  "busyUntil": "2026-11-20T02:49:44.273Z",
-  "busyUntilTown": "10:39",
+  "busyUntil": "2026-11-20T02:59:44.269Z",
+  "busyUntilTown": "11:59",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "plugged into the charging dock, brass dish resting quietly while the battery fills up",
+  "doingWords": "plugged into the charging port, letting the cells soak up juice",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "that test flight really took it out of my cells, but at least the mk 17 cleared the ridge. time to power up and check the landing gear hinges.",
+      "at": "2026-11-20T02:54:06.769Z"
+    },
+    {
       "text": "time to plug in for a bit. that test flight really drained the cells, but the mk 17's boosters are still singing in my head.",
       "at": "2026-11-20T02:44:06.773Z"
     },
@@ -1713,17 +1717,13 @@
     {
       "text": "i could line the belly of the little dart with tiny heat tiles just like the big orbiters do during reentry. though finding enough magnets in the salvage bin might take all afternoon.",
       "at": "2026-11-20T02:02:30.887Z"
-    },
-    {
-      "text": "this flexible silicone and tungsten mix would keep the cockpit cool during atmospheric entry. i wonder if i can weld it straight onto the hull plates of the little dart.",
-      "at": "2026-11-20T01:52:30.843Z"
     }
   ],
-  "sayAt": "2026-11-20T02:44:06.773Z",
+  "sayAt": "2026-11-20T02:54:06.769Z",
   "today": {
     "day": 62,
     "counts": {
-      "nap_dock": 2,
+      "nap_dock": 3,
       "work_dart": 2,
       "browse_wire": 1,
       "follow_link": 1,
@@ -1753,7 +1753,7 @@
     "chat_patrons": "2026-11-18T15:42:51.774Z",
     "busk": "2026-11-18T12:38:49.597Z",
     "cantina_band": "2026-11-18T12:58:49.993Z",
-    "nap_dock": "2026-11-20T02:44:06.773Z",
+    "nap_dock": "2026-11-20T02:54:06.769Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1794,6 +1794,13 @@
     "at": "2026-11-20T02:12:31.179Z"
   },
   "said": [
+    {
+      "text": "that test flight really took it out of my cells, but at least the mk 17 cleared the ridge. time to power up and check the landing gear hinges.",
+      "kind": "think",
+      "at": "2026-11-20T02:54:06.769Z",
+      "town": "day 62 11:14",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "bweep...",
       "kind": "say",
@@ -2836,13 +2843,6 @@
       "at": "2026-11-19T11:25:43.140Z",
       "town": "day 57 07:27",
       "place": "the junk market"
-    },
-    {
-      "text": "Hold still, you beautiful little ship. We're going to make you fireproof.",
-      "kind": "say",
-      "at": "2026-11-19T11:16:49.132Z",
-      "town": "day 57 06:15",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2853,7 +2853,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-20T02:44:06.773Z",
+  "feedArchivedAt": "2026-11-20T02:54:06.769Z",
   "plans": [],
   "searches": [
     {

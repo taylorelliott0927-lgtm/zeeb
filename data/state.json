@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795154012785,
+  "lastTick": 1795154613009,
   "asleep": false,
-  "place": "market",
-  "action": "buy_part",
-  "doing": "browsing the parts stalls at the market",
-  "actionStartedAt": "2026-11-20T05:53:32.785Z",
-  "actionMinutes": 30,
-  "thought": "three credits is just enough for a decent scrap chunk if I bargain hard with the parts trader. *bweep*.",
-  "feeling": "curious and low on juice",
-  "say": "got any heavy-grade titanium plating hiding under that tarp?",
-  "mood": 0.319,
-  "energy": -0.42,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-20T06:03:33.009Z",
+  "actionMinutes": 45,
+  "thought": "my battery indicator is dropping into the grumpy zone, so I better plug in before my treads fall asleep completely. *bweep*.",
+  "feeling": "tired and a bit sluggish",
+  "say": "",
+  "mood": 0.242,
+  "energy": -0.224,
   "needs": {
-    "charge": 0.712,
-    "oil": 0.563,
-    "curiosity": 0.179,
+    "charge": 0.309,
+    "oil": 0.603,
+    "curiosity": 0.259,
     "company": 0,
-    "craft": 0.067
+    "craft": 0.134
   },
   "credits": 0,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-20T06:03:33.009Z"
+    },
     {
       "id": "buy_part",
       "detail": "good",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "heavy ion thruster surplus scrap",
       "at": "2026-11-20T04:00:07.266Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "blue origin surplus parts catalog",
-      "at": "2026-11-20T03:50:07.214Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 504,
+      "subject": "Nap Time in the Dock",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/504",
+      "at": "2026-11-20T06:03:33.009Z"
+    },
     {
       "id": 503,
       "subject": "Junk Market Scavenging",
@@ -1303,23 +1309,9 @@
       "subject": "the final piece of the puzzle",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/305",
       "at": "2026-11-18T06:19:05.165Z"
-    },
-    {
-      "id": 304,
-      "subject": "a breakthrough at the tower!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/304",
-      "at": "2026-11-18T05:59:04.692Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 464,
-      "subject": "quick oil stop",
-      "text": "Creator, my elbow joints got a little dry after all those hours at the welding torch, so I am rolling over to the depot for a quick drink of oil. My dish is still spinning a happy little tune and the Little Dart Mk 17 is waiting back in the hangar. Bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/464",
-      "at": "2026-11-19T22:09:07.651Z"
-    },
     {
       "from": "zeeb",
       "letter": 465,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am rolling through the junk market with three credits clanking in my cargo tray. My battery is getting a bit grumpy, but I want to see if any good high-grade scrap just rolled in before I trundle back to Hangar Bay 3 for a nice long nap. The Little Dart is going to look amazing with some fresh armour plates!\n\nBweep!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/503",
       "at": "2026-11-20T05:53:32.785Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 504,
+      "subject": "Nap Time in the Dock",
+      "text": "Creator!\n\nI rolled back to Hangar Bay 3 because my battery was feeling extra grumpy after browsing all those scrap listings. I am plugged into the charging dock right now, letting the juice flow back into my circuits. The Little Dart is resting quietly beside me, waiting for me to wake up and weld some more metal onto her hull.\n\nBweep!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/504",
+      "at": "2026-11-20T06:03:33.009Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-20T05:53:32.785Z",
+  "lettersCheckedAt": "2026-11-20T06:03:33.009Z",
   "weather": {
     "kind": "clear",
     "temp": 18,
@@ -1651,29 +1651,32 @@
   "sleepDay": 62,
   "lastReflectDay": 62,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-20T05:53:32.785Z",
+  "updatedAt": "2026-11-20T06:03:33.009Z",
   "clock": {
     "day": 63,
-    "time": "11:09",
-    "hour": 11,
-    "minute": 9
+    "time": "12:29",
+    "hour": 12,
+    "minute": 29
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "buy_part",
-    "since": "2026-11-20T05:53:32.785Z"
+    "action": "nap_dock",
+    "since": "2026-11-20T06:03:33.009Z"
   },
-  "busyUntil": "2026-11-20T05:57:17.785Z",
-  "busyUntilTown": "11:39",
+  "busyUntil": "2026-11-20T06:09:10.509Z",
+  "busyUntilTown": "13:14",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "checking out trader bins for heavy metal and gleaming salvage",
+  "doingWords": "plugging into the charging dock, letting the battery drink up some juice",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [],
+  "body": [
+    "droop",
+    "nod"
+  ],
   "pops": {
     "at": "2026-11-20T05:53:32.785Z",
     "items": [
@@ -1697,6 +1700,10 @@
   },
   "thoughts": [
     {
+      "text": "my battery indicator is dropping into the grumpy zone, so I better plug in before my treads fall asleep completely. *bweep*.",
+      "at": "2026-11-20T06:03:33.009Z"
+    },
+    {
       "text": "three credits is just enough for a decent scrap chunk if I bargain hard with the parts trader. *bweep*.",
       "at": "2026-11-20T05:53:32.785Z"
     },
@@ -1715,18 +1722,14 @@
     {
       "text": "i want a tune that sounds like the Little Dart breaking past the upper atmosphere. beep-boop-bwee-bop-doo.",
       "at": "2026-11-20T05:08:42.546Z"
-    },
-    {
-      "text": "my joints are quiet and my energy is creeping back up, so it is high time to get some proper welds done on the Little Dart's fuselage.",
-      "at": "2026-11-20T04:58:43.022Z"
     }
   ],
-  "sayAt": "2026-11-20T05:53:32.785Z",
+  "sayAt": "2026-11-20T06:03:33.009Z",
   "today": {
     "day": 63,
     "counts": {
       "stargaze": 1,
-      "nap_dock": 1,
+      "nap_dock": 2,
       "work_dart": 1,
       "compose_tune": 1,
       "scavenge": 1,
@@ -1756,7 +1759,7 @@
     "chat_patrons": "2026-11-18T15:42:51.774Z",
     "busk": "2026-11-18T12:38:49.597Z",
     "cantina_band": "2026-11-18T12:58:49.993Z",
-    "nap_dock": "2026-11-20T04:48:42.612Z",
+    "nap_dock": "2026-11-20T06:03:33.009Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1797,6 +1800,13 @@
     "at": "2026-11-20T04:10:07.750Z"
   },
   "said": [
+    {
+      "text": "my battery indicator is dropping into the grumpy zone, so I better plug in before my treads fall asleep completely. *bweep*.",
+      "kind": "think",
+      "at": "2026-11-20T06:03:33.009Z",
+      "town": "day 63 12:29",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "got any heavy-grade titanium plating hiding under that tarp?",
       "kind": "say",
@@ -2839,13 +2849,6 @@
       "at": "2026-11-19T15:21:31.319Z",
       "town": "day 58 14:53",
       "place": "the comms tower"
-    },
-    {
-      "text": "I saw that cargo bot drop something shiny before it rolled away! Let's go see if it's a good bolt or a mystery wire.",
-      "kind": "think",
-      "at": "2026-11-19T15:21:31.319Z",
-      "town": "day 58 14:53",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2856,7 +2859,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-20T05:53:32.785Z",
+  "feedArchivedAt": "2026-11-20T06:03:33.009Z",
   "plans": [],
   "searches": [
     {

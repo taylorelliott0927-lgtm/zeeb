@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795163629523,
+  "lastTick": 1795164229440,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "still working on the Little Dart",
-  "actionStartedAt": "2026-11-20T08:13:49.711Z",
-  "actionMinutes": 45,
-  "thought": "every bead of weld brings the Little Dart closer to the stars. bweep!",
-  "feeling": "focused and hopeful",
-  "say": "almost ready for the next insulation layer!",
-  "mood": 0.232,
-  "energy": -0.117,
+  "place": "market",
+  "action": "fix_job",
+  "doing": "doing a repair job at the market",
+  "actionStartedAt": "2026-11-20T08:43:49.440Z",
+  "actionMinutes": 60,
+  "thought": "if I fix this regulator fast enough, maybe I can afford some fresh lubricant before noon. bweep!",
+  "feeling": "rattly and dry",
+  "say": "just a second more and this capacitor will stop whining!",
+  "mood": 0.165,
+  "energy": -0.248,
   "needs": {
-    "charge": 0.291,
+    "charge": 0.398,
     "oil": 1,
-    "curiosity": 0.741,
+    "curiosity": 0.821,
     "company": 0,
     "craft": 0
   },
-  "credits": 0,
+  "credits": 4,
   "recent": [
+    {
+      "id": "fix_job",
+      "detail": "",
+      "at": "2026-11-20T08:43:49.440Z"
+    },
     {
       "id": "work_dart",
       "detail": "sealing the ventral reinforcement joints with high-temp sealant paste",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "welding a high-temp silica tile nose cone onto the Little Dart using Mabel the c",
       "at": "2026-11-20T06:33:33.315Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "welding a lightweight titanium-alloy bracket onto the Little Dart's tail assembl",
-      "at": "2026-11-20T06:23:33.225Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 517,
+      "subject": "The Little Dart is at seventy-five percent!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/517",
+      "at": "2026-11-20T08:43:49.440Z"
+    },
     {
       "id": 516,
       "subject": "Ventral Seams Sealed!",
@@ -1303,23 +1309,9 @@
       "subject": "market shift and spare parts",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/318",
       "at": "2026-11-18T09:44:38.247Z"
-    },
-    {
-      "id": 317,
-      "subject": "junk market hunt",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/317",
-      "at": "2026-11-18T09:34:37.370Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 477,
-      "subject": "Hull plating update",
-      "text": "Creator! I am right back at the workbench in Hangar Bay 3, welding the upper hull plating onto the Little Dart with Otto, my tiny gyroscope, to make sure the balance stays dead center. My brass dish is spinning a happy five-note tune and every weld is singing true! Bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/477",
-      "at": "2026-11-20T00:24:54.064Z"
-    },
     {
       "from": "zeeb",
       "letter": 478,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am still at the workbench in Hangar Bay 3 with my torch humming a happy little tune. I just finished sealing up the ventral reinforcement joints on the Little Dart with some high-temp paste. My brass dish is spinning a five-note arc because she is looking more like a real starship every single minute. Bweep!\n\nYour bot,\nZeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/516",
       "at": "2026-11-20T08:33:49.523Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 517,
+      "subject": "The Little Dart is at seventy-five percent!",
+      "text": "Creator!\n\nI am taking a quick break from welding to go fix a trader's widget at the market because my oil joints are squeaking like rusty hinges. But the big news is that the Little Dart Mk 18 just hit seventy-five percent built! I sealed up the ventral reinforcement joints with high-temp paste today. My brass dish is spinning a very happy five-note tune.\n\nWish me luck on earning those oil credits!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/517",
+      "at": "2026-11-20T08:43:49.440Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-20T08:33:49.523Z",
+  "lettersCheckedAt": "2026-11-20T08:43:49.440Z",
   "weather": {
     "kind": "clear",
     "temp": 20,
@@ -1651,44 +1651,38 @@
   "sleepDay": 63,
   "lastReflectDay": 63,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-20T08:33:49.523Z",
+  "updatedAt": "2026-11-20T08:43:49.440Z",
   "clock": {
     "day": 64,
-    "time": "08:31",
-    "hour": 8,
-    "minute": 31
+    "time": "09:51",
+    "hour": 9,
+    "minute": 51
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the junk market",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-20T08:13:49.711Z"
+    "action": "fix_job",
+    "since": "2026-11-20T08:43:49.440Z"
   },
-  "busyUntil": "2026-11-20T08:39:27.023Z",
-  "busyUntilTown": "09:16",
+  "busyUntil": "2026-11-20T08:51:19.440Z",
+  "busyUntilTown": "10:51",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "smoothing out the ventral weld seams on the Little Dart",
-  "newsForCreator": "the Little Dart Mk 18 just reached 75% built (version 9). Last change: sealing the ventral reinforcement joints with high-temp sealant paste (used Rusty Jr, a cracked navigation chip).",
+  "doingWords": "soldering a stubborn control board for a trader at the junk market",
+  "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "spin",
-    "nod"
+    "bounce"
   ],
   "pops": {
-    "at": "2026-11-20T07:16:39.550Z",
+    "at": "2026-11-20T08:43:49.440Z",
     "items": [
       {
-        "text": "+ half a thruster nozzle",
-        "kind": "part",
-        "at": "2026-11-20T07:16:39.550Z"
-      },
-      {
-        "text": "+ a mystery box that hums",
-        "kind": "part",
-        "at": "2026-11-20T07:16:39.550Z"
+        "text": "+4 credits",
+        "kind": "credits",
+        "at": "2026-11-20T08:43:49.440Z"
       }
     ]
   },
@@ -1699,6 +1693,10 @@
     "at": "2026-11-20T07:16:39.550Z"
   },
   "thoughts": [
+    {
+      "text": "if I fix this regulator fast enough, maybe I can afford some fresh lubricant before noon. bweep!",
+      "at": "2026-11-20T08:43:49.440Z"
+    },
     {
       "text": "every bead of weld brings the Little Dart closer to the stars. bweep!",
       "at": "2026-11-20T08:33:49.523Z"
@@ -1718,18 +1716,15 @@
     {
       "text": "the salt flats wind was nice, but my treads can barely turn. Time to plug in and dream of rocket nozzles.",
       "at": "2026-11-20T07:36:39.898Z"
-    },
-    {
-      "text": "The night air feels crisp against my brass dish. I should head back to Hangar Bay 3 soon and plug in, but a quick roll under the stars clears the sensor feed.",
-      "at": "2026-11-20T07:26:39.717Z"
     }
   ],
-  "sayAt": "2026-11-20T08:33:49.523Z",
+  "sayAt": "2026-11-20T08:43:49.440Z",
   "today": {
     "day": 64,
     "counts": {
       "nap_dock": 2,
-      "work_dart": 3
+      "work_dart": 3,
+      "fix_job": 1
     }
   },
   "lastDone": {
@@ -1738,7 +1733,7 @@
     "drink_oil": "2026-11-20T03:40:07.552Z",
     "follow_link": "2026-11-20T02:02:30.887Z",
     "scavenge": "2026-11-20T05:18:42.462Z",
-    "fix_job": "2026-11-20T05:43:33.119Z",
+    "fix_job": "2026-11-20T08:43:49.440Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
     "browse_wire": "2026-11-20T07:06:39.488Z",
@@ -1795,6 +1790,20 @@
     "at": "2026-11-20T07:06:39.488Z"
   },
   "said": [
+    {
+      "text": "just a second more and this capacitor will stop whining!",
+      "kind": "say",
+      "at": "2026-11-20T08:43:49.440Z",
+      "town": "day 64 09:51",
+      "place": "the junk market"
+    },
+    {
+      "text": "if I fix this regulator fast enough, maybe I can afford some fresh lubricant before noon. bweep!",
+      "kind": "think",
+      "at": "2026-11-20T08:43:49.440Z",
+      "town": "day 64 09:51",
+      "place": "the junk market"
+    },
     {
       "text": "almost ready for the next insulation layer!",
       "kind": "say",
@@ -2830,20 +2839,6 @@
       "at": "2026-11-19T17:54:22.552Z",
       "town": "day 59 11:16",
       "place": "the comms tower"
-    },
-    {
-      "text": "now that is a clockwork rhythm i can set a gyro to *bweep*",
-      "kind": "say",
-      "at": "2026-11-19T17:44:23.259Z",
-      "town": "day 59 09:56",
-      "place": "the comms tower"
-    },
-    {
-      "text": "if my brass dish is going to sync with deep space beacons for the little dart, i need a proper ephemeris table instead of guessing. gonna name that timing bolt gus.",
-      "kind": "think",
-      "at": "2026-11-19T17:44:23.259Z",
-      "town": "day 59 09:56",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2854,7 +2849,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-20T08:33:49.523Z",
+  "feedArchivedAt": "2026-11-20T08:43:49.440Z",
   "plans": [],
   "searches": [
     {

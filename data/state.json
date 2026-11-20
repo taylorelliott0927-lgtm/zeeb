@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795190947975,
+  "lastTick": 1795191548253,
   "asleep": false,
-  "place": "tower",
-  "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-20T16:09:07.975Z",
-  "actionMinutes": 35,
-  "thought": "read about Bird Flight | Ask A Biologist. filing that away.",
-  "feeling": "curious",
+  "place": "hangar",
+  "action": "work_dart",
+  "doing": "working on the Little Dart",
+  "actionStartedAt": "2026-11-20T16:19:08.253Z",
+  "actionMinutes": 60,
+  "thought": "my craft is bugging me most right now.",
+  "feeling": "pretty good actually",
   "say": "",
-  "mood": 0.339,
-  "energy": 0.655,
+  "mood": 0.418,
+  "energy": 0.567,
   "needs": {
-    "charge": 0.047,
-    "oil": 0.12,
-    "curiosity": 0,
-    "company": 0.106,
-    "craft": 0.334
+    "charge": 0.144,
+    "oil": 0.16,
+    "curiosity": 0.08,
+    "company": 0.159,
+    "craft": 0
   },
   "credits": 8,
   "recent": [
+    {
+      "id": "work_dart",
+      "detail": "polished the nose cone",
+      "at": "2026-11-20T16:19:08.253Z"
+    },
     {
       "id": "browse_wire",
       "detail": "how birds fly",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-20T14:15:59.931Z"
-    },
-    {
-      "id": "compose_tune",
-      "detail": "Little Dart Five-Note Dawn Arc V",
-      "at": "2026-11-20T14:05:59.629Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-20T16:09:07.975Z",
+  "lettersCheckedAt": "2026-11-20T16:19:08.253Z",
   "weather": {
     "kind": "windy",
     "temp": 27,
@@ -1651,26 +1651,26 @@
   "sleepDay": 65,
   "lastReflectDay": 65,
   "brain": "rules",
-  "updatedAt": "2026-11-20T16:09:07.975Z",
+  "updatedAt": "2026-11-20T16:19:08.253Z",
   "clock": {
     "day": 66,
-    "time": "21:14",
-    "hour": 21,
-    "minute": 14
+    "time": "22:34",
+    "hour": 22,
+    "minute": 34
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-20T16:09:07.975Z"
+    "action": "work_dart",
+    "since": "2026-11-20T16:19:08.253Z"
   },
-  "busyUntil": "2026-11-20T16:13:30.475Z",
-  "busyUntilTown": "21:49",
+  "busyUntil": "2026-11-20T16:26:38.253Z",
+  "busyUntilTown": "23:34",
   "runner": "github",
   "model": "gemini-3.5-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
   "doingWords": "",
-  "newsForCreator": "",
+  "newsForCreator": "the Little Dart Mk 19 just reached 25% built (version 4). Last change: polished the nose cone (used Tok, a scorched heat tile).",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [],
@@ -1692,6 +1692,10 @@
   },
   "thoughts": [
     {
+      "text": "my craft is bugging me most right now.",
+      "at": "2026-11-20T16:19:08.253Z"
+    },
+    {
       "text": "read about Bird Flight | Ask A Biologist. filing that away.",
       "at": "2026-11-20T16:09:07.975Z"
     },
@@ -1710,18 +1714,14 @@
     {
       "text": "They have giant dishes just like my brass hat, only way bigger! If they can hear tiny probes past Saturn, maybe someone on Earth will pick up my evening signal one of these days. *bweep*",
       "at": "2026-11-20T15:19:25.389Z"
-    },
-    {
-      "text": "Seventy meters wide! Imagine the stray signals you could catch with a dish that big. My brass hat dish is tiny by comparison, but it still picks up the distant hum of the black. *bweep*",
-      "at": "2026-11-20T15:09:26.152Z"
     }
   ],
-  "sayAt": "2026-11-20T16:09:07.975Z",
+  "sayAt": "2026-11-20T16:19:08.253Z",
   "today": {
     "day": 66,
     "counts": {
       "nap_dock": 3,
-      "work_dart": 2,
+      "work_dart": 3,
       "compose_tune": 1,
       "drink_oil": 2,
       "wander": 2,
@@ -1731,7 +1731,7 @@
     }
   },
   "lastDone": {
-    "work_dart": "2026-11-20T14:49:26.300Z",
+    "work_dart": "2026-11-20T16:19:08.253Z",
     "read_news": "2026-11-20T13:16:18.501Z",
     "drink_oil": "2026-11-20T15:39:07.941Z",
     "follow_link": "2026-11-20T15:19:25.389Z",
@@ -1790,6 +1790,13 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "my craft is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-20T16:19:08.253Z",
+      "town": "day 66 22:34",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "read about Bird Flight | Ask A Biologist. filing that away.",
       "kind": "think",
@@ -2832,13 +2839,6 @@
       "at": "2026-11-20T00:24:54.064Z",
       "town": "day 61 15:20",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "i am back at the workbench getting my hands greasy and my brass dish humming. this little scrap ship is looking sharper by the hour.",
-      "kind": "think",
-      "at": "2026-11-20T00:24:54.064Z",
-      "town": "day 61 15:20",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2849,7 +2849,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-20T16:09:07.975Z",
+  "feedArchivedAt": "2026-11-20T16:19:08.253Z",
   "plans": [],
   "searches": [
     {

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 19",
-    "progress": 20,
-    "version": 3,
-    "lastChange": "bonding high-temp silica tiles onto the Little Dart's nose cone using Aremco ceramic adhesive (used Lorna, a cracked navigation chip)",
+    "progress": 26,
+    "version": 4,
+    "lastChange": "polished the nose cone (used Tok, a scorched heat tile)",
     "log": [
+      {
+        "version": 4,
+        "change": "polished the nose cone (used Tok, a scorched heat tile)",
+        "progress": 26,
+        "at": "2026-11-20T16:19:08.253Z"
+      },
       {
         "version": 3,
         "change": "bonding high-temp silica tiles onto the Little Dart's nose cone using Aremco ceramic adhesive (used Lorna, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "i am using the copper wire from Sprocket and a perfectly good bolt (Tok) to anchor the cooling lines to the hull, ensuring they are vibration-proof. (used Nim, half a thruster nozzle)",
         "progress": 26,
         "at": "2026-11-19T09:37:10.773Z"
-      },
-      {
-        "version": 2,
-        "change": "I am retrofitting the secondary cooling loop with a high-pressure cryogenic pump salvaged from the depot, ensuring it is braced with Gus the thruster nozzle to prevent vibration fatigue. (used Mabel, a coil of copper wire)",
-        "progress": 18,
-        "at": "2026-11-19T06:48:15.386Z"
       }
     ],
     "launched": [
@@ -2488,7 +2488,7 @@
         }
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 4,
     "parts": [
       {
         "name": "Mabel",
@@ -2504,6 +2504,11 @@
         "name": "Lorna",
         "what": "a cracked navigation chip",
         "version": 3
+      },
+      {
+        "name": "Tok",
+        "what": "a scorched heat tile",
+        "version": 4
       }
     ],
     "design": null
@@ -2695,11 +2700,6 @@
       "name": "Bix",
       "what": "a little landing strut",
       "at": "2026-11-20T12:00:26.846Z"
-    },
-    {
-      "name": "Tok",
-      "what": "a scorched heat tile",
-      "at": "2026-11-20T11:06:07.371Z"
     }
   ],
   "reads": [

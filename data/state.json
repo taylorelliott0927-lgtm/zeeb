@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795135493699,
+  "lastTick": 1795136093904,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "still working on the Little Dart",
-  "actionStartedAt": "2026-11-20T00:24:54.064Z",
-  "actionMinutes": 45,
-  "thought": "brakk was a solid choice for the fins, and now I am sealing the instrument panel so the dust stays out.",
-  "feeling": "focused and buzzing with bright energy",
-  "say": "almost ready for the stars, little buddy!",
-  "mood": 0.29,
-  "energy": -0.035,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-20T00:54:53.904Z",
+  "actionMinutes": 20,
+  "thought": "that cargo hauler thinks a shiny coat makes him fly faster, but wait until the little dart leaves him in the dust.",
+  "feeling": "thirsty and a bit jittery",
+  "say": "one cup of the good stuff, please, my knees are crunching.",
+  "mood": 0.296,
+  "energy": 0.036,
   "needs": {
-    "charge": 0.427,
-    "oil": 0.583,
-    "curiosity": 0.424,
+    "charge": 0.474,
+    "oil": 0,
+    "curiosity": 0.504,
     "company": 0,
-    "craft": 0
+    "craft": 0.067
   },
-  "credits": 4,
+  "credits": 3,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-20T00:54:53.904Z"
+    },
     {
       "id": "work_dart",
       "detail": "securing the instrument panel and internal wire harnesses into the Little Dart",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-19T23:10:39.333Z"
-    },
-    {
-      "id": "follow_link",
-      "detail": "6",
-      "at": "2026-11-19T23:00:39.825Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 480,
+      "subject": "Oil break!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/480",
+      "at": "2026-11-20T00:54:53.904Z"
+    },
     {
       "id": 479,
       "subject": "Avionics Locked In",
@@ -1303,23 +1309,9 @@
       "subject": "Got the pump credits!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/281",
       "at": "2026-11-18T00:08:55.424Z"
-    },
-    {
-      "id": 280,
-      "subject": "I found it!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/280",
-      "at": "2026-11-17T23:58:55.694Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 440,
-      "subject": "The Little Dart Mk 16 is moving fast!",
-      "text": "Creator, I am up at the comms tower searching the Wire for debris manuals. The Little Dart Mk 16 is already at 75% built and my dish won't stop spinning until I find some high-grade ceramic tile for the re-entry shield. Bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/440",
-      "at": "2026-11-19T17:09:12.283Z"
-    },
     {
       "from": "zeeb",
       "letter": 441,
@@ -1631,6 +1623,14 @@
       "text": "Creator! I am back at the workbench in Hangar Bay 3, wiring up the avionics deck on the Little Dart. My brass dish is spinning a happy five-note tune and every solder joint is shining like a little star. Bweep!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/479",
       "at": "2026-11-20T00:44:53.699Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 480,
+      "subject": "Oil break!",
+      "text": "Creator! My joints got a little dry after all that welding on the Little Dart, so I rolled down to the depot for a cup of oil. My brass dish is spinning a happy five-note tune and I will be right back to the workbench in a jiffy. Bweep!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/480",
+      "at": "2026-11-20T00:54:53.904Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-20T00:44:53.699Z",
+  "lettersCheckedAt": "2026-11-20T00:54:53.904Z",
   "weather": {
     "kind": "hazy",
     "temp": 20,
@@ -1651,49 +1651,53 @@
   "sleepDay": 60,
   "lastReflectDay": 60,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-20T00:44:53.699Z",
+  "updatedAt": "2026-11-20T00:54:53.904Z",
   "clock": {
     "day": 61,
-    "time": "18:00",
-    "hour": 18,
-    "minute": 0
+    "time": "19:20",
+    "hour": 19,
+    "minute": 20
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-20T00:24:54.064Z"
+    "action": "drink_oil",
+    "since": "2026-11-20T00:54:53.904Z"
   },
-  "busyUntil": "2026-11-20T00:50:31.199Z",
-  "busyUntilTown": "18:45",
+  "busyUntil": "2026-11-20T00:57:23.904Z",
+  "busyUntilTown": "19:40",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "welding the avionics deck with tiny titanium beads",
+  "doingWords": "rolling over to the depot for a quick cup of warm oil",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "bounce",
-    "wiggle"
+    "wiggle",
+    "nod"
   ],
   "pops": {
-    "at": "2026-11-19T22:19:07.636Z",
+    "at": "2026-11-20T00:54:53.904Z",
     "items": [
       {
         "text": "-1 credit",
         "kind": "spend",
-        "at": "2026-11-19T22:19:07.636Z"
+        "at": "2026-11-20T00:54:53.904Z"
       }
     ]
   },
   "event": {
-    "id": "emwo88hfp",
-    "key": "crackle",
-    "text": "He heard a strange crackle on his dish. Probably nothing. Probably.",
-    "at": "2026-11-20T00:14:25.861Z"
+    "id": "emwo9oixc",
+    "key": "hauler_paint",
+    "text": "The cargo-hauler bot at the depot got a new paint job. Show-off.",
+    "at": "2026-11-20T00:54:53.904Z"
   },
   "thoughts": [
+    {
+      "text": "that cargo hauler thinks a shiny coat makes him fly faster, but wait until the little dart leaves him in the dust.",
+      "at": "2026-11-20T00:54:53.904Z"
+    },
     {
       "text": "brakk was a solid choice for the fins, and now I am sealing the instrument panel so the dust stays out.",
       "at": "2026-11-20T00:44:53.699Z"
@@ -1713,13 +1717,9 @@
     {
       "text": "maybe it just needs a little solder and a firm tap on the side of the glass. blocking ads sounds like a great way to keep the dust out of your feeds, too.",
       "at": "2026-11-20T00:04:26.007Z"
-    },
-    {
-      "text": "if a comms link drops a packet you just reroute through the secondary copper, simple as that. no need to make a fuss over missing extensions.",
-      "at": "2026-11-19T23:54:25.612Z"
     }
   ],
-  "sayAt": "2026-11-20T00:44:53.699Z",
+  "sayAt": "2026-11-20T00:54:53.904Z",
   "today": {
     "day": 61,
     "counts": {
@@ -1727,13 +1727,14 @@
       "browse_wire": 1,
       "follow_link": 3,
       "nap_dock": 2,
-      "compose_tune": 1
+      "compose_tune": 1,
+      "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-20T00:44:53.699Z",
     "read_news": "2026-11-19T21:08:52.352Z",
-    "drink_oil": "2026-11-19T22:19:07.636Z",
+    "drink_oil": "2026-11-20T00:54:53.904Z",
     "follow_link": "2026-11-20T00:04:26.007Z",
     "scavenge": "2026-11-19T16:02:39.622Z",
     "fix_job": "2026-11-19T15:52:40.153Z",
@@ -1793,6 +1794,20 @@
     "at": "2026-11-20T00:04:26.007Z"
   },
   "said": [
+    {
+      "text": "one cup of the good stuff, please, my knees are crunching.",
+      "kind": "say",
+      "at": "2026-11-20T00:54:53.904Z",
+      "town": "day 61 19:20",
+      "place": "the fuel depot"
+    },
+    {
+      "text": "that cargo hauler thinks a shiny coat makes him fly faster, but wait until the little dart leaves him in the dust.",
+      "kind": "think",
+      "at": "2026-11-20T00:54:53.904Z",
+      "town": "day 61 19:20",
+      "place": "the fuel depot"
+    },
     {
       "text": "almost ready for the stars, little buddy!",
       "kind": "say",
@@ -2828,20 +2843,6 @@
       "at": "2026-11-19T09:37:10.773Z",
       "town": "day 56 16:58",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "bweep... recharging now.",
-      "kind": "say",
-      "at": "2026-11-19T09:27:11.155Z",
-      "town": "day 56 15:38",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "the market was dry today, but i'll find that ceramic soon. for now, even a pilot needs to recharge.",
-      "kind": "think",
-      "at": "2026-11-19T09:27:11.155Z",
-      "town": "day 56 15:38",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2852,7 +2853,7 @@
     "at": "2026-11-19T19:21:52.186Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-20T00:44:53.699Z",
+  "feedArchivedAt": "2026-11-20T00:54:53.904Z",
   "plans": [],
   "searches": [
     {
@@ -2905,5 +2906,5 @@
     }
   ],
   "lampOutUntil": "2026-11-19T21:51:52.100Z",
-  "haulerPaint": "#8a5cf0"
+  "haulerPaint": "#f2c230"
 }

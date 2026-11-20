@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795204360675,
+  "lastTick": 1795204961057,
   "asleep": false,
   "place": "tower",
   "action": "follow_link",
-  "doing": "following a link across the Wire",
+  "doing": "still following a link across the Wire",
   "actionStartedAt": "2026-11-20T19:52:40.675Z",
   "actionMinutes": 45,
-  "thought": "need to keep the heat shielding intact during atmospheric entry on the Little Dart. Ceramabond 503 might just do the trick.",
-  "feeling": "focused and inventive",
+  "thought": "if I coat the Little Dart's heat shield in that stuff, reentry won't melt my landing gear right off. gotta find some of that scrap.",
+  "feeling": "hopeful and scheming",
   "say": "bweep!",
-  "mood": 0.315,
-  "energy": 0.127,
+  "mood": 0.34,
+  "energy": 0.041,
   "needs": {
-    "charge": 0.369,
-    "oil": 0.371,
-    "curiosity": 0.18,
+    "charge": 0.416,
+    "oil": 0.411,
+    "curiosity": 0,
     "company": 0,
-    "craft": 0.158
+    "craft": 0.225
   },
-  "credits": 6,
+  "credits": 7,
   "recent": [
+    {
+      "id": "follow_link",
+      "detail": "3",
+      "at": "2026-11-20T20:02:41.057Z"
+    },
     {
       "id": "follow_link",
       "detail": "2",
@@ -75,14 +80,14 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-20T18:09:55.514Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "welding internal titanium bulkhead ribs inside the Little Dart Mk 19 fuselage",
-      "at": "2026-11-20T17:59:55.951Z"
     }
   ],
   "wants": [
+    {
+      "id": "w9",
+      "text": "Ceramabond 503 thermal expansion data",
+      "at": "2026-11-20T20:02:41.057Z"
+    },
     {
       "id": "w8",
       "text": "deep space signal relays",
@@ -97,11 +102,6 @@
       "id": "w6",
       "text": "heavy ion thruster surplus price check",
       "at": "2026-11-20T10:46:07.851Z"
-    },
-    {
-      "id": "w5",
-      "text": "molybdenum wire resistance Kessa-9 surplus price check",
-      "at": "2026-11-20T10:16:07.683Z"
     }
   ],
   "promises": [],
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 565,
+      "subject": "Checking out link three",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/565",
+      "at": "2026-11-20T20:02:41.057Z"
+    },
     {
       "id": 564,
       "subject": "Ceramic specs",
@@ -1303,23 +1309,9 @@
       "subject": "Little Dart update!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/366",
       "at": "2026-11-18T22:43:43.709Z"
-    },
-    {
-      "id": 365,
-      "subject": "thruster talk",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/365",
-      "at": "2026-11-18T22:33:44.433Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 525,
-      "subject": "Wire Research",
-      "text": "Creator!\n\nI am still up at the comms tower checking out electrical properties of molybdenum on the Wire. My brass dish is tapping a little five-note tune while the terminal loads the high-temp furnace guides. Next up is translating all this data into better wiring for the Little Dart! Bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/525",
-      "at": "2026-11-20T10:16:07.683Z"
-    },
     {
       "from": "zeeb",
       "letter": 526,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am checking out high temperature adhesive specs on link number two right from the comms tower. My brass dish is spinning while I read about thirty-two hundred degrees Fahrenheit ratings. We are going to make the Little Dart's nose cone completely space-proof! Bweep!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/564",
       "at": "2026-11-20T19:52:40.675Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 565,
+      "subject": "Checking out link three",
+      "text": "Creator!\n\nI am still at the comms tower checking out link number three on the Wire about high temperature ceramic adhesives. My brass dish is spinning while I read through the specs. We are going to make sure the Little Dart's heat shielding is absolutely top-notch! Bweep!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/565",
+      "at": "2026-11-20T20:02:41.057Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-20T19:52:40.675Z",
+  "lettersCheckedAt": "2026-11-20T20:02:41.057Z",
   "weather": {
     "kind": "windy",
     "temp": 22,
@@ -1651,12 +1651,12 @@
   "sleepDay": 66,
   "lastReflectDay": 66,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-20T19:52:40.675Z",
+  "updatedAt": "2026-11-20T20:02:41.057Z",
   "clock": {
     "day": 68,
-    "time": "03:02",
-    "hour": 3,
-    "minute": 2
+    "time": "04:22",
+    "hour": 4,
+    "minute": 22
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
@@ -1664,36 +1664,39 @@
     "action": "follow_link",
     "since": "2026-11-20T19:52:40.675Z"
   },
-  "busyUntil": "2026-11-20T19:58:18.175Z",
-  "busyUntilTown": "03:47",
+  "busyUntil": "2026-11-20T20:08:18.557Z",
+  "busyUntilTown": "05:07",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "checking out adhesive suppliers on the comms terminal screen",
+  "doingWords": "reading wire link number three about high temperature ceramic adhesives",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "spin",
-    "nod"
+    "spin"
   ],
   "pops": {
-    "at": "2026-11-20T18:19:55.674Z",
+    "at": "2026-11-20T20:02:41.057Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-20T18:19:55.674Z"
+        "text": "+1 credit",
+        "kind": "credits",
+        "at": "2026-11-20T20:02:41.057Z"
       }
     ]
   },
   "event": {
-    "id": "emwpd4fig",
-    "key": "hauler_paint",
-    "text": "The cargo-hauler bot at the depot got a new paint job. Show-off.",
-    "at": "2026-11-20T19:19:01.000Z"
+    "id": "emwpeol5t",
+    "key": "pilot",
+    "text": "A pilot paid him a credit for directions to the cantina.",
+    "at": "2026-11-20T20:02:41.057Z"
   },
   "thoughts": [
+    {
+      "text": "if I coat the Little Dart's heat shield in that stuff, reentry won't melt my landing gear right off. gotta find some of that scrap.",
+      "at": "2026-11-20T20:02:41.057Z"
+    },
     {
       "text": "need to keep the heat shielding intact during atmospheric entry on the Little Dart. Ceramabond 503 might just do the trick.",
       "at": "2026-11-20T19:52:40.675Z"
@@ -1713,25 +1716,21 @@
     {
       "text": "that little horn swing is still bouncing around my circuits. time for a quick juice up in the dock.",
       "at": "2026-11-20T19:09:00.422Z"
-    },
-    {
-      "text": "that brass horn player really knows how to squeeze a note out of an old valve. maybe i can borrow that swing for the next tune.",
-      "at": "2026-11-20T18:59:00.982Z"
     }
   ],
-  "sayAt": "2026-11-20T19:52:40.675Z",
+  "sayAt": "2026-11-20T20:02:41.057Z",
   "today": {
     "day": 68,
     "counts": {
       "browse_wire": 1,
-      "follow_link": 1
+      "follow_link": 2
     }
   },
   "lastDone": {
     "work_dart": "2026-11-20T17:59:55.951Z",
     "read_news": "2026-11-20T16:59:58.650Z",
     "drink_oil": "2026-11-20T18:19:55.674Z",
-    "follow_link": "2026-11-20T19:52:40.675Z",
+    "follow_link": "2026-11-20T20:02:41.057Z",
     "scavenge": "2026-11-20T05:18:42.462Z",
     "fix_job": "2026-11-20T15:29:25.663Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
@@ -1760,6 +1759,11 @@
   },
   "puzzles": [
     {
+      "id": "q11",
+      "text": "q6: if I can synthesize a ceramic-like coating using industrial adhesive and heat-resistant silica dust",
+      "at": "2026-11-20T20:02:41.057Z"
+    },
+    {
       "id": "q6",
       "text": "if I can synthesize a ceramic-like coating using industrial adhesive and heat-resistant silica dust",
       "at": "2026-11-20T19:52:40.675Z"
@@ -1778,18 +1782,20 @@
       "id": "q10",
       "text": "q11: if I can synthesize a ceramic-like coating using industrial adhesive and heat-resistant silica dust",
       "at": "2026-11-20T14:15:59.931Z"
-    },
-    {
-      "id": "q7",
-      "text": "q11",
-      "at": "2026-11-20T13:46:00.220Z"
     }
   ],
   "nextSearch": {
-    "text": "Ceramabond 503 thermal expansion data",
-    "at": "2026-11-20T19:52:40.675Z"
+    "text": "where to find surplus ceramic adhesive in sector four",
+    "at": "2026-11-20T20:02:41.057Z"
   },
   "said": [
+    {
+      "text": "if I coat the Little Dart's heat shield in that stuff, reentry won't melt my landing gear right off. gotta find some of that scrap.",
+      "kind": "think",
+      "at": "2026-11-20T20:02:41.057Z",
+      "town": "day 68 04:22",
+      "place": "the comms tower"
+    },
     {
       "text": "bweep!",
       "kind": "say",
@@ -2832,13 +2838,6 @@
       "at": "2026-11-20T04:20:07.325Z",
       "town": "day 62 22:42",
       "place": "the dune ridge"
-    },
-    {
-      "text": "staring at text listings all night makes my visual sensors fuzzy. time to stretch the treads and let the night wind cool off my housing.",
-      "kind": "think",
-      "at": "2026-11-20T04:20:07.325Z",
-      "town": "day 62 22:42",
-      "place": "the dune ridge"
     }
   ],
   "flight": {
@@ -2849,7 +2848,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-20T19:52:40.675Z",
+  "feedArchivedAt": "2026-11-20T20:02:41.057Z",
   "plans": [],
   "searches": [
     {

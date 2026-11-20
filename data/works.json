@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 19",
-    "progress": 7,
-    "version": 1,
-    "lastChange": "welding custom copper brackets onto the Little Dart's dorsal spine using reinforced industrial rods (used Mabel, half a thruster nozzle)",
+    "progress": 13,
+    "version": 2,
+    "lastChange": "welding alloy support mesh onto the Little Dart's starboard wing root using high-temp flux (used Dibs, a mystery box that hums)",
     "log": [
+      {
+        "version": 2,
+        "change": "welding alloy support mesh onto the Little Dart's starboard wing root using high-temp flux (used Dibs, a mystery box that hums)",
+        "progress": 13,
+        "at": "2026-11-20T13:55:59.468Z"
+      },
       {
         "version": 1,
         "change": "welding custom copper brackets onto the Little Dart's dorsal spine using reinforced industrial rods (used Mabel, half a thruster nozzle)",
@@ -238,12 +244,6 @@
         "change": "finishing the application of the industrial sealant around the secondary cooling loop and giving the hull a final buffing to ensure it handles the heat of high-atmospheric exit. (used Mabel, a cracked navigation chip)",
         "progress": 8,
         "at": "2026-11-19T06:06:11.998Z"
-      },
-      {
-        "version": 13,
-        "change": "I am finishing the integration of Pim the gyroscope into the navigation manifold, ensuring the copper lining is perfectly seated to dampen any electrical interference from the thrusters. (used Captain, a cracked navigation chip)",
-        "progress": 100,
-        "at": "2026-11-19T05:56:11.596Z"
       }
     ],
     "launched": [
@@ -2488,12 +2488,17 @@
         }
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Mabel",
         "what": "half a thruster nozzle",
         "version": 1
+      },
+      {
+        "name": "Dibs",
+        "what": "a mystery box that hums",
+        "version": 2
       }
     ],
     "design": null
@@ -2689,11 +2694,6 @@
       "name": "Lorna",
       "what": "a cracked navigation chip",
       "at": "2026-11-20T11:06:07.371Z"
-    },
-    {
-      "name": "Dibs",
-      "what": "a mystery box that hums",
-      "at": "2026-11-20T07:16:39.550Z"
     }
   ],
   "reads": [

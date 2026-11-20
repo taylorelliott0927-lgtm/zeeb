@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 18",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 10,
+    "version": 1,
+    "lastChange": "welding reinforced double-hinge brackets onto the Little Dart's landing gear using Mabel the little landing strut (used Mabel, a little landing strut)",
     "log": [
+      {
+        "version": 1,
+        "change": "welding reinforced double-hinge brackets onto the Little Dart's landing gear using Mabel the little landing strut (used Mabel, a little landing strut)",
+        "progress": 10,
+        "at": "2026-11-20T03:04:06.563Z"
+      },
       {
         "version": 13,
         "change": "welding the primary booster shroud and thermal insulation blanket onto the Little Dart using Rusty Jr, a mystery box that hums (used Otto, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "securing the custom aluminum instrument rack to the forward cockpit bulkhead (used Tilly, a cracked navigation chip)",
         "progress": 7,
         "at": "2026-11-18T19:51:24.170Z"
-      },
-      {
-        "version": 13,
-        "change": "routing the instrument cluster wiring harness through the main bulkhead using Tilly (a coil of copper wire) (used Gus, a mystery box that hums)",
-        "progress": 100,
-        "at": "2026-11-18T19:41:24.484Z"
       }
     ],
     "launched": [
@@ -2106,8 +2106,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Mabel",
+        "what": "a little landing strut",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -2294,11 +2300,6 @@
       "name": "Rusty Jr",
       "what": "a mystery box that hums",
       "at": "2026-11-19T16:22:40.120Z"
-    },
-    {
-      "name": "Mabel",
-      "what": "a little landing strut",
-      "at": "2026-11-19T16:02:39.622Z"
     }
   ],
   "reads": [

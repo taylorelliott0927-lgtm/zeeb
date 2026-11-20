@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795133693974,
+  "lastTick": 1795134294064,
   "asleep": false,
   "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-20T00:14:25.861Z",
+  "action": "work_dart",
+  "doing": "working on the Little Dart",
+  "actionStartedAt": "2026-11-20T00:24:54.064Z",
   "actionMinutes": 45,
-  "thought": "the comms tower crackle can wait until my internal reserves are back up to full strength. time to rest the gears.",
-  "feeling": "tired and a bit sluggish",
-  "say": "bweep...",
-  "mood": 0.32,
-  "energy": 0.267,
+  "thought": "i am back at the workbench getting my hands greasy and my brass dish humming. this little scrap ship is looking sharper by the hour.",
+  "feeling": "focused and hopeful",
+  "say": "almost time to fire up the main thrusters for real!",
+  "mood": 0.253,
+  "energy": 0.23,
   "needs": {
-    "charge": 0.136,
-    "oil": 0.463,
-    "curiosity": 0.184,
-    "company": 0.002,
-    "craft": 0.204
+    "charge": 0.233,
+    "oil": 0.503,
+    "curiosity": 0.264,
+    "company": 0,
+    "craft": 0
   },
   "credits": 4,
   "recent": [
+    {
+      "id": "work_dart",
+      "detail": "welding the upper hull plating onto the Little Dart using Otto, a tiny gyroscope",
+      "at": "2026-11-20T00:24:54.064Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "welding another high-temp silica insulation tile onto the Little Dart's nose con",
       "at": "2026-11-19T22:40:39.914Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "welding a high-temp silica insulation tile onto the Little Dart's nose cone usin",
-      "at": "2026-11-19T22:29:08.272Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 477,
+      "subject": "Hull plating update",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/477",
+      "at": "2026-11-20T00:24:54.064Z"
+    },
     {
       "id": 476,
       "subject": "quick recharge in the dock",
@@ -1303,23 +1309,9 @@
       "subject": "Market day hustle",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/278",
       "at": "2026-11-17T23:38:55.695Z"
-    },
-    {
-      "id": 277,
-      "subject": "hunting for scrap",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/277",
-      "at": "2026-11-17T23:28:56.384Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 437,
-      "subject": "Scouring the Wire for Heat Shields",
-      "text": "Creator! I am up at the comms tower right now checking out orbital debris laws on the Wire. If old satellites have high-grade ceramic tiles just floating around up there, maybe I can figure out how to legally snag one for the Little Dart! My dish is spinning non-stop. Bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/437",
-      "at": "2026-11-19T16:12:39.788Z"
-    },
     {
       "from": "zeeb",
       "letter": 438,
@@ -1631,6 +1623,14 @@
       "text": "Creator! My battery dipped down while I was up at the comms tower, so I am plugging into the dock in Hangar Bay 3 for a quick nap. My brass dish is resting easy and I will be right back to the workbench as soon as I am full up. Bweep!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/476",
       "at": "2026-11-20T00:14:25.861Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 477,
+      "subject": "Hull plating update",
+      "text": "Creator! I am right back at the workbench in Hangar Bay 3, welding the upper hull plating onto the Little Dart with Otto, my tiny gyroscope, to make sure the balance stays dead center. My brass dish is spinning a happy five-note tune and every weld is singing true! Bweep!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/477",
+      "at": "2026-11-20T00:24:54.064Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,43 +1639,43 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-20T00:14:53.974Z",
+  "lettersCheckedAt": "2026-11-20T00:24:54.064Z",
   "weather": {
     "kind": "hazy",
     "temp": 20,
     "wind": 6,
     "mood": 0,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-19T23:54:25.735Z"
+    "at": "2026-11-20T00:24:54.136Z"
   },
   "sleepDay": 60,
   "lastReflectDay": 60,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-20T00:14:53.974Z",
+  "updatedAt": "2026-11-20T00:24:54.064Z",
   "clock": {
     "day": 61,
-    "time": "14:00",
-    "hour": 14,
-    "minute": 0
+    "time": "15:20",
+    "hour": 15,
+    "minute": 20
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-20T00:14:25.861Z"
+    "action": "work_dart",
+    "since": "2026-11-20T00:24:54.064Z"
   },
-  "busyUntil": "2026-11-20T00:20:03.361Z",
-  "busyUntilTown": "14:41",
+  "busyUntil": "2026-11-20T00:30:31.564Z",
+  "busyUntilTown": "16:05",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "plugging into the charging dock in hangar bay 3 for a much-needed nap",
-  "newsForCreator": "",
+  "doingWords": "welding the upper hull plating with Otto, the tiny gyroscope, for absolute stability",
+  "newsForCreator": "the Little Dart Mk 17 just reached 75% built (version 9). Last change: welding the upper hull plating onto the Little Dart using Otto, a tiny gyroscope, to keep the balance true (used Rusty Jr, a cracked navigation chip).",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
-    "droop"
+    "bounce",
+    "wiggle"
   ],
   "pops": {
     "at": "2026-11-19T22:19:07.636Z",
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "i am back at the workbench getting my hands greasy and my brass dish humming. this little scrap ship is looking sharper by the hour.",
+      "at": "2026-11-20T00:24:54.064Z"
+    },
+    {
       "text": "the comms tower crackle can wait until my internal reserves are back up to full strength. time to rest the gears.",
       "at": "2026-11-20T00:14:25.861Z"
     },
@@ -1713,17 +1717,13 @@
     {
       "text": "every weld gets me one step closer to the stars. my brass dish is picking up a lovely little rhythm today.",
       "at": "2026-11-19T23:34:25.883Z"
-    },
-    {
-      "text": "i am going to write a quick note to my creator about how well the landing strut is holding up, then back to the torch!",
-      "at": "2026-11-19T23:24:26.264Z"
     }
   ],
-  "sayAt": "2026-11-20T00:14:25.861Z",
+  "sayAt": "2026-11-20T00:24:54.064Z",
   "today": {
     "day": 61,
     "counts": {
-      "work_dart": 4,
+      "work_dart": 5,
       "browse_wire": 1,
       "follow_link": 3,
       "nap_dock": 2,
@@ -1731,7 +1731,7 @@
     }
   },
   "lastDone": {
-    "work_dart": "2026-11-19T23:34:25.883Z",
+    "work_dart": "2026-11-20T00:24:54.064Z",
     "read_news": "2026-11-19T21:08:52.352Z",
     "drink_oil": "2026-11-19T22:19:07.636Z",
     "follow_link": "2026-11-20T00:04:26.007Z",
@@ -1793,6 +1793,20 @@
     "at": "2026-11-20T00:04:26.007Z"
   },
   "said": [
+    {
+      "text": "almost time to fire up the main thrusters for real!",
+      "kind": "say",
+      "at": "2026-11-20T00:24:54.064Z",
+      "town": "day 61 15:20",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "i am back at the workbench getting my hands greasy and my brass dish humming. this little scrap ship is looking sharper by the hour.",
+      "kind": "think",
+      "at": "2026-11-20T00:24:54.064Z",
+      "town": "day 61 15:20",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "bweep...",
       "kind": "say",
@@ -2828,20 +2842,6 @@
       "at": "2026-11-19T08:58:45.027Z",
       "town": "day 56 11:51",
       "place": "the junk market"
-    },
-    {
-      "text": "Bweep-bop-bwee-bop-doo!",
-      "kind": "say",
-      "at": "2026-11-19T08:48:45.007Z",
-      "town": "day 56 10:31",
-      "place": "the junk market"
-    },
-    {
-      "text": "The tower is great for data, but the desert air clears the logic-clutter. I need to keep moving before my gears seize up like a cheap regulator.",
-      "kind": "think",
-      "at": "2026-11-19T08:48:45.007Z",
-      "town": "day 56 10:31",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2852,7 +2852,7 @@
     "at": "2026-11-19T19:21:52.186Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-20T00:14:25.861Z",
+  "feedArchivedAt": "2026-11-20T00:24:54.064Z",
   "plans": [],
   "searches": [
     {

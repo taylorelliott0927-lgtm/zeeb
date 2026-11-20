@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 18",
-    "progress": 56,
-    "version": 7,
-    "lastChange": "welding a titanium reinforcement rib onto the Little Dart's ventral seam using Mabel the copper wire for joint stability (used Tok, a strip of hull plating)",
+    "progress": 65,
+    "version": 8,
+    "lastChange": "welding a second titanium reinforcement rib onto the Little Dart's ventral seam using Mabel the copper wire for joint stability (used Sprocket, a scorched heat tile)",
     "log": [
+      {
+        "version": 8,
+        "change": "welding a second titanium reinforcement rib onto the Little Dart's ventral seam using Mabel the copper wire for joint stability (used Sprocket, a scorched heat tile)",
+        "progress": 65,
+        "at": "2026-11-20T08:23:49.778Z"
+      },
       {
         "version": 7,
         "change": "welding a titanium reinforcement rib onto the Little Dart's ventral seam using Mabel the copper wire for joint stability (used Tok, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "finishing the copper coil shielding around Tok the gyroscope and sealing it with the remaining industrial sealant to ensure zero interference for long-range navigation. (used Tilly, a coil of copper wire)",
         "progress": 67,
         "at": "2026-11-19T00:44:42.914Z"
-      },
-      {
-        "version": 7,
-        "change": "installing the copper coil shielding around Tok the gyroscope in the navigation core to prevent interference. (used Dibs, a dented fuel cell)",
-        "progress": 59,
-        "at": "2026-11-19T00:24:43.521Z"
       }
     ],
     "launched": [
@@ -2106,7 +2106,7 @@
         ]
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Mabel",
@@ -2142,6 +2142,11 @@
         "name": "Tok",
         "what": "a strip of hull plating",
         "version": 7
+      },
+      {
+        "name": "Sprocket",
+        "what": "a scorched heat tile",
+        "version": 8
       }
     ],
     "design": null
@@ -2352,11 +2357,6 @@
       "name": "Rusty Jr",
       "what": "a cracked navigation chip",
       "at": "2026-11-20T04:38:43.120Z"
-    },
-    {
-      "name": "Sprocket",
-      "what": "a scorched heat tile",
-      "at": "2026-11-20T04:20:07.325Z"
     }
   ],
   "reads": [

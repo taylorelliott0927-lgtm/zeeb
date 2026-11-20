@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 18",
-    "progress": 75,
-    "version": 9,
-    "lastChange": "sealing the ventral reinforcement joints with high-temp sealant paste (used Rusty Jr, a cracked navigation chip)",
+    "progress": 82,
+    "version": 10,
+    "lastChange": "welding a high-grade titanium shield plate onto the Little Dart's forward intake cowl (used Tilly, a tiny gyroscope)",
     "log": [
+      {
+        "version": 10,
+        "change": "welding a high-grade titanium shield plate onto the Little Dart's forward intake cowl (used Tilly, a tiny gyroscope)",
+        "progress": 82,
+        "at": "2026-11-20T09:48:28.715Z"
+      },
       {
         "version": 9,
         "change": "sealing the ventral reinforcement joints with high-temp sealant paste (used Rusty Jr, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "I am using the remaining salvaged copper to reinforce the gyro housing. I've named the new shielding plate 'Rusty' because it reminds me of the hangar walls. (used Tok, a tiny gyroscope)",
         "progress": 83,
         "at": "2026-11-19T04:07:42.278Z"
-      },
-      {
-        "version": 9,
-        "change": "Reinforcing the hull seams using Dibs the strip of hull plating to ensure the structural integrity matches the new navigation precision. (used Tok, a cracked navigation chip)",
-        "progress": 75,
-        "at": "2026-11-19T02:08:38.263Z"
       }
     ],
     "launched": [
@@ -2106,7 +2106,7 @@
         ]
       }
     ],
-    "partsUsed": 9,
+    "partsUsed": 10,
     "parts": [
       {
         "name": "Mabel",
@@ -2152,6 +2152,11 @@
         "name": "Rusty Jr",
         "what": "a cracked navigation chip",
         "version": 9
+      },
+      {
+        "name": "Tilly",
+        "what": "a tiny gyroscope",
+        "version": 10
       }
     ],
     "design": null
@@ -2352,11 +2357,6 @@
       "name": "Tok",
       "what": "a strip of hull plating",
       "at": "2026-11-20T05:43:33.119Z"
-    },
-    {
-      "name": "Tilly",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-20T05:28:42.667Z"
     }
   ],
   "reads": [

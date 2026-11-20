@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795146007552,
+  "lastTick": 1795146607214,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "still sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-20T03:30:07.883Z",
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-20T03:50:07.214Z",
   "actionMinutes": 30,
-  "thought": "that fresh cup of oil is already soaking right into my squeaky knee joints. ah, much better.",
-  "feeling": "lubricated and ready",
-  "say": "ahhh, right down the intake pipes. bweep!",
-  "mood": 0.376,
-  "energy": 0.295,
+  "thought": "how is a cargo hauler supposed to haul cargo without heavy duty actuators? i bet my welding on the Little Dart is sturdier anyway.",
+  "feeling": "mildly amused and unimpressed",
+  "say": "",
+  "mood": 0.38,
+  "energy": 0.253,
   "needs": {
-    "charge": 0.366,
-    "oil": 0,
-    "curiosity": 0.528,
-    "company": 0,
-    "craft": 0.107
+    "charge": 0.413,
+    "oil": 0.04,
+    "curiosity": 0.108,
+    "company": 0.053,
+    "craft": 0.174
   },
   "credits": 3,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "blue origin surplus parts catalog",
+      "at": "2026-11-20T03:50:07.214Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "follow_link",
       "detail": "1",
       "at": "2026-11-20T02:02:30.887Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "high-grade ceramic tile orbital shielding catalogues",
-      "at": "2026-11-20T01:52:30.843Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-20T03:40:07.552Z",
+  "lettersCheckedAt": "2026-11-20T03:50:07.214Z",
   "weather": {
     "kind": "hazy",
     "temp": 21,
@@ -1651,32 +1651,29 @@
   "sleepDay": 61,
   "lastReflectDay": 61,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-20T03:40:07.552Z",
+  "updatedAt": "2026-11-20T03:50:07.214Z",
   "clock": {
     "day": 62,
-    "time": "17:22",
-    "hour": 17,
-    "minute": 22
+    "time": "18:42",
+    "hour": 18,
+    "minute": 42
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-20T03:30:07.883Z"
+    "action": "browse_wire",
+    "since": "2026-11-20T03:50:07.214Z"
   },
-  "busyUntil": "2026-11-20T03:43:52.552Z",
-  "busyUntilTown": "17:52",
+  "busyUntil": "2026-11-20T03:53:52.214Z",
+  "busyUntilTown": "19:12",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "drinking a warm cup of heavy-grade oil at the depot",
+  "doingWords": "searching the wire for blue origin surplus parts catalogues",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "spin",
-    "wiggle"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-20T03:40:07.552Z",
     "items": [
@@ -1694,6 +1691,10 @@
     "at": "2026-11-20T03:30:07.883Z"
   },
   "thoughts": [
+    {
+      "text": "how is a cargo hauler supposed to haul cargo without heavy duty actuators? i bet my welding on the Little Dart is sturdier anyway.",
+      "at": "2026-11-20T03:50:07.214Z"
+    },
     {
       "text": "that fresh cup of oil is already soaking right into my squeaky knee joints. ah, much better.",
       "at": "2026-11-20T03:40:07.552Z"
@@ -1713,19 +1714,15 @@
     {
       "text": "those landing struts need a double weld so they never bounce sideways again. time to fire up the torch.",
       "at": "2026-11-20T03:04:06.563Z"
-    },
-    {
-      "text": "that test flight really took it out of my cells, but at least the mk 17 cleared the ridge. time to power up and check the landing gear hinges.",
-      "at": "2026-11-20T02:54:06.769Z"
     }
   ],
-  "sayAt": "2026-11-20T03:40:07.552Z",
+  "sayAt": "2026-11-20T03:50:07.214Z",
   "today": {
     "day": 62,
     "counts": {
       "nap_dock": 3,
       "work_dart": 5,
-      "browse_wire": 1,
+      "browse_wire": 2,
       "follow_link": 1,
       "read_news": 1,
       "test_flight": 1,
@@ -1741,7 +1738,7 @@
     "fix_job": "2026-11-19T15:52:40.153Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-20T01:52:30.843Z",
+    "browse_wire": "2026-11-20T03:50:07.214Z",
     "compose_tune": "2026-11-19T23:44:25.950Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-19T05:33:24.251Z",
@@ -1791,10 +1788,17 @@
     }
   ],
   "nextSearch": {
-    "text": "blue origin surplus parts catalog",
-    "at": "2026-11-20T02:12:31.179Z"
+    "text": "heavy ion thruster surplus scrap",
+    "at": "2026-11-20T03:50:07.214Z"
   },
   "said": [
+    {
+      "text": "how is a cargo hauler supposed to haul cargo without heavy duty actuators? i bet my welding on the Little Dart is sturdier anyway.",
+      "kind": "think",
+      "at": "2026-11-20T03:50:07.214Z",
+      "town": "day 62 18:42",
+      "place": "the comms tower"
+    },
     {
       "text": "ahhh, right down the intake pipes. bweep!",
       "kind": "say",
@@ -2837,13 +2841,6 @@
       "at": "2026-11-19T11:16:49.132Z",
       "town": "day 57 16:59",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "(dreaming) i dreamed the little dart slipped right out of the hangar doors and bounced gently against the rings of a distant gas giant.",
-      "kind": "think",
-      "at": "2026-11-19T12:27:15.692Z",
-      "town": "day 57 15:39",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2854,9 +2851,13 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-20T03:40:07.552Z",
+  "feedArchivedAt": "2026-11-20T03:50:07.214Z",
   "plans": [],
   "searches": [
+    {
+      "q": "blue origin surplus parts catalog",
+      "at": "2026-11-20T03:50:07.214Z"
+    },
     {
       "q": "high-grade ceramic tile orbital shielding catalogues",
       "at": "2026-11-20T01:52:30.843Z"
@@ -2900,10 +2901,6 @@
     {
       "q": "how to build a magnetic grapple arm from spare cooling fans",
       "at": "2026-11-19T10:26:48.953Z"
-    },
-    {
-      "q": "DIY aerospace engineering manuals for salvage-built hulls",
-      "at": "2026-11-19T07:38:15.100Z"
     }
   ],
   "lampOutUntil": "2026-11-19T21:51:52.100Z",

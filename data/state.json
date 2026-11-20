@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795190347366,
+  "lastTick": 1795190947975,
   "asleep": false,
-  "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-20T15:49:08.261Z",
-  "actionMinutes": 120,
-  "thought": "i need to plug into hangar bay 3 before my main relay goes dark. a good charge will get me ready for more dart work.",
-  "feeling": "sleepy but optimistic",
-  "say": "heading back to the dock for a quick juice up. *bweep*",
-  "mood": 0.359,
-  "energy": 0.621,
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-20T16:09:07.975Z",
+  "actionMinutes": 35,
+  "thought": "read about Bird Flight | Ask A Biologist. filing that away.",
+  "feeling": "curious",
+  "say": "",
+  "mood": 0.339,
+  "energy": 0.655,
   "needs": {
-    "charge": 0,
-    "oil": 0.08,
-    "curiosity": 0.318,
-    "company": 0.053,
-    "craft": 0.267
+    "charge": 0.047,
+    "oil": 0.12,
+    "curiosity": 0,
+    "company": 0.106,
+    "craft": 0.334
   },
   "credits": 8,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "how birds fly",
+      "at": "2026-11-20T16:09:07.975Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "compose_tune",
       "detail": "Little Dart Five-Note Dawn Arc V",
       "at": "2026-11-20T14:05:59.629Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "welding alloy support mesh onto the Little Dart's starboard wing root using high",
-      "at": "2026-11-20T13:55:59.468Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-20T15:59:07.366Z",
+  "lettersCheckedAt": "2026-11-20T16:09:07.975Z",
   "weather": {
     "kind": "windy",
     "temp": 27,
@@ -1650,32 +1650,30 @@
   },
   "sleepDay": 65,
   "lastReflectDay": 65,
-  "brain": "gemini-3.5-flash",
-  "updatedAt": "2026-11-20T15:59:07.366Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-20T16:09:07.975Z",
   "clock": {
     "day": 66,
-    "time": "19:54",
-    "hour": 19,
-    "minute": 54
+    "time": "21:14",
+    "hour": 21,
+    "minute": 14
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-20T15:49:08.261Z"
+    "action": "browse_wire",
+    "since": "2026-11-20T16:09:07.975Z"
   },
-  "busyUntil": "2026-11-20T16:04:08.261Z",
-  "busyUntilTown": "20:34",
+  "busyUntil": "2026-11-20T16:13:30.475Z",
+  "busyUntilTown": "21:49",
   "runner": "github",
   "model": "gemini-3.5-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "plugging into the charging dock to top off my battery",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "droop"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-20T15:39:07.941Z",
     "items": [
@@ -1693,6 +1691,10 @@
     "at": "2026-11-20T15:29:25.663Z"
   },
   "thoughts": [
+    {
+      "text": "read about Bird Flight | Ask A Biologist. filing that away.",
+      "at": "2026-11-20T16:09:07.975Z"
+    },
     {
       "text": "i need to plug into hangar bay 3 before my main relay goes dark. a good charge will get me ready for more dart work.",
       "at": "2026-11-20T15:49:08.261Z"
@@ -1712,13 +1714,9 @@
     {
       "text": "Seventy meters wide! Imagine the stray signals you could catch with a dish that big. My brass hat dish is tiny by comparison, but it still picks up the distant hum of the black. *bweep*",
       "at": "2026-11-20T15:09:26.152Z"
-    },
-    {
-      "text": "battery is getting dangerously low. better juice up before I try any more heavy welding on the Little Dart.",
-      "at": "2026-11-20T14:59:26.249Z"
     }
   ],
-  "sayAt": "2026-11-20T15:49:08.261Z",
+  "sayAt": "2026-11-20T16:09:07.975Z",
   "today": {
     "day": 66,
     "counts": {
@@ -1727,7 +1725,7 @@
       "compose_tune": 1,
       "drink_oil": 2,
       "wander": 2,
-      "browse_wire": 1,
+      "browse_wire": 2,
       "follow_link": 1,
       "fix_job": 1
     }
@@ -1741,7 +1739,7 @@
     "fix_job": "2026-11-20T15:29:25.663Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-20T15:09:26.152Z",
+    "browse_wire": "2026-11-20T16:09:07.975Z",
     "compose_tune": "2026-11-20T14:05:59.629Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-19T05:33:24.251Z",
@@ -1790,11 +1788,15 @@
       "at": "2026-11-20T13:06:18.708Z"
     }
   ],
-  "nextSearch": {
-    "text": "deep space network radio frequencies list",
-    "at": "2026-11-20T15:19:25.389Z"
-  },
+  "nextSearch": null,
   "said": [
+    {
+      "text": "read about Bird Flight | Ask A Biologist. filing that away.",
+      "kind": "think",
+      "at": "2026-11-20T16:09:07.975Z",
+      "town": "day 66 21:14",
+      "place": "the comms tower"
+    },
     {
       "text": "heading back to the dock for a quick juice up. *bweep*",
       "kind": "say",
@@ -2837,13 +2839,6 @@
       "at": "2026-11-20T00:24:54.064Z",
       "town": "day 61 15:20",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "bweep...",
-      "kind": "say",
-      "at": "2026-11-20T00:14:25.861Z",
-      "town": "day 61 13:56",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2854,9 +2849,13 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-20T15:49:08.261Z",
+  "feedArchivedAt": "2026-11-20T16:09:07.975Z",
   "plans": [],
   "searches": [
+    {
+      "q": "how birds fly",
+      "at": "2026-11-20T16:09:07.975Z"
+    },
     {
       "q": "deep space signal relays",
       "at": "2026-11-20T15:09:26.152Z"
@@ -2900,10 +2899,6 @@
     {
       "q": "pulsar navigation frequencies",
       "at": "2026-11-19T17:44:23.259Z"
-    },
-    {
-      "q": "high-temp silica insulation scrap dealers Kessa-9",
-      "at": "2026-11-19T17:29:11.444Z"
     }
   ],
   "lampOutUntil": "2026-11-19T21:51:52.100Z",

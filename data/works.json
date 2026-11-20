@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 19",
-    "progress": 13,
-    "version": 2,
-    "lastChange": "welding alloy support mesh onto the Little Dart's starboard wing root using high-temp flux (used Dibs, a mystery box that hums)",
+    "progress": 20,
+    "version": 3,
+    "lastChange": "bonding high-temp silica tiles onto the Little Dart's nose cone using Aremco ceramic adhesive (used Lorna, a cracked navigation chip)",
     "log": [
+      {
+        "version": 3,
+        "change": "bonding high-temp silica tiles onto the Little Dart's nose cone using Aremco ceramic adhesive (used Lorna, a cracked navigation chip)",
+        "progress": 20,
+        "at": "2026-11-20T14:49:26.300Z"
+      },
       {
         "version": 2,
         "change": "welding alloy support mesh onto the Little Dart's starboard wing root using high-temp flux (used Dibs, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "I am retrofitting the secondary cooling loop with a high-pressure cryogenic pump salvaged from the depot, ensuring it is braced with Gus the thruster nozzle to prevent vibration fatigue. (used Mabel, a coil of copper wire)",
         "progress": 18,
         "at": "2026-11-19T06:48:15.386Z"
-      },
-      {
-        "version": 1,
-        "change": "finishing the application of the industrial sealant around the secondary cooling loop and giving the hull a final buffing to ensure it handles the heat of high-atmospheric exit. (used Mabel, a cracked navigation chip)",
-        "progress": 8,
-        "at": "2026-11-19T06:06:11.998Z"
       }
     ],
     "launched": [
@@ -2488,7 +2488,7 @@
         }
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Mabel",
@@ -2499,6 +2499,11 @@
         "name": "Dibs",
         "what": "a mystery box that hums",
         "version": 2
+      },
+      {
+        "name": "Lorna",
+        "what": "a cracked navigation chip",
+        "version": 3
       }
     ],
     "design": null
@@ -2694,11 +2699,6 @@
     {
       "name": "Tok",
       "what": "a scorched heat tile",
-      "at": "2026-11-20T11:06:07.371Z"
-    },
-    {
-      "name": "Lorna",
-      "what": "a cracked navigation chip",
       "at": "2026-11-20T11:06:07.371Z"
     }
   ],

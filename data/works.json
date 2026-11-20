@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 18",
-    "progress": 26,
-    "version": 3,
-    "lastChange": "welding high-temp silica insulation panels onto the Little Dart's upper spine (used Mabel, a dented fuel cell)",
+    "progress": 32,
+    "version": 4,
+    "lastChange": "welding a custom springy hull washer onto the Little Dart's secondary exhaust flange (using Tok, a strip of hull plating) (used Tilly, a scorched heat tile)",
     "log": [
+      {
+        "version": 4,
+        "change": "welding a custom springy hull washer onto the Little Dart's secondary exhaust flange (using Tok, a strip of hull plating) (used Tilly, a scorched heat tile)",
+        "progress": 32,
+        "at": "2026-11-20T04:58:43.022Z"
+      },
       {
         "version": 3,
         "change": "welding high-temp silica insulation panels onto the Little Dart's upper spine (used Mabel, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "welding the primary thruster frame mounts using Dibs (a strip of hull plating) and Otto (a cockpit switch that still clicks) to ensure structural rigidity during high-g maneuvers. (used Sprocket, a perfectly good bolt)",
         "progress": 32,
         "at": "2026-11-18T22:33:44.433Z"
-      },
-      {
-        "version": 3,
-        "change": "welding the miniature pressure relief valve into the Little Dart's secondary cooling loop using Mabel (a coil of copper wire) (used Lorna, a cockpit switch that still clicks)",
-        "progress": 23,
-        "at": "2026-11-18T21:29:32.487Z"
       }
     ],
     "launched": [
@@ -2106,7 +2106,7 @@
         ]
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 4,
     "parts": [
       {
         "name": "Mabel",
@@ -2122,6 +2122,11 @@
         "name": "Mabel",
         "what": "a dented fuel cell",
         "version": 3
+      },
+      {
+        "name": "Tilly",
+        "what": "a scorched heat tile",
+        "version": 4
       }
     ],
     "design": null
@@ -2314,11 +2319,6 @@
     {
       "name": "Wren",
       "what": "a strip of hull plating",
-      "at": "2026-11-19T21:59:07.451Z"
-    },
-    {
-      "name": "Tilly",
-      "what": "a scorched heat tile",
       "at": "2026-11-19T21:59:07.451Z"
     }
   ],

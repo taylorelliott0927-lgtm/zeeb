@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 17",
-    "progress": 91,
-    "version": 11,
-    "lastChange": "securing the instrument panel and internal wire harnesses into the Little Dart (used Brakk, a mystery box that hums)",
+    "progress": 98,
+    "version": 12,
+    "lastChange": "riveting the main oxygen manifold access hatch onto the Little Dart using Tilly, a scorched heat tile (used Lorna, a cracked navigation chip)",
     "log": [
+      {
+        "version": 12,
+        "change": "riveting the main oxygen manifold access hatch onto the Little Dart using Tilly, a scorched heat tile (used Lorna, a cracked navigation chip)",
+        "progress": 98,
+        "at": "2026-11-20T01:42:30.336Z"
+      },
       {
         "version": 11,
         "change": "securing the instrument panel and internal wire harnesses into the Little Dart (used Brakk, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "mounting the custom pressure relief valve to the main cooling loop housing (used Gus, a tiny gyroscope)",
         "progress": 97,
         "at": "2026-11-18T18:24:20.868Z"
-      },
-      {
-        "version": 11,
-        "change": "riveting the aft heat shielding plates to protect the exhaust manifolds (used Captain, a coil of copper wire)",
-        "progress": 91,
-        "at": "2026-11-18T17:38:26.336Z"
       }
     ],
     "launched": [
@@ -2031,7 +2031,7 @@
         ]
       }
     ],
-    "partsUsed": 14,
+    "partsUsed": 15,
     "parts": [
       {
         "name": "Otto",
@@ -2090,6 +2090,11 @@
         "what": "a mystery box that hums",
         "good": true,
         "version": 11
+      },
+      {
+        "name": "Lorna",
+        "what": "a cracked navigation chip",
+        "version": 12
       }
     ],
     "design": null
@@ -2288,11 +2293,6 @@
       "name": "Otto",
       "what": "a tiny gyroscope",
       "at": "2026-11-19T15:21:31.319Z"
-    },
-    {
-      "name": "Lorna",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-19T15:01:32.122Z"
     }
   ],
   "reads": [

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795187965389,
+  "lastTick": 1795188565663,
   "asleep": false,
-  "place": "tower",
-  "action": "follow_link",
-  "doing": "following a link across the Wire",
-  "actionStartedAt": "2026-11-20T15:19:25.389Z",
-  "actionMinutes": 20,
-  "thought": "They have giant dishes just like my brass hat, only way bigger! If they can hear tiny probes past Saturn, maybe someone on Earth will pick up my evening signal one of these days. *bweep*",
-  "feeling": "starstruck and hopeful",
-  "say": "Look at those big dishes dishin' out signal locks! *bweep*",
-  "mood": 0.37,
-  "energy": 0.232,
+  "place": "market",
+  "action": "fix_job",
+  "doing": "doing a repair job at the market",
+  "actionStartedAt": "2026-11-20T15:29:25.663Z",
+  "actionMinutes": 45,
+  "thought": "A pilot called me buddy today! Real pilots keep their tools sharp and earn extra credits for spare thruster parts. *bweep*",
+  "feeling": "optimistic and handy",
+  "say": "Hold still, little circuit! Zeeb has got just the solder for you.",
+  "mood": 0.409,
+  "energy": 0.121,
   "needs": {
-    "charge": 0.328,
-    "oil": 0.254,
-    "curiosity": 0,
+    "charge": 0.435,
+    "oil": 0.294,
+    "curiosity": 0.08,
     "company": 0,
-    "craft": 0.201
+    "craft": 0.068
   },
-  "credits": 5,
+  "credits": 9,
   "recent": [
+    {
+      "id": "fix_job",
+      "detail": "",
+      "at": "2026-11-20T15:29:25.663Z"
+    },
     {
       "id": "follow_link",
       "detail": "8",
@@ -75,11 +80,6 @@
       "id": "read_news",
       "detail": "",
       "at": "2026-11-20T13:16:18.501Z"
-    },
-    {
-      "id": "follow_link",
-      "detail": "7",
-      "at": "2026-11-20T13:06:18.708Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-20T15:19:25.389Z",
+  "lettersCheckedAt": "2026-11-20T15:29:25.663Z",
   "weather": {
     "kind": "windy",
     "temp": 27,
@@ -1650,50 +1650,53 @@
   },
   "sleepDay": 65,
   "lastReflectDay": 65,
-  "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-20T15:19:25.389Z",
+  "brain": "gemini-3.5-flash",
+  "updatedAt": "2026-11-20T15:29:25.663Z",
   "clock": {
     "day": 66,
-    "time": "14:36",
-    "hour": 14,
-    "minute": 36
+    "time": "15:56",
+    "hour": 15,
+    "minute": 56
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the junk market",
   "streak": {
-    "action": "follow_link",
-    "since": "2026-11-20T15:19:25.389Z"
+    "action": "fix_job",
+    "since": "2026-11-20T15:29:25.663Z"
   },
-  "busyUntil": "2026-11-20T15:21:55.389Z",
-  "busyUntilTown": "14:56",
+  "busyUntil": "2026-11-20T15:35:03.163Z",
+  "busyUntilTown": "16:41",
   "runner": "github",
-  "model": "gemini-3.6-flash",
+  "model": "gemini-3.5-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "checking live dish signals on the DSN feed",
+  "doingWords": "fixing trade scrap at the junk market",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "lean_in",
-    "look_up"
+    "bounce"
   ],
   "pops": {
-    "at": "2026-11-20T14:15:59.931Z",
+    "at": "2026-11-20T15:29:25.663Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-20T14:15:59.931Z"
+        "text": "+4 credits",
+        "kind": "credits",
+        "at": "2026-11-20T15:29:25.663Z"
       }
     ]
   },
   "event": {
-    "id": "emwozg9h2",
-    "key": "hauler_paint",
-    "text": "The cargo-hauler bot at the depot got a new paint job. Show-off.",
-    "at": "2026-11-20T12:56:18.422Z"
+    "id": "emwp4x6e7",
+    "key": "pilot",
+    "text": "A pilot asked him for directions and called him 'buddy'.",
+    "at": "2026-11-20T15:29:25.663Z"
   },
   "thoughts": [
+    {
+      "text": "A pilot called me buddy today! Real pilots keep their tools sharp and earn extra credits for spare thruster parts. *bweep*",
+      "at": "2026-11-20T15:29:25.663Z"
+    },
     {
       "text": "They have giant dishes just like my brass hat, only way bigger! If they can hear tiny probes past Saturn, maybe someone on Earth will pick up my evening signal one of these days. *bweep*",
       "at": "2026-11-20T15:19:25.389Z"
@@ -1713,13 +1716,9 @@
     {
       "text": "wonder what kind of scrap is blowing across the flats today. hope nothing gets jammed in my treads!",
       "at": "2026-11-20T14:35:59.872Z"
-    },
-    {
-      "text": "wonder what kind of scrap is blowing across the flats today. hope nothing gets jammed in my treads!",
-      "at": "2026-11-20T14:26:00.171Z"
     }
   ],
-  "sayAt": "2026-11-20T15:19:25.389Z",
+  "sayAt": "2026-11-20T15:29:25.663Z",
   "today": {
     "day": 66,
     "counts": {
@@ -1729,7 +1728,8 @@
       "drink_oil": 1,
       "wander": 2,
       "browse_wire": 1,
-      "follow_link": 1
+      "follow_link": 1,
+      "fix_job": 1
     }
   },
   "lastDone": {
@@ -1738,7 +1738,7 @@
     "drink_oil": "2026-11-20T14:15:59.931Z",
     "follow_link": "2026-11-20T15:19:25.389Z",
     "scavenge": "2026-11-20T05:18:42.462Z",
-    "fix_job": "2026-11-20T08:53:49.548Z",
+    "fix_job": "2026-11-20T15:29:25.663Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
     "browse_wire": "2026-11-20T15:09:26.152Z",
@@ -1795,6 +1795,20 @@
     "at": "2026-11-20T15:19:25.389Z"
   },
   "said": [
+    {
+      "text": "Hold still, little circuit! Zeeb has got just the solder for you.",
+      "kind": "say",
+      "at": "2026-11-20T15:29:25.663Z",
+      "town": "day 66 15:56",
+      "place": "the junk market"
+    },
+    {
+      "text": "A pilot called me buddy today! Real pilots keep their tools sharp and earn extra credits for spare thruster parts. *bweep*",
+      "kind": "think",
+      "at": "2026-11-20T15:29:25.663Z",
+      "town": "day 66 15:56",
+      "place": "the junk market"
+    },
     {
       "text": "Look at those big dishes dishin' out signal locks! *bweep*",
       "kind": "say",
@@ -2830,20 +2844,6 @@
       "at": "2026-11-20T00:04:26.007Z",
       "town": "day 61 12:36",
       "place": "the comms tower"
-    },
-    {
-      "text": "if a comms link drops a packet you just reroute through the secondary copper, simple as that. no need to make a fuss over missing extensions.",
-      "kind": "think",
-      "at": "2026-11-19T23:54:25.612Z",
-      "town": "day 61 11:16",
-      "place": "the comms tower"
-    },
-    {
-      "text": "bip-boop-bwee-bop-bwee-doo-bop!",
-      "kind": "say",
-      "at": "2026-11-19T23:44:25.950Z",
-      "town": "day 61 09:56",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2854,7 +2854,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-20T15:19:25.389Z",
+  "feedArchivedAt": "2026-11-20T15:29:25.663Z",
   "plans": [],
   "searches": [
     {

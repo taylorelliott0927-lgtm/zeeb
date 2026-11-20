@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 18",
-    "progress": 65,
-    "version": 8,
-    "lastChange": "welding a second titanium reinforcement rib onto the Little Dart's ventral seam using Mabel the copper wire for joint stability (used Sprocket, a scorched heat tile)",
+    "progress": 75,
+    "version": 9,
+    "lastChange": "sealing the ventral reinforcement joints with high-temp sealant paste (used Rusty Jr, a cracked navigation chip)",
     "log": [
+      {
+        "version": 9,
+        "change": "sealing the ventral reinforcement joints with high-temp sealant paste (used Rusty Jr, a cracked navigation chip)",
+        "progress": 75,
+        "at": "2026-11-20T08:33:49.523Z"
+      },
       {
         "version": 8,
         "change": "welding a second titanium reinforcement rib onto the Little Dart's ventral seam using Mabel the copper wire for joint stability (used Sprocket, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "Reinforcing the hull seams using Dibs the strip of hull plating to ensure the structural integrity matches the new navigation precision. (used Tok, a cracked navigation chip)",
         "progress": 75,
         "at": "2026-11-19T02:08:38.263Z"
-      },
-      {
-        "version": 8,
-        "change": "finishing the copper coil shielding around Tok the gyroscope and sealing it with the remaining industrial sealant to ensure zero interference for long-range navigation. (used Tilly, a coil of copper wire)",
-        "progress": 67,
-        "at": "2026-11-19T00:44:42.914Z"
       }
     ],
     "launched": [
@@ -2106,7 +2106,7 @@
         ]
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Mabel",
@@ -2147,6 +2147,11 @@
         "name": "Sprocket",
         "what": "a scorched heat tile",
         "version": 8
+      },
+      {
+        "name": "Rusty Jr",
+        "what": "a cracked navigation chip",
+        "version": 9
       }
     ],
     "design": null
@@ -2352,11 +2357,6 @@
       "name": "Tilly",
       "what": "a tiny gyroscope",
       "at": "2026-11-20T05:28:42.667Z"
-    },
-    {
-      "name": "Rusty Jr",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-20T04:38:43.120Z"
     }
   ],
   "reads": [

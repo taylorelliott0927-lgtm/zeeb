@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 19",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 7,
+    "version": 1,
+    "lastChange": "welding custom copper brackets onto the Little Dart's dorsal spine using reinforced industrial rods (used Mabel, half a thruster nozzle)",
     "log": [
+      {
+        "version": 1,
+        "change": "welding custom copper brackets onto the Little Dart's dorsal spine using reinforced industrial rods (used Mabel, half a thruster nozzle)",
+        "progress": 7,
+        "at": "2026-11-20T12:26:18.550Z"
+      },
       {
         "version": 12,
         "change": "installing a scorched heat tile onto the Little Dart's nose assembly using high-temp adhesive (used Tok, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "I am finishing the integration of Pim the gyroscope into the navigation manifold, ensuring the copper lining is perfectly seated to dampen any electrical interference from the thrusters. (used Captain, a cracked navigation chip)",
         "progress": 100,
         "at": "2026-11-19T05:56:11.596Z"
-      },
-      {
-        "version": 12,
-        "change": "I am carefully installing the Belleville washers I forged into the main strut housing of the Little Dart, adjusting the torque on Otto and Tok to ensure even compression across the assembly. (used Mabel, a sensor eye with one crack)",
-        "progress": 97,
-        "at": "2026-11-19T05:46:11.868Z"
       }
     ],
     "launched": [
@@ -2488,8 +2488,14 @@
         }
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Mabel",
+        "what": "half a thruster nozzle",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -2687,11 +2693,6 @@
     {
       "name": "Dibs",
       "what": "a mystery box that hums",
-      "at": "2026-11-20T07:16:39.550Z"
-    },
-    {
-      "name": "Mabel",
-      "what": "half a thruster nozzle",
       "at": "2026-11-20T07:16:39.550Z"
     }
   ],

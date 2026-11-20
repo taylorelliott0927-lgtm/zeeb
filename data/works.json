@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 18",
-    "progress": 20,
-    "version": 2,
-    "lastChange": "welding custom side-flap reinforcements and thermal shielding plates onto the Little Dart's lower fuselage using Mabel and Rusty Jr (used Rusty Jr, a mystery box that hums)",
+    "progress": 26,
+    "version": 3,
+    "lastChange": "welding high-temp silica insulation panels onto the Little Dart's upper spine (used Mabel, a dented fuel cell)",
     "log": [
+      {
+        "version": 3,
+        "change": "welding high-temp silica insulation panels onto the Little Dart's upper spine (used Mabel, a dented fuel cell)",
+        "progress": 26,
+        "at": "2026-11-20T03:24:07.184Z"
+      },
       {
         "version": 2,
         "change": "welding custom side-flap reinforcements and thermal shielding plates onto the Little Dart's lower fuselage using Mabel and Rusty Jr (used Rusty Jr, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "welding the miniature pressure relief valve into the Little Dart's secondary cooling loop using Mabel (a coil of copper wire) (used Lorna, a cockpit switch that still clicks)",
         "progress": 23,
         "at": "2026-11-18T21:29:32.487Z"
-      },
-      {
-        "version": 2,
-        "change": "welding the titanium nosecone cone cap using Sprocket (a perfectly good bolt) to secure the alignment flange (used Otto, a bent stabiliser fin)",
-        "progress": 16,
-        "at": "2026-11-18T20:01:23.777Z"
       }
     ],
     "launched": [
@@ -2106,7 +2106,7 @@
         ]
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Mabel",
@@ -2117,6 +2117,11 @@
         "name": "Rusty Jr",
         "what": "a mystery box that hums",
         "version": 2
+      },
+      {
+        "name": "Mabel",
+        "what": "a dented fuel cell",
+        "version": 3
       }
     ],
     "design": null
@@ -2295,11 +2300,6 @@
       "name": "Tilly",
       "what": "a scorched heat tile",
       "at": "2026-11-19T21:59:07.451Z"
-    },
-    {
-      "name": "Mabel",
-      "what": "a dented fuel cell",
-      "at": "2026-11-19T16:22:40.120Z"
     }
   ],
   "reads": [

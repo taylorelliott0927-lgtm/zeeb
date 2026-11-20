@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 18",
-    "progress": 32,
-    "version": 4,
-    "lastChange": "welding a custom springy hull washer onto the Little Dart's secondary exhaust flange (using Tok, a strip of hull plating) (used Tilly, a scorched heat tile)",
+    "progress": 42,
+    "version": 5,
+    "lastChange": "welding a lightweight titanium-alloy bracket onto the Little Dart's tail assembly (using Tok, a scorched heat tile) (used Wren, a strip of hull plating)",
     "log": [
+      {
+        "version": 5,
+        "change": "welding a lightweight titanium-alloy bracket onto the Little Dart's tail assembly (using Tok, a scorched heat tile) (used Wren, a strip of hull plating)",
+        "progress": 42,
+        "at": "2026-11-20T06:23:33.225Z"
+      },
       {
         "version": 4,
         "change": "welding a custom springy hull washer onto the Little Dart's secondary exhaust flange (using Tok, a strip of hull plating) (used Tilly, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "mounting Mabel the sensor eye to the secondary cooling loop to monitor for pressure spikes in the fuel line. (used Dibs, half a thruster nozzle)",
         "progress": 40,
         "at": "2026-11-18T22:43:43.709Z"
-      },
-      {
-        "version": 4,
-        "change": "welding the primary thruster frame mounts using Dibs (a strip of hull plating) and Otto (a cockpit switch that still clicks) to ensure structural rigidity during high-g maneuvers. (used Sprocket, a perfectly good bolt)",
-        "progress": 32,
-        "at": "2026-11-18T22:33:44.433Z"
       }
     ],
     "launched": [
@@ -2106,7 +2106,7 @@
         ]
       }
     ],
-    "partsUsed": 4,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Mabel",
@@ -2127,6 +2127,11 @@
         "name": "Tilly",
         "what": "a scorched heat tile",
         "version": 4
+      },
+      {
+        "name": "Wren",
+        "what": "a strip of hull plating",
+        "version": 5
       }
     ],
     "design": null
@@ -2336,11 +2341,6 @@
       "name": "Mabel",
       "what": "a coil of copper wire",
       "at": "2026-11-20T04:00:07.266Z"
-    },
-    {
-      "name": "Wren",
-      "what": "a strip of hull plating",
-      "at": "2026-11-19T21:59:07.451Z"
     }
   ],
   "reads": [

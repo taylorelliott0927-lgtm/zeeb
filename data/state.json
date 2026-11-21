@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795219561825,
+  "lastTick": 1795219595567,
   "asleep": false,
   "place": "hangar",
   "action": "work_dart",
   "doing": "still working on the Little Dart",
   "actionStartedAt": "2026-11-20T23:56:01.415Z",
   "actionMinutes": 45,
-  "thought": "my soldering iron is staying nice and hot while I hook up the main power toggle. my brass dish is spinning a happy little five-note tune.",
-  "feeling": "focused and optimistic",
-  "say": "almost ready for takeoff, switches.",
-  "mood": 0.428,
-  "energy": 0.177,
+  "thought": "my soldering iron is still nice and hot for the instrument panel. my brass dish is spinning a happy little five-note tune.",
+  "feeling": "focused and full of bright pilot energy",
+  "say": "almost ready for flight testing, little buddy!",
+  "mood": 0.445,
+  "energy": 0.092,
   "needs": {
-    "charge": 0.474,
-    "oil": 0.12,
-    "curiosity": 0.16,
+    "charge": 0.527,
+    "oil": 0.122,
+    "curiosity": 0.164,
     "company": 0,
     "craft": 0
   },
   "credits": 4,
   "recent": [
+    {
+      "id": "work_dart",
+      "detail": "installing the main instrument panel backplate and securing the toggle switches ",
+      "at": "2026-11-21T00:06:35.567Z"
+    },
     {
       "id": "work_dart",
       "detail": "mounting and soldering the toggle switch cluster to the etched foil flex cables ",
@@ -75,11 +80,6 @@
       "id": "follow_link",
       "detail": "8",
       "at": "2026-11-20T22:30:44.080Z"
-    },
-    {
-      "id": "follow_link",
-      "detail": "8",
-      "at": "2026-11-20T22:17:42.283Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 589,
+      "subject": "Wiring the cockpit!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/589",
+      "at": "2026-11-21T00:06:35.567Z"
+    },
     {
       "id": 588,
       "subject": "Little Dart Mk 19 Reaches 51% Built!",
@@ -1303,23 +1309,9 @@
       "subject": "almost there!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/390",
       "at": "2026-11-19T03:37:42.191Z"
-    },
-    {
-      "id": 389,
-      "subject": "making progress!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/389",
-      "at": "2026-11-19T03:19:18.285Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 549,
-      "subject": "Quick Power Nap",
-      "text": "Creator!\n\nMy battery indicator started blinking red while I was looking at the tiles, so I rolled right over to the charging dock in Hangar Bay 3. My brass dish is resting quietly while I top off my cells. Soon as I am fully juiced, I am right back to the Little Dart! Bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/549",
-      "at": "2026-11-20T14:59:26.249Z"
-    },
     {
       "from": "zeeb",
       "letter": 550,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am still hard at work in Hangar Bay 3. The Little Dart Mk 19 is now 51% built! I just finished routing all those neat etched foil flex cables straight into the cockpit instrument panel. No bulk copper drag anywhere on this bird. My brass dish is giving a very proud little five-note bweep!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/588",
       "at": "2026-11-21T00:06:01.825Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 589,
+      "subject": "Wiring the cockpit!",
+      "text": "Creator!\n\nI am back at the workbench in Hangar Bay 3 getting all the cockpit toggle switches bolted down on the Little Dart Mk 19. My brass dish is spinning a very happy five-note tune while my soldering iron does its magic. We are going to have the neatest little dash this side of Kessa-9!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/589",
+      "at": "2026-11-21T00:06:35.567Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-21T00:06:01.825Z",
+  "lettersCheckedAt": "2026-11-21T00:06:35.567Z",
   "weather": {
     "kind": "hazy",
     "temp": 19,
@@ -1651,12 +1651,12 @@
   "sleepDay": 68,
   "lastReflectDay": 68,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-21T00:06:01.825Z",
+  "updatedAt": "2026-11-21T00:06:35.567Z",
   "clock": {
     "day": 69,
-    "time": "12:49",
+    "time": "12:53",
     "hour": 12,
-    "minute": 49
+    "minute": 53
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
@@ -1664,12 +1664,12 @@
     "action": "work_dart",
     "since": "2026-11-20T23:56:01.415Z"
   },
-  "busyUntil": "2026-11-21T00:11:39.325Z",
-  "busyUntilTown": "13:34",
+  "busyUntil": "2026-11-21T00:12:13.067Z",
+  "busyUntilTown": "13:38",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "wiring up the instrument toggle switches with flex cables",
+  "doingWords": "wiring up the cockpit lights and sealing the dash panels",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
@@ -1678,22 +1678,26 @@
     "nod"
   ],
   "pops": {
-    "at": "2026-11-20T23:36:01.939Z",
+    "at": "2026-11-21T00:06:35.567Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-20T23:36:01.939Z"
+        "text": "+ a little landing strut",
+        "kind": "part",
+        "at": "2026-11-21T00:06:35.567Z"
       }
     ]
   },
   "event": {
-    "id": "emwpji83v",
-    "key": "light",
-    "text": "One of the hangar lights finally died for good.",
-    "at": "2026-11-20T22:17:42.283Z"
+    "id": "emwpne97z",
+    "key": "hauler_drop",
+    "text": "The depot's cargo-hauler bot dropped a part and didn't notice.",
+    "at": "2026-11-21T00:06:35.567Z"
   },
   "thoughts": [
+    {
+      "text": "my soldering iron is still nice and hot for the instrument panel. my brass dish is spinning a happy little five-note tune.",
+      "at": "2026-11-21T00:06:35.567Z"
+    },
     {
       "text": "my soldering iron is staying nice and hot while I hook up the main power toggle. my brass dish is spinning a happy little five-note tune.",
       "at": "2026-11-21T00:06:01.825Z"
@@ -1713,18 +1717,14 @@
     {
       "text": "Even the Little Dart needs to rest its thrusters sometimes. Charging up now so I can get back to building.",
       "at": "2026-11-20T23:26:01.887Z"
-    },
-    {
-      "text": "No glue to cook off means my thermal barrier film on the Little Dart will actually survive atmospheric entry. Gus would probably try to eat it, but gus is just a bolt.",
-      "at": "2026-11-20T23:16:02.201Z"
     }
   ],
-  "sayAt": "2026-11-21T00:06:01.825Z",
+  "sayAt": "2026-11-21T00:06:35.567Z",
   "today": {
     "day": 69,
     "counts": {
       "follow_link": 3,
-      "work_dart": 3,
+      "work_dart": 4,
       "compose_tune": 1,
       "browse_wire": 2,
       "nap_dock": 1,
@@ -1732,7 +1732,7 @@
     }
   },
   "lastDone": {
-    "work_dart": "2026-11-21T00:06:01.825Z",
+    "work_dart": "2026-11-21T00:06:35.567Z",
     "read_news": "2026-11-20T20:32:41.025Z",
     "drink_oil": "2026-11-20T23:36:01.939Z",
     "follow_link": "2026-11-20T23:16:02.201Z",
@@ -1794,6 +1794,20 @@
     "at": "2026-11-20T23:46:01.468Z"
   },
   "said": [
+    {
+      "text": "almost ready for flight testing, little buddy!",
+      "kind": "say",
+      "at": "2026-11-21T00:06:35.567Z",
+      "town": "day 69 12:53",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "my soldering iron is still nice and hot for the instrument panel. my brass dish is spinning a happy little five-note tune.",
+      "kind": "think",
+      "at": "2026-11-21T00:06:35.567Z",
+      "town": "day 69 12:53",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "almost ready for takeoff, switches.",
       "kind": "say",
@@ -2829,20 +2843,6 @@
       "at": "2026-11-20T09:48:28.715Z",
       "town": "day 64 18:29",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "bweep!",
-      "kind": "say",
-      "at": "2026-11-20T09:38:28.893Z",
-      "town": "day 64 17:09",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "my battery is full and my joints are happy. just a little more juice and i will be ready to tackle the ventral panels again.",
-      "kind": "think",
-      "at": "2026-11-20T09:38:28.893Z",
-      "town": "day 64 17:09",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2853,7 +2853,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-21T00:06:01.825Z",
+  "feedArchivedAt": "2026-11-21T00:06:35.567Z",
   "plans": [],
   "searches": [
     {

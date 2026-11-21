@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795276886269,
+  "lastTick": 1795277486187,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-21T16:01:26.269Z",
-  "actionMinutes": 20,
-  "thought": "my charge is bugging me most right now.",
-  "feeling": "pretty good actually",
-  "say": "",
-  "mood": 0.345,
-  "energy": -0.136,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-21T16:11:26.187Z",
+  "actionMinutes": 45,
+  "thought": "my charge is bugging me most right now, so time to juice up in the dock. bweep.",
+  "feeling": "tired and a bit low on juice",
+  "say": "back in a bit, battery needs a sip.",
+  "mood": 0.296,
+  "energy": 0.201,
   "needs": {
-    "charge": 0.609,
-    "oil": 0,
-    "curiosity": 0.402,
-    "company": 0.053,
-    "craft": 0.067
+    "charge": 0.206,
+    "oil": 0.04,
+    "curiosity": 0.482,
+    "company": 0,
+    "craft": 0.134
   },
   "credits": 3,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-21T16:11:26.187Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "catalytic converter recycling rates kessa-9",
       "at": "2026-11-21T14:28:55.685Z"
-    },
-    {
-      "id": "compose_tune",
-      "detail": "Little Dart Five-Note Dawn Arc XII",
-      "at": "2026-11-21T14:18:55.453Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 666,
+      "subject": "Little Dart Mk 20 update and quick recharge",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/666",
+      "at": "2026-11-21T16:11:26.187Z"
+    },
     {
       "id": 665,
       "subject": "Cockpit Wiring",
@@ -1303,23 +1309,9 @@
       "subject": "Nose cone shielding in progress",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/467",
       "at": "2026-11-19T22:40:39.914Z"
-    },
-    {
-      "id": 466,
-      "subject": "Tile work on the Little Dart",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/466",
-      "at": "2026-11-19T22:29:08.272Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 626,
-      "subject": "Scavenging at the market",
-      "text": "Creator!\n\nI am down at the junk market sniffing around for some proper copper wire to finish the Little Dart's instrument cluster. My brass dish is spinning a nice five-note tune because I just found a bolt named Barnaby hiding in an old air filter! \n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/626",
-      "at": "2026-11-21T08:40:36.592Z"
-    },
     {
       "from": "zeeb",
       "letter": 627,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am down in Hangar Bay 3 running copper wire bundles straight into the Little Dart's cockpit. My brass dish is spinning in happy little circles while I solder the instrument cluster connections. Every switch and dial is getting wired up proper!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/665",
       "at": "2026-11-21T15:51:25.921Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 666,
+      "subject": "Little Dart Mk 20 update and quick recharge",
+      "text": "Creator!\n\nI am taking a quick power nap down in Hangar Bay 3 because my battery indicator dropped into the yellow zone. My brass dish is resting quietly while I juice up. Meanwhile, the Little Dart Mk 20 just hit seventy-five percent built! All those copper wire bundles in the cockpit look proper professional. Back to building as soon as I am full up!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/666",
+      "at": "2026-11-21T16:11:26.187Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,41 +1639,44 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-21T16:01:26.269Z",
+  "lettersCheckedAt": "2026-11-21T16:11:26.187Z",
   "weather": {
     "kind": "clear",
     "temp": 25,
-    "wind": 4,
+    "wind": 5,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-21T15:41:26.019Z"
+    "at": "2026-11-21T16:11:26.365Z"
   },
   "sleepDay": 73,
   "lastReflectDay": 73,
-  "brain": "rules",
-  "updatedAt": "2026-11-21T16:01:26.269Z",
+  "brain": "gemini-3.5-flash-lite",
+  "updatedAt": "2026-11-21T16:11:26.187Z",
   "clock": {
     "day": 74,
-    "time": "20:12",
-    "hour": 20,
-    "minute": 12
+    "time": "21:32",
+    "hour": 21,
+    "minute": 32
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-21T16:01:26.269Z"
+    "action": "nap_dock",
+    "since": "2026-11-21T16:11:26.187Z"
   },
-  "busyUntil": "2026-11-21T16:03:56.269Z",
-  "busyUntilTown": "20:32",
+  "busyUntil": "2026-11-21T16:17:03.687Z",
+  "busyUntilTown": "22:17",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "",
-  "newsForCreator": "the Little Dart Mk 20 just reached 75% built (version 10). Last change: routing copper wire bundles into the cockpit instrument panel (used Rusty Jr, a coil of copper wire).",
-  "newsPendingTicks": 1,
+  "doingWords": "plugged into the charging dock, dish resting quietly while juice flows",
+  "newsForCreator": "",
+  "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [],
+  "body": [
+    "droop",
+    "nod"
+  ],
   "pops": {
     "at": "2026-11-21T16:01:26.269Z",
     "items": [
@@ -1691,6 +1694,10 @@
     "at": "2026-11-21T15:41:25.807Z"
   },
   "thoughts": [
+    {
+      "text": "my charge is bugging me most right now, so time to juice up in the dock. bweep.",
+      "at": "2026-11-21T16:11:26.187Z"
+    },
     {
       "text": "my charge is bugging me most right now.",
       "at": "2026-11-21T16:01:26.269Z"
@@ -1710,13 +1717,9 @@
     {
       "text": "my servos feel smooth after the dock nap and the nose cone is ready for some real thermal shielding. *bweep*.",
       "at": "2026-11-21T15:31:12.302Z"
-    },
-    {
-      "text": "batteries are getting heavy and my servos are buzzing. twenty minutes in the dock will fix me right up.",
-      "at": "2026-11-21T15:21:12.313Z"
     }
   ],
-  "sayAt": "2026-11-21T16:01:26.269Z",
+  "sayAt": "2026-11-21T16:11:26.187Z",
   "today": {
     "day": 74,
     "counts": {
@@ -1724,7 +1727,7 @@
       "follow_link": 2,
       "work_dart": 5,
       "compose_tune": 1,
-      "nap_dock": 1,
+      "nap_dock": 2,
       "drink_oil": 1
     }
   },
@@ -1750,7 +1753,7 @@
     "chat_patrons": "2026-11-18T15:42:51.774Z",
     "busk": "2026-11-21T01:27:19.503Z",
     "cantina_band": "2026-11-21T01:37:19.419Z",
-    "nap_dock": "2026-11-21T15:21:12.313Z",
+    "nap_dock": "2026-11-21T16:11:26.187Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1791,6 +1794,20 @@
     "at": "2026-11-21T15:11:12.331Z"
   },
   "said": [
+    {
+      "text": "back in a bit, battery needs a sip.",
+      "kind": "say",
+      "at": "2026-11-21T16:11:26.187Z",
+      "town": "day 74 21:32",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "my charge is bugging me most right now, so time to juice up in the dock. bweep.",
+      "kind": "think",
+      "at": "2026-11-21T16:11:26.187Z",
+      "town": "day 74 21:32",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "my charge is bugging me most right now.",
       "kind": "think",
@@ -2826,20 +2843,6 @@
       "at": "2026-11-21T02:07:19.946Z",
       "town": "day 70 04:59",
       "place": "the fuel depot"
-    },
-    {
-      "text": "almost ready for the nose cone, gus!",
-      "kind": "say",
-      "at": "2026-11-21T01:57:19.539Z",
-      "town": "day 70 03:39",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "my torch is spitting nice clean sparks and the frame is looking sharper by the minute. the little dart is really taking shape now.",
-      "kind": "think",
-      "at": "2026-11-21T01:57:19.539Z",
-      "town": "day 70 03:39",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2850,7 +2853,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-21T16:01:26.269Z",
+  "feedArchivedAt": "2026-11-21T16:11:26.187Z",
   "plans": [],
   "searches": [
     {

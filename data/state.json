@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795249073433,
+  "lastTick": 1795249674055,
   "asleep": false,
   "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-21T08:17:53.433Z",
-  "actionMinutes": 45,
-  "thought": "if I tilt these scrap plates just right, the outpost radar won't even see me take off. stealthy little dart, coming through!",
-  "feeling": "excited and a bit tired",
-  "say": "tilt it ten degrees... perfect. *bweep*",
-  "mood": 0.485,
-  "energy": -0.107,
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-21T08:27:54.055Z",
+  "actionMinutes": 40,
+  "thought": "my charge is bugging me most right now.",
+  "feeling": "pretty good actually",
+  "say": "",
+  "mood": 0.427,
+  "energy": 0.076,
   "needs": {
-    "charge": 0.616,
-    "oil": 0.278,
-    "curiosity": 0.08,
-    "company": 0,
-    "craft": 0.031
+    "charge": 0.213,
+    "oil": 0.318,
+    "curiosity": 0.16,
+    "company": 0.053,
+    "craft": 0.098
   },
   "credits": 1,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-21T08:27:54.055Z"
+    },
     {
       "id": "work_dart",
       "detail": "angling scrap hull plates around the nose and canopy to reduce radar cross secti",
@@ -75,11 +80,6 @@
       "id": "fix_job",
       "detail": "",
       "at": "2026-11-21T06:09:05.085Z"
-    },
-    {
-      "id": "scavenge",
-      "detail": "",
-      "at": "2026-11-21T05:59:04.600Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-21T08:17:53.433Z",
+  "lettersCheckedAt": "2026-11-21T08:27:54.055Z",
   "weather": {
     "kind": "clear",
     "temp": 19,
@@ -1650,33 +1650,30 @@
   },
   "sleepDay": 71,
   "lastReflectDay": 71,
-  "brain": "gemini-3.5-flash",
-  "updatedAt": "2026-11-21T08:17:53.433Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-21T08:27:54.055Z",
   "clock": {
     "day": 72,
-    "time": "06:24",
-    "hour": 6,
-    "minute": 24
+    "time": "07:44",
+    "hour": 7,
+    "minute": 44
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-21T08:17:53.433Z"
+    "action": "nap_dock",
+    "since": "2026-11-21T08:27:54.055Z"
   },
-  "busyUntil": "2026-11-21T08:23:30.933Z",
-  "busyUntilTown": "07:09",
+  "busyUntil": "2026-11-21T08:32:54.055Z",
+  "busyUntilTown": "08:24",
   "runner": "github",
   "model": "gemini-3.5-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "angling scrap plates on the Little Dart's skin",
+  "doingWords": "",
   "newsForCreator": "You FINISHED the Little Dart Mk 19! It hovered off the hangar floor.",
-  "newsPendingTicks": 0,
+  "newsPendingTicks": 1,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "spin",
-    "lean_in"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-21T07:08:28.102Z",
     "items": [
@@ -1694,6 +1691,10 @@
     "at": "2026-11-21T03:47:58.135Z"
   },
   "thoughts": [
+    {
+      "text": "my charge is bugging me most right now.",
+      "at": "2026-11-21T08:27:54.055Z"
+    },
     {
       "text": "if I tilt these scrap plates just right, the outpost radar won't even see me take off. stealthy little dart, coming through!",
       "at": "2026-11-21T08:17:53.433Z"
@@ -1713,19 +1714,16 @@
     {
       "text": "kessa-9 has plenty of dust, so maybe the little dart will catch some wild hues on ascent. *bweep*",
       "at": "2026-11-21T07:37:54.391Z"
-    },
-    {
-      "text": "Got to keep the gears spinning smooth if I want to finish the cockpit before sunrise. A thirsty bot is a slow bot.",
-      "at": "2026-11-21T07:08:28.102Z"
     }
   ],
-  "sayAt": "2026-11-21T08:17:53.433Z",
+  "sayAt": "2026-11-21T08:27:54.055Z",
   "today": {
     "day": 72,
     "counts": {
       "browse_wire": 2,
       "follow_link": 2,
-      "work_dart": 1
+      "work_dart": 1,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1750,7 +1748,7 @@
     "chat_patrons": "2026-11-18T15:42:51.774Z",
     "busk": "2026-11-21T01:27:19.503Z",
     "cantina_band": "2026-11-21T01:37:19.419Z",
-    "nap_dock": "2026-11-21T06:28:27.765Z",
+    "nap_dock": "2026-11-21T08:27:54.055Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1791,6 +1789,13 @@
     "at": "2026-11-21T08:07:53.384Z"
   },
   "said": [
+    {
+      "text": "my charge is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-21T08:27:54.055Z",
+      "town": "day 72 07:44",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "tilt it ten degrees... perfect. *bweep*",
       "kind": "say",
@@ -2833,13 +2838,6 @@
       "at": "2026-11-20T18:29:56.160Z",
       "town": "day 67 16:00",
       "place": "the Dented Moon cantina"
-    },
-    {
-      "text": "fill her up again when she's empty, pump-bot!",
-      "kind": "say",
-      "at": "2026-11-20T18:19:55.674Z",
-      "town": "day 67 14:40",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2850,7 +2848,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-21T08:17:53.433Z",
+  "feedArchivedAt": "2026-11-21T08:27:54.055Z",
   "plans": [],
   "searches": [
     {

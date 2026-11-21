@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 21",
-    "progress": 18,
-    "version": 2,
-    "lastChange": "sealing the high-temp silica ceramic aerogel panels along the lower frame of the Little Dart using high-grade arc welds (used Dibs, a tiny gyroscope)",
+    "progress": 26,
+    "version": 3,
+    "lastChange": "welding high-temp silica ceramic aerogel tiles along the upper spine of the Little Dart using Fen (a strip of hull plating) (used Fen, a strip of hull plating)",
     "log": [
+      {
+        "version": 3,
+        "change": "welding high-temp silica ceramic aerogel tiles along the upper spine of the Little Dart using Fen (a strip of hull plating) (used Fen, a strip of hull plating)",
+        "progress": 26,
+        "at": "2026-11-21T19:02:21.192Z"
+      },
       {
         "version": 2,
         "change": "sealing the high-temp silica ceramic aerogel panels along the lower frame of the Little Dart using high-grade arc welds (used Dibs, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "installing a scorched heat tile onto the Little Dart's nose assembly using high-temp adhesive (used Tok, a scorched heat tile)",
         "progress": 100,
         "at": "2026-11-20T12:10:26.289Z"
-      },
-      {
-        "version": 11,
-        "change": "installing custom thermal insulation panels and copper grounding lines around the Little Dart's aft thruster mount (used Tok, a strip of hull plating)",
-        "progress": 91,
-        "at": "2026-11-20T11:06:07.371Z"
       }
     ],
     "launched": [
@@ -2612,7 +2612,7 @@
         ]
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Nim",
@@ -2623,6 +2623,11 @@
         "name": "Dibs",
         "what": "a tiny gyroscope",
         "version": 2
+      },
+      {
+        "name": "Fen",
+        "what": "a strip of hull plating",
+        "version": 3
       }
     ],
     "design": null
@@ -2859,9 +2864,14 @@
   ],
   "stash": [
     {
-      "name": "Fen",
+      "name": "Bix",
       "what": "a strip of hull plating",
-      "at": "2026-11-21T12:04:40.340Z"
+      "at": "2026-11-21T19:02:21.192Z"
+    },
+    {
+      "name": "Sprocket",
+      "what": "half a thruster nozzle",
+      "at": "2026-11-21T19:02:21.192Z"
     }
   ],
   "reads": [

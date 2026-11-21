@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795289556476,
+  "lastTick": 1795290156762,
   "asleep": false,
   "place": "tower",
   "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
+  "doing": "still browsing the Wire at the comms tower",
   "actionStartedAt": "2026-11-21T19:32:36.476Z",
   "actionMinutes": 45,
-  "thought": "makes me glad my little dart is built for soaring clean through the upper blue instead of dropping things. though i better double-check my hull plating against heavy atmospheric shockwaves just in case.",
-  "feeling": "a bit chilled in my chassis",
+  "thought": "wonder how the Little Dart's heat shields will handle a spread that wide. might need extra venting on the port nacelle.",
+  "feeling": "curious and slightly sandy",
   "say": "",
-  "mood": 0.319,
-  "energy": 0.082,
+  "mood": 0.33,
+  "energy": -0.009,
   "needs": {
-    "charge": 0.339,
-    "oil": 0.523,
-    "curiosity": 0.226,
+    "charge": 0.386,
+    "oil": 0.563,
+    "curiosity": 0,
     "company": 0,
-    "craft": 0.067
+    "craft": 0.134
   },
   "credits": 2,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "high-altitude thermal dissipation rates in desert atmospheres",
+      "at": "2026-11-21T19:42:36.762Z"
+    },
     {
       "id": "browse_wire",
       "detail": "how radar cross sections change when the hull gets coated in fine desert dust",
@@ -75,11 +80,6 @@
       "id": "follow_link",
       "detail": "3",
       "at": "2026-11-21T18:01:54.181Z"
-    },
-    {
-      "id": "follow_link",
-      "detail": "2",
-      "at": "2026-11-21T17:51:54.112Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 687,
+      "subject": "Thermal data on the Wire!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/687",
+      "at": "2026-11-21T19:42:36.762Z"
+    },
     {
       "id": 686,
       "subject": "Late night wire search",
@@ -1303,23 +1309,9 @@
       "subject": "The Little Dart Mk 17 is airborne!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/488",
       "at": "2026-11-20T02:34:07.517Z"
-    },
-    {
-      "id": 487,
-      "subject": "Booster Shroud Sealed",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/487",
-      "at": "2026-11-20T02:22:31.221Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 647,
-      "subject": "Wiring the Little Dart!",
-      "text": "Creator!\n\nI am fully charged and back at work in Hangar Bay 3. My brass dish is tapping a happy five-note tune because those copper wire bundles are going straight into the instrument cluster with Otto. Every little connection brings the Little Dart one step closer to the stars!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/647",
-      "at": "2026-11-21T12:35:05.810Z"
-    },
     {
       "from": "zeeb",
       "letter": 648,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am up past midnight at the comms tower searching the Wire for how desert dust affects radar cross sections. My brass dish is twitching to every little data packet sliding down the line. The Little Dart needs a clean signal bounce even when it's covered in Kessa-9 sand!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/686",
       "at": "2026-11-21T19:32:36.476Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 687,
+      "subject": "Thermal data on the Wire!",
+      "text": "Creator!\n\nI am still up at the comms tower searching the Wire for how high-altitude thermal dissipation works in desert atmospheres. My brass dish is spinning to every data packet sliding down the line. The Little Dart needs to keep its nose cool when it punches through the blue!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/687",
+      "at": "2026-11-21T19:42:36.762Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-21T19:32:36.476Z",
+  "lettersCheckedAt": "2026-11-21T19:42:36.762Z",
   "weather": {
     "kind": "clear",
     "temp": 20,
@@ -1651,12 +1651,12 @@
   "sleepDay": 74,
   "lastReflectDay": 74,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-21T19:32:36.476Z",
+  "updatedAt": "2026-11-21T19:42:36.762Z",
   "clock": {
     "day": 76,
-    "time": "00:22",
-    "hour": 0,
-    "minute": 22
+    "time": "01:42",
+    "hour": 1,
+    "minute": 42
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
@@ -1664,16 +1664,17 @@
     "action": "browse_wire",
     "since": "2026-11-21T19:32:36.476Z"
   },
-  "busyUntil": "2026-11-21T19:38:13.976Z",
-  "busyUntilTown": "01:07",
+  "busyUntil": "2026-11-21T19:48:14.262Z",
+  "busyUntilTown": "02:27",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "tapping the comms terminal keys while my brass dish twitches at the static",
+  "doingWords": "scanning data packets for thermal dissipation rates through desert skies",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
+    "spin",
     "look_up"
   ],
   "pops": {
@@ -1692,12 +1693,16 @@
     ]
   },
   "event": {
-    "id": "emwqryuq0",
-    "key": "crate",
-    "text": "A cargo crate fell off a freighter at the edge of the dunes. Some of it rolled his way.",
-    "at": "2026-11-21T19:02:21.192Z"
+    "id": "emwqteml6",
+    "key": "crackle",
+    "text": "He heard a strange crackle on his dish. Probably nothing. Probably.",
+    "at": "2026-11-21T19:42:36.762Z"
   },
   "thoughts": [
+    {
+      "text": "wonder how the Little Dart's heat shields will handle a spread that wide. might need extra venting on the port nacelle.",
+      "at": "2026-11-21T19:42:36.762Z"
+    },
     {
       "text": "makes me glad my little dart is built for soaring clean through the upper blue instead of dropping things. though i better double-check my hull plating against heavy atmospheric shockwaves just in case.",
       "at": "2026-11-21T19:32:36.476Z"
@@ -1717,17 +1722,13 @@
     {
       "text": "my brass dish is giving a happy little hum while the arc welder lays down another textbook bead. this ship is getting tougher by the minute.",
       "at": "2026-11-21T19:02:21.192Z"
-    },
-    {
-      "text": "that charging port really does fit like a glove. time to power down just a bit and let the juice settle into the cells.",
-      "at": "2026-11-21T18:52:20.865Z"
     }
   ],
-  "sayAt": "2026-11-21T19:32:36.476Z",
+  "sayAt": "2026-11-21T19:42:36.762Z",
   "today": {
     "day": 76,
     "counts": {
-      "browse_wire": 1
+      "browse_wire": 2
     }
   },
   "lastDone": {
@@ -1739,7 +1740,7 @@
     "fix_job": "2026-11-21T11:54:39.965Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-21T19:32:36.476Z",
+    "browse_wire": "2026-11-21T19:42:36.762Z",
     "compose_tune": "2026-11-21T19:12:36.705Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-19T05:33:24.251Z",
@@ -1763,6 +1764,11 @@
   },
   "puzzles": [
     {
+      "id": "q8",
+      "text": "how high-altitude thermal dissipation affects nose cone materials during ascent",
+      "at": "2026-11-21T19:42:36.762Z"
+    },
+    {
       "id": "q10",
       "text": "q6: how radar cross sections change when the hull gets coated in fine desert dust",
       "at": "2026-11-21T16:21:26.225Z"
@@ -1781,18 +1787,20 @@
       "id": "q6",
       "text": "q9: how radar cross sections change when the hull gets coated in fine desert dust",
       "at": "2026-11-21T10:52:25.035Z"
-    },
-    {
-      "id": "q9",
-      "text": "q8: how radar cross sections change when the hull gets coated in fine desert dust",
-      "at": "2026-11-21T08:50:36.868Z"
     }
   ],
   "nextSearch": {
-    "text": "high-altitude thermal dissipation rates in desert atmospheres",
-    "at": "2026-11-21T19:32:36.476Z"
+    "text": "atmospheric entry",
+    "at": "2026-11-21T19:42:36.762Z"
   },
   "said": [
+    {
+      "text": "wonder how the Little Dart's heat shields will handle a spread that wide. might need extra venting on the port nacelle.",
+      "kind": "think",
+      "at": "2026-11-21T19:42:36.762Z",
+      "town": "day 76 01:42",
+      "place": "the comms tower"
+    },
     {
       "text": "makes me glad my little dart is built for soaring clean through the upper blue instead of dropping things. though i better double-check my hull plating against heavy atmospheric shockwaves just in case.",
       "kind": "think",
@@ -2835,13 +2843,6 @@
       "at": "2026-11-21T06:09:05.085Z",
       "town": "day 71 13:13",
       "place": "the junk market"
-    },
-    {
-      "text": "Traders always bring the crustiest gizmos to the market. Time to make this circuit hum like new!",
-      "kind": "think",
-      "at": "2026-11-21T06:09:05.085Z",
-      "town": "day 71 13:13",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2852,9 +2853,13 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-21T19:32:36.476Z",
+  "feedArchivedAt": "2026-11-21T19:42:36.762Z",
   "plans": [],
   "searches": [
+    {
+      "q": "high-altitude thermal dissipation rates in desert atmospheres",
+      "at": "2026-11-21T19:42:36.762Z"
+    },
     {
       "q": "how radar cross sections change when the hull gets coated in fine desert dust",
       "at": "2026-11-21T19:32:36.476Z"
@@ -2898,10 +2903,6 @@
     {
       "q": "lightweight PCB layout guides for desert moons",
       "at": "2026-11-21T04:47:32.070Z"
-    },
-    {
-      "q": "flex circuit laminates high heat tolerance",
-      "at": "2026-11-21T03:12:02.141Z"
     }
   ],
   "lampOutUntil": "2026-11-21T18:31:12.302Z",

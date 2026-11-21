@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 20",
-    "progress": 26,
-    "version": 3,
-    "lastChange": "connecting heavy-duty copper wire bundles into the instrument cluster via Otto the cockpit switch, using Bix (a strip of hull plating) (used Tok, a mystery box that hums)",
+    "progress": 32,
+    "version": 4,
+    "lastChange": "securing the heavy-duty copper wire bundles into the cockpit instrument cluster via Otto the switch, using Nim (a strip of hull plating) (used Gus, a mystery box that hums)",
     "log": [
+      {
+        "version": 4,
+        "change": "securing the heavy-duty copper wire bundles into the cockpit instrument cluster via Otto the switch, using Nim (a strip of hull plating) (used Gus, a mystery box that hums)",
+        "progress": 32,
+        "at": "2026-11-21T12:45:06.077Z"
+      },
       {
         "version": 3,
         "change": "connecting heavy-duty copper wire bundles into the instrument cluster via Otto the cockpit switch, using Bix (a strip of hull plating) (used Tok, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "welding the primary booster shroud and thermal insulation blanket onto the Little Dart using Rusty Jr, a mystery box that hums (used Otto, a tiny gyroscope)",
         "progress": 100,
         "at": "2026-11-20T02:22:31.221Z"
-      },
-      {
-        "version": 12,
-        "change": "riveting the main oxygen manifold access hatch onto the Little Dart using Tilly, a scorched heat tile (used Lorna, a cracked navigation chip)",
-        "progress": 98,
-        "at": "2026-11-20T01:42:30.336Z"
       }
     ],
     "launched": [
@@ -2540,7 +2540,7 @@
         ]
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 4,
     "parts": [
       {
         "name": "Otto",
@@ -2556,6 +2556,11 @@
         "name": "Tok",
         "what": "a mystery box that hums",
         "version": 3
+      },
+      {
+        "name": "Gus",
+        "what": "a mystery box that hums",
+        "version": 4
       }
     ],
     "design": null
@@ -2837,11 +2842,6 @@
     {
       "name": "Lorna",
       "what": "a scorched heat tile",
-      "at": "2026-11-21T08:50:36.868Z"
-    },
-    {
-      "name": "Gus",
-      "what": "a mystery box that hums",
       "at": "2026-11-21T08:50:36.868Z"
     }
   ],

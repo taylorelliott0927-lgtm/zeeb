@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 21",
-    "progress": 65,
-    "version": 9,
-    "lastChange": "riveting lightweight heat-dissipating panel struts onto the Little Dart's tail assembly using Dibs (used Dibs, a perfectly good bolt)",
+    "progress": 74,
+    "version": 10,
+    "lastChange": "riveting lightweight heat-dissipating panel struts onto the Little Dart's tail assembly using Dibs (used Wren, a sensor eye with one crack)",
     "log": [
+      {
+        "version": 10,
+        "change": "riveting lightweight heat-dissipating panel struts onto the Little Dart's tail assembly using Dibs (used Wren, a sensor eye with one crack)",
+        "progress": 74,
+        "at": "2026-11-21T22:53:43.000Z"
+      },
       {
         "version": 9,
         "change": "riveting lightweight heat-dissipating panel struts onto the Little Dart's tail assembly using Dibs (used Dibs, a perfectly good bolt)",
@@ -238,12 +244,6 @@
         "change": "welding internal titanium bulkhead ribs inside the Little Dart Mk 19 fuselage",
         "progress": 41,
         "at": "2026-11-20T17:59:55.951Z"
-      },
-      {
-        "version": 6,
-        "change": "welding custom reinforcement brackets around landing strut Bix on the lower airframe",
-        "progress": 37,
-        "at": "2026-11-20T17:49:55.714Z"
       }
     ],
     "launched": [
@@ -2612,7 +2612,7 @@
         ]
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Nim",
@@ -2653,6 +2653,11 @@
         "name": "Dibs",
         "what": "a perfectly good bolt",
         "version": 9
+      },
+      {
+        "name": "Wren",
+        "what": "a sensor eye with one crack",
+        "version": 10
       }
     ],
     "design": null
@@ -2899,11 +2904,6 @@
       "what": "a tiny gyroscope",
       "at": "2026-11-21T21:13:12.957Z",
       "good": true
-    },
-    {
-      "name": "Wren",
-      "what": "a sensor eye with one crack",
-      "at": "2026-11-21T21:13:12.957Z"
     }
   ],
   "reads": [

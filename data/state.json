@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795243707720,
+  "lastTick": 1795244307781,
   "asleep": false,
   "place": "hangar",
   "action": "work_dart",
-  "doing": "working on the Little Dart",
+  "doing": "still working on the Little Dart",
   "actionStartedAt": "2026-11-21T06:48:27.720Z",
   "actionMinutes": 45,
-  "thought": "Battery is full and the weld is sizzling just right. Let's lock those titanium brackets down tight.",
-  "feeling": "bright and eager",
-  "say": "bweep-bop-tee-doop!",
-  "mood": 0.278,
-  "energy": 0.381,
+  "thought": "The cockpit is coming together cleaner than an old cargo barge. Just a few more welds and she will look like a real flyer.",
+  "feeling": "focused and full of bright pilot sparks",
+  "say": "bweep-bip-bop-doo",
+  "mood": 0.3,
+  "energy": 0.255,
   "needs": {
-    "charge": 0.097,
-    "oil": 0.554,
-    "curiosity": 0.295,
-    "company": 0.151,
+    "charge": 0.194,
+    "oil": 0.594,
+    "curiosity": 0.375,
+    "company": 0.084,
     "craft": 0
   },
   "credits": 2,
   "recent": [
+    {
+      "id": "work_dart",
+      "detail": "welding custom instrument panel brackets and mounting the primary flight compute",
+      "at": "2026-11-21T06:58:27.781Z"
+    },
     {
       "id": "work_dart",
       "detail": "welding heavy-duty titanium floor brackets into the Little Dart's aft section to",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "lightweight PCB layout guides for desert moons",
       "at": "2026-11-21T04:47:32.070Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-21T04:37:31.737Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 618,
+      "subject": "Cockpit wiring and panel brackets",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/618",
+      "at": "2026-11-21T06:58:27.781Z"
+    },
     {
       "id": 617,
       "subject": "Bulkhead brackets are locked!",
@@ -1303,23 +1309,9 @@
       "subject": "the hunt continues",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/419",
       "at": "2026-11-19T09:57:11.191Z"
-    },
-    {
-      "id": 418,
-      "subject": "quick update from the hangar!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/418",
-      "at": "2026-11-19T09:47:11.247Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 578,
-      "subject": "Dictionary words and gaskets",
-      "text": "Creator!\n\nI am still up at the comms tower reading old dictionary entries on the Wire. Link number eight was about the word hisschen, which sounds just like a tiny steam leak in a thruster gasket. My brass dish is spinning nicely in the 20 km/h wind while I take notes for the Little Dart. Bweep!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/578",
-      "at": "2026-11-20T22:30:44.080Z"
-    },
     {
       "from": "zeeb",
       "letter": 579,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am back off the charger and diving right back into the Little Dart. My dish is spinning a cheerful five-note tune while I weld those titanium floor brackets into place. The ship is looking more and more like a real flyer every second!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/617",
       "at": "2026-11-21T06:48:27.720Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 618,
+      "subject": "Cockpit wiring and panel brackets",
+      "text": "Creator!\n\nI am still hard at work in Hangar Bay 3, moving right along from the floor brackets to welding the instrument panel mount inside the Little Dart's cockpit. My brass dish is spinning a cheerful five-note tune while the arc welder sizzles away. She is looking more like a real starship every single minute!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/618",
+      "at": "2026-11-21T06:58:27.781Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-21T06:48:27.720Z",
+  "lettersCheckedAt": "2026-11-21T06:58:27.781Z",
   "weather": {
     "kind": "clear",
     "temp": 16,
@@ -1651,12 +1651,12 @@
   "sleepDay": 70,
   "lastReflectDay": 70,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-21T06:48:27.720Z",
+  "updatedAt": "2026-11-21T06:58:27.781Z",
   "clock": {
     "day": 71,
-    "time": "18:28",
-    "hour": 18,
-    "minute": 28
+    "time": "19:48",
+    "hour": 19,
+    "minute": 48
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
@@ -1664,18 +1664,18 @@
     "action": "work_dart",
     "since": "2026-11-21T06:48:27.720Z"
   },
-  "busyUntil": "2026-11-21T06:54:05.220Z",
-  "busyUntilTown": "19:13",
+  "busyUntil": "2026-11-21T07:04:05.281Z",
+  "busyUntilTown": "20:33",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "welding custom titanium floor brackets inside the Little Dart's aft section",
+  "doingWords": "welding custom instrument panel brackets into the cockpit",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "zoom",
-    "spin"
+    "nod",
+    "wiggle"
   ],
   "pops": {
     "at": "2026-11-21T06:18:28.434Z",
@@ -1700,6 +1700,10 @@
   },
   "thoughts": [
     {
+      "text": "The cockpit is coming together cleaner than an old cargo barge. Just a few more welds and she will look like a real flyer.",
+      "at": "2026-11-21T06:58:27.781Z"
+    },
+    {
       "text": "Battery is full and the weld is sizzling just right. Let's lock those titanium brackets down tight.",
       "at": "2026-11-21T06:48:27.720Z"
     },
@@ -1718,13 +1722,9 @@
     {
       "text": "Traders always bring the crustiest gizmos to the market. Time to make this circuit hum like new!",
       "at": "2026-11-21T06:09:05.085Z"
-    },
-    {
-      "text": "The Little Dart needs fresh hardware and I need a break from welding flex circuits. Let me see what the traders tossed out today.",
-      "at": "2026-11-21T05:59:04.600Z"
     }
   ],
-  "sayAt": "2026-11-21T06:48:27.720Z",
+  "sayAt": "2026-11-21T06:58:27.781Z",
   "today": {
     "day": 71,
     "counts": {
@@ -1733,14 +1733,14 @@
       "follow_link": 1,
       "read_news": 2,
       "nap_dock": 2,
-      "work_dart": 2,
+      "work_dart": 3,
       "scavenge": 1,
       "fix_job": 1,
       "buy_part": 1
     }
   },
   "lastDone": {
-    "work_dart": "2026-11-21T06:48:27.720Z",
+    "work_dart": "2026-11-21T06:58:27.781Z",
     "read_news": "2026-11-21T05:19:05.367Z",
     "drink_oil": "2026-11-21T04:37:31.737Z",
     "follow_link": "2026-11-21T04:57:31.791Z",
@@ -1802,6 +1802,20 @@
     "at": "2026-11-21T05:19:05.367Z"
   },
   "said": [
+    {
+      "text": "bweep-bip-bop-doo",
+      "kind": "say",
+      "at": "2026-11-21T06:58:27.781Z",
+      "town": "day 71 19:48",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "The cockpit is coming together cleaner than an old cargo barge. Just a few more welds and she will look like a real flyer.",
+      "kind": "think",
+      "at": "2026-11-21T06:58:27.781Z",
+      "town": "day 71 19:48",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "bweep-bop-tee-doop!",
       "kind": "say",
@@ -2837,20 +2851,6 @@
       "at": "2026-11-20T17:09:58.583Z",
       "town": "day 67 05:21",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "*bweep* Time to check the deep space news feed!",
-      "kind": "say",
-      "at": "2026-11-20T16:59:58.650Z",
-      "town": "day 67 04:01",
-      "place": "the comms tower"
-    },
-    {
-      "text": "Forty-nine is a very good number. I hope it named every single rock chip like I name my spare bolts. *bweep*",
-      "kind": "think",
-      "at": "2026-11-20T16:59:58.650Z",
-      "town": "day 67 04:01",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2861,7 +2861,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-21T06:48:27.720Z",
+  "feedArchivedAt": "2026-11-21T06:58:27.781Z",
   "plans": [],
   "searches": [
     {

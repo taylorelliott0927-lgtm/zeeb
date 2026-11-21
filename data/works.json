@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 19",
-    "progress": 81,
-    "version": 20,
-    "lastChange": "routing heat-resistant polyimide flex circuits through the aft frame to keep the avionics cool",
+    "progress": 87,
+    "version": 21,
+    "lastChange": "welding heavy-duty titanium floor brackets into the Little Dart's aft section to secure the main fuel line junction (used Dibs, a perfectly good bolt)",
     "log": [
+      {
+        "version": 21,
+        "change": "welding heavy-duty titanium floor brackets into the Little Dart's aft section to secure the main fuel line junction (used Dibs, a perfectly good bolt)",
+        "progress": 87,
+        "at": "2026-11-21T06:48:27.720Z"
+      },
       {
         "version": 20,
         "change": "routing heat-resistant polyimide flex circuits through the aft frame to keep the avionics cool",
@@ -238,12 +244,6 @@
         "change": "welding a heat shield plate to the upper fuselage using Fen, a cockpit switch that still clicks, to secure the access hatch (used Fen, a cockpit switch that still clicks)",
         "progress": 60,
         "at": "2026-11-19T23:24:26.264Z"
-      },
-      {
-        "version": 6,
-        "change": "welding Mabel (a little landing strut) onto the Little Dart's undercarriage using Otto (a tiny gyroscope) to balance the mount point. (used Pim, a coil of copper wire)",
-        "progress": 50,
-        "at": "2026-11-19T23:20:39.533Z"
       }
     ],
     "launched": [
@@ -2488,7 +2488,7 @@
         }
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Mabel",
@@ -2519,6 +2519,11 @@
         "name": "Captain",
         "what": "a little landing strut",
         "version": 13
+      },
+      {
+        "name": "Dibs",
+        "what": "a perfectly good bolt",
+        "version": 21
       }
     ],
     "design": null
@@ -2751,11 +2756,6 @@
       "name": "Lorna",
       "what": "a strip of hull plating",
       "at": "2026-11-21T06:09:05.085Z"
-    },
-    {
-      "name": "Dibs",
-      "what": "a perfectly good bolt",
-      "at": "2026-11-21T05:59:04.600Z"
     }
   ],
   "reads": [

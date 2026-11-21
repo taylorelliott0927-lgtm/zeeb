@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 20",
-    "progress": 47,
-    "version": 6,
-    "lastChange": "patched a hole in the hull (used Pim, a cracked navigation chip)",
+    "progress": 56,
+    "version": 7,
+    "lastChange": "attached high-temp silica tiles to the Little Dart's nose cone using Rusty Jr, a coil of copper wire (used Lorna, a mystery box that hums)",
     "log": [
+      {
+        "version": 7,
+        "change": "attached high-temp silica tiles to the Little Dart's nose cone using Rusty Jr, a coil of copper wire (used Lorna, a mystery box that hums)",
+        "progress": 56,
+        "at": "2026-11-21T15:31:12.302Z"
+      },
       {
         "version": 6,
         "change": "patched a hole in the hull (used Pim, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "welding high-temp silica insulation panels onto the Little Dart's upper spine (used Mabel, a dented fuel cell)",
         "progress": 26,
         "at": "2026-11-20T03:24:07.184Z"
-      },
-      {
-        "version": 2,
-        "change": "welding custom side-flap reinforcements and thermal shielding plates onto the Little Dart's lower fuselage using Mabel and Rusty Jr (used Rusty Jr, a mystery box that hums)",
-        "progress": 20,
-        "at": "2026-11-20T03:14:06.464Z"
       }
     ],
     "launched": [
@@ -2540,7 +2540,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Otto",
@@ -2571,6 +2571,11 @@
         "name": "Pim",
         "what": "a cracked navigation chip",
         "version": 6
+      },
+      {
+        "name": "Lorna",
+        "what": "a mystery box that hums",
+        "version": 7
       }
     ],
     "design": null
@@ -2844,11 +2849,6 @@
       "name": "Wren",
       "what": "a mystery box that hums",
       "at": "2026-11-21T09:57:37.822Z"
-    },
-    {
-      "name": "Lorna",
-      "what": "a mystery box that hums",
-      "at": "2026-11-21T09:27:38.614Z"
     }
   ],
   "reads": [

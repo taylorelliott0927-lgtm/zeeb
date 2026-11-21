@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 20",
-    "progress": 99,
-    "version": 12,
-    "lastChange": "welding high-entropy silicate ceramic aerogel panels to the upper hull of the Little Dart using Fen (used Dibs, a tiny gyroscope)",
+    "name": "the Little Dart Mk 21",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 13,
+        "change": "riveting lightweight structural stringers along the Little Dart's fuselage using Nim (used Bix, a strip of hull plating)",
+        "progress": 100,
+        "at": "2026-11-21T16:51:39.733Z"
+      },
       {
         "version": 12,
         "change": "welding high-entropy silicate ceramic aerogel panels to the upper hull of the Little Dart using Fen (used Dibs, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "sealing the ventral reinforcement joints with high-temp sealant paste (used Rusty Jr, a cracked navigation chip)",
         "progress": 75,
         "at": "2026-11-20T08:33:49.523Z"
-      },
-      {
-        "version": 8,
-        "change": "welding a second titanium reinforcement rib onto the Little Dart's ventral seam using Mabel the copper wire for joint stability (used Sprocket, a scorched heat tile)",
-        "progress": 65,
-        "at": "2026-11-20T08:23:49.778Z"
       }
     ],
     "launched": [
@@ -2538,71 +2538,82 @@
             "version": 23
           }
         ]
+      },
+      {
+        "name": "the Little Dart Mk 20",
+        "day": 75,
+        "partsUsed": 13,
+        "parts": [
+          {
+            "name": "Otto",
+            "what": "a cockpit switch that still clicks",
+            "version": 1
+          },
+          {
+            "name": "Tok",
+            "what": "half a thruster nozzle",
+            "version": 2
+          },
+          {
+            "name": "Tok",
+            "what": "a mystery box that hums",
+            "version": 3
+          },
+          {
+            "name": "Gus",
+            "what": "a mystery box that hums",
+            "version": 4
+          },
+          {
+            "name": "Lorna",
+            "what": "a scorched heat tile",
+            "version": 5
+          },
+          {
+            "name": "Pim",
+            "what": "a cracked navigation chip",
+            "version": 6
+          },
+          {
+            "name": "Lorna",
+            "what": "a mystery box that hums",
+            "version": 7
+          },
+          {
+            "name": "Wren",
+            "what": "a mystery box that hums",
+            "version": 8
+          },
+          {
+            "name": "Nim",
+            "what": "a tiny gyroscope",
+            "version": 9
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "a coil of copper wire",
+            "version": 10
+          },
+          {
+            "name": "Tok",
+            "what": "a sensor eye with one crack",
+            "version": 11
+          },
+          {
+            "name": "Dibs",
+            "what": "a tiny gyroscope",
+            "version": 12
+          },
+          {
+            "name": "Bix",
+            "what": "a strip of hull plating",
+            "version": 13
+          }
+        ]
       }
     ],
-    "partsUsed": 12,
-    "parts": [
-      {
-        "name": "Otto",
-        "what": "a cockpit switch that still clicks",
-        "version": 1
-      },
-      {
-        "name": "Tok",
-        "what": "half a thruster nozzle",
-        "version": 2
-      },
-      {
-        "name": "Tok",
-        "what": "a mystery box that hums",
-        "version": 3
-      },
-      {
-        "name": "Gus",
-        "what": "a mystery box that hums",
-        "version": 4
-      },
-      {
-        "name": "Lorna",
-        "what": "a scorched heat tile",
-        "version": 5
-      },
-      {
-        "name": "Pim",
-        "what": "a cracked navigation chip",
-        "version": 6
-      },
-      {
-        "name": "Lorna",
-        "what": "a mystery box that hums",
-        "version": 7
-      },
-      {
-        "name": "Wren",
-        "what": "a mystery box that hums",
-        "version": 8
-      },
-      {
-        "name": "Nim",
-        "what": "a tiny gyroscope",
-        "version": 9
-      },
-      {
-        "name": "Rusty Jr",
-        "what": "a coil of copper wire",
-        "version": 10
-      },
-      {
-        "name": "Tok",
-        "what": "a sensor eye with one crack",
-        "version": 11
-      },
-      {
-        "name": "Dibs",
-        "what": "a tiny gyroscope",
-        "version": 12
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -2850,11 +2861,6 @@
       "name": "Nim",
       "what": "a strip of hull plating",
       "at": "2026-11-21T11:44:40.265Z"
-    },
-    {
-      "name": "Bix",
-      "what": "a strip of hull plating",
-      "at": "2026-11-21T11:12:24.859Z"
     }
   ],
   "reads": [

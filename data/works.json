@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 21",
-    "progress": 49,
-    "version": 7,
-    "lastChange": "welding high-temperature silica ceramic tiles around the Little Dart's forward pressure bulkhead using Dibs (a perfectly good bolt) (used Pim, a sensor eye with one crack)",
+    "progress": 55,
+    "version": 8,
+    "lastChange": "riveting high-temperature silica ceramic tiles onto the Little Dart's aft service hatch using Dibs (a perfectly good bolt) (used Bix, a bent stabiliser fin)",
     "log": [
+      {
+        "version": 8,
+        "change": "riveting high-temperature silica ceramic tiles onto the Little Dart's aft service hatch using Dibs (a perfectly good bolt) (used Bix, a bent stabiliser fin)",
+        "progress": 55,
+        "at": "2026-11-21T21:53:29.379Z"
+      },
       {
         "version": 7,
         "change": "welding high-temperature silica ceramic tiles around the Little Dart's forward pressure bulkhead using Dibs (a perfectly good bolt) (used Pim, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "bolted Bix the little landing strut onto the lower airframe (used Bix, a little landing strut)",
         "progress": 34,
         "at": "2026-11-20T17:39:55.558Z"
-      },
-      {
-        "version": 4,
-        "change": "polished the nose cone (used Tok, a scorched heat tile)",
-        "progress": 26,
-        "at": "2026-11-20T16:19:08.253Z"
       }
     ],
     "launched": [
@@ -2612,7 +2612,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Nim",
@@ -2643,6 +2643,11 @@
         "name": "Pim",
         "what": "a sensor eye with one crack",
         "version": 7
+      },
+      {
+        "name": "Bix",
+        "what": "a bent stabiliser fin",
+        "version": 8
       }
     ],
     "design": null
@@ -2899,11 +2904,6 @@
       "name": "Dibs",
       "what": "a perfectly good bolt",
       "at": "2026-11-21T21:03:13.302Z"
-    },
-    {
-      "name": "Bix",
-      "what": "a bent stabiliser fin",
-      "at": "2026-11-21T20:42:59.119Z"
     }
   ],
   "reads": [

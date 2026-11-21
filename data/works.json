@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 20",
-    "progress": 8,
-    "version": 1,
-    "lastChange": "routing copper wire bundles into the instrument cluster (used Otto, a cockpit switch that still clicks)",
+    "progress": 16,
+    "version": 2,
+    "lastChange": "routing copper wire bundles into the instrument cluster using Otto, a cockpit switch that still clicks (used Tok, half a thruster nozzle)",
     "log": [
+      {
+        "version": 2,
+        "change": "routing copper wire bundles into the instrument cluster using Otto, a cockpit switch that still clicks (used Tok, half a thruster nozzle)",
+        "progress": 16,
+        "at": "2026-11-21T11:44:40.265Z"
+      },
       {
         "version": 1,
         "change": "routing copper wire bundles into the instrument cluster (used Otto, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "securing the instrument panel and internal wire harnesses into the Little Dart (used Brakk, a mystery box that hums)",
         "progress": 91,
         "at": "2026-11-20T00:44:53.699Z"
-      },
-      {
-        "version": 10,
-        "change": "welding the lateral stabilization fins onto the little dart using Brakk (a mystery box that hums, a really good one) to reinforce the aerodynamic profile. (used Lorna, a mystery box that hums)",
-        "progress": 85,
-        "at": "2026-11-20T00:34:54.246Z"
       }
     ],
     "launched": [
@@ -2540,12 +2540,17 @@
         ]
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Otto",
         "what": "a cockpit switch that still clicks",
         "version": 1
+      },
+      {
+        "name": "Tok",
+        "what": "half a thruster nozzle",
+        "version": 2
       }
     ],
     "design": null
@@ -2770,6 +2775,16 @@
   ],
   "stash": [
     {
+      "name": "Dibs",
+      "what": "a tiny gyroscope",
+      "at": "2026-11-21T11:44:40.265Z"
+    },
+    {
+      "name": "Nim",
+      "what": "a strip of hull plating",
+      "at": "2026-11-21T11:44:40.265Z"
+    },
+    {
       "name": "Bix",
       "what": "a strip of hull plating",
       "at": "2026-11-21T11:12:24.859Z"
@@ -2822,11 +2837,6 @@
     {
       "name": "Tok",
       "what": "a mystery box that hums",
-      "at": "2026-11-21T08:40:36.592Z"
-    },
-    {
-      "name": "Tok",
-      "what": "half a thruster nozzle",
       "at": "2026-11-21T08:40:36.592Z"
     }
   ],

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 21",
-    "progress": 55,
-    "version": 8,
-    "lastChange": "riveting high-temperature silica ceramic tiles onto the Little Dart's aft service hatch using Dibs (a perfectly good bolt) (used Bix, a bent stabiliser fin)",
+    "progress": 65,
+    "version": 9,
+    "lastChange": "riveting lightweight heat-dissipating panel struts onto the Little Dart's tail assembly using Dibs (used Dibs, a perfectly good bolt)",
     "log": [
+      {
+        "version": 9,
+        "change": "riveting lightweight heat-dissipating panel struts onto the Little Dart's tail assembly using Dibs (used Dibs, a perfectly good bolt)",
+        "progress": 65,
+        "at": "2026-11-21T22:43:43.163Z"
+      },
       {
         "version": 8,
         "change": "riveting high-temperature silica ceramic tiles onto the Little Dart's aft service hatch using Dibs (a perfectly good bolt) (used Bix, a bent stabiliser fin)",
@@ -238,12 +244,6 @@
         "change": "welding custom reinforcement brackets around landing strut Bix on the lower airframe",
         "progress": 37,
         "at": "2026-11-20T17:49:55.714Z"
-      },
-      {
-        "version": 5,
-        "change": "bolted Bix the little landing strut onto the lower airframe (used Bix, a little landing strut)",
-        "progress": 34,
-        "at": "2026-11-20T17:39:55.558Z"
       }
     ],
     "launched": [
@@ -2612,7 +2612,7 @@
         ]
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Nim",
@@ -2648,6 +2648,11 @@
         "name": "Bix",
         "what": "a bent stabiliser fin",
         "version": 8
+      },
+      {
+        "name": "Dibs",
+        "what": "a perfectly good bolt",
+        "version": 9
       }
     ],
     "design": null
@@ -2899,11 +2904,6 @@
       "name": "Wren",
       "what": "a sensor eye with one crack",
       "at": "2026-11-21T21:13:12.957Z"
-    },
-    {
-      "name": "Dibs",
-      "what": "a perfectly good bolt",
-      "at": "2026-11-21T21:03:13.302Z"
     }
   ],
   "reads": [

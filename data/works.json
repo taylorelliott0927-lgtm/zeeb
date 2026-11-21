@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 20",
-    "progress": 90,
-    "version": 11,
-    "lastChange": "riveting lightweight structural stringers along the Little Dart's fuselage using the scrap strip Fen (used Tok, a sensor eye with one crack)",
+    "progress": 99,
+    "version": 12,
+    "lastChange": "welding high-entropy silicate ceramic aerogel panels to the upper hull of the Little Dart using Fen (used Dibs, a tiny gyroscope)",
     "log": [
+      {
+        "version": 12,
+        "change": "welding high-entropy silicate ceramic aerogel panels to the upper hull of the Little Dart using Fen (used Dibs, a tiny gyroscope)",
+        "progress": 99,
+        "at": "2026-11-21T16:41:39.531Z"
+      },
       {
         "version": 11,
         "change": "riveting lightweight structural stringers along the Little Dart's fuselage using the scrap strip Fen (used Tok, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "welding a second titanium reinforcement rib onto the Little Dart's ventral seam using Mabel the copper wire for joint stability (used Sprocket, a scorched heat tile)",
         "progress": 65,
         "at": "2026-11-20T08:23:49.778Z"
-      },
-      {
-        "version": 7,
-        "change": "welding a titanium reinforcement rib onto the Little Dart's ventral seam using Mabel the copper wire for joint stability (used Tok, a strip of hull plating)",
-        "progress": 56,
-        "at": "2026-11-20T08:13:49.711Z"
       }
     ],
     "launched": [
@@ -2540,7 +2540,7 @@
         ]
       }
     ],
-    "partsUsed": 11,
+    "partsUsed": 12,
     "parts": [
       {
         "name": "Otto",
@@ -2596,6 +2596,11 @@
         "name": "Tok",
         "what": "a sensor eye with one crack",
         "version": 11
+      },
+      {
+        "name": "Dibs",
+        "what": "a tiny gyroscope",
+        "version": 12
       }
     ],
     "design": null
@@ -2850,11 +2855,6 @@
       "name": "Bix",
       "what": "a strip of hull plating",
       "at": "2026-11-21T11:12:24.859Z"
-    },
-    {
-      "name": "Dibs",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-21T09:57:37.822Z"
     }
   ],
   "reads": [

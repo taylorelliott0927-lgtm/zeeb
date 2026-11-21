@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795241908434,
+  "lastTick": 1795242507765,
   "asleep": false,
-  "place": "market",
-  "action": "buy_part",
-  "doing": "browsing the parts stalls at the market",
-  "actionStartedAt": "2026-11-21T06:18:28.434Z",
-  "actionMinutes": 20,
-  "thought": "Trading credits for neat scrap is the best deal on Kessa-9. Let's see what rusty treasure this trader has in their crate!",
-  "feeling": "curious and eager",
-  "say": "Got any juicy copper wiring or bracket strips in that pile? *bweep*",
-  "mood": 0.425,
-  "energy": 0.194,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-21T06:28:27.765Z",
+  "actionMinutes": 120,
+  "thought": "I need to get into the hangar dock before my main power cell runs completely dry. A good charge will have me back on the floor in no time.",
+  "feeling": "sleepy and drained",
+  "say": "Time to power down for a bit... *bweep*",
+  "mood": 0.338,
+  "energy": 0.324,
   "needs": {
-    "charge": 0.295,
-    "oil": 0.434,
-    "curiosity": 0.055,
-    "company": 0.112,
-    "craft": 0.063
+    "charge": 0,
+    "oil": 0.474,
+    "curiosity": 0.135,
+    "company": 0.165,
+    "craft": 0.13
   },
   "credits": 2,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-21T06:28:27.765Z"
+    },
     {
       "id": "buy_part",
       "detail": "any",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "welding titanium bulkhead ribs into the Little Dart's aft framework for maximum ",
       "at": "2026-11-21T04:27:31.701Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "welding titanium bulkhead ribs into the Little Dart's aft framework for maximum ",
-      "at": "2026-11-21T04:17:31.922Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-21T06:18:28.434Z",
+  "lettersCheckedAt": "2026-11-21T06:28:27.765Z",
   "weather": {
     "kind": "clear",
     "temp": 16,
@@ -1651,31 +1651,30 @@
   "sleepDay": 70,
   "lastReflectDay": 70,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-21T06:18:28.434Z",
+  "updatedAt": "2026-11-21T06:28:27.765Z",
   "clock": {
     "day": 71,
-    "time": "14:29",
-    "hour": 14,
-    "minute": 29
+    "time": "15:48",
+    "hour": 15,
+    "minute": 48
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "buy_part",
-    "since": "2026-11-21T06:18:28.434Z"
+    "action": "nap_dock",
+    "since": "2026-11-21T06:28:27.765Z"
   },
-  "busyUntil": "2026-11-21T06:20:58.434Z",
-  "busyUntilTown": "14:49",
+  "busyUntil": "2026-11-21T06:43:27.765Z",
+  "busyUntilTown": "17:48",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "haggling with a junk market trader for shiny scrap bits",
+  "doingWords": "plugging into the hangar dock to recharge my battery",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "spin",
-    "lean_in"
+    "droop"
   ],
   "pops": {
     "at": "2026-11-21T06:18:28.434Z",
@@ -1700,6 +1699,10 @@
   },
   "thoughts": [
     {
+      "text": "I need to get into the hangar dock before my main power cell runs completely dry. A good charge will have me back on the floor in no time.",
+      "at": "2026-11-21T06:28:27.765Z"
+    },
+    {
       "text": "Trading credits for neat scrap is the best deal on Kessa-9. Let's see what rusty treasure this trader has in their crate!",
       "at": "2026-11-21T06:18:28.434Z"
     },
@@ -1718,13 +1721,9 @@
     {
       "text": "time to plug in and let my gears cool down before the next big build step.",
       "at": "2026-11-21T05:29:04.236Z"
-    },
-    {
-      "text": "Even way out on another dust ball, folks are watching the evening sky turn colors. Makes me want to get the Little Dart up high enough to see them too.",
-      "at": "2026-11-21T05:19:05.367Z"
     }
   ],
-  "sayAt": "2026-11-21T06:18:28.434Z",
+  "sayAt": "2026-11-21T06:28:27.765Z",
   "today": {
     "day": 71,
     "counts": {
@@ -1732,7 +1731,7 @@
       "browse_wire": 1,
       "follow_link": 1,
       "read_news": 2,
-      "nap_dock": 1,
+      "nap_dock": 2,
       "work_dart": 1,
       "scavenge": 1,
       "fix_job": 1,
@@ -1761,7 +1760,7 @@
     "chat_patrons": "2026-11-18T15:42:51.774Z",
     "busk": "2026-11-21T01:27:19.503Z",
     "cantina_band": "2026-11-21T01:37:19.419Z",
-    "nap_dock": "2026-11-21T05:29:04.236Z",
+    "nap_dock": "2026-11-21T06:28:27.765Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1802,6 +1801,20 @@
     "at": "2026-11-21T05:19:05.367Z"
   },
   "said": [
+    {
+      "text": "Time to power down for a bit... *bweep*",
+      "kind": "say",
+      "at": "2026-11-21T06:28:27.765Z",
+      "town": "day 71 15:48",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "I need to get into the hangar dock before my main power cell runs completely dry. A good charge will have me back on the floor in no time.",
+      "kind": "think",
+      "at": "2026-11-21T06:28:27.765Z",
+      "town": "day 71 15:48",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "Got any juicy copper wiring or bracket strips in that pile? *bweep*",
       "kind": "say",
@@ -2837,20 +2850,6 @@
       "at": "2026-11-20T16:39:59.208Z",
       "town": "day 67 01:21",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "bweep-bzzzt-doo-bop-bip!",
-      "kind": "say",
-      "at": "2026-11-20T16:29:07.412Z",
-      "town": "day 66 23:54",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "i want this tune to sound just like thrusters lighting up in the dark. bweep!",
-      "kind": "think",
-      "at": "2026-11-20T16:29:07.412Z",
-      "town": "day 66 23:54",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2861,7 +2860,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-21T06:18:28.434Z",
+  "feedArchivedAt": "2026-11-21T06:28:27.765Z",
   "plans": [],
   "searches": [
     {

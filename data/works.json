@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 20",
-    "progress": 82,
-    "version": 10,
-    "lastChange": "routing copper wire bundles into the cockpit instrument panel (used Rusty Jr, a coil of copper wire)",
+    "progress": 90,
+    "version": 11,
+    "lastChange": "riveting lightweight structural stringers along the Little Dart's fuselage using the scrap strip Fen (used Tok, a sensor eye with one crack)",
     "log": [
+      {
+        "version": 11,
+        "change": "riveting lightweight structural stringers along the Little Dart's fuselage using the scrap strip Fen (used Tok, a sensor eye with one crack)",
+        "progress": 90,
+        "at": "2026-11-21T16:31:25.920Z"
+      },
       {
         "version": 10,
         "change": "routing copper wire bundles into the cockpit instrument panel (used Rusty Jr, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "welding a titanium reinforcement rib onto the Little Dart's ventral seam using Mabel the copper wire for joint stability (used Tok, a strip of hull plating)",
         "progress": 56,
         "at": "2026-11-20T08:13:49.711Z"
-      },
-      {
-        "version": 6,
-        "change": "welding a high-temp silica tile nose cone onto the Little Dart using Mabel the copper wire for reinforced grounding (used Mabel, a coil of copper wire)",
-        "progress": 49,
-        "at": "2026-11-20T06:33:33.315Z"
       }
     ],
     "launched": [
@@ -2540,7 +2540,7 @@
         ]
       }
     ],
-    "partsUsed": 10,
+    "partsUsed": 11,
     "parts": [
       {
         "name": "Otto",
@@ -2591,6 +2591,11 @@
         "name": "Rusty Jr",
         "what": "a coil of copper wire",
         "version": 10
+      },
+      {
+        "name": "Tok",
+        "what": "a sensor eye with one crack",
+        "version": 11
       }
     ],
     "design": null
@@ -2849,11 +2854,6 @@
     {
       "name": "Dibs",
       "what": "a tiny gyroscope",
-      "at": "2026-11-21T09:57:37.822Z"
-    },
-    {
-      "name": "Tok",
-      "what": "a sensor eye with one crack",
       "at": "2026-11-21T09:57:37.822Z"
     }
   ],

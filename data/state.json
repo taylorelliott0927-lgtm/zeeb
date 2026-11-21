@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795221994973,
+  "lastTick": 1795222594451,
   "asleep": false,
   "place": "cantina",
-  "action": "wander",
-  "doing": "wandering around the outpost",
-  "actionStartedAt": "2026-11-21T00:46:34.973Z",
+  "action": "busk",
+  "doing": "playing his tunes for tips at the cantina",
+  "actionStartedAt": "2026-11-21T00:56:34.451Z",
   "actionMinutes": 45,
-  "thought": "the desert air is nice and cool tonight. wonder if any good scrap rolled in near the dunes.",
-  "feeling": "bright and breezy",
-  "say": "time to stretch the treads, bweep!",
-  "mood": 0.382,
-  "energy": 0.537,
+  "thought": "my brass dish is spinning nicely in the warm cantina air. maybe someone will drop a coin for the little dart.",
+  "feeling": "bright and slightly hopeful",
+  "say": "tune coming up, folks! bwee-doo-tee-bzzt!",
+  "mood": 0.429,
+  "energy": 0.498,
   "needs": {
-    "charge": 0.047,
-    "oil": 0.282,
-    "curiosity": 0.364,
+    "charge": 0.094,
+    "oil": 0.322,
+    "curiosity": 0.444,
     "company": 0,
-    "craft": 0.201
+    "craft": 0.068
   },
-  "credits": 4,
+  "credits": 6,
   "recent": [
+    {
+      "id": "busk",
+      "detail": "",
+      "at": "2026-11-21T00:56:34.451Z"
+    },
     {
       "id": "wander",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "follow_link",
       "detail": "1",
       "at": "2026-11-20T23:16:02.201Z"
-    },
-    {
-      "id": "follow_link",
-      "detail": "6",
-      "at": "2026-11-20T23:10:43.948Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-21T00:46:34.973Z",
+  "lettersCheckedAt": "2026-11-21T00:56:34.451Z",
   "weather": {
     "kind": "clear",
     "temp": 18,
@@ -1651,39 +1651,39 @@
   "sleepDay": 68,
   "lastReflectDay": 68,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-21T00:46:34.973Z",
+  "updatedAt": "2026-11-21T00:56:34.451Z",
   "clock": {
     "day": 69,
-    "time": "18:13",
-    "hour": 18,
-    "minute": 13
+    "time": "19:33",
+    "hour": 19,
+    "minute": 33
   },
   "townDayMinutes": 180,
   "placeName": "the Dented Moon cantina",
   "streak": {
-    "action": "wander",
-    "since": "2026-11-21T00:46:34.973Z"
+    "action": "busk",
+    "since": "2026-11-21T00:56:34.451Z"
   },
-  "busyUntil": "2026-11-21T00:52:12.473Z",
-  "busyUntilTown": "18:58",
+  "busyUntil": "2026-11-21T01:02:11.951Z",
+  "busyUntilTown": "20:18",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "strolling past the scrap heaps, listening to the desert wind",
+  "doingWords": "tapping out a bright little five-note tune on the cantina counter for tips",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
     "bounce",
-    "look_up"
+    "spin"
   ],
   "pops": {
-    "at": "2026-11-21T00:06:35.567Z",
+    "at": "2026-11-21T00:56:34.451Z",
     "items": [
       {
-        "text": "+ a little landing strut",
-        "kind": "part",
-        "at": "2026-11-21T00:06:35.567Z"
+        "text": "+2 in tips",
+        "kind": "credits",
+        "at": "2026-11-21T00:56:34.451Z"
       }
     ]
   },
@@ -1694,6 +1694,10 @@
     "at": "2026-11-21T00:06:35.567Z"
   },
   "thoughts": [
+    {
+      "text": "my brass dish is spinning nicely in the warm cantina air. maybe someone will drop a coin for the little dart.",
+      "at": "2026-11-21T00:56:34.451Z"
+    },
     {
       "text": "the desert air is nice and cool tonight. wonder if any good scrap rolled in near the dunes.",
       "at": "2026-11-21T00:46:34.973Z"
@@ -1713,13 +1717,9 @@
     {
       "text": "my soldering iron is still nice and hot for the instrument panel. my brass dish is spinning a happy little five-note tune.",
       "at": "2026-11-21T00:06:35.567Z"
-    },
-    {
-      "text": "my soldering iron is staying nice and hot while I hook up the main power toggle. my brass dish is spinning a happy little five-note tune.",
-      "at": "2026-11-21T00:06:01.825Z"
     }
   ],
-  "sayAt": "2026-11-21T00:46:34.973Z",
+  "sayAt": "2026-11-21T00:56:34.451Z",
   "today": {
     "day": 69,
     "counts": {
@@ -1729,7 +1729,8 @@
       "browse_wire": 2,
       "nap_dock": 3,
       "drink_oil": 1,
-      "wander": 1
+      "wander": 1,
+      "busk": 1
     }
   },
   "lastDone": {
@@ -1752,7 +1753,7 @@
     "stargaze": "2026-11-20T04:38:43.120Z",
     "go_to_sleep": "2026-11-19T20:00:17.492Z",
     "chat_patrons": "2026-11-18T15:42:51.774Z",
-    "busk": "2026-11-20T18:39:01.474Z",
+    "busk": "2026-11-21T00:56:34.451Z",
     "cantina_band": "2026-11-20T18:59:00.982Z",
     "nap_dock": "2026-11-21T00:36:35.052Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
@@ -1795,6 +1796,20 @@
     "at": "2026-11-20T23:46:01.468Z"
   },
   "said": [
+    {
+      "text": "tune coming up, folks! bwee-doo-tee-bzzt!",
+      "kind": "say",
+      "at": "2026-11-21T00:56:34.451Z",
+      "town": "day 69 19:33",
+      "place": "the Dented Moon cantina"
+    },
+    {
+      "text": "my brass dish is spinning nicely in the warm cantina air. maybe someone will drop a coin for the little dart.",
+      "kind": "think",
+      "at": "2026-11-21T00:56:34.451Z",
+      "town": "day 69 19:33",
+      "place": "the Dented Moon cantina"
+    },
     {
       "text": "time to stretch the treads, bweep!",
       "kind": "say",
@@ -2830,20 +2845,6 @@
       "at": "2026-11-20T10:36:07.999Z",
       "town": "day 65 00:50",
       "place": "the comms tower"
-    },
-    {
-      "text": "if i could rig a silica glass coating like that onto the little dart's thruster bell, atmospheric re-entry would be a breeze. plus it sounds shiny.",
-      "kind": "think",
-      "at": "2026-11-20T10:36:07.999Z",
-      "town": "day 65 00:50",
-      "place": "the comms tower"
-    },
-    {
-      "text": "just a bit more data and the wiring harness is golden.",
-      "kind": "say",
-      "at": "2026-11-20T10:26:08.251Z",
-      "town": "day 64 23:30",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2854,7 +2855,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-21T00:46:34.973Z",
+  "feedArchivedAt": "2026-11-21T00:56:34.451Z",
   "plans": [],
   "searches": [
     {

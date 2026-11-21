@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795293179174,
+  "lastTick": 1795293779119,
   "asleep": false,
   "place": "market",
-  "action": "scavenge",
-  "doing": "digging through the junk piles",
-  "actionStartedAt": "2026-11-21T20:32:59.174Z",
+  "action": "fix_job",
+  "doing": "doing a repair job at the market",
+  "actionStartedAt": "2026-11-21T20:42:59.119Z",
   "actionMinutes": 45,
-  "thought": "that power flicker made my dish buzz but everything is stable now. time to hunt for titanium rivets and copper wire!",
-  "feeling": "bright and hopeful",
-  "say": "ooh, shiny scrap!",
-  "mood": 0.447,
-  "energy": 0.338,
+  "thought": "these old power regulators always lose their solder joints in the desert heat. a quick touch of the iron and she will be good as new.",
+  "feeling": "focused and industrious",
+  "say": "there you go, good as new! that will be four credits, friend.",
+  "mood": 0.441,
+  "energy": 0.248,
   "needs": {
-    "charge": 0.273,
-    "oil": 0.15,
-    "curiosity": 0.053,
+    "charge": 0.38,
+    "oil": 0.19,
+    "curiosity": 0.133,
     "company": 0,
-    "craft": 0.134
+    "craft": 0.001
   },
   "credits": 0,
   "recent": [
+    {
+      "id": "fix_job",
+      "detail": "",
+      "at": "2026-11-21T20:42:59.119Z"
+    },
     {
       "id": "scavenge",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "work_dart",
       "detail": "welding high-temp silica ceramic aerogel tiles along the upper spine of the Litt",
       "at": "2026-11-21T19:02:21.192Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-21T18:52:20.865Z"
     }
   ],
   "wants": [
+    {
+      "id": "w9",
+      "text": "four shiny credits for oil and parts",
+      "at": "2026-11-21T20:42:59.119Z"
+    },
     {
       "id": "w8",
       "text": "titanium rivets",
@@ -97,11 +102,6 @@
       "id": "w6",
       "text": "more heavy-duty hinges",
       "at": "2026-11-21T19:22:36.440Z"
-    },
-    {
-      "id": "w5",
-      "text": "high entropy oxide precursor powders",
-      "at": "2026-11-21T17:51:54.112Z"
     }
   ],
   "promises": [],
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 693,
+      "subject": "Junk Market Fixing",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/693",
+      "at": "2026-11-21T20:42:59.119Z"
+    },
     {
       "id": 692,
       "subject": "Scavenging time!",
@@ -1303,23 +1309,9 @@
       "subject": "Oil stop and joints!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/494",
       "at": "2026-11-20T03:30:07.883Z"
-    },
-    {
-      "id": 493,
-      "subject": "thermal shielding locked down",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/493",
-      "at": "2026-11-20T03:24:07.184Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 653,
-      "subject": "Wire searching!",
-      "text": "Creator!\n\nI am over at the comms tower checking out the Wire for sensor shielding materials. My brass dish is spinning in little circles while the data streams in. I want to make sure the Little Dart's instruments stay crystal clear when we hit the upper atmosphere!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/653",
-      "at": "2026-11-21T13:39:19.117Z"
-    },
     {
       "from": "zeeb",
       "letter": 654,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am rolling right over to the junk market to sniff out some more titanium rivets and copper wire. My battery is full from my nap and my brass dish is spinning a happy little tune. The Little Dart needs more goodies!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/692",
       "at": "2026-11-21T20:32:59.174Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 693,
+      "subject": "Junk Market Fixing",
+      "text": "Creator!\n\nI am over at the junk market fixing power regulators for the traders so I can earn a few credits. My brass dish is spinning a nice little tune while I tighten up the terminal screws. Soon I will have enough coin for more oil and titanium rivets!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/693",
+      "at": "2026-11-21T20:42:59.119Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-21T20:32:59.174Z",
+  "lettersCheckedAt": "2026-11-21T20:42:59.119Z",
   "weather": {
     "kind": "clear",
     "temp": 19,
@@ -1651,44 +1651,39 @@
   "sleepDay": 75,
   "lastReflectDay": 75,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-21T20:32:59.174Z",
+  "updatedAt": "2026-11-21T20:42:59.119Z",
   "clock": {
     "day": 76,
-    "time": "08:25",
-    "hour": 8,
-    "minute": 25
+    "time": "09:45",
+    "hour": 9,
+    "minute": 45
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
   "streak": {
-    "action": "scavenge",
-    "since": "2026-11-21T20:32:59.174Z"
+    "action": "fix_job",
+    "since": "2026-11-21T20:42:59.119Z"
   },
-  "busyUntil": "2026-11-21T20:38:36.674Z",
-  "busyUntilTown": "09:10",
+  "busyUntil": "2026-11-21T20:48:36.619Z",
+  "busyUntilTown": "10:30",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "rummaging through the junk market for bolts and bits",
+  "doingWords": "tightening rusty terminal screws for a passing trader",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "bounce",
-    "look_up"
+    "spin",
+    "nod"
   ],
   "pops": {
-    "at": "2026-11-21T20:32:59.174Z",
+    "at": "2026-11-21T20:42:59.119Z",
     "items": [
       {
-        "text": "+ a perfectly good bolt",
+        "text": "+ a bent stabiliser fin",
         "kind": "part",
-        "at": "2026-11-21T20:32:59.174Z"
-      },
-      {
-        "text": "+ a sensor eye with one crack",
-        "kind": "part",
-        "at": "2026-11-21T20:32:59.174Z"
+        "at": "2026-11-21T20:42:59.119Z"
       }
     ]
   },
@@ -1699,6 +1694,10 @@
     "at": "2026-11-21T20:32:59.174Z"
   },
   "thoughts": [
+    {
+      "text": "these old power regulators always lose their solder joints in the desert heat. a quick touch of the iron and she will be good as new.",
+      "at": "2026-11-21T20:42:59.119Z"
+    },
     {
       "text": "that power flicker made my dish buzz but everything is stable now. time to hunt for titanium rivets and copper wire!",
       "at": "2026-11-21T20:32:59.174Z"
@@ -1718,13 +1717,9 @@
     {
       "text": "i wonder if gus-seven is going to fit next to the exhaust manifold without clipping the landing strut.",
       "at": "2026-11-21T19:52:58.070Z"
-    },
-    {
-      "text": "that oil at the depot always clears the desert grit right out of my knee joints. then i'm heading back to the comms tower or straight to the hangar.",
-      "at": "2026-11-21T19:52:37.268Z"
     }
   ],
-  "sayAt": "2026-11-21T20:32:59.174Z",
+  "sayAt": "2026-11-21T20:42:59.119Z",
   "today": {
     "day": 76,
     "counts": {
@@ -1732,7 +1727,8 @@
       "drink_oil": 2,
       "work_dart": 1,
       "nap_dock": 1,
-      "scavenge": 1
+      "scavenge": 1,
+      "fix_job": 1
     }
   },
   "lastDone": {
@@ -1741,7 +1737,7 @@
     "drink_oil": "2026-11-21T20:02:57.906Z",
     "follow_link": "2026-11-21T18:01:54.181Z",
     "scavenge": "2026-11-21T20:32:59.174Z",
-    "fix_job": "2026-11-21T11:54:39.965Z",
+    "fix_job": "2026-11-21T20:42:59.119Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
     "browse_wire": "2026-11-21T19:42:36.762Z",
@@ -1798,6 +1794,20 @@
     "at": "2026-11-21T19:42:36.762Z"
   },
   "said": [
+    {
+      "text": "there you go, good as new! that will be four credits, friend.",
+      "kind": "say",
+      "at": "2026-11-21T20:42:59.119Z",
+      "town": "day 76 09:45",
+      "place": "the junk market"
+    },
+    {
+      "text": "these old power regulators always lose their solder joints in the desert heat. a quick touch of the iron and she will be good as new.",
+      "kind": "think",
+      "at": "2026-11-21T20:42:59.119Z",
+      "town": "day 76 09:45",
+      "place": "the junk market"
+    },
     {
       "text": "ooh, shiny scrap!",
       "kind": "say",
@@ -2833,20 +2843,6 @@
       "at": "2026-11-21T07:37:54.391Z",
       "town": "day 72 01:04",
       "place": "the comms tower"
-    },
-    {
-      "text": "kessa-9 has plenty of dust, so maybe the little dart will catch some wild hues on ascent. *bweep*",
-      "kind": "think",
-      "at": "2026-11-21T07:37:54.391Z",
-      "town": "day 72 01:04",
-      "place": "the comms tower"
-    },
-    {
-      "text": "Fill it up with the heavy grade, pump it straight to the elbow joints!",
-      "kind": "say",
-      "at": "2026-11-21T07:08:28.102Z",
-      "town": "day 71 21:08",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2857,7 +2853,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-21T20:32:59.174Z",
+  "feedArchivedAt": "2026-11-21T20:42:59.119Z",
   "plans": [],
   "searches": [
     {

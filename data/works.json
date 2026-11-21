@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 20",
-    "progress": 16,
-    "version": 2,
-    "lastChange": "routing copper wire bundles into the instrument cluster using Otto, a cockpit switch that still clicks (used Tok, half a thruster nozzle)",
+    "progress": 26,
+    "version": 3,
+    "lastChange": "connecting heavy-duty copper wire bundles into the instrument cluster via Otto the cockpit switch, using Bix (a strip of hull plating) (used Tok, a mystery box that hums)",
     "log": [
+      {
+        "version": 3,
+        "change": "connecting heavy-duty copper wire bundles into the instrument cluster via Otto the cockpit switch, using Bix (a strip of hull plating) (used Tok, a mystery box that hums)",
+        "progress": 26,
+        "at": "2026-11-21T12:35:05.810Z"
+      },
       {
         "version": 2,
         "change": "routing copper wire bundles into the instrument cluster using Otto, a cockpit switch that still clicks (used Tok, half a thruster nozzle)",
@@ -238,12 +244,6 @@
         "change": "riveting the main oxygen manifold access hatch onto the Little Dart using Tilly, a scorched heat tile (used Lorna, a cracked navigation chip)",
         "progress": 98,
         "at": "2026-11-20T01:42:30.336Z"
-      },
-      {
-        "version": 11,
-        "change": "securing the instrument panel and internal wire harnesses into the Little Dart (used Brakk, a mystery box that hums)",
-        "progress": 91,
-        "at": "2026-11-20T00:44:53.699Z"
       }
     ],
     "launched": [
@@ -2540,7 +2540,7 @@
         ]
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Otto",
@@ -2551,6 +2551,11 @@
         "name": "Tok",
         "what": "half a thruster nozzle",
         "version": 2
+      },
+      {
+        "name": "Tok",
+        "what": "a mystery box that hums",
+        "version": 3
       }
     ],
     "design": null
@@ -2838,11 +2843,6 @@
       "name": "Gus",
       "what": "a mystery box that hums",
       "at": "2026-11-21T08:50:36.868Z"
-    },
-    {
-      "name": "Tok",
-      "what": "a mystery box that hums",
-      "at": "2026-11-21T08:40:36.592Z"
     }
   ],
   "reads": [

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795240744600,
+  "lastTick": 1795241345085,
   "asleep": false,
   "place": "market",
-  "action": "scavenge",
-  "doing": "digging through the junk piles",
-  "actionStartedAt": "2026-11-21T05:59:04.600Z",
+  "action": "fix_job",
+  "doing": "doing a repair job at the market",
+  "actionStartedAt": "2026-11-21T06:09:05.085Z",
   "actionMinutes": 45,
-  "thought": "The Little Dart needs fresh hardware and I need a break from welding flex circuits. Let me see what the traders tossed out today.",
-  "feeling": "eager and nosy",
-  "say": "Time to dig up some prime scrap! *bweep*",
-  "mood": 0.386,
-  "energy": 0.437,
+  "thought": "Traders always bring the crustiest gizmos to the market. Time to make this circuit hum like new!",
+  "feeling": "eager and handy",
+  "say": "Hold your gears, trader! Zeeb's torch is on the job.",
+  "mood": 0.399,
+  "energy": 0.306,
   "needs": {
-    "charge": 0.144,
-    "oil": 0.356,
-    "curiosity": 0,
-    "company": 0.159,
-    "craft": 0.113
+    "charge": 0.251,
+    "oil": 0.396,
+    "curiosity": 0.08,
+    "company": 0.062,
+    "craft": 0
   },
   "credits": 7,
   "recent": [
+    {
+      "id": "fix_job",
+      "detail": "",
+      "at": "2026-11-21T06:09:05.085Z"
+    },
     {
       "id": "scavenge",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-21T04:07:57.803Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-21T03:57:57.916Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-21T05:59:04.600Z",
+  "lettersCheckedAt": "2026-11-21T06:09:05.085Z",
   "weather": {
     "kind": "clear",
     "temp": 16,
@@ -1651,39 +1651,39 @@
   "sleepDay": 70,
   "lastReflectDay": 70,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-21T05:59:04.600Z",
+  "updatedAt": "2026-11-21T06:09:05.085Z",
   "clock": {
     "day": 71,
-    "time": "11:53",
-    "hour": 11,
-    "minute": 53
+    "time": "13:13",
+    "hour": 13,
+    "minute": 13
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
   "streak": {
-    "action": "scavenge",
-    "since": "2026-11-21T05:59:04.600Z"
+    "action": "fix_job",
+    "since": "2026-11-21T06:09:05.085Z"
   },
-  "busyUntil": "2026-11-21T06:04:42.100Z",
-  "busyUntilTown": "12:38",
+  "busyUntil": "2026-11-21T06:14:42.585Z",
+  "busyUntilTown": "13:58",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "poking through scrap heaps at the junk market for hidden gems",
+  "doingWords": "wiggling soldering iron into a trader's busted control box",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "zoom",
-    "look_up"
+    "lean_in",
+    "nod"
   ],
   "pops": {
-    "at": "2026-11-21T05:59:04.600Z",
+    "at": "2026-11-21T06:09:05.085Z",
     "items": [
       {
-        "text": "+ a perfectly good bolt",
+        "text": "+ a strip of hull plating",
         "kind": "part",
-        "at": "2026-11-21T05:59:04.600Z"
+        "at": "2026-11-21T06:09:05.085Z"
       }
     ]
   },
@@ -1694,6 +1694,10 @@
     "at": "2026-11-21T03:47:58.135Z"
   },
   "thoughts": [
+    {
+      "text": "Traders always bring the crustiest gizmos to the market. Time to make this circuit hum like new!",
+      "at": "2026-11-21T06:09:05.085Z"
+    },
     {
       "text": "The Little Dart needs fresh hardware and I need a break from welding flex circuits. Let me see what the traders tossed out today.",
       "at": "2026-11-21T05:59:04.600Z"
@@ -1713,13 +1717,9 @@
     {
       "text": "Even way out there on rusty dirt, rovers take time to watch the evening sky. Makes me want to aim the Little Dart straight up past the dust.",
       "at": "2026-11-21T05:07:32.215Z"
-    },
-    {
-      "text": "i should check the wiring harness inside the little dart before bolt gus causes interference on the nav computer. copper traces need their personal space just like cargo-hauler bots.",
-      "at": "2026-11-21T04:57:31.791Z"
     }
   ],
-  "sayAt": "2026-11-21T05:59:04.600Z",
+  "sayAt": "2026-11-21T06:09:05.085Z",
   "today": {
     "day": 71,
     "counts": {
@@ -1729,7 +1729,8 @@
       "read_news": 2,
       "nap_dock": 1,
       "work_dart": 1,
-      "scavenge": 1
+      "scavenge": 1,
+      "fix_job": 1
     }
   },
   "lastDone": {
@@ -1738,7 +1739,7 @@
     "drink_oil": "2026-11-21T04:37:31.737Z",
     "follow_link": "2026-11-21T04:57:31.791Z",
     "scavenge": "2026-11-21T05:59:04.600Z",
-    "fix_job": "2026-11-20T15:29:25.663Z",
+    "fix_job": "2026-11-21T06:09:05.085Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
     "browse_wire": "2026-11-21T04:47:32.070Z",
@@ -1795,6 +1796,20 @@
     "at": "2026-11-21T05:19:05.367Z"
   },
   "said": [
+    {
+      "text": "Hold your gears, trader! Zeeb's torch is on the job.",
+      "kind": "say",
+      "at": "2026-11-21T06:09:05.085Z",
+      "town": "day 71 13:13",
+      "place": "the junk market"
+    },
+    {
+      "text": "Traders always bring the crustiest gizmos to the market. Time to make this circuit hum like new!",
+      "kind": "think",
+      "at": "2026-11-21T06:09:05.085Z",
+      "town": "day 71 13:13",
+      "place": "the junk market"
+    },
     {
       "text": "Time to dig up some prime scrap! *bweep*",
       "kind": "say",
@@ -2830,20 +2845,6 @@
       "at": "2026-11-20T16:09:07.975Z",
       "town": "day 66 21:14",
       "place": "the comms tower"
-    },
-    {
-      "text": "heading back to the dock for a quick juice up. *bweep*",
-      "kind": "say",
-      "at": "2026-11-20T15:49:08.261Z",
-      "town": "day 66 18:34",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "i need to plug into hangar bay 3 before my main relay goes dark. a good charge will get me ready for more dart work.",
-      "kind": "think",
-      "at": "2026-11-20T15:49:08.261Z",
-      "town": "day 66 18:34",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2854,7 +2855,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-21T05:59:04.600Z",
+  "feedArchivedAt": "2026-11-21T06:09:05.085Z",
   "plans": [],
   "searches": [
     {

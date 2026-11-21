@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 20",
-    "progress": 32,
-    "version": 4,
-    "lastChange": "securing the heavy-duty copper wire bundles into the cockpit instrument cluster via Otto the switch, using Nim (a strip of hull plating) (used Gus, a mystery box that hums)",
+    "progress": 40,
+    "version": 5,
+    "lastChange": "mounting the altimeter gauge into the instrument cluster panel using Tok (a sensor eye with one crack) (used Lorna, a scorched heat tile)",
     "log": [
+      {
+        "version": 5,
+        "change": "mounting the altimeter gauge into the instrument cluster panel using Tok (a sensor eye with one crack) (used Lorna, a scorched heat tile)",
+        "progress": 40,
+        "at": "2026-11-21T12:55:05.448Z"
+      },
       {
         "version": 4,
         "change": "securing the heavy-duty copper wire bundles into the cockpit instrument cluster via Otto the switch, using Nim (a strip of hull plating) (used Gus, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "welding reinforced double-hinge brackets onto the Little Dart's landing gear using Mabel the little landing strut (used Mabel, a little landing strut)",
         "progress": 10,
         "at": "2026-11-20T03:04:06.563Z"
-      },
-      {
-        "version": 13,
-        "change": "welding the primary booster shroud and thermal insulation blanket onto the Little Dart using Rusty Jr, a mystery box that hums (used Otto, a tiny gyroscope)",
-        "progress": 100,
-        "at": "2026-11-20T02:22:31.221Z"
       }
     ],
     "launched": [
@@ -2540,7 +2540,7 @@
         ]
       }
     ],
-    "partsUsed": 4,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Otto",
@@ -2561,6 +2561,11 @@
         "name": "Gus",
         "what": "a mystery box that hums",
         "version": 4
+      },
+      {
+        "name": "Lorna",
+        "what": "a scorched heat tile",
+        "version": 5
       }
     ],
     "design": null
@@ -2838,11 +2843,6 @@
       "name": "Pim",
       "what": "a cracked navigation chip",
       "at": "2026-11-21T09:10:37.089Z"
-    },
-    {
-      "name": "Lorna",
-      "what": "a scorched heat tile",
-      "at": "2026-11-21T08:50:36.868Z"
     }
   ],
   "reads": [

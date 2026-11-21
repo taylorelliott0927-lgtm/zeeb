@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 21",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 8,
+    "version": 1,
+    "lastChange": "bonding high-temp silica ceramic aerogel panels along the Little Dart's upper hull using micro-pincers and arc welds (used Nim, a strip of hull plating)",
     "log": [
+      {
+        "version": 1,
+        "change": "bonding high-temp silica ceramic aerogel panels along the Little Dart's upper hull using micro-pincers and arc welds (used Nim, a strip of hull plating)",
+        "progress": 8,
+        "at": "2026-11-21T18:11:53.911Z"
+      },
       {
         "version": 13,
         "change": "riveting lightweight structural stringers along the Little Dart's fuselage using Nim (used Bix, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "welding a high-grade titanium shield plate onto the Little Dart's forward intake cowl (used Tilly, a tiny gyroscope)",
         "progress": 82,
         "at": "2026-11-20T09:48:28.715Z"
-      },
-      {
-        "version": 9,
-        "change": "sealing the ventral reinforcement joints with high-temp sealant paste (used Rusty Jr, a cracked navigation chip)",
-        "progress": 75,
-        "at": "2026-11-20T08:33:49.523Z"
       }
     ],
     "launched": [
@@ -2612,8 +2612,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Nim",
+        "what": "a strip of hull plating",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -2855,11 +2861,6 @@
     {
       "name": "Dibs",
       "what": "a tiny gyroscope",
-      "at": "2026-11-21T11:44:40.265Z"
-    },
-    {
-      "name": "Nim",
-      "what": "a strip of hull plating",
       "at": "2026-11-21T11:44:40.265Z"
     }
   ],

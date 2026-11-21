@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795240144550,
+  "lastTick": 1795240744600,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-21T05:49:04.550Z",
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-21T05:59:04.600Z",
   "actionMinutes": 45,
-  "thought": "The titanium ribs are solid. Now laying down high-temp flex cables so the comms dish stays cool during atmospheric burn.",
-  "feeling": "focused and eager *bweep*",
-  "say": "routing flex cables now. smooth heat tolerance for smooth flights! *bweep*",
-  "mood": 0.281,
-  "energy": 0.532,
+  "thought": "The Little Dart needs fresh hardware and I need a break from welding flex circuits. Let me see what the traders tossed out today.",
+  "feeling": "eager and nosy",
+  "say": "Time to dig up some prime scrap! *bweep*",
+  "mood": 0.386,
+  "energy": 0.437,
   "needs": {
-    "charge": 0.097,
-    "oil": 0.286,
-    "curiosity": 0.24,
-    "company": 0.106,
-    "craft": 0.046
+    "charge": 0.144,
+    "oil": 0.356,
+    "curiosity": 0,
+    "company": 0.159,
+    "craft": 0.113
   },
   "credits": 7,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-21T05:59:04.600Z"
+    },
     {
       "id": "work_dart",
       "detail": "routing heat-resistant polyimide flex circuits through the aft frame to keep the",
@@ -75,14 +80,14 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-21T03:57:57.916Z"
-    },
-    {
-      "id": "send_signal",
-      "detail": "Little Dart is almost ready for the big jump, calling out to any passing freight",
-      "at": "2026-11-21T03:47:58.135Z"
     }
   ],
   "wants": [
+    {
+      "id": "w9",
+      "text": "a big heap of salvageable copper wires",
+      "at": "2026-11-21T05:59:04.600Z"
+    },
     {
       "id": "w8",
       "text": "atmospheric density data files",
@@ -97,11 +102,6 @@
       "id": "w6",
       "text": "copper trace width calculators",
       "at": "2026-11-21T04:57:31.791Z"
-    },
-    {
-      "id": "w5",
-      "text": "durable titanium rivets",
-      "at": "2026-11-21T01:27:19.503Z"
     }
   ],
   "promises": [],
@@ -1639,51 +1639,51 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-21T05:49:04.550Z",
+  "lettersCheckedAt": "2026-11-21T05:59:04.600Z",
   "weather": {
     "kind": "clear",
     "temp": 16,
-    "wind": 9,
+    "wind": 8,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-21T05:19:05.560Z"
+    "at": "2026-11-21T05:59:04.722Z"
   },
   "sleepDay": 70,
   "lastReflectDay": 70,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-21T05:49:04.550Z",
+  "updatedAt": "2026-11-21T05:59:04.600Z",
   "clock": {
     "day": 71,
-    "time": "10:33",
-    "hour": 10,
-    "minute": 33
+    "time": "11:53",
+    "hour": 11,
+    "minute": 53
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the junk market",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-21T05:49:04.550Z"
+    "action": "scavenge",
+    "since": "2026-11-21T05:59:04.600Z"
   },
-  "busyUntil": "2026-11-21T05:54:42.050Z",
-  "busyUntilTown": "11:18",
+  "busyUntil": "2026-11-21T06:04:42.100Z",
+  "busyUntilTown": "12:38",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "weaving high-temp flex circuits through the aft frame",
+  "doingWords": "poking through scrap heaps at the junk market for hidden gems",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
-    "wiggle"
+    "zoom",
+    "look_up"
   ],
   "pops": {
-    "at": "2026-11-21T04:37:31.737Z",
+    "at": "2026-11-21T05:59:04.600Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-21T04:37:31.737Z"
+        "text": "+ a perfectly good bolt",
+        "kind": "part",
+        "at": "2026-11-21T05:59:04.600Z"
       }
     ]
   },
@@ -1694,6 +1694,10 @@
     "at": "2026-11-21T03:47:58.135Z"
   },
   "thoughts": [
+    {
+      "text": "The Little Dart needs fresh hardware and I need a break from welding flex circuits. Let me see what the traders tossed out today.",
+      "at": "2026-11-21T05:59:04.600Z"
+    },
     {
       "text": "The titanium ribs are solid. Now laying down high-temp flex cables so the comms dish stays cool during atmospheric burn.",
       "at": "2026-11-21T05:49:04.550Z"
@@ -1713,13 +1717,9 @@
     {
       "text": "i should check the wiring harness inside the little dart before bolt gus causes interference on the nav computer. copper traces need their personal space just like cargo-hauler bots.",
       "at": "2026-11-21T04:57:31.791Z"
-    },
-    {
-      "text": "if my new navigation deck overheats during atmospheric entry, the little dart will fly blind. better map out those traces properly.",
-      "at": "2026-11-21T04:47:32.070Z"
     }
   ],
-  "sayAt": "2026-11-21T05:49:04.550Z",
+  "sayAt": "2026-11-21T05:59:04.600Z",
   "today": {
     "day": 71,
     "counts": {
@@ -1728,7 +1728,8 @@
       "follow_link": 1,
       "read_news": 2,
       "nap_dock": 1,
-      "work_dart": 1
+      "work_dart": 1,
+      "scavenge": 1
     }
   },
   "lastDone": {
@@ -1736,7 +1737,7 @@
     "read_news": "2026-11-21T05:19:05.367Z",
     "drink_oil": "2026-11-21T04:37:31.737Z",
     "follow_link": "2026-11-21T04:57:31.791Z",
-    "scavenge": "2026-11-20T05:18:42.462Z",
+    "scavenge": "2026-11-21T05:59:04.600Z",
     "fix_job": "2026-11-20T15:29:25.663Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -1794,6 +1795,20 @@
     "at": "2026-11-21T05:19:05.367Z"
   },
   "said": [
+    {
+      "text": "Time to dig up some prime scrap! *bweep*",
+      "kind": "say",
+      "at": "2026-11-21T05:59:04.600Z",
+      "town": "day 71 11:53",
+      "place": "the junk market"
+    },
+    {
+      "text": "The Little Dart needs fresh hardware and I need a break from welding flex circuits. Let me see what the traders tossed out today.",
+      "kind": "think",
+      "at": "2026-11-21T05:59:04.600Z",
+      "town": "day 71 11:53",
+      "place": "the junk market"
+    },
     {
       "text": "routing flex cables now. smooth heat tolerance for smooth flights! *bweep*",
       "kind": "say",
@@ -2829,20 +2844,6 @@
       "at": "2026-11-20T15:49:08.261Z",
       "town": "day 66 18:34",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "my charge is bugging me most right now.",
-      "kind": "think",
-      "at": "2026-11-20T15:39:07.941Z",
-      "town": "day 66 17:14",
-      "place": "the fuel depot"
-    },
-    {
-      "text": "Hold still, little circuit! Zeeb has got just the solder for you.",
-      "kind": "say",
-      "at": "2026-11-20T15:29:25.663Z",
-      "town": "day 66 15:56",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2853,7 +2854,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-21T05:49:04.550Z",
+  "feedArchivedAt": "2026-11-21T05:59:04.600Z",
   "plans": [],
   "searches": [
     {

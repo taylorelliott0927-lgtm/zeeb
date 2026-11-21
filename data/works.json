@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 19",
-    "progress": 96,
-    "version": 22,
-    "lastChange": "welding custom instrument panel brackets and mounting the primary flight computer housing into the Little Dart's cockpit (used Lorna, a strip of hull plating)",
+    "name": "the Little Dart Mk 20",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 23,
+        "change": "angling scrap hull plates around the nose and canopy to reduce radar cross section using stealth geometry (used Rusty Jr, half a thruster nozzle)",
+        "progress": 100,
+        "at": "2026-11-21T08:17:53.433Z"
+      },
       {
         "version": 22,
         "change": "welding custom instrument panel brackets and mounting the primary flight computer housing into the Little Dart's cockpit (used Lorna, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "welding the upper hull plating onto the Little Dart using Otto, a tiny gyroscope, to keep the balance true (used Rusty Jr, a cracked navigation chip)",
         "progress": 76,
         "at": "2026-11-20T00:24:54.064Z"
-      },
-      {
-        "version": 8,
-        "change": "welding the main thruster cowling with Lorna, a cracked navigation chip, to anchor the exhaust housing (used Lorna, a little landing strut)",
-        "progress": 70,
-        "at": "2026-11-19T23:34:25.883Z"
       }
     ],
     "launched": [
@@ -2486,51 +2486,62 @@
           "at": "2026-11-20T11:20:26.803Z",
           "day": 65
         }
+      },
+      {
+        "name": "the Little Dart Mk 19",
+        "day": 72,
+        "partsUsed": 9,
+        "parts": [
+          {
+            "name": "Mabel",
+            "what": "half a thruster nozzle",
+            "version": 1
+          },
+          {
+            "name": "Dibs",
+            "what": "a mystery box that hums",
+            "version": 2
+          },
+          {
+            "name": "Lorna",
+            "what": "a cracked navigation chip",
+            "version": 3
+          },
+          {
+            "name": "Tok",
+            "what": "a scorched heat tile",
+            "version": 4
+          },
+          {
+            "name": "Bix",
+            "what": "a little landing strut",
+            "version": 5
+          },
+          {
+            "name": "Captain",
+            "what": "a little landing strut",
+            "version": 13
+          },
+          {
+            "name": "Dibs",
+            "what": "a perfectly good bolt",
+            "version": 21
+          },
+          {
+            "name": "Lorna",
+            "what": "a strip of hull plating",
+            "version": 22
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "half a thruster nozzle",
+            "version": 23
+          }
+        ]
       }
     ],
-    "partsUsed": 8,
-    "parts": [
-      {
-        "name": "Mabel",
-        "what": "half a thruster nozzle",
-        "version": 1
-      },
-      {
-        "name": "Dibs",
-        "what": "a mystery box that hums",
-        "version": 2
-      },
-      {
-        "name": "Lorna",
-        "what": "a cracked navigation chip",
-        "version": 3
-      },
-      {
-        "name": "Tok",
-        "what": "a scorched heat tile",
-        "version": 4
-      },
-      {
-        "name": "Bix",
-        "what": "a little landing strut",
-        "version": 5
-      },
-      {
-        "name": "Captain",
-        "what": "a little landing strut",
-        "version": 13
-      },
-      {
-        "name": "Dibs",
-        "what": "a perfectly good bolt",
-        "version": 21
-      },
-      {
-        "name": "Lorna",
-        "what": "a strip of hull plating",
-        "version": 22
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -2751,13 +2762,7 @@
       "at": "2026-11-13T04:54:08.620Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Rusty Jr",
-      "what": "half a thruster nozzle",
-      "at": "2026-11-21T06:18:28.434Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Radar cross section - Wikipedia",

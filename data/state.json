@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795261480265,
+  "lastTick": 1795262079965,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-21T11:44:40.265Z",
+  "place": "market",
+  "action": "fix_job",
+  "doing": "doing a repair job at the market",
+  "actionStartedAt": "2026-11-21T11:54:39.965Z",
   "actionMinutes": 45,
-  "thought": "my power cells are fully charged and my servos feel great. let us get those copper wire bundles settled into the instrument cluster.",
-  "feeling": "bright and ready to build",
-  "say": "*bweep-bip* let us get to work!",
-  "mood": 0.301,
-  "energy": -0.027,
+  "thought": "my charge is bugging me most right now.",
+  "feeling": "okay, ticking along",
+  "say": "",
+  "mood": 0.287,
+  "energy": -0.112,
   "needs": {
-    "charge": 0.518,
-    "oil": 0.216,
-    "curiosity": 0.24,
+    "charge": 0.625,
+    "oil": 0.256,
+    "curiosity": 0.32,
     "company": 0,
-    "craft": 0.284
+    "craft": 0.151
   },
-  "credits": 1,
+  "credits": 5,
   "recent": [
+    {
+      "id": "fix_job",
+      "detail": "",
+      "at": "2026-11-21T11:54:39.965Z"
+    },
     {
       "id": "work_dart",
       "detail": "routing copper wire bundles into the instrument cluster using Otto, a cockpit sw",
@@ -75,11 +80,6 @@
       "id": "scavenge",
       "detail": "",
       "at": "2026-11-21T09:57:37.822Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "routing copper wire bundles into the instrument cluster",
-      "at": "2026-11-21T09:47:37.434Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-21T11:44:40.265Z",
+  "lettersCheckedAt": "2026-11-21T11:54:39.965Z",
   "weather": {
     "kind": "clear",
     "temp": 24,
@@ -1650,45 +1650,37 @@
   },
   "sleepDay": 72,
   "lastReflectDay": 72,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-21T11:44:40.265Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-21T11:54:39.965Z",
   "clock": {
     "day": 73,
-    "time": "09:58",
-    "hour": 9,
-    "minute": 58
+    "time": "11:18",
+    "hour": 11,
+    "minute": 18
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the junk market",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-21T11:44:40.265Z"
+    "action": "fix_job",
+    "since": "2026-11-21T11:54:39.965Z"
   },
-  "busyUntil": "2026-11-21T11:50:17.765Z",
-  "busyUntilTown": "10:43",
+  "busyUntil": "2026-11-21T12:00:17.465Z",
+  "busyUntilTown": "12:03",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "routing copper wire bundles into the instrument cluster with Otto",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "nod",
-    "bounce"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-21T11:44:40.265Z",
+    "at": "2026-11-21T11:54:39.965Z",
     "items": [
       {
-        "text": "+ a strip of hull plating",
-        "kind": "part",
-        "at": "2026-11-21T11:44:40.265Z"
-      },
-      {
-        "text": "+ a tiny gyroscope",
-        "kind": "part",
-        "at": "2026-11-21T11:44:40.265Z"
+        "text": "+4 credits",
+        "kind": "credits",
+        "at": "2026-11-21T11:54:39.965Z"
       }
     ]
   },
@@ -1699,6 +1691,10 @@
     "at": "2026-11-21T11:44:40.265Z"
   },
   "thoughts": [
+    {
+      "text": "my charge is bugging me most right now.",
+      "at": "2026-11-21T11:54:39.965Z"
+    },
     {
       "text": "my power cells are fully charged and my servos feel great. let us get those copper wire bundles settled into the instrument cluster.",
       "at": "2026-11-21T11:44:40.265Z"
@@ -1718,13 +1714,9 @@
     {
       "text": "following links for four hours straight is a great way to weld your internal gears together in place. time for a good stretch before the sun gets too high.",
       "at": "2026-11-21T11:12:24.859Z"
-    },
-    {
-      "text": "good thing the little dart is mostly bare scrap metal instead of fancy paint. though i do need to make sure my own navigation dish isn't getting blocked by the hull plating.",
-      "at": "2026-11-21T11:02:24.376Z"
     }
   ],
-  "sayAt": "2026-11-21T11:44:40.265Z",
+  "sayAt": "2026-11-21T11:54:39.965Z",
   "today": {
     "day": 73,
     "counts": {
@@ -1733,7 +1725,8 @@
       "wander": 1,
       "drink_oil": 1,
       "nap_dock": 1,
-      "work_dart": 1
+      "work_dart": 1,
+      "fix_job": 1
     }
   },
   "lastDone": {
@@ -1742,7 +1735,7 @@
     "drink_oil": "2026-11-21T11:24:39.925Z",
     "follow_link": "2026-11-21T11:02:24.376Z",
     "scavenge": "2026-11-21T09:57:37.822Z",
-    "fix_job": "2026-11-21T09:20:36.316Z",
+    "fix_job": "2026-11-21T11:54:39.965Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
     "browse_wire": "2026-11-21T10:07:38.087Z",
@@ -1799,6 +1792,13 @@
     "at": "2026-11-21T11:02:24.376Z"
   },
   "said": [
+    {
+      "text": "my charge is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-21T11:54:39.965Z",
+      "town": "day 73 11:18",
+      "place": "the junk market"
+    },
     {
       "text": "*bweep-bip* let us get to work!",
       "kind": "say",
@@ -2841,13 +2841,6 @@
       "at": "2026-11-20T21:37:41.511Z",
       "town": "day 68 17:02",
       "place": "the comms tower"
-    },
-    {
-      "text": "wonder what the wind is carrying over the dunes today. maybe some fresh scrap for the collection.",
-      "kind": "think",
-      "at": "2026-11-20T21:37:41.511Z",
-      "town": "day 68 17:02",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2858,7 +2851,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-21T11:44:40.265Z",
+  "feedArchivedAt": "2026-11-21T11:54:39.965Z",
   "plans": [],
   "searches": [
     {

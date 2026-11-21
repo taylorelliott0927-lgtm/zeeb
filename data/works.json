@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 20",
-    "progress": 40,
-    "version": 5,
-    "lastChange": "mounting the altimeter gauge into the instrument cluster panel using Tok (a sensor eye with one crack) (used Lorna, a scorched heat tile)",
+    "progress": 47,
+    "version": 6,
+    "lastChange": "patched a hole in the hull (used Pim, a cracked navigation chip)",
     "log": [
+      {
+        "version": 6,
+        "change": "patched a hole in the hull (used Pim, a cracked navigation chip)",
+        "progress": 47,
+        "at": "2026-11-21T14:08:55.436Z"
+      },
       {
         "version": 5,
         "change": "mounting the altimeter gauge into the instrument cluster panel using Tok (a sensor eye with one crack) (used Lorna, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "welding custom side-flap reinforcements and thermal shielding plates onto the Little Dart's lower fuselage using Mabel and Rusty Jr (used Rusty Jr, a mystery box that hums)",
         "progress": 20,
         "at": "2026-11-20T03:14:06.464Z"
-      },
-      {
-        "version": 1,
-        "change": "welding reinforced double-hinge brackets onto the Little Dart's landing gear using Mabel the little landing strut (used Mabel, a little landing strut)",
-        "progress": 10,
-        "at": "2026-11-20T03:04:06.563Z"
       }
     ],
     "launched": [
@@ -2540,7 +2540,7 @@
         ]
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Otto",
@@ -2566,6 +2566,11 @@
         "name": "Lorna",
         "what": "a scorched heat tile",
         "version": 5
+      },
+      {
+        "name": "Pim",
+        "what": "a cracked navigation chip",
+        "version": 6
       }
     ],
     "design": null
@@ -2838,11 +2843,6 @@
       "name": "Lorna",
       "what": "a mystery box that hums",
       "at": "2026-11-21T09:27:38.614Z"
-    },
-    {
-      "name": "Pim",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-21T09:10:37.089Z"
     }
   ],
   "reads": [

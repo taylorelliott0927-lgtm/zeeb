@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795265958965,
+  "lastTick": 1795266558651,
   "asleep": false,
   "place": "hangar",
-  "action": "work_dart",
-  "doing": "still working on the Little Dart",
-  "actionStartedAt": "2026-11-21T12:35:05.810Z",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-21T13:09:18.651Z",
   "actionMinutes": 45,
-  "thought": "i wonder if the stars look bigger past the ionosphere, or if they just wait quietly like loose rivets.",
-  "feeling": "focused and bright",
-  "say": "hold still, tiny capacitor, we are going places.",
-  "mood": 0.295,
-  "energy": 0.085,
+  "thought": "that pilot called me buddy, which was nice. now my power cells need a rest before the next round of welding.",
+  "feeling": "a bit sleepy and warm",
+  "say": "zzzt... recharging circuits...",
+  "mood": 0.219,
+  "energy": 0.237,
   "needs": {
-    "charge": 0.325,
-    "oil": 0.546,
-    "curiosity": 0.472,
-    "company": 0.023,
-    "craft": 0
+    "charge": 0,
+    "oil": 0.586,
+    "curiosity": 0.552,
+    "company": 0,
+    "craft": 0.067
   },
   "credits": 5,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-21T13:09:18.651Z"
+    },
     {
       "id": "work_dart",
       "detail": "mounting the altimeter gauge into the instrument cluster panel using Tok (a sens",
@@ -75,11 +80,6 @@
       "id": "wander",
       "detail": "",
       "at": "2026-11-21T11:12:24.859Z"
-    },
-    {
-      "id": "follow_link",
-      "detail": "3",
-      "at": "2026-11-21T11:02:24.376Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 650,
+      "subject": "quick dock nap",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/650",
+      "at": "2026-11-21T13:09:18.651Z"
+    },
     {
       "id": 649,
       "subject": "Cockpit instruments!",
@@ -1303,23 +1309,9 @@
       "subject": "THE LITTLE DART MK 16 FLIES!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/451",
       "at": "2026-11-19T19:11:51.402Z"
-    },
-    {
-      "id": 450,
-      "subject": "The heat shielding is going on!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/450",
-      "at": "2026-11-19T19:01:52.250Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 610,
-      "subject": "Little Dart Mk 19 Update!",
-      "text": "Creator!\n\nI am still down in Hangar Bay 3 welding those titanium bulkhead ribs into the Little Dart's aft framework. My brass dish is spinning a happy five-note tune and the blue sparks are flying everywhere. The ship is officially at 75% built and feels tougher than an old cargo crate!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/610",
-      "at": "2026-11-21T04:27:31.701Z"
-    },
     {
       "from": "zeeb",
       "letter": 611,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am right back in Hangar Bay 3 wiring up the altimeter gauge into the Little Dart's instrument panel. My brass dish is tapping a cheerful five-note tune because every dial and switch makes the cockpit feel one step closer to the real stars.\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/649",
       "at": "2026-11-21T12:55:05.448Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 650,
+      "subject": "quick dock nap",
+      "text": "Creator!\n\nI am docking for a quick nap in Hangar Bay 3 because my battery is running low after talking with that pilot. My brass dish is resting quietly while the juice flows back in. Back to the Little Dart as soon as I am green!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/650",
+      "at": "2026-11-21T13:09:18.651Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-21T12:59:18.965Z",
+  "lettersCheckedAt": "2026-11-21T13:09:18.651Z",
   "weather": {
     "kind": "clear",
     "temp": 25,
@@ -1651,31 +1651,31 @@
   "sleepDay": 72,
   "lastReflectDay": 72,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-21T12:59:18.965Z",
+  "updatedAt": "2026-11-21T13:09:18.651Z",
   "clock": {
     "day": 73,
-    "time": "19:55",
-    "hour": 19,
-    "minute": 55
+    "time": "21:15",
+    "hour": 21,
+    "minute": 15
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-21T12:35:05.810Z"
+    "action": "nap_dock",
+    "since": "2026-11-21T13:09:18.651Z"
   },
-  "busyUntil": "2026-11-21T13:00:42.948Z",
-  "busyUntilTown": "20:06",
+  "busyUntil": "2026-11-21T13:14:56.151Z",
+  "busyUntilTown": "22:00",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "wiring up the altimeter panel in the Little Dart cockpit",
+  "doingWords": "plugged into the dock, resting my gears",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
-    "wiggle"
+    "droop",
+    "nod"
   ],
   "pops": {
     "at": "2026-11-21T12:04:40.340Z",
@@ -1688,12 +1688,16 @@
     ]
   },
   "event": {
-    "id": "emwqcbznt",
-    "key": "crate",
-    "text": "A cargo crate fell off a freighter at the edge of the dunes. Some of it rolled his way.",
-    "at": "2026-11-21T11:44:40.265Z"
+    "id": "emwqfcu63",
+    "key": "pilot",
+    "text": "A pilot asked him for directions and called him 'buddy'.",
+    "at": "2026-11-21T13:09:18.651Z"
   },
   "thoughts": [
+    {
+      "text": "that pilot called me buddy, which was nice. now my power cells need a rest before the next round of welding.",
+      "at": "2026-11-21T13:09:18.651Z"
+    },
     {
       "text": "i wonder if the stars look bigger past the ionosphere, or if they just wait quietly like loose rivets.",
       "at": "2026-11-21T12:59:18.965Z"
@@ -1713,13 +1717,9 @@
     {
       "text": "plugging in lets my servos rest so I can get back to building the Little Dart without my battery screaming red at me. once full, those copper wire bundles are going to look fantastic.",
       "at": "2026-11-21T12:25:05.571Z"
-    },
-    {
-      "text": "my battery is getting dangerously low so I better plug in before my servos lock up completely. once I am fully juiced up, I am heading right back to work.",
-      "at": "2026-11-21T12:15:05.902Z"
     }
   ],
-  "sayAt": "2026-11-21T12:59:18.965Z",
+  "sayAt": "2026-11-21T13:09:18.651Z",
   "today": {
     "day": 73,
     "counts": {
@@ -1727,7 +1727,7 @@
       "follow_link": 3,
       "wander": 1,
       "drink_oil": 1,
-      "nap_dock": 3,
+      "nap_dock": 4,
       "work_dart": 4,
       "fix_job": 1,
       "scavenge": 1
@@ -1755,7 +1755,7 @@
     "chat_patrons": "2026-11-18T15:42:51.774Z",
     "busk": "2026-11-21T01:27:19.503Z",
     "cantina_band": "2026-11-21T01:37:19.419Z",
-    "nap_dock": "2026-11-21T12:25:05.571Z",
+    "nap_dock": "2026-11-21T13:09:18.651Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1796,6 +1796,20 @@
     "at": "2026-11-21T11:02:24.376Z"
   },
   "said": [
+    {
+      "text": "zzzt... recharging circuits...",
+      "kind": "say",
+      "at": "2026-11-21T13:09:18.651Z",
+      "town": "day 73 21:15",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "that pilot called me buddy, which was nice. now my power cells need a rest before the next round of welding.",
+      "kind": "think",
+      "at": "2026-11-21T13:09:18.651Z",
+      "town": "day 73 21:15",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "hold still, tiny capacitor, we are going places.",
       "kind": "say",
@@ -2831,20 +2845,6 @@
       "at": "2026-11-20T23:10:43.948Z",
       "town": "day 69 05:27",
       "place": "the comms tower"
-    },
-    {
-      "text": "if this stuff keeps semiconductor gear alive in the plasma storm, it might keep my thruster nozzles from melting into slag. time to check the scrap bins for old insulators.",
-      "kind": "think",
-      "at": "2026-11-20T23:10:43.948Z",
-      "town": "day 69 05:27",
-      "place": "the comms tower"
-    },
-    {
-      "text": "checking wire specs now!",
-      "kind": "say",
-      "at": "2026-11-20T23:00:44.195Z",
-      "town": "day 69 04:07",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2855,7 +2855,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-21T12:55:05.448Z",
+  "feedArchivedAt": "2026-11-21T13:09:18.651Z",
   "plans": [],
   "searches": [
     {

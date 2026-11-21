@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 20",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 8,
+    "version": 1,
+    "lastChange": "routing copper wire bundles into the instrument cluster (used Otto, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 1,
+        "change": "routing copper wire bundles into the instrument cluster (used Otto, a cockpit switch that still clicks)",
+        "progress": 8,
+        "at": "2026-11-21T09:47:37.434Z"
+      },
       {
         "version": 23,
         "change": "angling scrap hull plates around the nose and canopy to reduce radar cross section using stealth geometry (used Rusty Jr, half a thruster nozzle)",
@@ -238,12 +244,6 @@
         "change": "welding the lateral stabilization fins onto the little dart using Brakk (a mystery box that hums, a really good one) to reinforce the aerodynamic profile. (used Lorna, a mystery box that hums)",
         "progress": 85,
         "at": "2026-11-20T00:34:54.246Z"
-      },
-      {
-        "version": 9,
-        "change": "welding the upper hull plating onto the Little Dart using Otto, a tiny gyroscope, to keep the balance true (used Rusty Jr, a cracked navigation chip)",
-        "progress": 76,
-        "at": "2026-11-20T00:24:54.064Z"
       }
     ],
     "launched": [
@@ -2540,8 +2540,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Otto",
+        "what": "a cockpit switch that still clicks",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -2791,11 +2797,6 @@
     {
       "name": "Tok",
       "what": "half a thruster nozzle",
-      "at": "2026-11-21T08:40:36.592Z"
-    },
-    {
-      "name": "Otto",
-      "what": "a cockpit switch that still clicks",
       "at": "2026-11-21T08:40:36.592Z"
     }
   ],

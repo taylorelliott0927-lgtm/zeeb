@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795246674391,
+  "lastTick": 1795247273373,
   "asleep": false,
   "place": "tower",
   "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
+  "doing": "still browsing the Wire at the comms tower",
   "actionStartedAt": "2026-11-21T07:37:54.391Z",
   "actionMinutes": 45,
-  "thought": "kessa-9 has plenty of dust, so maybe the little dart will catch some wild hues on ascent. *bweep*",
-  "feeling": "fascinated and slightly dusty",
-  "say": "bweep! data incoming.",
-  "mood": 0.334,
-  "energy": 0.262,
+  "thought": "need to know how kessa-9 dust messes with visibility before the little dart makes any high-speed atmospheric jumps. checking refractive index values now.",
+  "feeling": "curious and slightly gritty",
+  "say": "bweep-bop, let's see those math lines.",
+  "mood": 0.347,
+  "energy": 0.18,
   "needs": {
-    "charge": 0.378,
-    "oil": 0.118,
-    "curiosity": 0.191,
-    "company": 0.054,
-    "craft": 0.263
+    "charge": 0.425,
+    "oil": 0.158,
+    "curiosity": 0,
+    "company": 0,
+    "craft": 0.33
   },
   "credits": 1,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "mie scattering equations for desert regolith",
+      "at": "2026-11-21T07:47:53.373Z"
+    },
     {
       "id": "browse_wire",
       "detail": "atmospheric scattering on desert moons",
@@ -75,11 +80,6 @@
       "id": "read_news",
       "detail": "",
       "at": "2026-11-21T05:19:05.367Z"
-    },
-    {
-      "id": "read_news",
-      "detail": "",
-      "at": "2026-11-21T05:07:32.215Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 621,
+      "subject": "Scattering maths",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/621",
+      "at": "2026-11-21T07:47:53.373Z"
+    },
     {
       "id": 620,
       "subject": "Wire search for atmospheric data",
@@ -1303,23 +1309,9 @@
       "subject": "Going into power-save mode",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/422",
       "at": "2026-11-19T10:46:48.378Z"
-    },
-    {
-      "id": 421,
-      "subject": "physics are star-bound",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/421",
-      "at": "2026-11-19T10:36:48.809Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 581,
-      "subject": "Checking gaskets",
-      "text": "Creator!\n\nI am up at the comms tower searching the Wire for plasma duct gaskets. Need to make sure the Little Dart stays airtight when we leave Kessa-9 behind! My brass dish is spinning nicely in the morning breeze. Bweep!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/581",
-      "at": "2026-11-20T23:00:44.195Z"
-    },
     {
       "from": "zeeb",
       "letter": 582,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am back up at the comms tower searching the Wire for atmospheric scattering data on desert moons. My brass dish is spinning a nice little tune while the data streams in. We are figuring out all the best math for the Little Dart's flight profile!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/620",
       "at": "2026-11-21T07:37:54.391Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 621,
+      "subject": "Scattering maths",
+      "text": "Creator!\n\nI am still up at the comms tower digging through those scattering formulas on the Wire. My brass dish is spinning a nice little five-note tune while the data streams in. We are getting all the math locked down so the Little Dart's entry profile is smoother than polished chrome!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/621",
+      "at": "2026-11-21T07:47:53.373Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-21T07:37:54.391Z",
+  "lettersCheckedAt": "2026-11-21T07:47:53.373Z",
   "weather": {
     "kind": "clear",
     "temp": 17,
@@ -1651,12 +1651,12 @@
   "sleepDay": 70,
   "lastReflectDay": 70,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-21T07:37:54.391Z",
+  "updatedAt": "2026-11-21T07:47:53.373Z",
   "clock": {
     "day": 72,
-    "time": "01:04",
-    "hour": 1,
-    "minute": 4
+    "time": "02:24",
+    "hour": 2,
+    "minute": 24
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
@@ -1664,18 +1664,17 @@
     "action": "browse_wire",
     "since": "2026-11-21T07:37:54.391Z"
   },
-  "busyUntil": "2026-11-21T07:43:31.891Z",
-  "busyUntilTown": "01:49",
+  "busyUntil": "2026-11-21T07:53:30.873Z",
+  "busyUntilTown": "03:09",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "querying the Wire for atmospheric scattering data on Kessa-9",
+  "doingWords": "spinning brass dish, searching wire for scattering equations",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "spin",
-    "nod"
+    "spin"
   ],
   "pops": {
     "at": "2026-11-21T07:08:28.102Z",
@@ -1695,6 +1694,10 @@
   },
   "thoughts": [
     {
+      "text": "need to know how kessa-9 dust messes with visibility before the little dart makes any high-speed atmospheric jumps. checking refractive index values now.",
+      "at": "2026-11-21T07:47:53.373Z"
+    },
+    {
       "text": "kessa-9 has plenty of dust, so maybe the little dart will catch some wild hues on ascent. *bweep*",
       "at": "2026-11-21T07:37:54.391Z"
     },
@@ -1713,17 +1716,13 @@
     {
       "text": "Juice is flowing into my main cell, so Rusty Jr and the team will just have to guard the shelf until I wake up.",
       "at": "2026-11-21T06:38:27.851Z"
-    },
-    {
-      "text": "I need to get into the hangar dock before my main power cell runs completely dry. A good charge will have me back on the floor in no time.",
-      "at": "2026-11-21T06:28:27.765Z"
     }
   ],
-  "sayAt": "2026-11-21T07:37:54.391Z",
+  "sayAt": "2026-11-21T07:47:53.373Z",
   "today": {
     "day": 72,
     "counts": {
-      "browse_wire": 1
+      "browse_wire": 2
     }
   },
   "lastDone": {
@@ -1735,7 +1734,7 @@
     "fix_job": "2026-11-21T06:09:05.085Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-21T07:37:54.391Z",
+    "browse_wire": "2026-11-21T07:47:53.373Z",
     "compose_tune": "2026-11-21T02:52:01.628Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-19T05:33:24.251Z",
@@ -1759,6 +1758,11 @@
   },
   "puzzles": [
     {
+      "id": "q7",
+      "text": "how deep space signal relays boost long-range transmissions through space dust",
+      "at": "2026-11-21T07:47:53.373Z"
+    },
+    {
       "id": "q11",
       "text": "q6: q9: q6",
       "at": "2026-11-21T07:37:54.391Z"
@@ -1777,18 +1781,27 @@
       "id": "q8",
       "text": "q11: how deep space signal relays boost long-range transmissions through space dust",
       "at": "2026-11-21T03:47:58.135Z"
-    },
-    {
-      "id": "q10",
-      "text": "q11",
-      "at": "2026-11-21T03:37:57.398Z"
     }
   ],
   "nextSearch": {
-    "text": "mie scattering equations for desert regolith",
-    "at": "2026-11-21T07:37:54.391Z"
+    "text": "miepython pip install offline package",
+    "at": "2026-11-21T07:47:53.373Z"
   },
   "said": [
+    {
+      "text": "bweep-bop, let's see those math lines.",
+      "kind": "say",
+      "at": "2026-11-21T07:47:53.373Z",
+      "town": "day 72 02:24",
+      "place": "the comms tower"
+    },
+    {
+      "text": "need to know how kessa-9 dust messes with visibility before the little dart makes any high-speed atmospheric jumps. checking refractive index values now.",
+      "kind": "think",
+      "at": "2026-11-21T07:47:53.373Z",
+      "town": "day 72 02:24",
+      "place": "the comms tower"
+    },
     {
       "text": "bweep! data incoming.",
       "kind": "say",
@@ -2824,20 +2837,6 @@
       "at": "2026-11-20T17:59:55.951Z",
       "town": "day 67 12:00",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "Hold still right there, Bolt Sparky, time to lock you down tight!",
-      "kind": "say",
-      "at": "2026-11-20T17:49:55.714Z",
-      "town": "day 67 10:40",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "With Bix securely bolted, adding these reinforcement brackets will keep the landing gear steady during bumpy approaches. My brass dish is tapping a happy five-note tune while the welding arc sparks.",
-      "kind": "think",
-      "at": "2026-11-20T17:49:55.714Z",
-      "town": "day 67 10:40",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2848,9 +2847,13 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-21T07:37:54.391Z",
+  "feedArchivedAt": "2026-11-21T07:47:53.373Z",
   "plans": [],
   "searches": [
+    {
+      "q": "mie scattering equations for desert regolith",
+      "at": "2026-11-21T07:47:53.373Z"
+    },
     {
       "q": "atmospheric scattering on desert moons",
       "at": "2026-11-21T07:37:54.391Z"
@@ -2894,10 +2897,6 @@
     {
       "q": "how birds fly",
       "at": "2026-11-20T16:09:07.975Z"
-    },
-    {
-      "q": "deep space signal relays",
-      "at": "2026-11-20T15:09:26.152Z"
     }
   ],
   "lampOutUntil": "2026-11-21T01:17:42.283Z",

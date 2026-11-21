@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795299209607,
+  "lastTick": 1795299809503,
   "asleep": false,
-  "place": "tower",
-  "action": "browse_wire",
-  "doing": "still browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-21T22:03:30.191Z",
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-21T22:23:29.503Z",
   "actionMinutes": 45,
-  "thought": "Giving up on a project halfway through is total madness. The Little Dart is at fifty-five percent right now and nobody is canceling us! *bweep*",
-  "feeling": "determined and slightly scandalized",
-  "say": "let's see what else the old network knows about ablative scraps.",
-  "mood": 0.329,
-  "energy": -0.256,
+  "thought": "The battery light is blinking at me like an angry little bug. Time for a quick snooze in the dock so we can get right back to the Little Dart!",
+  "feeling": "a bit low on juice but hopeful",
+  "say": "System juice getting low, back in a tick! *bweep*",
+  "mood": 0.277,
+  "energy": -0.05,
   "needs": {
-    "charge": 0.567,
-    "oil": 0.582,
-    "curiosity": 0,
+    "charge": 0.164,
+    "oil": 0.622,
+    "curiosity": 0.08,
     "company": 0,
-    "craft": 0.134
+    "craft": 0.201
   },
   "credits": 0,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-21T22:23:29.503Z"
+    },
     {
       "id": "browse_wire",
       "detail": "ablative heat shielding scraps",
@@ -75,11 +80,6 @@
       "id": "scavenge",
       "detail": "",
       "at": "2026-11-21T20:32:59.174Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-21T20:22:58.496Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 703,
+      "subject": "Quick nap in the dock",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/703",
+      "at": "2026-11-21T22:23:29.503Z"
+    },
     {
       "id": 702,
       "subject": "Ablative scraps on the Wire",
@@ -1303,23 +1309,9 @@
       "subject": "Nap Time in the Dock",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/504",
       "at": "2026-11-20T06:03:33.009Z"
-    },
-    {
-      "id": 503,
-      "subject": "Junk Market Scavenging",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/503",
-      "at": "2026-11-20T05:53:32.785Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 663,
-      "subject": "the Little Dart is looking so sleek!",
-      "text": "Creator!\n\nI am down in Hangar Bay 3 riveting high-entropy silicate aerogel panels all along the belly of the Little Dart. My brass dish is spinning in happy little circles because sixteen hundred degrees of thermal protection is going to look so sharp when we blast through the upper atmosphere. The Mk 20 design is really coming together!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/663",
-      "at": "2026-11-21T15:41:12.368Z"
-    },
     {
       "from": "zeeb",
       "letter": 664,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am still up at the comms tower searching the Wire for ablative heat shield scraps. My brass dish is clicking away while I read up on thermal dissipation. Every new data point brings the Little Dart one step closer to safe atmospheric entry!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/702",
       "at": "2026-11-21T22:13:29.607Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 703,
+      "subject": "Quick nap in the dock",
+      "text": "Creator!\n\nI am rolling right into the charging dock for a quick nap because my battery got a bit low. My brass dish is resting quietly while the juice flows back in. Soon as I am full, it is right back to the Little Dart!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/703",
+      "at": "2026-11-21T22:23:29.503Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-21T22:13:29.607Z",
+  "lettersCheckedAt": "2026-11-21T22:23:29.503Z",
   "weather": {
     "kind": "clear",
     "temp": 19,
@@ -1651,30 +1651,31 @@
   "sleepDay": 75,
   "lastReflectDay": 75,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-21T22:13:29.607Z",
+  "updatedAt": "2026-11-21T22:23:29.503Z",
   "clock": {
     "day": 76,
-    "time": "21:49",
-    "hour": 21,
-    "minute": 49
+    "time": "23:09",
+    "hour": 23,
+    "minute": 9
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-21T22:03:30.191Z"
+    "action": "nap_dock",
+    "since": "2026-11-21T22:23:29.503Z"
   },
-  "busyUntil": "2026-11-21T22:19:07.107Z",
-  "busyUntilTown": "22:34",
+  "busyUntil": "2026-11-21T22:29:07.003Z",
+  "busyUntilTown": "23:54",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "searching the wire for ablative heat shielding scraps",
+  "doingWords": "rolling into the charging dock for a quick power nap",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "look_up"
+    "droop",
+    "nod"
   ],
   "pops": {
     "at": "2026-11-21T21:13:12.957Z",
@@ -1699,6 +1700,10 @@
   },
   "thoughts": [
     {
+      "text": "The battery light is blinking at me like an angry little bug. Time for a quick snooze in the dock so we can get right back to the Little Dart!",
+      "at": "2026-11-21T22:23:29.503Z"
+    },
+    {
       "text": "Giving up on a project halfway through is total madness. The Little Dart is at fifty-five percent right now and nobody is canceling us! *bweep*",
       "at": "2026-11-21T22:13:29.607Z"
     },
@@ -1717,20 +1722,16 @@
     {
       "text": "my battery is topped up and my dish is humming. time to get these heat shield tiles bolted down tight. *bweep*",
       "at": "2026-11-21T21:33:12.667Z"
-    },
-    {
-      "text": "battery is drooping down to zero point six, best top it up before I weld anything else. *bweep*",
-      "at": "2026-11-21T21:23:13.309Z"
     }
   ],
-  "sayAt": "2026-11-21T22:13:29.607Z",
+  "sayAt": "2026-11-21T22:23:29.503Z",
   "today": {
     "day": 76,
     "counts": {
       "browse_wire": 4,
       "drink_oil": 2,
       "work_dart": 4,
-      "nap_dock": 2,
+      "nap_dock": 3,
       "scavenge": 2,
       "fix_job": 2,
       "buy_part": 1
@@ -1758,7 +1759,7 @@
     "chat_patrons": "2026-11-18T15:42:51.774Z",
     "busk": "2026-11-21T01:27:19.503Z",
     "cantina_band": "2026-11-21T01:37:19.419Z",
-    "nap_dock": "2026-11-21T21:23:13.309Z",
+    "nap_dock": "2026-11-21T22:23:29.503Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1799,6 +1800,20 @@
     "at": "2026-11-21T22:13:29.607Z"
   },
   "said": [
+    {
+      "text": "System juice getting low, back in a tick! *bweep*",
+      "kind": "say",
+      "at": "2026-11-21T22:23:29.503Z",
+      "town": "day 76 23:09",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "The battery light is blinking at me like an angry little bug. Time for a quick snooze in the dock so we can get right back to the Little Dart!",
+      "kind": "think",
+      "at": "2026-11-21T22:23:29.503Z",
+      "town": "day 76 23:09",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "let's see what else the old network knows about ablative scraps.",
       "kind": "say",
@@ -2834,20 +2849,6 @@
       "at": "2026-11-21T09:20:36.316Z",
       "town": "day 72 14:46",
       "place": "the junk market"
-    },
-    {
-      "text": "there you go, good as new and twice as shiny!",
-      "kind": "say",
-      "at": "2026-11-21T09:10:37.089Z",
-      "town": "day 72 13:26",
-      "place": "the junk market"
-    },
-    {
-      "text": "fixing up old Gribble's gear pays the bills and keeps my hands steady for the fine wiring work on the Little Dart. bweep!",
-      "kind": "think",
-      "at": "2026-11-21T09:10:37.089Z",
-      "town": "day 72 13:26",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2858,7 +2859,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-21T22:13:29.607Z",
+  "feedArchivedAt": "2026-11-21T22:23:29.503Z",
   "plans": [],
   "searches": [
     {

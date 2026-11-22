@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 21",
-    "progress": 94,
-    "version": 13,
-    "lastChange": "securing high-entropy silicate ceramic aerogel tiles onto the upper fin using Fen (a coil of copper wire) (used Fen, a coil of copper wire)",
+    "name": "the Little Dart Mk 22",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 14,
+        "change": "securing structural ribs onto the Little Dart's aft section using Pim (a perfectly good bolt) (used Wren, a strip of hull plating)",
+        "progress": 100,
+        "at": "2026-11-22T01:24:33.392Z"
+      },
       {
         "version": 13,
         "change": "securing high-entropy silicate ceramic aerogel tiles onto the upper fin using Fen (a coil of copper wire) (used Fen, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "installing the etched foil flex cables for the cockpit instrument panel on the Little Dart Mk 19",
         "progress": 51,
         "at": "2026-11-20T23:56:01.415Z"
-      },
-      {
-        "version": 10,
-        "change": "welding custom retractable titanium landing skids onto the Little Dart Mk 19",
-        "progress": 49,
-        "at": "2026-11-20T22:40:44.047Z"
       }
     ],
     "launched": [
@@ -2610,72 +2610,83 @@
             "version": 13
           }
         ]
+      },
+      {
+        "name": "the Little Dart Mk 21",
+        "day": 77,
+        "partsUsed": 14,
+        "parts": [
+          {
+            "name": "Nim",
+            "what": "a strip of hull plating",
+            "version": 1
+          },
+          {
+            "name": "Dibs",
+            "what": "a tiny gyroscope",
+            "version": 2
+          },
+          {
+            "name": "Fen",
+            "what": "a strip of hull plating",
+            "version": 3
+          },
+          {
+            "name": "Sprocket",
+            "what": "half a thruster nozzle",
+            "version": 4
+          },
+          {
+            "name": "Lorna",
+            "what": "a perfectly good bolt",
+            "version": 6
+          },
+          {
+            "name": "Pim",
+            "what": "a sensor eye with one crack",
+            "version": 7
+          },
+          {
+            "name": "Bix",
+            "what": "a bent stabiliser fin",
+            "version": 8
+          },
+          {
+            "name": "Dibs",
+            "what": "a perfectly good bolt",
+            "version": 9
+          },
+          {
+            "name": "Wren",
+            "what": "a sensor eye with one crack",
+            "version": 10
+          },
+          {
+            "name": "Fen",
+            "what": "a tiny gyroscope",
+            "good": true,
+            "version": 11
+          },
+          {
+            "name": "Wren",
+            "what": "a cracked navigation chip",
+            "version": 12
+          },
+          {
+            "name": "Fen",
+            "what": "a coil of copper wire",
+            "version": 13
+          },
+          {
+            "name": "Wren",
+            "what": "a strip of hull plating",
+            "version": 14
+          }
+        ]
       }
     ],
-    "partsUsed": 13,
-    "parts": [
-      {
-        "name": "Nim",
-        "what": "a strip of hull plating",
-        "version": 1
-      },
-      {
-        "name": "Dibs",
-        "what": "a tiny gyroscope",
-        "version": 2
-      },
-      {
-        "name": "Fen",
-        "what": "a strip of hull plating",
-        "version": 3
-      },
-      {
-        "name": "Sprocket",
-        "what": "half a thruster nozzle",
-        "version": 4
-      },
-      {
-        "name": "Lorna",
-        "what": "a perfectly good bolt",
-        "version": 6
-      },
-      {
-        "name": "Pim",
-        "what": "a sensor eye with one crack",
-        "version": 7
-      },
-      {
-        "name": "Bix",
-        "what": "a bent stabiliser fin",
-        "version": 8
-      },
-      {
-        "name": "Dibs",
-        "what": "a perfectly good bolt",
-        "version": 9
-      },
-      {
-        "name": "Wren",
-        "what": "a sensor eye with one crack",
-        "version": 10
-      },
-      {
-        "name": "Fen",
-        "what": "a tiny gyroscope",
-        "good": true,
-        "version": 11
-      },
-      {
-        "name": "Wren",
-        "what": "a cracked navigation chip",
-        "version": 12
-      },
-      {
-        "name": "Fen",
-        "what": "a coil of copper wire",
-        "version": 13
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -2924,13 +2935,7 @@
     {
       "name": "Pim",
       "what": "a perfectly good bolt",
-      "at": "2026-11-22T00:54:20.487Z",
-      "carrying": true
-    },
-    {
-      "name": "Wren",
-      "what": "a strip of hull plating",
-      "at": "2026-11-21T23:44:05.971Z"
+      "at": "2026-11-22T00:54:20.487Z"
     }
   ],
   "reads": [

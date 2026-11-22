@@ -3040,14 +3040,15 @@
   ],
   "stash": [
     {
+      "name": "Lorna",
+      "what": "a titanium-grade engine mount washer",
+      "at": "2026-11-22T20:16:29.284Z",
+      "custom": "rmwsa21k4"
+    },
+    {
       "name": "Sprocket",
       "what": "a little landing strut",
       "at": "2026-11-22T19:36:12.157Z"
-    },
-    {
-      "name": "Gus",
-      "what": "a scorched heat tile",
-      "at": "2026-11-22T18:05:37.411Z"
     },
     {
       "name": "Bix",
@@ -22794,6 +22795,29 @@
   "crafting": {
     "recipes": [
       {
+        "id": "rmwsa21k4",
+        "what": "a titanium-grade engine mount washer",
+        "how": "i hammered the scorched heat tile flat and punched a clean core through it. *bweep*",
+        "uses": "mounts the primary thruster without shaking loose",
+        "look": [
+          {
+            "shape": "cylinder",
+            "turn": "up",
+            "w": 0.2,
+            "h": 0.04,
+            "d": 0.2,
+            "x": 0,
+            "y": 0.02,
+            "z": 0,
+            "color": "#c0c0c0",
+            "glow": 0
+          }
+        ],
+        "firstMade": "2026-11-22T20:16:29.284Z",
+        "day": 84,
+        "made": 1
+      },
+      {
         "id": "rmwn46u1n",
         "what": "a springy hull washer",
         "how": "I cut rings from the hull plating strip and use my welding torch to press them into a shallow, conical shape that gives them a nice, snappy flex. The heat treatment makes them strong enough to keep the Little Dart's panels tight even when t",
@@ -22865,6 +22889,11 @@
       }
     ],
     "attempts": [
+      {
+        "what": "a titanium-grade engine mount washer",
+        "result": "worked",
+        "at": "2026-11-22T20:16:29.284Z"
+      },
       {
         "what": "a springy hull washer",
         "result": "worked",

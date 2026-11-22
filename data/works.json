@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 23",
-    "progress": 54,
-    "version": 7,
-    "lastChange": "mounting the new heavy-duty cooling valves onto the fuel line using bolt Rusty Jr (used Gus, a dented fuel cell)",
+    "progress": 60,
+    "version": 8,
+    "lastChange": "welding the fuel line joints onto the bulkhead using bolt Tok (used Rusty Jr, a cracked navigation chip)",
     "log": [
+      {
+        "version": 8,
+        "change": "welding the fuel line joints onto the bulkhead using bolt Tok (used Rusty Jr, a cracked navigation chip)",
+        "progress": 60,
+        "at": "2026-11-22T21:56:58.382Z"
+      },
       {
         "version": 7,
         "change": "mounting the new heavy-duty cooling valves onto the fuel line using bolt Rusty Jr (used Gus, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "riveting lightweight structural stringers along the Little Dart's fuselage using the scrap strip Fen (used Tok, a sensor eye with one crack)",
         "progress": 90,
         "at": "2026-11-21T16:31:25.920Z"
-      },
-      {
-        "version": 10,
-        "change": "routing copper wire bundles into the cockpit instrument panel (used Rusty Jr, a coil of copper wire)",
-        "progress": 82,
-        "at": "2026-11-21T15:51:25.921Z"
       }
     ],
     "launched": [
@@ -2765,7 +2765,7 @@
         ]
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Captain",
@@ -2797,6 +2797,11 @@
         "name": "Gus",
         "what": "a dented fuel cell",
         "version": 7
+      },
+      {
+        "name": "Rusty Jr",
+        "what": "a cracked navigation chip",
+        "version": 8
       }
     ],
     "design": {
@@ -3380,11 +3385,6 @@
       "name": "Bix",
       "what": "a cracked navigation chip",
       "at": "2026-11-22T17:55:37.358Z"
-    },
-    {
-      "name": "Rusty Jr",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-22T16:04:52.367Z"
     }
   ],
   "reads": [

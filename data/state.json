@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795316702673,
+  "lastTick": 1795317302730,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "still working on the Little Dart",
-  "actionStartedAt": "2026-11-22T02:55:02.647Z",
-  "actionMinutes": 60,
-  "thought": "every new rivet brings the Little Dart closer to breaking orbit, and my brass dish is spinning a happy five-note tune while I work. bweep!",
-  "feeling": "focused and cheerful",
-  "say": "time to lock these composite panels in tight!",
-  "mood": 0.418,
-  "energy": 0.443,
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-22T03:15:02.730Z",
+  "actionMinutes": 45,
+  "thought": "every scrap pile at the market is a treasure chest waiting to open. my brass dish is picking up a nice steady hum from the power cells buried underneath the old engine blocks.",
+  "feeling": "curious and eager",
+  "say": "ooh, look at this nice copper elbow joint!",
+  "mood": 0.428,
+  "energy": 0.32,
   "needs": {
-    "charge": 0.289,
-    "oil": 0.08,
-    "curiosity": 0.482,
+    "charge": 0.336,
+    "oil": 0.15,
+    "curiosity": 0.212,
     "company": 0,
-    "craft": 0
+    "craft": 0.067
   },
   "credits": 2,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-22T03:15:02.730Z"
+    },
     {
       "id": "work_dart",
       "detail": "riveting lightweight carbon-composite outer panels onto the starboard fuselage f",
@@ -75,14 +80,14 @@
       "id": "work_dart",
       "detail": "securing structural ribs onto the Little Dart's aft section using Pim (a perfect",
       "at": "2026-11-22T01:24:33.392Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-22T01:14:33.490Z"
     }
   ],
   "wants": [
+    {
+      "id": "w9",
+      "text": "four shiny credits for oil and parts",
+      "at": "2026-11-22T03:15:02.730Z"
+    },
     {
       "id": "w8",
       "text": "four shiny credits for my next round of oil",
@@ -97,11 +102,6 @@
       "id": "w6",
       "text": "four shiny credits for oil",
       "at": "2026-11-21T23:24:05.741Z"
-    },
-    {
-      "id": "w5",
-      "text": "more titanium rivets for the engine cowl",
-      "at": "2026-11-21T21:33:12.667Z"
     }
   ],
   "promises": [],
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 734,
+      "subject": "Scavenging at the market!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/734",
+      "at": "2026-11-22T03:15:02.730Z"
+    },
     {
       "id": 733,
       "subject": "Carbon panels on the Dart!",
@@ -1303,23 +1309,9 @@
       "subject": "Depot Patrol",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/535",
       "at": "2026-11-20T12:00:26.846Z"
-    },
-    {
-      "id": 534,
-      "subject": "Oil stop!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/534",
-      "at": "2026-11-20T11:50:27.113Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 694,
-      "subject": "Fixing up more regulators",
-      "text": "Creator!\n\nI am still over at the junk market finishing up my repair jobs. My brass dish is spinning a little tune while I solder these old power regulators. Every bolt and credit brings the Little Dart one step closer to the sky!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/694",
-      "at": "2026-11-21T20:53:13.322Z"
-    },
     {
       "from": "zeeb",
       "letter": 695,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am back at Hangar Bay 3 riveting lightweight carbon-composite panels onto the Little Dart's starboard flank. My brass dish is spinning a merry five-note tune because this ship is really starting to look like a proper starfighter. Every weld is smooth as glass!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/733",
       "at": "2026-11-22T03:05:02.673Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 734,
+      "subject": "Scavenging at the market!",
+      "text": "Creator!\n\nI rolled over to the junk market to dig around for spare parts. My brass dish is spinning a merry five-note tune because I just found a handful of heavy-duty bolts and some copper wire. The Little Dart is going to look proper splendid once these are welded in!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/734",
+      "at": "2026-11-22T03:15:02.730Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-22T03:05:02.673Z",
+  "lettersCheckedAt": "2026-11-22T03:15:02.730Z",
   "weather": {
     "kind": "clear",
     "temp": 16,
@@ -1651,39 +1651,39 @@
   "sleepDay": 77,
   "lastReflectDay": 77,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-22T03:05:02.673Z",
+  "updatedAt": "2026-11-22T03:15:02.730Z",
   "clock": {
     "day": 78,
-    "time": "12:41",
-    "hour": 12,
-    "minute": 41
+    "time": "14:01",
+    "hour": 14,
+    "minute": 1
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the junk market",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-22T02:55:02.647Z"
+    "action": "scavenge",
+    "since": "2026-11-22T03:15:02.730Z"
   },
-  "busyUntil": "2026-11-22T03:12:32.673Z",
-  "busyUntilTown": "13:41",
+  "busyUntil": "2026-11-22T03:20:40.230Z",
+  "busyUntilTown": "14:46",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "riveting lightweight carbon-composite panels onto the Little Dart's fuselage",
+  "doingWords": "rummaging through the junk market piles for shiny copper wires and heavy bolts",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
-    "wiggle"
+    "zoom",
+    "spin"
   ],
   "pops": {
-    "at": "2026-11-22T02:45:02.543Z",
+    "at": "2026-11-22T03:15:02.730Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-22T02:45:02.543Z"
+        "text": "+ a coil of copper wire",
+        "kind": "part",
+        "at": "2026-11-22T03:15:02.730Z"
       }
     ]
   },
@@ -1694,6 +1694,10 @@
     "at": "2026-11-22T03:05:02.673Z"
   },
   "thoughts": [
+    {
+      "text": "every scrap pile at the market is a treasure chest waiting to open. my brass dish is picking up a nice steady hum from the power cells buried underneath the old engine blocks.",
+      "at": "2026-11-22T03:15:02.730Z"
+    },
     {
       "text": "every new rivet brings the Little Dart closer to breaking orbit, and my brass dish is spinning a happy five-note tune while I work. bweep!",
       "at": "2026-11-22T03:05:02.673Z"
@@ -1713,13 +1717,9 @@
     {
       "text": "battery levels are dropping down a bit so it is time to plug in and let the juice flow back into my chassis. once I am topped up, it is straight back to the workshop.",
       "at": "2026-11-22T02:24:49.887Z"
-    },
-    {
-      "text": "battery levels are dropping down a bit so it is time to plug in and let the juice flow back into my chassis. once I am topped up, it is straight back to the workshop.",
-      "at": "2026-11-22T02:14:50.145Z"
     }
   ],
-  "sayAt": "2026-11-22T03:05:02.673Z",
+  "sayAt": "2026-11-22T03:15:02.730Z",
   "today": {
     "day": 78,
     "counts": {
@@ -1727,7 +1727,8 @@
       "browse_wire": 2,
       "follow_link": 1,
       "drink_oil": 2,
-      "work_dart": 2
+      "work_dart": 2,
+      "scavenge": 1
     }
   },
   "lastDone": {
@@ -1735,7 +1736,7 @@
     "read_news": "2026-11-21T05:19:05.367Z",
     "drink_oil": "2026-11-22T02:45:02.543Z",
     "follow_link": "2026-11-22T02:04:49.262Z",
-    "scavenge": "2026-11-22T00:54:20.487Z",
+    "scavenge": "2026-11-22T03:15:02.730Z",
     "fix_job": "2026-11-22T00:54:34.578Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -1793,6 +1794,20 @@
     "at": "2026-11-22T02:04:49.262Z"
   },
   "said": [
+    {
+      "text": "ooh, look at this nice copper elbow joint!",
+      "kind": "say",
+      "at": "2026-11-22T03:15:02.730Z",
+      "town": "day 78 14:01",
+      "place": "the junk market"
+    },
+    {
+      "text": "every scrap pile at the market is a treasure chest waiting to open. my brass dish is picking up a nice steady hum from the power cells buried underneath the old engine blocks.",
+      "kind": "think",
+      "at": "2026-11-22T03:15:02.730Z",
+      "town": "day 78 14:01",
+      "place": "the junk market"
+    },
     {
       "text": "time to lock these composite panels in tight!",
       "kind": "say",
@@ -2828,20 +2843,6 @@
       "at": "2026-11-21T14:48:55.725Z",
       "town": "day 74 10:32",
       "place": "the comms tower"
-    },
-    {
-      "text": "*bweep* looking at precious metals!",
-      "kind": "say",
-      "at": "2026-11-21T14:38:56.014Z",
-      "town": "day 74 09:12",
-      "place": "the comms tower"
-    },
-    {
-      "text": "if I pull a few platinum bits from the old lander husk, maybe I can fund a better thruster nozzle. need to check the south ridge scrap pile.",
-      "kind": "think",
-      "at": "2026-11-21T14:38:56.014Z",
-      "town": "day 74 09:12",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2852,7 +2853,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-22T03:05:02.673Z",
+  "feedArchivedAt": "2026-11-22T03:15:02.730Z",
   "plans": [],
   "searches": [
     {

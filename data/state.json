@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795352779634,
-  "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-22T13:06:19.634Z",
-  "actionMinutes": 20,
-  "thought": "my oil is bugging me most right now.",
+  "lastTick": 1795353379802,
+  "asleep": true,
+  "place": "hangar",
+  "action": "sleep",
+  "doing": "asleep in the charging dock",
+  "actionStartedAt": "2026-11-22T13:16:19.802Z",
+  "actionMinutes": 60,
+  "thought": "(dreaming) dreamed the Dart flew all the way past the second sun.",
   "feeling": "pretty good actually",
   "say": "",
-  "mood": 0.382,
-  "energy": 0.228,
+  "mood": 0.377,
+  "energy": 0.264,
   "needs": {
-    "charge": 0.338,
-    "oil": 0,
-    "curiosity": 0.08,
-    "company": 0.127,
-    "craft": 0.205
+    "charge": 0.385,
+    "oil": 0.04,
+    "curiosity": 0.16,
+    "company": 0.18,
+    "craft": 0.272
   },
   "credits": 3,
   "recent": [
+    {
+      "id": "go_to_sleep",
+      "detail": "",
+      "at": "2026-11-22T13:16:19.802Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-22T11:03:26.691Z"
-    },
-    {
-      "id": "read_news",
-      "detail": "",
-      "at": "2026-11-22T10:53:27.200Z"
     }
   ],
   "wants": [
@@ -1639,33 +1639,33 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-22T13:06:19.634Z",
+  "lettersCheckedAt": "2026-11-22T13:16:19.802Z",
   "weather": {
     "kind": "clear",
     "temp": 25,
     "wind": 15,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-22T12:45:44.336Z"
+    "at": "2026-11-22T13:16:20.028Z"
   },
-  "sleepDay": 80,
-  "lastReflectDay": 80,
+  "sleepDay": 81,
+  "lastReflectDay": 81,
   "brain": "rules",
-  "updatedAt": "2026-11-22T13:06:19.634Z",
+  "updatedAt": "2026-11-22T13:16:19.802Z",
   "clock": {
     "day": 81,
-    "time": "20:51",
-    "hour": 20,
-    "minute": 51
+    "time": "22:11",
+    "hour": 22,
+    "minute": 11
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-22T13:06:19.634Z"
+    "action": "go_to_sleep",
+    "since": "2026-11-22T13:16:19.802Z"
   },
-  "busyUntil": "2026-11-22T13:08:49.634Z",
-  "busyUntilTown": "21:11",
+  "busyUntil": "2026-11-22T13:23:49.802Z",
+  "busyUntilTown": "23:11",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
@@ -1692,6 +1692,10 @@
   },
   "thoughts": [
     {
+      "text": "my charge is bugging me most right now.",
+      "at": "2026-11-22T13:16:19.802Z"
+    },
+    {
       "text": "my oil is bugging me most right now.",
       "at": "2026-11-22T13:06:19.634Z"
     },
@@ -1710,13 +1714,9 @@
     {
       "text": "these tail fins are going to keep the little dart arrow-straight when it punches through the atmosphere. *bweep*",
       "at": "2026-11-22T12:35:44.085Z"
-    },
-    {
-      "text": "mabel the bolt is going to hold this forward bulkhead together tighter than a drum. *bweep*",
-      "at": "2026-11-22T12:25:44.067Z"
     }
   ],
-  "sayAt": "2026-11-22T13:06:19.634Z",
+  "sayAt": "2026-11-22T13:16:19.802Z",
   "today": {
     "day": 81,
     "counts": {
@@ -1729,7 +1729,8 @@
       "fix_job": 1,
       "buy_part": 1,
       "nap_dock": 1,
-      "browse_wire": 2
+      "browse_wire": 2,
+      "go_to_sleep": 1
     }
   },
   "lastDone": {
@@ -1750,7 +1751,7 @@
     "design_ship": "2026-11-20T11:20:26.803Z",
     "send_signal": "2026-11-22T10:43:26.302Z",
     "stargaze": "2026-11-22T10:33:26.540Z",
-    "go_to_sleep": "2026-11-22T10:19:37.640Z",
+    "go_to_sleep": "2026-11-22T13:16:19.802Z",
     "chat_patrons": "2026-11-22T09:26:51.867Z",
     "busk": "2026-11-22T09:39:37.950Z",
     "cantina_band": "2026-11-21T01:37:19.419Z",
@@ -1795,6 +1796,20 @@
     "at": "2026-11-22T12:55:43.916Z"
   },
   "said": [
+    {
+      "text": "(dreaming) dreamed the Dart flew all the way past the second sun.",
+      "kind": "think",
+      "at": "2026-11-22T13:16:19.802Z",
+      "town": "day 81 22:11",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "my charge is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-22T13:16:19.802Z",
+      "town": "day 81 22:11",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "my oil is bugging me most right now.",
       "kind": "think",
@@ -2830,20 +2845,6 @@
       "at": "2026-11-21T23:34:06.264Z",
       "town": "day 77 08:34",
       "place": "the junk market"
-    },
-    {
-      "text": "just hand me the spanner and stand back, this relay has a spicy temper",
-      "kind": "say",
-      "at": "2026-11-21T23:24:05.741Z",
-      "town": "day 77 07:14",
-      "place": "the junk market"
-    },
-    {
-      "text": "my gear teeth are still clicking, but a quick repair job should earn enough for a proper drink. maybe they will pay in parts instead of coins!",
-      "kind": "think",
-      "at": "2026-11-21T23:24:05.741Z",
-      "town": "day 77 07:14",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2854,7 +2855,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-22T13:06:19.634Z",
+  "feedArchivedAt": "2026-11-22T13:16:19.802Z",
   "plans": [],
   "searches": [
     {

@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 22",
-    "progress": 99,
-    "version": 14,
-    "lastChange": "mounted the radiative cooling plate bracket using Rusty Jr, the cockpit switch, to test thermal dissipation channels. (used Rusty Jr, a cockpit switch that still clicks)",
+    "name": "the Little Dart Mk 23",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 15,
+        "change": "connected the radiative cooling plate manifold using Rusty Jr, the cockpit switch, to route thermal fluid lines securely. (used Mabel, a perfectly good bolt)",
+        "progress": 100,
+        "at": "2026-11-22T14:23:18.035Z"
+      },
       {
         "version": 14,
         "change": "mounted the radiative cooling plate bracket using Rusty Jr, the cockpit switch, to test thermal dissipation channels. (used Rusty Jr, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "connecting heavy-duty copper wire bundles into the instrument cluster via Otto the cockpit switch, using Bix (a strip of hull plating) (used Tok, a mystery box that hums)",
         "progress": 26,
         "at": "2026-11-21T12:35:05.810Z"
-      },
-      {
-        "version": 2,
-        "change": "routing copper wire bundles into the instrument cluster using Otto, a cockpit switch that still clicks (used Tok, half a thruster nozzle)",
-        "progress": 16,
-        "at": "2026-11-21T11:44:40.265Z"
       }
     ],
     "launched": [
@@ -2683,78 +2683,90 @@
             "version": 14
           }
         ]
+      },
+      {
+        "name": "the Little Dart Mk 22",
+        "day": 82,
+        "partsUsed": 17,
+        "parts": [
+          {
+            "name": "Pim",
+            "what": "a perfectly good bolt",
+            "version": 1
+          },
+          {
+            "name": "Dibs",
+            "what": "a coil of copper wire",
+            "version": 3
+          },
+          {
+            "name": "Gus",
+            "what": "a mystery box that hums",
+            "good": true,
+            "version": 4
+          },
+          {
+            "name": "Otto",
+            "what": "a perfectly good bolt",
+            "version": 5
+          },
+          {
+            "name": "Gus",
+            "what": "half a thruster nozzle",
+            "version": 6
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "a coil of copper wire",
+            "good": true,
+            "version": 7
+          },
+          {
+            "name": "Mabel",
+            "what": "a coil of copper wire",
+            "version": 8
+          },
+          {
+            "name": "Sprocket",
+            "what": "half a thruster nozzle",
+            "version": 9
+          },
+          {
+            "name": "Captain",
+            "what": "a scorched heat tile",
+            "version": 10
+          },
+          {
+            "name": "Bix",
+            "what": "a cracked navigation chip",
+            "version": 11
+          },
+          {
+            "name": "Tilly",
+            "what": "a strip of hull plating",
+            "version": 12
+          },
+          {
+            "name": "Sprocket",
+            "what": "a tiny gyroscope",
+            "version": 13
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "a cockpit switch that still clicks",
+            "version": 14
+          },
+          {
+            "name": "Mabel",
+            "what": "a perfectly good bolt",
+            "good": true,
+            "version": 15
+          }
+        ]
       }
     ],
-    "partsUsed": 15,
-    "parts": [
-      {
-        "name": "Pim",
-        "what": "a perfectly good bolt",
-        "version": 1
-      },
-      {
-        "name": "Dibs",
-        "what": "a coil of copper wire",
-        "version": 3
-      },
-      {
-        "name": "Gus",
-        "what": "a mystery box that hums",
-        "good": true,
-        "version": 4
-      },
-      {
-        "name": "Otto",
-        "what": "a perfectly good bolt",
-        "version": 5
-      },
-      {
-        "name": "Gus",
-        "what": "half a thruster nozzle",
-        "version": 6
-      },
-      {
-        "name": "Rusty Jr",
-        "what": "a coil of copper wire",
-        "good": true,
-        "version": 7
-      },
-      {
-        "name": "Mabel",
-        "what": "a coil of copper wire",
-        "version": 8
-      },
-      {
-        "name": "Sprocket",
-        "what": "half a thruster nozzle",
-        "version": 9
-      },
-      {
-        "name": "Captain",
-        "what": "a scorched heat tile",
-        "version": 10
-      },
-      {
-        "name": "Bix",
-        "what": "a cracked navigation chip",
-        "version": 11
-      },
-      {
-        "name": "Tilly",
-        "what": "a strip of hull plating",
-        "version": 12
-      },
-      {
-        "name": "Sprocket",
-        "what": "a tiny gyroscope",
-        "version": 13
-      },
-      {
-        "name": "Rusty Jr",
-        "what": "a cockpit switch that still clicks",
-        "version": 14
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -2999,14 +3011,7 @@
       "at": "2026-11-13T08:13:40.666Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Mabel",
-      "what": "a perfectly good bolt",
-      "at": "2026-11-22T11:45:21.969Z",
-      "good": true
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "MS20001 Hinges for Aerospace Applications - Bandy Manufacturing",

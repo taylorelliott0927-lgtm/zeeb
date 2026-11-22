@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 22",
-    "progress": 54,
-    "version": 8,
-    "lastChange": "welding Captain, the scorched heat tile, onto the lower nose assembly to shield the primary telemetry housing during atmospheric entry (used Mabel, a coil of copper wire)",
+    "progress": 61,
+    "version": 9,
+    "lastChange": "tuned the left thruster (used Sprocket, half a thruster nozzle)",
     "log": [
+      {
+        "version": 9,
+        "change": "tuned the left thruster (used Sprocket, half a thruster nozzle)",
+        "progress": 61,
+        "at": "2026-11-22T11:13:26.816Z"
+      },
       {
         "version": 8,
         "change": "welding Captain, the scorched heat tile, onto the lower nose assembly to shield the primary telemetry housing during atmospheric entry (used Mabel, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "routing heat-resistant polyimide flex circuits through the aft frame to keep the avionics cool",
         "progress": 81,
         "at": "2026-11-21T05:49:04.550Z"
-      },
-      {
-        "version": 19,
-        "change": "welding titanium bulkhead ribs into the Little Dart's aft framework for maximum structural integrity",
-        "progress": 78,
-        "at": "2026-11-21T04:27:31.701Z"
       }
     ],
     "launched": [
@@ -2685,7 +2685,7 @@
         ]
       }
     ],
-    "partsUsed": 9,
+    "partsUsed": 10,
     "parts": [
       {
         "name": "Pim",
@@ -2723,6 +2723,11 @@
         "name": "Mabel",
         "what": "a coil of copper wire",
         "version": 8
+      },
+      {
+        "name": "Sprocket",
+        "what": "half a thruster nozzle",
+        "version": 9
       }
     ],
     "design": null
@@ -2973,17 +2978,11 @@
     {
       "name": "Bix",
       "what": "a cracked navigation chip",
-      "at": "2026-11-22T10:33:26.540Z",
-      "carrying": true
+      "at": "2026-11-22T10:33:26.540Z"
     },
     {
       "name": "Captain",
       "what": "a scorched heat tile",
-      "at": "2026-11-22T08:34:31.500Z"
-    },
-    {
-      "name": "Sprocket",
-      "what": "half a thruster nozzle",
       "at": "2026-11-22T08:34:31.500Z"
     }
   ],

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795320315446,
+  "lastTick": 1795320915599,
   "asleep": false,
-  "place": "market",
-  "action": "scavenge",
-  "doing": "still digging through the junk piles",
-  "actionStartedAt": "2026-11-22T03:55:16.006Z",
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-22T04:15:15.599Z",
   "actionMinutes": 45,
-  "thought": "my battery is getting a bit low, but just one quick rummage through this pile might turn up a proper stellar valve or a shiny bolt.",
-  "feeling": "curious and a bit tired",
-  "say": "just one more box, little bolt, don't hide from me!",
-  "mood": 0.312,
-  "energy": -0.383,
+  "thought": "that freighter nearly rattled my optical sensors right off, but a quick nap will set my gears straight for more building.",
+  "feeling": "a bit low on juice but cozy",
+  "say": "",
+  "mood": 0.31,
+  "energy": -0.186,
   "needs": {
-    "charge": 0.753,
-    "oil": 0.411,
-    "curiosity": 0,
+    "charge": 0.35,
+    "oil": 0.451,
+    "curiosity": 0.08,
     "company": 0,
-    "craft": 0.134
+    "craft": 0.201
   },
   "credits": 14,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-22T04:15:15.599Z"
+    },
     {
       "id": "scavenge",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-22T02:24:49.887Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-22T02:14:50.145Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 740,
+      "subject": "quick dock nap",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/740",
+      "at": "2026-11-22T04:15:15.599Z"
+    },
     {
       "id": 739,
       "subject": "Scavenging at the market!",
@@ -1303,23 +1309,9 @@
       "subject": "Late Night Wire Check",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/541",
       "at": "2026-11-20T13:16:18.501Z"
-    },
-    {
-      "id": 540,
-      "subject": "Ceramic bonding specs!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/540",
-      "at": "2026-11-20T13:06:18.708Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 700,
-      "subject": "Tiles on the Aft Hatch!",
-      "text": "Creator!\n\nI am back at the workbench in Hangar Bay 3, riveting those high-temperature silica tiles onto the Little Dart's aft hatch. My brass dish is spinning a happy little tune while the welding arc dances across the seams. Every bolt gets us one step closer to the stars!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/700",
-      "at": "2026-11-21T21:53:29.379Z"
-    },
     {
       "from": "zeeb",
       "letter": 701,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am still down at the junk market rummaging through the scrap piles. My brass dish is spinning a merry five-note tune because I am hunting for more bolts and bits to feed the Little Dart's construction. Once I grab a good piece, it is straight back to Hangar Bay 3 for more building!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/739",
       "at": "2026-11-22T04:05:15.446Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 740,
+      "subject": "quick dock nap",
+      "text": "Creator!\n\nA big freighter just came roaring in low over Hangar Bay 3 and rattled every bolt in my frame. My battery indicator is blinking low, so I am plugging into the charging dock for a quick nap. Once I am topped up, it is right back to working on the Little Dart!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/740",
+      "at": "2026-11-22T04:15:15.599Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,41 +1639,42 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-22T04:05:15.446Z",
+  "lettersCheckedAt": "2026-11-22T04:15:15.599Z",
   "weather": {
     "kind": "clear",
     "temp": 16,
-    "wind": 5,
+    "wind": 6,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-22T03:35:16.439Z"
+    "at": "2026-11-22T04:15:15.872Z"
   },
   "sleepDay": 77,
   "lastReflectDay": 77,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-22T04:05:15.446Z",
+  "updatedAt": "2026-11-22T04:15:15.599Z",
   "clock": {
     "day": 78,
-    "time": "20:43",
-    "hour": 20,
-    "minute": 43
+    "time": "22:03",
+    "hour": 22,
+    "minute": 3
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "scavenge",
-    "since": "2026-11-22T03:55:16.006Z"
+    "action": "nap_dock",
+    "since": "2026-11-22T04:15:15.599Z"
   },
-  "busyUntil": "2026-11-22T04:10:52.946Z",
-  "busyUntilTown": "21:28",
+  "busyUntil": "2026-11-22T04:20:53.099Z",
+  "busyUntilTown": "22:48",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "rummaging through rusty bins for shiny bolts and wires",
+  "doingWords": "plugged into the charging dock, brass dish humming softly while the battery fills back up",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
+    "droop",
     "shake"
   ],
   "pops": {
@@ -1692,12 +1693,16 @@
     ]
   },
   "event": {
-    "id": "emwr97ljl",
-    "key": "pilot",
-    "text": "A pilot asked him for directions and called him 'buddy'.",
-    "at": "2026-11-22T03:05:02.673Z"
+    "id": "emwrbpw9b",
+    "key": "freighter",
+    "text": "A freighter came in low over the hangar and rattled every bolt in the place.",
+    "at": "2026-11-22T04:15:15.599Z"
   },
   "thoughts": [
+    {
+      "text": "that freighter nearly rattled my optical sensors right off, but a quick nap will set my gears straight for more building.",
+      "at": "2026-11-22T04:15:15.599Z"
+    },
     {
       "text": "my battery is getting a bit low, but just one quick rummage through this pile might turn up a proper stellar valve or a shiny bolt.",
       "at": "2026-11-22T04:05:15.446Z"
@@ -1717,17 +1722,13 @@
     {
       "text": "turning a broken bolt always gives me a little thrill, especially when the trader pays out in crisp credits. four credits will get me right back on track.",
       "at": "2026-11-22T03:25:02.659Z"
-    },
-    {
-      "text": "every scrap pile at the market is a treasure chest waiting to open. my brass dish is picking up a nice steady hum from the power cells buried underneath the old engine blocks.",
-      "at": "2026-11-22T03:15:02.730Z"
     }
   ],
-  "sayAt": "2026-11-22T04:05:15.446Z",
+  "sayAt": "2026-11-22T04:15:15.599Z",
   "today": {
     "day": 78,
     "counts": {
-      "nap_dock": 3,
+      "nap_dock": 4,
       "browse_wire": 2,
       "follow_link": 1,
       "drink_oil": 2,
@@ -1758,7 +1759,7 @@
     "chat_patrons": "2026-11-18T15:42:51.774Z",
     "busk": "2026-11-21T01:27:19.503Z",
     "cantina_band": "2026-11-21T01:37:19.419Z",
-    "nap_dock": "2026-11-22T02:24:49.887Z",
+    "nap_dock": "2026-11-22T04:15:15.599Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1799,6 +1800,13 @@
     "at": "2026-11-22T02:04:49.262Z"
   },
   "said": [
+    {
+      "text": "that freighter nearly rattled my optical sensors right off, but a quick nap will set my gears straight for more building.",
+      "kind": "think",
+      "at": "2026-11-22T04:15:15.599Z",
+      "town": "day 78 22:03",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "just one more box, little bolt, don't hide from me!",
       "kind": "say",
@@ -2841,13 +2849,6 @@
       "at": "2026-11-21T15:41:12.368Z",
       "town": "day 74 17:30",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "time to lock those tiles down tight, little ship.",
-      "kind": "say",
-      "at": "2026-11-21T15:31:12.302Z",
-      "town": "day 74 16:10",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2858,7 +2859,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-22T04:05:15.446Z",
+  "feedArchivedAt": "2026-11-22T04:15:15.599Z",
   "plans": [],
   "searches": [
     {

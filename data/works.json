@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 21",
-    "progress": 74,
-    "version": 10,
-    "lastChange": "riveting lightweight heat-dissipating panel struts onto the Little Dart's tail assembly using Dibs (used Wren, a sensor eye with one crack)",
+    "progress": 80,
+    "version": 11,
+    "lastChange": "mounting high-entropy silicate ceramic aerogel tiles onto the Little Dart's nose cone using Bolt (used Fen, a coil of copper wire) (used Fen, a tiny gyroscope)",
     "log": [
+      {
+        "version": 11,
+        "change": "mounting high-entropy silicate ceramic aerogel tiles onto the Little Dart's nose cone using Bolt (used Fen, a coil of copper wire) (used Fen, a tiny gyroscope)",
+        "progress": 80,
+        "at": "2026-11-22T00:24:20.885Z"
+      },
       {
         "version": 10,
         "change": "riveting lightweight heat-dissipating panel struts onto the Little Dart's tail assembly using Dibs (used Wren, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "welding internal titanium bulkhead ribs inside the Little Dart Mk 19 fuselage",
         "progress": 45,
         "at": "2026-11-20T21:13:11.203Z"
-      },
-      {
-        "version": 7,
-        "change": "welding internal titanium bulkhead ribs inside the Little Dart Mk 19 fuselage",
-        "progress": 41,
-        "at": "2026-11-20T17:59:55.951Z"
       }
     ],
     "launched": [
@@ -2612,7 +2612,7 @@
         ]
       }
     ],
-    "partsUsed": 9,
+    "partsUsed": 11,
     "parts": [
       {
         "name": "Nim",
@@ -2658,6 +2658,12 @@
         "name": "Wren",
         "what": "a sensor eye with one crack",
         "version": 10
+      },
+      {
+        "name": "Fen",
+        "what": "a tiny gyroscope",
+        "good": true,
+        "version": 11
       }
     ],
     "design": null
@@ -2919,12 +2925,6 @@
       "name": "Wren",
       "what": "a cracked navigation chip",
       "at": "2026-11-21T23:24:05.741Z"
-    },
-    {
-      "name": "Fen",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-21T21:13:12.957Z",
-      "good": true
     }
   ],
   "reads": [

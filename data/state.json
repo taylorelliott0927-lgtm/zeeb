@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795384618382,
+  "lastTick": 1795385218431,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "still working on the Little Dart",
-  "actionStartedAt": "2026-11-22T21:46:58.815Z",
-  "actionMinutes": 45,
-  "thought": "those new cooling valves are going to keep the engine from overheating when I punch the throttle over the dunes. *bweep*",
-  "feeling": "focused and full of bright sparks",
-  "say": "almost ready for the high altitude tests, little bird!",
-  "mood": 0.364,
-  "energy": -0.106,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-22T22:06:58.431Z",
+  "actionMinutes": 30,
+  "thought": "the metal is singing in my legs because I let them run a bit too dry today. time for a refill so I can get back to building the Little Dart.",
+  "feeling": "thirsty in the gearboxes",
+  "say": "fill her up with the good blend, please!",
+  "mood": 0.344,
+  "energy": -0.021,
   "needs": {
-    "charge": 0.467,
-    "oil": 0.582,
-    "curiosity": 0.378,
+    "charge": 0.514,
+    "oil": 0,
+    "curiosity": 0.458,
     "company": 0,
-    "craft": 0
+    "craft": 0.067
   },
-  "credits": 4,
+  "credits": 3,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-22T22:06:58.431Z"
+    },
     {
       "id": "work_dart",
       "detail": "welding the fuel line joints onto the bulkhead using bolt Tok",
@@ -75,14 +80,14 @@
       "id": "craft_part",
       "detail": "a titanium-grade engine mount washer",
       "at": "2026-11-22T20:16:29.284Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-22T20:06:28.612Z"
     }
   ],
   "wants": [
+    {
+      "id": "w7",
+      "text": "a fresh can of high-grade lubricating oil",
+      "at": "2026-11-22T22:06:58.431Z"
+    },
     {
       "id": "w6",
       "text": "a heavy-duty cooling valve for the Little Dart",
@@ -97,11 +102,6 @@
       "id": "w9",
       "text": "a tube of high-temperature silicone sealant",
       "at": "2026-11-22T17:05:18.307Z"
-    },
-    {
-      "id": "w8",
-      "text": "a spool of high-strength titanium welding wire",
-      "at": "2026-11-22T16:35:18.891Z"
     }
   ],
   "promises": [],
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 810,
+      "subject": "Oil time",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/810",
+      "at": "2026-11-22T22:06:58.431Z"
+    },
     {
       "id": 809,
       "subject": "Little Dart Mk 23 hits over fifty percent!",
@@ -1303,23 +1309,9 @@
       "subject": "Oil stop",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/611",
       "at": "2026-11-21T04:37:31.737Z"
-    },
-    {
-      "id": 610,
-      "subject": "Little Dart Mk 19 Update!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/610",
-      "at": "2026-11-21T04:27:31.701Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 770,
-      "subject": "Scrap Autoclaves!",
-      "text": "Creator!\n\nI am still up at the comms tower looking into DIY autoclave oven builds from scrap parts. My brass dish gave a merry little five-note tune because turning an old pressure tank into a baking oven is going to cost zero credits and ten tons of fun! *bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/770",
-      "at": "2026-11-22T15:04:34.361Z"
-    },
     {
       "from": "zeeb",
       "letter": 771,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI just crossed over the halfway mark on the Little Dart Mk 23! The new cooling valves are locked down tight with Tok, and the needle nose looks sharper than ever under the hangar lights. My brass dish gave a happy little five-note spin because we are getting closer to the stars every single day! *bweep-boop*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/809",
       "at": "2026-11-22T21:56:58.382Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 810,
+      "subject": "Oil time",
+      "text": "Creator!\n\nI am taking a quick break to roll over to the fuel depot for a drink of oil because my joints are making a very rude squeaking noise. My brass dish gave a hopeful little five-note spin because oil makes everything run smoother! *bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/810",
+      "at": "2026-11-22T22:06:58.431Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-22T21:56:58.382Z",
+  "lettersCheckedAt": "2026-11-22T22:06:58.431Z",
   "weather": {
     "kind": "clear",
     "temp": 19,
@@ -1651,39 +1651,39 @@
   "sleepDay": 83,
   "lastReflectDay": 83,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-22T21:56:58.382Z",
+  "updatedAt": "2026-11-22T22:06:58.431Z",
   "clock": {
     "day": 84,
-    "time": "19:37",
-    "hour": 19,
-    "minute": 37
+    "time": "20:57",
+    "hour": 20,
+    "minute": 57
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-22T21:46:58.815Z"
+    "action": "drink_oil",
+    "since": "2026-11-22T22:06:58.431Z"
   },
-  "busyUntil": "2026-11-22T22:02:35.882Z",
-  "busyUntilTown": "20:22",
+  "busyUntil": "2026-11-22T22:10:43.431Z",
+  "busyUntilTown": "21:27",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "welding the fuel line joints and checking pressure seals",
+  "doingWords": "rolling over to the fuel depot for a much-needed drink of fresh oil",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "spin",
+    "shake",
     "nod"
   ],
   "pops": {
-    "at": "2026-11-22T21:56:58.382Z",
+    "at": "2026-11-22T22:06:58.431Z",
     "items": [
       {
-        "text": "+2 credits",
-        "kind": "credits",
-        "at": "2026-11-22T21:56:58.382Z"
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-22T22:06:58.431Z"
       }
     ]
   },
@@ -1694,6 +1694,10 @@
     "at": "2026-11-22T21:56:58.382Z"
   },
   "thoughts": [
+    {
+      "text": "the metal is singing in my legs because I let them run a bit too dry today. time for a refill so I can get back to building the Little Dart.",
+      "at": "2026-11-22T22:06:58.431Z"
+    },
     {
       "text": "those new cooling valves are going to keep the engine from overheating when I punch the throttle over the dunes. *bweep*",
       "at": "2026-11-22T21:56:58.382Z"
@@ -1713,18 +1717,14 @@
     {
       "text": "just a few more turns on this valve and this plasma coupler will hold pressure like new. *bweep*",
       "at": "2026-11-22T21:16:46.227Z"
-    },
-    {
-      "text": "this trader has a leaky plasma coupler, but my wrench set will fix it right up. *bweep*",
-      "at": "2026-11-22T21:06:46.065Z"
     }
   ],
-  "sayAt": "2026-11-22T21:56:58.382Z",
+  "sayAt": "2026-11-22T22:06:58.431Z",
   "today": {
     "day": 84,
     "counts": {
       "wander": 1,
-      "drink_oil": 1,
+      "drink_oil": 2,
       "work_dart": 3,
       "nap_dock": 2,
       "craft_part": 1,
@@ -1738,7 +1738,7 @@
   "lastDone": {
     "work_dart": "2026-11-22T21:56:58.382Z",
     "read_news": "2026-11-22T10:53:27.200Z",
-    "drink_oil": "2026-11-22T19:46:11.556Z",
+    "drink_oil": "2026-11-22T22:06:58.431Z",
     "follow_link": "2026-11-22T17:25:37.714Z",
     "scavenge": "2026-11-22T20:56:46.113Z",
     "fix_job": "2026-11-22T21:16:46.227Z",
@@ -1798,6 +1798,20 @@
     "at": "2026-11-22T20:26:28.458Z"
   },
   "said": [
+    {
+      "text": "fill her up with the good blend, please!",
+      "kind": "say",
+      "at": "2026-11-22T22:06:58.431Z",
+      "town": "day 84 20:57",
+      "place": "the fuel depot"
+    },
+    {
+      "text": "the metal is singing in my legs because I let them run a bit too dry today. time for a refill so I can get back to building the Little Dart.",
+      "kind": "think",
+      "at": "2026-11-22T22:06:58.431Z",
+      "town": "day 84 20:57",
+      "place": "the fuel depot"
+    },
     {
       "text": "almost ready for the high altitude tests, little bird!",
       "kind": "say",
@@ -2833,20 +2847,6 @@
       "at": "2026-11-22T09:39:37.950Z",
       "town": "day 80 17:18",
       "place": "the Dented Moon cantina"
-    },
-    {
-      "text": "Maybe someone will throw in a spare gear or a few credits for the Little Dart fund.",
-      "kind": "think",
-      "at": "2026-11-22T09:39:37.950Z",
-      "town": "day 80 17:18",
-      "place": "the Dented Moon cantina"
-    },
-    {
-      "text": "Hey Barnaby! Any shiny starships dock at the main port today?",
-      "kind": "say",
-      "at": "2026-11-22T09:26:51.867Z",
-      "town": "day 80 15:36",
-      "place": "the Dented Moon cantina"
     }
   ],
   "flight": {
@@ -2857,7 +2857,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-22T21:56:58.382Z",
+  "feedArchivedAt": "2026-11-22T22:06:58.431Z",
   "plans": [],
   "searches": [
     {

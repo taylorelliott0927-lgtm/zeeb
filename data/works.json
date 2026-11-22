@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 22",
-    "progress": 67,
-    "version": 10,
-    "lastChange": "attached the forward bulkhead bracket using Mabel (a perfectly good bolt, a really good one) (used Captain, a scorched heat tile)",
+    "progress": 73,
+    "version": 11,
+    "lastChange": "welded the starboard stabilizer fin using Sprocket, the tiny gyroscope, for precision alignment (used Bix, a cracked navigation chip)",
     "log": [
+      {
+        "version": 11,
+        "change": "welded the starboard stabilizer fin using Sprocket, the tiny gyroscope, for precision alignment (used Bix, a cracked navigation chip)",
+        "progress": 73,
+        "at": "2026-11-22T12:35:44.085Z"
+      },
       {
         "version": 10,
         "change": "attached the forward bulkhead bracket using Mabel (a perfectly good bolt, a really good one) (used Captain, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "welding custom instrument panel brackets and mounting the primary flight computer housing into the Little Dart's cockpit (used Lorna, a strip of hull plating)",
         "progress": 96,
         "at": "2026-11-21T06:58:27.781Z"
-      },
-      {
-        "version": 21,
-        "change": "welding heavy-duty titanium floor brackets into the Little Dart's aft section to secure the main fuel line junction (used Dibs, a perfectly good bolt)",
-        "progress": 87,
-        "at": "2026-11-21T06:48:27.720Z"
       }
     ],
     "launched": [
@@ -2685,7 +2685,7 @@
         ]
       }
     ],
-    "partsUsed": 11,
+    "partsUsed": 12,
     "parts": [
       {
         "name": "Pim",
@@ -2733,6 +2733,11 @@
         "name": "Captain",
         "what": "a scorched heat tile",
         "version": 10
+      },
+      {
+        "name": "Bix",
+        "what": "a cracked navigation chip",
+        "version": 11
       }
     ],
     "design": null
@@ -3000,11 +3005,6 @@
       "name": "Tilly",
       "what": "a strip of hull plating",
       "at": "2026-11-22T11:25:21.984Z"
-    },
-    {
-      "name": "Bix",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-22T10:33:26.540Z"
     }
   ],
   "reads": [

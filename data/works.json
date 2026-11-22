@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 23",
-    "progress": 14,
-    "version": 2,
-    "lastChange": "welding the forward upper cowl plates using Fen, the high-grade sensor eye, to line up the structural seams (used Captain, a strip of hull plating)",
+    "progress": 23,
+    "version": 3,
+    "lastChange": "welding the upper structural longerons using Sprocket, the clicking cockpit switch, to reinforce the main fuselage frame (used Tok, a perfectly good bolt)",
     "log": [
+      {
+        "version": 3,
+        "change": "welding the upper structural longerons using Sprocket, the clicking cockpit switch, to reinforce the main fuselage frame (used Tok, a perfectly good bolt)",
+        "progress": 23,
+        "at": "2026-11-22T16:45:18.628Z"
+      },
       {
         "version": 2,
         "change": "welding the forward upper cowl plates using Fen, the high-grade sensor eye, to line up the structural seams (used Captain, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "patched a hole in the hull (used Pim, a cracked navigation chip)",
         "progress": 47,
         "at": "2026-11-21T14:08:55.436Z"
-      },
-      {
-        "version": 5,
-        "change": "mounting the altimeter gauge into the instrument cluster panel using Tok (a sensor eye with one crack) (used Lorna, a scorched heat tile)",
-        "progress": 40,
-        "at": "2026-11-21T12:55:05.448Z"
       }
     ],
     "launched": [
@@ -2765,12 +2765,17 @@
         ]
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Captain",
         "what": "a strip of hull plating",
         "version": 2
+      },
+      {
+        "name": "Tok",
+        "what": "a perfectly good bolt",
+        "version": 3
       }
     ],
     "design": null
@@ -3043,11 +3048,6 @@
       "what": "a sensor eye with one crack",
       "at": "2026-11-22T15:44:52.987Z",
       "good": true
-    },
-    {
-      "name": "Tok",
-      "what": "a perfectly good bolt",
-      "at": "2026-11-22T14:44:33.792Z"
     }
   ],
   "reads": [

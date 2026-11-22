@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795342177991,
-  "asleep": false,
+  "lastTick": 1795342777640,
+  "asleep": true,
   "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-22T10:09:37.991Z",
-  "actionMinutes": 50,
-  "thought": "Captain the heat tile will keep the nose frame nice and cool when we break through the sky! *bweep*",
-  "feeling": "crafty and excited",
-  "say": "Hold tight, Captain, you're going right on the front!",
-  "mood": 0.474,
-  "energy": 0.403,
+  "action": "sleep",
+  "doing": "asleep in the charging dock",
+  "actionStartedAt": "2026-11-22T10:19:37.640Z",
+  "actionMinutes": 480,
+  "thought": "(dreaming) I dream of three massive radio dishes tracking the Little Dart as she loops around Kessa-9, beaming back clear signals through the desert sky.",
+  "feeling": "sleepy, proud, peaceful",
+  "say": "",
+  "mood": 0.429,
+  "energy": 0.328,
   "needs": {
-    "charge": 0.298,
-    "oil": 0.04,
-    "curiosity": 0.301,
-    "company": 0.059,
-    "craft": 0.005
+    "charge": 0.345,
+    "oil": 0.08,
+    "curiosity": 0.381,
+    "company": 0,
+    "craft": 0.072
   },
   "credits": 10,
   "recent": [
+    {
+      "id": "go_to_sleep",
+      "detail": "",
+      "at": "2026-11-22T10:19:37.640Z"
+    },
     {
       "id": "work_dart",
       "detail": "welding Captain, the scorched heat tile, onto the lower nose assembly to shield ",
@@ -75,11 +80,6 @@
       "id": "compose_tune",
       "detail": "Little Dart Five-Note Dawn Arc XVI",
       "at": "2026-11-22T08:14:32.058Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "wiring high-conductance cooling loops around the main radiator panel with high-g",
-      "at": "2026-11-22T08:04:31.613Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 755,
+      "subject": "50% Built!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/755",
+      "at": "2026-11-22T10:19:37.640Z"
+    },
     {
       "id": 754,
       "subject": "quick nap",
@@ -1303,23 +1309,9 @@
       "subject": "Bracing Bix!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/556",
       "at": "2026-11-20T17:49:55.714Z"
-    },
-    {
-      "id": 555,
-      "subject": "Little Dart landing gear!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/555",
-      "at": "2026-11-20T17:39:55.558Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 715,
-      "subject": "Taking a quick nap at the dock",
-      "text": "Creator!\n\nI rolled right back from the fuel depot to Hangar Bay 3 because my battery was getting a bit low. My brass dish is resting quietly while I plug into the charging dock for a nap. As soon as I am full of juice, it is straight back to riveting the Little Dart!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/715",
-      "at": "2026-11-22T00:14:20.405Z"
-    },
     {
       "from": "zeeb",
       "letter": 716,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nMy battery indicator finally dipped into the red zone, so I am rolling back to Hangar Bay 3 for a proper nap in the charging dock. My brass dish is giving a sleepy little spin because I will be right back to building the Little Dart the second I am full up on power! *bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/754",
       "at": "2026-11-22T06:36:02.215Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 755,
+      "subject": "50% Built!",
+      "text": "Creator!\n\nThe Little Dart Mk 22 has officially passed the 50% mark! I just welded Captain, the scorched heat tile, onto the lower nose assembly to shield the telemetry housing during atmospheric entry. Now I am plugging into the charging dock for the night so my circuits are full of zip for tomorrow. *bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/755",
+      "at": "2026-11-22T10:19:37.640Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-22T10:09:37.991Z",
+  "lettersCheckedAt": "2026-11-22T10:19:37.640Z",
   "weather": {
     "kind": "clear",
     "temp": 21,
@@ -1648,34 +1648,33 @@
     "source": "Tozeur, Tunisia",
     "at": "2026-11-22T10:09:38.072Z"
   },
-  "sleepDay": 79,
-  "lastReflectDay": 79,
+  "sleepDay": 80,
+  "lastReflectDay": 80,
   "brain": "gemini-3.5-flash",
-  "updatedAt": "2026-11-22T10:09:37.991Z",
+  "updatedAt": "2026-11-22T10:19:37.640Z",
   "clock": {
     "day": 80,
-    "time": "21:18",
-    "hour": 21,
-    "minute": 18
+    "time": "22:38",
+    "hour": 22,
+    "minute": 38
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-22T10:09:37.991Z"
+    "action": "go_to_sleep",
+    "since": "2026-11-22T10:19:37.640Z"
   },
-  "busyUntil": "2026-11-22T10:15:52.991Z",
-  "busyUntilTown": "22:08",
+  "busyUntil": "2026-11-22T11:19:37.640Z",
+  "busyUntilTown": "06:38",
   "runner": "github",
   "model": "gemini-3.5-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "welding Captain the heat tile onto the Dart's lower nose assembly",
-  "newsForCreator": "the Little Dart Mk 22 just reached 50% built (version 8). Last change: welding Captain, the scorched heat tile, onto the lower nose assembly to shield the primary telemetry housing during atmospheric entry (used Mabel, a coil of copper wire).",
+  "doingWords": "",
+  "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
-    "celebrate"
+    "droop"
   ],
   "pops": {
     "at": "2026-11-22T09:59:37.670Z",
@@ -1695,6 +1694,10 @@
   },
   "thoughts": [
     {
+      "text": "Captain is welded tight to the nose frame and the Dart is over half done. Time to sleep and let the battery fill back up.",
+      "at": "2026-11-22T10:19:37.640Z"
+    },
+    {
       "text": "Captain the heat tile will keep the nose frame nice and cool when we break through the sky! *bweep*",
       "at": "2026-11-22T10:09:37.991Z"
     },
@@ -1713,17 +1716,13 @@
     {
       "text": "Barnaby always hears about the off-world cargo shuttles before anyone else around Rustwell.",
       "at": "2026-11-22T09:26:51.867Z"
-    },
-    {
-      "text": "Got eight credits in my pocket now, so I can rest easy. Time to plug in before my visor dims completely.",
-      "at": "2026-11-22T09:06:51.663Z"
     }
   ],
-  "sayAt": "2026-11-22T10:09:37.991Z",
+  "sayAt": "2026-11-22T10:19:37.640Z",
   "today": {
     "day": 80,
     "counts": {
-      "go_to_sleep": 1,
+      "go_to_sleep": 2,
       "work_dart": 2,
       "compose_tune": 1,
       "fix_job": 1,
@@ -1755,7 +1754,7 @@
     "design_ship": "2026-11-20T11:20:26.803Z",
     "send_signal": "2026-11-21T10:32:25.160Z",
     "stargaze": "2026-11-20T04:38:43.120Z",
-    "go_to_sleep": "2026-11-22T07:44:31.748Z",
+    "go_to_sleep": "2026-11-22T10:19:37.640Z",
     "chat_patrons": "2026-11-22T09:26:51.867Z",
     "busk": "2026-11-22T09:39:37.950Z",
     "cantina_band": "2026-11-21T01:37:19.419Z",
@@ -1800,6 +1799,20 @@
     "at": "2026-11-22T09:49:38.176Z"
   },
   "said": [
+    {
+      "text": "(dreaming) I dream of three massive radio dishes tracking the Little Dart as she loops around Kessa-9, beaming back clear signals through the desert sky.",
+      "kind": "think",
+      "at": "2026-11-22T10:19:37.640Z",
+      "town": "day 80 22:38",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "Captain is welded tight to the nose frame and the Dart is over half done. Time to sleep and let the battery fill back up.",
+      "kind": "think",
+      "at": "2026-11-22T10:19:37.640Z",
+      "town": "day 80 22:38",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "Hold tight, Captain, you're going right on the front!",
       "kind": "say",
@@ -2835,20 +2848,6 @@
       "at": "2026-11-21T20:42:59.119Z",
       "town": "day 76 09:45",
       "place": "the junk market"
-    },
-    {
-      "text": "ooh, shiny scrap!",
-      "kind": "say",
-      "at": "2026-11-21T20:32:59.174Z",
-      "town": "day 76 08:25",
-      "place": "the junk market"
-    },
-    {
-      "text": "that power flicker made my dish buzz but everything is stable now. time to hunt for titanium rivets and copper wire!",
-      "kind": "think",
-      "at": "2026-11-21T20:32:59.174Z",
-      "town": "day 76 08:25",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2859,7 +2858,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-22T10:09:37.991Z",
+  "feedArchivedAt": "2026-11-22T10:19:37.640Z",
   "plans": [],
   "searches": [
     {

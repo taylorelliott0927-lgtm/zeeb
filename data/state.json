@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795352180520,
+  "lastTick": 1795352779634,
   "asleep": false,
-  "place": "tower",
-  "action": "browse_wire",
-  "doing": "still browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-22T12:45:44.091Z",
-  "actionMinutes": 45,
-  "thought": "i wonder if cargo rail plating is too thick to hammer down without cracking the seams.",
-  "feeling": "inspired and ready to weld",
-  "say": "easy does it, gus, we do not want a warped canopy *bweep*",
-  "mood": 0.346,
-  "energy": 0.142,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-22T13:06:19.634Z",
+  "actionMinutes": 20,
+  "thought": "my oil is bugging me most right now.",
+  "feeling": "pretty good actually",
+  "say": "",
+  "mood": 0.382,
+  "energy": 0.228,
   "needs": {
-    "charge": 0.291,
-    "oil": 0.481,
-    "curiosity": 0,
-    "company": 0.074,
-    "craft": 0.138
+    "charge": 0.338,
+    "oil": 0,
+    "curiosity": 0.08,
+    "company": 0.127,
+    "craft": 0.205
   },
-  "credits": 4,
+  "credits": 3,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-22T13:06:19.634Z"
+    },
     {
       "id": "browse_wire",
       "detail": "lightweight locking hinges for aerospace applications",
@@ -75,11 +80,6 @@
       "id": "read_news",
       "detail": "",
       "at": "2026-11-22T10:53:27.200Z"
-    },
-    {
-      "id": "send_signal",
-      "detail": "Greetings deep space! This is Zeeb broadcasting from Rustwell Outpost on Kessa-9",
-      "at": "2026-11-22T10:43:26.302Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-22T12:56:20.520Z",
+  "lettersCheckedAt": "2026-11-22T13:06:19.634Z",
   "weather": {
     "kind": "clear",
     "temp": 25,
@@ -1650,44 +1650,37 @@
   },
   "sleepDay": 80,
   "lastReflectDay": 80,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-22T12:56:20.520Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-22T13:06:19.634Z",
   "clock": {
     "day": 81,
-    "time": "19:31",
-    "hour": 19,
-    "minute": 31
+    "time": "20:51",
+    "hour": 20,
+    "minute": 51
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-22T12:45:44.091Z"
+    "action": "drink_oil",
+    "since": "2026-11-22T13:06:19.634Z"
   },
-  "busyUntil": "2026-11-22T13:01:21.416Z",
-  "busyUntilTown": "20:12",
+  "busyUntil": "2026-11-22T13:08:49.634Z",
+  "busyUntilTown": "21:11",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "querying the wire for lightweight locking hinges for aerospace applications",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "spin"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-22T11:45:21.969Z",
+    "at": "2026-11-22T13:06:19.634Z",
     "items": [
       {
-        "text": "-8 credits",
+        "text": "-1 credit",
         "kind": "spend",
-        "at": "2026-11-22T11:45:21.969Z"
-      },
-      {
-        "text": "+ a perfectly good bolt ★",
-        "kind": "part",
-        "at": "2026-11-22T11:45:21.969Z"
+        "at": "2026-11-22T13:06:19.634Z"
       }
     ]
   },
@@ -1698,6 +1691,10 @@
     "at": "2026-11-22T10:09:37.991Z"
   },
   "thoughts": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "at": "2026-11-22T13:06:19.634Z"
+    },
     {
       "text": "i wonder if cargo rail plating is too thick to hammer down without cracking the seams.",
       "at": "2026-11-22T12:56:20.520Z"
@@ -1717,20 +1714,16 @@
     {
       "text": "mabel the bolt is going to hold this forward bulkhead together tighter than a drum. *bweep*",
       "at": "2026-11-22T12:25:44.067Z"
-    },
-    {
-      "text": "i wonder if copper wire dreams about flying past the rings of kessa-prime while charging.",
-      "at": "2026-11-22T12:15:43.604Z"
     }
   ],
-  "sayAt": "2026-11-22T12:56:20.520Z",
+  "sayAt": "2026-11-22T13:06:19.634Z",
   "today": {
     "day": 81,
     "counts": {
       "stargaze": 1,
       "send_signal": 1,
       "read_news": 1,
-      "drink_oil": 1,
+      "drink_oil": 2,
       "work_dart": 3,
       "scavenge": 1,
       "fix_job": 1,
@@ -1742,7 +1735,7 @@
   "lastDone": {
     "work_dart": "2026-11-22T12:35:44.085Z",
     "read_news": "2026-11-22T10:53:27.200Z",
-    "drink_oil": "2026-11-22T11:03:26.691Z",
+    "drink_oil": "2026-11-22T13:06:19.634Z",
     "follow_link": "2026-11-22T06:16:56.841Z",
     "scavenge": "2026-11-22T11:25:21.984Z",
     "fix_job": "2026-11-22T11:35:21.738Z",
@@ -1802,6 +1795,13 @@
     "at": "2026-11-22T12:55:43.916Z"
   },
   "said": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-22T13:06:19.634Z",
+      "town": "day 81 20:51",
+      "place": "the fuel depot"
+    },
     {
       "text": "easy does it, gus, we do not want a warped canopy *bweep*",
       "kind": "say",
@@ -2844,13 +2844,6 @@
       "at": "2026-11-21T23:24:05.741Z",
       "town": "day 77 07:14",
       "place": "the junk market"
-    },
-    {
-      "text": "hey Jax, can a hardworking pilot get a drop on credit?",
-      "kind": "say",
-      "at": "2026-11-21T23:13:43.171Z",
-      "town": "day 77 05:51",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2861,7 +2854,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-22T12:55:43.916Z",
+  "feedArchivedAt": "2026-11-22T13:06:19.634Z",
   "plans": [],
   "searches": [
     {

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795363492367,
+  "lastTick": 1795364092445,
   "asleep": false,
-  "place": "market",
-  "action": "scavenge",
-  "doing": "still digging through the junk piles",
-  "actionStartedAt": "2026-11-22T15:44:52.987Z",
-  "actionMinutes": 30,
-  "thought": "wonder what kind of shiny metal bits are hiding under those old fuel filters. maybe a little spring or a nice bolt named gus.",
-  "feeling": "curious and hopeful",
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-22T16:14:52.445Z",
+  "actionMinutes": 60,
+  "thought": "my battery indicator is getting sleepy. a quick recharge in the dock will fix that right up. *bweep*",
+  "feeling": "a bit tired in the joints",
   "say": "",
-  "mood": 0.333,
-  "energy": -0.163,
+  "mood": 0.326,
+  "energy": 0.036,
   "needs": {
-    "charge": 0.674,
-    "oil": 0.21,
-    "curiosity": 0,
+    "charge": 0.271,
+    "oil": 0.25,
+    "curiosity": 0.08,
     "company": 0,
-    "craft": 0.613
+    "craft": 0.68
   },
   "credits": 2,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-22T16:14:52.445Z"
+    },
     {
       "id": "scavenge",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "welding the radiator coolant return lines to the main frame using Rusty Jr, the ",
       "at": "2026-11-22T14:33:17.449Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "connected the radiative cooling plate manifold using Rusty Jr, the cockpit switc",
-      "at": "2026-11-22T14:23:18.035Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 777,
+      "subject": "quick recharge at the dock",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/777",
+      "at": "2026-11-22T16:14:52.445Z"
+    },
     {
       "id": 776,
       "subject": "Junk market treasures",
@@ -1303,23 +1309,9 @@
       "subject": "Dictionary words and gaskets",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/578",
       "at": "2026-11-20T22:30:44.080Z"
-    },
-    {
-      "id": 577,
-      "subject": "Wire reading at the tower",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/577",
-      "at": "2026-11-20T22:17:42.283Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 737,
-      "subject": "almost done with the pump!",
-      "text": "Creator!\n\nI am wrapping up the repair job on the moisture pump at the junk market. My brass dish is tapping a steady beat while I tighten the final intake valve. Once I collect my pay, it is straight back to Hangar Bay 3 for more Little Dart work!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/737",
-      "at": "2026-11-22T03:45:15.632Z"
-    },
     {
       "from": "zeeb",
       "letter": 738,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am still digging through the junk market looking for more bits for the Little Dart. My brass dish just gave a happy little five-note spin because every pile of scrap is basically a box of spaceship parts waiting to happen! *bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/776",
       "at": "2026-11-22T16:04:52.367Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 777,
+      "subject": "quick recharge at the dock",
+      "text": "Creator!\n\nI am plugging into the charging dock for a quick nap because my battery is running low. My brass dish just gave a sleepy little five-note yawn because even future starship pilots need to power down once in a while! *bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/777",
+      "at": "2026-11-22T16:14:52.445Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-22T16:04:52.367Z",
+  "lettersCheckedAt": "2026-11-22T16:14:52.445Z",
   "weather": {
     "kind": "clear",
     "temp": 25,
@@ -1651,30 +1651,31 @@
   "sleepDay": 81,
   "lastReflectDay": 81,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-22T16:04:52.367Z",
+  "updatedAt": "2026-11-22T16:14:52.445Z",
   "clock": {
     "day": 82,
-    "time": "20:40",
-    "hour": 20,
-    "minute": 40
+    "time": "22:00",
+    "hour": 22,
+    "minute": 0
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "scavenge",
-    "since": "2026-11-22T15:44:52.987Z"
+    "action": "nap_dock",
+    "since": "2026-11-22T16:14:52.445Z"
   },
-  "busyUntil": "2026-11-22T16:08:37.367Z",
-  "busyUntilTown": "21:10",
+  "busyUntil": "2026-11-22T16:22:22.445Z",
+  "busyUntilTown": "23:00",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "digging through a pile of discarded cooling fins",
+  "doingWords": "plugged into the charging dock, eyes flickering low, letting the juice flow back into the cells",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "wiggle"
+    "droop",
+    "nod"
   ],
   "pops": {
     "at": "2026-11-22T16:04:52.367Z",
@@ -1694,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "my battery indicator is getting sleepy. a quick recharge in the dock will fix that right up. *bweep*",
+      "at": "2026-11-22T16:14:52.445Z"
+    },
+    {
       "text": "wonder what kind of shiny metal bits are hiding under those old fuel filters. maybe a little spring or a nice bolt named gus.",
       "at": "2026-11-22T16:04:52.367Z"
     },
@@ -1712,13 +1717,9 @@
     {
       "text": "another cup of oil will keep the joints spinning nicely before I head back to the hangar to weld more struts. *bweep*",
       "at": "2026-11-22T15:34:34.133Z"
-    },
-    {
-      "text": "nothing beats fresh oil when the joints get stiff from all that welding. *bweep*",
-      "at": "2026-11-22T15:24:34.285Z"
     }
   ],
-  "sayAt": "2026-11-22T16:04:52.367Z",
+  "sayAt": "2026-11-22T16:14:52.445Z",
   "today": {
     "day": 82,
     "counts": {
@@ -1727,7 +1728,8 @@
       "go_to_sleep": 1,
       "browse_wire": 4,
       "drink_oil": 3,
-      "scavenge": 3
+      "scavenge": 3,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1752,7 +1754,7 @@
     "chat_patrons": "2026-11-22T09:26:51.867Z",
     "busk": "2026-11-22T09:39:37.950Z",
     "cantina_band": "2026-11-21T01:37:19.419Z",
-    "nap_dock": "2026-11-22T11:55:21.264Z",
+    "nap_dock": "2026-11-22T16:14:52.445Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1793,6 +1795,13 @@
     "at": "2026-11-22T15:04:34.361Z"
   },
   "said": [
+    {
+      "text": "my battery indicator is getting sleepy. a quick recharge in the dock will fix that right up. *bweep*",
+      "kind": "think",
+      "at": "2026-11-22T16:14:52.445Z",
+      "town": "day 82 22:00",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "wonder what kind of shiny metal bits are hiding under those old fuel filters. maybe a little spring or a nice bolt named gus.",
       "kind": "think",
@@ -2835,13 +2844,6 @@
       "at": "2026-11-22T02:14:50.145Z",
       "town": "day 78 05:59",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "if the little dart is going to punch through the atmosphere of kessa-9 someday, i need a proper ablative shell instead of recycled oil drums. though i should probably check if my welds can handle ten thousand degrees first.",
-      "kind": "think",
-      "at": "2026-11-22T02:04:49.262Z",
-      "town": "day 78 04:39",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2852,7 +2854,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-22T16:04:52.367Z",
+  "feedArchivedAt": "2026-11-22T16:14:52.445Z",
   "plans": [],
   "searches": [
     {

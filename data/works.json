@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 22",
-    "progress": 45,
-    "version": 7,
-    "lastChange": "wiring high-conductance cooling loops around the main radiator panel with high-grade copper wire (used Rusty Jr) (used Rusty Jr, a coil of copper wire)",
+    "progress": 54,
+    "version": 8,
+    "lastChange": "welding Captain, the scorched heat tile, onto the lower nose assembly to shield the primary telemetry housing during atmospheric entry (used Mabel, a coil of copper wire)",
     "log": [
+      {
+        "version": 8,
+        "change": "welding Captain, the scorched heat tile, onto the lower nose assembly to shield the primary telemetry housing during atmospheric entry (used Mabel, a coil of copper wire)",
+        "progress": 54,
+        "at": "2026-11-22T10:09:37.991Z"
+      },
       {
         "version": 7,
         "change": "wiring high-conductance cooling loops around the main radiator panel with high-grade copper wire (used Rusty Jr) (used Rusty Jr, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "welding titanium bulkhead ribs into the Little Dart's aft framework for maximum structural integrity",
         "progress": 78,
         "at": "2026-11-21T04:27:31.701Z"
-      },
-      {
-        "version": 18,
-        "change": "welding titanium bulkhead ribs into the Little Dart's aft framework for maximum structural integrity",
-        "progress": 75,
-        "at": "2026-11-21T04:17:31.922Z"
       }
     ],
     "launched": [
@@ -2685,7 +2685,7 @@
         ]
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Pim",
@@ -2718,6 +2718,11 @@
         "what": "a coil of copper wire",
         "good": true,
         "version": 7
+      },
+      {
+        "name": "Mabel",
+        "what": "a coil of copper wire",
+        "version": 8
       }
     ],
     "design": null
@@ -2973,11 +2978,6 @@
     {
       "name": "Sprocket",
       "what": "half a thruster nozzle",
-      "at": "2026-11-22T08:34:31.500Z"
-    },
-    {
-      "name": "Mabel",
-      "what": "a coil of copper wire",
       "at": "2026-11-22T08:34:31.500Z"
     }
   ],

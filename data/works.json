@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 23",
-    "progress": 29,
-    "version": 4,
-    "lastChange": "welding the fuel line shielding using Rusty Jr, the cracked navigation chip, to route internal power safely (used Fen, a sensor eye with one crack)",
+    "progress": 39,
+    "version": 5,
+    "lastChange": "wiring Sprocket, the cockpit switch that still clicks, into the main instrument panel for emergency subsystem cutoffs (used Sprocket, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 5,
+        "change": "wiring Sprocket, the cockpit switch that still clicks, into the main instrument panel for emergency subsystem cutoffs (used Sprocket, a cockpit switch that still clicks)",
+        "progress": 39,
+        "at": "2026-11-22T18:35:50.486Z"
+      },
       {
         "version": 4,
         "change": "welding the fuel line shielding using Rusty Jr, the cracked navigation chip, to route internal power safely (used Fen, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "welding high-entropy silicate ceramic aerogel panels to the belly of the Little Dart using Tok, a sensor eye with one crack (used Wren, a mystery box that hums)",
         "progress": 64,
         "at": "2026-11-21T15:41:12.368Z"
-      },
-      {
-        "version": 7,
-        "change": "attached high-temp silica tiles to the Little Dart's nose cone using Rusty Jr, a coil of copper wire (used Lorna, a mystery box that hums)",
-        "progress": 56,
-        "at": "2026-11-21T15:31:12.302Z"
       }
     ],
     "launched": [
@@ -2765,7 +2765,7 @@
         ]
       }
     ],
-    "partsUsed": 4,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Captain",
@@ -2782,6 +2782,11 @@
         "what": "a sensor eye with one crack",
         "good": true,
         "version": 4
+      },
+      {
+        "name": "Sprocket",
+        "what": "a cockpit switch that still clicks",
+        "version": 5
       }
     ],
     "design": null
@@ -3053,11 +3058,6 @@
       "name": "Wren",
       "what": "a sensor eye with one crack",
       "at": "2026-11-22T15:54:53.176Z"
-    },
-    {
-      "name": "Sprocket",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-22T15:44:52.987Z"
     }
   ],
   "reads": [

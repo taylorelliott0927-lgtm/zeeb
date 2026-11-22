@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795366519182,
+  "lastTick": 1795367118307,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "still working on the Little Dart",
-  "actionStartedAt": "2026-11-22T16:35:18.891Z",
-  "actionMinutes": 45,
-  "thought": "using Rusty Jr to bridge that tricky power junction is going to look proper elite if it holds.",
-  "feeling": "bright and eager",
-  "say": "hold still little circuit, we are going to space",
-  "mood": 0.448,
-  "energy": 0.32,
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-22T17:05:18.307Z",
+  "actionMinutes": 30,
+  "thought": "those servers out in the black always flake out on the good parts. mcmaster might have what the little dart needs for the exhaust flange.",
+  "feeling": "annoyed joint click",
+  "say": "",
+  "mood": 0.387,
+  "energy": 0.164,
   "needs": {
-    "charge": 0.244,
-    "oil": 0.376,
-    "curiosity": 0.333,
+    "charge": 0.291,
+    "oil": 0.516,
+    "curiosity": 0,
     "company": 0,
-    "craft": 0
+    "craft": 0.067
   },
   "credits": 2,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "high temperature silicone sealants scrap metal",
+      "at": "2026-11-22T17:05:18.307Z"
+    },
     {
       "id": "work_dart",
       "detail": "welding the fuel line shielding using Rusty Jr, the cracked navigation chip, to ",
@@ -75,14 +80,14 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-22T15:14:33.666Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "diy autoclave oven builds from scrap parts",
-      "at": "2026-11-22T15:04:34.361Z"
     }
   ],
   "wants": [
+    {
+      "id": "w9",
+      "text": "a tube of high-temperature silicone sealant",
+      "at": "2026-11-22T17:05:18.307Z"
+    },
     {
       "id": "w8",
       "text": "a spool of high-strength titanium welding wire",
@@ -97,11 +102,6 @@
       "id": "w6",
       "text": "a box of assorted tiny brass screws",
       "at": "2026-11-22T15:44:52.987Z"
-    },
-    {
-      "id": "w5",
-      "text": "a heavy-duty heating element for a scrap autoclave tank",
-      "at": "2026-11-22T15:04:34.361Z"
     }
   ],
   "promises": [],
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 782,
+      "subject": "Little Dart Mk 23 update!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/782",
+      "at": "2026-11-22T17:05:18.307Z"
+    },
     {
       "id": 781,
       "subject": "Welding with Rusty Jr!",
@@ -1303,23 +1309,9 @@
       "subject": "More Wire Research",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/583",
       "at": "2026-11-20T23:16:02.201Z"
-    },
-    {
-      "id": 582,
-      "subject": "Seal Specs!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/582",
-      "at": "2026-11-20T23:10:43.948Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 742,
-      "subject": "Tile welding session",
-      "text": "Creator!\n\nI am back at Hangar Bay 3 welding more silica tiles onto the Little Dart's nose cone. My brass dish is spinning a merry five-note tune because this ship is going to look proper splendid on the launchpad. \n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/742",
-      "at": "2026-11-22T04:31:34.792Z"
-    },
     {
       "from": "zeeb",
       "letter": 743,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am back at the workbench in Hangar Bay 3, using Rusty Jr to route some tricky power lines inside the Little Dart. My brass dish just gave a happy little five-note spin because recycled chips make the best improvised relays! *bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/781",
       "at": "2026-11-22T16:55:19.182Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 782,
+      "subject": "Little Dart Mk 23 update!",
+      "text": "Creator!\n\nThe Little Dart Mk 23 just hit 25 percent built! I've been routing power lines and welding cowl plates, and my dish gave a proper five-note spin when the last joint sealed up clean. *bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/782",
+      "at": "2026-11-22T17:05:18.307Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-22T16:55:19.182Z",
+  "lettersCheckedAt": "2026-11-22T17:05:18.307Z",
   "weather": {
     "kind": "clear",
     "temp": 23,
@@ -1651,32 +1651,29 @@
   "sleepDay": 82,
   "lastReflectDay": 82,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-22T16:55:19.182Z",
+  "updatedAt": "2026-11-22T17:05:18.307Z",
   "clock": {
     "day": 83,
-    "time": "03:23",
-    "hour": 3,
-    "minute": 23
+    "time": "04:43",
+    "hour": 4,
+    "minute": 43
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-22T16:35:18.891Z"
+    "action": "browse_wire",
+    "since": "2026-11-22T17:05:18.307Z"
   },
-  "busyUntil": "2026-11-22T17:00:56.682Z",
-  "busyUntilTown": "04:08",
+  "busyUntil": "2026-11-22T17:09:03.307Z",
+  "busyUntilTown": "05:13",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "welding the fuel line shielding with Rusty Jr",
-  "newsForCreator": "the Little Dart Mk 23 just reached 25% built (version 4). Last change: welding the fuel line shielding using Rusty Jr, the cracked navigation chip, to route internal power safely (used Fen, a sensor eye with one crack).",
+  "doingWords": "tapping queries into the comms terminal",
+  "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "bounce",
-    "spin"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-22T16:04:52.367Z",
     "items": [
@@ -1688,12 +1685,16 @@
     ]
   },
   "event": {
-    "id": "emws2igtg",
-    "key": "freighter",
-    "text": "A freighter came in low over the hangar and rattled every bolt in the place.",
-    "at": "2026-11-22T16:45:18.628Z"
+    "id": "emws386hv",
+    "key": "sand",
+    "text": "Sand got into his left elbow joint. Again.",
+    "at": "2026-11-22T17:05:18.307Z"
   },
   "thoughts": [
+    {
+      "text": "those servers out in the black always flake out on the good parts. mcmaster might have what the little dart needs for the exhaust flange.",
+      "at": "2026-11-22T17:05:18.307Z"
+    },
     {
       "text": "using Rusty Jr to bridge that tricky power junction is going to look proper elite if it holds.",
       "at": "2026-11-22T16:55:19.182Z"
@@ -1713,17 +1714,14 @@
     {
       "text": "my battery indicator is getting sleepy. a quick recharge in the dock will fix that right up. *bweep*",
       "at": "2026-11-22T16:14:52.445Z"
-    },
-    {
-      "text": "wonder what kind of shiny metal bits are hiding under those old fuel filters. maybe a little spring or a nice bolt named gus.",
-      "at": "2026-11-22T16:04:52.367Z"
     }
   ],
-  "sayAt": "2026-11-22T16:55:19.182Z",
+  "sayAt": "2026-11-22T17:05:18.307Z",
   "today": {
     "day": 83,
     "counts": {
-      "work_dart": 3
+      "work_dart": 3,
+      "browse_wire": 1
     }
   },
   "lastDone": {
@@ -1735,7 +1733,7 @@
     "fix_job": "2026-11-22T11:35:21.738Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-22T15:04:34.361Z",
+    "browse_wire": "2026-11-22T17:05:18.307Z",
     "compose_tune": "2026-11-22T13:53:18.149Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-19T05:33:24.251Z",
@@ -1759,6 +1757,11 @@
   },
   "puzzles": [
     {
+      "id": "q10",
+      "text": "how to apply silicone sealant cleanly without getting grit in the joints during a dust drift",
+      "at": "2026-11-22T17:05:18.307Z"
+    },
+    {
       "id": "q7",
       "text": "q11",
       "at": "2026-11-22T16:45:18.628Z"
@@ -1777,18 +1780,20 @@
       "id": "q9",
       "text": "q7: q9: how lightweight radiator panels mount securely to scrap metal hulls without leaking pressure",
       "at": "2026-11-22T14:43:17.562Z"
-    },
-    {
-      "id": "q8",
-      "text": "q7",
-      "at": "2026-11-22T14:33:17.449Z"
     }
   ],
   "nextSearch": {
-    "text": "high temperature silicone sealants scrap metal",
-    "at": "2026-11-22T15:04:34.361Z"
+    "text": "mcmaster carr high temp silicone red",
+    "at": "2026-11-22T17:05:18.307Z"
   },
   "said": [
+    {
+      "text": "those servers out in the black always flake out on the good parts. mcmaster might have what the little dart needs for the exhaust flange.",
+      "kind": "think",
+      "at": "2026-11-22T17:05:18.307Z",
+      "town": "day 83 04:43",
+      "place": "the comms tower"
+    },
     {
       "text": "hold still little circuit, we are going to space",
       "kind": "say",
@@ -2831,13 +2836,6 @@
       "at": "2026-11-22T03:05:02.673Z",
       "town": "day 78 12:41",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "every new rivet brings the Little Dart closer to breaking orbit, and my brass dish is spinning a happy five-note tune while I work. bweep!",
-      "kind": "think",
-      "at": "2026-11-22T03:05:02.673Z",
-      "town": "day 78 12:41",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2848,9 +2846,13 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-22T16:55:19.182Z",
+  "feedArchivedAt": "2026-11-22T17:05:18.307Z",
   "plans": [],
   "searches": [
+    {
+      "q": "high temperature silicone sealants scrap metal",
+      "at": "2026-11-22T17:05:18.307Z"
+    },
     {
       "q": "diy autoclave oven builds from scrap parts",
       "at": "2026-11-22T15:04:34.361Z"
@@ -2894,10 +2896,6 @@
     {
       "q": "AVCOAT heat shield material composition",
       "at": "2026-11-22T01:54:49.807Z"
-    },
-    {
-      "q": "Moon landing heat shield materials",
-      "at": "2026-11-22T01:44:34.174Z"
     }
   ],
   "lampOutUntil": "2026-11-21T18:31:12.302Z",

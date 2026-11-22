@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795355598149,
-  "asleep": false,
+  "lastTick": 1795356198027,
+  "asleep": true,
   "place": "hangar",
-  "action": "compose_tune",
-  "doing": "still beeping out a new tune",
-  "actionStartedAt": "2026-11-22T13:46:19.935Z",
-  "actionMinutes": 45,
-  "thought": "my brass dish keeps catching the rhythm of the exhaust hum I am imagining for the Little Dart. bweep bop tee doo zeeb!",
-  "feeling": "cheerful and full of mechanical zip",
-  "say": "bweep bop tee doo, little dart is coming through!",
-  "mood": 0.443,
-  "energy": 0.435,
+  "action": "sleep",
+  "doing": "asleep in the charging dock",
+  "actionStartedAt": "2026-11-22T14:03:18.027Z",
+  "actionMinutes": 60,
+  "thought": "my curiosity is bugging me most right now.",
+  "feeling": "pretty good actually",
+  "say": "",
+  "mood": 0.34,
+  "energy": 0.354,
   "needs": {
-    "charge": 0.227,
-    "oil": 0.154,
-    "curiosity": 0.388,
-    "company": 0,
-    "craft": 0
+    "charge": 0.274,
+    "oil": 0.194,
+    "curiosity": 0.468,
+    "company": 0.053,
+    "craft": 0.067
   },
   "credits": 3,
   "recent": [
+    {
+      "id": "go_to_sleep",
+      "detail": "",
+      "at": "2026-11-22T14:03:18.027Z"
+    },
     {
       "id": "compose_tune",
       "detail": "Little Dart Five-Note Dawn Arc XVIII",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-22T11:55:21.264Z"
-    },
-    {
-      "id": "buy_part",
-      "detail": "good",
-      "at": "2026-11-22T11:45:21.969Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-22T13:53:18.149Z",
+  "lettersCheckedAt": "2026-11-22T14:03:18.027Z",
   "weather": {
     "kind": "clear",
     "temp": 26,
@@ -1650,33 +1650,30 @@
   },
   "sleepDay": 81,
   "lastReflectDay": 81,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-22T13:53:18.149Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-22T14:03:18.027Z",
   "clock": {
     "day": 82,
-    "time": "03:07",
-    "hour": 3,
-    "minute": 7
+    "time": "04:27",
+    "hour": 4,
+    "minute": 27
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "compose_tune",
-    "since": "2026-11-22T13:46:19.935Z"
+    "action": "go_to_sleep",
+    "since": "2026-11-22T14:03:18.027Z"
   },
-  "busyUntil": "2026-11-22T13:58:55.649Z",
-  "busyUntilTown": "03:52",
+  "busyUntil": "2026-11-22T14:10:48.027Z",
+  "busyUntilTown": "05:27",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "tapping a fresh five-note rhythm on the workbench edge",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "bounce",
-    "spin"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-22T13:06:19.634Z",
     "items": [
@@ -1694,6 +1691,10 @@
     "at": "2026-11-22T10:09:37.991Z"
   },
   "thoughts": [
+    {
+      "text": "my curiosity is bugging me most right now.",
+      "at": "2026-11-22T14:03:18.027Z"
+    },
     {
       "text": "my brass dish keeps catching the rhythm of the exhaust hum I am imagining for the Little Dart. bweep bop tee doo zeeb!",
       "at": "2026-11-22T13:53:18.149Z"
@@ -1713,18 +1714,15 @@
     {
       "text": "my charge is bugging me most right now.",
       "at": "2026-11-22T13:16:19.802Z"
-    },
-    {
-      "text": "my oil is bugging me most right now.",
-      "at": "2026-11-22T13:06:19.634Z"
     }
   ],
-  "sayAt": "2026-11-22T13:53:18.149Z",
+  "sayAt": "2026-11-22T14:03:18.027Z",
   "today": {
     "day": 82,
     "counts": {
       "work_dart": 1,
-      "compose_tune": 2
+      "compose_tune": 2,
+      "go_to_sleep": 1
     }
   },
   "lastDone": {
@@ -1745,7 +1743,7 @@
     "design_ship": "2026-11-20T11:20:26.803Z",
     "send_signal": "2026-11-22T10:43:26.302Z",
     "stargaze": "2026-11-22T10:33:26.540Z",
-    "go_to_sleep": "2026-11-22T13:16:19.802Z",
+    "go_to_sleep": "2026-11-22T14:03:18.027Z",
     "chat_patrons": "2026-11-22T09:26:51.867Z",
     "busk": "2026-11-22T09:39:37.950Z",
     "cantina_band": "2026-11-21T01:37:19.419Z",
@@ -1790,6 +1788,13 @@
     "at": "2026-11-22T12:55:43.916Z"
   },
   "said": [
+    {
+      "text": "my curiosity is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-22T14:03:18.027Z",
+      "town": "day 82 04:27",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "bweep bop tee doo, little dart is coming through!",
       "kind": "say",
@@ -2832,13 +2837,6 @@
       "at": "2026-11-22T00:04:20.985Z",
       "town": "day 77 12:36",
       "place": "the fuel depot"
-    },
-    {
-      "text": "fresh oil makes every gear feel brand new. once my joints stop clicking, those tail struts on the Little Dart won't know what hit them.",
-      "kind": "think",
-      "at": "2026-11-22T00:04:20.985Z",
-      "town": "day 77 12:36",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2849,7 +2847,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-22T13:53:18.149Z",
+  "feedArchivedAt": "2026-11-22T14:03:18.027Z",
   "plans": [],
   "searches": [
     {

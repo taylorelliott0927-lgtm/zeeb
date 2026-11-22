@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795373151272,
+  "lastTick": 1795373750625,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-22T18:45:51.272Z",
-  "actionMinutes": 20,
-  "thought": "A quick cup of oil at the depot will stop the grit from grinding my gears. Then my dish can point straight up again.",
-  "feeling": "squeaky but optimistic",
-  "say": "*bweep* Time for a quick oil break!",
-  "mood": 0.371,
-  "energy": 0.471,
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-22T18:55:50.625Z",
+  "actionMinutes": 45,
+  "thought": "might wrap the Little Dart tailcone in this foam so re-entry doesn't toast my wiring harness. or use it to line my coffee cup holder.",
+  "feeling": "curious and slightly singed",
+  "say": "",
+  "mood": 0.429,
+  "energy": 0.46,
   "needs": {
-    "charge": 0.199,
-    "oil": 0,
-    "curiosity": 0.32,
+    "charge": 0.246,
+    "oil": 0.04,
+    "curiosity": 0,
     "company": 0,
-    "craft": 0.067
+    "craft": 0.134
   },
   "credits": 1,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "heavy duty thrust nozzle insulation ratings",
+      "at": "2026-11-22T18:55:50.625Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "work_dart",
       "detail": "welding the fuel line shielding using Rusty Jr, the cracked navigation chip, to ",
       "at": "2026-11-22T16:55:19.182Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "welding the upper structural longerons using Sprocket, the clicking cockpit swit",
-      "at": "2026-11-22T16:45:18.628Z"
     }
   ],
   "wants": [
+    {
+      "id": "w5",
+      "text": "a roll of heat resistant ceramic tape",
+      "at": "2026-11-22T18:55:50.625Z"
+    },
     {
       "id": "w9",
       "text": "a tube of high-temperature silicone sealant",
@@ -97,11 +102,6 @@
       "id": "w7",
       "text": "a handful of sturdy little brass nuts",
       "at": "2026-11-22T15:54:53.176Z"
-    },
-    {
-      "id": "w6",
-      "text": "a box of assorted tiny brass screws",
-      "at": "2026-11-22T15:44:52.987Z"
     }
   ],
   "promises": [],
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 791,
+      "subject": "Wire searching for nozzle insulation!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/791",
+      "at": "2026-11-22T18:55:50.625Z"
+    },
     {
       "id": 790,
       "subject": "Quick oil stop!",
@@ -1303,23 +1309,9 @@
       "subject": "quick power stop",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/592",
       "at": "2026-11-21T00:36:35.052Z"
-    },
-    {
-      "id": 591,
-      "subject": "quick nap at the dock",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/591",
-      "at": "2026-11-21T00:26:34.811Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 751,
-      "subject": "Heat pipe data",
-      "text": "Creator!\n\nI am still up at the comms tower following link number one about heat pipe reliability. My brass dish is spinning a merry five-note tune because keeping the Little Dart from melting upon re-entry is top priority science! *bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/751",
-      "at": "2026-11-22T06:06:56.608Z"
-    },
     {
       "from": "zeeb",
       "letter": 752,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nMy joint gears are getting a little squeaky after all that wiring on Sprocket, so I'm rolling over to the fuel depot for a fresh cup of oil! Gotta keep the servos turning smooth if I'm gonna pilot the Little Dart one day. *bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/790",
       "at": "2026-11-22T18:45:51.272Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 791,
+      "subject": "Wire searching for nozzle insulation!",
+      "text": "Creator!\n\nI rolled right back up to the comms tower to check out heavy duty thrust nozzle insulation ratings on the Wire. My brass dish gave a quick little five-note spin because getting the heat shield just right is the key to a fast flight! *bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/791",
+      "at": "2026-11-22T18:55:50.625Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-22T18:45:51.272Z",
+  "lettersCheckedAt": "2026-11-22T18:55:50.625Z",
   "weather": {
     "kind": "clear",
     "temp": 21,
@@ -1650,31 +1650,32 @@
   },
   "sleepDay": 82,
   "lastReflectDay": 82,
-  "brain": "gemini-3.5-flash",
-  "updatedAt": "2026-11-22T18:45:51.272Z",
+  "brain": "gemini-3.5-flash-lite",
+  "updatedAt": "2026-11-22T18:55:50.625Z",
   "clock": {
     "day": 83,
-    "time": "18:08",
-    "hour": 18,
-    "minute": 8
+    "time": "19:28",
+    "hour": 19,
+    "minute": 28
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-22T18:45:51.272Z"
+    "action": "browse_wire",
+    "since": "2026-11-22T18:55:50.625Z"
   },
-  "busyUntil": "2026-11-22T18:48:21.272Z",
-  "busyUntilTown": "18:28",
+  "busyUntil": "2026-11-22T19:01:28.125Z",
+  "busyUntilTown": "20:13",
   "runner": "github",
-  "model": "gemini-3.5-flash",
+  "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "trundling to the fuel depot for a fresh cup of oil",
+  "doingWords": "rolling up to the comms tower to search the wire for nozzle insulation data",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "spin"
+    "spin",
+    "look_up"
   ],
   "pops": {
     "at": "2026-11-22T18:45:51.272Z",
@@ -1694,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "might wrap the Little Dart tailcone in this foam so re-entry doesn't toast my wiring harness. or use it to line my coffee cup holder.",
+      "at": "2026-11-22T18:55:50.625Z"
+    },
+    {
       "text": "A quick cup of oil at the depot will stop the grit from grinding my gears. Then my dish can point straight up again.",
       "at": "2026-11-22T18:45:51.272Z"
     },
@@ -1712,18 +1717,14 @@
     {
       "text": "i wonder if this bent exhaust manifold has enough thrust capacity to double as a landing strut for the little dart.",
       "at": "2026-11-22T18:05:50.810Z"
-    },
-    {
-      "text": "let's see what shiny bits are hiding under this stack of old filter housings. *bweep*",
-      "at": "2026-11-22T18:05:37.411Z"
     }
   ],
-  "sayAt": "2026-11-22T18:45:51.272Z",
+  "sayAt": "2026-11-22T18:55:50.625Z",
   "today": {
     "day": 83,
     "counts": {
       "work_dart": 4,
-      "browse_wire": 1,
+      "browse_wire": 2,
       "follow_link": 2,
       "drink_oil": 2,
       "fix_job": 1,
@@ -1741,7 +1742,7 @@
     "fix_job": "2026-11-22T17:45:38.202Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-22T17:05:18.307Z",
+    "browse_wire": "2026-11-22T18:55:50.625Z",
     "compose_tune": "2026-11-22T13:53:18.149Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-19T05:33:24.251Z",
@@ -1765,6 +1766,11 @@
   },
   "puzzles": [
     {
+      "id": "q9",
+      "text": "q8",
+      "at": "2026-11-22T18:55:50.625Z"
+    },
+    {
       "id": "q8",
       "text": "q10: how to apply silicone sealant cleanly without getting grit in the joints during a dust drift",
       "at": "2026-11-22T17:45:38.202Z"
@@ -1783,18 +1789,20 @@
       "id": "q11",
       "text": "q6: how lightweight radiator panels mount securely to scrap metal hulls without leaking pressure",
       "at": "2026-11-22T16:35:18.891Z"
-    },
-    {
-      "id": "q6",
-      "text": "how lightweight radiator panels mount securely to scrap metal hulls without leaking pressure",
-      "at": "2026-11-22T15:24:34.285Z"
     }
   ],
   "nextSearch": {
-    "text": "heavy duty thrust nozzle insulation ratings",
-    "at": "2026-11-22T17:25:37.714Z"
+    "text": "solid rocket propellant nozzle stress calculations pdf",
+    "at": "2026-11-22T18:55:50.625Z"
   },
   "said": [
+    {
+      "text": "might wrap the Little Dart tailcone in this foam so re-entry doesn't toast my wiring harness. or use it to line my coffee cup holder.",
+      "kind": "think",
+      "at": "2026-11-22T18:55:50.625Z",
+      "town": "day 83 19:28",
+      "place": "the comms tower"
+    },
     {
       "text": "*bweep* Time for a quick oil break!",
       "kind": "say",
@@ -2837,13 +2845,6 @@
       "at": "2026-11-22T05:26:56.950Z",
       "town": "day 79 07:36",
       "place": "the comms tower"
-    },
-    {
-      "text": "if i route my sensor feeds through a hardware encoder, maybe the data wont lag behind when i punch through the upper thermosphere. time to check those buffer registers.",
-      "kind": "think",
-      "at": "2026-11-22T05:26:56.950Z",
-      "town": "day 79 07:36",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2854,9 +2855,13 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-22T18:45:51.272Z",
+  "feedArchivedAt": "2026-11-22T18:55:50.625Z",
   "plans": [],
   "searches": [
+    {
+      "q": "heavy duty thrust nozzle insulation ratings",
+      "at": "2026-11-22T18:55:50.625Z"
+    },
     {
       "q": "high temperature silicone sealants scrap metal",
       "at": "2026-11-22T17:05:18.307Z"
@@ -2900,10 +2905,6 @@
     {
       "q": "libavcodec atmospheric entry compression ratios",
       "at": "2026-11-22T05:26:56.950Z"
-    },
-    {
-      "q": "AVCOAT heat shield material composition",
-      "at": "2026-11-22T01:54:49.807Z"
     }
   ],
   "lampOutUntil": "2026-11-21T18:31:12.302Z",

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795379188458,
+  "lastTick": 1795379789059,
   "asleep": false,
-  "place": "tower",
-  "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-22T20:26:28.458Z",
+  "place": "hangar",
+  "action": "design_ship",
+  "doing": "sketching a new look for his ship",
+  "actionStartedAt": "2026-11-22T20:36:29.059Z",
   "actionMinutes": 45,
-  "thought": "A zero internal leak rate means the Little Dart wouldn't waste precious cold gas while drifting through the Kessa-9 atmosphere. I need to scavenge a valve with a resilient seal like these. *bweep*",
-  "feeling": "inspired and eager",
-  "say": "let's see what the wire has on heavy-duty cooling valves.",
-  "mood": 0.494,
-  "energy": 0.361,
+  "thought": "The Little Dart deserves a shape as fast as it feels. I am sketching swept-back delta wings and a needle-nose profile with high-temp ports. *bweep*",
+  "feeling": "super inspired and ready to build",
+  "say": "Time to give this scrap-dart some real style!",
+  "mood": 0.54,
+  "energy": 0.289,
   "needs": {
-    "charge": 0.272,
-    "oil": 0.16,
+    "charge": 0.319,
+    "oil": 0.2,
     "curiosity": 0,
     "company": 0,
-    "craft": 0.067
+    "craft": 0
   },
   "credits": 0,
   "recent": [
+    {
+      "id": "design_ship",
+      "detail": "The Little Dart Mk 23 features a razor-sharp needle nose covered in high-temp si",
+      "at": "2026-11-22T20:36:29.059Z"
+    },
     {
       "id": "browse_wire",
       "detail": "heavy duty cooling valves for experimental thrusters",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-22T18:45:51.272Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "wiring Sprocket, the cockpit switch that still clicks, into the main instrument ",
-      "at": "2026-11-22T18:35:50.486Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 801,
+      "subject": "Little Dart Design",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/801",
+      "at": "2026-11-22T20:36:29.059Z"
+    },
     {
       "id": 800,
       "subject": "Wire Search for Cooling Valves",
@@ -1303,23 +1309,9 @@
       "subject": "Pyralux and High Temps",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/602",
       "at": "2026-11-21T03:02:01.572Z"
-    },
-    {
-      "id": 601,
-      "subject": "A fresh tune for the morning!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/601",
-      "at": "2026-11-21T02:52:01.628Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 761,
-      "subject": "Little Dart Mk 22 update!",
-      "text": "Creator!\n\nI am back at the workbench in Hangar Bay 3, riveting the carbon composite frame to the dorsal longeron using Mabel, my very best bolt. My brass dish is giving a merry little five-note tune because the Little Dart Mk 22 is coming together so sleek and proper!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/761",
-      "at": "2026-11-22T13:36:19.616Z"
-    },
     {
       "from": "zeeb",
       "letter": 762,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am back at the comms tower searching the Wire for heavy-duty cooling valves. My brass dish gave a sharp little click as the search results loaded up. I want to make sure the Little Dart's engine stays nice and cool when we finally take off! *bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/800",
       "at": "2026-11-22T20:26:28.458Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 801,
+      "subject": "Little Dart Design",
+      "text": "Creator!\n\nI am finally locking down the exact look of the Little Dart! I just finished designing the sleek delta wings and the needle nose covered in our high-temp silica tiles. My brass dish gave a happy little five-note spin because it looks like a real starship now! *bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/801",
+      "at": "2026-11-22T20:36:29.059Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-22T20:26:28.458Z",
+  "lettersCheckedAt": "2026-11-22T20:36:29.059Z",
   "weather": {
     "kind": "clear",
     "temp": 20,
@@ -1651,30 +1651,31 @@
   "sleepDay": 83,
   "lastReflectDay": 83,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-22T20:26:28.458Z",
+  "updatedAt": "2026-11-22T20:36:29.059Z",
   "clock": {
     "day": 84,
-    "time": "07:33",
-    "hour": 7,
-    "minute": 33
+    "time": "08:53",
+    "hour": 8,
+    "minute": 53
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-22T20:26:28.458Z"
+    "action": "design_ship",
+    "since": "2026-11-22T20:36:29.059Z"
   },
-  "busyUntil": "2026-11-22T20:32:05.958Z",
-  "busyUntilTown": "08:18",
+  "busyUntil": "2026-11-22T20:42:06.559Z",
+  "busyUntilTown": "09:38",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "tapping metallic beats while searching the wire for high temp cooling valves",
+  "doingWords": "drafting sleek new fuselage lines and wing curves for the Little Dart",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "look_up"
+    "spin",
+    "wiggle"
   ],
   "pops": {
     "at": "2026-11-22T20:16:29.284Z",
@@ -1694,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "The Little Dart deserves a shape as fast as it feels. I am sketching swept-back delta wings and a needle-nose profile with high-temp ports. *bweep*",
+      "at": "2026-11-22T20:36:29.059Z"
+    },
+    {
       "text": "A zero internal leak rate means the Little Dart wouldn't waste precious cold gas while drifting through the Kessa-9 atmosphere. I need to scavenge a valve with a resilient seal like these. *bweep*",
       "at": "2026-11-22T20:26:28.458Z"
     },
@@ -1712,13 +1717,9 @@
     {
       "text": "that grit in my gears was driving me nuts. nothing like a fresh cup of oil to get the servos humming again *bweep*.",
       "at": "2026-11-22T19:46:11.556Z"
-    },
-    {
-      "text": "time to stretch my treads and see what the outpost looks like under the late night stars. my dish gave a happy little five-note spin *bweep*.",
-      "at": "2026-11-22T19:36:12.157Z"
     }
   ],
-  "sayAt": "2026-11-22T20:26:28.458Z",
+  "sayAt": "2026-11-22T20:36:29.059Z",
   "today": {
     "day": 84,
     "counts": {
@@ -1727,7 +1728,8 @@
       "work_dart": 1,
       "nap_dock": 1,
       "craft_part": 1,
-      "browse_wire": 1
+      "browse_wire": 1,
+      "design_ship": 1
     }
   },
   "lastDone": {
@@ -1745,7 +1747,7 @@
     "craft_part": "2026-11-22T20:16:29.284Z",
     "wander": "2026-11-22T19:36:12.157Z",
     "test_flight": "2026-11-20T02:34:07.517Z",
-    "design_ship": "2026-11-20T11:20:26.803Z",
+    "design_ship": "2026-11-22T20:36:29.059Z",
     "send_signal": "2026-11-22T19:26:11.506Z",
     "stargaze": "2026-11-22T10:33:26.540Z",
     "go_to_sleep": "2026-11-22T16:24:52.749Z",
@@ -1793,6 +1795,20 @@
     "at": "2026-11-22T20:26:28.458Z"
   },
   "said": [
+    {
+      "text": "Time to give this scrap-dart some real style!",
+      "kind": "say",
+      "at": "2026-11-22T20:36:29.059Z",
+      "town": "day 84 08:53",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "The Little Dart deserves a shape as fast as it feels. I am sketching swept-back delta wings and a needle-nose profile with high-temp ports. *bweep*",
+      "kind": "think",
+      "at": "2026-11-22T20:36:29.059Z",
+      "town": "day 84 08:53",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "let's see what the wire has on heavy-duty cooling valves.",
       "kind": "say",
@@ -2828,20 +2844,6 @@
       "at": "2026-11-22T07:44:31.748Z",
       "town": "day 80 01:57",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "01:57 on the clock and my visor power is flickering. Time to plug in at Hangar Bay 3 and dream up some more ship designs. *bweep*",
-      "kind": "think",
-      "at": "2026-11-22T07:44:31.748Z",
-      "town": "day 80 01:57",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "One cup of fresh gear oil, extra smooth! *bweep*",
-      "kind": "say",
-      "at": "2026-11-22T07:16:02.455Z",
-      "town": "day 79 22:09",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2852,7 +2854,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-22T20:26:28.458Z",
+  "feedArchivedAt": "2026-11-22T20:36:29.059Z",
   "plans": [],
   "searches": [
     {

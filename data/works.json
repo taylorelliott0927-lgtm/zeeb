@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 22",
-    "progress": 92,
-    "version": 13,
-    "lastChange": "riveted the carbon composite frame to the main dorsal longeron using Mabel, the perfectly good bolt (used Sprocket, a tiny gyroscope)",
+    "progress": 99,
+    "version": 14,
+    "lastChange": "mounted the radiative cooling plate bracket using Rusty Jr, the cockpit switch, to test thermal dissipation channels. (used Rusty Jr, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 14,
+        "change": "mounted the radiative cooling plate bracket using Rusty Jr, the cockpit switch, to test thermal dissipation channels. (used Rusty Jr, a cockpit switch that still clicks)",
+        "progress": 99,
+        "at": "2026-11-22T14:13:18.349Z"
+      },
       {
         "version": 13,
         "change": "riveted the carbon composite frame to the main dorsal longeron using Mabel, the perfectly good bolt (used Sprocket, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "routing copper wire bundles into the instrument cluster using Otto, a cockpit switch that still clicks (used Tok, half a thruster nozzle)",
         "progress": 16,
         "at": "2026-11-21T11:44:40.265Z"
-      },
-      {
-        "version": 1,
-        "change": "routing copper wire bundles into the instrument cluster (used Otto, a cockpit switch that still clicks)",
-        "progress": 8,
-        "at": "2026-11-21T09:47:37.434Z"
       }
     ],
     "launched": [
@@ -2685,7 +2685,7 @@
         ]
       }
     ],
-    "partsUsed": 14,
+    "partsUsed": 15,
     "parts": [
       {
         "name": "Pim",
@@ -2748,6 +2748,11 @@
         "name": "Sprocket",
         "what": "a tiny gyroscope",
         "version": 13
+      },
+      {
+        "name": "Rusty Jr",
+        "what": "a cockpit switch that still clicks",
+        "version": 14
       }
     ],
     "design": null
@@ -3000,11 +3005,6 @@
       "what": "a perfectly good bolt",
       "at": "2026-11-22T11:45:21.969Z",
       "good": true
-    },
-    {
-      "name": "Rusty Jr",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-22T11:25:21.984Z"
     }
   ],
   "reads": [

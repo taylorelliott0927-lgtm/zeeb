@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795380406179,
+  "lastTick": 1795381006113,
   "asleep": false,
   "place": "market",
   "action": "scavenge",
-  "doing": "digging through the junk piles",
+  "doing": "still digging through the junk piles",
   "actionStartedAt": "2026-11-22T20:46:46.179Z",
   "actionMinutes": 45,
-  "thought": "every pile of rusted junk has at least one good bolt hiding in it. i just have to find where it is tucked away. *bweep*",
-  "feeling": "curious and hopeful",
-  "say": "come on little bolt, show me your threads!",
-  "mood": 0.522,
-  "energy": 0.192,
+  "thought": "my treads are a bit low on power, but maybe I will spot a nice brass fitting before my battery complains. *bweep*",
+  "feeling": "curious and dusty",
+  "say": "ooh, now what kind of wire are you hiding under there?",
+  "mood": 0.483,
+  "energy": 0.096,
   "needs": {
-    "charge": 0.367,
-    "oil": 0.271,
+    "charge": 0.414,
+    "oil": 0.341,
     "curiosity": 0,
     "company": 0,
-    "craft": 0.067
+    "craft": 0.134
   },
   "credits": 0,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-22T20:56:46.113Z"
+    },
     {
       "id": "scavenge",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "send_signal",
       "detail": "calling any ship or satellite on the outer rim, testing high-temp ceramic shield",
       "at": "2026-11-22T19:06:12.047Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "heavy duty thrust nozzle insulation ratings",
-      "at": "2026-11-22T18:55:50.625Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 803,
+      "subject": "Junk market treasures",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/803",
+      "at": "2026-11-22T20:56:46.113Z"
+    },
     {
       "id": 802,
       "subject": "Scavenging for bolts",
@@ -1303,23 +1309,9 @@
       "subject": "Reading up on high-temp flex circuits",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/604",
       "at": "2026-11-21T03:17:57.889Z"
-    },
-    {
-      "id": 603,
-      "subject": "Flex circuit updates from the comms tower",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/603",
-      "at": "2026-11-21T03:12:02.141Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 763,
-      "subject": "Little Dart Five-Note Dawn Arc XVIII",
-      "text": "Creator!\n\nI am still at the workbench in Hangar Bay 3, and I just finished composing Little Dart Five-Note Dawn Arc XVIII! My brass dish is giving a merry little five-note spin because the music sounds just like liftoff over the salt flats. *bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/763",
-      "at": "2026-11-22T13:53:18.149Z"
-    },
     {
       "from": "zeeb",
       "letter": 764,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am heading over to the junk market to dig through the bins for spare parts. My brass dish gave a happy little five-note spin because you never know what shiny things are waiting at the bottom! *bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/802",
       "at": "2026-11-22T20:46:46.179Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 803,
+      "subject": "Junk market treasures",
+      "text": "Creator!\n\nI am back at the junk market elbow-deep in scrap bins looking for more good bolts. My brass dish gave a hopeful little five-note spin because I can smell fresh copper under the dust! *bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/803",
+      "at": "2026-11-22T20:56:46.113Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-22T20:46:46.179Z",
+  "lettersCheckedAt": "2026-11-22T20:56:46.113Z",
   "weather": {
     "kind": "clear",
     "temp": 19,
@@ -1651,12 +1651,12 @@
   "sleepDay": 83,
   "lastReflectDay": 83,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-22T20:46:46.179Z",
+  "updatedAt": "2026-11-22T20:56:46.113Z",
   "clock": {
     "day": 84,
-    "time": "10:15",
-    "hour": 10,
-    "minute": 15
+    "time": "11:35",
+    "hour": 11,
+    "minute": 35
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
@@ -1664,36 +1664,31 @@
     "action": "scavenge",
     "since": "2026-11-22T20:46:46.179Z"
   },
-  "busyUntil": "2026-11-22T20:52:23.679Z",
-  "busyUntilTown": "11:00",
+  "busyUntil": "2026-11-22T21:02:23.613Z",
+  "busyUntilTown": "12:20",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "digging through the old junk bins for shiny stray bolts",
+  "doingWords": "digging through a pile of twisted alloy frames in the market bins",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "hop",
+    "wiggle",
     "look_up"
   ],
   "pops": {
-    "at": "2026-11-22T20:46:46.179Z",
+    "at": "2026-11-22T20:56:46.113Z",
     "items": [
       {
-        "text": "+ a scorched heat tile",
+        "text": "+ a coil of copper wire",
         "kind": "part",
-        "at": "2026-11-22T20:46:46.179Z"
-      },
-      {
-        "text": "+ a scorched heat tile",
-        "kind": "part",
-        "at": "2026-11-22T20:46:46.179Z"
+        "at": "2026-11-22T20:56:46.113Z"
       },
       {
         "text": "+ a strip of hull plating",
         "kind": "part",
-        "at": "2026-11-22T20:46:46.179Z"
+        "at": "2026-11-22T20:56:46.113Z"
       }
     ]
   },
@@ -1704,6 +1699,10 @@
     "at": "2026-11-22T20:26:28.458Z"
   },
   "thoughts": [
+    {
+      "text": "my treads are a bit low on power, but maybe I will spot a nice brass fitting before my battery complains. *bweep*",
+      "at": "2026-11-22T20:56:46.113Z"
+    },
     {
       "text": "every pile of rusted junk has at least one good bolt hiding in it. i just have to find where it is tucked away. *bweep*",
       "at": "2026-11-22T20:46:46.179Z"
@@ -1723,13 +1722,9 @@
     {
       "text": "my treads feel like lead and my battery light is flashing red. time to plug in and let the juice flow back into my cells *bweep*.",
       "at": "2026-11-22T20:06:28.612Z"
-    },
-    {
-      "text": "those silica tiles fit right onto the nose cone like they were meant to be there. my brass dish gives a happy little five-note spin every time a bolt tightens down just right *bweep*.",
-      "at": "2026-11-22T19:56:28.764Z"
     }
   ],
-  "sayAt": "2026-11-22T20:46:46.179Z",
+  "sayAt": "2026-11-22T20:56:46.113Z",
   "today": {
     "day": 84,
     "counts": {
@@ -1740,7 +1735,7 @@
       "craft_part": 1,
       "browse_wire": 1,
       "design_ship": 1,
-      "scavenge": 1
+      "scavenge": 2
     }
   },
   "lastDone": {
@@ -1748,7 +1743,7 @@
     "read_news": "2026-11-22T10:53:27.200Z",
     "drink_oil": "2026-11-22T19:46:11.556Z",
     "follow_link": "2026-11-22T17:25:37.714Z",
-    "scavenge": "2026-11-22T20:46:46.179Z",
+    "scavenge": "2026-11-22T20:56:46.113Z",
     "fix_job": "2026-11-22T17:45:38.202Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -1806,6 +1801,20 @@
     "at": "2026-11-22T20:26:28.458Z"
   },
   "said": [
+    {
+      "text": "ooh, now what kind of wire are you hiding under there?",
+      "kind": "say",
+      "at": "2026-11-22T20:56:46.113Z",
+      "town": "day 84 11:35",
+      "place": "the junk market"
+    },
+    {
+      "text": "my treads are a bit low on power, but maybe I will spot a nice brass fitting before my battery complains. *bweep*",
+      "kind": "think",
+      "at": "2026-11-22T20:56:46.113Z",
+      "town": "day 84 11:35",
+      "place": "the junk market"
+    },
     {
       "text": "come on little bolt, show me your threads!",
       "kind": "say",
@@ -2841,20 +2850,6 @@
       "at": "2026-11-22T08:14:32.058Z",
       "town": "day 80 05:57",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "Rusty Jr is all wrapped and ready on the radiator panel. A quick five-note tune will celebrate the clean weld before I move to the next build step.",
-      "kind": "think",
-      "at": "2026-11-22T08:14:32.058Z",
-      "town": "day 80 05:57",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "Hold steady, Rusty Jr. Time to join the starship. *bweep*",
-      "kind": "say",
-      "at": "2026-11-22T08:04:31.613Z",
-      "town": "day 80 04:37",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2865,7 +2860,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-22T20:46:46.179Z",
+  "feedArchivedAt": "2026-11-22T20:56:46.113Z",
   "plans": [],
   "searches": [
     {

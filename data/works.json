@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 22",
-    "progress": 73,
-    "version": 11,
-    "lastChange": "welded the starboard stabilizer fin using Sprocket, the tiny gyroscope, for precision alignment (used Bix, a cracked navigation chip)",
+    "progress": 83,
+    "version": 12,
+    "lastChange": "mounted the carbon composite hinge using Rusty Jr, the cockpit switch, to test the alignment before final welding (used Tilly, a strip of hull plating)",
     "log": [
+      {
+        "version": 12,
+        "change": "mounted the carbon composite hinge using Rusty Jr, the cockpit switch, to test the alignment before final welding (used Tilly, a strip of hull plating)",
+        "progress": 83,
+        "at": "2026-11-22T13:26:19.581Z"
+      },
       {
         "version": 11,
         "change": "welded the starboard stabilizer fin using Sprocket, the tiny gyroscope, for precision alignment (used Bix, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "angling scrap hull plates around the nose and canopy to reduce radar cross section using stealth geometry (used Rusty Jr, half a thruster nozzle)",
         "progress": 100,
         "at": "2026-11-21T08:17:53.433Z"
-      },
-      {
-        "version": 22,
-        "change": "welding custom instrument panel brackets and mounting the primary flight computer housing into the Little Dart's cockpit (used Lorna, a strip of hull plating)",
-        "progress": 96,
-        "at": "2026-11-21T06:58:27.781Z"
       }
     ],
     "launched": [
@@ -2685,7 +2685,7 @@
         ]
       }
     ],
-    "partsUsed": 12,
+    "partsUsed": 13,
     "parts": [
       {
         "name": "Pim",
@@ -2738,6 +2738,11 @@
         "name": "Bix",
         "what": "a cracked navigation chip",
         "version": 11
+      },
+      {
+        "name": "Tilly",
+        "what": "a strip of hull plating",
+        "version": 12
       }
     ],
     "design": null
@@ -2999,11 +3004,6 @@
     {
       "name": "Sprocket",
       "what": "a tiny gyroscope",
-      "at": "2026-11-22T11:25:21.984Z"
-    },
-    {
-      "name": "Tilly",
-      "what": "a strip of hull plating",
       "at": "2026-11-22T11:25:21.984Z"
     }
   ],

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 23",
-    "progress": 4,
-    "version": 1,
-    "lastChange": "welding the radiator coolant return lines to the main frame using Rusty Jr, the cockpit switch",
+    "progress": 14,
+    "version": 2,
+    "lastChange": "welding the forward upper cowl plates using Fen, the high-grade sensor eye, to line up the structural seams (used Captain, a strip of hull plating)",
     "log": [
+      {
+        "version": 2,
+        "change": "welding the forward upper cowl plates using Fen, the high-grade sensor eye, to line up the structural seams (used Captain, a strip of hull plating)",
+        "progress": 14,
+        "at": "2026-11-22T16:35:18.891Z"
+      },
       {
         "version": 1,
         "change": "welding the radiator coolant return lines to the main frame using Rusty Jr, the cockpit switch",
@@ -238,12 +244,6 @@
         "change": "mounting the altimeter gauge into the instrument cluster panel using Tok (a sensor eye with one crack) (used Lorna, a scorched heat tile)",
         "progress": 40,
         "at": "2026-11-21T12:55:05.448Z"
-      },
-      {
-        "version": 4,
-        "change": "securing the heavy-duty copper wire bundles into the cockpit instrument cluster via Otto the switch, using Nim (a strip of hull plating) (used Gus, a mystery box that hums)",
-        "progress": 32,
-        "at": "2026-11-21T12:45:06.077Z"
       }
     ],
     "launched": [
@@ -2765,8 +2765,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Captain",
+        "what": "a strip of hull plating",
+        "version": 2
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -3041,11 +3047,6 @@
     {
       "name": "Tok",
       "what": "a perfectly good bolt",
-      "at": "2026-11-22T14:44:33.792Z"
-    },
-    {
-      "name": "Captain",
-      "what": "a strip of hull plating",
       "at": "2026-11-22T14:44:33.792Z"
     }
   ],

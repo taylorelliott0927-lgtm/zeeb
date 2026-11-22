@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 22",
-    "progress": 23,
-    "version": 4,
-    "lastChange": "welding more high-temperature silica tiles onto the Little Dart's nose cone using Otto, a perfectly good bolt (used Gus, a half thruster nozzle). (used Gus, a mystery box that hums)",
+    "progress": 29,
+    "version": 5,
+    "lastChange": "welding final high-temperature silica tiles onto the Little Dart's nose cone using Otto, a perfectly good bolt (used Otto, a perfectly good bolt)",
     "log": [
+      {
+        "version": 5,
+        "change": "welding final high-temperature silica tiles onto the Little Dart's nose cone using Otto, a perfectly good bolt (used Otto, a perfectly good bolt)",
+        "progress": 29,
+        "at": "2026-11-22T04:41:34.628Z"
+      },
       {
         "version": 4,
         "change": "welding more high-temperature silica tiles onto the Little Dart's nose cone using Otto, a perfectly good bolt (used Gus, a half thruster nozzle). (used Gus, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "welding the forward cockpit ring and running internal cabling conduits for the Little Dart Mk 19",
         "progress": 71,
         "at": "2026-11-21T01:57:19.539Z"
-      },
-      {
-        "version": 15,
-        "change": "welding titanium bulkhead ribs into the Little Dart Mk 19 cockpit frame",
-        "progress": 68,
-        "at": "2026-11-21T01:47:19.904Z"
       }
     ],
     "launched": [
@@ -2685,7 +2685,7 @@
         ]
       }
     ],
-    "partsUsed": 4,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Pim",
@@ -2702,6 +2702,11 @@
         "what": "a mystery box that hums",
         "good": true,
         "version": 4
+      },
+      {
+        "name": "Otto",
+        "what": "a perfectly good bolt",
+        "version": 5
       }
     ],
     "design": null
@@ -2952,11 +2957,6 @@
     {
       "name": "Gus",
       "what": "half a thruster nozzle",
-      "at": "2026-11-22T04:05:15.446Z"
-    },
-    {
-      "name": "Otto",
-      "what": "a perfectly good bolt",
       "at": "2026-11-22T04:05:15.446Z"
     }
   ],

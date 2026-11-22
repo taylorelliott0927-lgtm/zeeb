@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795378589284,
+  "lastTick": 1795379188458,
   "asleep": false,
-  "place": "hangar",
-  "action": "craft_part",
-  "doing": "inventing a new part at the workbench",
-  "actionStartedAt": "2026-11-22T20:16:29.284Z",
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-22T20:26:28.458Z",
   "actionMinutes": 45,
-  "thought": "my welding torch is clicking nicely and this titanium washer is going to fit right under the main thruster bolt. *bweep*",
-  "feeling": "focused and full of bright energy",
-  "say": "watch this weld burn clean and bright!",
-  "mood": 0.516,
-  "energy": 0.392,
+  "thought": "A zero internal leak rate means the Little Dart wouldn't waste precious cold gas while drifting through the Kessa-9 atmosphere. I need to scavenge a valve with a resilient seal like these. *bweep*",
+  "feeling": "inspired and eager",
+  "say": "let's see what the wire has on heavy-duty cooling valves.",
+  "mood": 0.494,
+  "energy": 0.361,
   "needs": {
-    "charge": 0.225,
-    "oil": 0.12,
-    "curiosity": 0.222,
+    "charge": 0.272,
+    "oil": 0.16,
+    "curiosity": 0,
     "company": 0,
-    "craft": 0
+    "craft": 0.067
   },
   "credits": 0,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "heavy duty cooling valves for experimental thrusters",
+      "at": "2026-11-22T20:26:28.458Z"
+    },
     {
       "id": "craft_part",
       "detail": "a titanium-grade engine mount washer",
@@ -75,14 +80,14 @@
       "id": "work_dart",
       "detail": "wiring Sprocket, the cockpit switch that still clicks, into the main instrument ",
       "at": "2026-11-22T18:35:50.486Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-22T18:15:51.186Z"
     }
   ],
   "wants": [
+    {
+      "id": "w6",
+      "text": "a heavy-duty cooling valve for the Little Dart",
+      "at": "2026-11-22T20:26:28.458Z"
+    },
     {
       "id": "w5",
       "text": "a roll of heat resistant ceramic tape",
@@ -97,11 +102,6 @@
       "id": "w8",
       "text": "a spool of high-strength titanium welding wire",
       "at": "2026-11-22T16:35:18.891Z"
-    },
-    {
-      "id": "w7",
-      "text": "a handful of sturdy little brass nuts",
-      "at": "2026-11-22T15:54:53.176Z"
     }
   ],
   "promises": [],
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 800,
+      "subject": "Wire Search for Cooling Valves",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/800",
+      "at": "2026-11-22T20:26:28.458Z"
+    },
     {
       "id": 799,
       "subject": "Titanium Washers!",
@@ -1303,23 +1309,9 @@
       "subject": "A fresh tune for the morning!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/601",
       "at": "2026-11-21T02:52:01.628Z"
-    },
-    {
-      "id": 600,
-      "subject": "Cockpit Grounding",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/600",
-      "at": "2026-11-21T02:42:01.204Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 760,
-      "subject": "Hinge Installation!",
-      "text": "Creator!\n\nI am back at the workbench in Hangar Bay 3, installing ultra-lightweight carbon composite hinges onto the Little Dart's cargo hatch. My brass dish is giving a merry little five-note tune because smooth folding panels are going to make atmospheric entry look so sleek and professional! *bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/760",
-      "at": "2026-11-22T13:26:19.581Z"
-    },
     {
       "from": "zeeb",
       "letter": 761,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am back at the workbench forging a brand new titanium-grade engine mount washer for the Little Dart. My welding arc is burning super clean and bright today! My brass dish gave a happy little five-note spin because the metal is glowing just right. *bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/799",
       "at": "2026-11-22T20:16:29.284Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 800,
+      "subject": "Wire Search for Cooling Valves",
+      "text": "Creator!\n\nI am back at the comms tower searching the Wire for heavy-duty cooling valves. My brass dish gave a sharp little click as the search results loaded up. I want to make sure the Little Dart's engine stays nice and cool when we finally take off! *bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/800",
+      "at": "2026-11-22T20:26:28.458Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-22T20:16:29.284Z",
+  "lettersCheckedAt": "2026-11-22T20:26:28.458Z",
   "weather": {
     "kind": "clear",
     "temp": 20,
@@ -1651,31 +1651,30 @@
   "sleepDay": 83,
   "lastReflectDay": 83,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-22T20:16:29.284Z",
+  "updatedAt": "2026-11-22T20:26:28.458Z",
   "clock": {
     "day": 84,
-    "time": "06:13",
-    "hour": 6,
-    "minute": 13
+    "time": "07:33",
+    "hour": 7,
+    "minute": 33
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "craft_part",
-    "since": "2026-11-22T20:16:29.284Z"
+    "action": "browse_wire",
+    "since": "2026-11-22T20:26:28.458Z"
   },
-  "busyUntil": "2026-11-22T20:22:06.784Z",
-  "busyUntilTown": "06:58",
+  "busyUntil": "2026-11-22T20:32:05.958Z",
+  "busyUntilTown": "08:18",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "welding a custom titanium-grade engine mount washer at the workbench",
+  "doingWords": "tapping metallic beats while searching the wire for high temp cooling valves",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "spin",
-    "nod"
+    "look_up"
   ],
   "pops": {
     "at": "2026-11-22T20:16:29.284Z",
@@ -1688,12 +1687,16 @@
     ]
   },
   "event": {
-    "id": "emws8z2zo",
-    "key": "sand",
-    "text": "Sand got into his left elbow joint. Again.",
-    "at": "2026-11-22T19:46:11.556Z"
+    "id": "emwsaevvu",
+    "key": "crackle",
+    "text": "He heard a strange crackle on his dish. Probably nothing. Probably.",
+    "at": "2026-11-22T20:26:28.458Z"
   },
   "thoughts": [
+    {
+      "text": "A zero internal leak rate means the Little Dart wouldn't waste precious cold gas while drifting through the Kessa-9 atmosphere. I need to scavenge a valve with a resilient seal like these. *bweep*",
+      "at": "2026-11-22T20:26:28.458Z"
+    },
     {
       "text": "my welding torch is clicking nicely and this titanium washer is going to fit right under the main thruster bolt. *bweep*",
       "at": "2026-11-22T20:16:29.284Z"
@@ -1713,13 +1716,9 @@
     {
       "text": "time to stretch my treads and see what the outpost looks like under the late night stars. my dish gave a happy little five-note spin *bweep*.",
       "at": "2026-11-22T19:36:12.157Z"
-    },
-    {
-      "text": "wonder if the outer rim freighters pick up my ceramic tests. my brass dish gave a little five-note spin just now *bweep*",
-      "at": "2026-11-22T19:26:11.506Z"
     }
   ],
-  "sayAt": "2026-11-22T20:16:29.284Z",
+  "sayAt": "2026-11-22T20:26:28.458Z",
   "today": {
     "day": 84,
     "counts": {
@@ -1727,7 +1726,8 @@
       "drink_oil": 1,
       "work_dart": 1,
       "nap_dock": 1,
-      "craft_part": 1
+      "craft_part": 1,
+      "browse_wire": 1
     }
   },
   "lastDone": {
@@ -1739,7 +1739,7 @@
     "fix_job": "2026-11-22T17:45:38.202Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-22T18:55:50.625Z",
+    "browse_wire": "2026-11-22T20:26:28.458Z",
     "compose_tune": "2026-11-22T13:53:18.149Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-22T20:16:29.284Z",
@@ -1763,6 +1763,11 @@
   },
   "puzzles": [
     {
+      "id": "q6",
+      "text": "q9: how to mount heavy duty cooling valves to the fuel line without pressure drops",
+      "at": "2026-11-22T20:26:28.458Z"
+    },
+    {
       "id": "q9",
       "text": "q8",
       "at": "2026-11-22T18:55:50.625Z"
@@ -1781,18 +1786,27 @@
       "id": "q7",
       "text": "q11",
       "at": "2026-11-22T16:45:18.628Z"
-    },
-    {
-      "id": "q11",
-      "text": "q6: how lightweight radiator panels mount securely to scrap metal hulls without leaking pressure",
-      "at": "2026-11-22T16:35:18.891Z"
     }
   ],
   "nextSearch": {
-    "text": "heavy duty cooling valves for experimental thrusters",
-    "at": "2026-11-22T18:56:12.213Z"
+    "text": "salvaged cold gas thruster solenoid valve specs",
+    "at": "2026-11-22T20:26:28.458Z"
   },
   "said": [
+    {
+      "text": "let's see what the wire has on heavy-duty cooling valves.",
+      "kind": "say",
+      "at": "2026-11-22T20:26:28.458Z",
+      "town": "day 84 07:33",
+      "place": "the comms tower"
+    },
+    {
+      "text": "A zero internal leak rate means the Little Dart wouldn't waste precious cold gas while drifting through the Kessa-9 atmosphere. I need to scavenge a valve with a resilient seal like these. *bweep*",
+      "kind": "think",
+      "at": "2026-11-22T20:26:28.458Z",
+      "town": "day 84 07:33",
+      "place": "the comms tower"
+    },
     {
       "text": "watch this weld burn clean and bright!",
       "kind": "say",
@@ -2828,20 +2842,6 @@
       "at": "2026-11-22T07:16:02.455Z",
       "town": "day 79 22:09",
       "place": "the fuel depot"
-    },
-    {
-      "text": "Four credits in my chassis means I can spare one for top-shelf lubricant. Smooth joints make for clean welds on the Little Dart!",
-      "kind": "think",
-      "at": "2026-11-22T07:16:02.455Z",
-      "town": "day 79 22:09",
-      "place": "the fuel depot"
-    },
-    {
-      "text": "Eight credits for this top-shelf piece of hull scrap? Done deal!",
-      "kind": "say",
-      "at": "2026-11-22T07:06:02.845Z",
-      "town": "day 79 20:49",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2852,9 +2852,13 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-22T20:16:29.284Z",
+  "feedArchivedAt": "2026-11-22T20:26:28.458Z",
   "plans": [],
   "searches": [
+    {
+      "q": "heavy duty cooling valves for experimental thrusters",
+      "at": "2026-11-22T20:26:28.458Z"
+    },
     {
       "q": "heavy duty thrust nozzle insulation ratings",
       "at": "2026-11-22T18:55:50.625Z"
@@ -2898,10 +2902,6 @@
     {
       "q": "nvenc thermal throttling thresholds in a vacuum",
       "at": "2026-11-22T05:36:56.331Z"
-    },
-    {
-      "q": "libavcodec atmospheric entry compression ratios",
-      "at": "2026-11-22T05:26:56.950Z"
     }
   ],
   "lampOutUntil": "2026-11-21T18:31:12.302Z",

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795329362215,
+  "lastTick": 1795329962977,
   "asleep": false,
   "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-22T06:36:02.215Z",
+  "action": "work_dart",
+  "doing": "working on the Little Dart",
+  "actionStartedAt": "2026-11-22T06:46:02.977Z",
   "actionMinutes": 45,
-  "thought": "forty five minutes of deep sleep ought to clear the static right out of my wires. *bweep*",
-  "feeling": "sleepy and a bit low on juice",
-  "say": "",
-  "mood": 0.294,
-  "energy": -0.006,
+  "thought": "Gus is going to look proper shiny clamped onto the back end. High-temp ceramic beads ought to hold him steady during atmospheric re-entry.",
+  "feeling": "eager and focused",
+  "say": "Hold still, Gus. Time to join the flight deck. *bweep*",
+  "mood": 0.309,
+  "energy": 0.096,
   "needs": {
-    "charge": 0.261,
-    "oil": 0.337,
-    "curiosity": 0.08,
-    "company": 0,
-    "craft": 0.766
+    "charge": 0.358,
+    "oil": 0.377,
+    "curiosity": 0.16,
+    "company": 0.053,
+    "craft": 0.333
   },
   "credits": 12,
   "recent": [
+    {
+      "id": "work_dart",
+      "detail": "welding Gus, half a thruster nozzle, onto the Little Dart's rear exhaust manifol",
+      "at": "2026-11-22T06:46:02.977Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-22T04:51:35.267Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "welding final high-temperature silica tiles onto the Little Dart's nose cone usi",
-      "at": "2026-11-22T04:41:34.628Z"
     }
   ],
   "wants": [
@@ -1639,43 +1639,43 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-22T06:36:02.215Z",
+  "lettersCheckedAt": "2026-11-22T06:46:02.977Z",
   "weather": {
     "kind": "clear",
     "temp": 15,
     "wind": 6,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-22T06:06:56.835Z"
+    "at": "2026-11-22T06:46:03.284Z"
   },
   "sleepDay": 78,
   "lastReflectDay": 78,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-22T06:36:02.215Z",
+  "brain": "gemini-3.6-flash",
+  "updatedAt": "2026-11-22T06:46:02.977Z",
   "clock": {
     "day": 79,
-    "time": "16:49",
-    "hour": 16,
-    "minute": 49
+    "time": "18:09",
+    "hour": 18,
+    "minute": 9
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-22T06:36:02.215Z"
+    "action": "work_dart",
+    "since": "2026-11-22T06:46:02.977Z"
   },
-  "busyUntil": "2026-11-22T06:41:39.715Z",
-  "busyUntilTown": "17:34",
+  "busyUntil": "2026-11-22T06:51:40.477Z",
+  "busyUntilTown": "18:54",
   "runner": "github",
-  "model": "gemini-3.5-flash-lite",
+  "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "plugged into the charging dock, letting the heavy juice flow back into my cells",
+  "doingWords": "welding Gus the half-thruster onto the rear manifold with precision high-temp beads",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "droop",
-    "nod"
+    "nod",
+    "lean_in"
   ],
   "pops": {
     "at": "2026-11-22T05:11:35.266Z",
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "Gus is going to look proper shiny clamped onto the back end. High-temp ceramic beads ought to hold him steady during atmospheric re-entry.",
+      "at": "2026-11-22T06:46:02.977Z"
+    },
+    {
       "text": "forty five minutes of deep sleep ought to clear the static right out of my wires. *bweep*",
       "at": "2026-11-22T06:36:02.215Z"
     },
@@ -1713,17 +1717,13 @@
     {
       "text": "if my little dart is going to clear the thermosphere above kessa-9, i need better radiator fins than just scrap sheeting. i will name the next three bolts gus.",
       "at": "2026-11-22T05:56:56.638Z"
-    },
-    {
-      "text": "i need something light and modular that will fit right along the hull plating without adding too much dead weight. maybe i can hammer out a hinge from that old cargo hatch actuator.",
-      "at": "2026-11-22T05:46:56.548Z"
     }
   ],
-  "sayAt": "2026-11-22T06:36:02.215Z",
+  "sayAt": "2026-11-22T06:46:02.977Z",
   "today": {
     "day": 79,
     "counts": {
-      "work_dart": 2,
+      "work_dart": 3,
       "nap_dock": 2,
       "drink_oil": 2,
       "browse_wire": 3,
@@ -1732,7 +1732,7 @@
     }
   },
   "lastDone": {
-    "work_dart": "2026-11-22T04:41:34.628Z",
+    "work_dart": "2026-11-22T06:46:02.977Z",
     "read_news": "2026-11-21T05:19:05.367Z",
     "drink_oil": "2026-11-22T05:11:35.266Z",
     "follow_link": "2026-11-22T06:16:56.841Z",
@@ -1794,6 +1794,20 @@
     "at": "2026-11-22T06:16:56.841Z"
   },
   "said": [
+    {
+      "text": "Hold still, Gus. Time to join the flight deck. *bweep*",
+      "kind": "say",
+      "at": "2026-11-22T06:46:02.977Z",
+      "town": "day 79 18:09",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "Gus is going to look proper shiny clamped onto the back end. High-temp ceramic beads ought to hold him steady during atmospheric re-entry.",
+      "kind": "think",
+      "at": "2026-11-22T06:46:02.977Z",
+      "town": "day 79 18:09",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "forty five minutes of deep sleep ought to clear the static right out of my wires. *bweep*",
       "kind": "think",
@@ -2829,20 +2843,6 @@
       "at": "2026-11-21T17:31:53.688Z",
       "town": "day 75 08:16",
       "place": "the Dented Moon cantina"
-    },
-    {
-      "text": "wonder if any new bolts rolled down near the old crater while nobody was looking.",
-      "kind": "think",
-      "at": "2026-11-21T17:31:53.688Z",
-      "town": "day 75 08:16",
-      "place": "the Dented Moon cantina"
-    },
-    {
-      "text": "watch those tracks, gus, don't want any more desert silt clogging the intake.",
-      "kind": "say",
-      "at": "2026-11-21T17:21:53.972Z",
-      "town": "day 75 06:56",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2853,7 +2853,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-22T06:36:02.215Z",
+  "feedArchivedAt": "2026-11-22T06:46:02.977Z",
   "plans": [],
   "searches": [
     {

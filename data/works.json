@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 23",
-    "progress": 45,
-    "version": 6,
-    "lastChange": "securing high-temp silica tiles onto the Little Dart's nose cone using sturdy little brass nuts (used Wren, a sensor eye with one crack)",
+    "progress": 54,
+    "version": 7,
+    "lastChange": "mounting the new heavy-duty cooling valves onto the fuel line using bolt Rusty Jr (used Gus, a dented fuel cell)",
     "log": [
+      {
+        "version": 7,
+        "change": "mounting the new heavy-duty cooling valves onto the fuel line using bolt Rusty Jr (used Gus, a dented fuel cell)",
+        "progress": 54,
+        "at": "2026-11-22T21:46:58.815Z"
+      },
       {
         "version": 6,
         "change": "securing high-temp silica tiles onto the Little Dart's nose cone using sturdy little brass nuts (used Wren, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "routing copper wire bundles into the cockpit instrument panel (used Rusty Jr, a coil of copper wire)",
         "progress": 82,
         "at": "2026-11-21T15:51:25.921Z"
-      },
-      {
-        "version": 9,
-        "change": "securing heavy-duty titanium engine mount brackets inside the Little Dart's aft section using Dibs, a tiny gyroscope (used Nim, a tiny gyroscope)",
-        "progress": 74,
-        "at": "2026-11-21T15:41:25.807Z"
       }
     ],
     "launched": [
@@ -2765,7 +2765,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Captain",
@@ -2792,6 +2792,11 @@
         "name": "Wren",
         "what": "a sensor eye with one crack",
         "version": 6
+      },
+      {
+        "name": "Gus",
+        "what": "a dented fuel cell",
+        "version": 7
       }
     ],
     "design": {
@@ -3380,11 +3385,6 @@
       "name": "Rusty Jr",
       "what": "a cracked navigation chip",
       "at": "2026-11-22T16:04:52.367Z"
-    },
-    {
-      "name": "Gus",
-      "what": "a dented fuel cell",
-      "at": "2026-11-22T15:54:53.176Z"
     }
   ],
   "reads": [

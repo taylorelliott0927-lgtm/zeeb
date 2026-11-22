@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 21",
-    "progress": 80,
-    "version": 11,
-    "lastChange": "mounting high-entropy silicate ceramic aerogel tiles onto the Little Dart's nose cone using Bolt (used Fen, a coil of copper wire) (used Fen, a tiny gyroscope)",
+    "progress": 87,
+    "version": 12,
+    "lastChange": "securing high-entropy silicate ceramic aerogel tiles around the lower bulkhead using Bolt (used Wren, a cracked navigation chip) (used Wren, a cracked navigation chip)",
     "log": [
+      {
+        "version": 12,
+        "change": "securing high-entropy silicate ceramic aerogel tiles around the lower bulkhead using Bolt (used Wren, a cracked navigation chip) (used Wren, a cracked navigation chip)",
+        "progress": 87,
+        "at": "2026-11-22T00:34:21.039Z"
+      },
       {
         "version": 11,
         "change": "mounting high-entropy silicate ceramic aerogel tiles onto the Little Dart's nose cone using Bolt (used Fen, a coil of copper wire) (used Fen, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "riveting and welding reinforcing titanium gussets along the Little Dart Mk 19 interior",
         "progress": 47,
         "at": "2026-11-20T21:23:10.386Z"
-      },
-      {
-        "version": 8,
-        "change": "welding internal titanium bulkhead ribs inside the Little Dart Mk 19 fuselage",
-        "progress": 45,
-        "at": "2026-11-20T21:13:11.203Z"
       }
     ],
     "launched": [
@@ -2612,7 +2612,7 @@
         ]
       }
     ],
-    "partsUsed": 11,
+    "partsUsed": 12,
     "parts": [
       {
         "name": "Nim",
@@ -2664,6 +2664,11 @@
         "what": "a tiny gyroscope",
         "good": true,
         "version": 11
+      },
+      {
+        "name": "Wren",
+        "what": "a cracked navigation chip",
+        "version": 12
       }
     ],
     "design": null
@@ -2920,11 +2925,6 @@
       "name": "Fen",
       "what": "a coil of copper wire",
       "at": "2026-11-21T23:34:06.264Z"
-    },
-    {
-      "name": "Wren",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-21T23:24:05.741Z"
     }
   ],
   "reads": [

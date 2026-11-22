@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 22",
-    "progress": 9,
-    "version": 2,
-    "lastChange": "riveting lightweight carbon-composite outer panels onto the starboard fuselage flank (used Gus, a sturdy iron bolt)",
+    "progress": 15,
+    "version": 3,
+    "lastChange": "welding high-temperature silica tiles onto the Little Dart's nose cone using Otto, a perfectly good bolt (used Dibs, a coil of copper wire)",
     "log": [
+      {
+        "version": 3,
+        "change": "welding high-temperature silica tiles onto the Little Dart's nose cone using Otto, a perfectly good bolt (used Dibs, a coil of copper wire)",
+        "progress": 15,
+        "at": "2026-11-22T04:21:35.063Z"
+      },
       {
         "version": 2,
         "change": "riveting lightweight carbon-composite outer panels onto the starboard fuselage flank (used Gus, a sturdy iron bolt)",
@@ -238,12 +244,6 @@
         "change": "installing and wiring up the primary flight computer display terminals in the Little Dart Mk 19 cockpit",
         "progress": 64,
         "at": "2026-11-21T00:16:35.234Z"
-      },
-      {
-        "version": 13,
-        "change": "installing the main instrument panel backplate and securing the toggle switches with tiny brass screws on the Little Dart Mk 19 (used Captain, a little landing strut)",
-        "progress": 61,
-        "at": "2026-11-21T00:06:35.567Z"
       }
     ],
     "launched": [
@@ -2685,12 +2685,17 @@
         ]
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Pim",
         "what": "a perfectly good bolt",
         "version": 1
+      },
+      {
+        "name": "Dibs",
+        "what": "a coil of copper wire",
+        "version": 3
       }
     ],
     "design": null
@@ -2953,11 +2958,6 @@
       "what": "a mystery box that hums",
       "at": "2026-11-22T03:55:16.006Z",
       "good": true
-    },
-    {
-      "name": "Dibs",
-      "what": "a coil of copper wire",
-      "at": "2026-11-22T03:15:02.730Z"
     }
   ],
   "reads": [

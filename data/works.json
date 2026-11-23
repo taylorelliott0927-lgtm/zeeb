@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 24",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 10,
+    "version": 1,
+    "lastChange": "welding the upper titanium cowl plates onto the Little Dart's fuselage using bolt Pim (used Wren, a coil of copper wire)",
     "log": [
+      {
+        "version": 1,
+        "change": "welding the upper titanium cowl plates onto the Little Dart's fuselage using bolt Pim (used Wren, a coil of copper wire)",
+        "progress": 10,
+        "at": "2026-11-23T03:33:39.892Z"
+      },
       {
         "version": 14,
         "change": "securing the heavy-duty cooling valves onto the main fuel feed line using bolt Otto (used Fen, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "welding custom titanium reinforcement brackets inside the Little Dart's nose cone using Gus (a heavy-duty socket wrench)",
         "progress": 34,
         "at": "2026-11-21T20:12:58.210Z"
-      },
-      {
-        "version": 4,
-        "change": "welding high-temp silica ceramic aerogel tiles along the upper spine of the Little Dart using Sprocket (half a thruster nozzle) (used Sprocket, half a thruster nozzle)",
-        "progress": 32,
-        "at": "2026-11-21T19:02:37.133Z"
       }
     ],
     "launched": [
@@ -3130,8 +3130,14 @@
         }
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Wren",
+        "what": "a coil of copper wire",
+        "version": 1
+      }
+    ],
     "design": {
       "description": "swept-back stub wings and twin thrusters ready to chase the stars, bweep.",
       "parts": [
@@ -3712,11 +3718,6 @@
       "what": "a sensor eye with one crack",
       "at": "2026-11-22T21:26:45.440Z",
       "good": true
-    },
-    {
-      "name": "Wren",
-      "what": "a coil of copper wire",
-      "at": "2026-11-22T20:56:46.113Z"
     }
   ],
   "reads": [

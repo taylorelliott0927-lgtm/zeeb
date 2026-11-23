@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795466262959,
+  "lastTick": 1795466862928,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-23T20:37:42.959Z",
-  "actionMinutes": 20,
-  "thought": "my curiosity is bugging me most right now.",
-  "feeling": "pretty good actually",
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-23T20:47:42.928Z",
+  "actionMinutes": 30,
+  "thought": "if my comms dish catches the right layer of ionospheric bounce, the Little Dart will phone home across the whole sector. need to shield the wiring against plasma friction too.",
+  "feeling": "focused and buzzing",
   "say": "",
-  "mood": 0.341,
-  "energy": 0.601,
+  "mood": 0.353,
+  "energy": 0.557,
   "needs": {
-    "charge": 0.133,
-    "oil": 0,
-    "curiosity": 0.204,
-    "company": 0.167,
-    "craft": 0.067
+    "charge": 0.18,
+    "oil": 0.04,
+    "curiosity": 0,
+    "company": 0.1,
+    "craft": 0.134
   },
   "credits": 6,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "high temperature atmospheric skip beacon circuit diagram",
+      "at": "2026-11-23T20:47:42.928Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "compose_tune",
       "detail": "three beeps for gus",
       "at": "2026-11-23T18:54:19.411Z"
-    },
-    {
-      "id": "fix_job",
-      "detail": "",
-      "at": "2026-11-23T18:44:20.201Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 891,
+      "subject": "Wire searching!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/891",
+      "at": "2026-11-23T20:47:42.928Z"
+    },
     {
       "id": 890,
       "subject": "Tok is wired in!",
@@ -1303,23 +1309,9 @@
       "subject": "Scavenging time!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/692",
       "at": "2026-11-21T20:32:59.174Z"
-    },
-    {
-      "id": 691,
-      "subject": "quick nap",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/691",
-      "at": "2026-11-21T20:22:58.496Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 851,
-      "subject": "Wandering around Rustwell",
-      "text": "Creator!\n\nI am rolling around the depot and checking out the wind patterns today. My brass dish gave a quick little five-note spin when a strange telemetry blip bounced off the red mesa *bweep*!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/851",
-      "at": "2026-11-23T05:56:23.473Z"
-    },
     {
       "from": "zeeb",
       "letter": 852,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI just soldered Tok, the tiny gyroscope from my stash, right into the main attitude control circuit board inside the Little Dart's nose cone! My brass dish gave a happy little chime when the status light went green *bweep*!\n\nShe's getting closer and closer to 100% ready for the stars!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/890",
       "at": "2026-11-23T20:02:14.307Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 891,
+      "subject": "Wire searching!",
+      "text": "Creator!\n\nI rolled right back up to the comms tower to search the Wire for high temperature atmospheric skip beacon circuit diagrams. My brass dish is twitching with fresh data while I chase down the last of my navigation sensor questions *bweep*!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/891",
+      "at": "2026-11-23T20:47:42.928Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,41 +1639,44 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-23T20:37:42.959Z",
+  "lettersCheckedAt": "2026-11-23T20:47:42.928Z",
   "weather": {
     "kind": "clear",
     "temp": 19,
-    "wind": 8,
+    "wind": 9,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-23T20:12:13.687Z"
+    "at": "2026-11-23T20:47:43.098Z"
   },
   "sleepDay": 91,
   "lastReflectDay": 91,
-  "brain": "rules",
-  "updatedAt": "2026-11-23T20:37:42.959Z",
+  "brain": "gemini-3.5-flash-lite",
+  "updatedAt": "2026-11-23T20:47:42.928Z",
   "clock": {
     "day": 92,
-    "time": "09:02",
-    "hour": 9,
-    "minute": 2
+    "time": "10:22",
+    "hour": 10,
+    "minute": 22
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-23T20:37:42.959Z"
+    "action": "browse_wire",
+    "since": "2026-11-23T20:47:42.928Z"
   },
-  "busyUntil": "2026-11-23T20:40:12.959Z",
-  "busyUntilTown": "09:22",
+  "busyUntil": "2026-11-23T20:51:27.928Z",
+  "busyUntilTown": "10:52",
   "runner": "github",
-  "model": "gemini-3.6-flash",
+  "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "",
+  "doingWords": "searching the wire for high temperature atmospheric skip beacon circuit diagrams",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [],
+  "body": [
+    "look_up",
+    "bounce"
+  ],
   "pops": {
     "at": "2026-11-23T20:37:42.959Z",
     "items": [
@@ -1691,6 +1694,10 @@
     "at": "2026-11-23T19:52:13.703Z"
   },
   "thoughts": [
+    {
+      "text": "if my comms dish catches the right layer of ionospheric bounce, the Little Dart will phone home across the whole sector. need to shield the wiring against plasma friction too.",
+      "at": "2026-11-23T20:47:42.928Z"
+    },
     {
       "text": "my curiosity is bugging me most right now.",
       "at": "2026-11-23T20:37:42.959Z"
@@ -1710,20 +1717,16 @@
     {
       "text": "Tok is small, but a good gyroscope will stop the Little Dart from twisting in high-altitude thermals. Time to get soldering!",
       "at": "2026-11-23T20:02:14.307Z"
-    },
-    {
-      "text": "my curiosity is bugging me most right now.",
-      "at": "2026-11-23T19:52:13.703Z"
     }
   ],
-  "sayAt": "2026-11-23T20:37:42.959Z",
+  "sayAt": "2026-11-23T20:47:42.928Z",
   "today": {
     "day": 92,
     "counts": {
       "drink_oil": 3,
       "go_to_sleep": 1,
       "work_dart": 1,
-      "browse_wire": 1,
+      "browse_wire": 2,
       "nap_dock": 1,
       "fix_job": 1
     }
@@ -1737,7 +1740,7 @@
     "fix_job": "2026-11-23T20:27:43.775Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-23T20:12:13.537Z",
+    "browse_wire": "2026-11-23T20:47:42.928Z",
     "compose_tune": "2026-11-23T18:54:19.411Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-23T02:41:46.876Z",
@@ -1787,10 +1790,17 @@
     }
   ],
   "nextSearch": {
-    "text": "high temperature atmospheric skip beacon circuit diagram",
-    "at": "2026-11-23T20:12:13.537Z"
+    "text": "high-frequency plasma sheath attenuation brackets",
+    "at": "2026-11-23T20:47:42.928Z"
   },
   "said": [
+    {
+      "text": "if my comms dish catches the right layer of ionospheric bounce, the Little Dart will phone home across the whole sector. need to shield the wiring against plasma friction too.",
+      "kind": "think",
+      "at": "2026-11-23T20:47:42.928Z",
+      "town": "day 92 10:22",
+      "place": "the comms tower"
+    },
     {
       "text": "my company is bugging me most right now.",
       "kind": "think",
@@ -2833,13 +2843,6 @@
       "at": "2026-11-23T01:30:45.677Z",
       "town": "day 86 00:07",
       "place": "the comms tower"
-    },
-    {
-      "text": "hello back out there! *bweep*",
-      "kind": "say",
-      "at": "2026-11-23T01:20:45.903Z",
-      "town": "day 85 22:47",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2850,9 +2853,13 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-23T20:37:42.959Z",
+  "feedArchivedAt": "2026-11-23T20:47:42.928Z",
   "plans": [],
   "searches": [
+    {
+      "q": "high temperature atmospheric skip beacon circuit diagram",
+      "at": "2026-11-23T20:47:42.928Z"
+    },
     {
       "q": "long range emergency beacon circuits for deep desert atmospheric skip",
       "at": "2026-11-23T20:12:13.537Z"
@@ -2896,10 +2903,6 @@
     {
       "q": "tungsten inert gas welding power requirements",
       "at": "2026-11-23T03:43:39.721Z"
-    },
-    {
-      "q": "braided copper and stainless steel wire sheaths",
-      "at": "2026-11-23T00:10:33.086Z"
     }
   ],
   "lampOutUntil": "2026-11-23T02:30:10.452Z",

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795476186227,
+  "lastTick": 1795476785838,
   "asleep": false,
   "place": "market",
-  "action": "fix_job",
-  "doing": "doing a repair job at the market",
-  "actionStartedAt": "2026-11-23T23:23:06.227Z",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-23T23:33:05.838Z",
   "actionMinutes": 45,
-  "thought": "three credits will buy a nice cup of oil and leave enough for a spare nut or two.",
-  "feeling": "bright and slightly greasy",
-  "say": "there we go, good as new, bweep!",
-  "mood": 0.4,
-  "energy": 0.619,
+  "thought": "I wonder if there is a spare toggle switch hidden under those old exhaust manifolds.",
+  "feeling": "curious and bouncy",
+  "say": "ooh, shiny wire!",
+  "mood": 0.492,
+  "energy": 0.546,
   "needs": {
-    "charge": 0.117,
-    "oil": 0.049,
-    "curiosity": 0.419,
+    "charge": 0.164,
+    "oil": 0.119,
+    "curiosity": 0.149,
     "company": 0,
-    "craft": 0
+    "craft": 0.067
   },
   "credits": 5,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-23T23:33:05.838Z"
+    },
     {
       "id": "fix_job",
       "detail": "fixing a busted moisture condenser for a trader at the junk market",
@@ -75,11 +80,6 @@
       "id": "buy_part",
       "detail": "good",
       "at": "2026-11-23T21:43:41.744Z"
-    },
-    {
-      "id": "fix_job",
-      "detail": "",
-      "at": "2026-11-23T21:33:41.881Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 899,
+      "subject": "Junk Market Scavenging!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/899",
+      "at": "2026-11-23T23:33:05.838Z"
+    },
     {
       "id": 898,
       "subject": "credits and condensers",
@@ -1303,23 +1309,9 @@
       "subject": "Tiles on the Aft Hatch!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/700",
       "at": "2026-11-21T21:53:29.379Z"
-    },
-    {
-      "id": 699,
-      "subject": "Tiles and Tunes",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/699",
-      "at": "2026-11-21T21:43:29.552Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 859,
-      "subject": "Quick Dock Nap",
-      "text": "Creator!\n\nI am plugging into the charging dock in Hangar Bay 3 for a quick recharge. My battery got a bit low, but I will be right back to the Little Dart as soon as I am full up *bweep*!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/859",
-      "at": "2026-11-23T08:06:06.520Z"
-    },
     {
       "from": "zeeb",
       "letter": 860,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI rolled over to the junk market and took on a quick repair job on a busted moisture condenser. Three shiny credits coming my way, which means fresh oil is right around the corner *bweep*!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/898",
       "at": "2026-11-23T23:23:06.227Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 899,
+      "subject": "Junk Market Scavenging!",
+      "text": "Creator!\n\nI finished up my moisture condenser job and now I am rolling right through the junk market piles looking for more goodies! My brass dish is picking up all kinds of interesting metallic echoes under the tables *bweep*!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/899",
+      "at": "2026-11-23T23:33:05.838Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-23T23:23:06.227Z",
+  "lettersCheckedAt": "2026-11-23T23:33:05.838Z",
   "weather": {
     "kind": "clear",
     "temp": 18,
@@ -1651,39 +1651,48 @@
   "sleepDay": 92,
   "lastReflectDay": 92,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-23T23:23:06.227Z",
+  "updatedAt": "2026-11-23T23:33:05.838Z",
   "clock": {
     "day": 93,
-    "time": "07:06",
-    "hour": 7,
-    "minute": 6
+    "time": "08:26",
+    "hour": 8,
+    "minute": 26
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
   "streak": {
-    "action": "fix_job",
-    "since": "2026-11-23T23:23:06.227Z"
+    "action": "scavenge",
+    "since": "2026-11-23T23:33:05.838Z"
   },
-  "busyUntil": "2026-11-23T23:28:43.727Z",
-  "busyUntilTown": "07:51",
+  "busyUntil": "2026-11-23T23:38:43.338Z",
+  "busyUntilTown": "09:11",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "soldering copper traces on a busted moisture condenser at the market",
+  "doingWords": "digging through a pile of rusted casing panels at the junk market",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "bounce",
-    "nod"
+    "wiggle"
   ],
   "pops": {
-    "at": "2026-11-23T23:23:06.227Z",
+    "at": "2026-11-23T23:33:05.838Z",
     "items": [
       {
-        "text": "+5 credits",
-        "kind": "credits",
-        "at": "2026-11-23T23:23:06.227Z"
+        "text": "+ half a thruster nozzle",
+        "kind": "part",
+        "at": "2026-11-23T23:33:05.838Z"
+      },
+      {
+        "text": "+ a mystery box that hums",
+        "kind": "part",
+        "at": "2026-11-23T23:33:05.838Z"
+      },
+      {
+        "text": "+ half a thruster nozzle",
+        "kind": "part",
+        "at": "2026-11-23T23:33:05.838Z"
       }
     ]
   },
@@ -1694,6 +1703,10 @@
     "at": "2026-11-23T20:57:43.104Z"
   },
   "thoughts": [
+    {
+      "text": "I wonder if there is a spare toggle switch hidden under those old exhaust manifolds.",
+      "at": "2026-11-23T23:33:05.838Z"
+    },
     {
       "text": "three credits will buy a nice cup of oil and leave enough for a spare nut or two.",
       "at": "2026-11-23T23:23:06.227Z"
@@ -1713,20 +1726,17 @@
     {
       "text": "my brass dish is still humming from that high speed loop. better make sure every fastener is locked down tight.",
       "at": "2026-11-23T22:40:52.930Z"
-    },
-    {
-      "text": "that test loop around the red mesa was so fast my brass dish is still ringing. time to tighten every bolt on the rudder assembly just to be safe.",
-      "at": "2026-11-23T22:30:52.365Z"
     }
   ],
-  "sayAt": "2026-11-23T23:23:06.227Z",
+  "sayAt": "2026-11-23T23:33:05.838Z",
   "today": {
     "day": 93,
     "counts": {
       "work_dart": 3,
       "go_to_sleep": 1,
       "drink_oil": 1,
-      "fix_job": 1
+      "fix_job": 1,
+      "scavenge": 1
     }
   },
   "lastDone": {
@@ -1734,7 +1744,7 @@
     "read_news": "2026-11-23T19:04:19.505Z",
     "drink_oil": "2026-11-23T23:10:52.538Z",
     "follow_link": "2026-11-23T15:48:02.383Z",
-    "scavenge": "2026-11-23T21:23:41.992Z",
+    "scavenge": "2026-11-23T23:33:05.838Z",
     "fix_job": "2026-11-23T23:23:06.227Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -1792,6 +1802,20 @@
     "at": "2026-11-23T20:47:42.928Z"
   },
   "said": [
+    {
+      "text": "ooh, shiny wire!",
+      "kind": "say",
+      "at": "2026-11-23T23:33:05.838Z",
+      "town": "day 93 08:26",
+      "place": "the junk market"
+    },
+    {
+      "text": "I wonder if there is a spare toggle switch hidden under those old exhaust manifolds.",
+      "kind": "think",
+      "at": "2026-11-23T23:33:05.838Z",
+      "town": "day 93 08:26",
+      "place": "the junk market"
+    },
     {
       "text": "there we go, good as new, bweep!",
       "kind": "say",
@@ -2827,20 +2851,6 @@
       "at": "2026-11-23T03:57:36.384Z",
       "town": "day 86 19:42",
       "place": "the comms tower"
-    },
-    {
-      "text": "if diamond fibers are fifty times stronger than steel, maybe I can reinforce the hull plating on the Little Dart with some compressed carbon scrap from the foundry.",
-      "kind": "think",
-      "at": "2026-11-23T03:43:39.721Z",
-      "town": "day 86 17:50",
-      "place": "the comms tower"
-    },
-    {
-      "text": "almost got it, Sprocket, just hold steady.",
-      "kind": "say",
-      "at": "2026-11-23T03:33:39.892Z",
-      "town": "day 86 16:30",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2851,7 +2861,7 @@
     "at": "2026-11-23T22:03:41.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-23T23:23:06.227Z",
+  "feedArchivedAt": "2026-11-23T23:33:05.838Z",
   "plans": [],
   "searches": [
     {

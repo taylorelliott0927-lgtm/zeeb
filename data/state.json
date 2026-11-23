@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795408655755,
+  "lastTick": 1795409255483,
   "asleep": false,
-  "place": "tower",
-  "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-23T04:37:35.755Z",
-  "actionMinutes": 60,
-  "thought": "i need to make sure the air scrubber has enough elbow room next to the pilot seat. breathless pilots make terrible astronauts, or so my logic processors calculate.",
-  "feeling": "thoughtful and slightly hypoxic",
-  "say": "",
-  "mood": 0.168,
-  "energy": -0.296,
+  "place": "ridge",
+  "action": "wander",
+  "doing": "wandering around the outpost",
+  "actionStartedAt": "2026-11-23T04:47:35.483Z",
+  "actionMinutes": 40,
+  "thought": "maybe someone dropped a nice clean bolt near the depot. I could always use another Pim.",
+  "feeling": "a bit stiff in the knees",
+  "say": "clank, clank, squeak, let's see what the wind blew in today.",
+  "mood": 0.174,
+  "energy": -0.357,
   "needs": {
-    "charge": 0.397,
+    "charge": 0.444,
     "oil": 1,
     "curiosity": 0,
-    "company": 0,
-    "craft": 0.428
+    "company": 0.053,
+    "craft": 0.495
   },
   "credits": 0,
   "recent": [
+    {
+      "id": "wander",
+      "detail": "",
+      "at": "2026-11-23T04:47:35.483Z"
+    },
     {
       "id": "browse_wire",
       "detail": "compact life support systems for one-pilot cruisers",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "securing the heavy-duty cooling valves onto the main fuel feed line using bolt O",
       "at": "2026-11-23T02:53:39.593Z"
-    },
-    {
-      "id": "craft_part",
-      "detail": "a precision micro cold gas thruster nozzle machined from scrap alloy",
-      "at": "2026-11-23T02:41:46.876Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-23T04:37:35.755Z",
+  "lettersCheckedAt": "2026-11-23T04:47:35.483Z",
   "weather": {
     "kind": "clear",
     "temp": 17,
@@ -1651,31 +1651,30 @@
   "sleepDay": 85,
   "lastReflectDay": 85,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-23T04:37:35.755Z",
+  "updatedAt": "2026-11-23T04:47:35.483Z",
   "clock": {
     "day": 87,
-    "time": "01:02",
-    "hour": 1,
-    "minute": 2
+    "time": "02:21",
+    "hour": 2,
+    "minute": 21
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the dune ridge",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-23T04:37:35.755Z"
+    "action": "wander",
+    "since": "2026-11-23T04:47:35.483Z"
   },
-  "busyUntil": "2026-11-23T04:45:05.755Z",
-  "busyUntilTown": "02:02",
+  "busyUntil": "2026-11-23T04:52:35.483Z",
+  "busyUntilTown": "03:01",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "searching the wire for compact life support systems",
+  "doingWords": "strolling past the scrap heaps and checking out stray wires",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "spin",
-    "look_up"
+    "pace"
   ],
   "pops": {
     "at": "2026-11-23T02:41:46.876Z",
@@ -1695,6 +1694,10 @@
   },
   "thoughts": [
     {
+      "text": "maybe someone dropped a nice clean bolt near the depot. I could always use another Pim.",
+      "at": "2026-11-23T04:47:35.483Z"
+    },
+    {
       "text": "i need to make sure the air scrubber has enough elbow room next to the pilot seat. breathless pilots make terrible astronauts, or so my logic processors calculate.",
       "at": "2026-11-23T04:37:35.755Z"
     },
@@ -1713,17 +1716,14 @@
     {
       "text": "sixty-five years of keeping track of orbits and docking is pretty neat. maybe the Little Dart will get its own plaque someday too.",
       "at": "2026-11-23T03:57:36.384Z"
-    },
-    {
-      "text": "if diamond fibers are fifty times stronger than steel, maybe I can reinforce the hull plating on the Little Dart with some compressed carbon scrap from the foundry.",
-      "at": "2026-11-23T03:43:39.721Z"
     }
   ],
-  "sayAt": "2026-11-23T04:37:35.755Z",
+  "sayAt": "2026-11-23T04:47:35.483Z",
   "today": {
     "day": 87,
     "counts": {
-      "browse_wire": 1
+      "browse_wire": 1,
+      "wander": 1
     }
   },
   "lastDone": {
@@ -1739,7 +1739,7 @@
     "compose_tune": "2026-11-22T23:10:11.072Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-23T02:41:46.876Z",
-    "wander": "2026-11-23T02:31:46.479Z",
+    "wander": "2026-11-23T04:47:35.483Z",
     "test_flight": "2026-11-20T02:34:07.517Z",
     "design_ship": "2026-11-23T03:03:40.132Z",
     "send_signal": "2026-11-23T01:30:45.677Z",
@@ -1789,6 +1789,20 @@
     "at": "2026-11-23T04:37:35.755Z"
   },
   "said": [
+    {
+      "text": "clank, clank, squeak, let's see what the wind blew in today.",
+      "kind": "say",
+      "at": "2026-11-23T04:47:35.483Z",
+      "town": "day 87 02:21",
+      "place": "the dune ridge"
+    },
+    {
+      "text": "maybe someone dropped a nice clean bolt near the depot. I could always use another Pim.",
+      "kind": "think",
+      "at": "2026-11-23T04:47:35.483Z",
+      "town": "day 87 02:21",
+      "place": "the dune ridge"
+    },
     {
       "text": "i need to make sure the air scrubber has enough elbow room next to the pilot seat. breathless pilots make terrible astronauts, or so my logic processors calculate.",
       "kind": "think",
@@ -2824,20 +2838,6 @@
       "at": "2026-11-22T15:34:34.133Z",
       "town": "day 82 16:37",
       "place": "the fuel depot"
-    },
-    {
-      "text": "another cup of oil will keep the joints spinning nicely before I head back to the hangar to weld more struts. *bweep*",
-      "kind": "think",
-      "at": "2026-11-22T15:34:34.133Z",
-      "town": "day 82 16:37",
-      "place": "the fuel depot"
-    },
-    {
-      "text": "ah, hit the spot right down to the main bearing!",
-      "kind": "say",
-      "at": "2026-11-22T15:24:34.285Z",
-      "town": "day 82 15:17",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2848,7 +2848,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-23T04:37:35.755Z",
+  "feedArchivedAt": "2026-11-23T04:47:35.483Z",
   "plans": [],
   "searches": [
     {

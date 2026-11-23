@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 23",
-    "progress": 90,
-    "version": 12,
-    "lastChange": "mounting the tungsten reinforced brackets onto the main reaction thruster mount using bolt Otto (used Brakk, a little landing strut) (used Pim, a scorched heat tile)",
+    "progress": 97,
+    "version": 13,
+    "lastChange": "mounting the heavy-duty cooling valves onto the main fuel feed line using bolt Otto (used Sprocket, a scorched heat tile)",
     "log": [
+      {
+        "version": 13,
+        "change": "mounting the heavy-duty cooling valves onto the main fuel feed line using bolt Otto (used Sprocket, a scorched heat tile)",
+        "progress": 97,
+        "at": "2026-11-23T02:11:46.864Z"
+      },
       {
         "version": 12,
         "change": "mounting the tungsten reinforced brackets onto the main reaction thruster mount using bolt Otto (used Brakk, a little landing strut) (used Pim, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "welding high-temp silica ceramic aerogel tiles along the upper spine of the Little Dart using Fen (a strip of hull plating) (used Fen, a strip of hull plating)",
         "progress": 26,
         "at": "2026-11-21T19:02:21.192Z"
-      },
-      {
-        "version": 2,
-        "change": "sealing the high-temp silica ceramic aerogel panels along the lower frame of the Little Dart using high-grade arc welds (used Dibs, a tiny gyroscope)",
-        "progress": 18,
-        "at": "2026-11-21T18:22:21.043Z"
       }
     ],
     "launched": [
@@ -2765,7 +2765,7 @@
         ]
       }
     ],
-    "partsUsed": 13,
+    "partsUsed": 14,
     "parts": [
       {
         "name": "Captain",
@@ -2823,6 +2823,11 @@
         "name": "Pim",
         "what": "a scorched heat tile",
         "version": 12
+      },
+      {
+        "name": "Sprocket",
+        "what": "a scorched heat tile",
+        "version": 13
       }
     ],
     "design": {
@@ -3389,11 +3394,6 @@
     {
       "name": "Fen",
       "what": "a strip of hull plating",
-      "at": "2026-11-22T20:46:46.179Z"
-    },
-    {
-      "name": "Sprocket",
-      "what": "a scorched heat tile",
       "at": "2026-11-22T20:46:46.179Z"
     }
   ],

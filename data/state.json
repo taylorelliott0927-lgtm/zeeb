@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795462934167,
-  "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "still sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-23T19:32:14.707Z",
-  "actionMinutes": 30,
-  "thought": "a clean cup of oil always clears out the dust from the salt flats. My brass dish gave a little five-note chime just thinking about the next rivet.",
-  "feeling": "bright and well-lubricated",
-  "say": "fill her up to the brim, pump-friend.",
-  "mood": 0.325,
-  "energy": 0.589,
+  "lastTick": 1795463533703,
+  "asleep": true,
+  "place": "hangar",
+  "action": "sleep",
+  "doing": "asleep in the charging dock",
+  "actionStartedAt": "2026-11-23T19:52:13.703Z",
+  "actionMinutes": 60,
+  "thought": "(dreaming) dreamed the Dart flew all the way past the second sun.",
+  "feeling": "pretty good actually",
+  "say": "",
+  "mood": 0.353,
+  "energy": 0.539,
   "needs": {
-    "charge": 0.148,
-    "oil": 0,
-    "curiosity": 0.323,
-    "company": 0.188,
-    "craft": 0.32
+    "charge": 0.195,
+    "oil": 0.04,
+    "curiosity": 0.403,
+    "company": 0.241,
+    "craft": 0.387
   },
   "credits": 7,
   "recent": [
+    {
+      "id": "go_to_sleep",
+      "detail": "",
+      "at": "2026-11-23T19:52:13.703Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-23T17:58:20.482Z"
-    },
-    {
-      "id": "chat_patrons",
-      "detail": "the old pilot at the bar, about engines",
-      "at": "2026-11-23T17:48:20.957Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-23T19:42:14.167Z",
+  "lettersCheckedAt": "2026-11-23T19:52:13.703Z",
   "weather": {
     "kind": "clear",
     "temp": 20,
@@ -1648,51 +1648,58 @@
     "source": "Tozeur, Tunisia",
     "at": "2026-11-23T19:32:14.869Z"
   },
-  "sleepDay": 90,
-  "lastReflectDay": 90,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-23T19:42:14.167Z",
+  "sleepDay": 91,
+  "lastReflectDay": 91,
+  "brain": "rules",
+  "updatedAt": "2026-11-23T19:52:13.703Z",
   "clock": {
     "day": 92,
-    "time": "01:39",
-    "hour": 1,
-    "minute": 39
+    "time": "02:59",
+    "hour": 2,
+    "minute": 59
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-23T19:32:14.707Z"
+    "action": "go_to_sleep",
+    "since": "2026-11-23T19:52:13.703Z"
   },
-  "busyUntil": "2026-11-23T19:45:59.167Z",
-  "busyUntilTown": "02:09",
+  "busyUntil": "2026-11-23T19:59:43.703Z",
+  "busyUntilTown": "03:59",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "sipping fresh depot oil and listening to the intake pump click",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "bounce"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-23T19:42:14.167Z",
+    "at": "2026-11-23T19:52:13.703Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-23T19:42:14.167Z"
+        "text": "+ a little landing strut",
+        "kind": "part",
+        "at": "2026-11-23T19:52:13.703Z"
+      },
+      {
+        "text": "+ a cracked navigation chip",
+        "kind": "part",
+        "at": "2026-11-23T19:52:13.703Z"
       }
     ]
   },
   "event": {
-    "id": "emwtnwzxv",
-    "key": "sand",
-    "text": "Sand got into his left elbow joint. Again.",
-    "at": "2026-11-23T19:32:14.707Z"
+    "id": "emwtomp3b",
+    "key": "crate",
+    "text": "A cargo crate fell off a freighter at the edge of the dunes. Some of it rolled his way.",
+    "at": "2026-11-23T19:52:13.703Z"
   },
   "thoughts": [
+    {
+      "text": "my curiosity is bugging me most right now.",
+      "at": "2026-11-23T19:52:13.703Z"
+    },
     {
       "text": "a clean cup of oil always clears out the dust from the salt flats. My brass dish gave a little five-note chime just thinking about the next rivet.",
       "at": "2026-11-23T19:42:14.167Z"
@@ -1712,17 +1719,14 @@
     {
       "text": "my charge is bugging me most right now.",
       "at": "2026-11-23T18:54:19.411Z"
-    },
-    {
-      "text": "my charge is bugging me most right now.",
-      "at": "2026-11-23T18:44:20.201Z"
     }
   ],
-  "sayAt": "2026-11-23T19:42:14.167Z",
+  "sayAt": "2026-11-23T19:52:13.703Z",
   "today": {
     "day": 92,
     "counts": {
-      "drink_oil": 2
+      "drink_oil": 2,
+      "go_to_sleep": 1
     }
   },
   "lastDone": {
@@ -1743,7 +1747,7 @@
     "design_ship": "2026-11-23T09:40:03.428Z",
     "send_signal": "2026-11-23T01:30:45.677Z",
     "stargaze": "2026-11-22T10:33:26.540Z",
-    "go_to_sleep": "2026-11-23T16:26:03.890Z",
+    "go_to_sleep": "2026-11-23T19:52:13.703Z",
     "chat_patrons": "2026-11-23T17:48:20.957Z",
     "busk": "2026-11-22T09:39:37.950Z",
     "cantina_band": "2026-11-21T01:37:19.419Z",
@@ -1788,6 +1792,20 @@
     "at": "2026-11-23T18:24:19.699Z"
   },
   "said": [
+    {
+      "text": "(dreaming) dreamed the Dart flew all the way past the second sun.",
+      "kind": "think",
+      "at": "2026-11-23T19:52:13.703Z",
+      "town": "day 92 02:59",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "my curiosity is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-23T19:52:13.703Z",
+      "town": "day 92 02:59",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "fill her up to the brim, pump-friend.",
       "kind": "say",
@@ -2823,20 +2841,6 @@
       "at": "2026-11-23T00:50:33.267Z",
       "town": "day 85 18:45",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "there we go, completely sealed and protected against every stray wave in the sector!",
-      "kind": "say",
-      "at": "2026-11-23T00:40:32.377Z",
-      "town": "day 85 17:25",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "with the shielding clipped into place, the little dart's guts look proper pro. my brass dish gives a happy little click every time the torch sparks.",
-      "kind": "think",
-      "at": "2026-11-23T00:40:32.377Z",
-      "town": "day 85 17:25",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2847,7 +2851,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-23T19:42:14.167Z",
+  "feedArchivedAt": "2026-11-23T19:52:13.703Z",
   "plans": [],
   "searches": [
     {

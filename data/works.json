@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 24",
-    "progress": 42,
-    "version": 5,
-    "lastChange": "welding the upper intake manifold to the core frame using a high-temp silica tile bracket and sealing the seams (used Sprocket, a cockpit switch that still clicks)",
+    "progress": 52,
+    "version": 6,
+    "lastChange": "mounting the lower port maneuvering thruster using a high-temp copper gasket and two micro bolts named Tok and Sprocket (used Pim, a perfectly good bolt)",
     "log": [
+      {
+        "version": 6,
+        "change": "mounting the lower port maneuvering thruster using a high-temp copper gasket and two micro bolts named Tok and Sprocket (used Pim, a perfectly good bolt)",
+        "progress": 52,
+        "at": "2026-11-23T08:56:05.436Z"
+      },
       {
         "version": 5,
         "change": "welding the upper intake manifold to the core frame using a high-temp silica tile bracket and sealing the seams (used Sprocket, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "riveting lightweight heat-dissipating panel struts onto the Little Dart's tail assembly using Dibs (used Wren, a sensor eye with one crack)",
         "progress": 74,
         "at": "2026-11-21T22:53:43.000Z"
-      },
-      {
-        "version": 9,
-        "change": "riveting lightweight heat-dissipating panel struts onto the Little Dart's tail assembly using Dibs (used Dibs, a perfectly good bolt)",
-        "progress": 65,
-        "at": "2026-11-21T22:43:43.163Z"
       }
     ],
     "launched": [
@@ -3130,7 +3130,7 @@
         }
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Wren",
@@ -3157,6 +3157,11 @@
         "name": "Sprocket",
         "what": "a cockpit switch that still clicks",
         "version": 5
+      },
+      {
+        "name": "Pim",
+        "what": "a perfectly good bolt",
+        "version": 6
       }
     ],
     "design": {
@@ -3711,26 +3716,22 @@
     {
       "name": "Tok",
       "what": "a tiny gyroscope",
-      "at": "2026-11-23T08:36:05.406Z",
-      "carrying": true
+      "at": "2026-11-23T08:36:05.406Z"
     },
     {
       "name": "Sprocket",
       "what": "a tiny gyroscope",
-      "at": "2026-11-23T08:16:05.470Z",
-      "carrying": true
+      "at": "2026-11-23T08:16:05.470Z"
     },
     {
       "name": "Wren",
       "what": "a scorched heat tile",
-      "at": "2026-11-23T08:16:05.470Z",
-      "carrying": true
+      "at": "2026-11-23T08:16:05.470Z"
     },
     {
       "name": "Tilly",
       "what": "a coil of copper wire",
-      "at": "2026-11-23T08:16:05.470Z",
-      "carrying": true
+      "at": "2026-11-23T08:16:05.470Z"
     },
     {
       "name": "Nim",
@@ -3747,11 +3748,6 @@
       "what": "a precision micro cold gas thruster nozzle",
       "at": "2026-11-23T02:41:46.876Z",
       "custom": "rmwsntj7g"
-    },
-    {
-      "name": "Pim",
-      "what": "a perfectly good bolt",
-      "at": "2026-11-23T02:21:47.254Z"
     }
   ],
   "reads": [

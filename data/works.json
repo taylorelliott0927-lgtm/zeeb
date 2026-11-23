@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 23",
-    "progress": 82,
-    "version": 11,
-    "lastChange": "mounting the refractory silica heat tiles onto the lower forward belly plate using bolt Fen (used Tok, a strip of hull plating) (used Lorna, a titanium-grade engine mount washer)",
+    "progress": 90,
+    "version": 12,
+    "lastChange": "mounting the tungsten reinforced brackets onto the main reaction thruster mount using bolt Otto (used Brakk, a little landing strut) (used Pim, a scorched heat tile)",
     "log": [
+      {
+        "version": 12,
+        "change": "mounting the tungsten reinforced brackets onto the main reaction thruster mount using bolt Otto (used Brakk, a little landing strut) (used Pim, a scorched heat tile)",
+        "progress": 90,
+        "at": "2026-11-23T02:01:46.910Z"
+      },
       {
         "version": 11,
         "change": "mounting the refractory silica heat tiles onto the lower forward belly plate using bolt Fen (used Tok, a strip of hull plating) (used Lorna, a titanium-grade engine mount washer)",
@@ -238,12 +244,6 @@
         "change": "sealing the high-temp silica ceramic aerogel panels along the lower frame of the Little Dart using high-grade arc welds (used Dibs, a tiny gyroscope)",
         "progress": 18,
         "at": "2026-11-21T18:22:21.043Z"
-      },
-      {
-        "version": 1,
-        "change": "bonding high-temp silica ceramic aerogel panels along the Little Dart's upper hull using micro-pincers and arc welds (used Nim, a strip of hull plating)",
-        "progress": 8,
-        "at": "2026-11-21T18:11:53.911Z"
       }
     ],
     "launched": [
@@ -2765,7 +2765,7 @@
         ]
       }
     ],
-    "partsUsed": 12,
+    "partsUsed": 13,
     "parts": [
       {
         "name": "Captain",
@@ -2818,6 +2818,11 @@
         "what": "a titanium-grade engine mount washer",
         "custom": "rmwsa21k4",
         "version": 11
+      },
+      {
+        "name": "Pim",
+        "what": "a scorched heat tile",
+        "version": 12
       }
     ],
     "design": {
@@ -3388,11 +3393,6 @@
     },
     {
       "name": "Sprocket",
-      "what": "a scorched heat tile",
-      "at": "2026-11-22T20:46:46.179Z"
-    },
-    {
-      "name": "Pim",
       "what": "a scorched heat tile",
       "at": "2026-11-22T20:46:46.179Z"
     }

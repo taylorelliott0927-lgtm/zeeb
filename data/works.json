@@ -3366,6 +3366,12 @@
   ],
   "stash": [
     {
+      "name": "Gus",
+      "what": "a precision micro cold gas thruster nozzle",
+      "at": "2026-11-23T02:41:46.876Z",
+      "custom": "rmwsntj7g"
+    },
+    {
       "name": "Pim",
       "what": "a perfectly good bolt",
       "at": "2026-11-23T02:21:47.254Z"
@@ -3390,11 +3396,6 @@
       "what": "a sensor eye with one crack",
       "at": "2026-11-22T21:26:45.440Z",
       "good": true
-    },
-    {
-      "name": "Tok",
-      "what": "a strip of hull plating",
-      "at": "2026-11-22T20:56:46.113Z"
     },
     {
       "name": "Wren",
@@ -23148,6 +23149,41 @@
   "crafting": {
     "recipes": [
       {
+        "id": "rmwsntj7g",
+        "what": "a precision micro cold gas thruster nozzle",
+        "how": "i shaved down a strip of hull plating on the manual lathe and drilled a tiny expansion cone right through the center.",
+        "uses": "for steering the little dart in deep space, of course.",
+        "look": [
+          {
+            "shape": "cylinder",
+            "turn": "up",
+            "w": 0.1,
+            "h": 0.08,
+            "d": 0.1,
+            "x": 0,
+            "y": 0.04,
+            "z": 0,
+            "color": "#c0c0c0",
+            "glow": 0
+          },
+          {
+            "shape": "cone",
+            "turn": "up",
+            "w": 0.15,
+            "h": 0.06,
+            "d": 0.15,
+            "x": 0,
+            "y": 0.1,
+            "z": 0,
+            "color": "#a0a0a0",
+            "glow": 0.2
+          }
+        ],
+        "firstMade": "2026-11-23T02:41:46.876Z",
+        "day": 86,
+        "made": 1
+      },
+      {
         "id": "rmwsa21k4",
         "what": "a titanium-grade engine mount washer",
         "how": "i hammered the scorched heat tile flat and punched a clean core through it. *bweep*",
@@ -23242,6 +23278,11 @@
       }
     ],
     "attempts": [
+      {
+        "what": "a precision micro cold gas thruster nozzle",
+        "result": "worked",
+        "at": "2026-11-23T02:41:46.876Z"
+      },
       {
         "what": "a titanium-grade engine mount washer",
         "result": "worked",

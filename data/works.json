@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 25",
-    "progress": 6,
-    "version": 1,
-    "lastChange": "riveting an extra titanium steering gusset to the tail assembly (used Pim, a little landing strut)",
+    "progress": 14,
+    "version": 2,
+    "lastChange": "tightening the rudder assembly bolts on Little Dart Mk 24 (used Brakk, a cracked navigation chip)",
     "log": [
+      {
+        "version": 2,
+        "change": "tightening the rudder assembly bolts on Little Dart Mk 24 (used Brakk, a cracked navigation chip)",
+        "progress": 14,
+        "at": "2026-11-23T22:40:52.930Z"
+      },
       {
         "version": 1,
         "change": "riveting an extra titanium steering gusset to the tail assembly (used Pim, a little landing strut)",
@@ -238,12 +244,6 @@
         "change": "welding final high-temperature silica tiles onto the Little Dart's nose cone using Otto, a perfectly good bolt (used Otto, a perfectly good bolt)",
         "progress": 29,
         "at": "2026-11-22T04:41:34.628Z"
-      },
-      {
-        "version": 4,
-        "change": "welding more high-temperature silica tiles onto the Little Dart's nose cone using Otto, a perfectly good bolt (used Gus, a half thruster nozzle). (used Gus, a mystery box that hums)",
-        "progress": 23,
-        "at": "2026-11-22T04:31:34.792Z"
       }
     ],
     "launched": [
@@ -3531,12 +3531,17 @@
         }
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Pim",
         "what": "a little landing strut",
         "version": 1
+      },
+      {
+        "name": "Brakk",
+        "what": "a cracked navigation chip",
+        "version": 2
       }
     ],
     "design": null
@@ -3810,11 +3815,6 @@
       "what": "a dented fuel cell",
       "at": "2026-11-23T20:27:43.775Z",
       "good": true
-    },
-    {
-      "name": "Brakk",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-23T19:52:13.703Z"
     }
   ],
   "reads": [

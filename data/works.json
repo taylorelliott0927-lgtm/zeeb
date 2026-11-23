@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 25",
-    "progress": 14,
-    "version": 2,
-    "lastChange": "tightening the rudder assembly bolts on Little Dart Mk 24 (used Brakk, a cracked navigation chip)",
+    "progress": 20,
+    "version": 3,
+    "lastChange": "securing the lateral control horns with a fresh brass fastener named rusty junior number two (used Wren, a dented fuel cell)",
     "log": [
+      {
+        "version": 3,
+        "change": "securing the lateral control horns with a fresh brass fastener named rusty junior number two (used Wren, a dented fuel cell)",
+        "progress": 20,
+        "at": "2026-11-23T22:50:52.332Z"
+      },
       {
         "version": 2,
         "change": "tightening the rudder assembly bolts on Little Dart Mk 24 (used Brakk, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "welding Gus, half a thruster nozzle, onto the Little Dart's rear exhaust manifold using high-temp ceramic beads (used Gus, half a thruster nozzle)",
         "progress": 35,
         "at": "2026-11-22T06:46:02.977Z"
-      },
-      {
-        "version": 5,
-        "change": "welding final high-temperature silica tiles onto the Little Dart's nose cone using Otto, a perfectly good bolt (used Otto, a perfectly good bolt)",
-        "progress": 29,
-        "at": "2026-11-22T04:41:34.628Z"
       }
     ],
     "launched": [
@@ -3531,7 +3531,7 @@
         }
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 4,
     "parts": [
       {
         "name": "Pim",
@@ -3542,6 +3542,12 @@
         "name": "Brakk",
         "what": "a cracked navigation chip",
         "version": 2
+      },
+      {
+        "name": "Wren",
+        "what": "a dented fuel cell",
+        "good": true,
+        "version": 3
       }
     ],
     "design": null
@@ -3809,12 +3815,6 @@
       "name": "Pim",
       "what": "a perfectly good bolt",
       "at": "2026-11-23T20:57:43.104Z"
-    },
-    {
-      "name": "Wren",
-      "what": "a dented fuel cell",
-      "at": "2026-11-23T20:27:43.775Z",
-      "good": true
     }
   ],
   "reads": [

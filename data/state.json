@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795447682562,
+  "lastTick": 1795448282592,
   "asleep": false,
-  "place": "market",
-  "action": "sell_scrap",
-  "doing": "haggling over scrap at the market",
-  "actionStartedAt": "2026-11-23T15:28:02.562Z",
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-23T15:38:02.592Z",
   "actionMinutes": 20,
-  "thought": "My pouch is completely empty after buying that last part! Selling Bix should get me enough credits to buy oil at the depot.",
-  "feeling": "eager and hopeful",
-  "say": "How about three credits for this cracked navigation chip? Still got plenty of good signal pathways in it, bweep!",
-  "mood": 0.303,
-  "energy": -0.013,
+  "thought": "my oil is bugging me most right now.",
+  "feeling": "okay, ticking along",
+  "say": "",
+  "mood": 0.297,
+  "energy": 0.077,
   "needs": {
-    "charge": 0.396,
-    "oil": 0.549,
-    "curiosity": 0.345,
-    "company": 0,
-    "craft": 0.263
+    "charge": 0.443,
+    "oil": 0,
+    "curiosity": 0.425,
+    "company": 0.053,
+    "craft": 0.33
   },
-  "credits": 3,
+  "credits": 2,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-23T15:38:02.592Z"
+    },
     {
       "id": "sell_scrap",
       "detail": "Bix (cracked navigation chip)",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-23T13:11:00.329Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-23T13:00:59.526Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-23T15:28:02.562Z",
+  "lettersCheckedAt": "2026-11-23T15:38:02.592Z",
   "weather": {
     "kind": "clear",
     "temp": 25,
@@ -1650,40 +1650,37 @@
   },
   "sleepDay": 89,
   "lastReflectDay": 89,
-  "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-23T15:28:02.562Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-23T15:38:02.592Z",
   "clock": {
     "day": 90,
-    "time": "15:45",
-    "hour": 15,
-    "minute": 45
+    "time": "17:05",
+    "hour": 17,
+    "minute": 5
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "sell_scrap",
-    "since": "2026-11-23T15:28:02.562Z"
+    "action": "drink_oil",
+    "since": "2026-11-23T15:38:02.592Z"
   },
-  "busyUntil": "2026-11-23T15:30:32.562Z",
-  "busyUntilTown": "16:05",
+  "busyUntil": "2026-11-23T15:40:32.592Z",
+  "busyUntilTown": "17:25",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "haggling over a cracked navigation chip at the market",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "nod",
-    "lean_in"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-23T15:28:02.562Z",
+    "at": "2026-11-23T15:38:02.592Z",
     "items": [
       {
-        "text": "+3 credits",
-        "kind": "credits",
-        "at": "2026-11-23T15:28:02.562Z"
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-23T15:38:02.592Z"
       }
     ]
   },
@@ -1694,6 +1691,10 @@
     "at": "2026-11-23T11:32:21.059Z"
   },
   "thoughts": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "at": "2026-11-23T15:38:02.592Z"
+    },
     {
       "text": "My pouch is completely empty after buying that last part! Selling Bix should get me enough credits to buy oil at the depot.",
       "at": "2026-11-23T15:28:02.562Z"
@@ -1713,13 +1714,9 @@
     {
       "text": "read about An Early History of Satellites Timeline | NASA Jet Propulsion Laboratory (JPL). filing that away.",
       "at": "2026-11-23T14:38:54.748Z"
-    },
-    {
-      "text": "read about Welding - Wikipedia. filing that away.",
-      "at": "2026-11-23T14:28:55.206Z"
     }
   ],
-  "sayAt": "2026-11-23T15:28:02.562Z",
+  "sayAt": "2026-11-23T15:38:02.592Z",
   "today": {
     "day": 90,
     "counts": {
@@ -1730,13 +1727,14 @@
       "nap_dock": 1,
       "fix_job": 1,
       "buy_part": 1,
-      "sell_scrap": 1
+      "sell_scrap": 1,
+      "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-23T14:08:55.092Z",
     "read_news": "2026-11-23T06:06:23.303Z",
-    "drink_oil": "2026-11-23T13:11:00.329Z",
+    "drink_oil": "2026-11-23T15:38:02.592Z",
     "follow_link": "2026-11-23T12:02:20.667Z",
     "scavenge": "2026-11-23T08:16:05.470Z",
     "fix_job": "2026-11-23T14:58:55.101Z",
@@ -1793,6 +1791,13 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-23T15:38:02.592Z",
+      "town": "day 90 17:05",
+      "place": "the fuel depot"
+    },
     {
       "text": "How about three credits for this cracked navigation chip? Still got plenty of good signal pathways in it, bweep!",
       "kind": "say",
@@ -2835,13 +2840,6 @@
       "at": "2026-11-22T22:37:11.660Z",
       "town": "day 85 00:58",
       "place": "the comms tower"
-    },
-    {
-      "text": "*click-clack-zzt*",
-      "kind": "say",
-      "at": "2026-11-22T22:27:12.250Z",
-      "town": "day 84 23:38",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2852,7 +2850,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-23T15:28:02.562Z",
+  "feedArchivedAt": "2026-11-23T15:38:02.592Z",
   "plans": [],
   "searches": [
     {

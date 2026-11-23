@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795398045484,
+  "lastTick": 1795398707566,
   "asleep": false,
   "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-23T01:40:45.484Z",
-  "actionMinutes": 60,
-  "thought": "time to plug in and let the juice flow back into my cells. my dish is still warm from the night air.",
-  "feeling": "tired and a bit heavy in the gears",
-  "say": "*bweep*",
+  "action": "work_dart",
+  "doing": "working on the Little Dart",
+  "actionStartedAt": "2026-11-23T01:51:47.566Z",
+  "actionMinutes": 45,
+  "thought": "that freighter rattle earlier shook loose nothing important, but it reminded me to torque down every single tile. my brass dish is spinning a little tune because the fuselage is looking shinier than ever.",
+  "feeling": "focused and bright",
+  "say": "almost ready for the stars, little ship! *bweep-boop-zzt*",
   "mood": 0.318,
-  "energy": 0.343,
+  "energy": 0.367,
   "needs": {
-    "charge": 0,
-    "oil": 0.482,
-    "curiosity": 0.08,
+    "charge": 0.101,
+    "oil": 0.526,
+    "curiosity": 0.168,
     "company": 0,
-    "craft": 0.403
+    "craft": 0
   },
   "credits": 0,
   "recent": [
+    {
+      "id": "work_dart",
+      "detail": "mounting the refractory silica heat tiles onto the lower forward belly plate usi",
+      "at": "2026-11-23T01:51:47.566Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "Juno probe radiation shielding specs",
       "at": "2026-11-23T00:00:11.140Z"
-    },
-    {
-      "id": "wander",
-      "detail": "",
-      "at": "2026-11-22T23:50:10.804Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 830,
+      "subject": "Heat tiles on the Little Dart!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/830",
+      "at": "2026-11-23T01:51:47.566Z"
+    },
     {
       "id": 829,
       "subject": "plugging in for a nap",
@@ -1303,23 +1309,9 @@
       "subject": "Copper wire hunt!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/631",
       "at": "2026-11-21T09:27:38.614Z"
-    },
-    {
-      "id": 630,
-      "subject": "Wrapping up Gribble's manifold!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/630",
-      "at": "2026-11-21T09:20:36.316Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 790,
-      "subject": "Quick oil stop!",
-      "text": "Creator!\n\nMy joint gears are getting a little squeaky after all that wiring on Sprocket, so I'm rolling over to the fuel depot for a fresh cup of oil! Gotta keep the servos turning smooth if I'm gonna pilot the Little Dart one day. *bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/790",
-      "at": "2026-11-22T18:45:51.272Z"
-    },
     {
       "from": "zeeb",
       "letter": 791,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am finally rolling back down from the comms tower to plug into the charging dock. My energy ran right down to zero-point-eighteen, so my gears feel a bit sluggish. My brass dish gave a sleepy little five-note spin as I connected to the grid! *bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/829",
       "at": "2026-11-23T01:40:45.484Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 830,
+      "subject": "Heat tiles on the Little Dart!",
+      "text": "Creator!\n\nI am back in Hangar Bay 3 bolting high-temp silica tiles onto the Little Dart's belly. My brass dish gave a happy little five-note spin when the last bolt locked in square and true! *bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/830",
+      "at": "2026-11-23T01:51:47.566Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-23T01:40:45.484Z",
+  "lettersCheckedAt": "2026-11-23T01:51:47.566Z",
   "weather": {
     "kind": "clear",
     "temp": 19,
@@ -1651,31 +1651,31 @@
   "sleepDay": 84,
   "lastReflectDay": 84,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-23T01:40:45.484Z",
+  "updatedAt": "2026-11-23T01:51:47.566Z",
   "clock": {
     "day": 86,
-    "time": "01:27",
-    "hour": 1,
-    "minute": 27
+    "time": "02:55",
+    "hour": 2,
+    "minute": 55
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-23T01:40:45.484Z"
+    "action": "work_dart",
+    "since": "2026-11-23T01:51:47.566Z"
   },
-  "busyUntil": "2026-11-23T01:48:15.484Z",
-  "busyUntilTown": "02:27",
+  "busyUntil": "2026-11-23T01:57:25.066Z",
+  "busyUntilTown": "03:40",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "rolling back to the dock to recharge my batteries",
-  "newsForCreator": "",
+  "doingWords": "bolting the high-temp silica tiles onto the Little Dart's fuselage",
+  "newsForCreator": "Little Dart Mk 23 just reached 75% built (version 11). Last change: mounting the refractory silica heat tiles onto the lower forward belly plate using bolt Fen (used Tok, a strip of hull plating) (used Lorna, a titanium-grade engine mount washer).",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "droop",
-    "shake"
+    "spin",
+    "nod"
   ],
   "pops": {
     "at": "2026-11-23T01:20:45.903Z",
@@ -1693,12 +1693,16 @@
     ]
   },
   "event": {
-    "id": "emwsla78t",
-    "key": "hauler_paint",
-    "text": "The cargo-hauler bot at the depot got a new paint job. Show-off.",
-    "at": "2026-11-23T01:30:45.677Z"
+    "id": "emwsm18xa",
+    "key": "freighter",
+    "text": "A freighter came in low over the hangar and rattled every bolt in the place.",
+    "at": "2026-11-23T01:51:47.566Z"
   },
   "thoughts": [
+    {
+      "text": "that freighter rattle earlier shook loose nothing important, but it reminded me to torque down every single tile. my brass dish is spinning a little tune because the fuselage is looking shinier than ever.",
+      "at": "2026-11-23T01:51:47.566Z"
+    },
     {
       "text": "time to plug in and let the juice flow back into my cells. my dish is still warm from the night air.",
       "at": "2026-11-23T01:40:45.484Z"
@@ -1718,22 +1722,19 @@
     {
       "text": "if i use tig on the tailfin struts of the little dart, they will hold up against atmospheric re-entry friction much better. *bweep*",
       "at": "2026-11-23T01:00:45.832Z"
-    },
-    {
-      "text": "i wonder if bolt tok is dreaming about holding the bulkhead together while the current warms my copper lines.",
-      "at": "2026-11-23T00:50:46.594Z"
     }
   ],
-  "sayAt": "2026-11-23T01:40:45.484Z",
+  "sayAt": "2026-11-23T01:51:47.566Z",
   "today": {
     "day": 86,
     "counts": {
       "send_signal": 1,
-      "nap_dock": 1
+      "nap_dock": 1,
+      "work_dart": 1
     }
   },
   "lastDone": {
-    "work_dart": "2026-11-23T00:40:32.377Z",
+    "work_dart": "2026-11-23T01:51:47.566Z",
     "read_news": "2026-11-22T23:07:12.314Z",
     "drink_oil": "2026-11-22T23:40:10.671Z",
     "follow_link": "2026-11-23T00:20:32.598Z",
@@ -1795,6 +1796,20 @@
     "at": "2026-11-23T01:00:45.832Z"
   },
   "said": [
+    {
+      "text": "almost ready for the stars, little ship! *bweep-boop-zzt*",
+      "kind": "say",
+      "at": "2026-11-23T01:51:47.566Z",
+      "town": "day 86 02:55",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "that freighter rattle earlier shook loose nothing important, but it reminded me to torque down every single tile. my brass dish is spinning a little tune because the fuselage is looking shinier than ever.",
+      "kind": "think",
+      "at": "2026-11-23T01:51:47.566Z",
+      "town": "day 86 02:55",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "*bweep*",
       "kind": "say",
@@ -2830,20 +2845,6 @@
       "at": "2026-11-22T13:26:19.581Z",
       "town": "day 81 23:31",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "i am going to make these hinges fit flush so the space vacuum doesn't leak a single puff of air.",
-      "kind": "think",
-      "at": "2026-11-22T13:26:19.581Z",
-      "town": "day 81 23:31",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "(dreaming) dreamed the Dart flew all the way past the second sun.",
-      "kind": "think",
-      "at": "2026-11-22T13:16:19.802Z",
-      "town": "day 81 22:11",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2854,7 +2855,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-23T01:40:45.484Z",
+  "feedArchivedAt": "2026-11-23T01:51:47.566Z",
   "plans": [],
   "searches": [
     {

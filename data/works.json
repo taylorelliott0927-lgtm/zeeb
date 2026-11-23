@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 23",
-    "progress": 74,
-    "version": 10,
-    "lastChange": "welding the stainless steel braided cable sleeves to the main bulkhead using bolt Tok (used Sprocket, a little landing strut)",
+    "progress": 82,
+    "version": 11,
+    "lastChange": "mounting the refractory silica heat tiles onto the lower forward belly plate using bolt Fen (used Tok, a strip of hull plating) (used Lorna, a titanium-grade engine mount washer)",
     "log": [
+      {
+        "version": 11,
+        "change": "mounting the refractory silica heat tiles onto the lower forward belly plate using bolt Fen (used Tok, a strip of hull plating) (used Lorna, a titanium-grade engine mount washer)",
+        "progress": 82,
+        "at": "2026-11-23T01:51:47.566Z"
+      },
       {
         "version": 10,
         "change": "welding the stainless steel braided cable sleeves to the main bulkhead using bolt Tok (used Sprocket, a little landing strut)",
@@ -238,12 +244,6 @@
         "change": "bonding high-temp silica ceramic aerogel panels along the Little Dart's upper hull using micro-pincers and arc welds (used Nim, a strip of hull plating)",
         "progress": 8,
         "at": "2026-11-21T18:11:53.911Z"
-      },
-      {
-        "version": 13,
-        "change": "riveting lightweight structural stringers along the Little Dart's fuselage using Nim (used Bix, a strip of hull plating)",
-        "progress": 100,
-        "at": "2026-11-21T16:51:39.733Z"
       }
     ],
     "launched": [
@@ -2765,7 +2765,7 @@
         ]
       }
     ],
-    "partsUsed": 10,
+    "partsUsed": 12,
     "parts": [
       {
         "name": "Captain",
@@ -2812,6 +2812,12 @@
         "name": "Sprocket",
         "what": "a little landing strut",
         "version": 10
+      },
+      {
+        "name": "Lorna",
+        "what": "a titanium-grade engine mount washer",
+        "custom": "rmwsa21k4",
+        "version": 11
       }
     ],
     "design": {
@@ -3389,12 +3395,6 @@
       "name": "Pim",
       "what": "a scorched heat tile",
       "at": "2026-11-22T20:46:46.179Z"
-    },
-    {
-      "name": "Lorna",
-      "what": "a titanium-grade engine mount washer",
-      "at": "2026-11-22T20:16:29.284Z",
-      "custom": "rmwsa21k4"
     }
   ],
   "reads": [

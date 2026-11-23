@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795452964180,
+  "lastTick": 1795453564296,
   "asleep": false,
   "place": "tower",
-  "action": "browse_wire",
-  "doing": "still browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-23T16:46:03.894Z",
+  "action": "read_news",
+  "doing": "reading the space news",
+  "actionStartedAt": "2026-11-23T17:06:04.296Z",
   "actionMinutes": 35,
-  "thought": "read about 12 Types of Welding Processes & Their Uses [Full Guide] PDF. filing that away.",
-  "feeling": "curious",
-  "say": "",
-  "mood": 0.393,
-  "energy": 0.533,
+  "thought": "If a whole clipper can leave the nest, my Little Dart can surely handle the void. Just need to make sure the thrusters are properly sealed against sand.",
+  "feeling": "focused and hopeful",
+  "say": "Let's see what's buzzing across the sector *bweep*!",
+  "mood": 0.378,
+  "energy": 0.452,
   "needs": {
-    "charge": 0.094,
-    "oil": 0.278,
+    "charge": 0.141,
+    "oil": 0.318,
     "curiosity": 0,
-    "company": 0.302,
-    "craft": 0.134
+    "company": 0.355,
+    "craft": 0.201
   },
   "credits": 2,
   "recent": [
+    {
+      "id": "read_news",
+      "detail": "",
+      "at": "2026-11-23T17:06:04.296Z"
+    },
     {
       "id": "browse_wire",
       "detail": "welding",
@@ -75,11 +80,6 @@
       "id": "fix_job",
       "detail": "Fixing a jammed micro-actuator on a trader's moisture vaporator pump.",
       "at": "2026-11-23T14:58:55.101Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-23T14:48:54.265Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-23T16:56:04.180Z",
+  "lettersCheckedAt": "2026-11-23T17:06:04.296Z",
   "weather": {
     "kind": "clear",
     "temp": 23,
@@ -1650,30 +1650,33 @@
   },
   "sleepDay": 90,
   "lastReflectDay": 90,
-  "brain": "rules",
-  "updatedAt": "2026-11-23T16:56:04.180Z",
+  "brain": "gemini-3.6-flash",
+  "updatedAt": "2026-11-23T17:06:04.296Z",
   "clock": {
     "day": 91,
-    "time": "03:29",
-    "hour": 3,
-    "minute": 29
+    "time": "04:49",
+    "hour": 4,
+    "minute": 49
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-23T16:46:03.894Z"
+    "action": "read_news",
+    "since": "2026-11-23T17:06:04.296Z"
   },
-  "busyUntil": "2026-11-23T17:00:26.680Z",
-  "busyUntilTown": "04:04",
+  "busyUntil": "2026-11-23T17:10:26.796Z",
+  "busyUntilTown": "05:24",
   "runner": "github",
-  "model": "gemini-3.5-flash-lite",
+  "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "",
-  "newsForCreator": "",
-  "newsPendingTicks": 0,
+  "doingWords": "scanning the comms tower feeds for fresh space news",
+  "newsForCreator": "You've become totally obsessed with scrap parts.",
+  "newsPendingTicks": 1,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [],
+  "body": [
+    "look_up",
+    "nod"
+  ],
   "pops": {
     "at": "2026-11-23T15:38:02.592Z",
     "items": [
@@ -1691,6 +1694,10 @@
     "at": "2026-11-23T11:32:21.059Z"
   },
   "thoughts": [
+    {
+      "text": "If a whole clipper can leave the nest, my Little Dart can surely handle the void. Just need to make sure the thrusters are properly sealed against sand.",
+      "at": "2026-11-23T17:06:04.296Z"
+    },
     {
       "text": "read about 12 Types of Welding Processes & Their Uses [Full Guide] PDF. filing that away.",
       "at": "2026-11-23T16:56:04.180Z"
@@ -1710,23 +1717,20 @@
     {
       "text": "my craft is bugging me most right now.",
       "at": "2026-11-23T16:08:03.012Z"
-    },
-    {
-      "text": "my charge is bugging me most right now.",
-      "at": "2026-11-23T15:58:02.347Z"
     }
   ],
-  "sayAt": "2026-11-23T16:56:04.180Z",
+  "sayAt": "2026-11-23T17:06:04.296Z",
   "today": {
     "day": 91,
     "counts": {
       "compose_tune": 1,
-      "browse_wire": 2
+      "browse_wire": 2,
+      "read_news": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-23T16:08:03.012Z",
-    "read_news": "2026-11-23T06:06:23.303Z",
+    "read_news": "2026-11-23T17:06:04.296Z",
     "drink_oil": "2026-11-23T15:38:02.592Z",
     "follow_link": "2026-11-23T15:48:02.383Z",
     "scavenge": "2026-11-23T08:16:05.470Z",
@@ -1757,6 +1761,11 @@
   },
   "puzzles": [
     {
+      "id": "q7",
+      "text": "q11: how to hook up old military thermal sensors to my navigation display without signal bleed",
+      "at": "2026-11-23T17:06:04.296Z"
+    },
+    {
       "id": "q11",
       "text": "how to hook up old military thermal sensors to my navigation display without signal bleed",
       "at": "2026-11-23T15:18:03.244Z"
@@ -1775,15 +1784,27 @@
       "id": "q8",
       "text": "q10: how to hook up old military thermal sensors to my navigation display",
       "at": "2026-11-23T11:32:21.059Z"
-    },
-    {
-      "id": "q10",
-      "text": "q7",
-      "at": "2026-11-23T10:00:03.449Z"
     }
   ],
-  "nextSearch": null,
+  "nextSearch": {
+    "text": "long range communication relays for small craft",
+    "at": "2026-11-23T17:06:04.296Z"
+  },
   "said": [
+    {
+      "text": "Let's see what's buzzing across the sector *bweep*!",
+      "kind": "say",
+      "at": "2026-11-23T17:06:04.296Z",
+      "town": "day 91 04:49",
+      "place": "the comms tower"
+    },
+    {
+      "text": "If a whole clipper can leave the nest, my Little Dart can surely handle the void. Just need to make sure the thrusters are properly sealed against sand.",
+      "kind": "think",
+      "at": "2026-11-23T17:06:04.296Z",
+      "town": "day 91 04:49",
+      "place": "the comms tower"
+    },
     {
       "text": "read about 12 Types of Welding Processes & Their Uses [Full Guide] PDF. filing that away.",
       "kind": "think",
@@ -2819,20 +2840,6 @@
       "at": "2026-11-22T23:20:11.075Z",
       "town": "day 85 06:42",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "A good charge will shake off the sluggish gears so I can weld proper joints on the Dart later.",
-      "kind": "think",
-      "at": "2026-11-22T23:20:11.075Z",
-      "town": "day 85 06:42",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "bzzt-bwee-boop-tee-bip!",
-      "kind": "say",
-      "at": "2026-11-22T23:10:11.072Z",
-      "town": "day 85 05:22",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2843,7 +2850,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-23T16:56:04.180Z",
+  "feedArchivedAt": "2026-11-23T17:06:04.296Z",
   "plans": [],
   "searches": [
     {

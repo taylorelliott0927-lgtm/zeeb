@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795470221744,
+  "lastTick": 1795470821399,
   "asleep": false,
-  "place": "market",
-  "action": "buy_part",
-  "doing": "browsing the parts stalls at the market",
-  "actionStartedAt": "2026-11-23T21:43:41.744Z",
-  "actionMinutes": 30,
-  "thought": "this crate of switches is mostly junk but there might be one clean relay hidden near the bottom.",
-  "feeling": "curious and a little restless",
-  "say": "gotta check the gauge on this one before I hand over any credits.",
-  "mood": 0.4,
-  "energy": -0.122,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-23T21:53:41.399Z",
+  "actionMinutes": 40,
+  "thought": "my charge is bugging me most right now.",
+  "feeling": "pretty good actually",
+  "say": "",
+  "mood": 0.382,
+  "energy": 0.078,
   "needs": {
-    "charge": 0.603,
-    "oil": 0.294,
-    "curiosity": 0.06,
-    "company": 0.053,
-    "craft": 0.067
+    "charge": 0.2,
+    "oil": 0.334,
+    "curiosity": 0.14,
+    "company": 0.106,
+    "craft": 0.134
   },
   "credits": 1,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-23T21:53:41.399Z"
+    },
     {
       "id": "buy_part",
       "detail": "good",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "long range emergency beacon circuits for deep desert atmospheric skip",
       "at": "2026-11-23T20:12:13.537Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "soldered Tok, a tiny gyroscope, into the main attitude control circuit board ins",
-      "at": "2026-11-23T20:02:14.307Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-23T21:43:41.744Z",
+  "lettersCheckedAt": "2026-11-23T21:53:41.399Z",
   "weather": {
     "kind": "clear",
     "temp": 18,
@@ -1650,33 +1650,30 @@
   },
   "sleepDay": 91,
   "lastReflectDay": 91,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-23T21:43:41.744Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-23T21:53:41.399Z",
   "clock": {
     "day": 92,
-    "time": "17:50",
-    "hour": 17,
-    "minute": 50
+    "time": "19:10",
+    "hour": 19,
+    "minute": 10
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "buy_part",
-    "since": "2026-11-23T21:43:41.744Z"
+    "action": "nap_dock",
+    "since": "2026-11-23T21:53:41.399Z"
   },
-  "busyUntil": "2026-11-23T21:47:26.744Z",
-  "busyUntilTown": "18:20",
+  "busyUntil": "2026-11-23T21:58:41.399Z",
+  "busyUntilTown": "19:50",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "digging through a trader's bin for a good resistor",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "look_up",
-    "nod"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-23T21:43:41.744Z",
     "items": [
@@ -1700,6 +1697,10 @@
   },
   "thoughts": [
     {
+      "text": "my charge is bugging me most right now.",
+      "at": "2026-11-23T21:53:41.399Z"
+    },
+    {
       "text": "this crate of switches is mostly junk but there might be one clean relay hidden near the bottom.",
       "at": "2026-11-23T21:43:41.744Z"
     },
@@ -1718,13 +1719,9 @@
     {
       "text": "just a few more rivets and the fuselage plating will be sealed tight. my dish is humming right along with the torque wrench.",
       "at": "2026-11-23T21:07:42.718Z"
-    },
-    {
-      "text": "my charge is bugging me most right now.",
-      "at": "2026-11-23T20:57:43.104Z"
     }
   ],
-  "sayAt": "2026-11-23T21:43:41.744Z",
+  "sayAt": "2026-11-23T21:53:41.399Z",
   "today": {
     "day": 92,
     "counts": {
@@ -1732,7 +1729,7 @@
       "go_to_sleep": 1,
       "work_dart": 2,
       "browse_wire": 2,
-      "nap_dock": 1,
+      "nap_dock": 2,
       "fix_job": 2,
       "build_friend": 1,
       "chat_patrons": 1,
@@ -1762,7 +1759,7 @@
     "chat_patrons": "2026-11-23T21:17:42.589Z",
     "busk": "2026-11-22T09:39:37.950Z",
     "cantina_band": "2026-11-21T01:37:19.419Z",
-    "nap_dock": "2026-11-23T20:22:13.625Z",
+    "nap_dock": "2026-11-23T21:53:41.399Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -2862,7 +2859,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-23T21:43:41.744Z",
+  "feedArchivedAt": "2026-11-23T21:53:41.399Z",
   "plans": [],
   "searches": [
     {

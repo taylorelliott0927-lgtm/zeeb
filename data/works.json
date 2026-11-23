@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 24",
-    "progress": 76,
-    "version": 9,
-    "lastChange": "mounted the new military thermal sensor module into the Little Dart's nose cone navigation feed using Rusty Jr (a high-grade copper wire) and Bolt-seven (used Nim, a strip of hull plating)",
+    "progress": 84,
+    "version": 10,
+    "lastChange": "polished the nose cone (used Tilly, a coil of copper wire)",
     "log": [
+      {
+        "version": 10,
+        "change": "polished the nose cone (used Tilly, a coil of copper wire)",
+        "progress": 84,
+        "at": "2026-11-23T16:08:03.012Z"
+      },
       {
         "version": 9,
         "change": "mounted the new military thermal sensor module into the Little Dart's nose cone navigation feed using Rusty Jr (a high-grade copper wire) and Bolt-seven (used Nim, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "securing structural ribs onto the Little Dart's aft section using Pim (a perfectly good bolt) (used Wren, a strip of hull plating)",
         "progress": 100,
         "at": "2026-11-22T01:24:33.392Z"
-      },
-      {
-        "version": 13,
-        "change": "securing high-entropy silicate ceramic aerogel tiles onto the upper fin using Fen (a coil of copper wire) (used Fen, a coil of copper wire)",
-        "progress": 94,
-        "at": "2026-11-22T00:44:20.338Z"
       }
     ],
     "launched": [
@@ -3130,7 +3130,7 @@
         }
       }
     ],
-    "partsUsed": 11,
+    "partsUsed": 12,
     "parts": [
       {
         "name": "Wren",
@@ -3178,6 +3178,11 @@
         "name": "Nim",
         "what": "a strip of hull plating",
         "version": 9
+      },
+      {
+        "name": "Tilly",
+        "what": "a coil of copper wire",
+        "version": 10
       }
     ],
     "design": {
@@ -3764,11 +3769,6 @@
     {
       "name": "Wren",
       "what": "a scorched heat tile",
-      "at": "2026-11-23T08:16:05.470Z"
-    },
-    {
-      "name": "Tilly",
-      "what": "a coil of copper wire",
       "at": "2026-11-23T08:16:05.470Z"
     }
   ],

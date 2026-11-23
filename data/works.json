@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 25",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 6,
+    "version": 1,
+    "lastChange": "riveting an extra titanium steering gusset to the tail assembly (used Pim, a little landing strut)",
     "log": [
+      {
+        "version": 1,
+        "change": "riveting an extra titanium steering gusset to the tail assembly (used Pim, a little landing strut)",
+        "progress": 6,
+        "at": "2026-11-23T22:30:52.365Z"
+      },
       {
         "version": 13,
         "change": "riveted a titanium reinforced hull plate across the dorsal spine using Pim, a little landing strut, as a custom brace (used Pim, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "welding more high-temperature silica tiles onto the Little Dart's nose cone using Otto, a perfectly good bolt (used Gus, a half thruster nozzle). (used Gus, a mystery box that hums)",
         "progress": 23,
         "at": "2026-11-22T04:31:34.792Z"
-      },
-      {
-        "version": 3,
-        "change": "welding high-temperature silica tiles onto the Little Dart's nose cone using Otto, a perfectly good bolt (used Dibs, a coil of copper wire)",
-        "progress": 15,
-        "at": "2026-11-22T04:21:35.063Z"
       }
     ],
     "launched": [
@@ -3531,8 +3531,14 @@
         }
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Pim",
+        "what": "a little landing strut",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -3808,11 +3814,6 @@
     {
       "name": "Brakk",
       "what": "a cracked navigation chip",
-      "at": "2026-11-23T19:52:13.703Z"
-    },
-    {
-      "name": "Pim",
-      "what": "a little landing strut",
       "at": "2026-11-23T19:52:13.703Z"
     }
   ],

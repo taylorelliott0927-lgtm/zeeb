@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 24",
-    "progress": 52,
-    "version": 6,
-    "lastChange": "mounting the lower port maneuvering thruster using a high-temp copper gasket and two micro bolts named Tok and Sprocket (used Pim, a perfectly good bolt)",
+    "progress": 60,
+    "version": 7,
+    "lastChange": "tuned the left thruster (used Gus, a precision micro cold gas thruster nozzle)",
     "log": [
+      {
+        "version": 7,
+        "change": "tuned the left thruster (used Gus, a precision micro cold gas thruster nozzle)",
+        "progress": 60,
+        "at": "2026-11-23T10:59:29.346Z"
+      },
       {
         "version": 6,
         "change": "mounting the lower port maneuvering thruster using a high-temp copper gasket and two micro bolts named Tok and Sprocket (used Pim, a perfectly good bolt)",
@@ -238,12 +244,6 @@
         "change": "mounting high-entropy silicate ceramic aerogel tiles onto the Little Dart's nose cone using Bolt (used Fen, a coil of copper wire) (used Fen, a tiny gyroscope)",
         "progress": 80,
         "at": "2026-11-22T00:24:20.885Z"
-      },
-      {
-        "version": 10,
-        "change": "riveting lightweight heat-dissipating panel struts onto the Little Dart's tail assembly using Dibs (used Wren, a sensor eye with one crack)",
-        "progress": 74,
-        "at": "2026-11-21T22:53:43.000Z"
       }
     ],
     "launched": [
@@ -3130,7 +3130,7 @@
         }
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Wren",
@@ -3162,6 +3162,12 @@
         "name": "Pim",
         "what": "a perfectly good bolt",
         "version": 6
+      },
+      {
+        "name": "Gus",
+        "what": "a precision micro cold gas thruster nozzle",
+        "custom": "rmwsntj7g",
+        "version": 7
       }
     ],
     "design": {
@@ -3764,12 +3770,6 @@
       "name": "Rusty Jr",
       "what": "a scorched heat tile",
       "at": "2026-11-23T07:20:10.304Z"
-    },
-    {
-      "name": "Gus",
-      "what": "a precision micro cold gas thruster nozzle",
-      "at": "2026-11-23T02:41:46.876Z",
-      "custom": "rmwsntj7g"
     }
   ],
   "reads": [

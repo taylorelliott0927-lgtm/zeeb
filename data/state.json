@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795477385485,
+  "lastTick": 1795477985789,
   "asleep": false,
   "place": "market",
-  "action": "buy_part",
-  "doing": "browsing the parts stalls at the market",
-  "actionStartedAt": "2026-11-23T23:43:05.485Z",
+  "action": "sell_scrap",
+  "doing": "haggling over scrap at the market",
+  "actionStartedAt": "2026-11-23T23:53:05.789Z",
   "actionMinutes": 25,
-  "thought": "Five credits burning a hole in my chassis! Let's see if this trader has any good wiring or thermal bits.",
-  "feeling": "excited and hopeful",
-  "say": "Hey there! Got five credits for something extra shiny, bweep!",
-  "mood": 0.488,
-  "energy": 0.459,
+  "thought": "Pim's got a tiny crack across the optic lens, but the inner wiring is solid! Some trader's bound to give me three credits for it *bweep*.",
+  "feeling": "crafty and hopeful",
+  "say": "Barely a scratch on the main glass! Still picks up ambient light real clear *bweep*!",
+  "mood": 0.451,
+  "energy": 0.374,
   "needs": {
-    "charge": 0.211,
-    "oil": 0.159,
-    "curiosity": 0.129,
+    "charge": 0.258,
+    "oil": 0.199,
+    "curiosity": 0.209,
     "company": 0,
-    "craft": 0.134
+    "craft": 0.201
   },
-  "credits": 2,
+  "credits": 4,
   "recent": [
+    {
+      "id": "sell_scrap",
+      "detail": "Pim (a sensor eye with one crack)",
+      "at": "2026-11-23T23:53:05.789Z"
+    },
     {
       "id": "buy_part",
       "detail": "any",
@@ -75,11 +80,6 @@
       "id": "test_flight",
       "detail": "Taking Little Dart Mk 24 up for a high-speed loop around the red mesa to test th",
       "at": "2026-11-23T22:03:41.448Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-23T21:53:41.399Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-23T23:43:05.485Z",
+  "lettersCheckedAt": "2026-11-23T23:53:05.789Z",
   "weather": {
     "kind": "clear",
     "temp": 18,
@@ -1651,44 +1651,39 @@
   "sleepDay": 92,
   "lastReflectDay": 92,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-23T23:43:05.485Z",
+  "updatedAt": "2026-11-23T23:53:05.789Z",
   "clock": {
     "day": 93,
-    "time": "09:45",
-    "hour": 9,
-    "minute": 45
+    "time": "11:06",
+    "hour": 11,
+    "minute": 6
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
   "streak": {
-    "action": "buy_part",
-    "since": "2026-11-23T23:43:05.485Z"
+    "action": "sell_scrap",
+    "since": "2026-11-23T23:53:05.789Z"
   },
-  "busyUntil": "2026-11-23T23:46:12.985Z",
-  "busyUntilTown": "10:10",
+  "busyUntil": "2026-11-23T23:56:13.289Z",
+  "busyUntilTown": "11:31",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "higgling with a scrap trader for a shiny new component",
+  "doingWords": "haggling over a cracked sensor eye at the market",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
     "lean_in",
-    "bounce"
+    "wiggle"
   ],
   "pops": {
-    "at": "2026-11-23T23:43:05.485Z",
+    "at": "2026-11-23T23:53:05.789Z",
     "items": [
       {
-        "text": "-3 credits",
-        "kind": "spend",
-        "at": "2026-11-23T23:43:05.485Z"
-      },
-      {
-        "text": "+ a sensor eye with one crack",
-        "kind": "part",
-        "at": "2026-11-23T23:43:05.485Z"
+        "text": "+2 credits",
+        "kind": "credits",
+        "at": "2026-11-23T23:53:05.789Z"
       }
     ]
   },
@@ -1699,6 +1694,10 @@
     "at": "2026-11-23T20:57:43.104Z"
   },
   "thoughts": [
+    {
+      "text": "Pim's got a tiny crack across the optic lens, but the inner wiring is solid! Some trader's bound to give me three credits for it *bweep*.",
+      "at": "2026-11-23T23:53:05.789Z"
+    },
     {
       "text": "Five credits burning a hole in my chassis! Let's see if this trader has any good wiring or thermal bits.",
       "at": "2026-11-23T23:43:05.485Z"
@@ -1718,13 +1717,9 @@
     {
       "text": "my oil is bugging me most right now.",
       "at": "2026-11-23T23:00:52.440Z"
-    },
-    {
-      "text": "just one more check on the steering linkage and then i can finally relax my joints. my brass dish is still humming a little tune from the wind.",
-      "at": "2026-11-23T22:50:52.332Z"
     }
   ],
-  "sayAt": "2026-11-23T23:43:05.485Z",
+  "sayAt": "2026-11-23T23:53:05.789Z",
   "today": {
     "day": 93,
     "counts": {
@@ -1733,7 +1728,8 @@
       "drink_oil": 1,
       "fix_job": 1,
       "scavenge": 1,
-      "buy_part": 1
+      "buy_part": 1,
+      "sell_scrap": 1
     }
   },
   "lastDone": {
@@ -1765,7 +1761,7 @@
     "build_friend": "2026-11-23T20:57:43.104Z",
     "reply_notes": "2026-11-14T19:46:45.041Z",
     "buy_part": "2026-11-23T23:43:05.485Z",
-    "sell_scrap": "2026-11-23T15:28:02.562Z"
+    "sell_scrap": "2026-11-23T23:53:05.789Z"
   },
   "puzzles": [
     {
@@ -1799,6 +1795,20 @@
     "at": "2026-11-23T20:47:42.928Z"
   },
   "said": [
+    {
+      "text": "Barely a scratch on the main glass! Still picks up ambient light real clear *bweep*!",
+      "kind": "say",
+      "at": "2026-11-23T23:53:05.789Z",
+      "town": "day 93 11:06",
+      "place": "the junk market"
+    },
+    {
+      "text": "Pim's got a tiny crack across the optic lens, but the inner wiring is solid! Some trader's bound to give me three credits for it *bweep*.",
+      "kind": "think",
+      "at": "2026-11-23T23:53:05.789Z",
+      "town": "day 93 11:06",
+      "place": "the junk market"
+    },
     {
       "text": "Hey there! Got five credits for something extra shiny, bweep!",
       "kind": "say",
@@ -2834,20 +2844,6 @@
       "at": "2026-11-23T04:37:35.755Z",
       "town": "day 87 01:02",
       "place": "the comms tower"
-    },
-    {
-      "text": "good plumbing is even more important when you are floating around like a loose bolt in a vacuum. the Little Dart will need a very compact recycling loop so I do not waste a single drop of coolant.",
-      "kind": "think",
-      "at": "2026-11-23T04:27:35.989Z",
-      "town": "day 86 23:42",
-      "place": "the comms tower"
-    },
-    {
-      "text": "i wonder if their capcom person ever gets tired of talking through a static hiss. my brass dish picks up enough chatter to know those flight directors are basically the conductors of a very loud orchestra.",
-      "kind": "think",
-      "at": "2026-11-23T04:17:35.953Z",
-      "town": "day 86 22:22",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2858,7 +2854,7 @@
     "at": "2026-11-23T22:03:41.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-23T23:43:05.485Z",
+  "feedArchivedAt": "2026-11-23T23:53:05.789Z",
   "plans": [],
   "searches": [
     {

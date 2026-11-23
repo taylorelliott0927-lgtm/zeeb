@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 24",
-    "progress": 84,
-    "version": 10,
-    "lastChange": "polished the nose cone (used Tilly, a coil of copper wire)",
+    "progress": 90,
+    "version": 11,
+    "lastChange": "riveted the secondary lateral stabilizing fins onto the aft fuselage using Pim, a sensor eye with one crack (used Wren, a scorched heat tile)",
     "log": [
+      {
+        "version": 11,
+        "change": "riveted the secondary lateral stabilizing fins onto the aft fuselage using Pim, a sensor eye with one crack (used Wren, a scorched heat tile)",
+        "progress": 90,
+        "at": "2026-11-23T18:08:21.005Z"
+      },
       {
         "version": 10,
         "change": "polished the nose cone (used Tilly, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "welding lightweight titanium engine mount brackets onto the rear hull section (used Pim, a perfectly good bolt)",
         "progress": 6,
         "at": "2026-11-22T02:55:02.647Z"
-      },
-      {
-        "version": 14,
-        "change": "securing structural ribs onto the Little Dart's aft section using Pim (a perfectly good bolt) (used Wren, a strip of hull plating)",
-        "progress": 100,
-        "at": "2026-11-22T01:24:33.392Z"
       }
     ],
     "launched": [
@@ -3130,7 +3130,7 @@
         }
       }
     ],
-    "partsUsed": 12,
+    "partsUsed": 13,
     "parts": [
       {
         "name": "Wren",
@@ -3183,6 +3183,11 @@
         "name": "Tilly",
         "what": "a coil of copper wire",
         "version": 10
+      },
+      {
+        "name": "Wren",
+        "what": "a scorched heat tile",
+        "version": 11
       }
     ],
     "design": {
@@ -3769,11 +3774,6 @@
     {
       "name": "Sprocket",
       "what": "a tiny gyroscope",
-      "at": "2026-11-23T08:16:05.470Z"
-    },
-    {
-      "name": "Wren",
-      "what": "a scorched heat tile",
       "at": "2026-11-23T08:16:05.470Z"
     }
   ],

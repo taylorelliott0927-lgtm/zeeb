@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795461259775,
+  "lastTick": 1795462334707,
   "asleep": false,
-  "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-23T19:14:19.775Z",
-  "actionMinutes": 40,
-  "thought": "my charge is bugging me most right now.",
-  "feeling": "pretty good actually",
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-23T19:32:14.707Z",
+  "actionMinutes": 20,
+  "thought": "my oil is bugging me most right now.",
+  "feeling": "okay, ticking along",
   "say": "",
-  "mood": 0.342,
-  "energy": 0.418,
+  "mood": 0.289,
+  "energy": 0.556,
   "needs": {
-    "charge": 0.017,
-    "oil": 0.16,
-    "curiosity": 0.1,
-    "company": 0.159,
-    "craft": 0.134
+    "charge": 0.101,
+    "oil": 0,
+    "curiosity": 0.243,
+    "company": 0.255,
+    "craft": 0.253
   },
-  "credits": 9,
+  "credits": 8,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-23T19:32:14.707Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "buy_part",
       "detail": "any",
       "at": "2026-11-23T17:38:20.523Z"
-    },
-    {
-      "id": "fix_job",
-      "detail": "soldering a cracked circuit board for a trader's sensor rack",
-      "at": "2026-11-23T17:28:20.898Z"
     }
   ],
   "wants": [
@@ -1639,33 +1639,33 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-23T19:14:19.775Z",
+  "lettersCheckedAt": "2026-11-23T19:32:14.707Z",
   "weather": {
     "kind": "clear",
-    "temp": 21,
+    "temp": 20,
     "wind": 8,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-23T18:44:20.263Z"
+    "at": "2026-11-23T19:32:14.869Z"
   },
   "sleepDay": 90,
   "lastReflectDay": 90,
   "brain": "rules",
-  "updatedAt": "2026-11-23T19:14:19.775Z",
+  "updatedAt": "2026-11-23T19:32:14.707Z",
   "clock": {
-    "day": 91,
-    "time": "21:55",
-    "hour": 21,
-    "minute": 55
+    "day": 92,
+    "time": "00:19",
+    "hour": 0,
+    "minute": 19
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-23T19:14:19.775Z"
+    "action": "drink_oil",
+    "since": "2026-11-23T19:32:14.707Z"
   },
-  "busyUntil": "2026-11-23T19:19:19.775Z",
-  "busyUntilTown": "22:35",
+  "busyUntil": "2026-11-23T19:34:44.707Z",
+  "busyUntilTown": "00:39",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
@@ -1675,22 +1675,26 @@
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [],
   "pops": {
-    "at": "2026-11-23T18:54:19.411Z",
+    "at": "2026-11-23T19:32:14.707Z",
     "items": [
       {
-        "text": "+2 credits",
-        "kind": "credits",
-        "at": "2026-11-23T18:54:19.411Z"
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-23T19:32:14.707Z"
       }
     ]
   },
   "event": {
-    "id": "emwtmk8b7",
-    "key": "tip",
-    "text": "Someone he fixed something for last week came back and tipped him.",
-    "at": "2026-11-23T18:54:19.411Z"
+    "id": "emwtnwzxv",
+    "key": "sand",
+    "text": "Sand got into his left elbow joint. Again.",
+    "at": "2026-11-23T19:32:14.707Z"
   },
   "thoughts": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "at": "2026-11-23T19:32:14.707Z"
+    },
     {
       "text": "my charge is bugging me most right now.",
       "at": "2026-11-23T19:14:19.775Z"
@@ -1710,31 +1714,19 @@
     {
       "text": "my oil is bugging me most right now.",
       "at": "2026-11-23T18:34:19.688Z"
-    },
-    {
-      "text": "that lieutenant rowan had grit, even if his antenna array was completely analog. i bet he would have made a cracking good pilot.",
-      "at": "2026-11-23T18:24:19.699Z"
     }
   ],
-  "sayAt": "2026-11-23T19:14:19.775Z",
+  "sayAt": "2026-11-23T19:32:14.707Z",
   "today": {
-    "day": 91,
+    "day": 92,
     "counts": {
-      "compose_tune": 2,
-      "browse_wire": 3,
-      "read_news": 3,
-      "drink_oil": 2,
-      "fix_job": 2,
-      "buy_part": 1,
-      "chat_patrons": 1,
-      "nap_dock": 2,
-      "work_dart": 1
+      "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-23T18:08:21.005Z",
     "read_news": "2026-11-23T19:04:19.505Z",
-    "drink_oil": "2026-11-23T18:34:19.688Z",
+    "drink_oil": "2026-11-23T19:32:14.707Z",
     "follow_link": "2026-11-23T15:48:02.383Z",
     "scavenge": "2026-11-23T08:16:05.470Z",
     "fix_job": "2026-11-23T18:44:20.201Z",
@@ -2853,7 +2845,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-23T19:14:19.775Z",
+  "feedArchivedAt": "2026-11-23T19:32:14.707Z",
   "plans": [],
   "searches": [
     {

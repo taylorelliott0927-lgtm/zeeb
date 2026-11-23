@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 24",
-    "progress": 60,
-    "version": 7,
-    "lastChange": "tuned the left thruster (used Gus, a precision micro cold gas thruster nozzle)",
+    "progress": 68,
+    "version": 8,
+    "lastChange": "wired the new differential amplifier board into the Little Dart's nose cone navigation feed (used Rusty Jr, a scorched heat tile)",
     "log": [
+      {
+        "version": 8,
+        "change": "wired the new differential amplifier board into the Little Dart's nose cone navigation feed (used Rusty Jr, a scorched heat tile)",
+        "progress": 68,
+        "at": "2026-11-23T12:22:20.388Z"
+      },
       {
         "version": 7,
         "change": "tuned the left thruster (used Gus, a precision micro cold gas thruster nozzle)",
@@ -238,12 +244,6 @@
         "change": "securing high-entropy silicate ceramic aerogel tiles around the lower bulkhead using Bolt (used Wren, a cracked navigation chip) (used Wren, a cracked navigation chip)",
         "progress": 87,
         "at": "2026-11-22T00:34:21.039Z"
-      },
-      {
-        "version": 11,
-        "change": "mounting high-entropy silicate ceramic aerogel tiles onto the Little Dart's nose cone using Bolt (used Fen, a coil of copper wire) (used Fen, a tiny gyroscope)",
-        "progress": 80,
-        "at": "2026-11-22T00:24:20.885Z"
       }
     ],
     "launched": [
@@ -3130,7 +3130,7 @@
         }
       }
     ],
-    "partsUsed": 9,
+    "partsUsed": 10,
     "parts": [
       {
         "name": "Wren",
@@ -3168,6 +3168,11 @@
         "what": "a precision micro cold gas thruster nozzle",
         "custom": "rmwsntj7g",
         "version": 7
+      },
+      {
+        "name": "Rusty Jr",
+        "what": "a scorched heat tile",
+        "version": 8
       }
     ],
     "design": {
@@ -3764,11 +3769,6 @@
     {
       "name": "Nim",
       "what": "a strip of hull plating",
-      "at": "2026-11-23T07:20:10.304Z"
-    },
-    {
-      "name": "Rusty Jr",
-      "what": "a scorched heat tile",
       "at": "2026-11-23T07:20:10.304Z"
     }
   ],

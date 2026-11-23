@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "Little Dart Mk 24",
-    "progress": 97,
-    "version": 12,
-    "lastChange": "soldered Tok, a tiny gyroscope, into the main attitude control circuit board inside the nose cone (used Sprocket, a tiny gyroscope)",
+    "name": "the Little Dart Mk 25",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 13,
+        "change": "riveted a titanium reinforced hull plate across the dorsal spine using Pim, a little landing strut, as a custom brace (used Pim, a sensor eye with one crack)",
+        "progress": 100,
+        "at": "2026-11-23T21:07:42.718Z"
+      },
       {
         "version": 12,
         "change": "soldered Tok, a tiny gyroscope, into the main attitude control circuit board inside the nose cone (used Sprocket, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "welding high-temperature silica tiles onto the Little Dart's nose cone using Otto, a perfectly good bolt (used Dibs, a coil of copper wire)",
         "progress": 15,
         "at": "2026-11-22T04:21:35.063Z"
-      },
-      {
-        "version": 2,
-        "change": "riveting lightweight carbon-composite outer panels onto the starboard fuselage flank (used Gus, a sturdy iron bolt)",
-        "progress": 9,
-        "at": "2026-11-22T03:05:02.673Z"
       }
     ],
     "launched": [
@@ -3128,400 +3128,412 @@
           "at": "2026-11-22T20:36:29.059Z",
           "day": 84
         }
-      }
-    ],
-    "partsUsed": 14,
-    "parts": [
-      {
-        "name": "Wren",
-        "what": "a coil of copper wire",
-        "version": 1
       },
       {
-        "name": "Gus",
-        "what": "a sensor eye with one crack",
-        "good": true,
-        "version": 2
-      },
-      {
-        "name": "Brakk",
-        "what": "a little landing strut",
-        "version": 3
-      },
-      {
-        "name": "Otto",
-        "what": "a coil of copper wire",
-        "version": 4
-      },
-      {
-        "name": "Sprocket",
-        "what": "a cockpit switch that still clicks",
-        "version": 5
-      },
-      {
-        "name": "Pim",
-        "what": "a perfectly good bolt",
-        "version": 6
-      },
-      {
-        "name": "Gus",
-        "what": "a precision micro cold gas thruster nozzle",
-        "custom": "rmwsntj7g",
-        "version": 7
-      },
-      {
-        "name": "Rusty Jr",
-        "what": "a scorched heat tile",
-        "version": 8
-      },
-      {
-        "name": "Nim",
-        "what": "a strip of hull plating",
-        "version": 9
-      },
-      {
-        "name": "Tilly",
-        "what": "a coil of copper wire",
-        "version": 10
-      },
-      {
-        "name": "Wren",
-        "what": "a scorched heat tile",
-        "version": 11
-      },
-      {
-        "name": "Sprocket",
-        "what": "a tiny gyroscope",
-        "version": 12
-      }
-    ],
-    "design": {
-      "description": "a sleek, needle-nosed hull with swept-back stub wings, coated in matte rust-orange primer and ready to chase the stars, bweep.",
-      "parts": [
-        {
-          "shape": "cylinder",
-          "w": 0.4,
-          "h": 3,
-          "d": 0.4,
-          "x": 0,
-          "y": 0.5,
-          "z": 0,
-          "color": "#c85a28",
-          "glow": 0,
-          "turn": "forward"
-        },
-        {
-          "shape": "cone",
-          "w": 0.4,
-          "h": 1.05,
-          "d": 0.4,
-          "x": 0,
-          "y": 0.5,
-          "z": 2.03,
-          "color": "#c85a28",
-          "glow": 0,
-          "turn": "forward"
-        },
-        {
-          "shape": "ball",
-          "w": 0.24,
-          "h": 0.2,
-          "d": 0.84,
-          "x": 0,
-          "y": 0.68,
-          "z": 0.52,
-          "color": "#8cd3ff",
-          "glow": 0.5,
-          "turn": "up"
-        },
-        {
-          "shape": "box",
-          "w": 1.05,
-          "h": 0.07,
-          "d": 0.96,
-          "x": -0.73,
-          "y": 0.42,
-          "z": -0.55,
-          "color": "#e6d7c3",
-          "glow": 0,
-          "turn": "up",
-          "rot": [
-            0,
-            25.463345061871614,
-            0
-          ]
-        },
-        {
-          "shape": "box",
-          "w": 0.06,
-          "h": 0.12,
-          "d": 0.48,
-          "x": -1.25,
-          "y": 0.44,
-          "z": -0.8,
-          "color": "#c85a28",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "box",
-          "w": 1.05,
-          "h": 0.07,
-          "d": 0.96,
-          "x": 0.73,
-          "y": 0.42,
-          "z": -0.55,
-          "color": "#e6d7c3",
-          "glow": 0,
-          "turn": "up",
-          "rot": [
-            0,
-            -25.463345061871614,
-            0
-          ]
-        },
-        {
-          "shape": "box",
-          "w": 0.06,
-          "h": 0.12,
-          "d": 0.48,
-          "x": 1.25,
-          "y": 0.44,
-          "z": -0.8,
-          "color": "#c85a28",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.32,
-          "h": 0.55,
-          "d": 0.32,
-          "x": -0.18,
-          "y": 0.5,
-          "z": -1.67,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "back"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.22,
-          "h": 0.06,
-          "d": 0.22,
-          "x": -0.18,
-          "y": 0.5,
-          "z": -1.98,
-          "color": "#ff9933",
-          "glow": 1,
-          "turn": "back"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.32,
-          "h": 0.55,
-          "d": 0.32,
-          "x": 0.18,
-          "y": 0.5,
-          "z": -1.67,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "back"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.22,
-          "h": 0.06,
-          "d": 0.22,
-          "x": 0.18,
-          "y": 0.5,
-          "z": -1.98,
-          "color": "#ff9933",
-          "glow": 1,
-          "turn": "back"
-        },
-        {
-          "shape": "box",
-          "w": 0.06,
-          "h": 0.45,
-          "d": 0.66,
-          "x": -0.14,
-          "y": 0.9,
-          "z": -1.12,
-          "color": "#e6d7c3",
-          "glow": 0,
-          "turn": "up",
-          "rot": [
-            0,
-            0,
-            -15
-          ]
-        },
-        {
-          "shape": "box",
-          "w": 0.06,
-          "h": 0.45,
-          "d": 0.66,
-          "x": 0.14,
-          "y": 0.9,
-          "z": -1.12,
-          "color": "#e6d7c3",
-          "glow": 0,
-          "turn": "up",
-          "rot": [
-            0,
-            0,
-            15
-          ]
-        },
-        {
-          "shape": "box",
-          "w": 0.42,
-          "h": 0.07,
-          "d": 2.1,
-          "x": 0,
-          "y": 0.5,
-          "z": 0,
-          "color": "#e6d7c3",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.03,
-          "h": 0.5,
-          "d": 0.03,
-          "x": 0.08,
-          "y": 0.95,
-          "z": -0.3,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "ball",
-          "w": 0.07,
-          "h": 0.07,
-          "d": 0.07,
-          "x": 0.08,
-          "y": 1.22,
-          "z": -0.3,
-          "color": "#ff4a3a",
-          "glow": 1,
-          "turn": "up"
-        },
-        {
-          "shape": "ball",
-          "w": 0.1,
-          "h": 0.1,
-          "d": 0.1,
-          "x": -1.25,
-          "y": 0.45,
-          "z": -0.3,
-          "color": "#ff4a3a",
-          "glow": 1,
-          "turn": "up"
-        },
-        {
-          "shape": "ball",
-          "w": 0.1,
-          "h": 0.1,
-          "d": 0.1,
-          "x": 1.25,
-          "y": 0.45,
-          "z": -0.3,
-          "color": "#4aff7a",
-          "glow": 1,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.05,
-          "h": 0.3,
-          "d": 0.05,
-          "x": -0.16,
-          "y": 0.15,
-          "z": 0.75,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.16,
-          "h": 0.04,
-          "d": 0.16,
-          "x": -0.16,
-          "y": 0.02,
-          "z": 0.75,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.05,
-          "h": 0.3,
-          "d": 0.05,
-          "x": 0.16,
-          "y": 0.15,
-          "z": 0.75,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.16,
-          "h": 0.04,
-          "d": 0.16,
-          "x": 0.16,
-          "y": 0.02,
-          "z": 0.75,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.05,
-          "h": 0.3,
-          "d": 0.05,
-          "x": 0,
-          "y": 0.15,
-          "z": -0.9,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.16,
-          "h": 0.04,
-          "d": 0.16,
-          "x": 0,
-          "y": 0.02,
-          "z": -0.9,
-          "color": "#3a3a42",
-          "glow": 0,
-          "turn": "up"
-        },
-        {
-          "shape": "cylinder",
-          "w": 0.2,
-          "h": 0.2,
-          "d": 0.2,
-          "x": 0,
-          "y": 0.5,
-          "z": 0,
-          "color": "#e6d7c3",
-          "glow": 0,
-          "turn": "up"
+        "name": "Little Dart Mk 24",
+        "day": 92,
+        "partsUsed": 15,
+        "parts": [
+          {
+            "name": "Wren",
+            "what": "a coil of copper wire",
+            "version": 1
+          },
+          {
+            "name": "Gus",
+            "what": "a sensor eye with one crack",
+            "good": true,
+            "version": 2
+          },
+          {
+            "name": "Brakk",
+            "what": "a little landing strut",
+            "version": 3
+          },
+          {
+            "name": "Otto",
+            "what": "a coil of copper wire",
+            "version": 4
+          },
+          {
+            "name": "Sprocket",
+            "what": "a cockpit switch that still clicks",
+            "version": 5
+          },
+          {
+            "name": "Pim",
+            "what": "a perfectly good bolt",
+            "version": 6
+          },
+          {
+            "name": "Gus",
+            "what": "a precision micro cold gas thruster nozzle",
+            "custom": "rmwsntj7g",
+            "version": 7
+          },
+          {
+            "name": "Rusty Jr",
+            "what": "a scorched heat tile",
+            "version": 8
+          },
+          {
+            "name": "Nim",
+            "what": "a strip of hull plating",
+            "version": 9
+          },
+          {
+            "name": "Tilly",
+            "what": "a coil of copper wire",
+            "version": 10
+          },
+          {
+            "name": "Wren",
+            "what": "a scorched heat tile",
+            "version": 11
+          },
+          {
+            "name": "Sprocket",
+            "what": "a tiny gyroscope",
+            "version": 12
+          },
+          {
+            "name": "Pim",
+            "what": "a sensor eye with one crack",
+            "version": 13
+          }
+        ],
+        "design": {
+          "description": "a sleek, needle-nosed hull with swept-back stub wings, coated in matte rust-orange primer and ready to chase the stars, bweep.",
+          "parts": [
+            {
+              "shape": "cylinder",
+              "w": 0.4,
+              "h": 3,
+              "d": 0.4,
+              "x": 0,
+              "y": 0.5,
+              "z": 0,
+              "color": "#c85a28",
+              "glow": 0,
+              "turn": "forward"
+            },
+            {
+              "shape": "cone",
+              "w": 0.4,
+              "h": 1.05,
+              "d": 0.4,
+              "x": 0,
+              "y": 0.5,
+              "z": 2.03,
+              "color": "#c85a28",
+              "glow": 0,
+              "turn": "forward"
+            },
+            {
+              "shape": "ball",
+              "w": 0.24,
+              "h": 0.2,
+              "d": 0.84,
+              "x": 0,
+              "y": 0.68,
+              "z": 0.52,
+              "color": "#8cd3ff",
+              "glow": 0.5,
+              "turn": "up"
+            },
+            {
+              "shape": "box",
+              "w": 1.05,
+              "h": 0.07,
+              "d": 0.96,
+              "x": -0.73,
+              "y": 0.42,
+              "z": -0.55,
+              "color": "#e6d7c3",
+              "glow": 0,
+              "turn": "up",
+              "rot": [
+                0,
+                25.463345061871614,
+                0
+              ]
+            },
+            {
+              "shape": "box",
+              "w": 0.06,
+              "h": 0.12,
+              "d": 0.48,
+              "x": -1.25,
+              "y": 0.44,
+              "z": -0.8,
+              "color": "#c85a28",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "box",
+              "w": 1.05,
+              "h": 0.07,
+              "d": 0.96,
+              "x": 0.73,
+              "y": 0.42,
+              "z": -0.55,
+              "color": "#e6d7c3",
+              "glow": 0,
+              "turn": "up",
+              "rot": [
+                0,
+                -25.463345061871614,
+                0
+              ]
+            },
+            {
+              "shape": "box",
+              "w": 0.06,
+              "h": 0.12,
+              "d": 0.48,
+              "x": 1.25,
+              "y": 0.44,
+              "z": -0.8,
+              "color": "#c85a28",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.32,
+              "h": 0.55,
+              "d": 0.32,
+              "x": -0.18,
+              "y": 0.5,
+              "z": -1.67,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "back"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.22,
+              "h": 0.06,
+              "d": 0.22,
+              "x": -0.18,
+              "y": 0.5,
+              "z": -1.98,
+              "color": "#ff9933",
+              "glow": 1,
+              "turn": "back"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.32,
+              "h": 0.55,
+              "d": 0.32,
+              "x": 0.18,
+              "y": 0.5,
+              "z": -1.67,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "back"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.22,
+              "h": 0.06,
+              "d": 0.22,
+              "x": 0.18,
+              "y": 0.5,
+              "z": -1.98,
+              "color": "#ff9933",
+              "glow": 1,
+              "turn": "back"
+            },
+            {
+              "shape": "box",
+              "w": 0.06,
+              "h": 0.45,
+              "d": 0.66,
+              "x": -0.14,
+              "y": 0.9,
+              "z": -1.12,
+              "color": "#e6d7c3",
+              "glow": 0,
+              "turn": "up",
+              "rot": [
+                0,
+                0,
+                -15
+              ]
+            },
+            {
+              "shape": "box",
+              "w": 0.06,
+              "h": 0.45,
+              "d": 0.66,
+              "x": 0.14,
+              "y": 0.9,
+              "z": -1.12,
+              "color": "#e6d7c3",
+              "glow": 0,
+              "turn": "up",
+              "rot": [
+                0,
+                0,
+                15
+              ]
+            },
+            {
+              "shape": "box",
+              "w": 0.42,
+              "h": 0.07,
+              "d": 2.1,
+              "x": 0,
+              "y": 0.5,
+              "z": 0,
+              "color": "#e6d7c3",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.03,
+              "h": 0.5,
+              "d": 0.03,
+              "x": 0.08,
+              "y": 0.95,
+              "z": -0.3,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "ball",
+              "w": 0.07,
+              "h": 0.07,
+              "d": 0.07,
+              "x": 0.08,
+              "y": 1.22,
+              "z": -0.3,
+              "color": "#ff4a3a",
+              "glow": 1,
+              "turn": "up"
+            },
+            {
+              "shape": "ball",
+              "w": 0.1,
+              "h": 0.1,
+              "d": 0.1,
+              "x": -1.25,
+              "y": 0.45,
+              "z": -0.3,
+              "color": "#ff4a3a",
+              "glow": 1,
+              "turn": "up"
+            },
+            {
+              "shape": "ball",
+              "w": 0.1,
+              "h": 0.1,
+              "d": 0.1,
+              "x": 1.25,
+              "y": 0.45,
+              "z": -0.3,
+              "color": "#4aff7a",
+              "glow": 1,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.05,
+              "h": 0.3,
+              "d": 0.05,
+              "x": -0.16,
+              "y": 0.15,
+              "z": 0.75,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.16,
+              "h": 0.04,
+              "d": 0.16,
+              "x": -0.16,
+              "y": 0.02,
+              "z": 0.75,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.05,
+              "h": 0.3,
+              "d": 0.05,
+              "x": 0.16,
+              "y": 0.15,
+              "z": 0.75,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.16,
+              "h": 0.04,
+              "d": 0.16,
+              "x": 0.16,
+              "y": 0.02,
+              "z": 0.75,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.05,
+              "h": 0.3,
+              "d": 0.05,
+              "x": 0,
+              "y": 0.15,
+              "z": -0.9,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.16,
+              "h": 0.04,
+              "d": 0.16,
+              "x": 0,
+              "y": 0.02,
+              "z": -0.9,
+              "color": "#3a3a42",
+              "glow": 0,
+              "turn": "up"
+            },
+            {
+              "shape": "cylinder",
+              "w": 0.2,
+              "h": 0.2,
+              "d": 0.2,
+              "x": 0,
+              "y": 0.5,
+              "z": 0,
+              "color": "#e6d7c3",
+              "glow": 0,
+              "turn": "up"
+            }
+          ],
+          "at": "2026-11-23T09:40:03.428Z",
+          "day": 88
         }
-      ],
-      "at": "2026-11-23T09:40:03.428Z",
-      "day": 88
-    }
+      }
+    ],
+    "partsUsed": 0,
+    "parts": [],
+    "design": null
   },
   "tunes": [
     {
@@ -3791,11 +3803,6 @@
       "name": "Pim",
       "what": "a little landing strut",
       "at": "2026-11-23T19:52:13.703Z"
-    },
-    {
-      "name": "Pim",
-      "what": "a sensor eye with one crack",
-      "at": "2026-11-23T17:38:20.523Z"
     }
   ],
   "reads": [

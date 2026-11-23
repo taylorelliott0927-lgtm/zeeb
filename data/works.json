@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 24",
-    "progress": 68,
-    "version": 8,
-    "lastChange": "wired the new differential amplifier board into the Little Dart's nose cone navigation feed (used Rusty Jr, a scorched heat tile)",
+    "progress": 76,
+    "version": 9,
+    "lastChange": "mounted the new military thermal sensor module into the Little Dart's nose cone navigation feed using Rusty Jr (a high-grade copper wire) and Bolt-seven (used Nim, a strip of hull plating)",
     "log": [
+      {
+        "version": 9,
+        "change": "mounted the new military thermal sensor module into the Little Dart's nose cone navigation feed using Rusty Jr (a high-grade copper wire) and Bolt-seven (used Nim, a strip of hull plating)",
+        "progress": 76,
+        "at": "2026-11-23T14:08:55.092Z"
+      },
       {
         "version": 8,
         "change": "wired the new differential amplifier board into the Little Dart's nose cone navigation feed (used Rusty Jr, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "securing high-entropy silicate ceramic aerogel tiles onto the upper fin using Fen (a coil of copper wire) (used Fen, a coil of copper wire)",
         "progress": 94,
         "at": "2026-11-22T00:44:20.338Z"
-      },
-      {
-        "version": 12,
-        "change": "securing high-entropy silicate ceramic aerogel tiles around the lower bulkhead using Bolt (used Wren, a cracked navigation chip) (used Wren, a cracked navigation chip)",
-        "progress": 87,
-        "at": "2026-11-22T00:34:21.039Z"
       }
     ],
     "launched": [
@@ -3130,7 +3130,7 @@
         }
       }
     ],
-    "partsUsed": 10,
+    "partsUsed": 11,
     "parts": [
       {
         "name": "Wren",
@@ -3173,6 +3173,11 @@
         "name": "Rusty Jr",
         "what": "a scorched heat tile",
         "version": 8
+      },
+      {
+        "name": "Nim",
+        "what": "a strip of hull plating",
+        "version": 9
       }
     ],
     "design": {
@@ -3765,11 +3770,6 @@
       "name": "Tilly",
       "what": "a coil of copper wire",
       "at": "2026-11-23T08:16:05.470Z"
-    },
-    {
-      "name": "Nim",
-      "what": "a strip of hull plating",
-      "at": "2026-11-23T07:20:10.304Z"
     }
   ],
   "reads": [

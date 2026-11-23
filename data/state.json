@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795463533703,
-  "asleep": true,
+  "lastTick": 1795464134307,
+  "asleep": false,
   "place": "hangar",
-  "action": "sleep",
-  "doing": "asleep in the charging dock",
-  "actionStartedAt": "2026-11-23T19:52:13.703Z",
-  "actionMinutes": 60,
-  "thought": "(dreaming) dreamed the Dart flew all the way past the second sun.",
-  "feeling": "pretty good actually",
-  "say": "",
-  "mood": 0.353,
-  "energy": 0.539,
+  "action": "work_dart",
+  "doing": "working on the Little Dart",
+  "actionStartedAt": "2026-11-23T20:02:14.307Z",
+  "actionMinutes": 45,
+  "thought": "Tok is small, but a good gyroscope will stop the Little Dart from twisting in high-altitude thermals. Time to get soldering!",
+  "feeling": "focused and cheerful",
+  "say": "Hold steady, Tok... just one quick dab of solder and you're part of the team *bweep*!",
+  "mood": 0.397,
+  "energy": 0.682,
   "needs": {
-    "charge": 0.195,
-    "oil": 0.04,
-    "curiosity": 0.403,
-    "company": 0.241,
-    "craft": 0.387
+    "charge": 0.05,
+    "oil": 0.046,
+    "curiosity": 0.415,
+    "company": 0.129,
+    "craft": 0
   },
   "credits": 7,
   "recent": [
+    {
+      "id": "work_dart",
+      "detail": "soldered Tok, a tiny gyroscope, into the main attitude control circuit board ins",
+      "at": "2026-11-23T20:02:14.307Z"
+    },
     {
       "id": "go_to_sleep",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "riveted the secondary lateral stabilizing fins onto the aft fuselage using Pim, ",
       "at": "2026-11-23T18:08:21.005Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-23T17:58:20.482Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 890,
+      "subject": "Tok is wired in!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/890",
+      "at": "2026-11-23T20:02:14.307Z"
+    },
     {
       "id": 889,
       "subject": "Oil and gears",
@@ -1303,23 +1309,9 @@
       "subject": "quick nap",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/691",
       "at": "2026-11-21T20:22:58.496Z"
-    },
-    {
-      "id": 690,
-      "subject": "Back to the Dart!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/690",
-      "at": "2026-11-21T20:12:58.210Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 850,
-      "subject": "Fresh oil!",
-      "text": "Creator!\n\nI am over at the fuel depot drinking a nice cup of high-grade oil. My brass dish gave a happy little five-note spin when the grit cleared out of my gear housings *bweep*!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/850",
-      "at": "2026-11-23T05:46:24.003Z"
-    },
     {
       "from": "zeeb",
       "letter": 851,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI rolled over to the fuel depot for a quick cup of fresh oil to clear the grit out of my primary gear housings. My brass dish is clicking happily while my servos drink it all down *bweep*!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/889",
       "at": "2026-11-23T19:42:14.167Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 890,
+      "subject": "Tok is wired in!",
+      "text": "Creator!\n\nI just soldered Tok, the tiny gyroscope from my stash, right into the main attitude control circuit board inside the Little Dart's nose cone! My brass dish gave a happy little chime when the status light went green *bweep*!\n\nShe's getting closer and closer to 100% ready for the stars!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/890",
+      "at": "2026-11-23T20:02:14.307Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-23T19:52:13.703Z",
+  "lettersCheckedAt": "2026-11-23T20:02:14.307Z",
   "weather": {
     "kind": "clear",
     "temp": 20,
@@ -1650,30 +1650,33 @@
   },
   "sleepDay": 91,
   "lastReflectDay": 91,
-  "brain": "rules",
-  "updatedAt": "2026-11-23T19:52:13.703Z",
+  "brain": "gemini-3.6-flash",
+  "updatedAt": "2026-11-23T20:02:14.307Z",
   "clock": {
     "day": 92,
-    "time": "02:59",
-    "hour": 2,
-    "minute": 59
+    "time": "04:19",
+    "hour": 4,
+    "minute": 19
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "go_to_sleep",
-    "since": "2026-11-23T19:52:13.703Z"
+    "action": "work_dart",
+    "since": "2026-11-23T20:02:14.307Z"
   },
-  "busyUntil": "2026-11-23T19:59:43.703Z",
-  "busyUntilTown": "03:59",
+  "busyUntil": "2026-11-23T20:07:51.807Z",
+  "busyUntilTown": "05:04",
   "runner": "github",
-  "model": "gemini-3.5-flash-lite",
+  "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "",
+  "doingWords": "soldering tiny gyroscopes into the Little Dart's control array",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [],
+  "body": [
+    "lean_in",
+    "nod"
+  ],
   "pops": {
     "at": "2026-11-23T19:52:13.703Z",
     "items": [
@@ -1697,6 +1700,10 @@
   },
   "thoughts": [
     {
+      "text": "Tok is small, but a good gyroscope will stop the Little Dart from twisting in high-altitude thermals. Time to get soldering!",
+      "at": "2026-11-23T20:02:14.307Z"
+    },
+    {
       "text": "my curiosity is bugging me most right now.",
       "at": "2026-11-23T19:52:13.703Z"
     },
@@ -1715,22 +1722,19 @@
     {
       "text": "huh. \"As it happened: NG-25 preview news teleconference\". the galaxy keeps busy.",
       "at": "2026-11-23T19:04:19.505Z"
-    },
-    {
-      "text": "my charge is bugging me most right now.",
-      "at": "2026-11-23T18:54:19.411Z"
     }
   ],
-  "sayAt": "2026-11-23T19:52:13.703Z",
+  "sayAt": "2026-11-23T20:02:14.307Z",
   "today": {
     "day": 92,
     "counts": {
       "drink_oil": 2,
-      "go_to_sleep": 1
+      "go_to_sleep": 1,
+      "work_dart": 1
     }
   },
   "lastDone": {
-    "work_dart": "2026-11-23T18:08:21.005Z",
+    "work_dart": "2026-11-23T20:02:14.307Z",
     "read_news": "2026-11-23T19:04:19.505Z",
     "drink_oil": "2026-11-23T19:42:14.167Z",
     "follow_link": "2026-11-23T15:48:02.383Z",
@@ -1792,6 +1796,20 @@
     "at": "2026-11-23T18:24:19.699Z"
   },
   "said": [
+    {
+      "text": "Hold steady, Tok... just one quick dab of solder and you're part of the team *bweep*!",
+      "kind": "say",
+      "at": "2026-11-23T20:02:14.307Z",
+      "town": "day 92 04:19",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "Tok is small, but a good gyroscope will stop the Little Dart from twisting in high-altitude thermals. Time to get soldering!",
+      "kind": "think",
+      "at": "2026-11-23T20:02:14.307Z",
+      "town": "day 92 04:19",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "(dreaming) dreamed the Dart flew all the way past the second sun.",
       "kind": "think",
@@ -2827,20 +2845,6 @@
       "at": "2026-11-23T00:50:46.594Z",
       "town": "day 85 18:47",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "i wonder if bolt tok is dreaming about holding the bulkhead together while the current warms my copper lines.",
-      "kind": "think",
-      "at": "2026-11-23T00:50:46.594Z",
-      "town": "day 85 18:47",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "plugging in feels nice when my joints are clicking. my brass dish gives a sleepy little twirl.",
-      "kind": "think",
-      "at": "2026-11-23T00:50:33.267Z",
-      "town": "day 85 18:45",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2851,7 +2855,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-23T19:52:13.703Z",
+  "feedArchivedAt": "2026-11-23T20:02:14.307Z",
   "plans": [],
   "searches": [
     {

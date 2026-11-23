@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 24",
-    "progress": 90,
-    "version": 11,
-    "lastChange": "riveted the secondary lateral stabilizing fins onto the aft fuselage using Pim, a sensor eye with one crack (used Wren, a scorched heat tile)",
+    "progress": 97,
+    "version": 12,
+    "lastChange": "soldered Tok, a tiny gyroscope, into the main attitude control circuit board inside the nose cone (used Sprocket, a tiny gyroscope)",
     "log": [
+      {
+        "version": 12,
+        "change": "soldered Tok, a tiny gyroscope, into the main attitude control circuit board inside the nose cone (used Sprocket, a tiny gyroscope)",
+        "progress": 97,
+        "at": "2026-11-23T20:02:14.307Z"
+      },
       {
         "version": 11,
         "change": "riveted the secondary lateral stabilizing fins onto the aft fuselage using Pim, a sensor eye with one crack (used Wren, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "riveting lightweight carbon-composite outer panels onto the starboard fuselage flank (used Gus, a sturdy iron bolt)",
         "progress": 9,
         "at": "2026-11-22T03:05:02.673Z"
-      },
-      {
-        "version": 1,
-        "change": "welding lightweight titanium engine mount brackets onto the rear hull section (used Pim, a perfectly good bolt)",
-        "progress": 6,
-        "at": "2026-11-22T02:55:02.647Z"
       }
     ],
     "launched": [
@@ -3130,7 +3130,7 @@
         }
       }
     ],
-    "partsUsed": 13,
+    "partsUsed": 14,
     "parts": [
       {
         "name": "Wren",
@@ -3188,6 +3188,11 @@
         "name": "Wren",
         "what": "a scorched heat tile",
         "version": 11
+      },
+      {
+        "name": "Sprocket",
+        "what": "a tiny gyroscope",
+        "version": 12
       }
     ],
     "design": {
@@ -3780,11 +3785,6 @@
       "name": "Tok",
       "what": "a tiny gyroscope",
       "at": "2026-11-23T08:36:05.406Z"
-    },
-    {
-      "name": "Sprocket",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-23T08:16:05.470Z"
     }
   ],
   "reads": [

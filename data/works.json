@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 24",
-    "progress": 35,
-    "version": 4,
-    "lastChange": "mounting the lower port stabilizer fin using a precision bolt named Pim and sealing the bracket (used Otto, a coil of copper wire)",
+    "progress": 42,
+    "version": 5,
+    "lastChange": "welding the upper intake manifold to the core frame using a high-temp silica tile bracket and sealing the seams (used Sprocket, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 5,
+        "change": "welding the upper intake manifold to the core frame using a high-temp silica tile bracket and sealing the seams (used Sprocket, a cockpit switch that still clicks)",
+        "progress": 42,
+        "at": "2026-11-23T07:20:10.304Z"
+      },
       {
         "version": 4,
         "change": "mounting the lower port stabilizer fin using a precision bolt named Pim and sealing the bracket (used Otto, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "riveting lightweight heat-dissipating panel struts onto the Little Dart's tail assembly using Dibs (used Dibs, a perfectly good bolt)",
         "progress": 65,
         "at": "2026-11-21T22:43:43.163Z"
-      },
-      {
-        "version": 8,
-        "change": "riveting high-temperature silica ceramic tiles onto the Little Dart's aft service hatch using Dibs (a perfectly good bolt) (used Bix, a bent stabiliser fin)",
-        "progress": 55,
-        "at": "2026-11-21T21:53:29.379Z"
       }
     ],
     "launched": [
@@ -3130,7 +3130,7 @@
         }
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Wren",
@@ -3152,6 +3152,11 @@
         "name": "Otto",
         "what": "a coil of copper wire",
         "version": 4
+      },
+      {
+        "name": "Sprocket",
+        "what": "a cockpit switch that still clicks",
+        "version": 5
       }
     ],
     "design": {
@@ -3704,6 +3709,16 @@
   ],
   "stash": [
     {
+      "name": "Nim",
+      "what": "a strip of hull plating",
+      "at": "2026-11-23T07:20:10.304Z"
+    },
+    {
+      "name": "Rusty Jr",
+      "what": "a scorched heat tile",
+      "at": "2026-11-23T07:20:10.304Z"
+    },
+    {
       "name": "Gus",
       "what": "a precision micro cold gas thruster nozzle",
       "at": "2026-11-23T02:41:46.876Z",
@@ -3712,11 +3727,6 @@
     {
       "name": "Pim",
       "what": "a perfectly good bolt",
-      "at": "2026-11-23T02:21:47.254Z"
-    },
-    {
-      "name": "Sprocket",
-      "what": "a cockpit switch that still clicks",
       "at": "2026-11-23T02:21:47.254Z"
     }
   ],

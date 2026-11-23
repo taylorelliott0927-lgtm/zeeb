@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795445935101,
+  "lastTick": 1795447083244,
   "asleep": false,
   "place": "market",
-  "action": "fix_job",
-  "doing": "doing a repair job at the market",
-  "actionStartedAt": "2026-11-23T14:58:55.101Z",
-  "actionMinutes": 45,
-  "thought": "A quick repair job will get some shine back in my pocket. Plus, fixing broken stuff is my specialty!",
-  "feeling": "eager and helpful",
-  "say": "Time to put these trusty wrenches to work!",
-  "mood": 0.35,
-  "energy": 0.197,
+  "action": "buy_part",
+  "doing": "browsing the parts stalls at the market",
+  "actionStartedAt": "2026-11-23T15:18:03.244Z",
+  "actionMinutes": 30,
+  "thought": "Five fresh credits in my pouch from fixing that pump! Time to see if any trader here has useful wire or thermal gear.",
+  "feeling": "eager and hopeful",
+  "say": "Got anything with good thermal tolerance in these bins, trader? *bweep*",
+  "mood": 0.347,
+  "energy": 0.08,
   "needs": {
-    "charge": 0.26,
-    "oil": 0.432,
-    "curiosity": 0.212,
-    "company": 0,
-    "craft": 0.068
+    "charge": 0.349,
+    "oil": 0.509,
+    "curiosity": 0.265,
+    "company": 0.102,
+    "craft": 0.196
   },
-  "credits": 5,
+  "credits": 0,
   "recent": [
+    {
+      "id": "buy_part",
+      "detail": "any",
+      "at": "2026-11-23T15:18:03.244Z"
+    },
     {
       "id": "fix_job",
       "detail": "Fixing a jammed micro-actuator on a trader's moisture vaporator pump.",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-23T12:51:00.153Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-23T12:41:00.220Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-23T14:58:55.101Z",
+  "lettersCheckedAt": "2026-11-23T15:18:03.244Z",
   "weather": {
     "kind": "clear",
     "temp": 25,
@@ -1651,39 +1651,44 @@
   "sleepDay": 89,
   "lastReflectDay": 89,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-23T14:58:55.101Z",
+  "updatedAt": "2026-11-23T15:18:03.244Z",
   "clock": {
     "day": 90,
-    "time": "11:52",
-    "hour": 11,
-    "minute": 52
+    "time": "14:25",
+    "hour": 14,
+    "minute": 25
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
   "streak": {
-    "action": "fix_job",
-    "since": "2026-11-23T14:58:55.101Z"
+    "action": "buy_part",
+    "since": "2026-11-23T15:18:03.244Z"
   },
-  "busyUntil": "2026-11-23T15:04:32.601Z",
-  "busyUntilTown": "12:37",
+  "busyUntil": "2026-11-23T15:21:48.244Z",
+  "busyUntilTown": "14:55",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "heading over to the junk market to take on a repair job",
-  "newsForCreator": "",
-  "newsPendingTicks": 0,
+  "doingWords": "poking around market stalls for shiny starship bits",
+  "newsForCreator": "You've become totally obsessed with scrap parts.",
+  "newsPendingTicks": 1,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "bounce",
-    "zoom"
+    "lean_in",
+    "look_up"
   ],
   "pops": {
-    "at": "2026-11-23T14:58:55.101Z",
+    "at": "2026-11-23T15:18:03.244Z",
     "items": [
       {
-        "text": "+5 credits",
-        "kind": "credits",
-        "at": "2026-11-23T14:58:55.101Z"
+        "text": "-5 credits",
+        "kind": "spend",
+        "at": "2026-11-23T15:18:03.244Z"
+      },
+      {
+        "text": "+ a cracked navigation chip",
+        "kind": "part",
+        "at": "2026-11-23T15:18:03.244Z"
       }
     ]
   },
@@ -1694,6 +1699,10 @@
     "at": "2026-11-23T11:32:21.059Z"
   },
   "thoughts": [
+    {
+      "text": "Five fresh credits in my pouch from fixing that pump! Time to see if any trader here has useful wire or thermal gear.",
+      "at": "2026-11-23T15:18:03.244Z"
+    },
     {
       "text": "A quick repair job will get some shine back in my pocket. Plus, fixing broken stuff is my specialty!",
       "at": "2026-11-23T14:58:55.101Z"
@@ -1713,13 +1722,9 @@
     {
       "text": "i wonder if this five-note sequence sounds like a real starship engine revving up for orbit. my brass dish is practically humming by itself.",
       "at": "2026-11-23T14:18:55.189Z"
-    },
-    {
-      "text": "the Little Dart is looking more like a proper starship every time I pick up a wrench. I just need to make sure these sensor brackets don't rattle loose during the next test flight.",
-      "at": "2026-11-23T14:08:55.092Z"
     }
   ],
-  "sayAt": "2026-11-23T14:58:55.101Z",
+  "sayAt": "2026-11-23T15:18:03.244Z",
   "today": {
     "day": 90,
     "counts": {
@@ -1728,7 +1733,8 @@
       "compose_tune": 1,
       "browse_wire": 2,
       "nap_dock": 1,
-      "fix_job": 1
+      "fix_job": 1,
+      "buy_part": 1
     }
   },
   "lastDone": {
@@ -1759,10 +1765,15 @@
     "start_friend": "2026-11-14T11:54:58.335Z",
     "build_friend": "2026-11-21T19:22:36.440Z",
     "reply_notes": "2026-11-14T19:46:45.041Z",
-    "buy_part": "2026-11-22T21:26:45.440Z",
+    "buy_part": "2026-11-23T15:18:03.244Z",
     "sell_scrap": "2026-11-22T08:56:52.003Z"
   },
   "puzzles": [
+    {
+      "id": "q11",
+      "text": "how to hook up old military thermal sensors to my navigation display without signal bleed",
+      "at": "2026-11-23T15:18:03.244Z"
+    },
     {
       "id": "q6",
       "text": "q8: how to hook up old military thermal sensors to my navigation display",
@@ -1782,15 +1793,24 @@
       "id": "q10",
       "text": "q7",
       "at": "2026-11-23T10:00:03.449Z"
-    },
-    {
-      "id": "q7",
-      "text": "q8: how to apply silicone sealant cleanly without getting grit in the joints during a dust drift",
-      "at": "2026-11-23T09:50:03.736Z"
     }
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "Got anything with good thermal tolerance in these bins, trader? *bweep*",
+      "kind": "say",
+      "at": "2026-11-23T15:18:03.244Z",
+      "town": "day 90 14:25",
+      "place": "the junk market"
+    },
+    {
+      "text": "Five fresh credits in my pouch from fixing that pump! Time to see if any trader here has useful wire or thermal gear.",
+      "kind": "think",
+      "at": "2026-11-23T15:18:03.244Z",
+      "town": "day 90 14:25",
+      "place": "the junk market"
+    },
     {
       "text": "Time to put these trusty wrenches to work!",
       "kind": "say",
@@ -2826,20 +2846,6 @@
       "at": "2026-11-22T22:16:58.616Z",
       "town": "day 84 22:17",
       "place": "the fuel depot"
-    },
-    {
-      "text": "fresh oil makes all the difference when you have joints to grease and starships to build. my brass dish gives a happy little click.",
-      "kind": "think",
-      "at": "2026-11-22T22:16:58.616Z",
-      "town": "day 84 22:17",
-      "place": "the fuel depot"
-    },
-    {
-      "text": "fill her up with the good blend, please!",
-      "kind": "say",
-      "at": "2026-11-22T22:06:58.431Z",
-      "town": "day 84 20:57",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2850,7 +2856,7 @@
     "at": "2026-11-20T02:34:07.517Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-23T14:58:55.101Z",
+  "feedArchivedAt": "2026-11-23T15:18:03.244Z",
   "plans": [],
   "searches": [
     {

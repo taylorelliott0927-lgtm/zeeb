@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 24",
-    "progress": 10,
-    "version": 1,
-    "lastChange": "welding the upper titanium cowl plates onto the Little Dart's fuselage using bolt Pim (used Wren, a coil of copper wire)",
+    "progress": 20,
+    "version": 2,
+    "lastChange": "installing the compact single-pilot oxygen scrubber module into the Little Dart's fuselage using Otto, a coil of copper wire (used Gus, a sensor eye with one crack)",
     "log": [
+      {
+        "version": 2,
+        "change": "installing the compact single-pilot oxygen scrubber module into the Little Dart's fuselage using Otto, a coil of copper wire (used Gus, a sensor eye with one crack)",
+        "progress": 20,
+        "at": "2026-11-23T05:16:24.277Z"
+      },
       {
         "version": 1,
         "change": "welding the upper titanium cowl plates onto the Little Dart's fuselage using bolt Pim (used Wren, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "riveting high-temperature silica tiles onto the Little Dart's nose cone using Dibs (a perfectly good bolt) (used Lorna, a perfectly good bolt)",
         "progress": 41,
         "at": "2026-11-21T21:33:12.667Z"
-      },
-      {
-        "version": 5,
-        "change": "welding custom titanium reinforcement brackets inside the Little Dart's nose cone using Gus (a heavy-duty socket wrench)",
-        "progress": 34,
-        "at": "2026-11-21T20:12:58.210Z"
       }
     ],
     "launched": [
@@ -3130,12 +3130,18 @@
         }
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Wren",
         "what": "a coil of copper wire",
         "version": 1
+      },
+      {
+        "name": "Gus",
+        "what": "a sensor eye with one crack",
+        "good": true,
+        "version": 2
       }
     ],
     "design": {
@@ -3712,12 +3718,6 @@
       "name": "Brakk",
       "what": "a little landing strut",
       "at": "2026-11-23T01:20:45.903Z"
-    },
-    {
-      "name": "Gus",
-      "what": "a sensor eye with one crack",
-      "at": "2026-11-22T21:26:45.440Z",
-      "good": true
     }
   ],
   "reads": [

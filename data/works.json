@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 26",
-    "progress": 27,
-    "version": 4,
-    "lastChange": "attaching signal bleed isolation brackets to the thermal sensor harness for Little Dart Mk 26",
+    "progress": 37,
+    "version": 5,
+    "lastChange": "aligning thermal sensor leads and securing the dorsal frame for Little Dart Mk 26 (used Sprocket, a scorched heat tile)",
     "log": [
+      {
+        "version": 5,
+        "change": "aligning thermal sensor leads and securing the dorsal frame for Little Dart Mk 26 (used Sprocket, a scorched heat tile)",
+        "progress": 37,
+        "at": "2026-11-24T12:32:23.058Z"
+      },
       {
         "version": 4,
         "change": "attaching signal bleed isolation brackets to the thermal sensor harness for Little Dart Mk 26",
@@ -238,12 +244,6 @@
         "change": "securing high-temp silica tiles onto the Little Dart's nose cone using sturdy little brass nuts (used Wren, a sensor eye with one crack)",
         "progress": 45,
         "at": "2026-11-22T19:56:28.764Z"
-      },
-      {
-        "version": 5,
-        "change": "wiring Sprocket, the cockpit switch that still clicks, into the main instrument panel for emergency subsystem cutoffs (used Sprocket, a cockpit switch that still clicks)",
-        "progress": 39,
-        "at": "2026-11-22T18:35:50.486Z"
       }
     ],
     "launched": [
@@ -3605,7 +3605,7 @@
         ]
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 4,
     "parts": [
       {
         "name": "Nim",
@@ -3621,6 +3621,11 @@
         "name": "Sprocket",
         "what": "a little landing strut",
         "version": 3
+      },
+      {
+        "name": "Sprocket",
+        "what": "a scorched heat tile",
+        "version": 5
       }
     ],
     "design": null
@@ -3877,11 +3882,6 @@
       "name": "Brakk",
       "what": "a mystery box that hums",
       "at": "2026-11-24T11:42:23.693Z"
-    },
-    {
-      "name": "Sprocket",
-      "what": "a scorched heat tile",
-      "at": "2026-11-24T11:31:09.939Z"
     }
   ],
   "reads": [

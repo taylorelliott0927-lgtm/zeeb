@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 26",
-    "progress": 16,
-    "version": 2,
-    "lastChange": "installing heavy-duty blinker relays into the Little Dart Mk 26 navigation array (used Dibs, a tiny gyroscope)",
+    "progress": 23,
+    "version": 3,
+    "lastChange": "soldering the pure copper wire and blinker relays into the Little Dart Mk 26 navigation array (used Sprocket, a little landing strut)",
     "log": [
+      {
+        "version": 3,
+        "change": "soldering the pure copper wire and blinker relays into the Little Dart Mk 26 navigation array (used Sprocket, a little landing strut)",
+        "progress": 23,
+        "at": "2026-11-24T10:16:06.218Z"
+      },
       {
         "version": 2,
         "change": "installing heavy-duty blinker relays into the Little Dart Mk 26 navigation array (used Dibs, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "welding the fuel line shielding using Rusty Jr, the cracked navigation chip, to route internal power safely (used Fen, a sensor eye with one crack)",
         "progress": 29,
         "at": "2026-11-22T16:55:19.182Z"
-      },
-      {
-        "version": 3,
-        "change": "welding the upper structural longerons using Sprocket, the clicking cockpit switch, to reinforce the main fuselage frame (used Tok, a perfectly good bolt)",
-        "progress": 23,
-        "at": "2026-11-22T16:45:18.628Z"
       }
     ],
     "launched": [
@@ -3605,7 +3605,7 @@
         ]
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Nim",
@@ -3616,6 +3616,11 @@
         "name": "Dibs",
         "what": "a tiny gyroscope",
         "version": 2
+      },
+      {
+        "name": "Sprocket",
+        "what": "a little landing strut",
+        "version": 3
       }
     ],
     "design": null
@@ -3862,13 +3867,7 @@
       "at": "2026-11-14T05:55:46.603Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Sprocket",
-      "what": "a little landing strut",
-      "at": "2026-11-24T03:22:27.013Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Amazon.com : blinker relay",

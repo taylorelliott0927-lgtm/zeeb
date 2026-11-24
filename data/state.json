@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795541264068,
+  "lastTick": 1795541520054,
   "asleep": false,
-  "place": "hangar",
-  "action": "compose_tune",
-  "doing": "beeping out a new tune",
-  "actionStartedAt": "2026-11-24T17:27:44.068Z",
-  "actionMinutes": 35,
+  "place": "market",
+  "action": "sell_scrap",
+  "doing": "haggling over scrap at the market",
+  "actionStartedAt": "2026-11-24T17:32:00.054Z",
+  "actionMinutes": 25,
   "thought": "my charge is bugging me most right now.",
   "feeling": "pretty good actually",
   "say": "",
-  "mood": 0.444,
-  "energy": 0.361,
+  "mood": 0.465,
+  "energy": 0.313,
   "needs": {
-    "charge": 0.285,
-    "oil": 0.16,
-    "curiosity": 0.124,
-    "company": 0.168,
-    "craft": 0
+    "charge": 0.305,
+    "oil": 0.177,
+    "curiosity": 0.158,
+    "company": 0.091,
+    "craft": 0.028
   },
-  "credits": 5,
+  "credits": 9,
   "recent": [
+    {
+      "id": "sell_scrap",
+      "detail": "",
+      "at": "2026-11-24T17:32:00.054Z"
+    },
     {
       "id": "compose_tune",
       "detail": "dust ripple",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "how jet engines work",
       "at": "2026-11-24T15:34:42.071Z"
-    },
-    {
-      "id": "chat_patrons",
-      "detail": "Barnaby and the scrap haulers at the counter, asking about dune salvage and stra",
-      "at": "2026-11-24T15:24:41.932Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T17:27:44.068Z",
+  "lettersCheckedAt": "2026-11-24T17:32:00.054Z",
   "weather": {
     "kind": "clear",
     "temp": 22,
@@ -1651,21 +1651,21 @@
   "sleepDay": 98,
   "lastReflectDay": 98,
   "brain": "rules",
-  "updatedAt": "2026-11-24T17:27:44.068Z",
+  "updatedAt": "2026-11-24T17:32:00.054Z",
   "clock": {
     "day": 99,
-    "time": "07:43",
-    "hour": 7,
-    "minute": 43
+    "time": "08:17",
+    "hour": 8,
+    "minute": 17
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the junk market",
   "streak": {
-    "action": "compose_tune",
-    "since": "2026-11-24T17:27:44.068Z"
+    "action": "sell_scrap",
+    "since": "2026-11-24T17:32:00.054Z"
   },
-  "busyUntil": "2026-11-24T17:32:06.568Z",
-  "busyUntilTown": "08:18",
+  "busyUntil": "2026-11-24T17:35:07.554Z",
+  "busyUntilTown": "08:42",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
@@ -1675,22 +1675,36 @@
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [],
   "pops": {
-    "at": "2026-11-24T16:47:43.915Z",
+    "at": "2026-11-24T17:32:00.054Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-24T16:47:43.915Z"
+        "text": "+ a mystery box that hums",
+        "kind": "part",
+        "at": "2026-11-24T17:32:00.054Z"
+      },
+      {
+        "text": "+ a cracked navigation chip",
+        "kind": "part",
+        "at": "2026-11-24T17:32:00.054Z"
+      },
+      {
+        "text": "+4 credits",
+        "kind": "credits",
+        "at": "2026-11-24T17:32:00.054Z"
       }
     ]
   },
   "event": {
-    "id": "emwuy70dw",
-    "key": "kids",
-    "text": "Some kids at the market waved at him.",
-    "at": "2026-11-24T17:07:44.180Z"
+    "id": "emwuz27qu",
+    "key": "scrap_box",
+    "text": "A trader left a box of free scrap outside the hangar.",
+    "at": "2026-11-24T17:32:00.054Z"
   },
   "thoughts": [
+    {
+      "text": "my charge is bugging me most right now.",
+      "at": "2026-11-24T17:32:00.054Z"
+    },
     {
       "text": "my charge is bugging me most right now.",
       "at": "2026-11-24T17:27:44.068Z"
@@ -1710,13 +1724,9 @@
     {
       "text": "my oil is bugging me most right now.",
       "at": "2026-11-24T16:47:43.915Z"
-    },
-    {
-      "text": "charging up at the dock gets my battery back to full so I can keep building the Little Dart. *bweep*",
-      "at": "2026-11-24T16:37:44.550Z"
     }
   ],
-  "sayAt": "2026-11-24T17:27:44.068Z",
+  "sayAt": "2026-11-24T17:32:00.054Z",
   "today": {
     "day": 99,
     "counts": {
@@ -1725,7 +1735,8 @@
       "work_dart": 1,
       "follow_link": 1,
       "read_news": 1,
-      "compose_tune": 1
+      "compose_tune": 1,
+      "sell_scrap": 1
     }
   },
   "lastDone": {
@@ -1757,7 +1768,7 @@
     "build_friend": "2026-11-23T20:57:43.104Z",
     "reply_notes": "2026-11-14T19:46:45.041Z",
     "buy_part": "2026-11-24T11:42:23.693Z",
-    "sell_scrap": "2026-11-23T23:53:05.789Z"
+    "sell_scrap": "2026-11-24T17:32:00.054Z"
   },
   "puzzles": [
     {
@@ -2847,7 +2858,7 @@
     "at": "2026-11-24T07:58:09.714Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T17:27:44.068Z",
+  "feedArchivedAt": "2026-11-24T17:32:00.054Z",
   "plans": [],
   "searches": [
     {

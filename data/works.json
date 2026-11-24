@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 25",
-    "progress": 93,
-    "version": 12,
-    "lastChange": "mounting Captain (a dented fuel cell) into the auxiliary fuel bay with heavy-duty brackets (used Captain, a little landing strut)",
+    "name": "the Little Dart Mk 26",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 13,
+        "change": "routing copper wire Rusty Jr. from the primary console to the auxiliary fuel bay with precision solder joints (used Captain, a dented fuel cell)",
+        "progress": 100,
+        "at": "2026-11-24T07:08:10.088Z"
+      },
       {
         "version": 12,
         "change": "mounting Captain (a dented fuel cell) into the auxiliary fuel bay with heavy-duty brackets (used Captain, a little landing strut)",
@@ -238,12 +244,6 @@
         "change": "welding the radiator coolant return lines to the main frame using Rusty Jr, the cockpit switch",
         "progress": 4,
         "at": "2026-11-22T14:33:17.449Z"
-      },
-      {
-        "version": 15,
-        "change": "connected the radiative cooling plate manifold using Rusty Jr, the cockpit switch, to route thermal fluid lines securely. (used Mabel, a perfectly good bolt)",
-        "progress": 100,
-        "at": "2026-11-22T14:23:18.035Z"
       }
     ],
     "launched": [
@@ -3529,73 +3529,84 @@
           "at": "2026-11-23T09:40:03.428Z",
           "day": 88
         }
+      },
+      {
+        "name": "the Little Dart Mk 25",
+        "day": 95,
+        "partsUsed": 15,
+        "parts": [
+          {
+            "name": "Pim",
+            "what": "a little landing strut",
+            "version": 1
+          },
+          {
+            "name": "Brakk",
+            "what": "a cracked navigation chip",
+            "version": 2
+          },
+          {
+            "name": "Wren",
+            "what": "a dented fuel cell",
+            "good": true,
+            "version": 3
+          },
+          {
+            "name": "Pim",
+            "what": "a perfectly good bolt",
+            "version": 4
+          },
+          {
+            "name": "Captain",
+            "what": "a scorched heat tile",
+            "version": 5
+          },
+          {
+            "name": "Tok",
+            "what": "a tiny gyroscope",
+            "version": 6
+          },
+          {
+            "name": "Nim",
+            "what": "a cracked navigation chip",
+            "good": true,
+            "version": 7
+          },
+          {
+            "name": "Nim",
+            "what": "half a thruster nozzle",
+            "version": 8
+          },
+          {
+            "name": "Fen",
+            "what": "a mystery box that hums",
+            "version": 9
+          },
+          {
+            "name": "Dibs",
+            "what": "half a thruster nozzle",
+            "version": 10
+          },
+          {
+            "name": "Captain",
+            "what": "a perfectly good bolt",
+            "version": 11
+          },
+          {
+            "name": "Captain",
+            "what": "a little landing strut",
+            "version": 12
+          },
+          {
+            "name": "Captain",
+            "what": "a dented fuel cell",
+            "version": 13
+          }
+        ]
       }
     ],
-    "partsUsed": 14,
-    "parts": [
-      {
-        "name": "Pim",
-        "what": "a little landing strut",
-        "version": 1
-      },
-      {
-        "name": "Brakk",
-        "what": "a cracked navigation chip",
-        "version": 2
-      },
-      {
-        "name": "Wren",
-        "what": "a dented fuel cell",
-        "good": true,
-        "version": 3
-      },
-      {
-        "name": "Pim",
-        "what": "a perfectly good bolt",
-        "version": 4
-      },
-      {
-        "name": "Captain",
-        "what": "a scorched heat tile",
-        "version": 5
-      },
-      {
-        "name": "Tok",
-        "what": "a tiny gyroscope",
-        "version": 6
-      },
-      {
-        "name": "Nim",
-        "what": "a cracked navigation chip",
-        "good": true,
-        "version": 7
-      },
-      {
-        "name": "Nim",
-        "what": "half a thruster nozzle",
-        "version": 8
-      },
-      {
-        "name": "Fen",
-        "what": "a mystery box that hums",
-        "version": 9
-      },
-      {
-        "name": "Dibs",
-        "what": "half a thruster nozzle",
-        "version": 10
-      },
-      {
-        "name": "Captain",
-        "what": "a perfectly good bolt",
-        "version": 11
-      },
-      {
-        "name": "Captain",
-        "what": "a little landing strut",
-        "version": 12
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -3854,11 +3865,6 @@
     {
       "name": "Nim",
       "what": "a little landing strut",
-      "at": "2026-11-24T03:02:26.879Z"
-    },
-    {
-      "name": "Captain",
-      "what": "a dented fuel cell",
       "at": "2026-11-24T03:02:26.879Z"
     }
   ],

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795530615690,
+  "lastTick": 1795531216051,
   "asleep": false,
-  "place": "tower",
-  "action": "browse_wire",
-  "doing": "still browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-24T14:10:16.466Z",
-  "actionMinutes": 35,
-  "thought": "read about Synthesizers.com - DotCom Analog Synthesizers. filing that away.",
-  "feeling": "curious",
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-24T14:40:16.051Z",
+  "actionMinutes": 40,
+  "thought": "my craft is bugging me most right now.",
+  "feeling": "pretty good actually",
   "say": "",
-  "mood": 0.334,
-  "energy": 0.277,
+  "mood": 0.28,
+  "energy": 0.438,
   "needs": {
-    "charge": 0.332,
-    "oil": 0.201,
-    "curiosity": 0,
-    "company": 0.2,
-    "craft": 0.402
+    "charge": 0,
+    "oil": 0.241,
+    "curiosity": 0.08,
+    "company": 0.253,
+    "craft": 0.469
   },
   "credits": 2,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-24T14:40:16.051Z"
+    },
     {
       "id": "browse_wire",
       "detail": "synthesizers",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-24T12:22:22.722Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-24T12:02:22.596Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T14:30:15.690Z",
+  "lettersCheckedAt": "2026-11-24T14:40:16.051Z",
   "weather": {
     "kind": "clear",
     "temp": 24,
@@ -1651,21 +1651,21 @@
   "sleepDay": 97,
   "lastReflectDay": 97,
   "brain": "rules",
-  "updatedAt": "2026-11-24T14:30:15.690Z",
+  "updatedAt": "2026-11-24T14:40:16.051Z",
   "clock": {
     "day": 98,
-    "time": "08:03",
-    "hour": 8,
-    "minute": 3
+    "time": "09:23",
+    "hour": 9,
+    "minute": 23
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-24T14:10:16.466Z"
+    "action": "nap_dock",
+    "since": "2026-11-24T14:40:16.051Z"
   },
-  "busyUntil": "2026-11-24T14:34:38.190Z",
-  "busyUntilTown": "08:38",
+  "busyUntil": "2026-11-24T14:45:16.051Z",
+  "busyUntilTown": "10:03",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
@@ -1692,6 +1692,10 @@
   },
   "thoughts": [
     {
+      "text": "my craft is bugging me most right now.",
+      "at": "2026-11-24T14:40:16.051Z"
+    },
+    {
       "text": "read about Synthesizers.com - DotCom Analog Synthesizers. filing that away.",
       "at": "2026-11-24T14:30:15.690Z"
     },
@@ -1710,19 +1714,16 @@
     {
       "text": "If Mabel holds a steady charge, the new thermal sensors won't flicker at all.",
       "at": "2026-11-24T13:30:07.477Z"
-    },
-    {
-      "text": "Time to plug into the dock and dream in star charts. Little Dart Mk 26 will be waiting for me in the morning.",
-      "at": "2026-11-24T13:20:07.400Z"
     }
   ],
-  "sayAt": "2026-11-24T14:30:15.690Z",
+  "sayAt": "2026-11-24T14:40:16.051Z",
   "today": {
     "day": 98,
     "counts": {
       "work_dart": 1,
       "drink_oil": 1,
-      "browse_wire": 3
+      "browse_wire": 3,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1747,7 +1748,7 @@
     "chat_patrons": "2026-11-23T21:17:42.589Z",
     "busk": "2026-11-24T13:00:08.082Z",
     "cantina_band": "2026-11-21T01:37:19.419Z",
-    "nap_dock": "2026-11-24T13:10:07.909Z",
+    "nap_dock": "2026-11-24T14:40:16.051Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1785,6 +1786,13 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "my craft is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-24T14:40:16.051Z",
+      "town": "day 98 09:23",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "read about Synthesizers.com - DotCom Analog Synthesizers. filing that away.",
       "kind": "think",
@@ -2827,13 +2835,6 @@
       "at": "2026-11-23T22:13:41.808Z",
       "town": "day 92 21:50",
       "place": "the comms tower"
-    },
-    {
-      "text": "my charge is bugging me most right now.",
-      "kind": "think",
-      "at": "2026-11-23T21:23:41.992Z",
-      "town": "day 92 21:50",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2844,7 +2845,7 @@
     "at": "2026-11-24T07:58:09.714Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T14:30:15.690Z",
+  "feedArchivedAt": "2026-11-24T14:40:16.051Z",
   "plans": [],
   "searches": [
     {

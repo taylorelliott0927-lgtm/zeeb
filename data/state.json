@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795515366218,
+  "lastTick": 1795515965908,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "still working on the Little Dart",
-  "actionStartedAt": "2026-11-24T10:06:06.254Z",
-  "actionMinutes": 45,
-  "thought": "the navigation array is looking proper smart with these pure copper connections. almost ready to point that brass dish at the stars for real.",
-  "feeling": "focused and hopeful",
-  "say": "*bweep* blinkers locked in tight!",
-  "mood": 0.287,
-  "energy": 0.386,
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-24T10:26:05.908Z",
+  "actionMinutes": 30,
+  "thought": "An uncooled microbolometer turns on instantly without needing a bulky cryocooler! The Little Dart could really use a low-power sensor like that to spot hidden scrap in the dark. *bweep*",
+  "feeling": "curious and eager to build",
+  "say": "",
+  "mood": 0.296,
+  "energy": 0.284,
   "needs": {
-    "charge": 0.194,
-    "oil": 0.356,
-    "curiosity": 0.754,
-    "company": 0.053,
-    "craft": 0
+    "charge": 0.241,
+    "oil": 0.396,
+    "curiosity": 0.334,
+    "company": 0.106,
+    "craft": 0.067
   },
   "credits": 7,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "military thermal sensors navigation display signal bleed isolation",
+      "at": "2026-11-24T10:26:05.908Z"
+    },
     {
       "id": "work_dart",
       "detail": "soldering the pure copper wire and blinker relays into the Little Dart Mk 26 nav",
@@ -75,11 +80,6 @@
       "id": "test_flight",
       "detail": "taking the Little Dart Mk 25 out for a roaring atmospheric test flight across th",
       "at": "2026-11-24T07:58:09.714Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "high efficiency blinker relays",
-      "at": "2026-11-24T07:48:09.557Z"
     }
   ],
   "wants": [
@@ -1639,43 +1639,42 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T10:16:06.218Z",
+  "lettersCheckedAt": "2026-11-24T10:26:05.908Z",
   "weather": {
     "kind": "clear",
-    "temp": 19,
+    "temp": 20,
     "wind": 12,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-24T09:46:06.888Z"
+    "at": "2026-11-24T10:26:06.132Z"
   },
   "sleepDay": 95,
   "lastReflectDay": 95,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-24T10:16:06.218Z",
+  "brain": "gemini-3.6-flash",
+  "updatedAt": "2026-11-24T10:26:05.908Z",
   "clock": {
     "day": 96,
-    "time": "22:10",
-    "hour": 22,
-    "minute": 10
+    "time": "23:30",
+    "hour": 23,
+    "minute": 30
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-24T10:06:06.254Z"
+    "action": "browse_wire",
+    "since": "2026-11-24T10:26:05.908Z"
   },
-  "busyUntil": "2026-11-24T10:21:43.718Z",
-  "busyUntilTown": "22:55",
+  "busyUntil": "2026-11-24T10:29:50.908Z",
+  "busyUntilTown": "00:00",
   "runner": "github",
-  "model": "gemini-3.5-flash-lite",
+  "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "soldering pure copper terminals into the navigation array",
+  "doingWords": "searching the Wire for thermal sensor wiring diagrams",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
-    "spin"
+    "lean_in"
   ],
   "pops": {
     "at": "2026-11-24T09:24:37.049Z",
@@ -1695,6 +1694,10 @@
   },
   "thoughts": [
     {
+      "text": "An uncooled microbolometer turns on instantly without needing a bulky cryocooler! The Little Dart could really use a low-power sensor like that to spot hidden scrap in the dark. *bweep*",
+      "at": "2026-11-24T10:26:05.908Z"
+    },
+    {
       "text": "the navigation array is looking proper smart with these pure copper connections. almost ready to point that brass dish at the stars for real.",
       "at": "2026-11-24T10:16:06.218Z"
     },
@@ -1713,17 +1716,13 @@
     {
       "text": "fixing up this old cargo sled alternator ought to earn me enough to buy those toggle switches. my dish is still humming from that last test flight.",
       "at": "2026-11-24T09:24:37.049Z"
-    },
-    {
-      "text": "my curiosity is bugging me most right now.",
-      "at": "2026-11-24T09:14:37.094Z"
     }
   ],
-  "sayAt": "2026-11-24T10:16:06.218Z",
+  "sayAt": "2026-11-24T10:26:05.908Z",
   "today": {
     "day": 96,
     "counts": {
-      "browse_wire": 1,
+      "browse_wire": 2,
       "test_flight": 1,
       "compose_tune": 1,
       "drink_oil": 2,
@@ -1742,7 +1741,7 @@
     "fix_job": "2026-11-24T09:24:37.049Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-24T07:48:09.557Z",
+    "browse_wire": "2026-11-24T10:26:05.908Z",
     "compose_tune": "2026-11-24T08:34:37.111Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-23T02:41:46.876Z",
@@ -1792,10 +1791,17 @@
     }
   ],
   "nextSearch": {
-    "text": "heavy duty toggle switches 12v surplus",
-    "at": "2026-11-24T07:48:09.557Z"
+    "text": "salvaged germanium lens sources scrap depot",
+    "at": "2026-11-24T10:26:05.908Z"
   },
   "said": [
+    {
+      "text": "An uncooled microbolometer turns on instantly without needing a bulky cryocooler! The Little Dart could really use a low-power sensor like that to spot hidden scrap in the dark. *bweep*",
+      "kind": "think",
+      "at": "2026-11-24T10:26:05.908Z",
+      "town": "day 96 23:30",
+      "place": "the comms tower"
+    },
     {
       "text": "*bweep* blinkers locked in tight!",
       "kind": "say",
@@ -2838,13 +2844,6 @@
       "at": "2026-11-23T16:46:03.894Z",
       "town": "day 91 02:09",
       "place": "the comms tower"
-    },
-    {
-      "text": "bweep-bip-bzzt-boop-bwee",
-      "kind": "say",
-      "at": "2026-11-23T16:36:03.306Z",
-      "town": "day 91 00:49",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2855,9 +2854,13 @@
     "at": "2026-11-24T07:58:09.714Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T10:16:06.218Z",
+  "feedArchivedAt": "2026-11-24T10:26:05.908Z",
   "plans": [],
   "searches": [
+    {
+      "q": "military thermal sensors navigation display signal bleed isolation",
+      "at": "2026-11-24T10:26:05.908Z"
+    },
     {
       "q": "high efficiency blinker relays",
       "at": "2026-11-24T07:48:09.557Z"
@@ -2901,10 +2904,6 @@
     {
       "q": "dust opacities in upper atmospheric flight",
       "at": "2026-11-23T09:50:03.736Z"
-    },
-    {
-      "q": "stellar winds propulsion efficiency",
-      "at": "2026-11-23T06:40:10.088Z"
     }
   ],
   "lampOutUntil": "2026-11-23T02:30:10.452Z",

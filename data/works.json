@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 25",
-    "progress": 83,
-    "version": 11,
-    "lastChange": "attaching Nim (a little landing strut) to the lower fuselage frame with precise weld beads (used Captain, a perfectly good bolt)",
+    "progress": 93,
+    "version": 12,
+    "lastChange": "mounting Captain (a dented fuel cell) into the auxiliary fuel bay with heavy-duty brackets (used Captain, a little landing strut)",
     "log": [
+      {
+        "version": 12,
+        "change": "mounting Captain (a dented fuel cell) into the auxiliary fuel bay with heavy-duty brackets (used Captain, a little landing strut)",
+        "progress": 93,
+        "at": "2026-11-24T06:46:04.286Z"
+      },
       {
         "version": 11,
         "change": "attaching Nim (a little landing strut) to the lower fuselage frame with precise weld beads (used Captain, a perfectly good bolt)",
@@ -238,12 +244,6 @@
         "change": "connected the radiative cooling plate manifold using Rusty Jr, the cockpit switch, to route thermal fluid lines securely. (used Mabel, a perfectly good bolt)",
         "progress": 100,
         "at": "2026-11-22T14:23:18.035Z"
-      },
-      {
-        "version": 14,
-        "change": "mounted the radiative cooling plate bracket using Rusty Jr, the cockpit switch, to test thermal dissipation channels. (used Rusty Jr, a cockpit switch that still clicks)",
-        "progress": 99,
-        "at": "2026-11-22T14:13:18.349Z"
       }
     ],
     "launched": [
@@ -3531,7 +3531,7 @@
         }
       }
     ],
-    "partsUsed": 13,
+    "partsUsed": 14,
     "parts": [
       {
         "name": "Pim",
@@ -3589,6 +3589,11 @@
         "name": "Captain",
         "what": "a perfectly good bolt",
         "version": 11
+      },
+      {
+        "name": "Captain",
+        "what": "a little landing strut",
+        "version": 12
       }
     ],
     "design": null
@@ -3855,11 +3860,6 @@
       "name": "Captain",
       "what": "a dented fuel cell",
       "at": "2026-11-24T03:02:26.879Z"
-    },
-    {
-      "name": "Captain",
-      "what": "a little landing strut",
-      "at": "2026-11-24T02:52:27.065Z"
     }
   ],
   "reads": [

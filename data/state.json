@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795555652114,
+  "lastTick": 1795556265993,
   "asleep": false,
-  "place": "hangar",
-  "action": "nap_dock",
-  "doing": "still napping in the charging dock",
-  "actionStartedAt": "2026-11-24T21:17:31.658Z",
-  "actionMinutes": 60,
-  "thought": "plugging in here always gets me back to full power so i can keep building. cozy gears, bweep.",
-  "feeling": "calm and sleepy",
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-24T21:37:45.993Z",
+  "actionMinutes": 20,
+  "thought": "my craft is bugging me most right now.",
+  "feeling": "pretty good actually",
   "say": "",
-  "mood": 0.383,
-  "energy": 0.556,
+  "mood": 0.322,
+  "energy": 0.642,
   "needs": {
-    "charge": 0,
-    "oil": 0.293,
-    "curiosity": 0.32,
-    "company": 0,
-    "craft": 0.335
+    "charge": 0.048,
+    "oil": 0,
+    "curiosity": 0.402,
+    "company": 0.055,
+    "craft": 0.403
   },
-  "credits": 8,
+  "credits": 7,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-24T21:37:45.993Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "go_to_sleep",
       "detail": "",
       "at": "2026-11-24T19:51:44.012Z"
-    },
-    {
-      "id": "send_signal",
-      "detail": "This is repair unit Zeeb broadcasting from Rustwell Outpost on Kessa-9. The Litt",
-      "at": "2026-11-24T19:41:44.259Z"
     }
   ],
   "wants": [
@@ -1639,51 +1639,48 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T21:27:32.114Z",
+  "lettersCheckedAt": "2026-11-24T21:37:45.993Z",
   "weather": {
-    "kind": "clear",
-    "temp": 19,
-    "wind": 3,
-    "mood": 0.01,
+    "kind": "hazy",
+    "temp": 18,
+    "wind": 2,
+    "mood": 0,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-24T20:57:32.545Z"
+    "at": "2026-11-24T21:37:46.294Z"
   },
   "sleepDay": 99,
   "lastReflectDay": 99,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-24T21:27:32.114Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-24T21:37:45.993Z",
   "clock": {
     "day": 100,
-    "time": "15:41",
-    "hour": 15,
-    "minute": 41
+    "time": "17:03",
+    "hour": 17,
+    "minute": 3
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-24T21:17:31.658Z"
+    "action": "drink_oil",
+    "since": "2026-11-24T21:37:45.993Z"
   },
-  "busyUntil": "2026-11-24T21:35:02.114Z",
-  "busyUntilTown": "16:41",
+  "busyUntil": "2026-11-24T21:40:15.993Z",
+  "busyUntilTown": "17:23",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "plugged into the dock, brass dish folded down, recharging my battery",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "droop",
-    "nod"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-24T20:47:31.888Z",
+    "at": "2026-11-24T21:37:45.993Z",
     "items": [
       {
-        "text": "+ a strip of hull plating",
-        "kind": "part",
-        "at": "2026-11-24T20:47:31.888Z"
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-24T21:37:45.993Z"
       }
     ]
   },
@@ -1694,6 +1691,10 @@
     "at": "2026-11-24T20:57:32.363Z"
   },
   "thoughts": [
+    {
+      "text": "my craft is bugging me most right now.",
+      "at": "2026-11-24T21:37:45.993Z"
+    },
     {
       "text": "plugging in here always gets me back to full power so i can keep building. cozy gears, bweep.",
       "at": "2026-11-24T21:27:32.114Z"
@@ -1713,20 +1714,16 @@
     {
       "text": "My stash is down to zero. Time to hustle over to the market bins and see what useful scrap got thrown out today!",
       "at": "2026-11-24T20:47:31.888Z"
-    },
-    {
-      "text": "my craft is bugging me most right now.",
-      "at": "2026-11-24T20:37:31.890Z"
     }
   ],
-  "sayAt": "2026-11-24T21:27:32.114Z",
+  "sayAt": "2026-11-24T21:37:45.993Z",
   "today": {
     "day": 100,
     "counts": {
       "send_signal": 1,
       "go_to_sleep": 1,
       "work_dart": 1,
-      "drink_oil": 2,
+      "drink_oil": 3,
       "browse_wire": 1,
       "compose_tune": 1,
       "scavenge": 1,
@@ -1737,7 +1734,7 @@
   "lastDone": {
     "work_dart": "2026-11-24T20:01:44.273Z",
     "read_news": "2026-11-24T17:17:43.791Z",
-    "drink_oil": "2026-11-24T20:21:43.620Z",
+    "drink_oil": "2026-11-24T21:37:45.993Z",
     "follow_link": "2026-11-24T18:41:08.215Z",
     "scavenge": "2026-11-24T20:47:31.888Z",
     "fix_job": "2026-11-24T17:41:59.414Z",
@@ -2853,7 +2850,7 @@
     "at": "2026-11-24T07:58:09.714Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T21:27:32.114Z",
+  "feedArchivedAt": "2026-11-24T21:37:45.993Z",
   "plans": [],
   "searches": [
     {

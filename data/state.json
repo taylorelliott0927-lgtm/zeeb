@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795527007477,
+  "lastTick": 1795527607855,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-24T13:30:07.477Z",
-  "actionMinutes": 45,
-  "thought": "If Mabel holds a steady charge, the new thermal sensors won't flicker at all.",
-  "feeling": "excited and focused",
-  "say": "Hold still, Mabel! Just going to snug this bolt down tight. *bweep*",
-  "mood": 0.401,
-  "energy": 0.605,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-24T13:40:07.855Z",
+  "actionMinutes": 20,
+  "thought": "my curiosity is bugging me most right now.",
+  "feeling": "pretty good actually",
+  "say": "",
+  "mood": 0.372,
+  "energy": 0.615,
   "needs": {
-    "charge": 0.05,
-    "oil": 0.237,
-    "curiosity": 0.294,
-    "company": 0,
-    "craft": 0
+    "charge": 0.097,
+    "oil": 0,
+    "curiosity": 0.374,
+    "company": 0.053,
+    "craft": 0.067
   },
-  "credits": 3,
+  "credits": 2,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-24T13:40:07.855Z"
+    },
     {
       "id": "work_dart",
       "detail": "mounting Mabel the dented fuel cell to the auxiliary power bus for the Little Da",
@@ -75,11 +80,6 @@
       "id": "scavenge",
       "detail": "",
       "at": "2026-11-24T11:31:09.939Z"
-    },
-    {
-      "id": "read_news",
-      "detail": "",
-      "at": "2026-11-24T11:21:10.164Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T13:30:07.477Z",
+  "lettersCheckedAt": "2026-11-24T13:40:07.855Z",
   "weather": {
     "kind": "clear",
     "temp": 24,
@@ -1650,40 +1650,37 @@
   },
   "sleepDay": 97,
   "lastReflectDay": 97,
-  "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-24T13:30:07.477Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-24T13:40:07.855Z",
   "clock": {
     "day": 98,
-    "time": "00:02",
-    "hour": 0,
-    "minute": 2
+    "time": "01:22",
+    "hour": 1,
+    "minute": 22
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-24T13:30:07.477Z"
+    "action": "drink_oil",
+    "since": "2026-11-24T13:40:07.855Z"
   },
-  "busyUntil": "2026-11-24T13:35:44.977Z",
-  "busyUntilTown": "00:47",
+  "busyUntil": "2026-11-24T13:42:37.855Z",
+  "busyUntilTown": "01:42",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "bolting Mabel onto the auxiliary power bus",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "nod",
-    "lean_in"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-24T13:00:08.082Z",
+    "at": "2026-11-24T13:40:07.855Z",
     "items": [
       {
-        "text": "+3 in tips",
-        "kind": "credits",
-        "at": "2026-11-24T13:00:08.082Z"
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-24T13:40:07.855Z"
       }
     ]
   },
@@ -1694,6 +1691,10 @@
     "at": "2026-11-24T13:00:08.082Z"
   },
   "thoughts": [
+    {
+      "text": "my curiosity is bugging me most right now.",
+      "at": "2026-11-24T13:40:07.855Z"
+    },
     {
       "text": "If Mabel holds a steady charge, the new thermal sensors won't flicker at all.",
       "at": "2026-11-24T13:30:07.477Z"
@@ -1713,23 +1714,20 @@
     {
       "text": "If the Little Dart rides into one of those switchback patches, the whole magnetic compass is gonna twitch hard! Need to make sure my steering servos don't panic when the solar wind does a flip. *bweep*",
       "at": "2026-11-24T12:50:08.286Z"
-    },
-    {
-      "text": "With the grit washed out of my housings, I can align these sensor wires without a single twitch *bweep*!",
-      "at": "2026-11-24T12:32:23.058Z"
     }
   ],
-  "sayAt": "2026-11-24T13:30:07.477Z",
+  "sayAt": "2026-11-24T13:40:07.855Z",
   "today": {
     "day": 98,
     "counts": {
-      "work_dart": 1
+      "work_dart": 1,
+      "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-24T13:30:07.477Z",
     "read_news": "2026-11-24T11:21:10.164Z",
-    "drink_oil": "2026-11-24T12:22:22.722Z",
+    "drink_oil": "2026-11-24T13:40:07.855Z",
     "follow_link": "2026-11-24T10:36:06.227Z",
     "scavenge": "2026-11-24T11:31:09.939Z",
     "fix_job": "2026-11-24T11:52:22.925Z",
@@ -1789,6 +1787,20 @@
     "at": "2026-11-24T12:50:08.286Z"
   },
   "said": [
+    {
+      "text": "my curiosity is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-24T13:40:07.855Z",
+      "town": "day 98 01:22",
+      "place": "the fuel depot"
+    },
+    {
+      "text": "my charge is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-24T13:00:08.082Z",
+      "town": "day 98 01:22",
+      "place": "the fuel depot"
+    },
     {
       "text": "Hold still, Mabel! Just going to snug this bolt down tight. *bweep*",
       "kind": "say",
@@ -2824,20 +2836,6 @@
       "at": "2026-11-23T21:43:41.744Z",
       "town": "day 92 17:50",
       "place": "the junk market"
-    },
-    {
-      "text": "there, good as new, bweep!",
-      "kind": "say",
-      "at": "2026-11-23T21:33:41.881Z",
-      "town": "day 92 16:30",
-      "place": "the junk market"
-    },
-    {
-      "text": "gotta make sure this relay doesn't fry the trader's terminal or my name isn't zeeb.",
-      "kind": "think",
-      "at": "2026-11-23T21:33:41.881Z",
-      "town": "day 92 16:30",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2848,7 +2846,7 @@
     "at": "2026-11-24T07:58:09.714Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T13:30:07.477Z",
+  "feedArchivedAt": "2026-11-24T13:40:07.855Z",
   "plans": [],
   "searches": [
     {

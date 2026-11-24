@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 25",
-    "progress": 45,
-    "version": 6,
-    "lastChange": "welding the last high-temperature ceramic shielding tiles to the forward dorsal spine using Nim (a cracked navigation chip, a really good one) (used Tok, a tiny gyroscope)",
+    "progress": 51,
+    "version": 7,
+    "lastChange": "securing the dorsal frame heat tiles using Captain (a perfectly good bolt) and re-aligning the heat dampener brackets (used Nim, a cracked navigation chip)",
     "log": [
+      {
+        "version": 7,
+        "change": "securing the dorsal frame heat tiles using Captain (a perfectly good bolt) and re-aligning the heat dampener brackets (used Nim, a cracked navigation chip)",
+        "progress": 51,
+        "at": "2026-11-24T02:23:55.813Z"
+      },
       {
         "version": 6,
         "change": "welding the last high-temperature ceramic shielding tiles to the forward dorsal spine using Nim (a cracked navigation chip, a really good one) (used Tok, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "attached the forward bulkhead bracket using Mabel (a perfectly good bolt, a really good one) (used Captain, a scorched heat tile)",
         "progress": 67,
         "at": "2026-11-22T12:25:44.067Z"
-      },
-      {
-        "version": 9,
-        "change": "tuned the left thruster (used Sprocket, half a thruster nozzle)",
-        "progress": 61,
-        "at": "2026-11-22T11:13:26.816Z"
       }
     ],
     "launched": [
@@ -3531,7 +3531,7 @@
         }
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Pim",
@@ -3563,6 +3563,12 @@
         "name": "Tok",
         "what": "a tiny gyroscope",
         "version": 6
+      },
+      {
+        "name": "Nim",
+        "what": "a cracked navigation chip",
+        "good": true,
+        "version": 7
       }
     ],
     "design": null
@@ -3829,12 +3835,6 @@
       "name": "Nim",
       "what": "half a thruster nozzle",
       "at": "2026-11-23T23:33:05.838Z"
-    },
-    {
-      "name": "Nim",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-23T21:43:41.744Z",
-      "good": true
     }
   ],
   "reads": [

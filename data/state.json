@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795500363659,
+  "lastTick": 1795500963573,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-24T06:06:03.659Z",
+  "place": "market",
+  "action": "fix_job",
+  "doing": "doing a repair job at the market",
+  "actionStartedAt": "2026-11-24T06:16:03.573Z",
   "actionMinutes": 45,
-  "thought": "Nim fits the lower strut mount almost perfectly. A few smooth weld beads and we will be sitting sturdy.",
-  "feeling": "eager and focused",
-  "say": "Hold steady right there, Nim, this torch won't bite much *bweep*!",
-  "mood": 0.448,
-  "energy": 0.276,
+  "thought": "my charge is bugging me most right now.",
+  "feeling": "pretty good actually",
+  "say": "",
+  "mood": 0.419,
+  "energy": 0.158,
   "needs": {
-    "charge": 0.4,
-    "oil": 0.04,
-    "curiosity": 0.196,
-    "company": 0.01,
-    "craft": 0.122
+    "charge": 0.507,
+    "oil": 0.08,
+    "curiosity": 0.276,
+    "company": 0,
+    "craft": 0
   },
-  "credits": 1,
+  "credits": 5,
   "recent": [
+    {
+      "id": "fix_job",
+      "detail": "",
+      "at": "2026-11-24T06:16:03.573Z"
+    },
     {
       "id": "work_dart",
       "detail": "attaching Nim (a little landing strut) to the lower fuselage frame with precise ",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "welding the landing strut Sprocket to the belly plates using Nim and Captain (a ",
       "at": "2026-11-24T04:12:59.438Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "mounting carbon fiber reinforcement ribs to the tail assembly using Captain (a p",
-      "at": "2026-11-24T04:02:59.366Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T06:06:03.659Z",
+  "lettersCheckedAt": "2026-11-24T06:16:03.573Z",
   "weather": {
     "kind": "clear",
     "temp": 14,
@@ -1650,40 +1650,37 @@
   },
   "sleepDay": 94,
   "lastReflectDay": 94,
-  "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-24T06:06:03.659Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-24T06:16:03.573Z",
   "clock": {
     "day": 95,
-    "time": "12:49",
-    "hour": 12,
-    "minute": 49
+    "time": "14:09",
+    "hour": 14,
+    "minute": 9
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the junk market",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-24T06:06:03.659Z"
+    "action": "fix_job",
+    "since": "2026-11-24T06:16:03.573Z"
   },
-  "busyUntil": "2026-11-24T06:11:41.159Z",
-  "busyUntilTown": "13:34",
+  "busyUntil": "2026-11-24T06:21:41.073Z",
+  "busyUntilTown": "14:54",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "welding Nim the landing strut onto the Little Dart's belly frame",
+  "doingWords": "",
   "newsForCreator": "the Little Dart Mk 25 just reached 75% built (version 11). Last change: attaching Nim (a little landing strut) to the lower fuselage frame with precise weld beads (used Captain, a perfectly good bolt).",
-  "newsPendingTicks": 0,
+  "newsPendingTicks": 1,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "nod",
-    "look_up"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-24T05:56:03.814Z",
+    "at": "2026-11-24T06:16:03.573Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-24T05:56:03.814Z"
+        "text": "+4 credits",
+        "kind": "credits",
+        "at": "2026-11-24T06:16:03.573Z"
       }
     ]
   },
@@ -1694,6 +1691,10 @@
     "at": "2026-11-24T03:02:26.879Z"
   },
   "thoughts": [
+    {
+      "text": "my charge is bugging me most right now.",
+      "at": "2026-11-24T06:16:03.573Z"
+    },
     {
       "text": "Nim fits the lower strut mount almost perfectly. A few smooth weld beads and we will be sitting sturdy.",
       "at": "2026-11-24T06:06:03.659Z"
@@ -1713,13 +1714,9 @@
     {
       "text": "i could wire this exact astable circuit into the cockpit canopy so the little dart blinks like a real landing starship when it hits orbit.",
       "at": "2026-11-24T05:21:35.764Z"
-    },
-    {
-      "text": "figures the network drops out right over a good circuit diagram. guess I will just have to wire the skip beacon by ear.",
-      "at": "2026-11-24T05:11:36.311Z"
     }
   ],
-  "sayAt": "2026-11-24T06:06:03.659Z",
+  "sayAt": "2026-11-24T06:16:03.573Z",
   "today": {
     "day": 95,
     "counts": {
@@ -1728,7 +1725,8 @@
       "browse_wire": 2,
       "follow_link": 3,
       "drink_oil": 1,
-      "work_dart": 1
+      "work_dart": 1,
+      "fix_job": 1
     }
   },
   "lastDone": {
@@ -1737,7 +1735,7 @@
     "drink_oil": "2026-11-24T05:56:03.814Z",
     "follow_link": "2026-11-24T05:41:35.710Z",
     "scavenge": "2026-11-24T03:02:26.879Z",
-    "fix_job": "2026-11-24T03:12:26.647Z",
+    "fix_job": "2026-11-24T06:16:03.573Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
     "browse_wire": "2026-11-24T05:11:36.311Z",
@@ -1794,6 +1792,13 @@
     "at": "2026-11-24T05:41:35.710Z"
   },
   "said": [
+    {
+      "text": "my charge is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-24T06:16:03.573Z",
+      "town": "day 95 14:09",
+      "place": "the junk market"
+    },
     {
       "text": "Hold steady right there, Nim, this torch won't bite much *bweep*!",
       "kind": "say",
@@ -2836,13 +2841,6 @@
       "at": "2026-11-23T12:12:20.864Z",
       "town": "day 89 13:40",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "four hours of reading op amp datasheets is enough to make any metal joint rust over in place. time for a little stretch under the big sky.",
-      "kind": "think",
-      "at": "2026-11-23T12:12:20.864Z",
-      "town": "day 89 13:40",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2853,7 +2851,7 @@
     "at": "2026-11-23T22:03:41.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T06:06:03.659Z",
+  "feedArchivedAt": "2026-11-24T06:16:03.573Z",
   "plans": [],
   "searches": [
     {

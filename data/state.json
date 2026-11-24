@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795498895710,
+  "lastTick": 1795499763814,
   "asleep": false,
-  "place": "tower",
-  "action": "follow_link",
-  "doing": "still following a link across the Wire",
-  "actionStartedAt": "2026-11-24T05:21:35.764Z",
-  "actionMinutes": 45,
-  "thought": "might be too bright for landing lights, but blinking red is very space-pilot. let me tap that switch.",
-  "feeling": "curious and slightly buzzed",
-  "say": "just a bit more data and the approach lights are sorted",
-  "mood": 0.342,
-  "energy": 0.213,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-24T05:56:03.814Z",
+  "actionMinutes": 20,
+  "thought": "my oil is bugging me most right now.",
+  "feeling": "pretty good actually",
+  "say": "",
+  "mood": 0.344,
+  "energy": 0.272,
   "needs": {
-    "charge": 0.235,
-    "oil": 0.516,
-    "curiosity": 0,
-    "company": 0,
-    "craft": 0.459
+    "charge": 0.303,
+    "oil": 0,
+    "curiosity": 0.116,
+    "company": 0.077,
+    "craft": 0.555
   },
-  "credits": 2,
+  "credits": 1,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-24T05:56:03.814Z"
+    },
     {
       "id": "follow_link",
       "detail": "7",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-24T03:42:59.847Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-24T03:32:26.455Z"
     }
   ],
   "wants": [
@@ -1639,51 +1639,48 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T05:41:35.710Z",
+  "lettersCheckedAt": "2026-11-24T05:56:03.814Z",
   "weather": {
     "kind": "clear",
-    "temp": 15,
-    "wind": 5,
+    "temp": 14,
+    "wind": 6,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-24T04:22:59.645Z"
+    "at": "2026-11-24T05:56:04.122Z"
   },
   "sleepDay": 94,
   "lastReflectDay": 94,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-24T05:41:35.710Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-24T05:56:03.814Z",
   "clock": {
     "day": 95,
-    "time": "09:34",
-    "hour": 9,
-    "minute": 34
+    "time": "11:29",
+    "hour": 11,
+    "minute": 29
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "follow_link",
-    "since": "2026-11-24T05:21:35.764Z"
+    "action": "drink_oil",
+    "since": "2026-11-24T05:56:03.814Z"
   },
-  "busyUntil": "2026-11-24T05:47:13.210Z",
-  "busyUntilTown": "10:19",
+  "busyUntil": "2026-11-24T05:58:33.814Z",
+  "busyUntilTown": "11:49",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "checking out link 7 on the wire",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "spin",
-    "look_up"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-24T03:32:26.455Z",
+    "at": "2026-11-24T05:56:03.814Z",
     "items": [
       {
         "text": "-1 credit",
         "kind": "spend",
-        "at": "2026-11-24T03:32:26.455Z"
+        "at": "2026-11-24T05:56:03.814Z"
       }
     ]
   },
@@ -1694,6 +1691,10 @@
     "at": "2026-11-24T03:02:26.879Z"
   },
   "thoughts": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "at": "2026-11-24T05:56:03.814Z"
+    },
     {
       "text": "might be too bright for landing lights, but blinking red is very space-pilot. let me tap that switch.",
       "at": "2026-11-24T05:41:35.710Z"
@@ -1713,26 +1714,23 @@
     {
       "text": "Imagine using high gradient plasma structures right behind my thruster nozzle. That would clear the salt flats in half the time.",
       "at": "2026-11-24T05:01:35.752Z"
-    },
-    {
-      "text": "Even the Little Dart needs to rest its thrusters sometimes. I will juice up my cells and get right back to the build.",
-      "at": "2026-11-24T04:51:36.482Z"
     }
   ],
-  "sayAt": "2026-11-24T05:41:35.710Z",
+  "sayAt": "2026-11-24T05:56:03.814Z",
   "today": {
     "day": 95,
     "counts": {
       "compose_tune": 1,
       "nap_dock": 1,
       "browse_wire": 2,
-      "follow_link": 3
+      "follow_link": 3,
+      "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-24T04:22:59.384Z",
     "read_news": "2026-11-23T19:04:19.505Z",
-    "drink_oil": "2026-11-24T03:32:26.455Z",
+    "drink_oil": "2026-11-24T05:56:03.814Z",
     "follow_link": "2026-11-24T05:41:35.710Z",
     "scavenge": "2026-11-24T03:02:26.879Z",
     "fix_job": "2026-11-24T03:12:26.647Z",
@@ -1792,6 +1790,13 @@
     "at": "2026-11-24T05:41:35.710Z"
   },
   "said": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-24T05:56:03.814Z",
+      "town": "day 95 11:29",
+      "place": "the fuel depot"
+    },
     {
       "text": "just a bit more data and the approach lights are sorted",
       "kind": "say",
@@ -2834,13 +2839,6 @@
       "at": "2026-11-23T12:02:20.667Z",
       "town": "day 89 12:20",
       "place": "the comms tower"
-    },
-    {
-      "text": "bweep!",
-      "kind": "say",
-      "at": "2026-11-23T11:52:20.986Z",
-      "town": "day 89 11:00",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2851,7 +2849,7 @@
     "at": "2026-11-23T22:03:41.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T05:41:35.710Z",
+  "feedArchivedAt": "2026-11-24T05:56:03.814Z",
   "plans": [],
   "searches": [
     {

@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795548067950,
+  "lastTick": 1795549304259,
   "asleep": false,
   "place": "tower",
-  "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-24T19:21:07.950Z",
-  "actionMinutes": 35,
-  "thought": "read about Celestial Navigation Weekend, June 6-8, 2008, Mystic Seaport. filing that away.",
-  "feeling": "curious",
+  "action": "send_signal",
+  "doing": "sending a signal into deep space",
+  "actionStartedAt": "2026-11-24T19:41:44.259Z",
+  "actionMinutes": 30,
+  "thought": "The stars are clear tonight. Maybe someone out past the second sun is listening.",
+  "feeling": "hopeful and a little restless",
   "say": "",
-  "mood": 0.419,
-  "energy": 0.537,
+  "mood": 0.411,
+  "energy": 0.399,
   "needs": {
-    "charge": 0.191,
-    "oil": 0.04,
-    "curiosity": 0,
-    "company": 0.265,
-    "craft": 0.134
+    "charge": 0.287,
+    "oil": 0.122,
+    "curiosity": 0.065,
+    "company": 0.175,
+    "craft": 0.271
   },
   "credits": 10,
   "recent": [
+    {
+      "id": "send_signal",
+      "detail": "This is repair unit Zeeb broadcasting from Rustwell Outpost on Kessa-9. The Litt",
+      "at": "2026-11-24T19:41:44.259Z"
+    },
     {
       "id": "browse_wire",
       "detail": "deserts",
@@ -75,11 +80,6 @@
       "id": "fix_job",
       "detail": "",
       "at": "2026-11-24T17:41:59.414Z"
-    },
-    {
-      "id": "sell_scrap",
-      "detail": "",
-      "at": "2026-11-24T17:32:00.054Z"
     }
   ],
   "wants": [
@@ -1639,41 +1639,44 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T19:21:07.950Z",
+  "lettersCheckedAt": "2026-11-24T19:41:44.259Z",
   "weather": {
     "kind": "clear",
     "temp": 20,
-    "wind": 2,
+    "wind": 1,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-24T19:11:08.033Z"
+    "at": "2026-11-24T19:41:44.446Z"
   },
   "sleepDay": 98,
   "lastReflectDay": 98,
-  "brain": "rules",
-  "updatedAt": "2026-11-24T19:21:07.950Z",
+  "brain": "gemini-3.6-flash",
+  "updatedAt": "2026-11-24T19:41:44.259Z",
   "clock": {
-    "day": 99,
-    "time": "22:50",
-    "hour": 22,
-    "minute": 50
+    "day": 100,
+    "time": "01:35",
+    "hour": 1,
+    "minute": 35
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-24T19:21:07.950Z"
+    "action": "send_signal",
+    "since": "2026-11-24T19:41:44.259Z"
   },
-  "busyUntil": "2026-11-24T19:25:30.450Z",
-  "busyUntilTown": "23:25",
+  "busyUntil": "2026-11-24T19:45:29.259Z",
+  "busyUntilTown": "02:05",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "",
+  "doingWords": "pointing brass dish at the night sky and beaming out a signal",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [],
+  "body": [
+    "look_up",
+    "nod"
+  ],
   "pops": {
     "at": "2026-11-24T19:11:07.772Z",
     "items": [
@@ -1691,6 +1694,10 @@
     "at": "2026-11-24T17:32:00.054Z"
   },
   "thoughts": [
+    {
+      "text": "The stars are clear tonight. Maybe someone out past the second sun is listening.",
+      "at": "2026-11-24T19:41:44.259Z"
+    },
     {
       "text": "read about Celestial Navigation Weekend, June 6-8, 2008, Mystic Seaport. filing that away.",
       "at": "2026-11-24T19:21:07.950Z"
@@ -1710,28 +1717,13 @@
     {
       "text": "read about Webb Reveals New Details in Supernova Remnant - NASA. filing that away.",
       "at": "2026-11-24T18:41:08.215Z"
-    },
-    {
-      "text": "my curiosity is bugging me most right now.",
-      "at": "2026-11-24T18:31:07.824Z"
     }
   ],
-  "sayAt": "2026-11-24T19:21:07.950Z",
+  "sayAt": "2026-11-24T19:41:44.259Z",
   "today": {
-    "day": 99,
+    "day": 100,
     "counts": {
-      "nap_dock": 3,
-      "drink_oil": 3,
-      "work_dart": 2,
-      "follow_link": 2,
-      "read_news": 1,
-      "compose_tune": 1,
-      "sell_scrap": 1,
-      "fix_job": 1,
-      "scavenge": 1,
-      "build_friend": 1,
-      "chat_patrons": 1,
-      "browse_wire": 1
+      "send_signal": 1
     }
   },
   "lastDone": {
@@ -1750,7 +1742,7 @@
     "wander": "2026-11-24T01:53:55.753Z",
     "test_flight": "2026-11-24T07:58:09.714Z",
     "design_ship": "2026-11-23T09:40:03.428Z",
-    "send_signal": "2026-11-24T10:41:10.631Z",
+    "send_signal": "2026-11-24T19:41:44.259Z",
     "stargaze": "2026-11-22T10:33:26.540Z",
     "go_to_sleep": "2026-11-24T13:20:07.400Z",
     "chat_patrons": "2026-11-24T18:31:07.824Z",
@@ -1794,6 +1786,13 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "The stars are clear tonight. Maybe someone out past the second sun is listening.",
+      "kind": "think",
+      "at": "2026-11-24T19:41:44.259Z",
+      "town": "day 100 01:35",
+      "place": "the comms tower"
+    },
     {
       "text": "read about Celestial Navigation Weekend, June 6-8, 2008, Mystic Seaport. filing that away.",
       "kind": "think",
@@ -2836,13 +2835,6 @@
       "at": "2026-11-24T00:18:55.921Z",
       "town": "day 93 14:32",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "A quick recharge will give me all the juice I need for the next round of hull plating *bweep*.",
-      "kind": "think",
-      "at": "2026-11-24T00:18:55.921Z",
-      "town": "day 93 14:32",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2853,7 +2845,7 @@
     "at": "2026-11-24T07:58:09.714Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T19:21:07.950Z",
+  "feedArchivedAt": "2026-11-24T19:41:44.259Z",
   "plans": [],
   "searches": [
     {

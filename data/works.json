@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 26",
-    "progress": 45,
-    "version": 6,
-    "lastChange": "mounting Mabel the dented fuel cell to the auxiliary power bus for the Little Dart Mk 26 (used Brakk, a mystery box that hums)",
+    "progress": 52,
+    "version": 7,
+    "lastChange": "rewired the cockpit lights (used Mabel, a dented fuel cell)",
     "log": [
+      {
+        "version": 7,
+        "change": "rewired the cockpit lights (used Mabel, a dented fuel cell)",
+        "progress": 52,
+        "at": "2026-11-24T14:50:15.982Z"
+      },
       {
         "version": 6,
         "change": "mounting Mabel the dented fuel cell to the auxiliary power bus for the Little Dart Mk 26 (used Brakk, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "welding the fuel line joints onto the bulkhead using bolt Tok (used Rusty Jr, a cracked navigation chip)",
         "progress": 60,
         "at": "2026-11-22T21:56:58.382Z"
-      },
-      {
-        "version": 7,
-        "change": "mounting the new heavy-duty cooling valves onto the fuel line using bolt Rusty Jr (used Gus, a dented fuel cell)",
-        "progress": 54,
-        "at": "2026-11-22T21:46:58.815Z"
       }
     ],
     "launched": [
@@ -3605,7 +3605,7 @@
         ]
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Nim",
@@ -3631,6 +3631,11 @@
         "name": "Brakk",
         "what": "a mystery box that hums",
         "version": 6
+      },
+      {
+        "name": "Mabel",
+        "what": "a dented fuel cell",
+        "version": 7
       }
     ],
     "design": null
@@ -3877,13 +3882,7 @@
       "at": "2026-11-14T05:55:46.603Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Mabel",
-      "what": "a dented fuel cell",
-      "at": "2026-11-24T11:52:22.925Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Synthesizers.com - DotCom Analog Synthesizers",

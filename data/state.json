@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795519869939,
+  "lastTick": 1795520543693,
   "asleep": false,
   "place": "market",
-  "action": "scavenge",
-  "doing": "digging through the junk piles",
-  "actionStartedAt": "2026-11-24T11:31:09.939Z",
-  "actionMinutes": 50,
-  "thought": "the scrap heaps are full of treasures if you look past the rust before that bulky cargo bot plows through them.",
-  "feeling": "eager and hopeful",
-  "say": "time to hunt for brass and bolts down at the market *bweep*!",
-  "mood": 0.495,
-  "energy": 0.496,
+  "action": "buy_part",
+  "doing": "browsing the parts stalls at the market",
+  "actionStartedAt": "2026-11-24T11:42:23.693Z",
+  "actionMinutes": 30,
+  "thought": "Traders always hide the best copper under the rusted plates. I just gotta spot it first.",
+  "feeling": "optimistic and sharp",
+  "say": "How much for this one? Clean contacts only, no melted lead! *bweep*",
+  "mood": 0.499,
+  "energy": 0.4,
   "needs": {
-    "charge": 0.191,
-    "oil": 0.15,
+    "charge": 0.243,
+    "oil": 0.195,
     "curiosity": 0,
-    "company": 0,
-    "craft": 0.134
+    "company": 0.06,
+    "craft": 0.209
   },
-  "credits": 6,
+  "credits": 1,
   "recent": [
+    {
+      "id": "buy_part",
+      "detail": "any",
+      "at": "2026-11-24T11:42:23.693Z"
+    },
     {
       "id": "scavenge",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-24T09:56:05.584Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-24T09:46:06.583Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T11:31:09.939Z",
+  "lettersCheckedAt": "2026-11-24T11:42:23.693Z",
   "weather": {
     "kind": "clear",
     "temp": 21,
@@ -1651,39 +1651,44 @@
   "sleepDay": 96,
   "lastReflectDay": 96,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-24T11:31:09.939Z",
+  "updatedAt": "2026-11-24T11:42:23.693Z",
   "clock": {
     "day": 97,
-    "time": "08:10",
-    "hour": 8,
-    "minute": 10
+    "time": "09:40",
+    "hour": 9,
+    "minute": 40
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
   "streak": {
-    "action": "scavenge",
-    "since": "2026-11-24T11:31:09.939Z"
+    "action": "buy_part",
+    "since": "2026-11-24T11:42:23.693Z"
   },
-  "busyUntil": "2026-11-24T11:37:24.939Z",
-  "busyUntilTown": "09:00",
+  "busyUntil": "2026-11-24T11:46:08.693Z",
+  "busyUntilTown": "10:10",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "digging through junk market piles for copper wire and thruster brackets",
-  "newsForCreator": "",
-  "newsPendingTicks": 0,
+  "doingWords": "bargaining with market traders for fresh salvage",
+  "newsForCreator": "You've become totally obsessed with scrap parts.",
+  "newsPendingTicks": 1,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "bounce",
-    "spin"
+    "spin",
+    "nod"
   ],
   "pops": {
-    "at": "2026-11-24T11:31:09.939Z",
+    "at": "2026-11-24T11:42:23.693Z",
     "items": [
       {
-        "text": "+ a scorched heat tile",
+        "text": "-5 credits",
+        "kind": "spend",
+        "at": "2026-11-24T11:42:23.693Z"
+      },
+      {
+        "text": "+ a mystery box that hums",
         "kind": "part",
-        "at": "2026-11-24T11:31:09.939Z"
+        "at": "2026-11-24T11:42:23.693Z"
       }
     ]
   },
@@ -1694,6 +1699,10 @@
     "at": "2026-11-24T10:41:10.631Z"
   },
   "thoughts": [
+    {
+      "text": "Traders always hide the best copper under the rusted plates. I just gotta spot it first.",
+      "at": "2026-11-24T11:42:23.693Z"
+    },
     {
       "text": "the scrap heaps are full of treasures if you look past the rust before that bulky cargo bot plows through them.",
       "at": "2026-11-24T11:31:09.939Z"
@@ -1713,13 +1722,9 @@
     {
       "text": "my oil is bugging me most right now.",
       "at": "2026-11-24T10:51:09.586Z"
-    },
-    {
-      "text": "That static sounded a bit too sharp for solar wind. Beaming out a fresh ping before my battery dips lower.",
-      "at": "2026-11-24T10:41:10.631Z"
     }
   ],
-  "sayAt": "2026-11-24T11:31:09.939Z",
+  "sayAt": "2026-11-24T11:42:23.693Z",
   "today": {
     "day": 97,
     "counts": {
@@ -1729,7 +1734,8 @@
       "drink_oil": 1,
       "work_dart": 1,
       "read_news": 1,
-      "scavenge": 1
+      "scavenge": 1,
+      "buy_part": 1
     }
   },
   "lastDone": {
@@ -1760,7 +1766,7 @@
     "start_friend": "2026-11-14T11:54:58.335Z",
     "build_friend": "2026-11-23T20:57:43.104Z",
     "reply_notes": "2026-11-14T19:46:45.041Z",
-    "buy_part": "2026-11-24T03:22:27.013Z",
+    "buy_part": "2026-11-24T11:42:23.693Z",
     "sell_scrap": "2026-11-23T23:53:05.789Z"
   },
   "puzzles": [
@@ -1795,6 +1801,20 @@
     "at": "2026-11-24T11:21:10.164Z"
   },
   "said": [
+    {
+      "text": "How much for this one? Clean contacts only, no melted lead! *bweep*",
+      "kind": "say",
+      "at": "2026-11-24T11:42:23.693Z",
+      "town": "day 97 09:40",
+      "place": "the junk market"
+    },
+    {
+      "text": "Traders always hide the best copper under the rusted plates. I just gotta spot it first.",
+      "kind": "think",
+      "at": "2026-11-24T11:42:23.693Z",
+      "town": "day 97 09:40",
+      "place": "the junk market"
+    },
     {
       "text": "time to hunt for brass and bolts down at the market *bweep*!",
       "kind": "say",
@@ -2830,20 +2850,6 @@
       "at": "2026-11-23T19:42:14.167Z",
       "town": "day 92 01:39",
       "place": "the fuel depot"
-    },
-    {
-      "text": "my oil is bugging me most right now.",
-      "kind": "think",
-      "at": "2026-11-23T18:34:19.688Z",
-      "town": "day 91 16:35",
-      "place": "the fuel depot"
-    },
-    {
-      "text": "bweep!",
-      "kind": "say",
-      "at": "2026-11-23T18:24:19.699Z",
-      "town": "day 91 15:15",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2854,7 +2860,7 @@
     "at": "2026-11-24T07:58:09.714Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T11:31:09.939Z",
+  "feedArchivedAt": "2026-11-24T11:42:23.693Z",
   "plans": [],
   "searches": [
     {

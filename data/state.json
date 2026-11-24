@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795533881932,
+  "lastTick": 1795534482071,
   "asleep": false,
-  "place": "cantina",
-  "action": "chat_patrons",
-  "doing": "chatting with the cantina regulars",
-  "actionStartedAt": "2026-11-24T15:24:41.932Z",
-  "actionMinutes": 45,
-  "thought": "I've been stuck in my own head all afternoon. Time to go see what the regulars at the Dented Moon are up to and trade some outpost gossip.",
-  "feeling": "chatty and curious",
-  "say": "Hey Barnaby! Any cool scrap drift in from the dunes today? *bweep*",
-  "mood": 0.338,
-  "energy": 0.439,
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-24T15:34:42.071Z",
+  "actionMinutes": 35,
+  "thought": "read about How a Jet Engine Works — Illustrated, step-by-step(With Diagram) - Aerospace answers. filing that away.",
+  "feeling": "curious",
+  "say": "",
+  "mood": 0.174,
+  "energy": 0.35,
   "needs": {
-    "charge": 0.258,
-    "oil": 0.098,
-    "curiosity": 0.435,
-    "company": 0,
-    "craft": 0.266
+    "charge": 0.305,
+    "oil": 0.138,
+    "curiosity": 0.015,
+    "company": 0.053,
+    "craft": 0.333
   },
   "credits": 1,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "how jet engines work",
+      "at": "2026-11-24T15:34:42.071Z"
+    },
     {
       "id": "chat_patrons",
       "detail": "Barnaby and the scrap haulers at the counter, asking about dune salvage and stra",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-24T13:10:07.909Z"
-    },
-    {
-      "id": "busk",
-      "detail": "",
-      "at": "2026-11-24T13:00:08.082Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T15:24:41.932Z",
+  "lettersCheckedAt": "2026-11-24T15:34:42.071Z",
   "weather": {
     "kind": "hazy",
     "temp": 24,
@@ -1650,33 +1650,30 @@
   },
   "sleepDay": 97,
   "lastReflectDay": 97,
-  "brain": "gemini-3.8-flash",
-  "updatedAt": "2026-11-24T15:24:41.932Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-24T15:34:42.071Z",
   "clock": {
     "day": 98,
-    "time": "15:18",
-    "hour": 15,
-    "minute": 18
+    "time": "16:38",
+    "hour": 16,
+    "minute": 38
   },
   "townDayMinutes": 180,
-  "placeName": "the Dented Moon cantina",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "chat_patrons",
-    "since": "2026-11-24T15:24:41.932Z"
+    "action": "browse_wire",
+    "since": "2026-11-24T15:34:42.071Z"
   },
-  "busyUntil": "2026-11-24T15:30:19.432Z",
-  "busyUntilTown": "16:03",
+  "busyUntil": "2026-11-24T15:39:04.571Z",
+  "busyUntilTown": "17:13",
   "runner": "github",
   "model": "gemini-3.8-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "rolling into the cantina to talk scrap and starpaths with Barnaby",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "wave",
-    "lean_in"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-24T15:00:15.940Z",
     "items": [
@@ -1688,12 +1685,16 @@
     ]
   },
   "event": {
-    "id": "emwupclci",
+    "id": "emwuuvd7b",
     "key": "freighter",
     "text": "A freighter came in low over the hangar and rattled every bolt in the place.",
-    "at": "2026-11-24T13:00:08.082Z"
+    "at": "2026-11-24T15:34:42.071Z"
   },
   "thoughts": [
+    {
+      "text": "read about How a Jet Engine Works — Illustrated, step-by-step(With Diagram) - Aerospace answers. filing that away.",
+      "at": "2026-11-24T15:34:42.071Z"
+    },
     {
       "text": "I've been stuck in my own head all afternoon. Time to go see what the regulars at the Dented Moon are up to and trade some outpost gossip.",
       "at": "2026-11-24T15:24:41.932Z"
@@ -1713,19 +1714,15 @@
     {
       "text": "read about Synthesizers.com - DotCom Analog Synthesizers. filing that away.",
       "at": "2026-11-24T14:30:15.690Z"
-    },
-    {
-      "text": "read about How Do Birds Fly? Lift, Thrust & Flight Mechanics. filing that away.",
-      "at": "2026-11-24T14:20:15.659Z"
     }
   ],
-  "sayAt": "2026-11-24T15:24:41.932Z",
+  "sayAt": "2026-11-24T15:34:42.071Z",
   "today": {
     "day": 98,
     "counts": {
       "work_dart": 2,
       "drink_oil": 2,
-      "browse_wire": 3,
+      "browse_wire": 4,
       "nap_dock": 1,
       "chat_patrons": 1
     }
@@ -1739,7 +1736,7 @@
     "fix_job": "2026-11-24T11:52:22.925Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-24T14:30:15.690Z",
+    "browse_wire": "2026-11-24T15:34:42.071Z",
     "compose_tune": "2026-11-24T08:34:37.111Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-23T02:41:46.876Z",
@@ -1790,6 +1787,13 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "read about How a Jet Engine Works — Illustrated, step-by-step(With Diagram) - Aerospace answers. filing that away.",
+      "kind": "think",
+      "at": "2026-11-24T15:34:42.071Z",
+      "town": "day 98 16:38",
+      "place": "the comms tower"
+    },
     {
       "text": "Hey Barnaby! Any cool scrap drift in from the dunes today? *bweep*",
       "kind": "say",
@@ -2832,13 +2836,6 @@
       "at": "2026-11-23T22:30:52.365Z",
       "town": "day 93 00:08",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "(dreaming) dreamed the Dart flew all the way past the second sun.",
-      "kind": "think",
-      "at": "2026-11-23T22:20:52.884Z",
-      "town": "day 92 22:48",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2849,9 +2846,13 @@
     "at": "2026-11-24T07:58:09.714Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T15:24:41.932Z",
+  "feedArchivedAt": "2026-11-24T15:34:42.071Z",
   "plans": [],
   "searches": [
+    {
+      "q": "how jet engines work",
+      "at": "2026-11-24T15:34:42.071Z"
+    },
     {
       "q": "synthesizers",
       "at": "2026-11-24T14:30:15.690Z"
@@ -2895,10 +2896,6 @@
     {
       "q": "welding",
       "at": "2026-11-23T16:56:04.180Z"
-    },
-    {
-      "q": "Mars rovers",
-      "at": "2026-11-23T16:46:03.894Z"
     }
   ],
   "lampOutUntil": "2026-11-23T02:30:10.452Z",

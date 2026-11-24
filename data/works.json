@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 26",
-    "progress": 86,
-    "version": 12,
-    "lastChange": "installed Bix the heat tile onto the underbelly frame to protect against atmospheric entry burn (used Gus, a strip of hull plating)",
+    "progress": 96,
+    "version": 13,
+    "lastChange": "installed high-grade copper wire Rusty Jr. into the primary console harness to link the navigation display (used Bix, a scorched heat tile)",
     "log": [
+      {
+        "version": 13,
+        "change": "installed high-grade copper wire Rusty Jr. into the primary console harness to link the navigation display (used Bix, a scorched heat tile)",
+        "progress": 96,
+        "at": "2026-11-24T23:08:56.747Z"
+      },
       {
         "version": 12,
         "change": "installed Bix the heat tile onto the underbelly frame to protect against atmospheric entry burn (used Gus, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "securing the heavy-duty cooling valves onto the main fuel feed line using bolt Otto (used Fen, a strip of hull plating)",
         "progress": 100,
         "at": "2026-11-23T02:53:39.593Z"
-      },
-      {
-        "version": 13,
-        "change": "mounting the heavy-duty cooling valves onto the main fuel feed line using bolt Otto (used Sprocket, a scorched heat tile)",
-        "progress": 97,
-        "at": "2026-11-23T02:11:46.864Z"
       }
     ],
     "launched": [
@@ -3605,7 +3605,7 @@
         ]
       }
     ],
-    "partsUsed": 10,
+    "partsUsed": 11,
     "parts": [
       {
         "name": "Nim",
@@ -3656,6 +3656,11 @@
         "name": "Gus",
         "what": "a strip of hull plating",
         "version": 12
+      },
+      {
+        "name": "Bix",
+        "what": "a scorched heat tile",
+        "version": 13
       }
     ],
     "design": null
@@ -3922,11 +3927,6 @@
     {
       "name": "Dibs",
       "what": "a cracked navigation chip",
-      "at": "2026-11-24T21:57:45.952Z"
-    },
-    {
-      "name": "Bix",
-      "what": "a scorched heat tile",
       "at": "2026-11-24T21:57:45.952Z"
     }
   ],

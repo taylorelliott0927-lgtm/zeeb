@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 25",
-    "progress": 28,
-    "version": 4,
-    "lastChange": "mounting high-temperature ceramic shielding to the dorsal spine using Dibs (half a thruster nozzle) and Pim (a perfectly good bolt) (used Pim, a perfectly good bolt)",
+    "progress": 36,
+    "version": 5,
+    "lastChange": "mounting high-temperature ceramic shielding to the dorsal spine using Nim (a cracked navigation chip, a really good one) (used Captain, a scorched heat tile)",
     "log": [
+      {
+        "version": 5,
+        "change": "mounting high-temperature ceramic shielding to the dorsal spine using Nim (a cracked navigation chip, a really good one) (used Captain, a scorched heat tile)",
+        "progress": 36,
+        "at": "2026-11-24T00:38:55.287Z"
+      },
       {
         "version": 4,
         "change": "mounting high-temperature ceramic shielding to the dorsal spine using Dibs (half a thruster nozzle) and Pim (a perfectly good bolt) (used Pim, a perfectly good bolt)",
@@ -238,12 +244,6 @@
         "change": "welding Captain, the scorched heat tile, onto the lower nose assembly to shield the primary telemetry housing during atmospheric entry (used Mabel, a coil of copper wire)",
         "progress": 54,
         "at": "2026-11-22T10:09:37.991Z"
-      },
-      {
-        "version": 7,
-        "change": "wiring high-conductance cooling loops around the main radiator panel with high-grade copper wire (used Rusty Jr) (used Rusty Jr, a coil of copper wire)",
-        "progress": 45,
-        "at": "2026-11-22T08:04:31.613Z"
       }
     ],
     "launched": [
@@ -3531,7 +3531,7 @@
         }
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Pim",
@@ -3553,6 +3553,11 @@
         "name": "Pim",
         "what": "a perfectly good bolt",
         "version": 4
+      },
+      {
+        "name": "Captain",
+        "what": "a scorched heat tile",
+        "version": 5
       }
     ],
     "design": null
@@ -3825,11 +3830,6 @@
       "name": "Tok",
       "what": "a tiny gyroscope",
       "at": "2026-11-23T21:23:41.992Z"
-    },
-    {
-      "name": "Captain",
-      "what": "a scorched heat tile",
-      "at": "2026-11-23T20:57:43.104Z"
     }
   ],
   "reads": [

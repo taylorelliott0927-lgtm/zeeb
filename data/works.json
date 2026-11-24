@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 26",
-    "progress": 61,
-    "version": 9,
-    "lastChange": "patched a hole in the hull",
+    "progress": 70,
+    "version": 10,
+    "lastChange": "polished the nose cone (used Otto, a cracked navigation chip)",
     "log": [
+      {
+        "version": 10,
+        "change": "polished the nose cone (used Otto, a cracked navigation chip)",
+        "progress": 70,
+        "at": "2026-11-24T19:01:07.845Z"
+      },
       {
         "version": 9,
         "change": "patched a hole in the hull",
@@ -238,12 +244,6 @@
         "change": "mounting the refractory silica heat tiles onto the lower forward belly plate using bolt Fen (used Tok, a strip of hull plating) (used Lorna, a titanium-grade engine mount washer)",
         "progress": 82,
         "at": "2026-11-23T01:51:47.566Z"
-      },
-      {
-        "version": 10,
-        "change": "welding the stainless steel braided cable sleeves to the main bulkhead using bolt Tok (used Sprocket, a little landing strut)",
-        "progress": 74,
-        "at": "2026-11-23T00:40:32.377Z"
       }
     ],
     "launched": [
@@ -3605,7 +3605,7 @@
         ]
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Nim",
@@ -3641,6 +3641,11 @@
         "name": "Brakk",
         "what": "a cockpit switch that still clicks",
         "version": 8
+      },
+      {
+        "name": "Otto",
+        "what": "a cracked navigation chip",
+        "version": 10
       }
     ],
     "design": null
@@ -3891,11 +3896,6 @@
     {
       "name": "Wren",
       "what": "a tiny gyroscope",
-      "at": "2026-11-24T18:01:59.387Z"
-    },
-    {
-      "name": "Otto",
-      "what": "a cracked navigation chip",
       "at": "2026-11-24T18:01:59.387Z"
     }
   ],

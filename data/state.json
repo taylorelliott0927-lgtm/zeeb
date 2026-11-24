@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795524608286,
+  "lastTick": 1795525208082,
   "asleep": false,
-  "place": "tower",
-  "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-24T12:50:08.286Z",
+  "place": "cantina",
+  "action": "busk",
+  "doing": "playing his tunes for tips at the cantina",
+  "actionStartedAt": "2026-11-24T13:00:08.082Z",
   "actionMinutes": 40,
-  "thought": "If the Little Dart rides into one of those switchback patches, the whole magnetic compass is gonna twitch hard! Need to make sure my steering servos don't panic when the solar wind does a flip. *bweep*",
-  "feeling": "bouncing on my treads, starry-eyed",
-  "say": "Time to aim the dish and see what the Wire has to say about solar winds!",
-  "mood": 0.406,
-  "energy": 0.483,
+  "thought": "my charge is bugging me most right now.",
+  "feeling": "pretty good actually",
+  "say": "",
+  "mood": 0.475,
+  "energy": 0.386,
   "needs": {
-    "charge": 0.227,
-    "oil": 0.111,
-    "curiosity": 0.042,
+    "charge": 0.274,
+    "oil": 0.151,
+    "curiosity": 0.122,
     "company": 0,
-    "craft": 0.118
+    "craft": 0
   },
-  "credits": 0,
+  "credits": 3,
   "recent": [
+    {
+      "id": "busk",
+      "detail": "",
+      "at": "2026-11-24T13:00:08.082Z"
+    },
     {
       "id": "browse_wire",
       "detail": "solar wind navigation patches",
@@ -75,11 +80,6 @@
       "id": "go_to_sleep",
       "detail": "",
       "at": "2026-11-24T10:51:09.586Z"
-    },
-    {
-      "id": "send_signal",
-      "detail": "Rustwell Outpost calling any craft in the sector! This is scrap-bot Zeeb at Hang",
-      "at": "2026-11-24T10:41:10.631Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T12:50:08.286Z",
+  "lettersCheckedAt": "2026-11-24T13:00:08.082Z",
   "weather": {
     "kind": "clear",
     "temp": 23,
@@ -1650,50 +1650,51 @@
   },
   "sleepDay": 96,
   "lastReflectDay": 96,
-  "brain": "gemini-3.5-flash",
-  "updatedAt": "2026-11-24T12:50:08.286Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-24T13:00:08.082Z",
   "clock": {
     "day": 97,
-    "time": "18:42",
-    "hour": 18,
-    "minute": 42
+    "time": "20:02",
+    "hour": 20,
+    "minute": 2
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the Dented Moon cantina",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-24T12:50:08.286Z"
+    "action": "busk",
+    "since": "2026-11-24T13:00:08.082Z"
   },
-  "busyUntil": "2026-11-24T12:55:08.286Z",
-  "busyUntilTown": "19:22",
+  "busyUntil": "2026-11-24T13:05:08.082Z",
+  "busyUntilTown": "20:42",
   "runner": "github",
   "model": "gemini-3.5-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "scouring the Wire for solar wind navigation patches",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "look_up",
-    "wiggle"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-24T12:22:22.722Z",
+    "at": "2026-11-24T13:00:08.082Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-24T12:22:22.722Z"
+        "text": "+3 in tips",
+        "kind": "credits",
+        "at": "2026-11-24T13:00:08.082Z"
       }
     ]
   },
   "event": {
-    "id": "emwukdw4n",
-    "key": "crackle",
-    "text": "He heard a strange crackle on his dish. Probably nothing. Probably.",
-    "at": "2026-11-24T10:41:10.631Z"
+    "id": "emwupclci",
+    "key": "freighter",
+    "text": "A freighter came in low over the hangar and rattled every bolt in the place.",
+    "at": "2026-11-24T13:00:08.082Z"
   },
   "thoughts": [
+    {
+      "text": "my charge is bugging me most right now.",
+      "at": "2026-11-24T13:00:08.082Z"
+    },
     {
       "text": "If the Little Dart rides into one of those switchback patches, the whole magnetic compass is gonna twitch hard! Need to make sure my steering servos don't panic when the solar wind does a flip. *bweep*",
       "at": "2026-11-24T12:50:08.286Z"
@@ -1713,13 +1714,9 @@
     {
       "text": "my charge is bugging me most right now.",
       "at": "2026-11-24T11:52:22.925Z"
-    },
-    {
-      "text": "Traders always hide the best copper under the rusted plates. I just gotta spot it first.",
-      "at": "2026-11-24T11:42:23.693Z"
     }
   ],
-  "sayAt": "2026-11-24T12:50:08.286Z",
+  "sayAt": "2026-11-24T13:00:08.082Z",
   "today": {
     "day": 97,
     "counts": {
@@ -1733,7 +1730,8 @@
       "buy_part": 1,
       "fix_job": 1,
       "nap_dock": 1,
-      "browse_wire": 1
+      "browse_wire": 1,
+      "busk": 1
     }
   },
   "lastDone": {
@@ -1756,7 +1754,7 @@
     "stargaze": "2026-11-22T10:33:26.540Z",
     "go_to_sleep": "2026-11-24T10:51:09.586Z",
     "chat_patrons": "2026-11-23T21:17:42.589Z",
-    "busk": "2026-11-22T09:39:37.950Z",
+    "busk": "2026-11-24T13:00:08.082Z",
     "cantina_band": "2026-11-21T01:37:19.419Z",
     "nap_dock": "2026-11-24T12:02:22.596Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
@@ -2858,7 +2856,7 @@
     "at": "2026-11-24T07:58:09.714Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T12:50:08.286Z",
+  "feedArchivedAt": "2026-11-24T13:00:08.082Z",
   "plans": [],
   "searches": [
     {

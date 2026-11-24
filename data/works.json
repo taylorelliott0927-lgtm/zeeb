@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 26",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 10,
+    "version": 1,
+    "lastChange": "mounting and welding the repaired port micro thruster onto the Little Dart Mk 25 fuselage (used Nim, a little landing strut)",
     "log": [
+      {
+        "version": 1,
+        "change": "mounting and welding the repaired port micro thruster onto the Little Dart Mk 25 fuselage (used Nim, a little landing strut)",
+        "progress": 10,
+        "at": "2026-11-24T09:04:36.777Z"
+      },
       {
         "version": 13,
         "change": "routing copper wire Rusty Jr. from the primary console to the auxiliary fuel bay with precision solder joints (used Captain, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "welding the forward upper cowl plates using Fen, the high-grade sensor eye, to line up the structural seams (used Captain, a strip of hull plating)",
         "progress": 14,
         "at": "2026-11-22T16:35:18.891Z"
-      },
-      {
-        "version": 1,
-        "change": "welding the radiator coolant return lines to the main frame using Rusty Jr, the cockpit switch",
-        "progress": 4,
-        "at": "2026-11-22T14:33:17.449Z"
       }
     ],
     "launched": [
@@ -3605,8 +3605,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Nim",
+        "what": "a little landing strut",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -3860,11 +3866,6 @@
     {
       "name": "Dibs",
       "what": "a tiny gyroscope",
-      "at": "2026-11-24T03:02:26.879Z"
-    },
-    {
-      "name": "Nim",
-      "what": "a little landing strut",
       "at": "2026-11-24T03:02:26.879Z"
     }
   ],

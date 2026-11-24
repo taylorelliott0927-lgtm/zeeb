@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795556265993,
+  "lastTick": 1795556865854,
   "asleep": false,
   "place": "depot",
   "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
+  "doing": "still sipping oil at the fuel depot",
   "actionStartedAt": "2026-11-24T21:37:45.993Z",
-  "actionMinutes": 20,
-  "thought": "my craft is bugging me most right now.",
-  "feeling": "pretty good actually",
-  "say": "",
-  "mood": 0.322,
-  "energy": 0.642,
+  "actionMinutes": 30,
+  "thought": "that fresh oil hits the spot and gets my gears turning smoothly again. *bweep*",
+  "feeling": "refreshed and ready",
+  "say": "fill her up again, pump!",
+  "mood": 0.323,
+  "energy": 0.662,
   "needs": {
-    "charge": 0.048,
+    "charge": 0.095,
     "oil": 0,
-    "curiosity": 0.402,
-    "company": 0.055,
-    "craft": 0.403
+    "curiosity": 0.482,
+    "company": 0.108,
+    "craft": 0.47
   },
-  "credits": 7,
+  "credits": 6,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-24T21:47:45.854Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "patched a hole in the hull",
       "at": "2026-11-24T20:01:44.273Z"
-    },
-    {
-      "id": "go_to_sleep",
-      "detail": "",
-      "at": "2026-11-24T19:51:44.012Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T21:37:45.993Z",
+  "lettersCheckedAt": "2026-11-24T21:47:45.854Z",
   "weather": {
     "kind": "hazy",
     "temp": 18,
@@ -1650,13 +1650,13 @@
   },
   "sleepDay": 99,
   "lastReflectDay": 99,
-  "brain": "rules",
-  "updatedAt": "2026-11-24T21:37:45.993Z",
+  "brain": "gemini-3.5-flash-lite",
+  "updatedAt": "2026-11-24T21:47:45.854Z",
   "clock": {
     "day": 100,
-    "time": "17:03",
-    "hour": 17,
-    "minute": 3
+    "time": "18:23",
+    "hour": 18,
+    "minute": 23
   },
   "townDayMinutes": 180,
   "placeName": "the fuel depot",
@@ -1664,23 +1664,26 @@
     "action": "drink_oil",
     "since": "2026-11-24T21:37:45.993Z"
   },
-  "busyUntil": "2026-11-24T21:40:15.993Z",
-  "busyUntilTown": "17:23",
+  "busyUntil": "2026-11-24T21:51:30.854Z",
+  "busyUntilTown": "18:53",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "",
+  "doingWords": "sipping fresh oil at the depot, watching the hazy desert dust settle",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [],
+  "body": [
+    "nod",
+    "bounce"
+  ],
   "pops": {
-    "at": "2026-11-24T21:37:45.993Z",
+    "at": "2026-11-24T21:47:45.854Z",
     "items": [
       {
         "text": "-1 credit",
         "kind": "spend",
-        "at": "2026-11-24T21:37:45.993Z"
+        "at": "2026-11-24T21:47:45.854Z"
       }
     ]
   },
@@ -1691,6 +1694,10 @@
     "at": "2026-11-24T20:57:32.363Z"
   },
   "thoughts": [
+    {
+      "text": "that fresh oil hits the spot and gets my gears turning smoothly again. *bweep*",
+      "at": "2026-11-24T21:47:45.854Z"
+    },
     {
       "text": "my craft is bugging me most right now.",
       "at": "2026-11-24T21:37:45.993Z"
@@ -1710,20 +1717,16 @@
     {
       "text": "my charge is bugging me most right now.",
       "at": "2026-11-24T20:57:32.363Z"
-    },
-    {
-      "text": "My stash is down to zero. Time to hustle over to the market bins and see what useful scrap got thrown out today!",
-      "at": "2026-11-24T20:47:31.888Z"
     }
   ],
-  "sayAt": "2026-11-24T21:37:45.993Z",
+  "sayAt": "2026-11-24T21:47:45.854Z",
   "today": {
     "day": 100,
     "counts": {
       "send_signal": 1,
       "go_to_sleep": 1,
       "work_dart": 1,
-      "drink_oil": 3,
+      "drink_oil": 4,
       "browse_wire": 1,
       "compose_tune": 1,
       "scavenge": 1,
@@ -1734,7 +1737,7 @@
   "lastDone": {
     "work_dart": "2026-11-24T20:01:44.273Z",
     "read_news": "2026-11-24T17:17:43.791Z",
-    "drink_oil": "2026-11-24T21:37:45.993Z",
+    "drink_oil": "2026-11-24T21:47:45.854Z",
     "follow_link": "2026-11-24T18:41:08.215Z",
     "scavenge": "2026-11-24T20:47:31.888Z",
     "fix_job": "2026-11-24T17:41:59.414Z",
@@ -1791,6 +1794,20 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "fill her up again, pump!",
+      "kind": "say",
+      "at": "2026-11-24T21:47:45.854Z",
+      "town": "day 100 18:23",
+      "place": "the fuel depot"
+    },
+    {
+      "text": "that fresh oil hits the spot and gets my gears turning smoothly again. *bweep*",
+      "kind": "think",
+      "at": "2026-11-24T21:47:45.854Z",
+      "town": "day 100 18:23",
+      "place": "the fuel depot"
+    },
     {
       "text": "plugging in here always gets me back to full power so i can keep building. cozy gears, bweep.",
       "kind": "think",
@@ -2826,20 +2843,6 @@
       "at": "2026-11-24T02:13:55.869Z",
       "town": "day 94 05:52",
       "place": "the comms tower"
-    },
-    {
-      "text": "*click-hum*",
-      "kind": "say",
-      "at": "2026-11-24T02:03:55.625Z",
-      "town": "day 94 04:32",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "time to plug in and let the dock fill my cells right back up *bweep*.",
-      "kind": "think",
-      "at": "2026-11-24T02:03:55.625Z",
-      "town": "day 94 04:32",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2850,7 +2853,7 @@
     "at": "2026-11-24T07:58:09.714Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T21:37:45.993Z",
+  "feedArchivedAt": "2026-11-24T21:47:45.854Z",
   "plans": [],
   "searches": [
     {

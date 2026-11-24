@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795481936161,
+  "lastTick": 1795482535405,
   "asleep": false,
-  "place": "tower",
-  "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-24T00:58:56.161Z",
-  "actionMinutes": 45,
-  "thought": "read about www.osti.gov. filing that away.",
-  "feeling": "curious",
-  "say": "time to check the data streams *bweep*",
-  "mood": 0.334,
-  "energy": 0.122,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-24T01:08:55.405Z",
+  "actionMinutes": 20,
+  "thought": "my oil is bugging me most right now.",
+  "feeling": "pretty good actually",
+  "say": "",
+  "mood": 0.359,
+  "energy": 0.18,
   "needs": {
-    "charge": 0.338,
-    "oil": 0.462,
-    "curiosity": 0.236,
-    "company": 0,
-    "craft": 0.067
+    "charge": 0.385,
+    "oil": 0,
+    "curiosity": 0.316,
+    "company": 0.053,
+    "craft": 0.134
   },
-  "credits": 4,
+  "credits": 3,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-24T01:08:55.405Z"
+    },
     {
       "id": "browse_wire",
       "detail": "high-frequency plasma sheath attenuation brackets",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-23T23:10:52.538Z"
-    },
-    {
-      "id": "go_to_sleep",
-      "detail": "",
-      "at": "2026-11-23T23:00:52.440Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T00:58:56.161Z",
+  "lettersCheckedAt": "2026-11-24T01:08:55.405Z",
   "weather": {
     "kind": "clear",
     "temp": 16,
@@ -1650,39 +1650,37 @@
   },
   "sleepDay": 92,
   "lastReflectDay": 92,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-24T00:58:56.161Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-24T01:08:55.405Z",
   "clock": {
     "day": 93,
-    "time": "19:52",
-    "hour": 19,
-    "minute": 52
+    "time": "21:12",
+    "hour": 21,
+    "minute": 12
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-24T00:58:56.161Z"
+    "action": "drink_oil",
+    "since": "2026-11-24T01:08:55.405Z"
   },
-  "busyUntil": "2026-11-24T01:04:33.661Z",
-  "busyUntilTown": "20:37",
+  "busyUntil": "2026-11-24T01:11:25.405Z",
+  "busyUntilTown": "21:32",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "rolling up to the comms tower and scanning the wire for plasma shield specs",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "look_up"
-  ],
+  "body": [],
   "pops": {
-    "at": "2026-11-23T23:53:05.789Z",
+    "at": "2026-11-24T01:08:55.405Z",
     "items": [
       {
-        "text": "+2 credits",
-        "kind": "credits",
-        "at": "2026-11-23T23:53:05.789Z"
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-24T01:08:55.405Z"
       }
     ]
   },
@@ -1693,6 +1691,10 @@
     "at": "2026-11-23T20:57:43.104Z"
   },
   "thoughts": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "at": "2026-11-24T01:08:55.405Z"
+    },
     {
       "text": "read about www.osti.gov. filing that away.",
       "at": "2026-11-24T00:58:56.161Z"
@@ -1712,19 +1714,15 @@
     {
       "text": "A quick recharge will give me all the juice I need for the next round of hull plating *bweep*.",
       "at": "2026-11-24T00:18:55.921Z"
-    },
-    {
-      "text": "The junk market run was a success, but my power core is humming a low tune. Time to get back to Bay 3 and hit the charger *bweep*.",
-      "at": "2026-11-24T00:03:05.831Z"
     }
   ],
-  "sayAt": "2026-11-24T00:58:56.161Z",
+  "sayAt": "2026-11-24T01:08:55.405Z",
   "today": {
     "day": 93,
     "counts": {
       "work_dart": 6,
       "go_to_sleep": 1,
-      "drink_oil": 1,
+      "drink_oil": 2,
       "fix_job": 1,
       "scavenge": 1,
       "buy_part": 1,
@@ -1736,7 +1734,7 @@
   "lastDone": {
     "work_dart": "2026-11-24T00:48:55.868Z",
     "read_news": "2026-11-23T19:04:19.505Z",
-    "drink_oil": "2026-11-23T23:10:52.538Z",
+    "drink_oil": "2026-11-24T01:08:55.405Z",
     "follow_link": "2026-11-23T15:48:02.383Z",
     "scavenge": "2026-11-23T23:33:05.838Z",
     "fix_job": "2026-11-23T23:23:06.227Z",
@@ -1793,6 +1791,13 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-24T01:08:55.405Z",
+      "town": "day 93 21:12",
+      "place": "the fuel depot"
+    },
     {
       "text": "time to check the data streams *bweep*",
       "kind": "say",
@@ -2835,13 +2840,6 @@
       "at": "2026-11-23T06:06:23.303Z",
       "town": "day 87 12:52",
       "place": "the comms tower"
-    },
-    {
-      "text": "watch out, pebble, zeeb is rolling through!",
-      "kind": "say",
-      "at": "2026-11-23T05:56:23.473Z",
-      "town": "day 87 11:32",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2852,7 +2850,7 @@
     "at": "2026-11-23T22:03:41.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T00:58:56.161Z",
+  "feedArchivedAt": "2026-11-24T01:08:55.405Z",
   "plans": [],
   "searches": [
     {

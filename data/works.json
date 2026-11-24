@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 25",
-    "progress": 36,
-    "version": 5,
-    "lastChange": "mounting high-temperature ceramic shielding to the dorsal spine using Nim (a cracked navigation chip, a really good one) (used Captain, a scorched heat tile)",
+    "progress": 45,
+    "version": 6,
+    "lastChange": "welding the last high-temperature ceramic shielding tiles to the forward dorsal spine using Nim (a cracked navigation chip, a really good one) (used Tok, a tiny gyroscope)",
     "log": [
+      {
+        "version": 6,
+        "change": "welding the last high-temperature ceramic shielding tiles to the forward dorsal spine using Nim (a cracked navigation chip, a really good one) (used Tok, a tiny gyroscope)",
+        "progress": 45,
+        "at": "2026-11-24T00:48:55.868Z"
+      },
       {
         "version": 5,
         "change": "mounting high-temperature ceramic shielding to the dorsal spine using Nim (a cracked navigation chip, a really good one) (used Captain, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "tuned the left thruster (used Sprocket, half a thruster nozzle)",
         "progress": 61,
         "at": "2026-11-22T11:13:26.816Z"
-      },
-      {
-        "version": 8,
-        "change": "welding Captain, the scorched heat tile, onto the lower nose assembly to shield the primary telemetry housing during atmospheric entry (used Mabel, a coil of copper wire)",
-        "progress": 54,
-        "at": "2026-11-22T10:09:37.991Z"
       }
     ],
     "launched": [
@@ -3531,7 +3531,7 @@
         }
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Pim",
@@ -3558,6 +3558,11 @@
         "name": "Captain",
         "what": "a scorched heat tile",
         "version": 5
+      },
+      {
+        "name": "Tok",
+        "what": "a tiny gyroscope",
+        "version": 6
       }
     ],
     "design": null
@@ -3825,11 +3830,6 @@
       "what": "a cracked navigation chip",
       "at": "2026-11-23T21:43:41.744Z",
       "good": true
-    },
-    {
-      "name": "Tok",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-23T21:23:41.992Z"
     }
   ],
   "reads": [

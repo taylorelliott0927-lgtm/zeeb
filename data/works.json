@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 26",
-    "progress": 37,
-    "version": 5,
-    "lastChange": "aligning thermal sensor leads and securing the dorsal frame for Little Dart Mk 26 (used Sprocket, a scorched heat tile)",
+    "progress": 45,
+    "version": 6,
+    "lastChange": "mounting Mabel the dented fuel cell to the auxiliary power bus for the Little Dart Mk 26 (used Brakk, a mystery box that hums)",
     "log": [
+      {
+        "version": 6,
+        "change": "mounting Mabel the dented fuel cell to the auxiliary power bus for the Little Dart Mk 26 (used Brakk, a mystery box that hums)",
+        "progress": 45,
+        "at": "2026-11-24T13:30:07.477Z"
+      },
       {
         "version": 5,
         "change": "aligning thermal sensor leads and securing the dorsal frame for Little Dart Mk 26 (used Sprocket, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "mounting the new heavy-duty cooling valves onto the fuel line using bolt Rusty Jr (used Gus, a dented fuel cell)",
         "progress": 54,
         "at": "2026-11-22T21:46:58.815Z"
-      },
-      {
-        "version": 6,
-        "change": "securing high-temp silica tiles onto the Little Dart's nose cone using sturdy little brass nuts (used Wren, a sensor eye with one crack)",
-        "progress": 45,
-        "at": "2026-11-22T19:56:28.764Z"
       }
     ],
     "launched": [
@@ -3605,7 +3605,7 @@
         ]
       }
     ],
-    "partsUsed": 4,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Nim",
@@ -3626,6 +3626,11 @@
         "name": "Sprocket",
         "what": "a scorched heat tile",
         "version": 5
+      },
+      {
+        "name": "Brakk",
+        "what": "a mystery box that hums",
+        "version": 6
       }
     ],
     "design": null
@@ -3877,11 +3882,6 @@
       "name": "Mabel",
       "what": "a dented fuel cell",
       "at": "2026-11-24T11:52:22.925Z"
-    },
-    {
-      "name": "Brakk",
-      "what": "a mystery box that hums",
-      "at": "2026-11-24T11:42:23.693Z"
     }
   ],
   "reads": [

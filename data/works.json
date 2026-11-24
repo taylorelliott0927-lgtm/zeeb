@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 26",
-    "progress": 70,
-    "version": 10,
-    "lastChange": "polished the nose cone (used Otto, a cracked navigation chip)",
+    "progress": 79,
+    "version": 11,
+    "lastChange": "patched a hole in the hull (used Wren, a tiny gyroscope)",
     "log": [
+      {
+        "version": 11,
+        "change": "patched a hole in the hull (used Wren, a tiny gyroscope)",
+        "progress": 79,
+        "at": "2026-11-24T20:01:44.273Z"
+      },
       {
         "version": 10,
         "change": "polished the nose cone (used Otto, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "mounting the tungsten reinforced brackets onto the main reaction thruster mount using bolt Otto (used Brakk, a little landing strut) (used Pim, a scorched heat tile)",
         "progress": 90,
         "at": "2026-11-23T02:01:46.910Z"
-      },
-      {
-        "version": 11,
-        "change": "mounting the refractory silica heat tiles onto the lower forward belly plate using bolt Fen (used Tok, a strip of hull plating) (used Lorna, a titanium-grade engine mount washer)",
-        "progress": 82,
-        "at": "2026-11-23T01:51:47.566Z"
       }
     ],
     "launched": [
@@ -3605,7 +3605,7 @@
         ]
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Nim",
@@ -3646,6 +3646,11 @@
         "name": "Otto",
         "what": "a cracked navigation chip",
         "version": 10
+      },
+      {
+        "name": "Wren",
+        "what": "a tiny gyroscope",
+        "version": 11
       }
     ],
     "design": null
@@ -3892,13 +3897,7 @@
       "at": "2026-11-14T07:09:57.410Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Wren",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-24T18:01:59.387Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Celestial Navigation Weekend, June 6-8, 2008, Mystic Seaport",

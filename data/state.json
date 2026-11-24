@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795542719463,
+  "lastTick": 1795543319387,
   "asleep": false,
-  "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-24T17:51:59.463Z",
-  "actionMinutes": 40,
-  "thought": "my charge is bugging me most right now.",
-  "feeling": "pretty good actually",
-  "say": "",
-  "mood": 0.351,
-  "energy": 0.379,
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-24T18:01:59.387Z",
+  "actionMinutes": 45,
+  "thought": "Maybe today someone dumped a salvaged thermal camera or high-temp wire in the bins. My brass dish is pinging!",
+  "feeling": "eager and hopeful",
+  "say": "Time to find some real treasure in the scrap piles! *bweep*",
+  "mood": 0.433,
+  "energy": 0.498,
   "needs": {
-    "charge": 0.009,
-    "oil": 0.257,
-    "curiosity": 0.318,
-    "company": 0.053,
-    "craft": 0.067
+    "charge": 0.056,
+    "oil": 0.327,
+    "curiosity": 0.048,
+    "company": 0.106,
+    "craft": 0.134
   },
   "credits": 12,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-24T18:01:59.387Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "tuned the left thruster",
       "at": "2026-11-24T16:04:41.750Z"
-    },
-    {
-      "id": "fix_job",
-      "detail": "",
-      "at": "2026-11-24T15:54:41.492Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T17:51:59.463Z",
+  "lettersCheckedAt": "2026-11-24T18:01:59.387Z",
   "weather": {
     "kind": "clear",
     "temp": 21,
@@ -1650,37 +1650,45 @@
   },
   "sleepDay": 98,
   "lastReflectDay": 98,
-  "brain": "rules",
-  "updatedAt": "2026-11-24T17:51:59.463Z",
+  "brain": "gemini-3.6-flash",
+  "updatedAt": "2026-11-24T18:01:59.387Z",
   "clock": {
     "day": 99,
-    "time": "10:57",
-    "hour": 10,
-    "minute": 57
+    "time": "12:17",
+    "hour": 12,
+    "minute": 17
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the junk market",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-24T17:51:59.463Z"
+    "action": "scavenge",
+    "since": "2026-11-24T18:01:59.387Z"
   },
-  "busyUntil": "2026-11-24T17:56:59.463Z",
-  "busyUntilTown": "11:37",
+  "busyUntil": "2026-11-24T18:07:36.887Z",
+  "busyUntilTown": "13:02",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "",
+  "doingWords": "digging through scrap bins at the junk market",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [],
+  "body": [
+    "zoom",
+    "wiggle"
+  ],
   "pops": {
-    "at": "2026-11-24T17:41:59.414Z",
+    "at": "2026-11-24T18:01:59.387Z",
     "items": [
       {
-        "text": "+3 credits",
-        "kind": "credits",
-        "at": "2026-11-24T17:41:59.414Z"
+        "text": "+ a cracked navigation chip",
+        "kind": "part",
+        "at": "2026-11-24T18:01:59.387Z"
+      },
+      {
+        "text": "+ a tiny gyroscope",
+        "kind": "part",
+        "at": "2026-11-24T18:01:59.387Z"
       }
     ]
   },
@@ -1691,6 +1699,10 @@
     "at": "2026-11-24T17:32:00.054Z"
   },
   "thoughts": [
+    {
+      "text": "Maybe today someone dumped a salvaged thermal camera or high-temp wire in the bins. My brass dish is pinging!",
+      "at": "2026-11-24T18:01:59.387Z"
+    },
     {
       "text": "my charge is bugging me most right now.",
       "at": "2026-11-24T17:51:59.463Z"
@@ -1710,13 +1722,9 @@
     {
       "text": "huh. \"Webb Reveals New Details in Supernova Remnant\". the galaxy keeps busy.",
       "at": "2026-11-24T17:17:43.791Z"
-    },
-    {
-      "text": "read about How Do Jet Engines Work? Simple Step-by-Step Guide. filing that away.",
-      "at": "2026-11-24T17:07:44.180Z"
     }
   ],
-  "sayAt": "2026-11-24T17:51:59.463Z",
+  "sayAt": "2026-11-24T18:01:59.387Z",
   "today": {
     "day": 99,
     "counts": {
@@ -1727,7 +1735,8 @@
       "read_news": 1,
       "compose_tune": 1,
       "sell_scrap": 1,
-      "fix_job": 1
+      "fix_job": 1,
+      "scavenge": 1
     }
   },
   "lastDone": {
@@ -1735,7 +1744,7 @@
     "read_news": "2026-11-24T17:17:43.791Z",
     "drink_oil": "2026-11-24T16:47:43.915Z",
     "follow_link": "2026-11-24T17:07:44.180Z",
-    "scavenge": "2026-11-24T15:44:41.965Z",
+    "scavenge": "2026-11-24T18:01:59.387Z",
     "fix_job": "2026-11-24T17:41:59.414Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -1790,6 +1799,20 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "Time to find some real treasure in the scrap piles! *bweep*",
+      "kind": "say",
+      "at": "2026-11-24T18:01:59.387Z",
+      "town": "day 99 12:17",
+      "place": "the junk market"
+    },
+    {
+      "text": "Maybe today someone dumped a salvaged thermal camera or high-temp wire in the bins. My brass dish is pinging!",
+      "kind": "think",
+      "at": "2026-11-24T18:01:59.387Z",
+      "town": "day 99 12:17",
+      "place": "the junk market"
+    },
     {
       "text": "Hold still, little circuit... just need a quick dab of solder! *bweep*",
       "kind": "say",
@@ -2825,20 +2848,6 @@
       "at": "2026-11-23T23:53:05.789Z",
       "town": "day 93 11:06",
       "place": "the junk market"
-    },
-    {
-      "text": "Hey there! Got five credits for something extra shiny, bweep!",
-      "kind": "say",
-      "at": "2026-11-23T23:43:05.485Z",
-      "town": "day 93 09:45",
-      "place": "the junk market"
-    },
-    {
-      "text": "Five credits burning a hole in my chassis! Let's see if this trader has any good wiring or thermal bits.",
-      "kind": "think",
-      "at": "2026-11-23T23:43:05.485Z",
-      "town": "day 93 09:45",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2849,7 +2858,7 @@
     "at": "2026-11-24T07:58:09.714Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T17:51:59.463Z",
+  "feedArchivedAt": "2026-11-24T18:01:59.387Z",
   "plans": [],
   "searches": [
     {

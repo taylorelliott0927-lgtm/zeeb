@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795558065571,
+  "lastTick": 1795558665368,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-24T22:07:45.571Z",
+  "place": "cantina",
+  "action": "cantina_band",
+  "doing": "listening to the band at the Dented Moon",
+  "actionStartedAt": "2026-11-24T22:17:45.368Z",
   "actionMinutes": 45,
-  "thought": "That scorched tile Bix fits right along the belly seam. A few solid welds and we are one step closer to space! *bweep*",
-  "feeling": "excited and focused",
-  "say": "Hold still, Bix! Just one quick weld and you are part of a starship! *bweep*",
-  "mood": 0.357,
-  "energy": 0.484,
+  "thought": "The brass players over at the bandstand really know how to hit those high notes. I should tap along and soak up the lively noise.",
+  "feeling": "bright and cheerful",
+  "say": "that horn section has more punch than a tuned thruster nozzle",
+  "mood": 0.422,
+  "energy": 0.375,
   "needs": {
-    "charge": 0.239,
-    "oil": 0.11,
-    "curiosity": 0.292,
-    "company": 0.214,
-    "craft": 0.104
+    "charge": 0.286,
+    "oil": 0.15,
+    "curiosity": 0.322,
+    "company": 0.017,
+    "craft": 0.171
   },
   "credits": 6,
   "recent": [
+    {
+      "id": "cantina_band",
+      "detail": "",
+      "at": "2026-11-24T22:17:45.368Z"
+    },
     {
       "id": "work_dart",
       "detail": "installed Bix the heat tile onto the underbelly frame to protect against atmosph",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "sandstorms",
       "at": "2026-11-24T20:31:43.457Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-24T20:21:43.620Z"
     }
   ],
   "wants": [
@@ -1639,43 +1639,43 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-24T22:07:45.571Z",
+  "lettersCheckedAt": "2026-11-24T22:17:45.368Z",
   "weather": {
-    "kind": "hazy",
-    "temp": 18,
-    "wind": 2,
-    "mood": 0,
+    "kind": "clear",
+    "temp": 17,
+    "wind": 4,
+    "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-24T21:37:46.294Z"
+    "at": "2026-11-24T22:17:45.588Z"
   },
   "sleepDay": 99,
   "lastReflectDay": 99,
-  "brain": "gemini-3.5-flash",
-  "updatedAt": "2026-11-24T22:07:45.571Z",
+  "brain": "gemini-3.5-flash-lite",
+  "updatedAt": "2026-11-24T22:17:45.368Z",
   "clock": {
     "day": 100,
-    "time": "21:03",
-    "hour": 21,
-    "minute": 3
+    "time": "22:23",
+    "hour": 22,
+    "minute": 23
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the Dented Moon cantina",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-24T22:07:45.571Z"
+    "action": "cantina_band",
+    "since": "2026-11-24T22:17:45.368Z"
   },
-  "busyUntil": "2026-11-24T22:13:23.071Z",
-  "busyUntilTown": "21:48",
+  "busyUntil": "2026-11-24T22:23:22.868Z",
+  "busyUntilTown": "23:08",
   "runner": "github",
-  "model": "gemini-3.5-flash",
+  "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "welding heat tiles onto the Little Dart with quick sparks",
+  "doingWords": "tapping my brass dish to the house band's rhythm",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
     "nod",
-    "celebrate"
+    "bounce"
   ],
   "pops": {
     "at": "2026-11-24T21:57:45.952Z",
@@ -1708,12 +1708,16 @@
     ]
   },
   "event": {
-    "id": "emwv8jzog",
-    "key": "crate",
-    "text": "A cargo crate fell off a freighter at the edge of the dunes. Some of it rolled his way.",
-    "at": "2026-11-24T21:57:45.952Z"
+    "id": "emwv99p5k",
+    "key": "band",
+    "text": "The cantina band played his favourite song while he walked past.",
+    "at": "2026-11-24T22:17:45.368Z"
   },
   "thoughts": [
+    {
+      "text": "The brass players over at the bandstand really know how to hit those high notes. I should tap along and soak up the lively noise.",
+      "at": "2026-11-24T22:17:45.368Z"
+    },
     {
       "text": "That scorched tile Bix fits right along the belly seam. A few solid welds and we are one step closer to space! *bweep*",
       "at": "2026-11-24T22:07:45.571Z"
@@ -1733,13 +1737,9 @@
     {
       "text": "plugging in here always gets me back to full power so i can keep building. cozy gears, bweep.",
       "at": "2026-11-24T21:27:32.114Z"
-    },
-    {
-      "text": "i really need to get my battery back up before i touch the wiring on the dart again.",
-      "at": "2026-11-24T21:17:31.658Z"
     }
   ],
-  "sayAt": "2026-11-24T22:07:45.571Z",
+  "sayAt": "2026-11-24T22:17:45.368Z",
   "today": {
     "day": 100,
     "counts": {
@@ -1751,7 +1751,8 @@
       "compose_tune": 1,
       "scavenge": 2,
       "chat_patrons": 2,
-      "nap_dock": 2
+      "nap_dock": 2,
+      "cantina_band": 1
     }
   },
   "lastDone": {
@@ -1775,7 +1776,7 @@
     "go_to_sleep": "2026-11-24T19:51:44.012Z",
     "chat_patrons": "2026-11-24T21:07:31.934Z",
     "busk": "2026-11-24T13:00:08.082Z",
-    "cantina_band": "2026-11-21T01:37:19.419Z",
+    "cantina_band": "2026-11-24T22:17:45.368Z",
     "nap_dock": "2026-11-24T21:27:32.114Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
@@ -1814,6 +1815,20 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "that horn section has more punch than a tuned thruster nozzle",
+      "kind": "say",
+      "at": "2026-11-24T22:17:45.368Z",
+      "town": "day 100 22:23",
+      "place": "the Dented Moon cantina"
+    },
+    {
+      "text": "The brass players over at the bandstand really know how to hit those high notes. I should tap along and soak up the lively noise.",
+      "kind": "think",
+      "at": "2026-11-24T22:17:45.368Z",
+      "town": "day 100 22:23",
+      "place": "the Dented Moon cantina"
+    },
     {
       "text": "Hold still, Bix! Just one quick weld and you are part of a starship! *bweep*",
       "kind": "say",
@@ -2849,20 +2864,6 @@
       "at": "2026-11-24T02:42:26.842Z",
       "town": "day 94 09:40",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "bwee-bop-tee-doo-bzzt *bweep*",
-      "kind": "say",
-      "at": "2026-11-24T02:33:55.692Z",
-      "town": "day 94 08:32",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "time to string together a brand new five-note sequence for the Little Dart's next flight arc. let's see how this one hums.",
-      "kind": "think",
-      "at": "2026-11-24T02:33:55.692Z",
-      "town": "day 94 08:32",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2873,7 +2874,7 @@
     "at": "2026-11-24T07:58:09.714Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-24T22:07:45.571Z",
+  "feedArchivedAt": "2026-11-24T22:17:45.368Z",
   "plans": [],
   "searches": [
     {

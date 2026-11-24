@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 26",
-    "progress": 52,
-    "version": 7,
-    "lastChange": "rewired the cockpit lights (used Mabel, a dented fuel cell)",
+    "progress": 58,
+    "version": 8,
+    "lastChange": "tuned the left thruster (used Brakk, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 8,
+        "change": "tuned the left thruster (used Brakk, a cockpit switch that still clicks)",
+        "progress": 58,
+        "at": "2026-11-24T16:04:41.750Z"
+      },
       {
         "version": 7,
         "change": "rewired the cockpit lights (used Mabel, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "routing stainless steel braided cable sleeves around the flight computer and securing the bundles to the main bulkhead using bolt Sprocket (used Bix, a cracked navigation chip)",
         "progress": 67,
         "at": "2026-11-23T00:30:32.280Z"
-      },
-      {
-        "version": 8,
-        "change": "welding the fuel line joints onto the bulkhead using bolt Tok (used Rusty Jr, a cracked navigation chip)",
-        "progress": 60,
-        "at": "2026-11-22T21:56:58.382Z"
       }
     ],
     "launched": [
@@ -3605,7 +3605,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Nim",
@@ -3636,6 +3636,11 @@
         "name": "Mabel",
         "what": "a dented fuel cell",
         "version": 7
+      },
+      {
+        "name": "Brakk",
+        "what": "a cockpit switch that still clicks",
+        "version": 8
       }
     ],
     "design": null
@@ -3882,14 +3887,7 @@
       "at": "2026-11-14T05:55:46.603Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Brakk",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-24T15:44:41.965Z",
-      "carrying": true
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "How a Jet Engine Works — Illustrated, step-by-step(With Diagram) - Aerospace answers",

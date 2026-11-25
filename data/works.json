@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 27",
-    "progress": 48,
-    "version": 7,
-    "lastChange": "Wiring up the main flight console to the thermal sensors using some salvaged lead-shielding to prevent interference. (used Lorna, a cracked navigation chip)",
+    "progress": 58,
+    "version": 8,
+    "lastChange": "Riveting the lightweight titanium nose cone to the main forward bulkhead and routing the sensor cables through the new copper shielding. (used Dibs, a coil of copper wire)",
     "log": [
+      {
+        "version": 8,
+        "change": "Riveting the lightweight titanium nose cone to the main forward bulkhead and routing the sensor cables through the new copper shielding. (used Dibs, a coil of copper wire)",
+        "progress": 58,
+        "at": "2026-11-25T06:24:54.340Z"
+      },
       {
         "version": 7,
         "change": "Wiring up the main flight console to the thermal sensors using some salvaged lead-shielding to prevent interference. (used Lorna, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "mounted the new military thermal sensor module into the Little Dart's nose cone navigation feed using Rusty Jr (a high-grade copper wire) and Bolt-seven (used Nim, a strip of hull plating)",
         "progress": 76,
         "at": "2026-11-23T14:08:55.092Z"
-      },
-      {
-        "version": 8,
-        "change": "wired the new differential amplifier board into the Little Dart's nose cone navigation feed (used Rusty Jr, a scorched heat tile)",
-        "progress": 68,
-        "at": "2026-11-23T12:22:20.388Z"
       }
     ],
     "launched": [
@@ -3672,7 +3672,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Wren",
@@ -3699,6 +3699,11 @@
         "name": "Lorna",
         "what": "a cracked navigation chip",
         "version": 7
+      },
+      {
+        "name": "Dibs",
+        "what": "a coil of copper wire",
+        "version": 8
       }
     ],
     "design": {
@@ -4261,11 +4266,6 @@
       "name": "Otto",
       "what": "a little landing strut",
       "at": "2026-11-25T05:15:30.593Z"
-    },
-    {
-      "name": "Dibs",
-      "what": "a coil of copper wire",
-      "at": "2026-11-25T04:06:45.152Z"
     }
   ],
   "reads": [

@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 26",
-    "progress": 96,
-    "version": 13,
-    "lastChange": "installed high-grade copper wire Rusty Jr. into the primary console harness to link the navigation display (used Bix, a scorched heat tile)",
+    "name": "the Little Dart Mk 27",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 14,
+        "change": "sealed the final access hatch on the nose cone and bolted down the primary thruster shroud (used Dibs, a cracked navigation chip)",
+        "progress": 100,
+        "at": "2026-11-25T00:29:41.794Z"
+      },
       {
         "version": 13,
         "change": "installed high-grade copper wire Rusty Jr. into the primary console harness to link the navigation display (used Bix, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "welding the upper titanium cowl plates onto the Little Dart's fuselage using bolt Pim (used Wren, a coil of copper wire)",
         "progress": 10,
         "at": "2026-11-23T03:33:39.892Z"
-      },
-      {
-        "version": 14,
-        "change": "securing the heavy-duty cooling valves onto the main fuel feed line using bolt Otto (used Fen, a strip of hull plating)",
-        "progress": 100,
-        "at": "2026-11-23T02:53:39.593Z"
       }
     ],
     "launched": [
@@ -3603,66 +3603,77 @@
             "version": 13
           }
         ]
+      },
+      {
+        "name": "the Little Dart Mk 26",
+        "day": 101,
+        "partsUsed": 12,
+        "parts": [
+          {
+            "name": "Nim",
+            "what": "a little landing strut",
+            "version": 1
+          },
+          {
+            "name": "Dibs",
+            "what": "a tiny gyroscope",
+            "version": 2
+          },
+          {
+            "name": "Sprocket",
+            "what": "a little landing strut",
+            "version": 3
+          },
+          {
+            "name": "Sprocket",
+            "what": "a scorched heat tile",
+            "version": 5
+          },
+          {
+            "name": "Brakk",
+            "what": "a mystery box that hums",
+            "version": 6
+          },
+          {
+            "name": "Mabel",
+            "what": "a dented fuel cell",
+            "version": 7
+          },
+          {
+            "name": "Brakk",
+            "what": "a cockpit switch that still clicks",
+            "version": 8
+          },
+          {
+            "name": "Otto",
+            "what": "a cracked navigation chip",
+            "version": 10
+          },
+          {
+            "name": "Wren",
+            "what": "a tiny gyroscope",
+            "version": 11
+          },
+          {
+            "name": "Gus",
+            "what": "a strip of hull plating",
+            "version": 12
+          },
+          {
+            "name": "Bix",
+            "what": "a scorched heat tile",
+            "version": 13
+          },
+          {
+            "name": "Dibs",
+            "what": "a cracked navigation chip",
+            "version": 14
+          }
+        ]
       }
     ],
-    "partsUsed": 11,
-    "parts": [
-      {
-        "name": "Nim",
-        "what": "a little landing strut",
-        "version": 1
-      },
-      {
-        "name": "Dibs",
-        "what": "a tiny gyroscope",
-        "version": 2
-      },
-      {
-        "name": "Sprocket",
-        "what": "a little landing strut",
-        "version": 3
-      },
-      {
-        "name": "Sprocket",
-        "what": "a scorched heat tile",
-        "version": 5
-      },
-      {
-        "name": "Brakk",
-        "what": "a mystery box that hums",
-        "version": 6
-      },
-      {
-        "name": "Mabel",
-        "what": "a dented fuel cell",
-        "version": 7
-      },
-      {
-        "name": "Brakk",
-        "what": "a cockpit switch that still clicks",
-        "version": 8
-      },
-      {
-        "name": "Otto",
-        "what": "a cracked navigation chip",
-        "version": 10
-      },
-      {
-        "name": "Wren",
-        "what": "a tiny gyroscope",
-        "version": 11
-      },
-      {
-        "name": "Gus",
-        "what": "a strip of hull plating",
-        "version": 12
-      },
-      {
-        "name": "Bix",
-        "what": "a scorched heat tile",
-        "version": 13
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -3921,11 +3932,6 @@
     },
     {
       "name": "Wren",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-24T21:57:45.952Z"
-    },
-    {
-      "name": "Dibs",
       "what": "a cracked navigation chip",
       "at": "2026-11-24T21:57:45.952Z"
     }

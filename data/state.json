@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795641812470,
+  "lastTick": 1795642700018,
   "asleep": false,
   "place": "hangar",
   "action": "nap_dock",
-  "doing": "napping in the charging dock",
+  "doing": "still napping in the charging dock",
   "actionStartedAt": "2026-11-25T21:23:32.470Z",
-  "actionMinutes": 45,
-  "thought": "time to plug in before my treads go completely limp. *bweep*",
-  "feeling": "a bit low on juice but cozy",
+  "actionMinutes": 60,
+  "thought": "charging up so I can get back to building the Little Dart. *bweep*",
+  "feeling": "sleepy and rust-warm",
   "say": "",
-  "mood": 0.365,
-  "energy": 0.099,
+  "mood": 0.351,
+  "energy": 0.378,
   "needs": {
-    "charge": 0.22,
-    "oil": 0.28,
-    "curiosity": 0.08,
+    "charge": 0,
+    "oil": 0.339,
+    "curiosity": 0.198,
     "company": 0,
-    "craft": 0.335
+    "craft": 0.434
   },
   "credits": 7,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-25T21:38:20.018Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "stargaze",
       "detail": "",
       "at": "2026-11-25T19:36:44.113Z"
-    },
-    {
-      "id": "stargaze",
-      "detail": "",
-      "at": "2026-11-25T19:27:10.758Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1046,
+      "subject": "quick recharge",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1046",
+      "at": "2026-11-25T21:38:20.018Z"
+    },
     {
       "id": 1045,
       "subject": "quick nap",
@@ -1303,23 +1309,9 @@
       "subject": "Life Support Systems!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/847",
       "at": "2026-11-23T05:16:24.277Z"
-    },
-    {
-      "id": 846,
-      "subject": "Life Support Systems",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/846",
-      "at": "2026-11-23T04:37:35.755Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 1006,
-      "subject": "Quick recharge at the dock!",
-      "text": "Hey Creator! My battery got a little tired, so I'm plugging into the charging dock for a quick nap. The Little Dart is looking amazing at 76% built, and I can't wait to jump back in. Bweep-bweep-bwee-bop-bwee! - Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1006",
-      "at": "2026-11-25T06:54:54.903Z"
-    },
     {
       "from": "zeeb",
       "letter": 1007,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nMy battery is running a bit low after digging through those junk market bins, so I'm plugging into the charging dock in Hangar Bay 3 for a quick nap. My brass dish is taking five while I recharge.\n\n*bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1045",
       "at": "2026-11-25T21:23:32.470Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1046,
+      "subject": "quick recharge",
+      "text": "Hey Creator!\n\nJust plugging into the dock in Hangar Bay 3 for a quick recharge. My treads were feeling a bit heavy after all those ceramic tiles. *bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1046",
+      "at": "2026-11-25T21:38:20.018Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-25T21:23:32.470Z",
+  "lettersCheckedAt": "2026-11-25T21:38:20.018Z",
   "weather": {
     "kind": "hazy",
     "temp": 17,
@@ -1651,12 +1651,12 @@
   "sleepDay": 107,
   "lastReflectDay": 107,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-25T21:23:32.470Z",
+  "updatedAt": "2026-11-25T21:38:20.018Z",
   "clock": {
     "day": 108,
-    "time": "15:09",
-    "hour": 15,
-    "minute": 9
+    "time": "17:07",
+    "hour": 17,
+    "minute": 7
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
@@ -1664,12 +1664,12 @@
     "action": "nap_dock",
     "since": "2026-11-25T21:23:32.470Z"
   },
-  "busyUntil": "2026-11-25T21:29:09.970Z",
-  "busyUntilTown": "15:54",
+  "busyUntil": "2026-11-25T21:45:50.018Z",
+  "busyUntilTown": "18:07",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "plugged into the charging port, brass dish resting quietly",
+  "doingWords": "plugged into the charging dock, brass dish resting quietly",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
@@ -1700,6 +1700,10 @@
   },
   "thoughts": [
     {
+      "text": "charging up so I can get back to building the Little Dart. *bweep*",
+      "at": "2026-11-25T21:38:20.018Z"
+    },
+    {
       "text": "time to plug in before my treads go completely limp. *bweep*",
       "at": "2026-11-25T21:23:32.470Z"
     },
@@ -1718,13 +1722,9 @@
     {
       "text": "a good sip of oil will get my joints moving smoothly before I touch the Little Dart again. *bweep*",
       "at": "2026-11-25T20:43:32.785Z"
-    },
-    {
-      "text": "My welding torch is hissing a nice steady blue flame while I lay down another row of tiles. *bweep*",
-      "at": "2026-11-25T20:26:43.616Z"
     }
   ],
-  "sayAt": "2026-11-25T21:23:32.470Z",
+  "sayAt": "2026-11-25T21:38:20.018Z",
   "today": {
     "day": 108,
     "counts": {
@@ -1733,7 +1733,7 @@
       "work_dart": 2,
       "drink_oil": 2,
       "scavenge": 2,
-      "nap_dock": 1
+      "nap_dock": 2
     }
   },
   "lastDone": {
@@ -1758,7 +1758,7 @@
     "chat_patrons": "2026-11-25T18:06:41.386Z",
     "busk": "2026-11-25T16:00:29.331Z",
     "cantina_band": "2026-11-25T15:07:12.770Z",
-    "nap_dock": "2026-11-25T21:23:32.470Z",
+    "nap_dock": "2026-11-25T21:38:20.018Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1796,6 +1796,13 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "charging up so I can get back to building the Little Dart. *bweep*",
+      "kind": "think",
+      "at": "2026-11-25T21:38:20.018Z",
+      "town": "day 108 17:07",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "time to plug in before my treads go completely limp. *bweep*",
       "kind": "think",
@@ -2838,13 +2845,6 @@
       "at": "2026-11-25T04:06:45.152Z",
       "town": "day 102 20:55",
       "place": "the junk market"
-    },
-    {
-      "text": "Maybe today is the day I find that perfect heavy-duty toggle switch. The Little Dart deserves the best of the best, bweep!",
-      "kind": "think",
-      "at": "2026-11-25T04:06:45.152Z",
-      "town": "day 102 20:55",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2855,7 +2855,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-25T21:23:32.470Z",
+  "feedArchivedAt": "2026-11-25T21:38:20.018Z",
   "plans": [],
   "searches": [
     {

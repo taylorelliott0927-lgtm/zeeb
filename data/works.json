@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 27",
-    "progress": 40,
-    "version": 6,
-    "lastChange": "Installing the high-pressure fuel line gaskets and securing them with the copper wire I call Dibs to prevent vibration-induced leaks. (used Tok, a little landing strut)",
+    "progress": 48,
+    "version": 7,
+    "lastChange": "Wiring up the main flight console to the thermal sensors using some salvaged lead-shielding to prevent interference. (used Lorna, a cracked navigation chip)",
     "log": [
+      {
+        "version": 7,
+        "change": "Wiring up the main flight console to the thermal sensors using some salvaged lead-shielding to prevent interference. (used Lorna, a cracked navigation chip)",
+        "progress": 48,
+        "at": "2026-11-25T05:05:30.892Z"
+      },
       {
         "version": 6,
         "change": "Installing the high-pressure fuel line gaskets and securing them with the copper wire I call Dibs to prevent vibration-induced leaks. (used Tok, a little landing strut)",
@@ -238,12 +244,6 @@
         "change": "wired the new differential amplifier board into the Little Dart's nose cone navigation feed (used Rusty Jr, a scorched heat tile)",
         "progress": 68,
         "at": "2026-11-23T12:22:20.388Z"
-      },
-      {
-        "version": 7,
-        "change": "tuned the left thruster (used Gus, a precision micro cold gas thruster nozzle)",
-        "progress": 60,
-        "at": "2026-11-23T10:59:29.346Z"
       }
     ],
     "launched": [
@@ -3672,7 +3672,7 @@
         ]
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Wren",
@@ -3694,6 +3694,11 @@
         "name": "Tok",
         "what": "a little landing strut",
         "version": 6
+      },
+      {
+        "name": "Lorna",
+        "what": "a cracked navigation chip",
+        "version": 7
       }
     ],
     "design": {
@@ -4234,11 +4239,6 @@
     {
       "name": "Dibs",
       "what": "a coil of copper wire",
-      "at": "2026-11-25T04:06:45.152Z"
-    },
-    {
-      "name": "Lorna",
-      "what": "a cracked navigation chip",
       "at": "2026-11-25T04:06:45.152Z"
     }
   ],

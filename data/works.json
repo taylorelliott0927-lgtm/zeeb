@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 27",
-    "progress": 16,
-    "version": 2,
-    "lastChange": "added high-temp silica heat tiles to the lower hull using Tilly for precise alignment (used Tilly, a tiny gyroscope)",
+    "progress": 24,
+    "version": 3,
+    "lastChange": "welding the next batch of silica heat tiles onto the lower starboard side using the micro torch (used Dibs, a dented fuel cell)",
     "log": [
+      {
+        "version": 3,
+        "change": "welding the next batch of silica heat tiles onto the lower starboard side using the micro torch (used Dibs, a dented fuel cell)",
+        "progress": 24,
+        "at": "2026-11-25T03:04:21.851Z"
+      },
       {
         "version": 2,
         "change": "added high-temp silica heat tiles to the lower hull using Tilly for precise alignment (used Tilly, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "mounting the lower port stabilizer fin using a precision bolt named Pim and sealing the bracket (used Otto, a coil of copper wire)",
         "progress": 35,
         "at": "2026-11-23T07:10:09.798Z"
-      },
-      {
-        "version": 3,
-        "change": "securing the upper cowl plates and sealing the joints with ceramic heat tiles (used Brakk, a little landing strut)",
-        "progress": 29,
-        "at": "2026-11-23T07:00:10.147Z"
       }
     ],
     "launched": [
@@ -3672,7 +3672,7 @@
         ]
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 4,
     "parts": [
       {
         "name": "Wren",
@@ -3684,6 +3684,11 @@
         "what": "a tiny gyroscope",
         "good": true,
         "version": 2
+      },
+      {
+        "name": "Dibs",
+        "what": "a dented fuel cell",
+        "version": 3
       }
     ],
     "design": null
@@ -3930,13 +3935,7 @@
       "at": "2026-11-14T15:18:58.915Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Dibs",
-      "what": "a dented fuel cell",
-      "at": "2026-11-24T21:57:45.952Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Deed - Attribution 4.0 International - Creative Commons",

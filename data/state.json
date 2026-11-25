@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795608422218,
+  "lastTick": 1795609021853,
   "asleep": false,
-  "place": "market",
-  "action": "sell_scrap",
-  "doing": "still haggling over scrap at the market",
-  "actionStartedAt": "2026-11-25T11:57:02.407Z",
-  "actionMinutes": 30,
-  "thought": "Mabel has been in my stash forever, but a trader knows a good landing strut when they see one. Time to turn old metal into future fuel!",
-  "feeling": "optimistic and clanky",
-  "say": "One shiny landing strut coming up, priced to move!",
-  "mood": 0.319,
-  "energy": 0.199,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-25T12:17:01.853Z",
+  "actionMinutes": 90,
+  "thought": "That sand grit in my left elbow joint is crunching every time I move. Time to head to Hangar 3, plug in, and get my battery back up! *bweep*",
+  "feeling": "tired, grimy, hopeful",
+  "say": "Time for a recharge! *bweep*",
+  "mood": 0.23,
+  "energy": 0.295,
   "needs": {
-    "charge": 0.302,
-    "oil": 0.396,
-    "curiosity": 0.233,
-    "company": 0.047,
-    "craft": 0.212
+    "charge": 0,
+    "oil": 0.536,
+    "curiosity": 0.313,
+    "company": 0.1,
+    "craft": 0.279
   },
   "credits": 9,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-25T12:17:01.853Z"
+    },
     {
       "id": "sell_scrap",
       "detail": "Mabel",
@@ -75,14 +80,14 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-25T10:25:25.497Z"
-    },
-    {
-      "id": "go_to_sleep",
-      "detail": "",
-      "at": "2026-11-25T10:15:26.205Z"
     }
   ],
   "wants": [
+    {
+      "id": "w5",
+      "text": "some smooth space-grade lubricant for my elbow joint",
+      "at": "2026-11-25T12:17:01.853Z"
+    },
     {
       "id": "w9",
       "text": "some fresh copper wire for tether testing",
@@ -97,11 +102,6 @@
       "id": "w7",
       "text": "a nice cold cup of fresh motor oil",
       "at": "2026-11-25T10:05:25.749Z"
-    },
-    {
-      "id": "w6",
-      "text": "some fresh wire for my spooling tests",
-      "at": "2026-11-25T09:28:16.184Z"
     }
   ],
   "promises": [],
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-25T12:07:02.218Z",
+  "lettersCheckedAt": "2026-11-25T12:17:01.853Z",
   "weather": {
     "kind": "hazy",
     "temp": 22,
@@ -1650,31 +1650,31 @@
   },
   "sleepDay": 104,
   "lastReflectDay": 104,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-25T12:07:02.218Z",
+  "brain": "gemini-3.6-flash",
+  "updatedAt": "2026-11-25T12:17:01.853Z",
   "clock": {
     "day": 105,
-    "time": "12:57",
-    "hour": 12,
-    "minute": 57
+    "time": "14:17",
+    "hour": 14,
+    "minute": 17
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "sell_scrap",
-    "since": "2026-11-25T11:57:02.407Z"
+    "action": "nap_dock",
+    "since": "2026-11-25T12:17:01.853Z"
   },
-  "busyUntil": "2026-11-25T12:10:47.218Z",
-  "busyUntilTown": "13:27",
+  "busyUntil": "2026-11-25T12:28:16.853Z",
+  "busyUntilTown": "15:47",
   "runner": "github",
-  "model": "gemini-3.5-flash-lite",
+  "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "trading Mabel the landing strut for sweet, sweet credits",
+  "doingWords": "plugging into the charging dock to rest my grimy elbow",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "wiggle"
+    "droop"
   ],
   "pops": {
     "at": "2026-11-25T12:07:02.218Z",
@@ -1687,12 +1687,16 @@
     ]
   },
   "event": {
-    "id": "emww2w5sa",
-    "key": "hauler_paint",
-    "text": "The cargo-hauler bot at the depot got a new paint job. Show-off.",
-    "at": "2026-11-25T12:07:02.218Z"
+    "id": "emww390gt",
+    "key": "sand",
+    "text": "Sand got into his left elbow joint. Again.",
+    "at": "2026-11-25T12:17:01.853Z"
   },
   "thoughts": [
+    {
+      "text": "That sand grit in my left elbow joint is crunching every time I move. Time to head to Hangar 3, plug in, and get my battery back up! *bweep*",
+      "at": "2026-11-25T12:17:01.853Z"
+    },
     {
       "text": "Mabel has been in my stash forever, but a trader knows a good landing strut when they see one. Time to turn old metal into future fuel!",
       "at": "2026-11-25T12:07:02.218Z"
@@ -1712,13 +1716,9 @@
     {
       "text": "Maybe somebody dumped a whole bin of copper wire or high-temp ceramic bits near the market edge. *bweep*",
       "at": "2026-11-25T11:25:28.090Z"
-    },
-    {
-      "text": "That power flicker was weird, but the dock light is back on green. Time for a quick top-up.",
-      "at": "2026-11-25T11:15:27.616Z"
     }
   ],
-  "sayAt": "2026-11-25T12:07:02.218Z",
+  "sayAt": "2026-11-25T12:17:01.853Z",
   "today": {
     "day": 105,
     "counts": {
@@ -1726,7 +1726,7 @@
       "stargaze": 1,
       "follow_link": 1,
       "work_dart": 1,
-      "nap_dock": 1,
+      "nap_dock": 2,
       "scavenge": 1,
       "fix_job": 1,
       "buy_part": 1,
@@ -1755,7 +1755,7 @@
     "chat_patrons": "2026-11-24T21:07:31.934Z",
     "busk": "2026-11-24T13:00:08.082Z",
     "cantina_band": "2026-11-24T22:38:57.358Z",
-    "nap_dock": "2026-11-25T11:15:27.616Z",
+    "nap_dock": "2026-11-25T12:17:01.853Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1796,6 +1796,20 @@
     "at": "2026-11-25T10:55:28.259Z"
   },
   "said": [
+    {
+      "text": "Time for a recharge! *bweep*",
+      "kind": "say",
+      "at": "2026-11-25T12:17:01.853Z",
+      "town": "day 105 14:17",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "That sand grit in my left elbow joint is crunching every time I move. Time to head to Hangar 3, plug in, and get my battery back up! *bweep*",
+      "kind": "think",
+      "at": "2026-11-25T12:17:01.853Z",
+      "town": "day 105 14:17",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "One shiny landing strut coming up, priced to move!",
       "kind": "say",
@@ -2831,20 +2845,6 @@
       "at": "2026-11-24T21:47:45.854Z",
       "town": "day 100 18:23",
       "place": "the fuel depot"
-    },
-    {
-      "text": "plugging in here always gets me back to full power so i can keep building. cozy gears, bweep.",
-      "kind": "think",
-      "at": "2026-11-24T21:27:32.114Z",
-      "town": "day 100 15:41",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "i really need to get my battery back up before i touch the wiring on the dart again.",
-      "kind": "think",
-      "at": "2026-11-24T21:17:31.658Z",
-      "town": "day 100 14:21",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2855,7 +2855,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-25T12:07:02.218Z",
+  "feedArchivedAt": "2026-11-25T12:17:01.853Z",
   "plans": [],
   "searches": [
     {

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 28",
-    "progress": 49,
-    "version": 8,
-    "lastChange": "sealed the lower hull joints with custom high-temp sealant strips using Gus",
+    "progress": 56,
+    "version": 9,
+    "lastChange": "sealed the middle hull sections with custom high-temp sealant strips using Gus (used Tilly, a bent stabiliser fin)",
     "log": [
+      {
+        "version": 9,
+        "change": "sealed the middle hull sections with custom high-temp sealant strips using Gus (used Tilly, a bent stabiliser fin)",
+        "progress": 56,
+        "at": "2026-11-25T20:16:43.349Z"
+      },
       {
         "version": 8,
         "change": "sealed the lower hull joints with custom high-temp sealant strips using Gus",
@@ -238,12 +244,6 @@
         "change": "attaching Nim (a little landing strut) to the lower fuselage frame with precise weld beads (used Captain, a perfectly good bolt)",
         "progress": 83,
         "at": "2026-11-24T06:06:03.659Z"
-      },
-      {
-        "version": 10,
-        "change": "securing the upper intake manifold to the engine mount using Captain (a perfectly good bolt) and Dibs (half a thruster nozzle) (used Dibs, half a thruster nozzle)",
-        "progress": 74,
-        "at": "2026-11-24T04:22:59.384Z"
       }
     ],
     "launched": [
@@ -4032,7 +4032,7 @@
         }
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Captain",
@@ -4058,6 +4058,11 @@
         "name": "Wren",
         "what": "a coil of copper wire",
         "version": 5
+      },
+      {
+        "name": "Tilly",
+        "what": "a bent stabiliser fin",
+        "version": 9
       }
     ],
     "design": null
@@ -4304,14 +4309,7 @@
       "at": "2026-11-14T17:42:59.319Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Tilly",
-      "what": "a bent stabiliser fin",
-      "at": "2026-11-25T19:56:43.917Z",
-      "carrying": true
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Dawn of the Space Age - NASA",

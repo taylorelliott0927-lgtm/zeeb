@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 28",
-    "progress": 32,
-    "version": 4,
-    "lastChange": "polished the nose cone (used Brakk, a coil of copper wire)",
+    "progress": 39,
+    "version": 5,
+    "lastChange": "welded lightweight ceramic heat tiles onto the Little Dart's back shell using Wren (used Wren, a coil of copper wire)",
     "log": [
+      {
+        "version": 5,
+        "change": "welded lightweight ceramic heat tiles onto the Little Dart's back shell using Wren (used Wren, a coil of copper wire)",
+        "progress": 39,
+        "at": "2026-11-25T17:30:55.342Z"
+      },
       {
         "version": 4,
         "change": "polished the nose cone (used Brakk, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "securing the dorsal frame heat tiles using Captain (a perfectly good bolt) and re-aligning the heat dampener brackets (used Nim, a cracked navigation chip)",
         "progress": 51,
         "at": "2026-11-24T02:23:55.813Z"
-      },
-      {
-        "version": 6,
-        "change": "welding the last high-temperature ceramic shielding tiles to the forward dorsal spine using Nim (a cracked navigation chip, a really good one) (used Tok, a tiny gyroscope)",
-        "progress": 45,
-        "at": "2026-11-24T00:48:55.868Z"
       }
     ],
     "launched": [
@@ -4032,7 +4032,7 @@
         }
       }
     ],
-    "partsUsed": 4,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Captain",
@@ -4053,6 +4053,11 @@
         "name": "Brakk",
         "what": "a coil of copper wire",
         "version": 4
+      },
+      {
+        "name": "Wren",
+        "what": "a coil of copper wire",
+        "version": 5
       }
     ],
     "design": null
@@ -4299,13 +4304,7 @@
       "at": "2026-11-14T17:42:59.319Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Wren",
-      "what": "a coil of copper wire",
-      "at": "2026-11-25T15:40:30.465Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Sandstorms: what they are, causes, effects and characteristics",

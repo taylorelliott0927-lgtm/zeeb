@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 28",
-    "progress": 8,
-    "version": 1,
-    "lastChange": "wiring the 8-wire slip ring into the compact motorized tether spooler assembly (used Captain, half a thruster nozzle)",
+    "progress": 18,
+    "version": 2,
+    "lastChange": "bolting low-friction guide pins and alignment brackets onto the tether spooler frame using Nim (used Fen, a perfectly good bolt)",
     "log": [
+      {
+        "version": 2,
+        "change": "bolting low-friction guide pins and alignment brackets onto the tether spooler frame using Nim (used Fen, a perfectly good bolt)",
+        "progress": 18,
+        "at": "2026-11-25T13:16:50.389Z"
+      },
       {
         "version": 1,
         "change": "wiring the 8-wire slip ring into the compact motorized tether spooler assembly (used Captain, half a thruster nozzle)",
@@ -238,12 +244,6 @@
         "change": "mounting high-temperature ceramic shielding to the dorsal spine using Dibs (half a thruster nozzle) and Pim (a perfectly good bolt) (used Pim, a perfectly good bolt)",
         "progress": 28,
         "at": "2026-11-24T00:28:55.837Z"
-      },
-      {
-        "version": 3,
-        "change": "securing the lateral control horns with a fresh brass fastener named rusty junior number two (used Wren, a dented fuel cell)",
-        "progress": 20,
-        "at": "2026-11-23T22:50:52.332Z"
       }
     ],
     "launched": [
@@ -4032,12 +4032,17 @@
         }
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Captain",
         "what": "half a thruster nozzle",
         "version": 1
+      },
+      {
+        "name": "Fen",
+        "what": "a perfectly good bolt",
+        "version": 2
       }
     ],
     "design": null
@@ -4289,11 +4294,6 @@
       "name": "Nim",
       "what": "a perfectly good bolt",
       "at": "2026-11-25T11:35:28.154Z"
-    },
-    {
-      "name": "Fen",
-      "what": "a perfectly good bolt",
-      "at": "2026-11-25T11:25:28.090Z"
     }
   ],
   "reads": [

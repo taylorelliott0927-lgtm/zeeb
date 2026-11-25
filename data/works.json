@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 28",
-    "progress": 75,
-    "version": 12,
-    "lastChange": "installed custom high-temp gasket seals around the aft thruster mount using Brakk (used Captain, a perfectly good bolt)",
+    "progress": 81,
+    "version": 13,
+    "lastChange": "bolted a new fin on (used Mabel, a dented fuel cell)",
     "log": [
+      {
+        "version": 13,
+        "change": "bolted a new fin on (used Mabel, a dented fuel cell)",
+        "progress": 81,
+        "at": "2026-11-25T23:39:50.075Z"
+      },
       {
         "version": 12,
         "change": "installed custom high-temp gasket seals around the aft thruster mount using Brakk (used Captain, a perfectly good bolt)",
@@ -238,12 +244,6 @@
         "change": "installing heavy-duty blinker relays into the Little Dart Mk 26 navigation array (used Dibs, a tiny gyroscope)",
         "progress": 16,
         "at": "2026-11-24T10:06:06.254Z"
-      },
-      {
-        "version": 1,
-        "change": "mounting and welding the repaired port micro thruster onto the Little Dart Mk 25 fuselage (used Nim, a little landing strut)",
-        "progress": 10,
-        "at": "2026-11-24T09:04:36.777Z"
       }
     ],
     "launched": [
@@ -4032,7 +4032,7 @@
         }
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Captain",
@@ -4073,6 +4073,11 @@
         "name": "Captain",
         "what": "a perfectly good bolt",
         "version": 12
+      },
+      {
+        "name": "Mabel",
+        "what": "a dented fuel cell",
+        "version": 13
       }
     ],
     "design": null
@@ -4323,11 +4328,6 @@
     {
       "name": "Brakk",
       "what": "a cockpit switch that still clicks",
-      "at": "2026-11-25T21:13:33.355Z"
-    },
-    {
-      "name": "Mabel",
-      "what": "a dented fuel cell",
       "at": "2026-11-25T21:13:33.355Z"
     }
   ],

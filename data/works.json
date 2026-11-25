@@ -1,6 +1,6 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 27",
+    "name": "Little Dart Mk 27",
     "progress": 28,
     "version": 4,
     "lastChange": "welding the final row of thermal shielding tiles around the engine exhaust cowl using the micro torch",
@@ -3691,7 +3691,297 @@
         "version": 3
       }
     ],
-    "design": null
+    "design": {
+      "description": "swept-back delta wings and a polished titanium nose cone ready for the void, bweep!",
+      "parts": [
+        {
+          "shape": "cylinder",
+          "w": 0.4,
+          "h": 3.2,
+          "d": 0.4,
+          "x": 0,
+          "y": 0.5,
+          "z": 0,
+          "color": "#d4af37",
+          "glow": 0,
+          "turn": "forward"
+        },
+        {
+          "shape": "cone",
+          "w": 0.4,
+          "h": 1.12,
+          "d": 0.4,
+          "x": 0,
+          "y": 0.5,
+          "z": 2.16,
+          "color": "#d4af37",
+          "glow": 0,
+          "turn": "forward"
+        },
+        {
+          "shape": "ball",
+          "w": 0.24,
+          "h": 0.2,
+          "d": 0.9,
+          "x": 0,
+          "y": 0.68,
+          "z": 0.56,
+          "color": "#00ffff",
+          "glow": 0.5,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 1.4,
+          "h": 0.07,
+          "d": 1.76,
+          "x": -0.7,
+          "y": 0.42,
+          "z": -0.48,
+          "color": "#ff8c00",
+          "glow": 0,
+          "turn": "up",
+          "rot": [
+            0,
+            30,
+            0
+          ]
+        },
+        {
+          "shape": "box",
+          "w": 1.4,
+          "h": 0.07,
+          "d": 1.76,
+          "x": 0.7,
+          "y": 0.42,
+          "z": -0.48,
+          "color": "#ff8c00",
+          "glow": 0,
+          "turn": "up",
+          "rot": [
+            0,
+            -30,
+            0
+          ]
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.24,
+          "h": 0.41,
+          "d": 0.24,
+          "x": -0.18,
+          "y": 0.5,
+          "z": -1.71,
+          "color": "#3a3a42",
+          "glow": 0,
+          "turn": "back"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.17,
+          "h": 0.06,
+          "d": 0.17,
+          "x": -0.18,
+          "y": 0.5,
+          "z": -1.94,
+          "color": "#ffa500",
+          "glow": 1,
+          "turn": "back"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.24,
+          "h": 0.41,
+          "d": 0.24,
+          "x": 0.18,
+          "y": 0.5,
+          "z": -1.71,
+          "color": "#3a3a42",
+          "glow": 0,
+          "turn": "back"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.17,
+          "h": 0.06,
+          "d": 0.17,
+          "x": 0.18,
+          "y": 0.5,
+          "z": -1.94,
+          "color": "#ffa500",
+          "glow": 1,
+          "turn": "back"
+        },
+        {
+          "shape": "box",
+          "w": 0.06,
+          "h": 0.45,
+          "d": 0.7,
+          "x": -0.14,
+          "y": 0.9,
+          "z": -1.2,
+          "color": "#ff8c00",
+          "glow": 0,
+          "turn": "up",
+          "rot": [
+            0,
+            0,
+            -15
+          ]
+        },
+        {
+          "shape": "box",
+          "w": 0.06,
+          "h": 0.45,
+          "d": 0.7,
+          "x": 0.14,
+          "y": 0.9,
+          "z": -1.2,
+          "color": "#ff8c00",
+          "glow": 0,
+          "turn": "up",
+          "rot": [
+            0,
+            0,
+            15
+          ]
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.03,
+          "h": 0.5,
+          "d": 0.03,
+          "x": 0.08,
+          "y": 0.95,
+          "z": -0.32,
+          "color": "#3a3a42",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "ball",
+          "w": 0.07,
+          "h": 0.07,
+          "d": 0.07,
+          "x": 0.08,
+          "y": 1.22,
+          "z": -0.32,
+          "color": "#ff4a3a",
+          "glow": 1,
+          "turn": "up"
+        },
+        {
+          "shape": "ball",
+          "w": 0.1,
+          "h": 0.1,
+          "d": 0.1,
+          "x": -1.4,
+          "y": 0.45,
+          "z": -0.32,
+          "color": "#ff4a3a",
+          "glow": 1,
+          "turn": "up"
+        },
+        {
+          "shape": "ball",
+          "w": 0.1,
+          "h": 0.1,
+          "d": 0.1,
+          "x": 1.4,
+          "y": 0.45,
+          "z": -0.32,
+          "color": "#4aff7a",
+          "glow": 1,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.05,
+          "h": 0.3,
+          "d": 0.05,
+          "x": -0.16,
+          "y": 0.15,
+          "z": 0.8,
+          "color": "#3a3a42",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.16,
+          "h": 0.04,
+          "d": 0.16,
+          "x": -0.16,
+          "y": 0.02,
+          "z": 0.8,
+          "color": "#3a3a42",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.05,
+          "h": 0.3,
+          "d": 0.05,
+          "x": 0.16,
+          "y": 0.15,
+          "z": 0.8,
+          "color": "#3a3a42",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.16,
+          "h": 0.04,
+          "d": 0.16,
+          "x": 0.16,
+          "y": 0.02,
+          "z": 0.8,
+          "color": "#3a3a42",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.05,
+          "h": 0.3,
+          "d": 0.05,
+          "x": 0,
+          "y": 0.15,
+          "z": -0.96,
+          "color": "#3a3a42",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "cylinder",
+          "w": 0.16,
+          "h": 0.04,
+          "d": 0.16,
+          "x": 0,
+          "y": 0.02,
+          "z": -0.96,
+          "color": "#3a3a42",
+          "glow": 0,
+          "turn": "up"
+        },
+        {
+          "shape": "box",
+          "w": 0.2,
+          "h": 0.2,
+          "d": 0.2,
+          "x": 0,
+          "y": 0.5,
+          "z": 0,
+          "color": "#ff8c00",
+          "glow": 0,
+          "turn": "up"
+        }
+      ],
+      "at": "2026-11-25T03:44:21.355Z",
+      "day": 102
+    }
   },
   "tunes": [
     {

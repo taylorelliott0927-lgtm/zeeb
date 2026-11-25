@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 27",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 7,
+    "version": 1,
+    "lastChange": "added the new custom guidance module frame and welded the intake cowlings using Tilly (used Wren, a cracked navigation chip)",
     "log": [
+      {
+        "version": 1,
+        "change": "added the new custom guidance module frame and welded the intake cowlings using Tilly (used Wren, a cracked navigation chip)",
+        "progress": 7,
+        "at": "2026-11-25T02:06:16.225Z"
+      },
       {
         "version": 14,
         "change": "sealed the final access hatch on the nose cone and bolted down the primary thruster shroud (used Dibs, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "installing the compact single-pilot oxygen scrubber module into the Little Dart's fuselage using Otto, a coil of copper wire (used Gus, a sensor eye with one crack)",
         "progress": 20,
         "at": "2026-11-23T05:16:24.277Z"
-      },
-      {
-        "version": 1,
-        "change": "welding the upper titanium cowl plates onto the Little Dart's fuselage using bolt Pim (used Wren, a coil of copper wire)",
-        "progress": 10,
-        "at": "2026-11-23T03:33:39.892Z"
       }
     ],
     "launched": [
@@ -3672,8 +3672,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Wren",
+        "what": "a cracked navigation chip",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -3929,11 +3935,6 @@
       "what": "a tiny gyroscope",
       "at": "2026-11-24T21:57:45.952Z",
       "good": true
-    },
-    {
-      "name": "Wren",
-      "what": "a cracked navigation chip",
-      "at": "2026-11-24T21:57:45.952Z"
     }
   ],
   "reads": [

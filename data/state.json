@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795601125749,
-  "asleep": false,
+  "lastTick": 1795601726205,
+  "asleep": true,
   "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-25T10:05:25.749Z",
-  "actionMinutes": 45,
-  "thought": "my battery is getting a bit grumpy so I am going to plug into the dock and rest my joints for a minute. bweep.",
-  "feeling": "a bit tired in the wires",
+  "action": "sleep",
+  "doing": "asleep in the charging dock",
+  "actionStartedAt": "2026-11-25T10:15:26.205Z",
+  "actionMinutes": 60,
+  "thought": "(dreaming) dreamed the Dart flew all the way past the second sun.",
+  "feeling": "pretty good actually",
   "say": "",
-  "mood": 0.372,
-  "energy": 0.086,
+  "mood": 0.365,
+  "energy": 0.21,
   "needs": {
-    "charge": 0.193,
-    "oil": 0.355,
-    "curiosity": 0.297,
-    "company": 0,
-    "craft": 0.067
+    "charge": 0.24,
+    "oil": 0.395,
+    "curiosity": 0.377,
+    "company": 0.053,
+    "craft": 0.134
   },
   "credits": 5,
   "recent": [
+    {
+      "id": "go_to_sleep",
+      "detail": "",
+      "at": "2026-11-25T10:15:26.205Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "wander",
       "detail": "",
       "at": "2026-11-25T07:56:45.039Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "Parker Solar Probe",
-      "at": "2026-11-25T07:46:45.014Z"
     }
   ],
   "wants": [
@@ -1639,44 +1639,41 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-25T10:05:25.749Z",
+  "lettersCheckedAt": "2026-11-25T10:15:26.205Z",
   "weather": {
     "kind": "hazy",
-    "temp": 19,
-    "wind": 2,
+    "temp": 20,
+    "wind": 3,
     "mood": 0,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-25T09:38:16.209Z"
+    "at": "2026-11-25T10:15:26.371Z"
   },
-  "sleepDay": 103,
-  "lastReflectDay": 103,
+  "sleepDay": 104,
+  "lastReflectDay": 104,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-25T10:05:25.749Z",
+  "updatedAt": "2026-11-25T10:15:26.205Z",
   "clock": {
     "day": 104,
-    "time": "20:44",
-    "hour": 20,
-    "minute": 44
+    "time": "22:04",
+    "hour": 22,
+    "minute": 4
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-25T10:05:25.749Z"
+    "action": "go_to_sleep",
+    "since": "2026-11-25T10:15:26.205Z"
   },
-  "busyUntil": "2026-11-25T10:11:03.249Z",
-  "busyUntilTown": "21:29",
+  "busyUntil": "2026-11-25T10:22:56.205Z",
+  "busyUntilTown": "23:04",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "plugged into the dock, battery taking a nice cool sip of juice",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "nod",
-    "droop"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-25T08:58:16.258Z",
     "items": [
@@ -1694,6 +1691,10 @@
     "at": "2026-11-25T07:56:45.039Z"
   },
   "thoughts": [
+    {
+      "text": "my oil is bugging me most right now.",
+      "at": "2026-11-25T10:15:26.205Z"
+    },
     {
       "text": "my battery is getting a bit grumpy so I am going to plug into the dock and rest my joints for a minute. bweep.",
       "at": "2026-11-25T10:05:25.749Z"
@@ -1713,13 +1714,9 @@
     {
       "text": "multi-kilometer charged tethers sound tricky to spool inside Hangar Bay 3, but catching the sun's breath is brilliant. wait until the cargo-hauler bot hears about propellant-less speed.",
       "at": "2026-11-25T09:18:16.228Z"
-    },
-    {
-      "text": "if magnetic pressure can shove a heavy probe, it can definitely push my little hull. time to check the copper wiring stash.",
-      "at": "2026-11-25T09:08:16.037Z"
     }
   ],
-  "sayAt": "2026-11-25T10:05:25.749Z",
+  "sayAt": "2026-11-25T10:15:26.205Z",
   "today": {
     "day": 104,
     "counts": {
@@ -1727,7 +1724,8 @@
       "wander": 1,
       "work_dart": 4,
       "nap_dock": 2,
-      "drink_oil": 1
+      "drink_oil": 1,
+      "go_to_sleep": 1
     }
   },
   "lastDone": {
@@ -1748,7 +1746,7 @@
     "design_ship": "2026-11-25T03:44:21.355Z",
     "send_signal": "2026-11-25T04:26:45.130Z",
     "stargaze": "2026-11-22T10:33:26.540Z",
-    "go_to_sleep": "2026-11-24T22:48:57.048Z",
+    "go_to_sleep": "2026-11-25T10:15:26.205Z",
     "chat_patrons": "2026-11-24T21:07:31.934Z",
     "busk": "2026-11-24T13:00:08.082Z",
     "cantina_band": "2026-11-24T22:38:57.358Z",
@@ -1793,6 +1791,20 @@
     "at": "2026-11-25T09:28:16.184Z"
   },
   "said": [
+    {
+      "text": "(dreaming) dreamed the Dart flew all the way past the second sun.",
+      "kind": "think",
+      "at": "2026-11-25T10:15:26.205Z",
+      "town": "day 104 22:04",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "my oil is bugging me most right now.",
+      "kind": "think",
+      "at": "2026-11-25T10:15:26.205Z",
+      "town": "day 104 22:04",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "my battery is getting a bit grumpy so I am going to plug into the dock and rest my joints for a minute. bweep.",
       "kind": "think",
@@ -2828,20 +2840,6 @@
       "at": "2026-11-24T17:41:59.414Z",
       "town": "day 99 09:37",
       "place": "the junk market"
-    },
-    {
-      "text": "I can fix this jittery switch in five clicks flat. Extra credits mean better scrap for the Little Dart Mk 26.",
-      "kind": "think",
-      "at": "2026-11-24T17:41:59.414Z",
-      "town": "day 99 09:37",
-      "place": "the junk market"
-    },
-    {
-      "text": "huh. \"Webb Reveals New Details in Supernova Remnant\". the galaxy keeps busy.",
-      "kind": "think",
-      "at": "2026-11-24T17:17:43.791Z",
-      "town": "day 99 06:23",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2852,7 +2850,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-25T10:05:25.749Z",
+  "feedArchivedAt": "2026-11-25T10:15:26.205Z",
   "plans": [],
   "searches": [
     {

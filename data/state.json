@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795605928090,
+  "lastTick": 1795606528154,
   "asleep": false,
   "place": "market",
-  "action": "scavenge",
-  "doing": "digging through the junk piles",
-  "actionStartedAt": "2026-11-25T11:25:28.090Z",
+  "action": "fix_job",
+  "doing": "doing a repair job at the market",
+  "actionStartedAt": "2026-11-25T11:35:28.154Z",
   "actionMinutes": 45,
-  "thought": "Maybe somebody dumped a whole bin of copper wire or high-temp ceramic bits near the market edge. *bweep*",
-  "feeling": "eager and curious",
-  "say": "Off to the junk market! *bweep*",
-  "mood": 0.425,
-  "energy": 0.59,
+  "thought": "That heavy cargo-hauler bot dropped a stray part around the bend, but I should fix this trader's coupler first before someone else grabs it. *bweep*",
+  "feeling": "focused and cheerful",
+  "say": "Hold your gears, trader! I can unjam this actuator ring in two clicks. *bweep*",
+  "mood": 0.435,
+  "energy": 0.495,
   "needs": {
-    "charge": 0.047,
-    "oil": 0.23,
-    "curiosity": 0,
-    "company": 0.296,
-    "craft": 0.134
+    "charge": 0.154,
+    "oil": 0.27,
+    "curiosity": 0.08,
+    "company": 0.199,
+    "craft": 0.001
   },
-  "credits": 3,
+  "credits": 6,
   "recent": [
+    {
+      "id": "fix_job",
+      "detail": "",
+      "at": "2026-11-25T11:35:28.154Z"
+    },
     {
       "id": "scavenge",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "tuned the left thruster",
       "at": "2026-11-25T09:38:16.058Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "tether spooling mechanisms lightweight salvage",
-      "at": "2026-11-25T09:28:16.184Z"
     }
   ],
   "wants": [
@@ -1639,66 +1639,70 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-25T11:25:28.090Z",
+  "lettersCheckedAt": "2026-11-25T11:35:28.154Z",
   "weather": {
     "kind": "hazy",
-    "temp": 21,
-    "wind": 5,
+    "temp": 22,
+    "wind": 6,
     "mood": 0,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-25T10:55:28.409Z"
+    "at": "2026-11-25T11:35:28.222Z"
   },
   "sleepDay": 104,
   "lastReflectDay": 104,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-25T11:25:28.090Z",
+  "updatedAt": "2026-11-25T11:35:28.154Z",
   "clock": {
     "day": 105,
-    "time": "07:24",
-    "hour": 7,
-    "minute": 24
+    "time": "08:45",
+    "hour": 8,
+    "minute": 45
   },
   "townDayMinutes": 180,
   "placeName": "the junk market",
   "streak": {
-    "action": "scavenge",
-    "since": "2026-11-25T11:25:28.090Z"
+    "action": "fix_job",
+    "since": "2026-11-25T11:35:28.154Z"
   },
-  "busyUntil": "2026-11-25T11:31:05.590Z",
-  "busyUntilTown": "08:09",
+  "busyUntil": "2026-11-25T11:41:05.654Z",
+  "busyUntilTown": "09:30",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "digging through scrap piles for shiny ship parts",
+  "doingWords": "tinkering with a trader's jammed coupling unit",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "zoom",
+    "lean_in",
     "wiggle"
   ],
   "pops": {
-    "at": "2026-11-25T11:25:28.090Z",
+    "at": "2026-11-25T11:35:28.154Z",
     "items": [
       {
         "text": "+ a perfectly good bolt",
         "kind": "part",
-        "at": "2026-11-25T11:25:28.090Z"
+        "at": "2026-11-25T11:35:28.154Z"
       },
       {
-        "text": "+ a dented fuel cell",
-        "kind": "part",
-        "at": "2026-11-25T11:25:28.090Z"
+        "text": "+3 credits",
+        "kind": "credits",
+        "at": "2026-11-25T11:35:28.154Z"
       }
     ]
   },
   "event": {
-    "id": "emww11tz4",
-    "key": "power",
-    "text": "The power flickered across the outpost for a few seconds.",
-    "at": "2026-11-25T11:15:27.616Z"
+    "id": "emww1rkbe",
+    "key": "hauler_drop",
+    "text": "The depot's cargo-hauler bot dropped a part and didn't notice.",
+    "at": "2026-11-25T11:35:28.154Z"
   },
   "thoughts": [
+    {
+      "text": "That heavy cargo-hauler bot dropped a stray part around the bend, but I should fix this trader's coupler first before someone else grabs it. *bweep*",
+      "at": "2026-11-25T11:35:28.154Z"
+    },
     {
       "text": "Maybe somebody dumped a whole bin of copper wire or high-temp ceramic bits near the market edge. *bweep*",
       "at": "2026-11-25T11:25:28.090Z"
@@ -1718,13 +1722,9 @@
     {
       "text": "The night sky over Kessa-9 is full of ancient dust trails and distant beacons. Maybe one of those stars is waiting for the Little Dart.",
       "at": "2026-11-25T10:45:25.740Z"
-    },
-    {
-      "text": "a nice cold cup of motor oil will clear right up whatever is bugging my joints. bweep-bweep-bwee!",
-      "at": "2026-11-25T10:35:25.739Z"
     }
   ],
-  "sayAt": "2026-11-25T11:25:28.090Z",
+  "sayAt": "2026-11-25T11:35:28.154Z",
   "today": {
     "day": 105,
     "counts": {
@@ -1733,7 +1733,8 @@
       "follow_link": 1,
       "work_dart": 1,
       "nap_dock": 1,
-      "scavenge": 1
+      "scavenge": 1,
+      "fix_job": 1
     }
   },
   "lastDone": {
@@ -1742,7 +1743,7 @@
     "drink_oil": "2026-11-25T10:35:25.739Z",
     "follow_link": "2026-11-25T10:55:28.259Z",
     "scavenge": "2026-11-25T11:25:28.090Z",
-    "fix_job": "2026-11-25T05:45:30.249Z",
+    "fix_job": "2026-11-25T11:35:28.154Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
     "browse_wire": "2026-11-25T09:28:16.184Z",
@@ -1799,6 +1800,20 @@
     "at": "2026-11-25T10:55:28.259Z"
   },
   "said": [
+    {
+      "text": "Hold your gears, trader! I can unjam this actuator ring in two clicks. *bweep*",
+      "kind": "say",
+      "at": "2026-11-25T11:35:28.154Z",
+      "town": "day 105 08:45",
+      "place": "the junk market"
+    },
+    {
+      "text": "That heavy cargo-hauler bot dropped a stray part around the bend, but I should fix this trader's coupler first before someone else grabs it. *bweep*",
+      "kind": "think",
+      "at": "2026-11-25T11:35:28.154Z",
+      "town": "day 105 08:45",
+      "place": "the junk market"
+    },
     {
       "text": "Off to the junk market! *bweep*",
       "kind": "say",
@@ -2834,20 +2849,6 @@
       "at": "2026-11-24T20:47:31.888Z",
       "town": "day 100 10:21",
       "place": "the junk market"
-    },
-    {
-      "text": "read about Dust storm - Wikipedia. filing that away.",
-      "kind": "think",
-      "at": "2026-11-24T20:31:43.457Z",
-      "town": "day 100 08:15",
-      "place": "the comms tower"
-    },
-    {
-      "text": "ah, hits the spot *bweep*",
-      "kind": "say",
-      "at": "2026-11-24T20:21:43.620Z",
-      "town": "day 100 06:55",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2858,7 +2859,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-25T11:25:28.090Z",
+  "feedArchivedAt": "2026-11-25T11:35:28.154Z",
   "plans": [],
   "searches": [
     {

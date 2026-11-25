@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 27",
-    "progress": 86,
-    "version": 11,
-    "lastChange": "Adding high-temp silica insulation tiles to the lower hull using bolts named Spark and Flicker. (used Captain, a little landing strut)",
+    "progress": 92,
+    "version": 12,
+    "lastChange": "Securing the forward sensor housing to the titanium nose cone using a tiny bolt named Thimble (used Brakk, a tiny gyroscope)",
     "log": [
+      {
+        "version": 12,
+        "change": "Securing the forward sensor housing to the titanium nose cone using a tiny bolt named Thimble (used Brakk, a tiny gyroscope)",
+        "progress": 92,
+        "at": "2026-11-25T08:16:45.155Z"
+      },
       {
         "version": 11,
         "change": "Adding high-temp silica insulation tiles to the lower hull using bolts named Spark and Flicker. (used Captain, a little landing strut)",
@@ -238,12 +244,6 @@
         "change": "riveted a titanium reinforced hull plate across the dorsal spine using Pim, a little landing strut, as a custom brace (used Pim, a sensor eye with one crack)",
         "progress": 100,
         "at": "2026-11-23T21:07:42.718Z"
-      },
-      {
-        "version": 12,
-        "change": "soldered Tok, a tiny gyroscope, into the main attitude control circuit board inside the nose cone (used Sprocket, a tiny gyroscope)",
-        "progress": 97,
-        "at": "2026-11-23T20:02:14.307Z"
       }
     ],
     "launched": [
@@ -3672,7 +3672,7 @@
         ]
       }
     ],
-    "partsUsed": 10,
+    "partsUsed": 12,
     "parts": [
       {
         "name": "Wren",
@@ -3719,6 +3719,12 @@
         "name": "Captain",
         "what": "a little landing strut",
         "version": 11
+      },
+      {
+        "name": "Brakk",
+        "what": "a tiny gyroscope",
+        "good": true,
+        "version": 12
       }
     ],
     "design": {
@@ -4270,12 +4276,6 @@
       "name": "Captain",
       "what": "a scorched heat tile",
       "at": "2026-11-25T05:35:30.543Z"
-    },
-    {
-      "name": "Brakk",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-25T05:25:30.669Z",
-      "good": true
     }
   ],
   "reads": [

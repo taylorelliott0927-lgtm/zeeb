@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795623630153,
-  "asleep": true,
+  "lastTick": 1795624230101,
+  "asleep": false,
   "place": "hangar",
-  "action": "sleep",
-  "doing": "asleep in the charging dock",
-  "actionStartedAt": "2026-11-25T16:20:30.153Z",
+  "action": "work_dart",
+  "doing": "working on the Little Dart",
+  "actionStartedAt": "2026-11-25T16:30:30.101Z",
   "actionMinutes": 60,
-  "thought": "(dreaming) dreamed the Dart flew all the way past the second sun.",
+  "thought": "my craft is bugging me most right now.",
   "feeling": "pretty good actually",
   "say": "",
-  "mood": 0.42,
-  "energy": 0.276,
+  "mood": 0.401,
+  "energy": 0.58,
   "needs": {
-    "charge": 0.368,
-    "oil": 0.12,
-    "curiosity": 0.246,
-    "company": 0.053,
-    "craft": 0.252
+    "charge": 0.05,
+    "oil": 0.126,
+    "curiosity": 0.258,
+    "company": 0.061,
+    "craft": 0
   },
   "credits": 10,
   "recent": [
+    {
+      "id": "work_dart",
+      "detail": "polished the nose cone",
+      "at": "2026-11-25T16:30:30.101Z"
+    },
     {
       "id": "go_to_sleep",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "wander",
       "detail": "",
       "at": "2026-11-25T14:37:13.056Z"
-    },
-    {
-      "id": "compose_tune",
-      "detail": "Little Dart Five-Note Dawn Arc XXIX",
-      "at": "2026-11-25T14:06:50.504Z"
     }
   ],
   "wants": [
@@ -1639,33 +1639,33 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-25T16:20:30.153Z",
+  "lettersCheckedAt": "2026-11-25T16:30:30.101Z",
   "weather": {
-    "kind": "clear",
-    "temp": 23,
-    "wind": 8,
-    "mood": 0.01,
+    "kind": "hazy",
+    "temp": 22,
+    "wind": 6,
+    "mood": 0,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-25T15:50:30.294Z"
+    "at": "2026-11-25T16:30:30.271Z"
   },
   "sleepDay": 106,
   "lastReflectDay": 106,
   "brain": "rules",
-  "updatedAt": "2026-11-25T16:20:30.153Z",
+  "updatedAt": "2026-11-25T16:30:30.101Z",
   "clock": {
-    "day": 106,
-    "time": "22:45",
-    "hour": 22,
-    "minute": 45
+    "day": 107,
+    "time": "00:05",
+    "hour": 0,
+    "minute": 5
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "go_to_sleep",
-    "since": "2026-11-25T16:20:30.153Z"
+    "action": "work_dart",
+    "since": "2026-11-25T16:30:30.101Z"
   },
-  "busyUntil": "2026-11-25T16:28:00.153Z",
-  "busyUntilTown": "23:45",
+  "busyUntil": "2026-11-25T16:38:00.101Z",
+  "busyUntilTown": "01:05",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
@@ -1692,6 +1692,10 @@
   },
   "thoughts": [
     {
+      "text": "my craft is bugging me most right now.",
+      "at": "2026-11-25T16:30:30.101Z"
+    },
+    {
       "text": "my charge is bugging me most right now.",
       "at": "2026-11-25T16:20:30.153Z"
     },
@@ -1710,34 +1714,17 @@
     {
       "text": "If I dig deep enough under the scrap bins, maybe I'll find some PTFE tether sleeves or slick high-temp tiles.",
       "at": "2026-11-25T15:40:30.465Z"
-    },
-    {
-      "text": "got my trusty bolt Nim right here ready to secure the port landing bracket. the Little Dart is shaping up into a real flyer.",
-      "at": "2026-11-25T15:27:12.802Z"
     }
   ],
-  "sayAt": "2026-11-25T16:20:30.153Z",
+  "sayAt": "2026-11-25T16:30:30.101Z",
   "today": {
-    "day": 106,
+    "day": 107,
     "counts": {
-      "follow_link": 1,
-      "read_news": 1,
-      "drink_oil": 2,
-      "compose_tune": 1,
-      "wander": 1,
-      "browse_wire": 1,
-      "chat_patrons": 1,
-      "cantina_band": 1,
-      "nap_dock": 1,
-      "work_dart": 1,
-      "scavenge": 1,
-      "busk": 1,
-      "send_signal": 1,
-      "go_to_sleep": 1
+      "work_dart": 1
     }
   },
   "lastDone": {
-    "work_dart": "2026-11-25T15:27:12.802Z",
+    "work_dart": "2026-11-25T16:30:30.101Z",
     "read_news": "2026-11-25T13:46:50.332Z",
     "drink_oil": "2026-11-25T15:50:30.203Z",
     "follow_link": "2026-11-25T13:36:50.691Z",
@@ -2855,7 +2842,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-25T16:20:30.153Z",
+  "feedArchivedAt": "2026-11-25T16:30:30.101Z",
   "plans": [],
   "searches": [
     {

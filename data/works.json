@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 28",
-    "progress": 25,
-    "version": 3,
-    "lastChange": "welding reinforced landing gear brackets onto the lower fuselage using Nim (used Nim, a perfectly good bolt)",
+    "progress": 32,
+    "version": 4,
+    "lastChange": "polished the nose cone (used Brakk, a coil of copper wire)",
     "log": [
+      {
+        "version": 4,
+        "change": "polished the nose cone (used Brakk, a coil of copper wire)",
+        "progress": 32,
+        "at": "2026-11-25T16:30:30.101Z"
+      },
       {
         "version": 3,
         "change": "welding reinforced landing gear brackets onto the lower fuselage using Nim (used Nim, a perfectly good bolt)",
@@ -238,12 +244,6 @@
         "change": "welding the last high-temperature ceramic shielding tiles to the forward dorsal spine using Nim (a cracked navigation chip, a really good one) (used Tok, a tiny gyroscope)",
         "progress": 45,
         "at": "2026-11-24T00:48:55.868Z"
-      },
-      {
-        "version": 5,
-        "change": "mounting high-temperature ceramic shielding to the dorsal spine using Nim (a cracked navigation chip, a really good one) (used Captain, a scorched heat tile)",
-        "progress": 36,
-        "at": "2026-11-24T00:38:55.287Z"
       }
     ],
     "launched": [
@@ -4032,7 +4032,7 @@
         }
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 4,
     "parts": [
       {
         "name": "Captain",
@@ -4048,6 +4048,11 @@
         "name": "Nim",
         "what": "a perfectly good bolt",
         "version": 3
+      },
+      {
+        "name": "Brakk",
+        "what": "a coil of copper wire",
+        "version": 4
       }
     ],
     "design": null
@@ -4303,11 +4308,6 @@
     {
       "name": "Tok",
       "what": "a cockpit switch that still clicks",
-      "at": "2026-11-25T15:40:30.465Z"
-    },
-    {
-      "name": "Brakk",
-      "what": "a coil of copper wire",
       "at": "2026-11-25T15:40:30.465Z"
     }
   ],

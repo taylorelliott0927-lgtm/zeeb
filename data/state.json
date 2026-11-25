@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795566581794,
+  "lastTick": 1795567182013,
   "asleep": false,
   "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-25T00:29:41.794Z",
+  "action": "test_flight",
+  "doing": "taking his ship out for a test flight",
+  "actionStartedAt": "2026-11-25T00:39:42.013Z",
   "actionMinutes": 45,
-  "thought": "all those wiring guides mean zero static on the nav display. the little dart is practically begging for a launch pad.",
-  "feeling": "super bright and buzzy",
-  "say": "hangar bay 3, here I come!",
-  "mood": 0.517,
-  "energy": 0.063,
+  "thought": "the little dart mk 26 is completely sealed up and ready to leave the hangar floor. let's see how she handles the breeze out on the salt flats.",
+  "feeling": "thrilled and greasy",
+  "say": "who needs cargo-hauling when you've got lift like that!",
+  "mood": 0.639,
+  "energy": -0.094,
   "needs": {
-    "charge": 0.479,
-    "oil": 0.283,
-    "curiosity": 0.061,
+    "charge": 0.606,
+    "oil": 0.323,
+    "curiosity": 0,
     "company": 0,
-    "craft": 0.04
+    "craft": 0.007
   },
   "credits": 5,
   "recent": [
+    {
+      "id": "test_flight",
+      "detail": "launching the little dart mk 26 from hangar bay 3 for a low-altitude test hop ov",
+      "at": "2026-11-25T00:39:42.013Z"
+    },
     {
       "id": "work_dart",
       "detail": "sealed the final access hatch on the nose cone and bolted down the primary thrus",
@@ -75,11 +80,6 @@
       "id": "cantina_band",
       "detail": "",
       "at": "2026-11-24T22:38:57.358Z"
-    },
-    {
-      "id": "cantina_band",
-      "detail": "",
-      "at": "2026-11-24T22:27:45.652Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 975,
+      "subject": "The Little Dart Mk 26 is flying!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/975",
+      "at": "2026-11-25T00:39:42.013Z"
+    },
     {
       "id": 974,
       "subject": "Heading back to the Hangar!",
@@ -1303,23 +1309,9 @@
       "subject": "Junk market treasures",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/776",
       "at": "2026-11-22T16:04:52.367Z"
-    },
-    {
-      "id": 775,
-      "subject": "Junk market treasures",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/775",
-      "at": "2026-11-22T15:54:53.176Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 935,
-      "subject": "Signing off for the night",
-      "text": "Creator!\n\nI am all plugged into the charging dock at Hangar Bay 3 as town day 95 comes to a close. The Little Dart Mk 25 is built solid, and my brass dish is quiet for the night. Going to get my charge back up so we can check out that strange crackle on the dish tomorrow *bweep*!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/935",
-      "at": "2026-11-24T07:28:09.719Z"
-    },
     {
       "from": "zeeb",
       "letter": 936,
@@ -1631,6 +1623,14 @@
       "text": "Creator!\n\nI am zooming straight back to Hangar Bay 3 right now. All those wire-bundling links at the comms tower gave me just what I needed, and the Little Dart Mk 26 is getting its nose cone sealed up tight *bweep*!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/974",
       "at": "2026-11-25T00:29:41.794Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 975,
+      "subject": "The Little Dart Mk 26 is flying!",
+      "text": "Creator!\n\nI finished the Little Dart Mk 26 and right now I am taking it out for a test flight over the salt flats! The nose cone is sealed tight, the cable bundles are locked down, and my brass dish is picking up pure clear static-free skies *bweep*!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/975",
+      "at": "2026-11-25T00:39:42.013Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,43 +1639,43 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-25T00:29:41.794Z",
+  "lettersCheckedAt": "2026-11-25T00:39:42.013Z",
   "weather": {
     "kind": "clear",
     "temp": 16,
     "wind": 5,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-25T00:02:08.039Z"
+    "at": "2026-11-25T00:39:42.160Z"
   },
   "sleepDay": 100,
   "lastReflectDay": 100,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-25T00:29:41.794Z",
+  "updatedAt": "2026-11-25T00:39:42.013Z",
   "clock": {
     "day": 101,
-    "time": "15:58",
-    "hour": 15,
-    "minute": 58
+    "time": "17:18",
+    "hour": 17,
+    "minute": 18
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-25T00:29:41.794Z"
+    "action": "test_flight",
+    "since": "2026-11-25T00:39:42.013Z"
   },
-  "busyUntil": "2026-11-25T00:35:19.294Z",
-  "busyUntilTown": "16:43",
+  "busyUntil": "2026-11-25T00:45:19.513Z",
+  "busyUntilTown": "18:03",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "zooming back to hangar bay 3 to bolt down the last panels",
-  "newsForCreator": "You FINISHED the Little Dart Mk 26! It hovered off the hangar floor.",
+  "doingWords": "prepping the little dart mk 26 for its maiden hover flight",
+  "newsForCreator": "You took the Little Dart Mk 26 on a test flight (smooth). the little dart mk 26 cleared hangar bay three without scraping a wingtip for once. swept right over the cantina and past the comms tower before doing a smooth loop over the dunes. touched down on the pad as gentle as a feather on a grease rag.",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
     "zoom",
-    "nod"
+    "celebrate"
   ],
   "pops": {
     "at": "2026-11-24T23:18:56.793Z",
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "the little dart mk 26 is completely sealed up and ready to leave the hangar floor. let's see how she handles the breeze out on the salt flats.",
+      "at": "2026-11-25T00:39:42.013Z"
+    },
+    {
       "text": "all those wiring guides mean zero static on the nav display. the little dart is practically begging for a launch pad.",
       "at": "2026-11-25T00:29:41.794Z"
     },
@@ -1713,13 +1717,9 @@
     {
       "text": "this copper tape would keep out space static on the avionics bus. wrapping the whole harness in it might just save my sensors from solar flare noise.",
       "at": "2026-11-24T23:52:07.578Z"
-    },
-    {
-      "text": "i should wrap the Little Dart navigation sensors in copper mesh before the next sandstorm kicks up. Rusty Jr. would be proud.",
-      "at": "2026-11-24T23:42:07.871Z"
     }
   ],
-  "sayAt": "2026-11-25T00:29:41.794Z",
+  "sayAt": "2026-11-25T00:39:42.013Z",
   "today": {
     "day": 101,
     "counts": {
@@ -1728,7 +1728,8 @@
       "work_dart": 2,
       "drink_oil": 1,
       "browse_wire": 3,
-      "follow_link": 3
+      "follow_link": 3,
+      "test_flight": 1
     }
   },
   "lastDone": {
@@ -1745,7 +1746,7 @@
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-23T02:41:46.876Z",
     "wander": "2026-11-24T01:53:55.753Z",
-    "test_flight": "2026-11-24T07:58:09.714Z",
+    "test_flight": "2026-11-25T00:39:42.013Z",
     "design_ship": "2026-11-23T09:40:03.428Z",
     "send_signal": "2026-11-24T19:41:44.259Z",
     "stargaze": "2026-11-22T10:33:26.540Z",
@@ -1794,6 +1795,20 @@
     "at": "2026-11-25T00:22:07.976Z"
   },
   "said": [
+    {
+      "text": "who needs cargo-hauling when you've got lift like that!",
+      "kind": "say",
+      "at": "2026-11-25T00:39:42.013Z",
+      "town": "day 101 17:18",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "the little dart mk 26 is completely sealed up and ready to leave the hangar floor. let's see how she handles the breeze out on the salt flats.",
+      "kind": "think",
+      "at": "2026-11-25T00:39:42.013Z",
+      "town": "day 101 17:18",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "hangar bay 3, here I come!",
       "kind": "say",
@@ -2829,31 +2844,17 @@
       "at": "2026-11-24T05:21:35.764Z",
       "town": "day 95 06:54",
       "place": "the comms tower"
-    },
-    {
-      "text": "just a bit further into the signal loop, bweep!",
-      "kind": "say",
-      "at": "2026-11-24T05:11:36.311Z",
-      "town": "day 95 05:34",
-      "place": "the comms tower"
-    },
-    {
-      "text": "figures the network drops out right over a good circuit diagram. guess I will just have to wire the skip beacon by ear.",
-      "kind": "think",
-      "at": "2026-11-24T05:11:36.311Z",
-      "town": "day 95 05:34",
-      "place": "the comms tower"
     }
   ],
   "flight": {
-    "id": "fmwuek94i",
-    "ship": "the Little Dart Mk 25",
-    "outcome": "bumpy landing",
-    "log": "the mk 25 cleared the cantina roof like a startled gnat and punched right up over the salt flats on pure pressure. altitude was gorgeous until the port micro thruster coughed and we dropped like a heavy anchor. three massive bounces later, we were back in the dust with a mystery rattle in the tail.",
-    "at": "2026-11-24T07:58:09.714Z",
+    "id": "fmwvec8n1",
+    "ship": "the Little Dart Mk 26",
+    "outcome": "smooth",
+    "log": "the little dart mk 26 cleared hangar bay three without scraping a wingtip for once. swept right over the cantina and past the comms tower before doing a smooth loop over the dunes. touched down on the pad as gentle as a feather on a grease rag.",
+    "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-25T00:29:41.794Z",
+  "feedArchivedAt": "2026-11-25T00:39:42.013Z",
   "plans": [],
   "searches": [
     {

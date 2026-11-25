@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 28",
-    "progress": 60,
-    "version": 10,
-    "lastChange": "attached lightweight high-temp ceramic heat tiles to the aft section using Tilly",
+    "progress": 68,
+    "version": 11,
+    "lastChange": "installed custom high-temp gasket seals around the aft thruster mount using Brakk (used Nim, a dented fuel cell)",
     "log": [
+      {
+        "version": 11,
+        "change": "installed custom high-temp gasket seals around the aft thruster mount using Brakk (used Nim, a dented fuel cell)",
+        "progress": 68,
+        "at": "2026-11-25T21:48:20.141Z"
+      },
       {
         "version": 10,
         "change": "attached lightweight high-temp ceramic heat tiles to the aft section using Tilly",
@@ -238,12 +244,6 @@
         "change": "routing copper wire Rusty Jr. from the primary console to the auxiliary fuel bay with precision solder joints (used Captain, a dented fuel cell)",
         "progress": 100,
         "at": "2026-11-24T07:08:10.088Z"
-      },
-      {
-        "version": 12,
-        "change": "mounting Captain (a dented fuel cell) into the auxiliary fuel bay with heavy-duty brackets (used Captain, a little landing strut)",
-        "progress": 93,
-        "at": "2026-11-24T06:46:04.286Z"
       }
     ],
     "launched": [
@@ -4032,7 +4032,7 @@
         }
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Captain",
@@ -4063,6 +4063,11 @@
         "name": "Tilly",
         "what": "a bent stabiliser fin",
         "version": 9
+      },
+      {
+        "name": "Nim",
+        "what": "a dented fuel cell",
+        "version": 11
       }
     ],
     "design": null
@@ -4323,11 +4328,6 @@
     {
       "name": "Captain",
       "what": "a perfectly good bolt",
-      "at": "2026-11-25T21:03:32.645Z"
-    },
-    {
-      "name": "Nim",
-      "what": "a dented fuel cell",
       "at": "2026-11-25T21:03:32.645Z"
     }
   ],

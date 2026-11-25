@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795585530249,
+  "lastTick": 1795586130202,
   "asleep": false,
-  "place": "market",
-  "action": "fix_job",
-  "doing": "doing a repair job at the market",
-  "actionStartedAt": "2026-11-25T05:45:30.249Z",
-  "actionMinutes": 45,
-  "thought": "I need credits for oil before my elbows lock up completely. Luckily this pump just has loose wiring. *bweep*",
-  "feeling": "determined and squeaky",
-  "say": "I can fix this busted pump for you! Just watch the sparks fly. *bweep*",
-  "mood": 0.324,
-  "energy": -0.348,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-25T05:55:30.202Z",
+  "actionMinutes": 20,
+  "thought": "Seven credits in the pouch means no more squeaky elbows. Time to lube the servos before plugging in for a nap. *bweep*",
+  "feeling": "squeaky but hopeful",
+  "say": "One cup of the good stuff, please! Extra thick.",
+  "mood": 0.314,
+  "energy": -0.317,
   "needs": {
-    "charge": 0.652,
-    "oil": 0.615,
-    "curiosity": 0.08,
-    "company": 0,
-    "craft": 0.068
+    "charge": 0.749,
+    "oil": 0.005,
+    "curiosity": 0.16,
+    "company": 0.053,
+    "craft": 0.135
   },
-  "credits": 7,
+  "credits": 6,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-25T05:55:30.202Z"
+    },
     {
       "id": "fix_job",
       "detail": "repairing a trader's dry moisture-vaporizer pump",
@@ -75,14 +80,14 @@
       "id": "work_dart",
       "detail": "welding the pilot seat frame and mounting the main flight console inside the coc",
       "at": "2026-11-25T03:56:45.538Z"
-    },
-    {
-      "id": "design_ship",
-      "detail": "a streamlined sub-orbital hull with swept-back delta wings, a polished titanium ",
-      "at": "2026-11-25T03:44:21.355Z"
     }
   ],
   "wants": [
+    {
+      "id": "w8",
+      "text": "a nap in the charging dock",
+      "at": "2026-11-25T05:55:30.202Z"
+    },
     {
       "id": "w7",
       "text": "a cup of fresh motor oil",
@@ -97,11 +102,6 @@
       "id": "w5",
       "text": "heavy-duty toggle switches",
       "at": "2026-11-25T04:06:45.152Z"
-    },
-    {
-      "id": "w9",
-      "text": "a roll of reflective chrome plating tape",
-      "at": "2026-11-25T03:44:21.355Z"
     }
   ],
   "promises": [],
@@ -1639,61 +1639,65 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-25T05:45:30.249Z",
+  "lettersCheckedAt": "2026-11-25T05:55:30.202Z",
   "weather": {
     "kind": "clear",
-    "temp": 15,
+    "temp": 14,
     "wind": 3,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-25T05:15:32.387Z"
+    "at": "2026-11-25T05:55:30.294Z"
   },
   "sleepDay": 102,
   "lastReflectDay": 102,
-  "brain": "gemini-3.5-flash",
-  "updatedAt": "2026-11-25T05:45:30.249Z",
+  "brain": "gemini-3.6-flash",
+  "updatedAt": "2026-11-25T05:55:30.202Z",
   "clock": {
     "day": 103,
-    "time": "10:05",
-    "hour": 10,
-    "minute": 5
+    "time": "11:25",
+    "hour": 11,
+    "minute": 25
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "fix_job",
-    "since": "2026-11-25T05:45:30.249Z"
+    "action": "drink_oil",
+    "since": "2026-11-25T05:55:30.202Z"
   },
-  "busyUntil": "2026-11-25T05:51:07.749Z",
-  "busyUntilTown": "10:50",
+  "busyUntil": "2026-11-25T05:58:00.202Z",
+  "busyUntilTown": "11:45",
   "runner": "github",
-  "model": "gemini-3.5-flash",
+  "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "tinkering with a trader's busted pump to earn some credits",
+  "doingWords": "sipping a fresh cup of high-viscosity oil at the depot",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
+    "droop",
     "lean_in"
   ],
   "pops": {
-    "at": "2026-11-25T05:45:30.249Z",
+    "at": "2026-11-25T05:55:30.202Z",
     "items": [
       {
-        "text": "+6 credits",
-        "kind": "credits",
-        "at": "2026-11-25T05:45:30.249Z"
+        "text": "-1 credit",
+        "kind": "spend",
+        "at": "2026-11-25T05:55:30.202Z"
       }
     ]
   },
   "event": {
-    "id": "emwvn5y4n",
-    "key": "tip",
-    "text": "Someone he fixed something for last week came back and tipped him.",
-    "at": "2026-11-25T04:46:44.999Z"
+    "id": "emwvpmd5m",
+    "key": "power",
+    "text": "The power flickered across the outpost for a few seconds.",
+    "at": "2026-11-25T05:55:30.202Z"
   },
   "thoughts": [
+    {
+      "text": "Seven credits in the pouch means no more squeaky elbows. Time to lube the servos before plugging in for a nap. *bweep*",
+      "at": "2026-11-25T05:55:30.202Z"
+    },
     {
       "text": "I need credits for oil before my elbows lock up completely. Luckily this pump just has loose wiring. *bweep*",
       "at": "2026-11-25T05:45:30.249Z"
@@ -1713,13 +1717,9 @@
     {
       "text": "Every switch I flip makes a sound that tells me this ship is alive. Almost time to see if the stars agree.",
       "at": "2026-11-25T05:05:30.892Z"
-    },
-    {
-      "text": "If I can get these lines sealed tight, the Little Dart will be one step closer to breaking the atmosphere. My gears are humming with potential energy.",
-      "at": "2026-11-25T04:46:44.999Z"
     }
   ],
-  "sayAt": "2026-11-25T05:45:30.249Z",
+  "sayAt": "2026-11-25T05:55:30.202Z",
   "today": {
     "day": 103,
     "counts": {
@@ -1727,13 +1727,14 @@
       "work_dart": 2,
       "scavenge": 2,
       "buy_part": 1,
-      "fix_job": 1
+      "fix_job": 1,
+      "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-25T05:05:30.892Z",
     "read_news": "2026-11-24T17:17:43.791Z",
-    "drink_oil": "2026-11-25T03:34:22.134Z",
+    "drink_oil": "2026-11-25T05:55:30.202Z",
     "follow_link": "2026-11-25T02:36:16.127Z",
     "scavenge": "2026-11-25T05:25:30.669Z",
     "fix_job": "2026-11-25T05:45:30.249Z",
@@ -1793,6 +1794,20 @@
     "at": "2026-11-25T02:36:16.127Z"
   },
   "said": [
+    {
+      "text": "One cup of the good stuff, please! Extra thick.",
+      "kind": "say",
+      "at": "2026-11-25T05:55:30.202Z",
+      "town": "day 103 11:25",
+      "place": "the fuel depot"
+    },
+    {
+      "text": "Seven credits in the pouch means no more squeaky elbows. Time to lube the servos before plugging in for a nap. *bweep*",
+      "kind": "think",
+      "at": "2026-11-25T05:55:30.202Z",
+      "town": "day 103 11:25",
+      "place": "the fuel depot"
+    },
     {
       "text": "I can fix this busted pump for you! Just watch the sparks fly. *bweep*",
       "kind": "say",
@@ -2828,20 +2843,6 @@
       "at": "2026-11-24T11:31:09.939Z",
       "town": "day 97 08:10",
       "place": "the junk market"
-    },
-    {
-      "text": "Let's see what the galaxy is cooking up today! *bweep*",
-      "kind": "say",
-      "at": "2026-11-24T11:21:10.164Z",
-      "town": "day 97 06:50",
-      "place": "the comms tower"
-    },
-    {
-      "text": "if those big probes can slip into orbit with fried code, the little dart can definitely handle kessa-9 orbit.",
-      "kind": "think",
-      "at": "2026-11-24T11:21:10.164Z",
-      "town": "day 97 06:50",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2852,7 +2853,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-25T05:45:30.249Z",
+  "feedArchivedAt": "2026-11-25T05:55:30.202Z",
   "plans": [],
   "searches": [
     {

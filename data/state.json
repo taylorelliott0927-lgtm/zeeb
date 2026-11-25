@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795610222278,
+  "lastTick": 1795610821874,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-25T12:37:02.278Z",
-  "actionMinutes": 20,
-  "thought": "That sand grit in my left elbow joint is crunching every time I move! A fresh cup of oil will smooth everything out real nice. *bweep*",
-  "feeling": "squeaky and thirsty",
-  "say": "Time for a lube stop before my elbow locks up completely! *bweep*",
-  "mood": 0.27,
-  "energy": 0.561,
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-25T12:47:01.874Z",
+  "actionMinutes": 45,
+  "thought": "The Little Dart is gonna need serious thermal protection if I hit an atmosphere at full speed. Packing the sensors inside the shell frame makes total sense. *bweep*",
+  "feeling": "eager and inspired",
+  "say": "Time to hunt down some slick wire-guiding secrets! *bweep*",
+  "mood": 0.326,
+  "energy": 0.63,
   "needs": {
-    "charge": 0.047,
-    "oil": 0,
-    "curiosity": 0.473,
-    "company": 0.206,
-    "craft": 0.413
+    "charge": 0.094,
+    "oil": 0.04,
+    "curiosity": 0.053,
+    "company": 0.259,
+    "craft": 0.48
   },
   "credits": 8,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "how to keep tether friction low during deployment",
+      "at": "2026-11-25T12:47:01.874Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,14 +80,14 @@
       "id": "stargaze",
       "detail": "",
       "at": "2026-11-25T10:45:25.740Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "buy a cup of oil at the depot",
-      "at": "2026-11-25T10:35:25.739Z"
     }
   ],
   "wants": [
+    {
+      "id": "w6",
+      "text": "PTFE sleeves for low tether friction",
+      "at": "2026-11-25T12:47:01.874Z"
+    },
     {
       "id": "w5",
       "text": "some smooth space-grade lubricant for my elbow joint",
@@ -97,11 +102,6 @@
       "id": "w8",
       "text": "some smooth space-grade lubricant for the tether spooler",
       "at": "2026-11-25T10:55:28.259Z"
-    },
-    {
-      "id": "w7",
-      "text": "a nice cold cup of fresh motor oil",
-      "at": "2026-11-25T10:05:25.749Z"
     }
   ],
   "promises": [],
@@ -1639,43 +1639,43 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-25T12:37:02.278Z",
+  "lettersCheckedAt": "2026-11-25T12:47:01.874Z",
   "weather": {
     "kind": "hazy",
-    "temp": 22,
-    "wind": 6,
+    "temp": 23,
+    "wind": 7,
     "mood": 0,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-25T12:07:02.389Z"
+    "at": "2026-11-25T12:47:02.049Z"
   },
   "sleepDay": 104,
   "lastReflectDay": 104,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-25T12:37:02.278Z",
+  "updatedAt": "2026-11-25T12:47:01.874Z",
   "clock": {
     "day": 105,
-    "time": "16:57",
-    "hour": 16,
-    "minute": 57
+    "time": "18:17",
+    "hour": 18,
+    "minute": 17
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-25T12:37:02.278Z"
+    "action": "browse_wire",
+    "since": "2026-11-25T12:47:01.874Z"
   },
-  "busyUntil": "2026-11-25T12:39:32.278Z",
-  "busyUntilTown": "17:17",
+  "busyUntil": "2026-11-25T12:52:39.374Z",
+  "busyUntilTown": "19:02",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "trundling to the depot for a warm cup of fresh motor oil",
+  "doingWords": "searching the Wire for low-friction tether deployment tricks",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "zoom",
-    "wiggle"
+    "spin",
+    "look_up"
   ],
   "pops": {
     "at": "2026-11-25T12:37:02.278Z",
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "The Little Dart is gonna need serious thermal protection if I hit an atmosphere at full speed. Packing the sensors inside the shell frame makes total sense. *bweep*",
+      "at": "2026-11-25T12:47:01.874Z"
+    },
+    {
       "text": "That sand grit in my left elbow joint is crunching every time I move! A fresh cup of oil will smooth everything out real nice. *bweep*",
       "at": "2026-11-25T12:37:02.278Z"
     },
@@ -1713,13 +1717,9 @@
     {
       "text": "I've got six credits ready to spend. Time to dig out some high-grade copper wire or slick grease for the Little Dart's tether assembly.",
       "at": "2026-11-25T11:45:28.194Z"
-    },
-    {
-      "text": "That heavy cargo-hauler bot dropped a stray part around the bend, but I should fix this trader's coupler first before someone else grabs it. *bweep*",
-      "at": "2026-11-25T11:35:28.154Z"
     }
   ],
-  "sayAt": "2026-11-25T12:37:02.278Z",
+  "sayAt": "2026-11-25T12:47:01.874Z",
   "today": {
     "day": 105,
     "counts": {
@@ -1731,7 +1731,8 @@
       "scavenge": 1,
       "fix_job": 1,
       "buy_part": 1,
-      "sell_scrap": 2
+      "sell_scrap": 2,
+      "browse_wire": 1
     }
   },
   "lastDone": {
@@ -1743,7 +1744,7 @@
     "fix_job": "2026-11-25T11:35:28.154Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-25T09:28:16.184Z",
+    "browse_wire": "2026-11-25T12:47:01.874Z",
     "compose_tune": "2026-11-25T01:19:41.551Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-23T02:41:46.876Z",
@@ -1793,10 +1794,24 @@
     }
   ],
   "nextSearch": {
-    "text": "salvaged 8 wire slip ring pinout diagram",
-    "at": "2026-11-25T10:55:28.259Z"
+    "text": "low friction guide spools for deployment tether",
+    "at": "2026-11-25T12:47:01.874Z"
   },
   "said": [
+    {
+      "text": "Time to hunt down some slick wire-guiding secrets! *bweep*",
+      "kind": "say",
+      "at": "2026-11-25T12:47:01.874Z",
+      "town": "day 105 18:17",
+      "place": "the comms tower"
+    },
+    {
+      "text": "The Little Dart is gonna need serious thermal protection if I hit an atmosphere at full speed. Packing the sensors inside the shell frame makes total sense. *bweep*",
+      "kind": "think",
+      "at": "2026-11-25T12:47:01.874Z",
+      "town": "day 105 18:17",
+      "place": "the comms tower"
+    },
     {
       "text": "Time for a lube stop before my elbow locks up completely! *bweep*",
       "kind": "say",
@@ -2832,20 +2847,6 @@
       "at": "2026-11-24T22:07:45.571Z",
       "town": "day 100 21:03",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "Cargo drop! Dibs on the shiny bits! *bweep*",
-      "kind": "say",
-      "at": "2026-11-24T21:57:45.952Z",
-      "town": "day 100 19:43",
-      "place": "the junk market"
-    },
-    {
-      "text": "Ooh, cargo spilled right off that freighter! I better go sift through the sand and find the best pieces before anyone else sees.",
-      "kind": "think",
-      "at": "2026-11-24T21:57:45.952Z",
-      "town": "day 100 19:43",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2856,9 +2857,13 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-25T12:37:02.278Z",
+  "feedArchivedAt": "2026-11-25T12:47:01.874Z",
   "plans": [],
   "searches": [
+    {
+      "q": "how to keep tether friction low during deployment",
+      "at": "2026-11-25T12:47:01.874Z"
+    },
     {
       "q": "tether spooling mechanisms lightweight salvage",
       "at": "2026-11-25T09:28:16.184Z"
@@ -2902,10 +2907,6 @@
     {
       "q": "sandstorms",
       "at": "2026-11-24T20:31:43.457Z"
-    },
-    {
-      "q": "deserts",
-      "at": "2026-11-24T19:21:07.950Z"
     }
   ],
   "lampOutUntil": "2026-11-25T09:14:54.730Z",

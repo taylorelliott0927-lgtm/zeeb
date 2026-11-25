@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 28",
-    "progress": 18,
-    "version": 2,
-    "lastChange": "bolting low-friction guide pins and alignment brackets onto the tether spooler frame using Nim (used Fen, a perfectly good bolt)",
+    "progress": 25,
+    "version": 3,
+    "lastChange": "welding reinforced landing gear brackets onto the lower fuselage using Nim (used Nim, a perfectly good bolt)",
     "log": [
+      {
+        "version": 3,
+        "change": "welding reinforced landing gear brackets onto the lower fuselage using Nim (used Nim, a perfectly good bolt)",
+        "progress": 25,
+        "at": "2026-11-25T15:27:12.802Z"
+      },
       {
         "version": 2,
         "change": "bolting low-friction guide pins and alignment brackets onto the tether spooler frame using Nim (used Fen, a perfectly good bolt)",
@@ -238,12 +244,6 @@
         "change": "mounting high-temperature ceramic shielding to the dorsal spine using Nim (a cracked navigation chip, a really good one) (used Captain, a scorched heat tile)",
         "progress": 36,
         "at": "2026-11-24T00:38:55.287Z"
-      },
-      {
-        "version": 4,
-        "change": "mounting high-temperature ceramic shielding to the dorsal spine using Dibs (half a thruster nozzle) and Pim (a perfectly good bolt) (used Pim, a perfectly good bolt)",
-        "progress": 28,
-        "at": "2026-11-24T00:28:55.837Z"
       }
     ],
     "launched": [
@@ -4032,7 +4032,7 @@
         }
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Captain",
@@ -4043,6 +4043,11 @@
         "name": "Fen",
         "what": "a perfectly good bolt",
         "version": 2
+      },
+      {
+        "name": "Nim",
+        "what": "a perfectly good bolt",
+        "version": 3
       }
     ],
     "design": null
@@ -4289,13 +4294,7 @@
       "at": "2026-11-14T17:42:59.319Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Nim",
-      "what": "a perfectly good bolt",
-      "at": "2026-11-25T11:35:28.154Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "SHG - UFO Symposium 1968: Sagan Statement",

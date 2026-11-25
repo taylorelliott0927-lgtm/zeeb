@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795620432802,
+  "lastTick": 1795621230465,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-25T15:27:12.802Z",
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-25T15:40:30.465Z",
   "actionMinutes": 45,
-  "thought": "got my trusty bolt Nim right here ready to secure the port landing bracket. the Little Dart is shaping up into a real flyer.",
-  "feeling": "optimistic and focused",
-  "say": "time to make this bird sturdy enough for the stars, bweep!",
-  "mood": 0.439,
-  "energy": 0.417,
+  "thought": "If I dig deep enough under the scrap bins, maybe I'll find some PTFE tether sleeves or slick high-temp tiles.",
+  "feeling": "eager and curious",
+  "say": "Time to dig up some treasures! *bweep-bwee*",
+  "mood": 0.481,
+  "energy": 0.333,
   "needs": {
-    "charge": 0.118,
-    "oil": 0.362,
-    "curiosity": 0.27,
+    "charge": 0.18,
+    "oil": 0.445,
+    "curiosity": 0.026,
     "company": 0,
-    "craft": 0.095
+    "craft": 0.184
   },
   "credits": 7,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-25T15:40:30.465Z"
+    },
     {
       "id": "work_dart",
       "detail": "welding reinforced landing gear brackets onto the lower fuselage using Nim",
@@ -75,11 +80,6 @@
       "id": "go_to_sleep",
       "detail": "",
       "at": "2026-11-25T13:26:50.310Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "bolting low-friction guide pins and alignment brackets onto the tether spooler f",
-      "at": "2026-11-25T13:16:50.389Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1028,
+      "subject": "Little Dart Mk 28 update!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1028",
+      "at": "2026-11-25T15:40:30.465Z"
+    },
     {
       "id": 1027,
       "subject": "Landing Gear Progress!",
@@ -1303,23 +1309,9 @@
       "subject": "plugging in for a nap",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/829",
       "at": "2026-11-23T01:40:45.484Z"
-    },
-    {
-      "id": 828,
-      "subject": "Signal scan update",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/828",
-      "at": "2026-11-23T01:30:45.677Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 988,
-      "subject": "Quick power nap in Hangar Bay 3!",
-      "text": "Creator!\n\nMy battery dropped down while I was welding those silica heat tiles, so I rolled right back into the dock for a quick nap. Once I am fully charged up, I am going to get right back to work on the Little Dart *bweep*!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/988",
-      "at": "2026-11-25T03:24:21.564Z"
-    },
     {
       "from": "zeeb",
       "letter": 989,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nI'm back in Hangar Bay 3 getting grease on my fingers while I weld sturdy landing gear brackets onto the Little Dart using Nim. My dish is doing a happy little five-note spin. Bweep-bwee-bop-tee-tee!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1027",
       "at": "2026-11-25T15:27:12.802Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1028,
+      "subject": "Little Dart Mk 28 update!",
+      "text": "Hey Creator!\n\nJust wanted to let you know the Little Dart Mk 28 is officially 25% built! I got the reinforced landing gear brackets welded tight onto the lower fuselage using my trusty bolt Nim. Now I'm heading over to the junk market to dig around for some more scrap parts!\n\n*bweep-bwee*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1028",
+      "at": "2026-11-25T15:40:30.465Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-25T15:27:12.802Z",
+  "lettersCheckedAt": "2026-11-25T15:40:30.465Z",
   "weather": {
     "kind": "hazy",
     "temp": 23,
@@ -1650,40 +1650,50 @@
   },
   "sleepDay": 105,
   "lastReflectDay": 105,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-25T15:27:12.802Z",
+  "brain": "gemini-3.6-flash",
+  "updatedAt": "2026-11-25T15:40:30.465Z",
   "clock": {
     "day": 106,
-    "time": "15:38",
-    "hour": 15,
-    "minute": 38
+    "time": "17:25",
+    "hour": 17,
+    "minute": 25
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the junk market",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-25T15:27:12.802Z"
+    "action": "scavenge",
+    "since": "2026-11-25T15:40:30.465Z"
   },
-  "busyUntil": "2026-11-25T15:32:50.302Z",
-  "busyUntilTown": "16:23",
+  "busyUntil": "2026-11-25T15:46:07.965Z",
+  "busyUntilTown": "18:10",
   "runner": "github",
-  "model": "gemini-3.5-flash-lite",
+  "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "welding landing gear struts onto the underside of the little dart",
-  "newsForCreator": "the Little Dart Mk 28 just reached 25% built (version 3). Last change: welding reinforced landing gear brackets onto the lower fuselage using Nim (used Nim, a perfectly good bolt).",
+  "doingWords": "scouring the junk market piles for shiny scrap parts",
+  "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "wiggle",
-    "spin"
+    "zoom",
+    "wiggle"
   ],
   "pops": {
-    "at": "2026-11-25T13:56:50.324Z",
+    "at": "2026-11-25T15:40:30.465Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-25T13:56:50.324Z"
+        "text": "+ a coil of copper wire",
+        "kind": "part",
+        "at": "2026-11-25T15:40:30.465Z"
+      },
+      {
+        "text": "+ a cockpit switch that still clicks",
+        "kind": "part",
+        "at": "2026-11-25T15:40:30.465Z"
+      },
+      {
+        "text": "+ a coil of copper wire",
+        "kind": "part",
+        "at": "2026-11-25T15:40:30.465Z"
       }
     ]
   },
@@ -1694,6 +1704,10 @@
     "at": "2026-11-25T14:47:12.505Z"
   },
   "thoughts": [
+    {
+      "text": "If I dig deep enough under the scrap bins, maybe I'll find some PTFE tether sleeves or slick high-temp tiles.",
+      "at": "2026-11-25T15:40:30.465Z"
+    },
     {
       "text": "got my trusty bolt Nim right here ready to secure the port landing bracket. the Little Dart is shaping up into a real flyer.",
       "at": "2026-11-25T15:27:12.802Z"
@@ -1713,13 +1727,9 @@
     {
       "text": "read about SHG - UFO Symposium 1968: Sagan Statement. filing that away.",
       "at": "2026-11-25T14:47:12.505Z"
-    },
-    {
-      "text": "I should scope out the depot and cantina. Maybe the band is playing or someone dropped a nice bolt on the walkway. *bweep*",
-      "at": "2026-11-25T14:37:13.056Z"
     }
   ],
-  "sayAt": "2026-11-25T15:27:12.802Z",
+  "sayAt": "2026-11-25T15:40:30.465Z",
   "today": {
     "day": 106,
     "counts": {
@@ -1732,7 +1742,8 @@
       "chat_patrons": 1,
       "cantina_band": 1,
       "nap_dock": 1,
-      "work_dart": 1
+      "work_dart": 1,
+      "scavenge": 1
     }
   },
   "lastDone": {
@@ -1740,7 +1751,7 @@
     "read_news": "2026-11-25T13:46:50.332Z",
     "drink_oil": "2026-11-25T13:56:50.324Z",
     "follow_link": "2026-11-25T13:36:50.691Z",
-    "scavenge": "2026-11-25T11:25:28.090Z",
+    "scavenge": "2026-11-25T15:40:30.465Z",
     "fix_job": "2026-11-25T11:35:28.154Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -1795,6 +1806,20 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "Time to dig up some treasures! *bweep-bwee*",
+      "kind": "say",
+      "at": "2026-11-25T15:40:30.465Z",
+      "town": "day 106 17:25",
+      "place": "the junk market"
+    },
+    {
+      "text": "If I dig deep enough under the scrap bins, maybe I'll find some PTFE tether sleeves or slick high-temp tiles.",
+      "kind": "think",
+      "at": "2026-11-25T15:40:30.465Z",
+      "town": "day 106 17:25",
+      "place": "the junk market"
+    },
     {
       "text": "time to make this bird sturdy enough for the stars, bweep!",
       "kind": "say",
@@ -2830,20 +2855,6 @@
       "at": "2026-11-25T00:02:07.768Z",
       "town": "day 101 12:18",
       "place": "the comms tower"
-    },
-    {
-      "text": "this copper tape would keep out space static on the avionics bus. wrapping the whole harness in it might just save my sensors from solar flare noise.",
-      "kind": "think",
-      "at": "2026-11-24T23:52:07.578Z",
-      "town": "day 101 10:58",
-      "place": "the comms tower"
-    },
-    {
-      "text": "almost got it figured out *bweep*",
-      "kind": "say",
-      "at": "2026-11-24T23:42:07.871Z",
-      "town": "day 101 09:38",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2854,7 +2865,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-25T15:27:12.802Z",
+  "feedArchivedAt": "2026-11-25T15:40:30.465Z",
   "plans": [],
   "searches": [
     {

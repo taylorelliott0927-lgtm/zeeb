@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 27",
-    "progress": 7,
-    "version": 1,
-    "lastChange": "added the new custom guidance module frame and welded the intake cowlings using Tilly (used Wren, a cracked navigation chip)",
+    "progress": 16,
+    "version": 2,
+    "lastChange": "added high-temp silica heat tiles to the lower hull using Tilly for precise alignment (used Tilly, a tiny gyroscope)",
     "log": [
+      {
+        "version": 2,
+        "change": "added high-temp silica heat tiles to the lower hull using Tilly for precise alignment (used Tilly, a tiny gyroscope)",
+        "progress": 16,
+        "at": "2026-11-25T02:54:22.342Z"
+      },
       {
         "version": 1,
         "change": "added the new custom guidance module frame and welded the intake cowlings using Tilly (used Wren, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "securing the upper cowl plates and sealing the joints with ceramic heat tiles (used Brakk, a little landing strut)",
         "progress": 29,
         "at": "2026-11-23T07:00:10.147Z"
-      },
-      {
-        "version": 2,
-        "change": "installing the compact single-pilot oxygen scrubber module into the Little Dart's fuselage using Otto, a coil of copper wire (used Gus, a sensor eye with one crack)",
-        "progress": 20,
-        "at": "2026-11-23T05:16:24.277Z"
       }
     ],
     "launched": [
@@ -3672,12 +3672,18 @@
         ]
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Wren",
         "what": "a cracked navigation chip",
         "version": 1
+      },
+      {
+        "name": "Tilly",
+        "what": "a tiny gyroscope",
+        "good": true,
+        "version": 2
       }
     ],
     "design": null
@@ -3929,12 +3935,6 @@
       "name": "Dibs",
       "what": "a dented fuel cell",
       "at": "2026-11-24T21:57:45.952Z"
-    },
-    {
-      "name": "Tilly",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-24T21:57:45.952Z",
-      "good": true
     }
   ],
   "reads": [

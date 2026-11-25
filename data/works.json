@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 28",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 8,
+    "version": 1,
+    "lastChange": "wiring the 8-wire slip ring into the compact motorized tether spooler assembly (used Captain, half a thruster nozzle)",
     "log": [
+      {
+        "version": 1,
+        "change": "wiring the 8-wire slip ring into the compact motorized tether spooler assembly (used Captain, half a thruster nozzle)",
+        "progress": 8,
+        "at": "2026-11-25T11:05:27.461Z"
+      },
       {
         "version": 14,
         "change": "assembling the miniature motorized tether spooler using a tiny copper wire named Rusty Jr. (used Mabel, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "securing the lateral control horns with a fresh brass fastener named rusty junior number two (used Wren, a dented fuel cell)",
         "progress": 20,
         "at": "2026-11-23T22:50:52.332Z"
-      },
-      {
-        "version": 2,
-        "change": "tightening the rudder assembly bolts on Little Dart Mk 24 (used Brakk, a cracked navigation chip)",
-        "progress": 14,
-        "at": "2026-11-23T22:40:52.930Z"
       }
     ],
     "launched": [
@@ -4032,8 +4032,14 @@
         }
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Captain",
+        "what": "half a thruster nozzle",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -4278,13 +4284,7 @@
       "at": "2026-11-14T15:18:58.915Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Captain",
-      "what": "half a thruster nozzle",
-      "at": "2026-11-25T07:56:45.039Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Fathom Spool Assembly",

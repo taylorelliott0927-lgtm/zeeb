@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 28",
-    "progress": 68,
-    "version": 11,
-    "lastChange": "installed custom high-temp gasket seals around the aft thruster mount using Brakk (used Nim, a dented fuel cell)",
+    "progress": 75,
+    "version": 12,
+    "lastChange": "installed custom high-temp gasket seals around the aft thruster mount using Brakk (used Captain, a perfectly good bolt)",
     "log": [
+      {
+        "version": 12,
+        "change": "installed custom high-temp gasket seals around the aft thruster mount using Brakk (used Captain, a perfectly good bolt)",
+        "progress": 75,
+        "at": "2026-11-25T21:58:19.660Z"
+      },
       {
         "version": 11,
         "change": "installed custom high-temp gasket seals around the aft thruster mount using Brakk (used Nim, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "mounting and welding the repaired port micro thruster onto the Little Dart Mk 25 fuselage (used Nim, a little landing strut)",
         "progress": 10,
         "at": "2026-11-24T09:04:36.777Z"
-      },
-      {
-        "version": 13,
-        "change": "routing copper wire Rusty Jr. from the primary console to the auxiliary fuel bay with precision solder joints (used Captain, a dented fuel cell)",
-        "progress": 100,
-        "at": "2026-11-24T07:08:10.088Z"
       }
     ],
     "launched": [
@@ -4032,7 +4032,7 @@
         }
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Captain",
@@ -4068,6 +4068,11 @@
         "name": "Nim",
         "what": "a dented fuel cell",
         "version": 11
+      },
+      {
+        "name": "Captain",
+        "what": "a perfectly good bolt",
+        "version": 12
       }
     ],
     "design": null
@@ -4324,11 +4329,6 @@
       "name": "Mabel",
       "what": "a dented fuel cell",
       "at": "2026-11-25T21:13:33.355Z"
-    },
-    {
-      "name": "Captain",
-      "what": "a perfectly good bolt",
-      "at": "2026-11-25T21:03:32.645Z"
     }
   ],
   "reads": [

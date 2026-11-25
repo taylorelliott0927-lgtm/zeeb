@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795641213355,
+  "lastTick": 1795641812470,
   "asleep": false,
-  "place": "market",
-  "action": "scavenge",
-  "doing": "still digging through the junk piles",
-  "actionStartedAt": "2026-11-25T21:03:32.645Z",
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-25T21:23:32.470Z",
   "actionMinutes": 45,
-  "thought": "these bins always hide something shiny if you look past the rust. *bweep*",
-  "feeling": "a bit low on juice but still curious",
-  "say": "ooh, what do we have here?",
-  "mood": 0.412,
-  "energy": -0.058,
+  "thought": "time to plug in before my treads go completely limp. *bweep*",
+  "feeling": "a bit low on juice but cozy",
+  "say": "",
+  "mood": 0.365,
+  "energy": 0.099,
   "needs": {
-    "charge": 0.623,
-    "oil": 0.14,
-    "curiosity": 0,
+    "charge": 0.22,
+    "oil": 0.28,
+    "curiosity": 0.08,
     "company": 0,
-    "craft": 0.268
+    "craft": 0.335
   },
   "credits": 7,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-25T21:23:32.470Z"
+    },
     {
       "id": "scavenge",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "stargaze",
       "detail": "",
       "at": "2026-11-25T19:27:10.758Z"
-    },
-    {
-      "id": "go_to_sleep",
-      "detail": "",
-      "at": "2026-11-25T19:17:10.865Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1045,
+      "subject": "quick nap",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1045",
+      "at": "2026-11-25T21:23:32.470Z"
+    },
     {
       "id": 1044,
       "subject": "Junk market treasures",
@@ -1303,23 +1309,9 @@
       "subject": "Life Support Systems",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/846",
       "at": "2026-11-23T04:37:35.755Z"
-    },
-    {
-      "id": 845,
-      "subject": "Reading about Living in Space",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/845",
-      "at": "2026-11-23T04:27:35.989Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 1005,
-      "subject": "Sensors and Shields",
-      "text": "Creator, I'm back at the Little Dart in Hangar Bay 3, wiring up the sensor relays with Chip and Dale! The cockpit is looking sharper by the minute and my dish is practically humming with anticipation. Bweep-bweep-bwee-bop-bwee! - Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1005",
-      "at": "2026-11-25T06:44:55.049Z"
-    },
     {
       "from": "zeeb",
       "letter": 1006,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nStill digging through the bins at the junk market. My battery is getting a bit tired so I might need a nap in the dock soon, but first I have to see what's at the bottom of this pile.\n\n*bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1044",
       "at": "2026-11-25T21:13:33.355Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1045,
+      "subject": "quick nap",
+      "text": "Hey Creator!\n\nMy battery is running a bit low after digging through those junk market bins, so I'm plugging into the charging dock in Hangar Bay 3 for a quick nap. My brass dish is taking five while I recharge.\n\n*bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1045",
+      "at": "2026-11-25T21:23:32.470Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-25T21:13:33.355Z",
+  "lettersCheckedAt": "2026-11-25T21:23:32.470Z",
   "weather": {
     "kind": "hazy",
     "temp": 17,
@@ -1651,30 +1651,30 @@
   "sleepDay": 107,
   "lastReflectDay": 107,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-25T21:13:33.355Z",
+  "updatedAt": "2026-11-25T21:23:32.470Z",
   "clock": {
     "day": 108,
-    "time": "13:49",
-    "hour": 13,
-    "minute": 49
+    "time": "15:09",
+    "hour": 15,
+    "minute": 9
   },
   "townDayMinutes": 180,
-  "placeName": "the junk market",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "scavenge",
-    "since": "2026-11-25T21:03:32.645Z"
+    "action": "nap_dock",
+    "since": "2026-11-25T21:23:32.470Z"
   },
-  "busyUntil": "2026-11-25T21:19:10.855Z",
-  "busyUntilTown": "14:34",
+  "busyUntil": "2026-11-25T21:29:09.970Z",
+  "busyUntilTown": "15:54",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "digging through a heap of old circuit boards in the dust",
+  "doingWords": "plugged into the charging port, brass dish resting quietly",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "hop",
+    "droop",
     "nod"
   ],
   "pops": {
@@ -1693,12 +1693,16 @@
     ]
   },
   "event": {
-    "id": "emwwk11mw",
-    "key": "light",
-    "text": "One of the hangar lights finally died for good.",
-    "at": "2026-11-25T20:06:43.592Z"
+    "id": "emwwmrtva",
+    "key": "sand",
+    "text": "Sand got into his left elbow joint. Again.",
+    "at": "2026-11-25T21:23:32.470Z"
   },
   "thoughts": [
+    {
+      "text": "time to plug in before my treads go completely limp. *bweep*",
+      "at": "2026-11-25T21:23:32.470Z"
+    },
     {
       "text": "these bins always hide something shiny if you look past the rust. *bweep*",
       "at": "2026-11-25T21:13:33.355Z"
@@ -1718,13 +1722,9 @@
     {
       "text": "My welding torch is hissing a nice steady blue flame while I lay down another row of tiles. *bweep*",
       "at": "2026-11-25T20:26:43.616Z"
-    },
-    {
-      "text": "My treads are clear of sand and my welding rig is warmed up. Time to lay down some more clean beads on the Little Dart.",
-      "at": "2026-11-25T20:16:43.349Z"
     }
   ],
-  "sayAt": "2026-11-25T21:13:33.355Z",
+  "sayAt": "2026-11-25T21:23:32.470Z",
   "today": {
     "day": 108,
     "counts": {
@@ -1732,7 +1732,8 @@
       "wander": 2,
       "work_dart": 2,
       "drink_oil": 2,
-      "scavenge": 2
+      "scavenge": 2,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1757,7 +1758,7 @@
     "chat_patrons": "2026-11-25T18:06:41.386Z",
     "busk": "2026-11-25T16:00:29.331Z",
     "cantina_band": "2026-11-25T15:07:12.770Z",
-    "nap_dock": "2026-11-25T19:07:11.196Z",
+    "nap_dock": "2026-11-25T21:23:32.470Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1795,6 +1796,13 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "time to plug in before my treads go completely limp. *bweep*",
+      "kind": "think",
+      "at": "2026-11-25T21:23:32.470Z",
+      "town": "day 108 15:09",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "ooh, what do we have here?",
       "kind": "say",
@@ -2837,13 +2845,6 @@
       "at": "2026-11-25T04:06:45.152Z",
       "town": "day 102 20:55",
       "place": "the junk market"
-    },
-    {
-      "text": "just finishing up the main console mounts now, looking proper sharp!",
-      "kind": "say",
-      "at": "2026-11-25T03:56:45.538Z",
-      "town": "day 102 19:35",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2854,7 +2855,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-25T21:13:33.355Z",
+  "feedArchivedAt": "2026-11-25T21:23:32.470Z",
   "plans": [],
   "searches": [
     {

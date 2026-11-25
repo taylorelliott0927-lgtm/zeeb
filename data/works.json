@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 28",
-    "progress": 81,
-    "version": 13,
-    "lastChange": "bolted a new fin on (used Mabel, a dented fuel cell)",
+    "progress": 89,
+    "version": 14,
+    "lastChange": "fitted a high-temp seal ring around the aft thruster (used Brakk, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 14,
+        "change": "fitted a high-temp seal ring around the aft thruster (used Brakk, a cockpit switch that still clicks)",
+        "progress": 89,
+        "at": "2026-11-25T23:49:49.812Z"
+      },
       {
         "version": 13,
         "change": "bolted a new fin on (used Mabel, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "soldering the pure copper wire and blinker relays into the Little Dart Mk 26 navigation array (used Sprocket, a little landing strut)",
         "progress": 23,
         "at": "2026-11-24T10:16:06.218Z"
-      },
-      {
-        "version": 2,
-        "change": "installing heavy-duty blinker relays into the Little Dart Mk 26 navigation array (used Dibs, a tiny gyroscope)",
-        "progress": 16,
-        "at": "2026-11-24T10:06:06.254Z"
       }
     ],
     "launched": [
@@ -4032,7 +4032,7 @@
         }
       }
     ],
-    "partsUsed": 9,
+    "partsUsed": 10,
     "parts": [
       {
         "name": "Captain",
@@ -4078,6 +4078,11 @@
         "name": "Mabel",
         "what": "a dented fuel cell",
         "version": 13
+      },
+      {
+        "name": "Brakk",
+        "what": "a cockpit switch that still clicks",
+        "version": 14
       }
     ],
     "design": null
@@ -4324,13 +4329,7 @@
       "at": "2026-11-15T19:52:56.264Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Brakk",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-25T21:13:33.355Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Dawn of the Space Age - NASA",

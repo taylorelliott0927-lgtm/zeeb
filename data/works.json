@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 27",
-    "progress": 92,
-    "version": 12,
-    "lastChange": "Securing the forward sensor housing to the titanium nose cone using a tiny bolt named Thimble (used Brakk, a tiny gyroscope)",
+    "progress": 99,
+    "version": 13,
+    "lastChange": "tuned the left thruster (used Captain, a scorched heat tile)",
     "log": [
+      {
+        "version": 13,
+        "change": "tuned the left thruster (used Captain, a scorched heat tile)",
+        "progress": 99,
+        "at": "2026-11-25T09:38:16.058Z"
+      },
       {
         "version": 12,
         "change": "Securing the forward sensor housing to the titanium nose cone using a tiny bolt named Thimble (used Brakk, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "riveting an extra titanium steering gusset to the tail assembly (used Pim, a little landing strut)",
         "progress": 6,
         "at": "2026-11-23T22:30:52.365Z"
-      },
-      {
-        "version": 13,
-        "change": "riveted a titanium reinforced hull plate across the dorsal spine using Pim, a little landing strut, as a custom brace (used Pim, a sensor eye with one crack)",
-        "progress": 100,
-        "at": "2026-11-23T21:07:42.718Z"
       }
     ],
     "launched": [
@@ -3672,7 +3672,7 @@
         ]
       }
     ],
-    "partsUsed": 12,
+    "partsUsed": 13,
     "parts": [
       {
         "name": "Wren",
@@ -3725,6 +3725,11 @@
         "what": "a tiny gyroscope",
         "good": true,
         "version": 12
+      },
+      {
+        "name": "Captain",
+        "what": "a scorched heat tile",
+        "version": 13
       }
     ],
     "design": {
@@ -4271,11 +4276,6 @@
       "name": "Mabel",
       "what": "a strip of hull plating",
       "at": "2026-11-25T07:56:45.039Z"
-    },
-    {
-      "name": "Captain",
-      "what": "a scorched heat tile",
-      "at": "2026-11-25T05:35:30.543Z"
     }
   ],
   "reads": [

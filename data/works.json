@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "Little Dart Mk 27",
-    "progress": 66,
-    "version": 9,
-    "lastChange": "Routing the copper mesh sensor shielding along the internal bulkhead and securing it with tiny bolts named Bolt and Barnaby. (used Otto, a little landing strut)",
+    "progress": 76,
+    "version": 10,
+    "lastChange": "Securing the navigation sensor relays to the forward instrument panel using tiny bolts named Chip and Dale. (used Sprocket, a coil of copper wire)",
     "log": [
+      {
+        "version": 10,
+        "change": "Securing the navigation sensor relays to the forward instrument panel using tiny bolts named Chip and Dale. (used Sprocket, a coil of copper wire)",
+        "progress": 76,
+        "at": "2026-11-25T06:44:55.049Z"
+      },
       {
         "version": 9,
         "change": "Routing the copper mesh sensor shielding along the internal bulkhead and securing it with tiny bolts named Bolt and Barnaby. (used Otto, a little landing strut)",
@@ -238,12 +244,6 @@
         "change": "riveted the secondary lateral stabilizing fins onto the aft fuselage using Pim, a sensor eye with one crack (used Wren, a scorched heat tile)",
         "progress": 90,
         "at": "2026-11-23T18:08:21.005Z"
-      },
-      {
-        "version": 10,
-        "change": "polished the nose cone (used Tilly, a coil of copper wire)",
-        "progress": 84,
-        "at": "2026-11-23T16:08:03.012Z"
       }
     ],
     "launched": [
@@ -3672,7 +3672,7 @@
         ]
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Wren",
@@ -3709,6 +3709,11 @@
         "name": "Otto",
         "what": "a little landing strut",
         "version": 9
+      },
+      {
+        "name": "Sprocket",
+        "what": "a coil of copper wire",
+        "version": 10
       }
     ],
     "design": {
@@ -4261,11 +4266,6 @@
       "name": "Captain",
       "what": "a little landing strut",
       "at": "2026-11-25T05:25:30.669Z"
-    },
-    {
-      "name": "Sprocket",
-      "what": "a coil of copper wire",
-      "at": "2026-11-25T05:15:30.593Z"
     }
   ],
   "reads": [

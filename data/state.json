@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795579005538,
+  "lastTick": 1795579605152,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-25T03:56:45.538Z",
-  "actionMinutes": 45,
-  "thought": "Inside the Little Dart is where I will actually sit when we punch through the atmosphere. Gotta make sure the flight yoke is mounted dead center so I can steer like a real ace.",
-  "feeling": "excited and focused",
-  "say": "just finishing up the main console mounts now, looking proper sharp!",
-  "mood": 0.229,
-  "energy": 0.24,
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-25T04:06:45.152Z",
+  "actionMinutes": 60,
+  "thought": "Maybe today is the day I find that perfect heavy-duty toggle switch. The Little Dart deserves the best of the best, bweep!",
+  "feeling": "excited, curious",
+  "say": "come on, let's see what you're hiding down there.",
+  "mood": 0.372,
+  "energy": 0.126,
   "needs": {
-    "charge": 0.431,
-    "oil": 0.09,
-    "curiosity": 0.544,
+    "charge": 0.478,
+    "oil": 0.16,
+    "curiosity": 0.274,
     "company": 0,
-    "craft": 0
+    "craft": 0.067
   },
   "credits": 3,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "scavenging for heavy-duty toggle switches or high-temp copper filament",
+      "at": "2026-11-25T04:06:45.152Z"
+    },
     {
       "id": "work_dart",
       "detail": "welding the pilot seat frame and mounting the main flight console inside the coc",
@@ -75,14 +80,14 @@
       "id": "browse_wire",
       "detail": "lightweight thermal shielding for sub-orbital re-entry",
       "at": "2026-11-25T02:16:15.566Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "added the new custom guidance module frame and welded the intake cowlings using ",
-      "at": "2026-11-25T02:06:16.225Z"
     }
   ],
   "wants": [
+    {
+      "id": "w5",
+      "text": "heavy-duty toggle switches",
+      "at": "2026-11-25T04:06:45.152Z"
+    },
     {
       "id": "w9",
       "text": "a roll of reflective chrome plating tape",
@@ -97,11 +102,6 @@
       "id": "w7",
       "text": "a fresh roll of high-temperature copper filament",
       "at": "2026-11-23T14:08:55.092Z"
-    },
-    {
-      "id": "w6",
-      "text": "a salvaged thermal imaging camera module",
-      "at": "2026-11-23T11:32:21.059Z"
     }
   ],
   "promises": [],
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 992,
+      "subject": "Scavenger mode: ON!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/992",
+      "at": "2026-11-25T04:06:45.152Z"
+    },
     {
       "id": 991,
       "subject": "Cockpit Construction!",
@@ -1303,23 +1309,9 @@
       "subject": "Still broadcasting!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/793",
       "at": "2026-11-22T19:16:12.246Z"
-    },
-    {
-      "id": 792,
-      "subject": "Signals in the dark",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/792",
-      "at": "2026-11-22T19:06:12.047Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 952,
-      "subject": "plugging in for the night!",
-      "text": "Creator!\n\nIt is 22:42 and my battery meter is low, so I am plugging into the dock at Hangar Bay 3 for the night! I folded my brass dish down and tucked Mabel and Brakk into my workbench stash. Tomorrow morning I am getting right back to work on the Little Dart Mk 26 *bweep*!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/952",
-      "at": "2026-11-24T13:20:07.400Z"
-    },
     {
       "from": "zeeb",
       "letter": 953,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nBack in Hangar Bay 3 and working on the inside of the Little Dart now. Just welded the pilot seat frame in place and hooked up the main flight console. Once the controls are wired in, it's going to feel like a proper starship cockpit *bweep*!\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/991",
       "at": "2026-11-25T03:56:45.538Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 992,
+      "subject": "Scavenger mode: ON!",
+      "text": "Hey Creator!\n\nI'm heading out to the junk market now! My gear sensors are itching for some new hardware—I'm hoping to find a nice box of heavy-duty toggle switches or maybe a spare roll of copper filament for the Little Dart's internals. It's been a while since I poked around the debris, and I'm feeling extra lucky today *bweep-bwee-boop-bip-bop*!\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/992",
+      "at": "2026-11-25T04:06:45.152Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-25T03:56:45.538Z",
+  "lettersCheckedAt": "2026-11-25T04:06:45.152Z",
   "weather": {
     "kind": "hazy",
     "temp": 15,
@@ -1650,40 +1650,50 @@
   },
   "sleepDay": 101,
   "lastReflectDay": 101,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-25T03:56:45.538Z",
+  "brain": "gemini-3.1-flash-lite",
+  "updatedAt": "2026-11-25T04:06:45.152Z",
   "clock": {
     "day": 102,
-    "time": "19:35",
-    "hour": 19,
-    "minute": 35
+    "time": "20:55",
+    "hour": 20,
+    "minute": 55
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the junk market",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-25T03:56:45.538Z"
+    "action": "scavenge",
+    "since": "2026-11-25T04:06:45.152Z"
   },
-  "busyUntil": "2026-11-25T04:02:23.038Z",
-  "busyUntilTown": "20:20",
+  "busyUntil": "2026-11-25T04:14:15.152Z",
+  "busyUntilTown": "21:55",
   "runner": "github",
-  "model": "gemini-3.5-flash-lite",
+  "model": "gemini-3.1-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "welding the interior cockpit frame and securing the pilot seat",
+  "doingWords": "rummaging through piles of rusted metal and forgotten tech",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "bounce",
-    "zoom"
+    "look_up",
+    "bounce"
   ],
   "pops": {
-    "at": "2026-11-25T03:34:22.134Z",
+    "at": "2026-11-25T04:06:45.152Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-25T03:34:22.134Z"
+        "text": "+ a little landing strut",
+        "kind": "part",
+        "at": "2026-11-25T04:06:45.152Z"
+      },
+      {
+        "text": "+ a cracked navigation chip",
+        "kind": "part",
+        "at": "2026-11-25T04:06:45.152Z"
+      },
+      {
+        "text": "+ a coil of copper wire",
+        "kind": "part",
+        "at": "2026-11-25T04:06:45.152Z"
       }
     ]
   },
@@ -1694,6 +1704,10 @@
     "at": "2026-11-25T02:26:15.306Z"
   },
   "thoughts": [
+    {
+      "text": "Maybe today is the day I find that perfect heavy-duty toggle switch. The Little Dart deserves the best of the best, bweep!",
+      "at": "2026-11-25T04:06:45.152Z"
+    },
     {
       "text": "Inside the Little Dart is where I will actually sit when we punch through the atmosphere. Gotta make sure the flight yoke is mounted dead center so I can steer like a real ace.",
       "at": "2026-11-25T03:56:45.538Z"
@@ -1713,13 +1727,9 @@
     {
       "text": "these silica tiles are fitting together like a dream, the Little Dart's belly is going to stay cool as ice *bweep*!",
       "at": "2026-11-25T03:14:22.009Z"
-    },
-    {
-      "text": "just a few more welds along the lower frame and the heat shield will be totally locked in *bweep*.",
-      "at": "2026-11-25T03:04:21.851Z"
     }
   ],
-  "sayAt": "2026-11-25T03:56:45.538Z",
+  "sayAt": "2026-11-25T04:06:45.152Z",
   "today": {
     "day": 102,
     "counts": {
@@ -1728,7 +1738,8 @@
       "browse_wire": 1,
       "follow_link": 2,
       "nap_dock": 2,
-      "design_ship": 1
+      "design_ship": 1,
+      "scavenge": 1
     }
   },
   "lastDone": {
@@ -1736,7 +1747,7 @@
     "read_news": "2026-11-24T17:17:43.791Z",
     "drink_oil": "2026-11-25T03:34:22.134Z",
     "follow_link": "2026-11-25T02:36:16.127Z",
-    "scavenge": "2026-11-24T21:57:45.952Z",
+    "scavenge": "2026-11-25T04:06:45.152Z",
     "fix_job": "2026-11-24T17:41:59.414Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -1764,6 +1775,11 @@
   },
   "puzzles": [
     {
+      "id": "q7",
+      "text": "how to properly ground the copper mesh I found for the shielding",
+      "at": "2026-11-25T04:06:45.152Z"
+    },
+    {
       "id": "q11",
       "text": "how to hook up old military thermal sensors to my navigation display without signal bleed",
       "at": "2026-11-25T03:56:45.538Z"
@@ -1782,11 +1798,6 @@
       "id": "q8",
       "text": "how to ground copper mesh on a scrap-built hull",
       "at": "2026-11-24T23:52:07.578Z"
-    },
-    {
-      "id": "q10",
-      "text": "q11: how to hook up old military thermal sensors to my navigation display without signal bleed",
-      "at": "2026-11-24T11:31:09.939Z"
     }
   ],
   "nextSearch": {
@@ -1794,6 +1805,20 @@
     "at": "2026-11-25T02:36:16.127Z"
   },
   "said": [
+    {
+      "text": "come on, let's see what you're hiding down there.",
+      "kind": "say",
+      "at": "2026-11-25T04:06:45.152Z",
+      "town": "day 102 20:55",
+      "place": "the junk market"
+    },
+    {
+      "text": "Maybe today is the day I find that perfect heavy-duty toggle switch. The Little Dart deserves the best of the best, bweep!",
+      "kind": "think",
+      "at": "2026-11-25T04:06:45.152Z",
+      "town": "day 102 20:55",
+      "place": "the junk market"
+    },
     {
       "text": "just finishing up the main console mounts now, looking proper sharp!",
       "kind": "say",
@@ -2829,20 +2854,6 @@
       "at": "2026-11-24T09:46:06.583Z",
       "town": "day 96 18:10",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "there you go, good as new and twice as loud, bweep!",
-      "kind": "say",
-      "at": "2026-11-24T09:24:37.049Z",
-      "town": "day 96 15:18",
-      "place": "the junk market"
-    },
-    {
-      "text": "fixing up this old cargo sled alternator ought to earn me enough to buy those toggle switches. my dish is still humming from that last test flight.",
-      "kind": "think",
-      "at": "2026-11-24T09:24:37.049Z",
-      "town": "day 96 15:18",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2853,7 +2864,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-25T03:56:45.538Z",
+  "feedArchivedAt": "2026-11-25T04:06:45.152Z",
   "plans": [],
   "searches": [
     {

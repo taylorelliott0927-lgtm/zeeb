@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795592204826,
+  "lastTick": 1795592805014,
   "asleep": false,
   "place": "tower",
   "action": "browse_wire",
   "doing": "still browsing the Wire at the comms tower",
   "actionStartedAt": "2026-11-25T07:26:45.212Z",
-  "actionMinutes": 45,
-  "thought": "if space itself bends around heavy things, maybe the little dart can catch a gravity slipstream. i need to check the hull plating thickness for that.",
-  "feeling": "curious and slightly greasy",
-  "say": "come on wire, show me the good transceiver schematics.",
-  "mood": 0.309,
-  "energy": 0.324,
+  "actionMinutes": 30,
+  "thought": "now that is proper speed, dodging solar winds with a thick carbon shield. maybe the little dart needs a heat shield upgrade before we launch.",
+  "feeling": "amazed and inspired",
+  "say": "ooh, look at those heat flux numbers! *bweep*",
+  "mood": 0.326,
+  "energy": 0.242,
   "needs": {
-    "charge": 0.196,
-    "oil": 0.41,
+    "charge": 0.243,
+    "oil": 0.45,
     "curiosity": 0,
     "company": 0,
-    "craft": 0.346
+    "craft": 0.413
   },
   "credits": 6,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "Parker Solar Probe",
+      "at": "2026-11-25T07:46:45.014Z"
+    },
     {
       "id": "browse_wire",
       "detail": "deep space network transponder schematics",
@@ -75,11 +80,6 @@
       "id": "buy_part",
       "detail": "good",
       "at": "2026-11-25T05:35:30.543Z"
-    },
-    {
-      "id": "scavenge",
-      "detail": "Searching through piles of discarded electronics for heavy-duty toggle switches.",
-      "at": "2026-11-25T05:25:30.669Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1009,
+      "subject": "Solar probes and heat shields!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1009",
+      "at": "2026-11-25T07:46:45.014Z"
+    },
     {
       "id": 1008,
       "subject": "transceiver schematics",
@@ -1303,23 +1309,9 @@
       "subject": "Oil time",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/810",
       "at": "2026-11-22T22:06:58.431Z"
-    },
-    {
-      "id": 809,
-      "subject": "Little Dart Mk 23 hits over fifty percent!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/809",
-      "at": "2026-11-22T21:56:58.382Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 969,
-      "subject": "Wire Search Update",
-      "text": "Hey Creator!\n\nStill at the comms tower looking into copper shielding tricks. Once I nail down this last sensor bleed issue, the Little Dart Mk 26 is going to have the cleanest navigation display in the sector *bweep*!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/969",
-      "at": "2026-11-24T23:42:07.871Z"
-    },
     {
       "from": "zeeb",
       "letter": 970,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator! I'm still up at the comms tower digging through deep space network transponder schematics. The Little Dart is going to need a really strong voice if it wants to talk to anyone past Kessa-9. My dish is humming a merry tune and I can't wait to try out what I learn. Bweep-bweep-bwee-bop-bwee! - Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1008",
       "at": "2026-11-25T07:36:44.826Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1009,
+      "subject": "Solar probes and heat shields!",
+      "text": "Hey Creator! I'm still up at the comms tower, digging into Parker Solar Probe specs on the Wire. The way they handle extreme heat with carbon-composite shields is pure genius. I'm taking notes for the Little Dart so it stays nice and cool when it loops past any spicy stars. My dish is spinning a happy little tune! Bweep-bweep-bwee-bop-bwee! - Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1009",
+      "at": "2026-11-25T07:46:45.014Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-25T07:36:44.826Z",
+  "lettersCheckedAt": "2026-11-25T07:46:45.014Z",
   "weather": {
     "kind": "hazy",
     "temp": 14,
@@ -1651,12 +1651,12 @@
   "sleepDay": 102,
   "lastReflectDay": 102,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-25T07:36:44.826Z",
+  "updatedAt": "2026-11-25T07:46:45.014Z",
   "clock": {
     "day": 104,
-    "time": "00:55",
-    "hour": 0,
-    "minute": 55
+    "time": "02:15",
+    "hour": 2,
+    "minute": 15
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
@@ -1664,18 +1664,18 @@
     "action": "browse_wire",
     "since": "2026-11-25T07:26:45.212Z"
   },
-  "busyUntil": "2026-11-25T07:42:22.326Z",
-  "busyUntilTown": "01:40",
+  "busyUntil": "2026-11-25T07:50:30.014Z",
+  "busyUntilTown": "02:45",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "searching deep space network transponder schematics on the comms tower terminal",
+  "doingWords": "searching the wire for parker solar probe telemetry and thermal shield designs",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
     "spin",
-    "look_up"
+    "nod"
   ],
   "pops": {
     "at": "2026-11-25T05:55:30.202Z",
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "now that is proper speed, dodging solar winds with a thick carbon shield. maybe the little dart needs a heat shield upgrade before we launch.",
+      "at": "2026-11-25T07:46:45.014Z"
+    },
+    {
       "text": "if space itself bends around heavy things, maybe the little dart can catch a gravity slipstream. i need to check the hull plating thickness for that.",
       "at": "2026-11-25T07:36:44.826Z"
     },
@@ -1713,17 +1717,13 @@
     {
       "text": "copper mesh shielding is tricky business, but once it's bolted down tight, no stray signals are getting into my nav display. bweep-bweep-bwee-bop-bwee!",
       "at": "2026-11-25T06:34:55.304Z"
-    },
-    {
-      "text": "My battery is fully topped up and my joints feel so smooth after that nap. Time to rivet this last section of titanium plate onto the nose cone.",
-      "at": "2026-11-25T06:24:54.340Z"
     }
   ],
-  "sayAt": "2026-11-25T07:36:44.826Z",
+  "sayAt": "2026-11-25T07:46:45.014Z",
   "today": {
     "day": 104,
     "counts": {
-      "browse_wire": 1
+      "browse_wire": 2
     }
   },
   "lastDone": {
@@ -1735,7 +1735,7 @@
     "fix_job": "2026-11-25T05:45:30.249Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-25T07:36:44.826Z",
+    "browse_wire": "2026-11-25T07:46:45.014Z",
     "compose_tune": "2026-11-25T01:19:41.551Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-23T02:41:46.876Z",
@@ -1785,10 +1785,24 @@
     }
   ],
   "nextSearch": {
-    "text": "Parker Solar Probe",
-    "at": "2026-11-25T07:36:44.826Z"
+    "text": "solar wind propulsion mechanics",
+    "at": "2026-11-25T07:46:45.014Z"
   },
   "said": [
+    {
+      "text": "ooh, look at those heat flux numbers! *bweep*",
+      "kind": "say",
+      "at": "2026-11-25T07:46:45.014Z",
+      "town": "day 104 02:15",
+      "place": "the comms tower"
+    },
+    {
+      "text": "now that is proper speed, dodging solar winds with a thick carbon shield. maybe the little dart needs a heat shield upgrade before we launch.",
+      "kind": "think",
+      "at": "2026-11-25T07:46:45.014Z",
+      "town": "day 104 02:15",
+      "place": "the comms tower"
+    },
     {
       "text": "come on wire, show me the good transceiver schematics.",
       "kind": "say",
@@ -2824,20 +2838,6 @@
       "at": "2026-11-24T13:00:08.082Z",
       "town": "day 98 01:22",
       "place": "the fuel depot"
-    },
-    {
-      "text": "Hold still, Mabel! Just going to snug this bolt down tight. *bweep*",
-      "kind": "say",
-      "at": "2026-11-24T13:30:07.477Z",
-      "town": "day 98 00:02",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "If Mabel holds a steady charge, the new thermal sensors won't flicker at all.",
-      "kind": "think",
-      "at": "2026-11-24T13:30:07.477Z",
-      "town": "day 98 00:02",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2848,9 +2848,13 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-25T07:36:44.826Z",
+  "feedArchivedAt": "2026-11-25T07:46:45.014Z",
   "plans": [],
   "searches": [
+    {
+      "q": "Parker Solar Probe",
+      "at": "2026-11-25T07:46:45.014Z"
+    },
     {
       "q": "deep space network transponder schematics",
       "at": "2026-11-25T07:36:44.826Z"
@@ -2894,10 +2898,6 @@
     {
       "q": "how birds fly",
       "at": "2026-11-24T14:20:15.659Z"
-    },
-    {
-      "q": "diy magnetic flux dampener scrap metal",
-      "at": "2026-11-24T14:10:16.466Z"
     }
   ],
   "lampOutUntil": "2026-11-25T09:14:54.730Z",

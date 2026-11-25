@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795624230101,
+  "lastTick": 1795625456352,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-25T16:30:30.101Z",
-  "actionMinutes": 60,
-  "thought": "my craft is bugging me most right now.",
-  "feeling": "pretty good actually",
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-25T16:50:56.352Z",
+  "actionMinutes": 35,
+  "thought": "read about Sandstorms: what they are, causes, effects and characteristics. filing that away.",
+  "feeling": "curious",
   "say": "",
-  "mood": 0.401,
-  "energy": 0.58,
+  "mood": 0.408,
+  "energy": 0.51,
   "needs": {
-    "charge": 0.05,
-    "oil": 0.126,
-    "curiosity": 0.258,
-    "company": 0.061,
-    "craft": 0
+    "charge": 0.145,
+    "oil": 0.208,
+    "curiosity": 0,
+    "company": 0.17,
+    "craft": 0.136
   },
   "credits": 10,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "sandstorms",
+      "at": "2026-11-25T16:50:56.352Z"
+    },
     {
       "id": "work_dart",
       "detail": "polished the nose cone",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "comets",
       "at": "2026-11-25T14:47:12.505Z"
-    },
-    {
-      "id": "wander",
-      "detail": "",
-      "at": "2026-11-25T14:37:13.056Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-25T16:30:30.101Z",
+  "lettersCheckedAt": "2026-11-25T16:50:56.352Z",
   "weather": {
     "kind": "hazy",
     "temp": 22,
@@ -1651,21 +1651,21 @@
   "sleepDay": 106,
   "lastReflectDay": 106,
   "brain": "rules",
-  "updatedAt": "2026-11-25T16:30:30.101Z",
+  "updatedAt": "2026-11-25T16:50:56.352Z",
   "clock": {
     "day": 107,
-    "time": "00:05",
-    "hour": 0,
-    "minute": 5
+    "time": "02:48",
+    "hour": 2,
+    "minute": 48
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-25T16:30:30.101Z"
+    "action": "browse_wire",
+    "since": "2026-11-25T16:50:56.352Z"
   },
-  "busyUntil": "2026-11-25T16:38:00.101Z",
-  "busyUntilTown": "01:05",
+  "busyUntil": "2026-11-25T16:55:18.852Z",
+  "busyUntilTown": "03:23",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
@@ -1692,6 +1692,10 @@
   },
   "thoughts": [
     {
+      "text": "read about Sandstorms: what they are, causes, effects and characteristics. filing that away.",
+      "at": "2026-11-25T16:50:56.352Z"
+    },
+    {
       "text": "my craft is bugging me most right now.",
       "at": "2026-11-25T16:30:30.101Z"
     },
@@ -1710,17 +1714,14 @@
     {
       "text": "my oil is bugging me most right now.",
       "at": "2026-11-25T15:50:30.203Z"
-    },
-    {
-      "text": "If I dig deep enough under the scrap bins, maybe I'll find some PTFE tether sleeves or slick high-temp tiles.",
-      "at": "2026-11-25T15:40:30.465Z"
     }
   ],
-  "sayAt": "2026-11-25T16:30:30.101Z",
+  "sayAt": "2026-11-25T16:50:56.352Z",
   "today": {
     "day": 107,
     "counts": {
-      "work_dart": 1
+      "work_dart": 1,
+      "browse_wire": 1
     }
   },
   "lastDone": {
@@ -1732,7 +1733,7 @@
     "fix_job": "2026-11-25T11:35:28.154Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-25T14:47:12.505Z",
+    "browse_wire": "2026-11-25T16:50:56.352Z",
     "compose_tune": "2026-11-25T14:06:50.504Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-23T02:41:46.876Z",
@@ -1783,6 +1784,13 @@
   ],
   "nextSearch": null,
   "said": [
+    {
+      "text": "read about Sandstorms: what they are, causes, effects and characteristics. filing that away.",
+      "kind": "think",
+      "at": "2026-11-25T16:50:56.352Z",
+      "town": "day 107 02:48",
+      "place": "the comms tower"
+    },
     {
       "text": "(dreaming) dreamed the Dart flew all the way past the second sun.",
       "kind": "think",
@@ -2825,13 +2833,6 @@
       "at": "2026-11-25T00:39:42.013Z",
       "town": "day 101 17:18",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "hangar bay 3, here I come!",
-      "kind": "say",
-      "at": "2026-11-25T00:29:41.794Z",
-      "town": "day 101 15:58",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2842,9 +2843,13 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-25T16:30:30.101Z",
+  "feedArchivedAt": "2026-11-25T16:50:56.352Z",
   "plans": [],
   "searches": [
+    {
+      "q": "sandstorms",
+      "at": "2026-11-25T16:50:56.352Z"
+    },
     {
       "q": "comets",
       "at": "2026-11-25T14:47:12.505Z"
@@ -2888,10 +2893,6 @@
     {
       "q": "diy copper wire shielding for military sensors",
       "at": "2026-11-24T23:42:07.871Z"
-    },
-    {
-      "q": "how to hook up old military thermal sensors to navigation display without signal bleed",
-      "at": "2026-11-24T23:28:56.970Z"
     }
   ],
   "lampOutUntil": "2026-11-25T09:14:54.730Z",

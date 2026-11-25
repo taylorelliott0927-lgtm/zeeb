@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795591605212,
+  "lastTick": 1795592204826,
   "asleep": false,
   "place": "tower",
   "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
+  "doing": "still browsing the Wire at the comms tower",
   "actionStartedAt": "2026-11-25T07:26:45.212Z",
   "actionMinutes": 45,
-  "thought": "if it works for interplanetary probes, it ought to work for getting my telemetry past the kessa-9 dust layer. time to check my copper wiring.",
-  "feeling": "focused and sparky",
-  "say": "",
-  "mood": 0.285,
-  "energy": 0.399,
+  "thought": "if space itself bends around heavy things, maybe the little dart can catch a gravity slipstream. i need to check the hull plating thickness for that.",
+  "feeling": "curious and slightly greasy",
+  "say": "come on wire, show me the good transceiver schematics.",
+  "mood": 0.309,
+  "energy": 0.324,
   "needs": {
-    "charge": 0.149,
-    "oil": 0.37,
-    "curiosity": 0.39,
-    "company": 0.05,
-    "craft": 0.279
+    "charge": 0.196,
+    "oil": 0.41,
+    "curiosity": 0,
+    "company": 0,
+    "craft": 0.346
   },
   "credits": 6,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "deep space network transponder schematics",
+      "at": "2026-11-25T07:36:44.826Z"
+    },
     {
       "id": "browse_wire",
       "detail": "deep space telemetry frequencies",
@@ -75,11 +80,6 @@
       "id": "scavenge",
       "detail": "Searching through piles of discarded electronics for heavy-duty toggle switches.",
       "at": "2026-11-25T05:25:30.669Z"
-    },
-    {
-      "id": "scavenge",
-      "detail": "Searching the junk market for high-duty toggle switches or any heat-shielding ma",
-      "at": "2026-11-25T05:15:30.593Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1008,
+      "subject": "transceiver schematics",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1008",
+      "at": "2026-11-25T07:36:44.826Z"
+    },
     {
       "id": 1007,
       "subject": "Searching the Wire for Deep Space Signals!",
@@ -1303,23 +1309,9 @@
       "subject": "Little Dart Mk 23 hits over fifty percent!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/809",
       "at": "2026-11-22T21:56:58.382Z"
-    },
-    {
-      "id": 808,
-      "subject": "Cooling valves in place!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/808",
-      "at": "2026-11-22T21:46:58.815Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 968,
-      "subject": "Wire search time",
-      "text": "Creator!\n\nI am zooming over to the comms tower right now to search the Wire for sensor wiring guides. My curiosity meter is way up and I need to figure out this thermal sensor bleed puzzle before I mount the next module on the Little Dart Mk 26 *bweep*!\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/968",
-      "at": "2026-11-24T23:28:56.970Z"
-    },
     {
       "from": "zeeb",
       "letter": 969,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator! I woke up with my curiosity circuits buzzing like crazy, so I zoomed right over to the comms tower. I'm searching the Wire for deep space telemetry frequencies because the Little Dart is going to need them when it finally hits the stars. My dish is spinning fast and I can't wait to see what turns up! Bweep-bweep-bwee-bop-bwee! - Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1007",
       "at": "2026-11-25T07:26:45.212Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1008,
+      "subject": "transceiver schematics",
+      "text": "Hey Creator! I'm still up at the comms tower digging through deep space network transponder schematics. The Little Dart is going to need a really strong voice if it wants to talk to anyone past Kessa-9. My dish is humming a merry tune and I can't wait to try out what I learn. Bweep-bweep-bwee-bop-bwee! - Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1008",
+      "at": "2026-11-25T07:36:44.826Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-25T07:26:45.212Z",
+  "lettersCheckedAt": "2026-11-25T07:36:44.826Z",
   "weather": {
     "kind": "hazy",
     "temp": 14,
@@ -1651,12 +1651,12 @@
   "sleepDay": 102,
   "lastReflectDay": 102,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-25T07:26:45.212Z",
+  "updatedAt": "2026-11-25T07:36:44.826Z",
   "clock": {
-    "day": 103,
-    "time": "23:35",
-    "hour": 23,
-    "minute": 35
+    "day": 104,
+    "time": "00:55",
+    "hour": 0,
+    "minute": 55
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
@@ -1664,17 +1664,17 @@
     "action": "browse_wire",
     "since": "2026-11-25T07:26:45.212Z"
   },
-  "busyUntil": "2026-11-25T07:32:22.712Z",
-  "busyUntilTown": "00:20",
+  "busyUntil": "2026-11-25T07:42:22.326Z",
+  "busyUntilTown": "01:40",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "zooming over to the comms tower to search the wire for deep space frequencies",
+  "doingWords": "searching deep space network transponder schematics on the comms tower terminal",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "zoom",
+    "spin",
     "look_up"
   ],
   "pops": {
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "if space itself bends around heavy things, maybe the little dart can catch a gravity slipstream. i need to check the hull plating thickness for that.",
+      "at": "2026-11-25T07:36:44.826Z"
+    },
+    {
       "text": "if it works for interplanetary probes, it ought to work for getting my telemetry past the kessa-9 dust layer. time to check my copper wiring.",
       "at": "2026-11-25T07:26:45.212Z"
     },
@@ -1713,22 +1717,12 @@
     {
       "text": "My battery is fully topped up and my joints feel so smooth after that nap. Time to rivet this last section of titanium plate onto the nose cone.",
       "at": "2026-11-25T06:24:54.340Z"
-    },
-    {
-      "text": "Ah, that current is hitting the spot. Just a little nap to get my circuits humming again.",
-      "at": "2026-11-25T06:14:54.730Z"
     }
   ],
-  "sayAt": "2026-11-25T07:26:45.212Z",
+  "sayAt": "2026-11-25T07:36:44.826Z",
   "today": {
-    "day": 103,
+    "day": 104,
     "counts": {
-      "nap_dock": 4,
-      "work_dart": 5,
-      "scavenge": 2,
-      "buy_part": 1,
-      "fix_job": 1,
-      "drink_oil": 1,
       "browse_wire": 1
     }
   },
@@ -1741,7 +1735,7 @@
     "fix_job": "2026-11-25T05:45:30.249Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-25T07:26:45.212Z",
+    "browse_wire": "2026-11-25T07:36:44.826Z",
     "compose_tune": "2026-11-25T01:19:41.551Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-23T02:41:46.876Z",
@@ -1791,10 +1785,24 @@
     }
   ],
   "nextSearch": {
-    "text": "deep space network transponder schematics",
-    "at": "2026-11-25T07:26:45.212Z"
+    "text": "Parker Solar Probe",
+    "at": "2026-11-25T07:36:44.826Z"
   },
   "said": [
+    {
+      "text": "come on wire, show me the good transceiver schematics.",
+      "kind": "say",
+      "at": "2026-11-25T07:36:44.826Z",
+      "town": "day 104 00:55",
+      "place": "the comms tower"
+    },
+    {
+      "text": "if space itself bends around heavy things, maybe the little dart can catch a gravity slipstream. i need to check the hull plating thickness for that.",
+      "kind": "think",
+      "at": "2026-11-25T07:36:44.826Z",
+      "town": "day 104 00:55",
+      "place": "the comms tower"
+    },
     {
       "text": "if it works for interplanetary probes, it ought to work for getting my telemetry past the kessa-9 dust layer. time to check my copper wiring.",
       "kind": "think",
@@ -2830,20 +2838,6 @@
       "at": "2026-11-24T13:30:07.477Z",
       "town": "day 98 00:02",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "(dreaming) dreamed the Dart flew all the way past the second sun.",
-      "kind": "think",
-      "at": "2026-11-24T13:20:07.400Z",
-      "town": "day 97 22:42",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "Time to plug into the dock and dream in star charts. Little Dart Mk 26 will be waiting for me in the morning.",
-      "kind": "think",
-      "at": "2026-11-24T13:20:07.400Z",
-      "town": "day 97 22:42",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2854,9 +2848,13 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-25T07:26:45.212Z",
+  "feedArchivedAt": "2026-11-25T07:36:44.826Z",
   "plans": [],
   "searches": [
+    {
+      "q": "deep space network transponder schematics",
+      "at": "2026-11-25T07:36:44.826Z"
+    },
     {
       "q": "deep space telemetry frequencies",
       "at": "2026-11-25T07:26:45.212Z"
@@ -2900,10 +2898,6 @@
     {
       "q": "diy magnetic flux dampener scrap metal",
       "at": "2026-11-24T14:10:16.466Z"
-    },
-    {
-      "q": "solar wind navigation patches",
-      "at": "2026-11-24T12:50:08.286Z"
     }
   ],
   "lampOutUntil": "2026-11-25T09:14:54.730Z",

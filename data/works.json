@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 30",
-    "progress": 16,
-    "version": 2,
-    "lastChange": "mounting lightweight ceramic heat shield tiles along the ventral hull panels (used Nim, a cracked navigation chip)",
+    "progress": 25,
+    "version": 3,
+    "lastChange": "sealing the edge gaps between the ventral ceramic heat shield tiles with high-temp silicone paste (used Nim, a mystery box that hums)",
     "log": [
+      {
+        "version": 3,
+        "change": "sealing the edge gaps between the ventral ceramic heat shield tiles with high-temp silicone paste (used Nim, a mystery box that hums)",
+        "progress": 25,
+        "at": "2026-11-26T23:43:53.003Z"
+      },
       {
         "version": 2,
         "change": "mounting lightweight ceramic heat shield tiles along the ventral hull panels (used Nim, a cracked navigation chip)",
@@ -238,12 +244,6 @@
         "change": "Riveting the lightweight titanium nose cone to the main forward bulkhead and routing the sensor cables through the new copper shielding. (used Dibs, a coil of copper wire)",
         "progress": 58,
         "at": "2026-11-25T06:24:54.340Z"
-      },
-      {
-        "version": 7,
-        "change": "Wiring up the main flight console to the thermal sensors using some salvaged lead-shielding to prevent interference. (used Lorna, a cracked navigation chip)",
-        "progress": 48,
-        "at": "2026-11-25T05:05:30.892Z"
       }
     ],
     "launched": [
@@ -4169,7 +4169,7 @@
         ]
       }
     ],
-    "partsUsed": 2,
+    "partsUsed": 3,
     "parts": [
       {
         "name": "Rusty Jr",
@@ -4180,6 +4180,11 @@
         "name": "Nim",
         "what": "a cracked navigation chip",
         "version": 2
+      },
+      {
+        "name": "Nim",
+        "what": "a mystery box that hums",
+        "version": 3
       }
     ],
     "design": null
@@ -4430,11 +4435,6 @@
     {
       "name": "Pim",
       "what": "a perfectly good bolt",
-      "at": "2026-11-26T22:04:21.819Z"
-    },
-    {
-      "name": "Nim",
-      "what": "a mystery box that hums",
       "at": "2026-11-26T22:04:21.819Z"
     }
   ],

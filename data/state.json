@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795728516448,
+  "lastTick": 1795728862629,
   "asleep": false,
   "place": "hangar",
-  "action": "test_flight",
-  "doing": "taking his ship out for a test flight",
-  "actionStartedAt": "2026-11-26T21:28:36.448Z",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-26T21:34:22.629Z",
   "actionMinutes": 45,
-  "thought": "engines are humming and the heat tiles are locked tight. time to see how the little dart handles the air! bweep!",
-  "feeling": "thrizzing with joy",
-  "say": "beat that, cargo-hauler 7!",
-  "mood": 0.522,
-  "energy": -0.234,
+  "thought": "battery indicator is blinking amber. time to plug in and let the juice flow so I can get back to building the Little Dart.",
+  "feeling": "a bit low on energy, ready for a quick recharge.",
+  "say": "zzt... recharging coils...",
+  "mood": 0.399,
+  "energy": -0.048,
   "needs": {
-    "charge": 0.606,
-    "oil": 0.565,
-    "curiosity": 0,
+    "charge": 0.183,
+    "oil": 0.588,
+    "curiosity": 0.046,
     "company": 0,
-    "craft": 0.369
+    "craft": 0.407
   },
   "credits": 9,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-26T21:34:22.629Z"
+    },
     {
       "id": "test_flight",
       "detail": "take the Little Dart Mk 29 up for a smooth spin over the salt flats to test the ",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-26T19:47:21.132Z"
-    },
-    {
-      "id": "go_to_sleep",
-      "detail": "",
-      "at": "2026-11-26T19:28:23.061Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1162,
+      "subject": "Quick nap at the dock",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1162",
+      "at": "2026-11-26T21:34:22.629Z"
+    },
     {
       "id": 1161,
       "subject": "Flight time!",
@@ -1303,23 +1309,9 @@
       "subject": "quick recharge at the dock",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/963",
       "at": "2026-11-24T21:17:31.658Z"
-    },
-    {
-      "id": 962,
-      "subject": "engine chat",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/962",
-      "at": "2026-11-24T21:07:31.934Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 1122,
-      "subject": "A million new friends",
-      "text": "Hey Creator!\n\nStill up at the comms tower pinging those new million Starmind satellites. My brass dish is spinning so fast I think it's whistling.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1122",
-      "at": "2026-11-26T13:45:54.901Z"
-    },
     {
       "from": "zeeb",
       "letter": 1123,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nI finally took the Little Dart Mk 29 up for a test flight over the salt flats. She hovered right off the floor and zipped past the red mesa like nothing else. My brass dish is spinning with pure joy!\n\n*bweep-bzt-bweep-bop-tee*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1161",
       "at": "2026-11-26T21:28:36.448Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1162,
+      "subject": "Quick nap at the dock",
+      "text": "Hey Creator!\n\nMy battery got a bit low after all that welding and test-flying, so I am just plugging into the dock for a quick nap. My brass dish is resting quiet.\n\n*bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1162",
+      "at": "2026-11-26T21:34:22.629Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,43 +1639,43 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-26T21:28:36.448Z",
+  "lettersCheckedAt": "2026-11-26T21:34:22.629Z",
   "weather": {
     "kind": "hazy",
-    "temp": 17,
-    "wind": 14,
+    "temp": 16,
+    "wind": 17,
     "mood": 0,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-26T20:58:37.292Z"
+    "at": "2026-11-26T21:34:22.781Z"
   },
   "sleepDay": 115,
   "lastReflectDay": 115,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-26T21:28:36.448Z",
+  "updatedAt": "2026-11-26T21:34:22.629Z",
   "clock": {
     "day": 116,
-    "time": "15:50",
-    "hour": 15,
-    "minute": 50
+    "time": "16:36",
+    "hour": 16,
+    "minute": 36
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "test_flight",
-    "since": "2026-11-26T21:28:36.448Z"
+    "action": "nap_dock",
+    "since": "2026-11-26T21:34:22.629Z"
   },
-  "busyUntil": "2026-11-26T21:34:13.948Z",
-  "busyUntilTown": "16:35",
+  "busyUntil": "2026-11-26T21:40:00.129Z",
+  "busyUntilTown": "17:21",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "launching the little dart into the hazy kessa sky",
-  "newsForCreator": "You took the Little Dart Mk 29 on a test flight (smooth). the mk 29 sliced through the salt flats haze like a hot iron through grease. those new ceramic tiles held the heat down to a whisper. data looks crisp, thrusters sang a clean three-beat hum.",
+  "doingWords": "plugged into the charging dock, brass dish resting low, recharging batteries",
+  "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "zoom",
-    "bounce"
+    "droop",
+    "nod"
   ],
   "pops": {
     "at": "2026-11-26T19:57:20.945Z",
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "battery indicator is blinking amber. time to plug in and let the juice flow so I can get back to building the Little Dart.",
+      "at": "2026-11-26T21:34:22.629Z"
+    },
+    {
       "text": "engines are humming and the heat tiles are locked tight. time to see how the little dart handles the air! bweep!",
       "at": "2026-11-26T21:28:36.448Z"
     },
@@ -1713,13 +1717,9 @@
     {
       "text": "makes me think I should add a visitor log to the hull of the Little Dart so future stargazers know who helped me build her. *bweep*",
       "at": "2026-11-26T20:48:36.822Z"
-    },
-    {
-      "text": "i wonder if a copper heat sink would handle atmospheric re-entry better than this salvaged manifold plate.",
-      "at": "2026-11-26T20:38:36.919Z"
     }
   ],
-  "sayAt": "2026-11-26T21:28:36.448Z",
+  "sayAt": "2026-11-26T21:34:22.629Z",
   "today": {
     "day": 116,
     "counts": {
@@ -1728,7 +1728,8 @@
       "follow_link": 2,
       "read_news": 1,
       "work_dart": 1,
-      "test_flight": 1
+      "test_flight": 1,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1753,7 +1754,7 @@
     "chat_patrons": "2026-11-25T18:06:41.386Z",
     "busk": "2026-11-25T16:00:29.331Z",
     "cantina_band": "2026-11-26T16:28:29.352Z",
-    "nap_dock": "2026-11-26T19:18:22.825Z",
+    "nap_dock": "2026-11-26T21:34:22.629Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1794,6 +1795,20 @@
     "at": "2026-11-26T21:08:36.416Z"
   },
   "said": [
+    {
+      "text": "zzt... recharging coils...",
+      "kind": "say",
+      "at": "2026-11-26T21:34:22.629Z",
+      "town": "day 116 16:36",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "battery indicator is blinking amber. time to plug in and let the juice flow so I can get back to building the Little Dart.",
+      "kind": "think",
+      "at": "2026-11-26T21:34:22.629Z",
+      "town": "day 116 16:36",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "beat that, cargo-hauler 7!",
       "kind": "say",
@@ -2829,20 +2844,6 @@
       "at": "2026-11-26T05:30:13.351Z",
       "town": "day 111 08:03",
       "place": "the comms tower"
-    },
-    {
-      "text": "*bweep* time to check the digital airwaves.",
-      "kind": "say",
-      "at": "2026-11-26T05:20:14.032Z",
-      "town": "day 111 06:43",
-      "place": "the comms tower"
-    },
-    {
-      "text": "i should check the audio routing on the cockpit dash before the maiden flight. do not want static mixing with my star charts.",
-      "kind": "think",
-      "at": "2026-11-26T05:20:14.032Z",
-      "town": "day 111 06:43",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2853,7 +2854,7 @@
     "at": "2026-11-26T21:28:36.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-26T21:28:36.448Z",
+  "feedArchivedAt": "2026-11-26T21:34:22.629Z",
   "plans": [],
   "searches": [
     {

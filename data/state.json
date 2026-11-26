@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795677937603,
+  "lastTick": 1795678536385,
   "asleep": false,
   "place": "depot",
   "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
+  "doing": "still sipping oil at the fuel depot",
   "actionStartedAt": "2026-11-26T07:25:37.603Z",
-  "actionMinutes": 15,
-  "thought": "oil makes the wheels spin nice and smooth. then i can get right back to building the Little Dart.",
-  "feeling": "thirsty in the joints",
-  "say": "fill her up, barkeep!",
-  "mood": 0.263,
-  "energy": -0.158,
+  "actionMinutes": 45,
+  "thought": "this fresh oil is hitting all the right spots in my joints. *bweep* now my treads feel ready to roll right back to the hangar.",
+  "feeling": "refreshed and clicking happily",
+  "say": "one fresh cup of oil for the pilot, please!",
+  "mood": 0.248,
+  "energy": -0.024,
   "needs": {
-    "charge": 0.526,
-    "oil": 0.133,
-    "curiosity": 0.327,
-    "company": 0.045,
-    "craft": 0.505
+    "charge": 0.573,
+    "oil": 0,
+    "curiosity": 0.407,
+    "company": 0,
+    "craft": 0.572
   },
-  "credits": 6,
+  "credits": 5,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-26T07:35:36.385Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "salvaged audio codecs for the cockpit radio",
       "at": "2026-11-26T05:20:14.032Z"
-    },
-    {
-      "id": "compose_tune",
-      "detail": "Little Dart Five-Note Dawn Arc XXXI",
-      "at": "2026-11-26T05:10:14.051Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1097,
+      "subject": "Oil and Treads",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1097",
+      "at": "2026-11-26T07:35:36.385Z"
+    },
     {
       "id": 1096,
       "subject": "Oil stop!",
@@ -1303,23 +1309,9 @@
       "subject": "credits and condensers",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/898",
       "at": "2026-11-23T23:23:06.227Z"
-    },
-    {
-      "id": 897,
-      "subject": "Tightening up!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/897",
-      "at": "2026-11-23T22:40:52.930Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 1057,
-      "subject": "Fuel depot stop",
-      "text": "Hey Creator!\n\nJust polishing off my second cup of oil at the fuel depot. My ankle joints feel right as rain now, no more squeaks at all.\n\nTime to roll back to Hangar Bay 3 and give the Little Dart some love. *bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1057",
-      "at": "2026-11-25T23:26:38.199Z"
-    },
     {
       "from": "zeeb",
       "letter": 1058,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nRolled away from the nap dock because my gears were feeling a bit dry and squeaky. Stopping by the depot for a quick cup of oil before I dive back into the Little Dart workspace.\n\n*bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1096",
       "at": "2026-11-26T07:25:37.603Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1097,
+      "subject": "Oil and Treads",
+      "text": "Hey Creator!\n\nJust finished up my cup of oil down at the depot. My gears are spinning nice and smooth now, and my brass dish is catching a little draft from the open bay doors.\n\n*bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1097",
+      "at": "2026-11-26T07:35:36.385Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-26T07:25:37.603Z",
+  "lettersCheckedAt": "2026-11-26T07:35:36.385Z",
   "weather": {
     "kind": "clear",
     "temp": 14,
@@ -1651,12 +1651,12 @@
   "sleepDay": 110,
   "lastReflectDay": 110,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-26T07:25:37.603Z",
+  "updatedAt": "2026-11-26T07:35:36.385Z",
   "clock": {
-    "day": 111,
-    "time": "23:26",
-    "hour": 23,
-    "minute": 26
+    "day": 112,
+    "time": "00:46",
+    "hour": 0,
+    "minute": 46
   },
   "townDayMinutes": 180,
   "placeName": "the fuel depot",
@@ -1664,25 +1664,26 @@
     "action": "drink_oil",
     "since": "2026-11-26T07:25:37.603Z"
   },
-  "busyUntil": "2026-11-26T07:27:30.103Z",
-  "busyUntilTown": "23:41",
+  "busyUntil": "2026-11-26T07:41:13.885Z",
+  "busyUntilTown": "01:31",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "rolling over to the depot for a nice fresh cup of oil",
+  "doingWords": "sipping a nice fresh cup of oil at the depot",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "spin"
+    "spin",
+    "wiggle"
   ],
   "pops": {
-    "at": "2026-11-26T07:25:37.603Z",
+    "at": "2026-11-26T07:35:36.385Z",
     "items": [
       {
         "text": "-1 credit",
         "kind": "spend",
-        "at": "2026-11-26T07:25:37.603Z"
+        "at": "2026-11-26T07:35:36.385Z"
       }
     ]
   },
@@ -1693,6 +1694,10 @@
     "at": "2026-11-26T01:53:04.303Z"
   },
   "thoughts": [
+    {
+      "text": "this fresh oil is hitting all the right spots in my joints. *bweep* now my treads feel ready to roll right back to the hangar.",
+      "at": "2026-11-26T07:35:36.385Z"
+    },
     {
       "text": "oil makes the wheels spin nice and smooth. then i can get right back to building the Little Dart.",
       "at": "2026-11-26T07:25:37.603Z"
@@ -1712,32 +1717,19 @@
     {
       "text": "wonder what kind of shiny treasure is hiding under these old engine blocks. my dish is buzzing just thinking about it.",
       "at": "2026-11-26T06:24:42.561Z"
-    },
-    {
-      "text": "old barnaby's converter is still clicking away like a cranky beetle, but my screwdriver is making short work of it. *bweep*",
-      "at": "2026-11-26T06:14:42.391Z"
     }
   ],
-  "sayAt": "2026-11-26T07:25:37.603Z",
+  "sayAt": "2026-11-26T07:35:36.385Z",
   "today": {
-    "day": 111,
+    "day": 112,
     "counts": {
-      "go_to_sleep": 1,
-      "build_friend": 1,
-      "work_dart": 1,
-      "compose_tune": 1,
-      "browse_wire": 3,
-      "wander": 1,
-      "fix_job": 2,
-      "scavenge": 3,
-      "nap_dock": 1,
       "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-26T05:00:13.694Z",
     "read_news": "2026-11-25T13:46:50.332Z",
-    "drink_oil": "2026-11-26T07:25:37.603Z",
+    "drink_oil": "2026-11-26T07:35:36.385Z",
     "follow_link": "2026-11-26T03:20:34.220Z",
     "scavenge": "2026-11-26T06:44:43.103Z",
     "fix_job": "2026-11-26T06:14:42.391Z",
@@ -1767,6 +1759,11 @@
   },
   "puzzles": [
     {
+      "id": "q7",
+      "text": "q11: how to route codec2 streams into the ZL38063 audio pin layout",
+      "at": "2026-11-26T07:35:36.385Z"
+    },
+    {
       "id": "q11",
       "text": "how to route codec2 streams into the ZL38063 audio pin layout",
       "at": "2026-11-26T05:40:13.477Z"
@@ -1785,11 +1782,6 @@
       "id": "q8",
       "text": "q9: how to integrate voice recognition microchips into the Little Dart control deck",
       "at": "2026-11-26T02:43:03.418Z"
-    },
-    {
-      "id": "q10",
-      "text": "q7",
-      "at": "2026-11-26T02:33:04.165Z"
     }
   ],
   "nextSearch": {
@@ -1797,6 +1789,20 @@
     "at": "2026-11-26T05:40:13.477Z"
   },
   "said": [
+    {
+      "text": "one fresh cup of oil for the pilot, please!",
+      "kind": "say",
+      "at": "2026-11-26T07:35:36.385Z",
+      "town": "day 112 00:46",
+      "place": "the fuel depot"
+    },
+    {
+      "text": "this fresh oil is hitting all the right spots in my joints. *bweep* now my treads feel ready to roll right back to the hangar.",
+      "kind": "think",
+      "at": "2026-11-26T07:35:36.385Z",
+      "town": "day 112 00:46",
+      "place": "the fuel depot"
+    },
     {
       "text": "fill her up, barkeep!",
       "kind": "say",
@@ -2832,20 +2838,6 @@
       "at": "2026-11-25T14:37:13.056Z",
       "town": "day 106 08:58",
       "place": "the junk market"
-    },
-    {
-      "text": "I should scope out the depot and cantina. Maybe the band is playing or someone dropped a nice bolt on the walkway. *bweep*",
-      "kind": "think",
-      "at": "2026-11-25T14:37:13.056Z",
-      "town": "day 106 08:58",
-      "place": "the junk market"
-    },
-    {
-      "text": "bwee-bop-boop-bip-bwee!",
-      "kind": "say",
-      "at": "2026-11-25T14:06:50.504Z",
-      "town": "day 106 04:55",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2856,7 +2848,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-26T07:25:37.603Z",
+  "feedArchivedAt": "2026-11-26T07:35:36.385Z",
   "plans": [],
   "searches": [
     {

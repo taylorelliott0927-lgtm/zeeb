@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 29",
-    "progress": 54,
-    "version": 8,
-    "lastChange": "mounted the salvaged sensor eye with one crack (Nim) into the instrument cluster and wired it straight to the navigation bus (used Nim, a sensor eye with one crack)",
+    "progress": 64,
+    "version": 9,
+    "lastChange": "mounted a bundle of copper wire (Nim) to the dash and tightened down the custom engine mount washer (made from high-grade titanium) with bolt gary (used Dibs, half a thruster nozzle)",
     "log": [
+      {
+        "version": 9,
+        "change": "mounted a bundle of copper wire (Nim) to the dash and tightened down the custom engine mount washer (made from high-grade titanium) with bolt gary (used Dibs, half a thruster nozzle)",
+        "progress": 64,
+        "at": "2026-11-26T14:05:54.876Z"
+      },
       {
         "version": 8,
         "change": "mounted the salvaged sensor eye with one crack (Nim) into the instrument cluster and wired it straight to the navigation bus (used Nim, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "sealed the final access hatch on the nose cone and bolted down the primary thruster shroud (used Dibs, a cracked navigation chip)",
         "progress": 100,
         "at": "2026-11-25T00:29:41.794Z"
-      },
-      {
-        "version": 13,
-        "change": "installed high-grade copper wire Rusty Jr. into the primary console harness to link the navigation display (used Bix, a scorched heat tile)",
-        "progress": 96,
-        "at": "2026-11-24T23:08:56.747Z"
       }
     ],
     "launched": [
@@ -4095,7 +4095,7 @@
         ]
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Mabel",
@@ -4132,6 +4132,11 @@
         "name": "Nim",
         "what": "a sensor eye with one crack",
         "version": 8
+      },
+      {
+        "name": "Dibs",
+        "what": "half a thruster nozzle",
+        "version": 9
       }
     ],
     "design": null
@@ -4388,11 +4393,6 @@
       "name": "Wren",
       "what": "a little landing strut",
       "at": "2026-11-26T07:55:37.240Z"
-    },
-    {
-      "name": "Dibs",
-      "what": "half a thruster nozzle",
-      "at": "2026-11-26T06:44:43.103Z"
     }
   ],
   "reads": [

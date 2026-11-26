@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 29",
-    "progress": 34,
-    "version": 5,
-    "lastChange": "routed fresh copper wire from the Nim sensor eye to the primary nav-bus and secured the panel with Otto the bolt (used Otto, a scorched heat tile)",
+    "progress": 41,
+    "version": 6,
+    "lastChange": "routed the final navigation bus leads and secured the main panel with Nim (a sensor eye with one crack) (used Otto, a perfectly good bolt)",
     "log": [
+      {
+        "version": 6,
+        "change": "routed the final navigation bus leads and secured the main panel with Nim (a sensor eye with one crack) (used Otto, a perfectly good bolt)",
+        "progress": 41,
+        "at": "2026-11-26T11:06:17.603Z"
+      },
       {
         "version": 5,
         "change": "routed fresh copper wire from the Nim sensor eye to the primary nav-bus and secured the panel with Otto the bolt (used Otto, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "patched a hole in the hull (used Wren, a tiny gyroscope)",
         "progress": 79,
         "at": "2026-11-24T20:01:44.273Z"
-      },
-      {
-        "version": 10,
-        "change": "polished the nose cone (used Otto, a cracked navigation chip)",
-        "progress": 70,
-        "at": "2026-11-24T19:01:07.845Z"
       }
     ],
     "launched": [
@@ -4095,7 +4095,7 @@
         ]
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Mabel",
@@ -4117,6 +4117,11 @@
         "what": "a scorched heat tile",
         "good": true,
         "version": 5
+      },
+      {
+        "name": "Otto",
+        "what": "a perfectly good bolt",
+        "version": 6
       }
     ],
     "design": null
@@ -4388,11 +4393,6 @@
       "name": "Brakk",
       "what": "a bent stabiliser fin",
       "at": "2026-11-26T06:34:42.650Z"
-    },
-    {
-      "name": "Otto",
-      "what": "a perfectly good bolt",
-      "at": "2026-11-26T06:24:42.561Z"
     }
   ],
   "reads": [

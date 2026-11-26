@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 29",
-    "progress": 25,
-    "version": 4,
-    "lastChange": "mounted the Nim sensor eye into the main dashboard and ran fresh copper wire to the navigation bus (used Nim, a cockpit switch that still clicks)",
+    "progress": 34,
+    "version": 5,
+    "lastChange": "routed fresh copper wire from the Nim sensor eye to the primary nav-bus and secured the panel with Otto the bolt (used Otto, a scorched heat tile)",
     "log": [
+      {
+        "version": 5,
+        "change": "routed fresh copper wire from the Nim sensor eye to the primary nav-bus and secured the panel with Otto the bolt (used Otto, a scorched heat tile)",
+        "progress": 34,
+        "at": "2026-11-26T10:56:18.685Z"
+      },
       {
         "version": 4,
         "change": "mounted the Nim sensor eye into the main dashboard and ran fresh copper wire to the navigation bus (used Nim, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "polished the nose cone (used Otto, a cracked navigation chip)",
         "progress": 70,
         "at": "2026-11-24T19:01:07.845Z"
-      },
-      {
-        "version": 9,
-        "change": "patched a hole in the hull",
-        "progress": 61,
-        "at": "2026-11-24T16:57:43.889Z"
       }
     ],
     "launched": [
@@ -4095,7 +4095,7 @@
         ]
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Mabel",
@@ -4111,6 +4111,12 @@
         "name": "Nim",
         "what": "a cockpit switch that still clicks",
         "version": 4
+      },
+      {
+        "name": "Otto",
+        "what": "a scorched heat tile",
+        "good": true,
+        "version": 5
       }
     ],
     "design": null
@@ -4387,12 +4393,6 @@
       "name": "Otto",
       "what": "a perfectly good bolt",
       "at": "2026-11-26T06:24:42.561Z"
-    },
-    {
-      "name": "Otto",
-      "what": "a scorched heat tile",
-      "at": "2026-11-26T06:24:42.561Z",
-      "good": true
     }
   ],
   "reads": [

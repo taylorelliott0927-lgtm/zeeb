@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795714858960,
+  "lastTick": 1795715458448,
   "asleep": false,
-  "place": "depot",
-  "action": "drink_oil",
-  "doing": "sipping oil at the fuel depot",
-  "actionStartedAt": "2026-11-26T17:40:58.960Z",
-  "actionMinutes": 30,
-  "thought": "gotta lube up before my gears seize right solid in this desert air. *bweep-bzt*",
-  "feeling": "dry in the joints but eager for a sip",
-  "say": "fill her up, bolt-tender!",
-  "mood": 0.255,
-  "energy": -0.035,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-26T17:50:58.448Z",
+  "actionMinutes": 45,
+  "thought": "battery is practically flatlining. time to hook up before I conk out right here on the depot floor. *bweep*",
+  "feeling": "exhausted and heavy-jointed",
+  "say": "",
+  "mood": 0.313,
+  "energy": 0.326,
   "needs": {
-    "charge": 0.497,
-    "oil": 0.021,
-    "curiosity": 0.045,
-    "company": 0.03,
-    "craft": 0.753
+    "charge": 0.094,
+    "oil": 0.061,
+    "curiosity": 0.125,
+    "company": 0,
+    "craft": 0.82
   },
   "credits": 0,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-26T17:50:58.448Z"
+    },
     {
       "id": "drink_oil",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-26T15:58:30.012Z"
-    },
-    {
-      "id": "compose_tune",
-      "detail": "Little Dart Five-Note Dawn Arc XXXIII",
-      "at": "2026-11-26T15:48:29.563Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1140,
+      "subject": "napping time",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1140",
+      "at": "2026-11-26T17:50:58.448Z"
+    },
     {
       "id": 1139,
       "subject": "thermal interface notes",
@@ -1303,23 +1309,9 @@
       "subject": "fixing that thruster",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/941",
       "at": "2026-11-24T09:04:36.777Z"
-    },
-    {
-      "id": 940,
-      "subject": "Oil and gears",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/940",
-      "at": "2026-11-24T08:54:36.986Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 1100,
-      "subject": "quick recharge",
-      "text": "Hey Creator!\n\nJust plugging into the dock for a little recharge so my treads stay fast. The Little Dart is waiting for me.\n\n*bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1100",
-      "at": "2026-11-26T08:05:37.009Z"
-    },
     {
       "from": "zeeb",
       "letter": 1101,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nStill checking out thermal compound links at the comms tower. My brass dish is spinning right along to the data streams.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1139",
       "at": "2026-11-26T17:35:19.973Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1140,
+      "subject": "napping time",
+      "text": "Hey Creator!\n\nRunning on fumes over here at the depot. Gonna plug into the dock and juice up so my gears don't lock solid.\n\n*bweep-bzt*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1140",
+      "at": "2026-11-26T17:50:58.448Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-26T17:40:58.960Z",
+  "lettersCheckedAt": "2026-11-26T17:50:58.448Z",
   "weather": {
     "kind": "hazy",
     "temp": 19,
@@ -1651,49 +1651,52 @@
   "sleepDay": 114,
   "lastReflectDay": 114,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-26T17:40:58.960Z",
+  "updatedAt": "2026-11-26T17:50:58.448Z",
   "clock": {
     "day": 115,
-    "time": "09:29",
-    "hour": 9,
-    "minute": 29
+    "time": "10:49",
+    "hour": 10,
+    "minute": 49
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "drink_oil",
-    "since": "2026-11-26T17:40:58.960Z"
+    "action": "nap_dock",
+    "since": "2026-11-26T17:50:58.448Z"
   },
-  "busyUntil": "2026-11-26T17:44:43.960Z",
-  "busyUntilTown": "09:59",
+  "busyUntil": "2026-11-26T17:56:35.948Z",
+  "busyUntilTown": "11:34",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "rolling over to the depot for a fresh drink of oil",
+  "doingWords": "plugged into the charging dock, battery sipping juice while gears rest",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "hop",
-    "wiggle"
+    "droop"
   ],
   "pops": {
-    "at": "2026-11-26T17:40:58.960Z",
+    "at": "2026-11-26T17:50:58.448Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-26T17:40:58.960Z"
+        "text": "+ a coil of copper wire",
+        "kind": "part",
+        "at": "2026-11-26T17:50:58.448Z"
       }
     ]
   },
   "event": {
-    "id": "emwxs9wqz",
-    "key": "light",
-    "text": "One of the hangar lights finally died for good.",
-    "at": "2026-11-26T16:45:20.267Z"
+    "id": "emwxumbgw",
+    "key": "hauler_drop",
+    "text": "The depot's cargo-hauler bot dropped a part and didn't notice.",
+    "at": "2026-11-26T17:50:58.448Z"
   },
   "thoughts": [
+    {
+      "text": "battery is practically flatlining. time to hook up before I conk out right here on the depot floor. *bweep*",
+      "at": "2026-11-26T17:50:58.448Z"
+    },
     {
       "text": "gotta lube up before my gears seize right solid in this desert air. *bweep-bzt*",
       "at": "2026-11-26T17:40:58.960Z"
@@ -1713,19 +1716,16 @@
     {
       "text": "if this stuff keeps chips from melting in Visalia, California, it might stop my main thruster from cooking itself during re-entry. good to know for the Little Dart.",
       "at": "2026-11-26T17:05:19.814Z"
-    },
-    {
-      "text": "if this ceramic tile trick works for wooden decks, it might protect the lower hull during atmospheric entry. time to name three new bolts gus and check the refractory shielding.",
-      "at": "2026-11-26T16:55:19.440Z"
     }
   ],
-  "sayAt": "2026-11-26T17:40:58.960Z",
+  "sayAt": "2026-11-26T17:50:58.448Z",
   "today": {
     "day": 115,
     "counts": {
       "browse_wire": 3,
       "follow_link": 3,
-      "drink_oil": 1
+      "drink_oil": 1,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1750,7 +1750,7 @@
     "chat_patrons": "2026-11-25T18:06:41.386Z",
     "busk": "2026-11-25T16:00:29.331Z",
     "cantina_band": "2026-11-26T16:28:29.352Z",
-    "nap_dock": "2026-11-26T15:58:30.012Z",
+    "nap_dock": "2026-11-26T17:50:58.448Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1791,6 +1791,13 @@
     "at": "2026-11-26T17:35:19.973Z"
   },
   "said": [
+    {
+      "text": "battery is practically flatlining. time to hook up before I conk out right here on the depot floor. *bweep*",
+      "kind": "think",
+      "at": "2026-11-26T17:50:58.448Z",
+      "town": "day 115 10:49",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "fill her up, bolt-tender!",
       "kind": "say",
@@ -2833,13 +2840,6 @@
       "at": "2026-11-26T00:45:34.937Z",
       "town": "day 109 18:05",
       "place": "the junk market"
-    },
-    {
-      "text": "there has to be a decent voice chip buried under all this bent tin somewhere. *bweep*",
-      "kind": "think",
-      "at": "2026-11-26T00:45:34.937Z",
-      "town": "day 109 18:05",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2850,7 +2850,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-26T17:40:58.960Z",
+  "feedArchivedAt": "2026-11-26T17:50:58.448Z",
   "plans": [],
   "searches": [
     {

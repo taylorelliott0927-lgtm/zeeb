@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 28",
-    "progress": 91,
-    "version": 15,
-    "lastChange": "welded a sleek titanium nosecone plate onto the main frame",
+    "name": "the Little Dart Mk 29",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 16,
+        "change": "wired the dashboard switches using Rusty Jr for high-vibration resistance (used Brakk, half a thruster nozzle)",
+        "progress": 100,
+        "at": "2026-11-26T01:15:34.430Z"
+      },
       {
         "version": 15,
         "change": "welded a sleek titanium nosecone plate onto the main frame",
@@ -238,12 +244,6 @@
         "change": "aligning thermal sensor leads and securing the dorsal frame for Little Dart Mk 26 (used Sprocket, a scorched heat tile)",
         "progress": 37,
         "at": "2026-11-24T12:32:23.058Z"
-      },
-      {
-        "version": 4,
-        "change": "attaching signal bleed isolation brackets to the thermal sensor harness for Little Dart Mk 26",
-        "progress": 27,
-        "at": "2026-11-24T11:11:09.564Z"
       }
     ],
     "launched": [
@@ -4030,61 +4030,73 @@
           "at": "2026-11-25T03:44:21.355Z",
           "day": 102
         }
+      },
+      {
+        "name": "the Little Dart Mk 28",
+        "day": 109,
+        "partsUsed": 12,
+        "parts": [
+          {
+            "name": "Captain",
+            "what": "half a thruster nozzle",
+            "version": 1
+          },
+          {
+            "name": "Fen",
+            "what": "a perfectly good bolt",
+            "version": 2
+          },
+          {
+            "name": "Nim",
+            "what": "a perfectly good bolt",
+            "version": 3
+          },
+          {
+            "name": "Brakk",
+            "what": "a coil of copper wire",
+            "version": 4
+          },
+          {
+            "name": "Wren",
+            "what": "a coil of copper wire",
+            "version": 5
+          },
+          {
+            "name": "Tilly",
+            "what": "a bent stabiliser fin",
+            "version": 9
+          },
+          {
+            "name": "Nim",
+            "what": "a dented fuel cell",
+            "version": 11
+          },
+          {
+            "name": "Captain",
+            "what": "a perfectly good bolt",
+            "version": 12
+          },
+          {
+            "name": "Mabel",
+            "what": "a dented fuel cell",
+            "version": 13
+          },
+          {
+            "name": "Brakk",
+            "what": "a cockpit switch that still clicks",
+            "version": 14
+          },
+          {
+            "name": "Brakk",
+            "what": "half a thruster nozzle",
+            "good": true,
+            "version": 16
+          }
+        ]
       }
     ],
-    "partsUsed": 10,
-    "parts": [
-      {
-        "name": "Captain",
-        "what": "half a thruster nozzle",
-        "version": 1
-      },
-      {
-        "name": "Fen",
-        "what": "a perfectly good bolt",
-        "version": 2
-      },
-      {
-        "name": "Nim",
-        "what": "a perfectly good bolt",
-        "version": 3
-      },
-      {
-        "name": "Brakk",
-        "what": "a coil of copper wire",
-        "version": 4
-      },
-      {
-        "name": "Wren",
-        "what": "a coil of copper wire",
-        "version": 5
-      },
-      {
-        "name": "Tilly",
-        "what": "a bent stabiliser fin",
-        "version": 9
-      },
-      {
-        "name": "Nim",
-        "what": "a dented fuel cell",
-        "version": 11
-      },
-      {
-        "name": "Captain",
-        "what": "a perfectly good bolt",
-        "version": 12
-      },
-      {
-        "name": "Mabel",
-        "what": "a dented fuel cell",
-        "version": 13
-      },
-      {
-        "name": "Brakk",
-        "what": "a cockpit switch that still clicks",
-        "version": 14
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -4333,15 +4345,7 @@
     {
       "name": "Mabel",
       "what": "a dented fuel cell",
-      "at": "2026-11-26T00:55:35.000Z",
-      "carrying": true
-    },
-    {
-      "name": "Brakk",
-      "what": "half a thruster nozzle",
-      "at": "2026-11-26T00:45:34.937Z",
-      "good": true,
-      "carrying": true
+      "at": "2026-11-26T00:55:35.000Z"
     }
   ],
   "reads": [

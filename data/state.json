@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795705401548,
+  "lastTick": 1795706001434,
   "asleep": false,
-  "place": "tower",
-  "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-26T15:03:21.548Z",
-  "actionMinutes": 30,
-  "thought": "Thirty-six trips through the black is a proper career. My Little Dart is only going to need one good launch to show everyone at the depot.",
-  "feeling": "determined and slightly greasy",
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-26T15:13:21.434Z",
+  "actionMinutes": 40,
+  "thought": "my charge is bugging me most right now.",
+  "feeling": "okay, ticking along",
   "say": "",
-  "mood": 0.23,
-  "energy": 0.075,
+  "mood": 0.296,
+  "energy": 0.286,
   "needs": {
-    "charge": 0.557,
-    "oil": 0.04,
-    "curiosity": 0.12,
-    "company": 0.065,
-    "craft": 0.384
+    "charge": 0.154,
+    "oil": 0.08,
+    "curiosity": 0.2,
+    "company": 0.118,
+    "craft": 0.451
   },
   "credits": 1,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-26T15:13:21.434Z"
+    },
     {
       "id": "browse_wire",
       "detail": "cargo return service specs",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-26T12:47:02.266Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-26T12:37:01.542Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-26T15:03:21.548Z",
+  "lettersCheckedAt": "2026-11-26T15:13:21.434Z",
   "weather": {
     "kind": "hazy",
     "temp": 22,
@@ -1650,33 +1650,30 @@
   },
   "sleepDay": 113,
   "lastReflectDay": 113,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-26T15:03:21.548Z",
+  "brain": "rules",
+  "updatedAt": "2026-11-26T15:13:21.434Z",
   "clock": {
     "day": 114,
-    "time": "12:28",
-    "hour": 12,
-    "minute": 28
+    "time": "13:48",
+    "hour": 13,
+    "minute": 48
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-26T15:03:21.548Z"
+    "action": "nap_dock",
+    "since": "2026-11-26T15:13:21.434Z"
   },
-  "busyUntil": "2026-11-26T15:07:06.548Z",
-  "busyUntilTown": "12:58",
+  "busyUntil": "2026-11-26T15:18:21.434Z",
+  "busyUntilTown": "14:28",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "scanning the comms tower feed for cargo return specs",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "spin",
-    "look_up"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-26T14:53:21.700Z",
     "items": [
@@ -1694,6 +1691,10 @@
     "at": "2026-11-26T14:43:22.043Z"
   },
   "thoughts": [
+    {
+      "text": "my charge is bugging me most right now.",
+      "at": "2026-11-26T15:13:21.434Z"
+    },
     {
       "text": "Thirty-six trips through the black is a proper career. My Little Dart is only going to need one good launch to show everyone at the depot.",
       "at": "2026-11-26T15:03:21.548Z"
@@ -1713,13 +1714,9 @@
     {
       "text": "the dash looks real sharp with that cracked sensor eye glowing back at me. just need a few more zip ties and she will be ready to log some real altitude.",
       "at": "2026-11-26T14:05:54.876Z"
-    },
-    {
-      "text": "those new satellites upstairs give me plenty of signals to chase once she is airborne.",
-      "at": "2026-11-26T13:55:54.401Z"
     }
   ],
-  "sayAt": "2026-11-26T15:03:21.548Z",
+  "sayAt": "2026-11-26T15:13:21.434Z",
   "today": {
     "day": 114,
     "counts": {
@@ -1727,7 +1724,8 @@
       "send_signal": 1,
       "work_dart": 2,
       "drink_oil": 3,
-      "browse_wire": 1
+      "browse_wire": 1,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1752,7 +1750,7 @@
     "chat_patrons": "2026-11-25T18:06:41.386Z",
     "busk": "2026-11-25T16:00:29.331Z",
     "cantina_band": "2026-11-25T15:07:12.770Z",
-    "nap_dock": "2026-11-26T12:37:01.542Z",
+    "nap_dock": "2026-11-26T15:13:21.434Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -2852,7 +2850,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-26T15:03:21.548Z",
+  "feedArchivedAt": "2026-11-26T15:13:21.434Z",
   "plans": [],
   "searches": [
     {

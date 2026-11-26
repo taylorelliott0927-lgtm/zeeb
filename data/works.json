@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 29",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 7,
+    "version": 1,
+    "lastChange": "welded a custom high-strength titanium brace to the Little Dart main engine mount (used Mabel, a dented fuel cell)",
     "log": [
+      {
+        "version": 1,
+        "change": "welded a custom high-strength titanium brace to the Little Dart main engine mount (used Mabel, a dented fuel cell)",
+        "progress": 7,
+        "at": "2026-11-26T02:23:03.544Z"
+      },
       {
         "version": 16,
         "change": "wired the dashboard switches using Rusty Jr for high-vibration resistance (used Brakk, half a thruster nozzle)",
@@ -238,12 +244,6 @@
         "change": "mounting Mabel the dented fuel cell to the auxiliary power bus for the Little Dart Mk 26 (used Brakk, a mystery box that hums)",
         "progress": 45,
         "at": "2026-11-24T13:30:07.477Z"
-      },
-      {
-        "version": 5,
-        "change": "aligning thermal sensor leads and securing the dorsal frame for Little Dart Mk 26 (used Sprocket, a scorched heat tile)",
-        "progress": 37,
-        "at": "2026-11-24T12:32:23.058Z"
       }
     ],
     "launched": [
@@ -4095,8 +4095,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Mabel",
+        "what": "a dented fuel cell",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -4341,13 +4347,7 @@
       "at": "2026-11-15T19:52:56.264Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Mabel",
-      "what": "a dented fuel cell",
-      "at": "2026-11-26T00:55:35.000Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Chip recycling: Addressing e-waste in the AI hardware industry | TechTarget",

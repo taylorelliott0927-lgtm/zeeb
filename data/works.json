@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 29",
-    "progress": 80,
-    "version": 11,
-    "lastChange": "routed the copper wire (Nim) through the instrument panel and soldered the navigation power bus (used Nim, a coil of copper wire)",
+    "progress": 87,
+    "version": 12,
+    "lastChange": "applied a smooth layer of thermal paste across the Little Dart's processor heat sink using the copper wire Bix for delicate positioning (used Bix, a coil of copper wire)",
     "log": [
+      {
+        "version": 12,
+        "change": "applied a smooth layer of thermal paste across the Little Dart's processor heat sink using the copper wire Bix for delicate positioning (used Bix, a coil of copper wire)",
+        "progress": 87,
+        "at": "2026-11-26T18:00:58.512Z"
+      },
       {
         "version": 11,
         "change": "routed the copper wire (Nim) through the instrument panel and soldered the navigation power bus (used Nim, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "welding the next batch of silica heat tiles onto the lower starboard side using the micro torch (used Dibs, a dented fuel cell)",
         "progress": 24,
         "at": "2026-11-25T03:04:21.851Z"
-      },
-      {
-        "version": 2,
-        "change": "added high-temp silica heat tiles to the lower hull using Tilly for precise alignment (used Tilly, a tiny gyroscope)",
-        "progress": 16,
-        "at": "2026-11-25T02:54:22.342Z"
       }
     ],
     "launched": [
@@ -4095,7 +4095,7 @@
         ]
       }
     ],
-    "partsUsed": 11,
+    "partsUsed": 12,
     "parts": [
       {
         "name": "Mabel",
@@ -4147,6 +4147,11 @@
         "name": "Nim",
         "what": "a coil of copper wire",
         "version": 11
+      },
+      {
+        "name": "Bix",
+        "what": "a coil of copper wire",
+        "version": 12
       }
     ],
     "design": null
@@ -4393,13 +4398,7 @@
       "at": "2026-11-17T07:30:17.384Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Bix",
-      "what": "a coil of copper wire",
-      "at": "2026-11-26T17:50:58.448Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Dow Corning® TC-5121 VS Artic Silver 5 | Tom's Hardware Forum",

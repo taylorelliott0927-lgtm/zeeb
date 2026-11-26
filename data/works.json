@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 29",
-    "progress": 41,
-    "version": 6,
-    "lastChange": "routed the final navigation bus leads and secured the main panel with Nim (a sensor eye with one crack) (used Otto, a perfectly good bolt)",
+    "progress": 48,
+    "version": 7,
+    "lastChange": "welded the titanium nose cone reinforcement and sealed the seam with high-temp paste (used Brakk, a bent stabiliser fin)",
     "log": [
+      {
+        "version": 7,
+        "change": "welded the titanium nose cone reinforcement and sealed the seam with high-temp paste (used Brakk, a bent stabiliser fin)",
+        "progress": 48,
+        "at": "2026-11-26T12:07:01.569Z"
+      },
       {
         "version": 6,
         "change": "routed the final navigation bus leads and secured the main panel with Nim (a sensor eye with one crack) (used Otto, a perfectly good bolt)",
@@ -238,12 +244,6 @@
         "change": "installed Bix the heat tile onto the underbelly frame to protect against atmospheric entry burn (used Gus, a strip of hull plating)",
         "progress": 86,
         "at": "2026-11-24T22:07:45.571Z"
-      },
-      {
-        "version": 11,
-        "change": "patched a hole in the hull (used Wren, a tiny gyroscope)",
-        "progress": 79,
-        "at": "2026-11-24T20:01:44.273Z"
       }
     ],
     "launched": [
@@ -4095,7 +4095,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Mabel",
@@ -4122,6 +4122,11 @@
         "name": "Otto",
         "what": "a perfectly good bolt",
         "version": 6
+      },
+      {
+        "name": "Brakk",
+        "what": "a bent stabiliser fin",
+        "version": 7
       }
     ],
     "design": null
@@ -4387,11 +4392,6 @@
     {
       "name": "Nim",
       "what": "a sensor eye with one crack",
-      "at": "2026-11-26T06:34:42.650Z"
-    },
-    {
-      "name": "Brakk",
-      "what": "a bent stabiliser fin",
       "at": "2026-11-26T06:34:42.650Z"
     }
   ],

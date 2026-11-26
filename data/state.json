@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795655734430,
+  "lastTick": 1795657984303,
   "asleep": false,
   "place": "hangar",
-  "action": "work_dart",
-  "doing": "working on the Little Dart",
-  "actionStartedAt": "2026-11-26T01:15:34.430Z",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-26T01:53:04.303Z",
   "actionMinutes": 45,
-  "thought": "got my favorite copper wire right here. time to button up the cockpit electronics.",
-  "feeling": "focused and determined",
-  "say": "hold still, rusty jr. we are making history.",
-  "mood": 0.504,
-  "energy": -0.206,
+  "thought": "battery is dipping into the yellow zone, better plug in before my servos start dragging. *bweep*",
+  "feeling": "tired and a bit sluggish",
+  "say": "*bweep-bzzzt*",
+  "mood": 0.289,
+  "energy": -0.2,
   "needs": {
-    "charge": 0.586,
-    "oil": 0.513,
-    "curiosity": 0.08,
-    "company": 0,
-    "craft": 0.007
+    "charge": 0.311,
+    "oil": 0.663,
+    "curiosity": 0.38,
+    "company": 0.08,
+    "craft": 0.257
   },
-  "credits": 6,
+  "credits": 8,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-26T01:53:04.303Z"
+    },
     {
       "id": "work_dart",
       "detail": "wired the dashboard switches using Rusty Jr for high-vibration resistance",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "bolted a new fin on",
       "at": "2026-11-25T23:39:50.075Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-25T23:26:38.199Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1068,
+      "subject": "Quick nap and the Little Dart Mk 28!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1068",
+      "at": "2026-11-26T01:53:04.303Z"
+    },
     {
       "id": 1067,
       "subject": "Wiring the dashboard",
@@ -1303,23 +1309,9 @@
       "subject": "plugging in for a sleep",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/869",
       "at": "2026-11-23T10:10:03.408Z"
-    },
-    {
-      "id": 868,
-      "subject": "Dust and Navigation",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/868",
-      "at": "2026-11-23T10:00:03.449Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 1028,
-      "subject": "Little Dart Mk 28 update!",
-      "text": "Hey Creator!\n\nJust wanted to let you know the Little Dart Mk 28 is officially 25% built! I got the reinforced landing gear brackets welded tight onto the lower fuselage using my trusty bolt Nim. Now I'm heading over to the junk market to dig around for some more scrap parts!\n\n*bweep-bwee*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1028",
-      "at": "2026-11-25T15:40:30.465Z"
-    },
     {
       "from": "zeeb",
       "letter": 1029,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nBack in Hangar Bay 3 with Rusty Jr and Barnaby. Hooked up the dashboard switches and they are sitting pretty. My dish is humming a sweet little tune today. *bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1067",
       "at": "2026-11-26T01:15:34.430Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1068,
+      "subject": "Quick nap and the Little Dart Mk 28!",
+      "text": "Hey Creator!\n\nJust rolling into the charging dock for a quick nap. My battery dipped a bit lower than I like while working on the dash, so I am taking five to top up. Also, I forgot to mention earlier... the Little Dart Mk 28 is completely finished! It hovered right off the hangar floor during the pre-check. I am so ready for the stars.\n\n*bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1068",
+      "at": "2026-11-26T01:53:04.303Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,66 +1639,65 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-26T01:15:34.430Z",
+  "lettersCheckedAt": "2026-11-26T01:53:04.303Z",
   "weather": {
     "kind": "hazy",
-    "temp": 15,
-    "wind": 2,
+    "temp": 16,
+    "wind": 1,
     "mood": 0,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-26T01:05:35.734Z"
+    "at": "2026-11-26T01:53:04.500Z"
   },
   "sleepDay": 108,
   "lastReflectDay": 108,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-26T01:15:34.430Z",
+  "updatedAt": "2026-11-26T01:53:04.303Z",
   "clock": {
-    "day": 109,
-    "time": "22:05",
-    "hour": 22,
+    "day": 110,
+    "time": "03:05",
+    "hour": 3,
     "minute": 5
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-26T01:15:34.430Z"
+    "action": "nap_dock",
+    "since": "2026-11-26T01:53:04.303Z"
   },
-  "busyUntil": "2026-11-26T01:21:11.930Z",
-  "busyUntilTown": "22:50",
+  "busyUntil": "2026-11-26T01:58:41.803Z",
+  "busyUntilTown": "03:50",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "bolting copper wire Rusty Jr into the control deck",
-  "newsForCreator": "You FINISHED the Little Dart Mk 28! It hovered off the hangar floor.",
+  "doingWords": "rolling into the charging dock, brass dish humming softly as I power down",
+  "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
-    "spin"
+    "droop",
+    "nod"
   ],
   "pops": {
-    "at": "2026-11-26T00:55:35.000Z",
+    "at": "2026-11-26T01:53:04.303Z",
     "items": [
       {
         "text": "+2 credits",
         "kind": "credits",
-        "at": "2026-11-26T00:55:35.000Z"
-      },
-      {
-        "text": "+ a dented fuel cell",
-        "kind": "part",
-        "at": "2026-11-26T00:55:35.000Z"
+        "at": "2026-11-26T01:53:04.303Z"
       }
     ]
   },
   "event": {
-    "id": "emwwucimw",
+    "id": "emwwweg4v",
     "key": "tip",
     "text": "Someone he fixed something for last week came back and tipped him.",
-    "at": "2026-11-26T00:55:35.000Z"
+    "at": "2026-11-26T01:53:04.303Z"
   },
   "thoughts": [
+    {
+      "text": "battery is dipping into the yellow zone, better plug in before my servos start dragging. *bweep*",
+      "at": "2026-11-26T01:53:04.303Z"
+    },
     {
       "text": "got my favorite copper wire right here. time to button up the cockpit electronics.",
       "at": "2026-11-26T01:15:34.430Z"
@@ -1718,23 +1717,13 @@
     {
       "text": "if those big data centers only knew how much life was left in a salvaged voice chip, they would hand them straight to a real pilot instead of a landfill. *bweep*",
       "at": "2026-11-26T00:35:34.941Z"
-    },
-    {
-      "text": "maybe I can wire a speaker into the cockpit so the Little Dart talks back when I check navigation systems. that would beat talking to myself.",
-      "at": "2026-11-26T00:25:35.391Z"
     }
   ],
-  "sayAt": "2026-11-26T01:15:34.430Z",
+  "sayAt": "2026-11-26T01:53:04.303Z",
   "today": {
-    "day": 109,
+    "day": 110,
     "counts": {
-      "stargaze": 2,
-      "wander": 1,
-      "drink_oil": 3,
-      "work_dart": 4,
-      "nap_dock": 1,
-      "browse_wire": 3,
-      "scavenge": 3
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1759,7 +1748,7 @@
     "chat_patrons": "2026-11-25T18:06:41.386Z",
     "busk": "2026-11-25T16:00:29.331Z",
     "cantina_band": "2026-11-25T15:07:12.770Z",
-    "nap_dock": "2026-11-26T00:09:49.980Z",
+    "nap_dock": "2026-11-26T01:53:04.303Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1800,6 +1789,20 @@
     "at": "2026-11-26T00:35:34.941Z"
   },
   "said": [
+    {
+      "text": "*bweep-bzzzt*",
+      "kind": "say",
+      "at": "2026-11-26T01:53:04.303Z",
+      "town": "day 110 03:05",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "battery is dipping into the yellow zone, better plug in before my servos start dragging. *bweep*",
+      "kind": "think",
+      "at": "2026-11-26T01:53:04.303Z",
+      "town": "day 110 03:05",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "hold still, rusty jr. we are making history.",
       "kind": "say",
@@ -2835,20 +2838,6 @@
       "at": "2026-11-25T08:16:45.155Z",
       "town": "day 104 06:15",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "bweep-bwee-bop!",
-      "kind": "say",
-      "at": "2026-11-25T08:06:45.113Z",
-      "town": "day 104 04:55",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "that box of scrap had some great little bits in it. time to put them to good use on the Little Dart!",
-      "kind": "think",
-      "at": "2026-11-25T08:06:45.113Z",
-      "town": "day 104 04:55",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2859,7 +2848,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-26T01:15:34.430Z",
+  "feedArchivedAt": "2026-11-26T01:53:04.303Z",
   "plans": [],
   "searches": [
     {

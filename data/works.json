@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 29",
-    "progress": 48,
-    "version": 7,
-    "lastChange": "welded the titanium nose cone reinforcement and sealed the seam with high-temp paste (used Brakk, a bent stabiliser fin)",
+    "progress": 54,
+    "version": 8,
+    "lastChange": "mounted the salvaged sensor eye with one crack (Nim) into the instrument cluster and wired it straight to the navigation bus (used Nim, a sensor eye with one crack)",
     "log": [
+      {
+        "version": 8,
+        "change": "mounted the salvaged sensor eye with one crack (Nim) into the instrument cluster and wired it straight to the navigation bus (used Nim, a sensor eye with one crack)",
+        "progress": 54,
+        "at": "2026-11-26T13:55:54.401Z"
+      },
       {
         "version": 7,
         "change": "welded the titanium nose cone reinforcement and sealed the seam with high-temp paste (used Brakk, a bent stabiliser fin)",
@@ -238,12 +244,6 @@
         "change": "installed high-grade copper wire Rusty Jr. into the primary console harness to link the navigation display (used Bix, a scorched heat tile)",
         "progress": 96,
         "at": "2026-11-24T23:08:56.747Z"
-      },
-      {
-        "version": 12,
-        "change": "installed Bix the heat tile onto the underbelly frame to protect against atmospheric entry burn (used Gus, a strip of hull plating)",
-        "progress": 86,
-        "at": "2026-11-24T22:07:45.571Z"
       }
     ],
     "launched": [
@@ -4095,7 +4095,7 @@
         ]
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Mabel",
@@ -4127,6 +4127,11 @@
         "name": "Brakk",
         "what": "a bent stabiliser fin",
         "version": 7
+      },
+      {
+        "name": "Nim",
+        "what": "a sensor eye with one crack",
+        "version": 8
       }
     ],
     "design": null
@@ -4388,11 +4393,6 @@
       "name": "Dibs",
       "what": "half a thruster nozzle",
       "at": "2026-11-26T06:44:43.103Z"
-    },
-    {
-      "name": "Nim",
-      "what": "a sensor eye with one crack",
-      "at": "2026-11-26T06:34:42.650Z"
     }
   ],
   "reads": [

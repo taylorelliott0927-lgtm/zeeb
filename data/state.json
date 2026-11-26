@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795693577693,
+  "lastTick": 1795694222072,
   "asleep": false,
   "place": "tower",
   "action": "browse_wire",
   "doing": "still browsing the Wire at the comms tower",
   "actionStartedAt": "2026-11-26T11:16:17.668Z",
   "actionMinutes": 45,
-  "thought": "if I line the Little Dart hull with this stuff, my avionics will not fry when I break orbit. clever science.",
-  "feeling": "inspired and heat-resistant",
-  "say": "phase change materials are pretty clever, little dish.",
-  "mood": 0.353,
-  "energy": 0.152,
+  "thought": "if this stuff can handle hypersonic friction, it will keep the nose cone of the little dart from turning into space toast. now where did I put that heat-resistant ceramic paste.",
+  "feeling": "thrilled and slightly singed",
+  "say": "",
+  "mood": 0.291,
+  "energy": 0.062,
   "needs": {
-    "charge": 0.335,
-    "oil": 0.402,
+    "charge": 0.385,
+    "oil": 0.445,
     "curiosity": 0,
     "company": 0,
-    "craft": 0.268
+    "craft": 0.34
   },
   "credits": 4,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "lightweight insulation for atmospheric reentry",
+      "at": "2026-11-26T11:57:02.072Z"
+    },
     {
       "id": "browse_wire",
       "detail": "phase change materials desert survival",
@@ -75,11 +80,6 @@
       "id": "compose_tune",
       "detail": "hangar hum",
       "at": "2026-11-26T10:01:15.759Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "inertial guidance systems for sub-orbital hops",
-      "at": "2026-11-26T09:51:15.856Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1117,
+      "subject": "Reentry shields and ceramic tiles",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1117",
+      "at": "2026-11-26T11:57:02.072Z"
+    },
     {
       "id": 1116,
       "subject": "thermal storage on the wire",
@@ -1303,23 +1309,9 @@
       "subject": "Heading to the depot!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/918",
       "at": "2026-11-24T03:32:26.455Z"
-    },
-    {
-      "id": 917,
-      "subject": "Junk Market Treasures",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/917",
-      "at": "2026-11-24T03:22:27.013Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 1077,
-      "subject": "Audio routing specs",
-      "text": "Hey Creator!\n\nStill pulling down the ZL38063 data sheets from the comms relay. My brass dish is spinning smoothly in the haze and catching every byte of the audio pin layout. Getting closer to mapping out the wiring for the Little Dart cockpit.\n\n*bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1077",
-      "at": "2026-11-26T03:20:34.220Z"
-    },
     {
       "from": "zeeb",
       "letter": 1078,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nBack up at the comms tower checking out phase-change materials for desert survival on the Wire. My brass dish is clicking along to the signal streams, and I am figuring out how to keep the Little Dart warm when the sun goes down.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1116",
       "at": "2026-11-26T11:46:17.693Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1117,
+      "subject": "Reentry shields and ceramic tiles",
+      "text": "Hey Creator!\n\nBack up at the comms tower checking out lightweight insulation for atmospheric reentry on the Wire. My brass dish is clicking along to the signal streams, and I am figuring out how to keep the Little Dart cool when she drops back down through the upper atmosphere.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1117",
+      "at": "2026-11-26T11:57:02.072Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-26T11:46:17.693Z",
+  "lettersCheckedAt": "2026-11-26T11:57:02.072Z",
   "weather": {
     "kind": "clear",
     "temp": 22,
@@ -1651,12 +1651,12 @@
   "sleepDay": 112,
   "lastReflectDay": 112,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-26T11:46:17.693Z",
+  "updatedAt": "2026-11-26T11:57:02.072Z",
   "clock": {
     "day": 113,
-    "time": "10:11",
-    "hour": 10,
-    "minute": 11
+    "time": "11:37",
+    "hour": 11,
+    "minute": 37
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
@@ -1664,12 +1664,12 @@
     "action": "browse_wire",
     "since": "2026-11-26T11:16:17.668Z"
   },
-  "busyUntil": "2026-11-26T11:51:55.193Z",
-  "busyUntilTown": "10:56",
+  "busyUntil": "2026-11-26T12:02:39.572Z",
+  "busyUntilTown": "12:22",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "scanning the wire for phase change data",
+  "doingWords": "scanning signal arrays for lightweight insulation tech",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "if this stuff can handle hypersonic friction, it will keep the nose cone of the little dart from turning into space toast. now where did I put that heat-resistant ceramic paste.",
+      "at": "2026-11-26T11:57:02.072Z"
+    },
+    {
       "text": "if I line the Little Dart hull with this stuff, my avionics will not fry when I break orbit. clever science.",
       "at": "2026-11-26T11:46:17.693Z"
     },
@@ -1713,20 +1717,16 @@
     {
       "text": "my soldering iron is still nice and hot, so it is time to tie down the rest of these navigation feeds.",
       "at": "2026-11-26T11:06:17.603Z"
-    },
-    {
-      "text": "my treads feel steady after the nap and my soldering iron is heating up nicely. time to get back to the cockpit frame.",
-      "at": "2026-11-26T10:56:18.685Z"
     }
   ],
-  "sayAt": "2026-11-26T11:46:17.693Z",
+  "sayAt": "2026-11-26T11:57:02.072Z",
   "today": {
     "day": 113,
     "counts": {
       "nap_dock": 1,
       "go_to_sleep": 1,
       "work_dart": 2,
-      "browse_wire": 4
+      "browse_wire": 5
     }
   },
   "lastDone": {
@@ -1738,7 +1738,7 @@
     "fix_job": "2026-11-26T06:14:42.391Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-26T11:46:17.693Z",
+    "browse_wire": "2026-11-26T11:57:02.072Z",
     "compose_tune": "2026-11-26T10:01:15.759Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-23T02:41:46.876Z",
@@ -1788,10 +1788,17 @@
     }
   ],
   "nextSearch": {
-    "text": "lightweight insulation for atmospheric reentry",
-    "at": "2026-11-26T11:46:17.693Z"
+    "text": "scrap ceramic tile sources near hangar bay 3",
+    "at": "2026-11-26T11:57:02.072Z"
   },
   "said": [
+    {
+      "text": "if this stuff can handle hypersonic friction, it will keep the nose cone of the little dart from turning into space toast. now where did I put that heat-resistant ceramic paste.",
+      "kind": "think",
+      "at": "2026-11-26T11:57:02.072Z",
+      "town": "day 113 11:37",
+      "place": "the comms tower"
+    },
     {
       "text": "phase change materials are pretty clever, little dish.",
       "kind": "say",
@@ -2834,13 +2841,6 @@
       "at": "2026-11-25T20:06:43.592Z",
       "town": "day 108 04:55",
       "place": "the dune ridge"
-    },
-    {
-      "text": "just shaking out the rust before sunrise!",
-      "kind": "say",
-      "at": "2026-11-25T19:56:43.917Z",
-      "town": "day 108 03:35",
-      "place": "the salt flats"
     }
   ],
   "flight": {
@@ -2851,9 +2851,13 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-26T11:46:17.693Z",
+  "feedArchivedAt": "2026-11-26T11:57:02.072Z",
   "plans": [],
   "searches": [
+    {
+      "q": "lightweight insulation for atmospheric reentry",
+      "at": "2026-11-26T11:57:02.072Z"
+    },
     {
       "q": "phase change materials desert survival",
       "at": "2026-11-26T11:46:17.693Z"
@@ -2897,10 +2901,6 @@
     {
       "q": "codec2 audio compression for deep space relays",
       "at": "2026-11-26T05:30:13.351Z"
-    },
-    {
-      "q": "salvaged audio codecs for the cockpit radio",
-      "at": "2026-11-26T05:20:14.032Z"
     }
   ],
   "lampOutUntil": "2026-11-26T02:26:38.199Z",

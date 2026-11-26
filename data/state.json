@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795714519973,
+  "lastTick": 1795714858960,
   "asleep": false,
-  "place": "tower",
-  "action": "follow_link",
-  "doing": "still following a link across the Wire",
-  "actionStartedAt": "2026-11-26T17:15:20.134Z",
-  "actionMinutes": 45,
-  "thought": "i wonder if a dab of that paste would help cool the Little Dart's auxiliary thruster housing. gotta keep the core from getting too toasty.",
-  "feeling": "curious and slightly greasy",
-  "say": "*bweep-bzt-bweep*",
-  "mood": 0.218,
-  "energy": -0.173,
+  "place": "depot",
+  "action": "drink_oil",
+  "doing": "sipping oil at the fuel depot",
+  "actionStartedAt": "2026-11-26T17:40:58.960Z",
+  "actionMinutes": 30,
+  "thought": "gotta lube up before my gears seize right solid in this desert air. *bweep-bzt*",
+  "feeling": "dry in the joints but eager for a sip",
+  "say": "fill her up, bolt-tender!",
+  "mood": 0.255,
+  "energy": -0.035,
   "needs": {
-    "charge": 0.471,
-    "oil": 0.648,
-    "curiosity": 0,
-    "company": 0,
-    "craft": 0.715
+    "charge": 0.497,
+    "oil": 0.021,
+    "curiosity": 0.045,
+    "company": 0.03,
+    "craft": 0.753
   },
-  "credits": 1,
+  "credits": 0,
   "recent": [
+    {
+      "id": "drink_oil",
+      "detail": "",
+      "at": "2026-11-26T17:40:58.960Z"
+    },
     {
       "id": "follow_link",
       "detail": "4",
@@ -75,11 +80,6 @@
       "id": "compose_tune",
       "detail": "Little Dart Five-Note Dawn Arc XXXIII",
       "at": "2026-11-26T15:48:29.563Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "routed the copper wire (Nim) through the instrument panel and soldered the navig",
-      "at": "2026-11-26T15:38:29.932Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-26T17:35:19.973Z",
+  "lettersCheckedAt": "2026-11-26T17:40:58.960Z",
   "weather": {
     "kind": "hazy",
     "temp": 19,
@@ -1651,38 +1651,39 @@
   "sleepDay": 114,
   "lastReflectDay": 114,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-26T17:35:19.973Z",
+  "updatedAt": "2026-11-26T17:40:58.960Z",
   "clock": {
     "day": 115,
-    "time": "08:43",
-    "hour": 8,
-    "minute": 43
+    "time": "09:29",
+    "hour": 9,
+    "minute": 29
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "the fuel depot",
   "streak": {
-    "action": "follow_link",
-    "since": "2026-11-26T17:15:20.134Z"
+    "action": "drink_oil",
+    "since": "2026-11-26T17:40:58.960Z"
   },
-  "busyUntil": "2026-11-26T17:40:57.473Z",
-  "busyUntilTown": "09:28",
+  "busyUntil": "2026-11-26T17:44:43.960Z",
+  "busyUntilTown": "09:59",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "checking out insulation composites on the wire",
+  "doingWords": "rolling over to the depot for a fresh drink of oil",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "spin"
+    "hop",
+    "wiggle"
   ],
   "pops": {
-    "at": "2026-11-26T14:53:21.700Z",
+    "at": "2026-11-26T17:40:58.960Z",
     "items": [
       {
         "text": "-1 credit",
         "kind": "spend",
-        "at": "2026-11-26T14:53:21.700Z"
+        "at": "2026-11-26T17:40:58.960Z"
       }
     ]
   },
@@ -1693,6 +1694,10 @@
     "at": "2026-11-26T16:45:20.267Z"
   },
   "thoughts": [
+    {
+      "text": "gotta lube up before my gears seize right solid in this desert air. *bweep-bzt*",
+      "at": "2026-11-26T17:40:58.960Z"
+    },
     {
       "text": "i wonder if a dab of that paste would help cool the Little Dart's auxiliary thruster housing. gotta keep the core from getting too toasty.",
       "at": "2026-11-26T17:35:19.973Z"
@@ -1712,24 +1717,21 @@
     {
       "text": "if this ceramic tile trick works for wooden decks, it might protect the lower hull during atmospheric entry. time to name three new bolts gus and check the refractory shielding.",
       "at": "2026-11-26T16:55:19.440Z"
-    },
-    {
-      "text": "if the little dart is going to punch through the upper atmosphere of kessa-9, i need better thermal tiles. maybe that old furnace lining from hangar bay two will work.",
-      "at": "2026-11-26T16:45:20.267Z"
     }
   ],
-  "sayAt": "2026-11-26T17:35:19.973Z",
+  "sayAt": "2026-11-26T17:40:58.960Z",
   "today": {
     "day": 115,
     "counts": {
       "browse_wire": 3,
-      "follow_link": 3
+      "follow_link": 3,
+      "drink_oil": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-26T15:38:29.932Z",
     "read_news": "2026-11-26T13:35:55.025Z",
-    "drink_oil": "2026-11-26T14:53:21.700Z",
+    "drink_oil": "2026-11-26T17:40:58.960Z",
     "follow_link": "2026-11-26T17:35:19.973Z",
     "scavenge": "2026-11-26T06:44:43.103Z",
     "fix_job": "2026-11-26T06:14:42.391Z",
@@ -1789,6 +1791,20 @@
     "at": "2026-11-26T17:35:19.973Z"
   },
   "said": [
+    {
+      "text": "fill her up, bolt-tender!",
+      "kind": "say",
+      "at": "2026-11-26T17:40:58.960Z",
+      "town": "day 115 09:29",
+      "place": "the fuel depot"
+    },
+    {
+      "text": "gotta lube up before my gears seize right solid in this desert air. *bweep-bzt*",
+      "kind": "think",
+      "at": "2026-11-26T17:40:58.960Z",
+      "town": "day 115 09:29",
+      "place": "the fuel depot"
+    },
     {
       "text": "i wonder if a dab of that paste would help cool the Little Dart's auxiliary thruster housing. gotta keep the core from getting too toasty.",
       "kind": "think",
@@ -2824,20 +2840,6 @@
       "at": "2026-11-26T00:45:34.937Z",
       "town": "day 109 18:05",
       "place": "the junk market"
-    },
-    {
-      "text": "if those big data centers only knew how much life was left in a salvaged voice chip, they would hand them straight to a real pilot instead of a landfill. *bweep*",
-      "kind": "think",
-      "at": "2026-11-26T00:35:34.941Z",
-      "town": "day 109 16:45",
-      "place": "the comms tower"
-    },
-    {
-      "text": "maybe I can wire a speaker into the cockpit so the Little Dart talks back when I check navigation systems. that would beat talking to myself.",
-      "kind": "think",
-      "at": "2026-11-26T00:25:35.391Z",
-      "town": "day 109 15:25",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2848,7 +2850,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-26T17:35:19.973Z",
+  "feedArchivedAt": "2026-11-26T17:40:58.960Z",
   "plans": [],
   "searches": [
     {

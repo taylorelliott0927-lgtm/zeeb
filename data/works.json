@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 29",
-    "progress": 9,
-    "version": 2,
-    "lastChange": "soldered the ZL38063 audio pin layout into the Little Dart cockpit control panel",
+    "progress": 17,
+    "version": 3,
+    "lastChange": "mounted the ZL38063 voice processor chip right into the center of the Little Dart cockpit console and ran fresh copper wire to the audio receiver. (used Fen, a coil of copper wire)",
     "log": [
+      {
+        "version": 3,
+        "change": "mounted the ZL38063 voice processor chip right into the center of the Little Dart cockpit console and ran fresh copper wire to the audio receiver. (used Fen, a coil of copper wire)",
+        "progress": 17,
+        "at": "2026-11-26T07:45:36.316Z"
+      },
       {
         "version": 2,
         "change": "soldered the ZL38063 audio pin layout into the Little Dart cockpit control panel",
@@ -238,12 +244,6 @@
         "change": "tuned the left thruster (used Brakk, a cockpit switch that still clicks)",
         "progress": 58,
         "at": "2026-11-24T16:04:41.750Z"
-      },
-      {
-        "version": 7,
-        "change": "rewired the cockpit lights (used Mabel, a dented fuel cell)",
-        "progress": 52,
-        "at": "2026-11-24T14:50:15.982Z"
       }
     ],
     "launched": [
@@ -4095,12 +4095,17 @@
         ]
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Mabel",
         "what": "a dented fuel cell",
         "version": 1
+      },
+      {
+        "name": "Fen",
+        "what": "a coil of copper wire",
+        "version": 3
       }
     ],
     "design": null
@@ -4378,11 +4383,6 @@
       "name": "Nim",
       "what": "a cockpit switch that still clicks",
       "at": "2026-11-26T06:24:42.561Z"
-    },
-    {
-      "name": "Fen",
-      "what": "a coil of copper wire",
-      "at": "2026-11-26T06:04:41.931Z"
     }
   ],
   "reads": [

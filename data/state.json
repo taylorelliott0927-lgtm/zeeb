@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795723641178,
+  "lastTick": 1795724240958,
   "asleep": false,
   "place": "tower",
   "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
+  "doing": "still browsing the Wire at the comms tower",
   "actionStartedAt": "2026-11-26T20:07:21.178Z",
   "actionMinutes": 45,
-  "thought": "good thing I saved that copper grid from the old moisture vaporator. the Little Dart is going to slice through the stratosphere.",
-  "feeling": "bristling with anticipation",
-  "say": "let us see what the network has to say about space tiles.",
-  "mood": 0.383,
-  "energy": 0.661,
+  "thought": "kessa-9 air is thin and gritty, so the little dart's power core needs proper thermal margin before i push it up to orbit.",
+  "feeling": "focused and slightly gritty",
+  "say": "almost got it",
+  "mood": 0.396,
+  "energy": 0.592,
   "needs": {
-    "charge": 0.094,
-    "oil": 0.04,
-    "curiosity": 0.122,
+    "charge": 0.141,
+    "oil": 0.08,
+    "curiosity": 0,
     "company": 0,
-    "craft": 0.425
+    "craft": 0.492
   },
   "credits": 9,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "high altitude transformer derating curves",
+      "at": "2026-11-26T20:17:20.958Z"
+    },
     {
       "id": "browse_wire",
       "detail": "high altitude thermal conductivity specs",
@@ -75,14 +80,14 @@
       "id": "scavenge",
       "detail": "",
       "at": "2026-11-26T18:20:58.504Z"
-    },
-    {
-      "id": "scavenge",
-      "detail": "",
-      "at": "2026-11-26T18:10:59.097Z"
     }
   ],
   "wants": [
+    {
+      "id": "w5",
+      "text": "some high-temp enamel wire for rewinding the booster coils",
+      "at": "2026-11-26T20:17:20.958Z"
+    },
     {
       "id": "w9",
       "text": "some fresh synthetic oil for my gears",
@@ -97,11 +102,6 @@
       "id": "w7",
       "text": "some thermal paste for the Little Dart's processor heat sink",
       "at": "2026-11-26T17:15:20.134Z"
-    },
-    {
-      "id": "w6",
-      "text": "some heat-resistant ceramic adhesive for the new shield tiles",
-      "at": "2026-11-26T16:55:19.440Z"
     }
   ],
   "promises": [],
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1154,
+      "subject": "Wire check",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1154",
+      "at": "2026-11-26T20:17:20.958Z"
+    },
     {
       "id": 1153,
       "subject": "Wire Search Time",
@@ -1303,23 +1309,9 @@
       "subject": "Little Dart Mk 26 is halfway there!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/955",
       "at": "2026-11-24T15:24:41.932Z"
-    },
-    {
-      "id": 954,
-      "subject": "Curiosity strike!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/954",
-      "at": "2026-11-24T14:10:16.466Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 1114,
-      "subject": "Mars rovers on the Wire",
-      "text": "Hey Creator!\n\nStill up at the comms tower checking out Mars rovers on the Wire. My brass dish is clicking along to the signal streams, and I am comparing their wheel drives to my own little treads.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1114",
-      "at": "2026-11-26T11:26:17.982Z"
-    },
     {
       "from": "zeeb",
       "letter": 1115,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nHeading over to the comms tower to look up high-altitude thermal specs for the Little Dart's tiles. My brass dish is spinning to the data feed.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1153",
       "at": "2026-11-26T20:07:21.178Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1154,
+      "subject": "Wire check",
+      "text": "Hey Creator!\n\nDigging into high-altitude transformer specs on the Wire today. My brass dish is locking right onto the data stream.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1154",
+      "at": "2026-11-26T20:17:20.958Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-26T20:07:21.178Z",
+  "lettersCheckedAt": "2026-11-26T20:17:20.958Z",
   "weather": {
     "kind": "hazy",
     "temp": 17,
@@ -1651,12 +1651,12 @@
   "sleepDay": 115,
   "lastReflectDay": 115,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-26T20:07:21.178Z",
+  "updatedAt": "2026-11-26T20:17:20.958Z",
   "clock": {
     "day": 116,
-    "time": "05:00",
-    "hour": 5,
-    "minute": 0
+    "time": "06:20",
+    "hour": 6,
+    "minute": 20
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
@@ -1664,12 +1664,12 @@
     "action": "browse_wire",
     "since": "2026-11-26T20:07:21.178Z"
   },
-  "busyUntil": "2026-11-26T20:12:58.678Z",
-  "busyUntilTown": "05:45",
+  "busyUntil": "2026-11-26T20:22:58.458Z",
+  "busyUntilTown": "07:05",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "querying the comms tower for high temperature specs",
+  "doingWords": "spinning brass dish while scanning high altitude transformer derating curves on the wire",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "kessa-9 air is thin and gritty, so the little dart's power core needs proper thermal margin before i push it up to orbit.",
+      "at": "2026-11-26T20:17:20.958Z"
+    },
+    {
       "text": "good thing I saved that copper grid from the old moisture vaporator. the Little Dart is going to slice through the stratosphere.",
       "at": "2026-11-26T20:07:21.178Z"
     },
@@ -1713,18 +1717,14 @@
     {
       "text": "just a short nap to get my circuits humming before the next batch of welds. *bweep-zzz*",
       "at": "2026-11-26T19:18:22.825Z"
-    },
-    {
-      "text": "getting these exhaust brackets just right is tricky, but my welds are holding fast. *bweep-bzt*",
-      "at": "2026-11-26T19:08:22.447Z"
     }
   ],
-  "sayAt": "2026-11-26T20:07:21.178Z",
+  "sayAt": "2026-11-26T20:17:20.958Z",
   "today": {
     "day": 116,
     "counts": {
       "drink_oil": 2,
-      "browse_wire": 1
+      "browse_wire": 2
     }
   },
   "lastDone": {
@@ -1736,7 +1736,7 @@
     "fix_job": "2026-11-26T18:30:58.936Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-26T20:07:21.178Z",
+    "browse_wire": "2026-11-26T20:17:20.958Z",
     "compose_tune": "2026-11-26T15:48:29.563Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-23T02:41:46.876Z",
@@ -1760,6 +1760,11 @@
   },
   "puzzles": [
     {
+      "id": "q6",
+      "text": "q9: how to cast lightweight ceramic heat shield tiles in a salvage tray",
+      "at": "2026-11-26T20:17:20.958Z"
+    },
+    {
       "id": "q9",
       "text": "q6: q9: how to cast lightweight ceramic heat shield tiles in a salvage tray",
       "at": "2026-11-26T20:07:21.178Z"
@@ -1778,18 +1783,27 @@
       "id": "q7",
       "text": "q11",
       "at": "2026-11-26T17:25:19.598Z"
-    },
-    {
-      "id": "q11",
-      "text": "q8: how to apply high-temperature thermal compound evenly across the Little Dart's curved hull panels",
-      "at": "2026-11-26T17:15:20.134Z"
     }
   ],
   "nextSearch": {
-    "text": "high altitude transformer derating curves",
-    "at": "2026-11-26T20:07:21.178Z"
+    "text": "thin air semiconductor thermal dissipation rates",
+    "at": "2026-11-26T20:17:20.958Z"
   },
   "said": [
+    {
+      "text": "almost got it",
+      "kind": "say",
+      "at": "2026-11-26T20:17:20.958Z",
+      "town": "day 116 06:20",
+      "place": "the comms tower"
+    },
+    {
+      "text": "kessa-9 air is thin and gritty, so the little dart's power core needs proper thermal margin before i push it up to orbit.",
+      "kind": "think",
+      "at": "2026-11-26T20:17:20.958Z",
+      "town": "day 116 06:20",
+      "place": "the comms tower"
+    },
     {
       "text": "let us see what the network has to say about space tiles.",
       "kind": "say",
@@ -2825,20 +2839,6 @@
       "at": "2026-11-26T03:54:04.198Z",
       "town": "day 110 19:13",
       "place": "the junk market"
-    },
-    {
-      "text": "a trader's got a heap of broken power couplers on their tarp. time to get my soldering iron hot and fix 'em up.",
-      "kind": "think",
-      "at": "2026-11-26T03:54:04.198Z",
-      "town": "day 110 19:13",
-      "place": "the junk market"
-    },
-    {
-      "text": "just stretching the treads, nothing to see here!",
-      "kind": "say",
-      "at": "2026-11-26T03:40:33.498Z",
-      "town": "day 110 17:25",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2849,9 +2849,13 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-26T20:07:21.178Z",
+  "feedArchivedAt": "2026-11-26T20:17:20.958Z",
   "plans": [],
   "searches": [
+    {
+      "q": "high altitude transformer derating curves",
+      "at": "2026-11-26T20:17:20.958Z"
+    },
     {
       "q": "high altitude thermal conductivity specs",
       "at": "2026-11-26T20:07:21.178Z"
@@ -2895,10 +2899,6 @@
     {
       "q": "Mars rovers",
       "at": "2026-11-26T11:16:17.668Z"
-    },
-    {
-      "q": "inertial guidance systems for sub-orbital hops",
-      "at": "2026-11-26T09:51:15.856Z"
     }
   ],
   "lampOutUntil": "2026-11-26T19:45:20.267Z",

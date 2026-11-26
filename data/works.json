@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 29",
-    "progress": 87,
-    "version": 12,
-    "lastChange": "applied a smooth layer of thermal paste across the Little Dart's processor heat sink using the copper wire Bix for delicate positioning (used Bix, a coil of copper wire)",
+    "progress": 97,
+    "version": 13,
+    "lastChange": "welded a custom titanium exhaust flange onto the Little Dart's aft propulsion housing using Gus for extra leverage (used Gus, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 13,
+        "change": "welded a custom titanium exhaust flange onto the Little Dart's aft propulsion housing using Gus for extra leverage (used Gus, a cockpit switch that still clicks)",
+        "progress": 97,
+        "at": "2026-11-26T19:08:22.447Z"
+      },
       {
         "version": 12,
         "change": "applied a smooth layer of thermal paste across the Little Dart's processor heat sink using the copper wire Bix for delicate positioning (used Bix, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "welding the final row of thermal shielding tiles around the engine exhaust cowl using the micro torch",
         "progress": 28,
         "at": "2026-11-25T03:14:22.009Z"
-      },
-      {
-        "version": 3,
-        "change": "welding the next batch of silica heat tiles onto the lower starboard side using the micro torch (used Dibs, a dented fuel cell)",
-        "progress": 24,
-        "at": "2026-11-25T03:04:21.851Z"
       }
     ],
     "launched": [
@@ -4095,7 +4095,7 @@
         ]
       }
     ],
-    "partsUsed": 12,
+    "partsUsed": 14,
     "parts": [
       {
         "name": "Mabel",
@@ -4152,6 +4152,12 @@
         "name": "Bix",
         "what": "a coil of copper wire",
         "version": 12
+      },
+      {
+        "name": "Gus",
+        "what": "a cockpit switch that still clicks",
+        "good": true,
+        "version": 13
       }
     ],
     "design": null
@@ -4402,21 +4408,12 @@
     {
       "name": "Rusty Jr",
       "what": "a coil of copper wire",
-      "at": "2026-11-26T18:20:58.504Z",
-      "carrying": true
+      "at": "2026-11-26T18:20:58.504Z"
     },
     {
       "name": "Tok",
       "what": "a tiny gyroscope",
-      "at": "2026-11-26T18:20:58.504Z",
-      "carrying": true
-    },
-    {
-      "name": "Gus",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-26T18:10:59.097Z",
-      "good": true,
-      "carrying": true
+      "at": "2026-11-26T18:20:58.504Z"
     }
   ],
   "reads": [

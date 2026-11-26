@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 30",
-    "progress": 8,
-    "version": 1,
-    "lastChange": "adding high-grade titanium reinforcement struts to the engine bay (used Rusty Jr, a coil of copper wire)",
+    "progress": 16,
+    "version": 2,
+    "lastChange": "mounting lightweight ceramic heat shield tiles along the ventral hull panels (used Nim, a cracked navigation chip)",
     "log": [
+      {
+        "version": 2,
+        "change": "mounting lightweight ceramic heat shield tiles along the ventral hull panels (used Nim, a cracked navigation chip)",
+        "progress": 16,
+        "at": "2026-11-26T23:33:52.875Z"
+      },
       {
         "version": 1,
         "change": "adding high-grade titanium reinforcement struts to the engine bay (used Rusty Jr, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "Wiring up the main flight console to the thermal sensors using some salvaged lead-shielding to prevent interference. (used Lorna, a cracked navigation chip)",
         "progress": 48,
         "at": "2026-11-25T05:05:30.892Z"
-      },
-      {
-        "version": 6,
-        "change": "Installing the high-pressure fuel line gaskets and securing them with the copper wire I call Dibs to prevent vibration-induced leaks. (used Tok, a little landing strut)",
-        "progress": 40,
-        "at": "2026-11-25T04:46:44.999Z"
       }
     ],
     "launched": [
@@ -4169,12 +4169,17 @@
         ]
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Rusty Jr",
         "what": "a coil of copper wire",
         "version": 1
+      },
+      {
+        "name": "Nim",
+        "what": "a cracked navigation chip",
+        "version": 2
       }
     ],
     "design": null
@@ -4430,11 +4435,6 @@
     {
       "name": "Nim",
       "what": "a mystery box that hums",
-      "at": "2026-11-26T22:04:21.819Z"
-    },
-    {
-      "name": "Nim",
-      "what": "a cracked navigation chip",
       "at": "2026-11-26T22:04:21.819Z"
     }
   ],

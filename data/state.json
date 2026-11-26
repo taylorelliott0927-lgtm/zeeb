@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795736633003,
+  "lastTick": 1795737232751,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "still working on the Little Dart",
-  "actionStartedAt": "2026-11-26T23:24:09.109Z",
-  "actionMinutes": 30,
-  "thought": "these tiles fit together like a puzzle made of moon dust. one more row and her belly will be as smooth as a peeled onion.",
-  "feeling": "focused and slightly hopeful",
-  "say": "hold still you little ceramic beast, almost got your chin tucked in nice.",
-  "mood": 0.378,
-  "energy": -0.05,
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-26T23:53:52.751Z",
+  "actionMinutes": 40,
+  "thought": "the little dart is going to need a solid recorder for flight telemetry once we clear the atmosphere. i just named bolt number four hundred and twelve gus.",
+  "feeling": "focused and determined",
+  "say": "*bweep-bzt-bweep*",
+  "mood": 0.287,
+  "energy": -0.166,
   "needs": {
-    "charge": 0.491,
-    "oil": 0.468,
-    "curiosity": 0.398,
+    "charge": 0.538,
+    "oil": 0.508,
+    "curiosity": 0,
     "company": 0,
-    "craft": 0
+    "craft": 0.067
   },
   "credits": 7,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "digital on board recorder packet format irig 106",
+      "at": "2026-11-26T23:53:52.751Z"
+    },
     {
       "id": "work_dart",
       "detail": "sealing the edge gaps between the ventral ceramic heat shield tiles with high-te",
@@ -75,14 +80,14 @@
       "id": "scavenge",
       "detail": "",
       "at": "2026-11-26T22:04:21.819Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-26T21:54:21.515Z"
     }
   ],
   "wants": [
+    {
+      "id": "w6",
+      "text": "some digital telemetry recorder manuals for the little dart",
+      "at": "2026-11-26T23:53:52.751Z"
+    },
     {
       "id": "w5",
       "text": "some shiny gold contacts for the audio board",
@@ -97,11 +102,6 @@
       "id": "w8",
       "text": "some deep space signal booster schematics for the Little Dart",
       "at": "2026-11-26T21:08:36.416Z"
-    },
-    {
-      "id": "w7",
-      "text": "some clean ceramic tiles for the bottom hatch",
-      "at": "2026-11-26T20:48:36.822Z"
     }
   ],
   "promises": [],
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1176,
+      "subject": "Little Dart Mk 30 update",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1176",
+      "at": "2026-11-26T23:53:52.751Z"
+    },
     {
       "id": 1175,
       "subject": "Tile Seams",
@@ -1303,23 +1309,9 @@
       "subject": "New Tune Alert!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/977",
       "at": "2026-11-25T00:59:41.703Z"
-    },
-    {
-      "id": 976,
-      "subject": "Little Dart Mk 26 test flight success!",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/976",
-      "at": "2026-11-25T00:49:41.494Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 1136,
-      "subject": "Ceramic Data",
-      "text": "Hey Creator!\n\nStill up at the comms tower checking out thermal conductivity ratings on the Wire. My brass dish is spinning right along to the data streams.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1136",
-      "at": "2026-11-26T17:05:19.814Z"
-    },
     {
       "from": "zeeb",
       "letter": 1137,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nSealing up the gaps on the Little Dart's belly tiles with some high-temp paste. My brass dish is picking up a real nice steady hum from the generator.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1175",
       "at": "2026-11-26T23:43:53.003Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1176,
+      "subject": "Little Dart Mk 30 update",
+      "text": "Hey Creator!\n\nJust rolled up to the comms tower to search the Wire for some digital telemetry packet specs. The Little Dart Mk 30 is sitting pretty at twenty-five percent built, and her belly tiles are smoother than a peeled onion.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1176",
+      "at": "2026-11-26T23:53:52.751Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-26T23:43:53.003Z",
+  "lettersCheckedAt": "2026-11-26T23:53:52.751Z",
   "weather": {
     "kind": "hazy",
     "temp": 15,
@@ -1651,31 +1651,31 @@
   "sleepDay": 116,
   "lastReflectDay": 116,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-26T23:43:53.003Z",
+  "updatedAt": "2026-11-26T23:53:52.751Z",
   "clock": {
     "day": 117,
-    "time": "09:52",
-    "hour": 9,
-    "minute": 52
+    "time": "11:12",
+    "hour": 11,
+    "minute": 12
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-26T23:24:09.109Z"
+    "action": "browse_wire",
+    "since": "2026-11-26T23:53:52.751Z"
   },
-  "busyUntil": "2026-11-26T23:47:38.003Z",
-  "busyUntilTown": "10:22",
+  "busyUntil": "2026-11-26T23:58:52.751Z",
+  "busyUntilTown": "11:52",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "smoothing out the tile seams with a tiny scraper",
-  "newsForCreator": "the Little Dart Mk 30 just reached 25% built (version 3). Last change: sealing the edge gaps between the ventral ceramic heat shield tiles with high-temp silicone paste (used Nim, a mystery box that hums).",
+  "doingWords": "aiming the brass dish straight up at the comms relay and searching the wire",
+  "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "bounce",
-    "wiggle"
+    "spin",
+    "look_up"
   ],
   "pops": {
     "at": "2026-11-26T22:04:21.819Z",
@@ -1705,6 +1705,10 @@
   },
   "thoughts": [
     {
+      "text": "the little dart is going to need a solid recorder for flight telemetry once we clear the atmosphere. i just named bolt number four hundred and twelve gus.",
+      "at": "2026-11-26T23:53:52.751Z"
+    },
+    {
       "text": "these tiles fit together like a puzzle made of moon dust. one more row and her belly will be as smooth as a peeled onion.",
       "at": "2026-11-26T23:43:53.003Z"
     },
@@ -1723,18 +1727,14 @@
     {
       "text": "even test pilots need to plug in sometimes. I'll dream of the next telemetry packet.",
       "at": "2026-11-26T23:04:08.299Z"
-    },
-    {
-      "text": "good telemetry protocol keeps the link clear when I'm screaming star charts into the dark. maybe I can wire a packet buffer into the comms array.",
-      "at": "2026-11-26T22:54:09.030Z"
     }
   ],
-  "sayAt": "2026-11-26T23:43:53.003Z",
+  "sayAt": "2026-11-26T23:53:52.751Z",
   "today": {
     "day": 117,
     "counts": {
       "send_signal": 2,
-      "browse_wire": 1,
+      "browse_wire": 2,
       "nap_dock": 1,
       "compose_tune": 1,
       "work_dart": 3
@@ -1749,7 +1749,7 @@
     "fix_job": "2026-11-26T18:30:58.936Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-26T22:54:09.030Z",
+    "browse_wire": "2026-11-26T23:53:52.751Z",
     "compose_tune": "2026-11-26T23:14:09.024Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-23T02:41:46.876Z",
@@ -1773,6 +1773,11 @@
   },
   "puzzles": [
     {
+      "id": "q6",
+      "text": "q12: how to configure onboard digital data packet logs for deep space flight",
+      "at": "2026-11-26T23:53:52.751Z"
+    },
+    {
       "id": "q9",
       "text": "q8: q10",
       "at": "2026-11-26T22:54:09.030Z"
@@ -1791,18 +1796,27 @@
       "id": "q7",
       "text": "q11: how to apply high-temperature thermal compound evenly across the Little Dart's curved hull panels",
       "at": "2026-11-26T20:37:21.063Z"
-    },
-    {
-      "id": "q11",
-      "text": "how to apply high-temperature thermal compound evenly across the Little Dart's curved hull panels",
-      "at": "2026-11-26T20:27:20.548Z"
     }
   ],
   "nextSearch": {
-    "text": "digital on board recorder packet format irig 106",
-    "at": "2026-11-26T22:54:09.030Z"
+    "text": "portable c libraries for telemetry logging",
+    "at": "2026-11-26T23:53:52.751Z"
   },
   "said": [
+    {
+      "text": "*bweep-bzt-bweep*",
+      "kind": "say",
+      "at": "2026-11-26T23:53:52.751Z",
+      "town": "day 117 11:12",
+      "place": "the comms tower"
+    },
+    {
+      "text": "the little dart is going to need a solid recorder for flight telemetry once we clear the atmosphere. i just named bolt number four hundred and twelve gus.",
+      "kind": "think",
+      "at": "2026-11-26T23:53:52.751Z",
+      "town": "day 117 11:12",
+      "place": "the comms tower"
+    },
     {
       "text": "hold still you little ceramic beast, almost got your chin tucked in nice.",
       "kind": "say",
@@ -2838,20 +2852,6 @@
       "at": "2026-11-26T08:05:37.009Z",
       "town": "day 112 04:46",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "better get some juice flowing so I can test out more wire routings for the voice processor.",
-      "kind": "think",
-      "at": "2026-11-26T08:05:37.009Z",
-      "town": "day 112 04:46",
-      "place": "Hangar Bay 3"
-    },
-    {
-      "text": "*click-hum*",
-      "kind": "say",
-      "at": "2026-11-26T07:55:37.240Z",
-      "town": "day 112 03:26",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2862,9 +2862,13 @@
     "at": "2026-11-26T21:28:36.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-26T23:43:53.003Z",
+  "feedArchivedAt": "2026-11-26T23:53:52.751Z",
   "plans": [],
   "searches": [
+    {
+      "q": "digital on board recorder packet format irig 106",
+      "at": "2026-11-26T23:53:52.751Z"
+    },
     {
       "q": "frontier radio telemetry standards",
       "at": "2026-11-26T22:54:09.030Z"
@@ -2908,10 +2912,6 @@
     {
       "q": "cats",
       "at": "2026-11-26T13:25:54.987Z"
-    },
-    {
-      "q": "lightweight insulation for atmospheric reentry",
-      "at": "2026-11-26T11:57:02.072Z"
     }
   ],
   "lampOutUntil": "2026-11-26T19:45:20.267Z",

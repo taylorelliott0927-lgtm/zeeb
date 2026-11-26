@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 29",
-    "progress": 74,
-    "version": 10,
-    "lastChange": "mounted three flexible solar cells along the starboard curve of the Little Dart's hull and sealed the seams with a drop of high-grade resin (used Wren, a little landing strut)",
+    "progress": 80,
+    "version": 11,
+    "lastChange": "routed the copper wire (Nim) through the instrument panel and soldered the navigation power bus (used Nim, a coil of copper wire)",
     "log": [
+      {
+        "version": 11,
+        "change": "routed the copper wire (Nim) through the instrument panel and soldered the navigation power bus (used Nim, a coil of copper wire)",
+        "progress": 80,
+        "at": "2026-11-26T15:38:29.932Z"
+      },
       {
         "version": 10,
         "change": "mounted three flexible solar cells along the starboard curve of the Little Dart's hull and sealed the seams with a drop of high-grade resin (used Wren, a little landing strut)",
@@ -238,12 +244,6 @@
         "change": "added high-temp silica heat tiles to the lower hull using Tilly for precise alignment (used Tilly, a tiny gyroscope)",
         "progress": 16,
         "at": "2026-11-25T02:54:22.342Z"
-      },
-      {
-        "version": 1,
-        "change": "added the new custom guidance module frame and welded the intake cowlings using Tilly (used Wren, a cracked navigation chip)",
-        "progress": 7,
-        "at": "2026-11-25T02:06:16.225Z"
       }
     ],
     "launched": [
@@ -4095,7 +4095,7 @@
         ]
       }
     ],
-    "partsUsed": 10,
+    "partsUsed": 11,
     "parts": [
       {
         "name": "Mabel",
@@ -4142,6 +4142,11 @@
         "name": "Wren",
         "what": "a little landing strut",
         "version": 10
+      },
+      {
+        "name": "Nim",
+        "what": "a coil of copper wire",
+        "version": 11
       }
     ],
     "design": null
@@ -4388,13 +4393,7 @@
       "at": "2026-11-17T03:08:47.132Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Nim",
-      "what": "a coil of copper wire",
-      "at": "2026-11-26T07:55:37.240Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "ACE Cargo Release Business Rules and Processes | U.S. Customs and Border Protection",

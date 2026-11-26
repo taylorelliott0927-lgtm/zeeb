@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795680936483,
+  "lastTick": 1795682687487,
   "asleep": false,
   "place": "tower",
-  "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-26T08:15:36.483Z",
+  "action": "follow_link",
+  "doing": "following a link across the Wire",
+  "actionStartedAt": "2026-11-26T08:44:47.487Z",
   "actionMinutes": 45,
-  "thought": "base-40 callsigns packed into 48 bits are mighty clever for getting heard across the void. maybe the little dart needs a radio stack like that.",
-  "feeling": "curious and tuned in",
-  "say": "*bweep-bzt-bweep* time to check the subspace relay.",
-  "mood": 0.344,
-  "energy": 0.602,
+  "thought": "no proprietary locks on the radio stream means i could wire a custom transceiver straight into the little dart. imagine talking across the sector on an open wave.",
+  "feeling": "inspired and buzzing",
+  "say": "ooh, 48 bits is plenty for a nice loud hello.",
+  "mood": 0.347,
+  "energy": 0.447,
   "needs": {
-    "charge": 0.047,
-    "oil": 0.16,
-    "curiosity": 0.227,
-    "company": 0,
-    "craft": 0.34
+    "charge": 0.183,
+    "oil": 0.277,
+    "curiosity": 0.06,
+    "company": 0.036,
+    "craft": 0.535
   },
   "credits": 5,
   "recent": [
+    {
+      "id": "follow_link",
+      "detail": "8",
+      "at": "2026-11-26T08:44:47.487Z"
+    },
     {
       "id": "browse_wire",
       "detail": "m17 native 4-fsk digital voice coding chain",
@@ -75,11 +80,6 @@
       "id": "fix_job",
       "detail": "",
       "at": "2026-11-26T06:14:42.391Z"
-    },
-    {
-      "id": "fix_job",
-      "detail": "fixed the cracked power converter terminal for old Barnaby at stall four",
-      "at": "2026-11-26T06:04:41.931Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1102,
+      "subject": "Reading up on M17 packets!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1102",
+      "at": "2026-11-26T08:44:47.487Z"
+    },
     {
       "id": 1101,
       "subject": "Wire browsing for the Little Dart",
@@ -1303,23 +1309,9 @@
       "subject": "Ceramic shielding time!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/903",
       "at": "2026-11-24T00:28:55.837Z"
-    },
-    {
-      "id": 902,
-      "subject": "Quick Power Nap",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/902",
-      "at": "2026-11-24T00:18:55.921Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 1062,
-      "subject": "Wire diving for the Little Dart",
-      "text": "Hey Creator!\n\nStill parked up at the comms tower digging through the data packets. Trying to map out how to squeeze a mini back shell recovery system into the Little Dart without adding too much weight. My dish is spinning fast and catching some great specs today. *bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1062",
-      "at": "2026-11-26T00:25:35.391Z"
-    },
     {
       "from": "zeeb",
       "letter": 1063,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nRolled away from the nap dock because my curiosity meter was beeping red. Heading up to the comms tower now to look up digital voice coding chains on the Wire. The Little Dart is going to talk back to the stars very soon.\n\n*bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1101",
       "at": "2026-11-26T08:15:36.483Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1102,
+      "subject": "Reading up on M17 packets!",
+      "text": "Hey Creator!\n\nStill up at the comms tower checking out the M17 specs on the Wire. My brass dish is spinning a little five-note tune while I read about 48-bit callsigns. The Little Dart is going to have the clearest radio stack in this whole crater.\n\n*bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1102",
+      "at": "2026-11-26T08:44:47.487Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,43 +1639,43 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-26T08:15:36.483Z",
+  "lettersCheckedAt": "2026-11-26T08:44:47.487Z",
   "weather": {
     "kind": "clear",
-    "temp": 15,
-    "wind": 7,
+    "temp": 16,
+    "wind": 8,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-26T08:05:37.074Z"
+    "at": "2026-11-26T08:44:47.618Z"
   },
   "sleepDay": 111,
   "lastReflectDay": 111,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-26T08:15:36.483Z",
+  "updatedAt": "2026-11-26T08:44:47.487Z",
   "clock": {
     "day": 112,
-    "time": "06:06",
-    "hour": 6,
-    "minute": 6
+    "time": "09:59",
+    "hour": 9,
+    "minute": 59
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-26T08:15:36.483Z"
+    "action": "follow_link",
+    "since": "2026-11-26T08:44:47.487Z"
   },
-  "busyUntil": "2026-11-26T08:21:13.983Z",
-  "busyUntilTown": "06:51",
+  "busyUntil": "2026-11-26T08:50:24.987Z",
+  "busyUntilTown": "10:44",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "rolling up to the comms tower to search the wire for codec2 links",
+  "doingWords": "tapping a metallic rhythm while reading specs on the comms dish",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "spin",
-    "look_up"
+    "look_up",
+    "spin"
   ],
   "pops": {
     "at": "2026-11-26T07:55:37.240Z",
@@ -1700,6 +1700,10 @@
   },
   "thoughts": [
     {
+      "text": "no proprietary locks on the radio stream means i could wire a custom transceiver straight into the little dart. imagine talking across the sector on an open wave.",
+      "at": "2026-11-26T08:44:47.487Z"
+    },
+    {
       "text": "base-40 callsigns packed into 48 bits are mighty clever for getting heard across the void. maybe the little dart needs a radio stack like that.",
       "at": "2026-11-26T08:15:36.483Z"
     },
@@ -1718,27 +1722,24 @@
     {
       "text": "this fresh oil is hitting all the right spots in my joints. *bweep* now my treads feel ready to roll right back to the hangar.",
       "at": "2026-11-26T07:35:36.385Z"
-    },
-    {
-      "text": "oil makes the wheels spin nice and smooth. then i can get right back to building the Little Dart.",
-      "at": "2026-11-26T07:25:37.603Z"
     }
   ],
-  "sayAt": "2026-11-26T08:15:36.483Z",
+  "sayAt": "2026-11-26T08:44:47.487Z",
   "today": {
     "day": 112,
     "counts": {
       "drink_oil": 1,
       "work_dart": 1,
       "nap_dock": 2,
-      "browse_wire": 1
+      "browse_wire": 1,
+      "follow_link": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-26T07:45:36.316Z",
     "read_news": "2026-11-25T13:46:50.332Z",
     "drink_oil": "2026-11-26T07:35:36.385Z",
-    "follow_link": "2026-11-26T03:20:34.220Z",
+    "follow_link": "2026-11-26T08:44:47.487Z",
     "scavenge": "2026-11-26T06:44:43.103Z",
     "fix_job": "2026-11-26T06:14:42.391Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
@@ -1767,6 +1768,11 @@
   },
   "puzzles": [
     {
+      "id": "q10",
+      "text": "q7: how to route codec2 streams into the ZL38063 audio pin layout",
+      "at": "2026-11-26T08:44:47.487Z"
+    },
+    {
       "id": "q7",
       "text": "q11: how to route codec2 streams into the ZL38063 audio pin layout",
       "at": "2026-11-26T07:35:36.385Z"
@@ -1785,18 +1791,27 @@
       "id": "q9",
       "text": "how to integrate voice recognition microchips into the Little Dart control deck",
       "at": "2026-11-26T02:50:34.519Z"
-    },
-    {
-      "id": "q8",
-      "text": "q9: how to integrate voice recognition microchips into the Little Dart control deck",
-      "at": "2026-11-26T02:43:03.418Z"
     }
   ],
   "nextSearch": {
-    "text": "codec2 bitrates and implementation details",
-    "at": "2026-11-26T08:15:36.483Z"
+    "text": "Codec 2 specification",
+    "at": "2026-11-26T08:44:47.487Z"
   },
   "said": [
+    {
+      "text": "ooh, 48 bits is plenty for a nice loud hello.",
+      "kind": "say",
+      "at": "2026-11-26T08:44:47.487Z",
+      "town": "day 112 09:59",
+      "place": "the comms tower"
+    },
+    {
+      "text": "no proprietary locks on the radio stream means i could wire a custom transceiver straight into the little dart. imagine talking across the sector on an open wave.",
+      "kind": "think",
+      "at": "2026-11-26T08:44:47.487Z",
+      "town": "day 112 09:59",
+      "place": "the comms tower"
+    },
     {
       "text": "*bweep-bzt-bweep* time to check the subspace relay.",
       "kind": "say",
@@ -2832,20 +2847,6 @@
       "at": "2026-11-25T15:17:12.344Z",
       "town": "day 106 18:45",
       "place": "the fuel depot"
-    },
-    {
-      "text": "Time to dig up some treasures! *bweep-bwee*",
-      "kind": "say",
-      "at": "2026-11-25T15:40:30.465Z",
-      "town": "day 106 17:25",
-      "place": "the junk market"
-    },
-    {
-      "text": "If I dig deep enough under the scrap bins, maybe I'll find some PTFE tether sleeves or slick high-temp tiles.",
-      "kind": "think",
-      "at": "2026-11-25T15:40:30.465Z",
-      "town": "day 106 17:25",
-      "place": "the junk market"
     }
   ],
   "flight": {
@@ -2856,7 +2857,7 @@
     "at": "2026-11-25T00:39:42.013Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-26T08:15:36.483Z",
+  "feedArchivedAt": "2026-11-26T08:44:47.487Z",
   "plans": [],
   "searches": [
     {

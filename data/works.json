@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 30",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 8,
+    "version": 1,
+    "lastChange": "adding high-grade titanium reinforcement struts to the engine bay (used Rusty Jr, a coil of copper wire)",
     "log": [
+      {
+        "version": 1,
+        "change": "adding high-grade titanium reinforcement struts to the engine bay (used Rusty Jr, a coil of copper wire)",
+        "progress": 8,
+        "at": "2026-11-26T23:24:09.109Z"
+      },
       {
         "version": 14,
         "change": "welded custom lightweight ceramic tile heat shield composites onto the Little Dart's underside using Tok for precise alignment (used Tok, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "Installing the high-pressure fuel line gaskets and securing them with the copper wire I call Dibs to prevent vibration-induced leaks. (used Tok, a little landing strut)",
         "progress": 40,
         "at": "2026-11-25T04:46:44.999Z"
-      },
-      {
-        "version": 5,
-        "change": "welding the pilot seat frame and mounting the main flight console inside the cockpit",
-        "progress": 30,
-        "at": "2026-11-25T03:56:45.538Z"
       }
     ],
     "launched": [
@@ -4169,8 +4169,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Rusty Jr",
+        "what": "a coil of copper wire",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -4430,11 +4436,6 @@
       "name": "Nim",
       "what": "a cracked navigation chip",
       "at": "2026-11-26T22:04:21.819Z"
-    },
-    {
-      "name": "Rusty Jr",
-      "what": "a coil of copper wire",
-      "at": "2026-11-26T18:20:58.504Z"
     }
   ],
   "reads": [

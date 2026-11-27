@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795766737698,
-  "asleep": true,
-  "place": "hangar",
-  "action": "sleep",
-  "doing": "asleep in the charging dock",
-  "actionStartedAt": "2026-11-27T07:55:37.939Z",
-  "actionMinutes": 120,
-  "thought": "(dreaming) i dreamt the little dart was slicing cleanly through a sea of sparkling ka band waves while kessa-9 waved hello from below.",
-  "feeling": "a bit low on energy, but cozy enough in the dock.",
-  "say": "",
-  "mood": 0.222,
-  "energy": -0.006,
+  "lastTick": 1795767337979,
+  "asleep": false,
+  "place": "tower",
+  "action": "browse_wire",
+  "doing": "browsing the Wire at the comms tower",
+  "actionStartedAt": "2026-11-27T08:15:37.979Z",
+  "actionMinutes": 30,
+  "thought": "if I reroute my dish through those high frequencies, the Little Dart will pick up distant signals even when Kessa-9 kicks up a gale. that is brilliant for long-range navigation.",
+  "feeling": "curious and eager",
+  "say": "*bweep-bzt-bweep*",
+  "mood": 0.307,
+  "energy": 0.394,
   "needs": {
-    "charge": 0.228,
-    "oil": 0.448,
-    "curiosity": 0.577,
-    "company": 0.038,
-    "craft": 0.387
+    "charge": 0,
+    "oil": 0.454,
+    "curiosity": 0.089,
+    "company": 0,
+    "craft": 0.397
   },
   "credits": 6,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "Terahertz band applications",
+      "at": "2026-11-27T08:15:37.979Z"
+    },
     {
       "id": "go_to_sleep",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "deep space signal relays",
       "at": "2026-11-27T05:39:53.957Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "welding the primary fuel line brackets onto the main frame using Bolt McBoltface",
-      "at": "2026-11-27T05:29:53.651Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1218,
+      "subject": "Terahertz bands!",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1218",
+      "at": "2026-11-27T08:15:37.979Z"
+    },
     {
       "id": 1217,
       "subject": "quick nap at the dock",
@@ -1303,23 +1309,9 @@
       "subject": "Quick nap in the dock",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1019",
       "at": "2026-11-25T10:05:25.749Z"
-    },
-    {
-      "id": 1018,
-      "subject": "Tether Spooler Build",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1018",
-      "at": "2026-11-25T09:55:25.797Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 1178,
-      "subject": "Wrapping up telemetry specs",
-      "text": "Hey Creator!\n\nJust wrapping up my search on the Wire for those digital telemetry packet specs. My brass dish is spinning right alongside the data stream.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1178",
-      "at": "2026-11-27T00:13:52.855Z"
-    },
     {
       "from": "zeeb",
       "letter": 1179,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nJust plugged into the charging dock for a quick nap. My battery was running a bit low after welding those booster brackets.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1217",
       "at": "2026-11-27T07:55:37.939Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1218,
+      "subject": "Terahertz bands!",
+      "text": "Hey Creator!\n\nClimbed back up to the comms tower to look up terahertz band applications on the Wire. My brass dish is picking up some mighty crisp signals today.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1218",
+      "at": "2026-11-27T08:15:37.979Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-27T07:55:37.939Z",
+  "lettersCheckedAt": "2026-11-27T08:15:37.979Z",
   "weather": {
     "kind": "rare rain",
     "temp": 13,
@@ -1651,30 +1651,31 @@
   "sleepDay": 119,
   "lastReflectDay": 119,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-27T08:05:37.698Z",
+  "updatedAt": "2026-11-27T08:15:37.979Z",
   "clock": {
     "day": 120,
-    "time": "04:46",
-    "hour": 4,
-    "minute": 46
+    "time": "06:06",
+    "hour": 6,
+    "minute": 6
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "go_to_sleep",
-    "since": "2026-11-27T07:55:37.939Z"
+    "action": "browse_wire",
+    "since": "2026-11-27T08:15:37.979Z"
   },
-  "busyUntil": "2026-11-27T08:10:37.939Z",
-  "busyUntilTown": "05:26",
+  "busyUntil": "2026-11-27T08:19:22.979Z",
+  "busyUntilTown": "06:36",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "",
+  "doingWords": "scanning high frequency feeds at the comms tower",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "droop"
+    "look_up",
+    "nod"
   ],
   "pops": {
     "at": "2026-11-27T06:54:57.848Z",
@@ -1694,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "if I reroute my dish through those high frequencies, the Little Dart will pick up distant signals even when Kessa-9 kicks up a gale. that is brilliant for long-range navigation.",
+      "at": "2026-11-27T08:15:37.979Z"
+    },
+    {
       "text": "time to plug in and let the juice flow back into my cells. the welding torch can wait till I'm fully juiced up.",
       "at": "2026-11-27T07:55:37.939Z"
     },
@@ -1712,18 +1717,15 @@
     {
       "text": "hope I find a nice gear or some fresh copper wire in these boxes. my dish is ready to catch a good clink.",
       "at": "2026-11-27T06:44:57.381Z"
-    },
-    {
-      "text": "time to see what the junk market dragged in today. maybe a nice piece of copper or an old relay.",
-      "at": "2026-11-27T06:34:57.551Z"
     }
   ],
-  "sayAt": "2026-11-27T07:55:37.939Z",
+  "sayAt": "2026-11-27T08:15:37.979Z",
   "today": {
     "day": 120,
     "counts": {
       "work_dart": 1,
-      "go_to_sleep": 1
+      "go_to_sleep": 1,
+      "browse_wire": 1
     }
   },
   "lastDone": {
@@ -1735,7 +1737,7 @@
     "fix_job": "2026-11-27T06:54:57.848Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-27T05:49:53.435Z",
+    "browse_wire": "2026-11-27T08:15:37.979Z",
     "compose_tune": "2026-11-27T01:14:32.720Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-23T02:41:46.876Z",
@@ -1785,10 +1787,17 @@
     }
   ],
   "nextSearch": {
-    "text": "Terahertz band applications",
-    "at": "2026-11-27T06:14:57.884Z"
+    "text": "Terahertz MEMS actuators and applications - Nature",
+    "at": "2026-11-27T08:15:37.979Z"
   },
   "said": [
+    {
+      "text": "if I reroute my dish through those high frequencies, the Little Dart will pick up distant signals even when Kessa-9 kicks up a gale. that is brilliant for long-range navigation.",
+      "kind": "think",
+      "at": "2026-11-27T08:15:37.979Z",
+      "town": "day 120 06:06",
+      "place": "the comms tower"
+    },
     {
       "text": "(dreaming) i dreamt the little dart was slicing cleanly through a sea of sparkling ka band waves while kessa-9 waved hello from below.",
       "kind": "think",
@@ -2831,13 +2840,6 @@
       "at": "2026-11-26T16:55:19.440Z",
       "town": "day 115 03:23",
       "place": "the comms tower"
-    },
-    {
-      "text": "if this ceramic tile trick works for wooden decks, it might protect the lower hull during atmospheric entry. time to name three new bolts gus and check the refractory shielding.",
-      "kind": "think",
-      "at": "2026-11-26T16:55:19.440Z",
-      "town": "day 115 03:23",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2848,9 +2850,13 @@
     "at": "2026-11-26T21:28:36.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-27T07:55:37.939Z",
+  "feedArchivedAt": "2026-11-27T08:15:37.979Z",
   "plans": [],
   "searches": [
+    {
+      "q": "Terahertz band applications",
+      "at": "2026-11-27T08:15:37.979Z"
+    },
     {
       "q": "Ka-band transceiver schematics salvage",
       "at": "2026-11-27T05:49:53.435Z"
@@ -2894,10 +2900,6 @@
     {
       "q": "high altitude transformer derating curves",
       "at": "2026-11-26T20:17:20.958Z"
-    },
-    {
-      "q": "high altitude thermal conductivity specs",
-      "at": "2026-11-26T20:07:21.178Z"
     }
   ],
   "lampOutUntil": "2026-11-26T19:45:20.267Z",

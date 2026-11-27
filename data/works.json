@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 30",
-    "progress": 48,
-    "version": 8,
-    "lastChange": "welding the primary fuel line brackets onto the main frame using Bolt McBoltface",
+    "progress": 55,
+    "version": 9,
+    "lastChange": "welding the rear secondary booster brackets using Brakk (the bent stabiliser fin) (used Lorna, a dented fuel cell)",
     "log": [
+      {
+        "version": 9,
+        "change": "welding the rear secondary booster brackets using Brakk (the bent stabiliser fin) (used Lorna, a dented fuel cell)",
+        "progress": 55,
+        "at": "2026-11-27T07:45:37.841Z"
+      },
       {
         "version": 8,
         "change": "welding the primary fuel line brackets onto the main frame using Bolt McBoltface",
@@ -238,12 +244,6 @@
         "change": "assembling the miniature motorized tether spooler using a tiny copper wire named Rusty Jr. (used Mabel, a strip of hull plating)",
         "progress": 100,
         "at": "2026-11-25T09:55:25.797Z"
-      },
-      {
-        "version": 13,
-        "change": "tuned the left thruster (used Captain, a scorched heat tile)",
-        "progress": 99,
-        "at": "2026-11-25T09:38:16.058Z"
       }
     ],
     "launched": [
@@ -4169,7 +4169,7 @@
         ]
       }
     ],
-    "partsUsed": 4,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Rusty Jr",
@@ -4190,6 +4190,12 @@
         "name": "Pim",
         "what": "a perfectly good bolt",
         "version": 4
+      },
+      {
+        "name": "Lorna",
+        "what": "a dented fuel cell",
+        "good": true,
+        "version": 9
       }
     ],
     "design": null
@@ -4446,12 +4452,6 @@
       "name": "Brakk",
       "what": "a bent stabiliser fin",
       "at": "2026-11-27T06:44:57.381Z",
-      "good": true
-    },
-    {
-      "name": "Lorna",
-      "what": "a dented fuel cell",
-      "at": "2026-11-27T06:34:57.551Z",
       "good": true
     }
   ],

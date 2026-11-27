@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 30",
-    "progress": 76,
-    "version": 12,
-    "lastChange": "welding high-temp ceramic tile segments around the inner rim of the secondary booster nozzles",
+    "progress": 83,
+    "version": 13,
+    "lastChange": "welding high-temp ceramic tile segments around the inner rim of the primary booster nozzles (used Nim, a dented fuel cell)",
     "log": [
+      {
+        "version": 13,
+        "change": "welding high-temp ceramic tile segments around the inner rim of the primary booster nozzles (used Nim, a dented fuel cell)",
+        "progress": 83,
+        "at": "2026-11-27T13:23:50.712Z"
+      },
       {
         "version": 12,
         "change": "welding high-temp ceramic tile segments around the inner rim of the secondary booster nozzles",
@@ -238,12 +244,6 @@
         "change": "polished the nose cone (used Brakk, a coil of copper wire)",
         "progress": 32,
         "at": "2026-11-25T16:30:30.101Z"
-      },
-      {
-        "version": 3,
-        "change": "welding reinforced landing gear brackets onto the lower fuselage using Nim (used Nim, a perfectly good bolt)",
-        "progress": 25,
-        "at": "2026-11-25T15:27:12.802Z"
       }
     ],
     "launched": [
@@ -4169,7 +4169,7 @@
         ]
       }
     ],
-    "partsUsed": 9,
+    "partsUsed": 10,
     "parts": [
       {
         "name": "Rusty Jr",
@@ -4207,6 +4207,11 @@
         "name": "Nim",
         "what": "a little landing strut",
         "version": 11
+      },
+      {
+        "name": "Nim",
+        "what": "a dented fuel cell",
+        "version": 13
       }
     ],
     "design": null
@@ -4474,11 +4479,6 @@
       "name": "Mabel",
       "what": "a sensor eye with one crack",
       "at": "2026-11-27T12:38:04.120Z"
-    },
-    {
-      "name": "Nim",
-      "what": "a dented fuel cell",
-      "at": "2026-11-27T12:28:04.289Z"
     }
   ],
   "reads": [

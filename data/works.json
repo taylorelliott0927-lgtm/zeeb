@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 30",
-    "progress": 25,
-    "version": 3,
-    "lastChange": "sealing the edge gaps between the ventral ceramic heat shield tiles with high-temp silicone paste (used Nim, a mystery box that hums)",
+    "progress": 34,
+    "version": 4,
+    "lastChange": "soldering the backup telemetry leads onto the main frame junction box (used Pim, a perfectly good bolt)",
     "log": [
+      {
+        "version": 4,
+        "change": "soldering the backup telemetry leads onto the main frame junction box (used Pim, a perfectly good bolt)",
+        "progress": 34,
+        "at": "2026-11-27T01:04:33.092Z"
+      },
       {
         "version": 3,
         "change": "sealing the edge gaps between the ventral ceramic heat shield tiles with high-temp silicone paste (used Nim, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "Routing the copper mesh sensor shielding along the internal bulkhead and securing it with tiny bolts named Bolt and Barnaby. (used Otto, a little landing strut)",
         "progress": 66,
         "at": "2026-11-25T06:34:55.304Z"
-      },
-      {
-        "version": 8,
-        "change": "Riveting the lightweight titanium nose cone to the main forward bulkhead and routing the sensor cables through the new copper shielding. (used Dibs, a coil of copper wire)",
-        "progress": 58,
-        "at": "2026-11-25T06:24:54.340Z"
       }
     ],
     "launched": [
@@ -4169,7 +4169,7 @@
         ]
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 4,
     "parts": [
       {
         "name": "Rusty Jr",
@@ -4185,6 +4185,11 @@
         "name": "Nim",
         "what": "a mystery box that hums",
         "version": 3
+      },
+      {
+        "name": "Pim",
+        "what": "a perfectly good bolt",
+        "version": 4
       }
     ],
     "design": null
@@ -4431,13 +4436,7 @@
       "at": "2026-11-17T08:58:45.353Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Pim",
-      "what": "a perfectly good bolt",
-      "at": "2026-11-26T22:04:21.819Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Spiral Technology OTIS - Downloads",

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 31",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 7,
+    "version": 1,
+    "lastChange": "welding high-temp ceramic heat tiles onto the Little Dart's secondary booster nozzles (used Rusty Jr, a sensor eye with one crack)",
     "log": [
+      {
+        "version": 1,
+        "change": "welding high-temp ceramic heat tiles onto the Little Dart's secondary booster nozzles (used Rusty Jr, a sensor eye with one crack)",
+        "progress": 7,
+        "at": "2026-11-27T15:52:14.748Z"
+      },
       {
         "version": 15,
         "change": "welding high-temp ceramic shield brackets around the outer casing of the secondary booster nozzles (used Captain, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "welded reinforced titanium internal bulkheads along the main spine using Gus",
         "progress": 47,
         "at": "2026-11-25T18:36:42.171Z"
-      },
-      {
-        "version": 6,
-        "change": "tuned the left thruster",
-        "progress": 43,
-        "at": "2026-11-25T18:26:41.707Z"
       }
     ],
     "launched": [
@@ -4229,8 +4229,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Rusty Jr",
+        "what": "a sensor eye with one crack",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -4485,11 +4491,6 @@
       "name": "Fen",
       "what": "a bent stabiliser fin",
       "at": "2026-11-27T14:59:17.578Z"
-    },
-    {
-      "name": "Rusty Jr",
-      "what": "a sensor eye with one crack",
-      "at": "2026-11-27T12:38:04.120Z"
     }
   ],
   "reads": [

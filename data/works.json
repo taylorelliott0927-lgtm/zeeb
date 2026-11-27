@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 30",
-    "progress": 63,
-    "version": 10,
-    "lastChange": "insulating the secondary booster nozzles with high temp ceramic tile layers (used Brakk, a bent stabiliser fin)",
+    "progress": 73,
+    "version": 11,
+    "lastChange": "welding titanium-grade brackets onto the secondary booster nozzles (used Nim, a little landing strut)",
     "log": [
+      {
+        "version": 11,
+        "change": "welding titanium-grade brackets onto the secondary booster nozzles (used Nim, a little landing strut)",
+        "progress": 73,
+        "at": "2026-11-27T09:40:33.948Z"
+      },
       {
         "version": 10,
         "change": "insulating the secondary booster nozzles with high temp ceramic tile layers (used Brakk, a bent stabiliser fin)",
@@ -238,12 +244,6 @@
         "change": "bolting low-friction guide pins and alignment brackets onto the tether spooler frame using Nim (used Fen, a perfectly good bolt)",
         "progress": 18,
         "at": "2026-11-25T13:16:50.389Z"
-      },
-      {
-        "version": 1,
-        "change": "wiring the 8-wire slip ring into the compact motorized tether spooler assembly (used Captain, half a thruster nozzle)",
-        "progress": 8,
-        "at": "2026-11-25T11:05:27.461Z"
       }
     ],
     "launched": [
@@ -4169,7 +4169,7 @@
         ]
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Rusty Jr",
@@ -4202,6 +4202,11 @@
         "what": "a bent stabiliser fin",
         "good": true,
         "version": 10
+      },
+      {
+        "name": "Nim",
+        "what": "a little landing strut",
+        "version": 11
       }
     ],
     "design": null
@@ -4448,13 +4453,7 @@
       "at": "2026-11-18T14:52:41.890Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Nim",
-      "what": "a little landing strut",
-      "at": "2026-11-27T06:44:57.381Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Client Challenge",

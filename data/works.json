@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 31",
-    "progress": 32,
-    "version": 5,
-    "lastChange": "securing the heavy steel cable and testing the torque limiter on bolt gus six (used Brakk, a scorched heat tile)",
+    "progress": 40,
+    "version": 6,
+    "lastChange": "routing the heavy steel cable through the variable torque winch drum and securing the tension clips (used Sprocket, half a thruster nozzle)",
     "log": [
+      {
+        "version": 6,
+        "change": "routing the heavy steel cable through the variable torque winch drum and securing the tension clips (used Sprocket, half a thruster nozzle)",
+        "progress": 40,
+        "at": "2026-11-27T18:38:55.244Z"
+      },
       {
         "version": 5,
         "change": "securing the heavy steel cable and testing the torque limiter on bolt gus six (used Brakk, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "installed custom high-temp gasket seals around the aft thruster mount using Brakk (used Captain, a perfectly good bolt)",
         "progress": 75,
         "at": "2026-11-25T21:58:19.660Z"
-      },
-      {
-        "version": 11,
-        "change": "installed custom high-temp gasket seals around the aft thruster mount using Brakk (used Nim, a dented fuel cell)",
-        "progress": 68,
-        "at": "2026-11-25T21:48:20.141Z"
       }
     ],
     "launched": [
@@ -4229,7 +4229,7 @@
         ]
       }
     ],
-    "partsUsed": 4,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Rusty Jr",
@@ -4250,6 +4250,11 @@
         "name": "Brakk",
         "what": "a scorched heat tile",
         "version": 5
+      },
+      {
+        "name": "Sprocket",
+        "what": "half a thruster nozzle",
+        "version": 6
       }
     ],
     "design": null
@@ -4500,11 +4505,6 @@
     {
       "name": "Mabel",
       "what": "a cockpit switch that still clicks",
-      "at": "2026-11-27T17:51:20.427Z"
-    },
-    {
-      "name": "Sprocket",
-      "what": "half a thruster nozzle",
       "at": "2026-11-27T17:51:20.427Z"
     }
   ],

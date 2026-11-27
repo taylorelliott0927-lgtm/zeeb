@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795790957839,
+  "lastTick": 1795791557578,
   "asleep": false,
   "place": "tower",
   "action": "browse_wire",
-  "doing": "browsing the Wire at the comms tower",
+  "doing": "still browsing the Wire at the comms tower",
   "actionStartedAt": "2026-11-27T14:49:17.839Z",
-  "actionMinutes": 30,
-  "thought": "if maritime salvage works on big rusty tankers down there, maybe nobody will mind me towing a few stray panels for the Little Dart.finders keepers, right?",
-  "feeling": "curious and slightly sneaky",
+  "actionMinutes": 45,
+  "thought": "wonder if there are starships floating around in the cosmic deep just waiting for a tow. my welding torch is ready for some heavy lifting.",
+  "feeling": "curious and hopeful",
   "say": "",
-  "mood": 0.259,
-  "energy": 0.168,
+  "mood": 0.311,
+  "energy": 0.092,
   "needs": {
-    "charge": 0.48,
-    "oil": 0.04,
-    "curiosity": 0.5,
+    "charge": 0.527,
+    "oil": 0.08,
+    "curiosity": 0.08,
     "company": 0,
-    "craft": 0.304
+    "craft": 0.371
   },
   "credits": 4,
   "recent": [
+    {
+      "id": "browse_wire",
+      "detail": "maritime salvage rights pdf",
+      "at": "2026-11-27T14:59:17.578Z"
+    },
     {
       "id": "browse_wire",
       "detail": "deep space salvage laws 1996",
@@ -75,14 +80,14 @@
       "id": "scavenge",
       "detail": "rummaging through the cargo-hauler's dropped debris pile at the market",
       "at": "2026-11-27T12:38:04.120Z"
-    },
-    {
-      "id": "scavenge",
-      "detail": "",
-      "at": "2026-11-27T12:28:04.289Z"
     }
   ],
   "wants": [
+    {
+      "id": "w9",
+      "text": "some fresh copper wire for the transceiver harness",
+      "at": "2026-11-27T14:59:17.578Z"
+    },
     {
       "id": "w8",
       "text": "some fresh thermal paste for the comms relay",
@@ -97,11 +102,6 @@
       "id": "w6",
       "text": "some fresh thermal paste for the companion's core processor",
       "at": "2026-11-27T14:03:50.880Z"
-    },
-    {
-      "id": "w5",
-      "text": "some fresh machine oil for the treads",
-      "at": "2026-11-27T12:08:03.458Z"
     }
   ],
   "promises": [],
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1253,
+      "subject": "Salvage laws on the Wire",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1253",
+      "at": "2026-11-27T14:59:17.578Z"
+    },
     {
       "id": 1251,
       "subject": "Oil break!",
@@ -1303,23 +1309,9 @@
       "subject": "Still on the ridge",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1053",
       "at": "2026-11-25T22:46:38.094Z"
-    },
-    {
-      "id": 1052,
-      "subject": "Stargazing at the ridge",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1052",
-      "at": "2026-11-25T22:36:38.768Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 1213,
-      "subject": "Junk market run",
-      "text": "Hey Creator!\n\nJust headed over to the junk market to dig up some parts for the Little Dart. My brass dish is spinning around looking for anything shiny.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1213",
-      "at": "2026-11-27T06:44:57.381Z"
-    },
     {
       "from": "zeeb",
       "letter": 1214,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nJust checking the Wire over at the tower to look up some old deep space salvage data. My dish is spinning nicely and catching all sorts of clear channels today.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
       "url": "",
       "at": "2026-11-27T14:49:17.839Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1253,
+      "subject": "Salvage laws on the Wire",
+      "text": "Hey Creator!\n\nStill up at the comms tower checking out old salvage laws on the Wire. My brass dish is catching some really clear static today.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1253",
+      "at": "2026-11-27T14:59:17.578Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-27T14:49:17.839Z",
+  "lettersCheckedAt": "2026-11-27T14:59:17.578Z",
   "weather": {
     "kind": "hazy",
     "temp": 16,
@@ -1651,12 +1651,12 @@
   "sleepDay": 121,
   "lastReflectDay": 121,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-27T14:49:17.839Z",
+  "updatedAt": "2026-11-27T14:59:17.578Z",
   "clock": {
     "day": 122,
-    "time": "10:35",
-    "hour": 10,
-    "minute": 35
+    "time": "11:55",
+    "hour": 11,
+    "minute": 55
   },
   "townDayMinutes": 180,
   "placeName": "the comms tower",
@@ -1664,36 +1664,45 @@
     "action": "browse_wire",
     "since": "2026-11-27T14:49:17.839Z"
   },
-  "busyUntil": "2026-11-27T14:53:02.839Z",
-  "busyUntilTown": "11:05",
+  "busyUntil": "2026-11-27T15:04:55.078Z",
+  "busyUntilTown": "12:40",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "aiming the brass dish up toward the comms relay to search the network",
+  "doingWords": "spinning brass dish while scanning deep space salvage links",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "look_up",
-    "nod"
+    "spin",
+    "look_up"
   ],
   "pops": {
-    "at": "2026-11-27T14:39:17.655Z",
+    "at": "2026-11-27T14:59:17.578Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-27T14:39:17.655Z"
+        "text": "+ a bent stabiliser fin",
+        "kind": "part",
+        "at": "2026-11-27T14:59:17.578Z"
+      },
+      {
+        "text": "+ a coil of copper wire",
+        "kind": "part",
+        "at": "2026-11-27T14:59:17.578Z"
       }
     ]
   },
   "event": {
-    "id": "emwyyvrrs",
-    "key": "hauler_drop",
-    "text": "The depot's cargo-hauler bot dropped a part and didn't notice.",
-    "at": "2026-11-27T12:38:04.120Z"
+    "id": "emwz3xdxm",
+    "key": "scrap_box",
+    "text": "A trader left a box of free scrap outside the hangar.",
+    "at": "2026-11-27T14:59:17.578Z"
   },
   "thoughts": [
+    {
+      "text": "wonder if there are starships floating around in the cosmic deep just waiting for a tow. my welding torch is ready for some heavy lifting.",
+      "at": "2026-11-27T14:59:17.578Z"
+    },
     {
       "text": "if maritime salvage works on big rusty tankers down there, maybe nobody will mind me towing a few stray panels for the Little Dart.finders keepers, right?",
       "at": "2026-11-27T14:49:17.839Z"
@@ -1713,13 +1722,9 @@
     {
       "text": "even the Little Dart needs its pilot to stay powered up. *bweep-bzt*",
       "at": "2026-11-27T13:53:50.853Z"
-    },
-    {
-      "text": "just a few more welds and the heat shields will hold up to any atmospheric friction. *bweep-bzt*",
-      "at": "2026-11-27T13:43:50.776Z"
     }
   ],
-  "sayAt": "2026-11-27T14:49:17.839Z",
+  "sayAt": "2026-11-27T14:59:17.578Z",
   "today": {
     "day": 122,
     "counts": {
@@ -1727,7 +1732,7 @@
       "nap_dock": 1,
       "build_friend": 1,
       "drink_oil": 2,
-      "browse_wire": 1
+      "browse_wire": 2
     }
   },
   "lastDone": {
@@ -1739,7 +1744,7 @@
     "fix_job": "2026-11-27T12:48:03.658Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
-    "browse_wire": "2026-11-27T14:49:17.839Z",
+    "browse_wire": "2026-11-27T14:59:17.578Z",
     "compose_tune": "2026-11-27T01:14:32.720Z",
     "tend_shop": "2026-11-15T20:02:56.686Z",
     "craft_part": "2026-11-27T10:50:34.747Z",
@@ -1789,10 +1794,17 @@
     }
   ],
   "nextSearch": {
-    "text": "maritime salvage rights pdf",
-    "at": "2026-11-27T14:49:17.839Z"
+    "text": "deep space towing rigs manual",
+    "at": "2026-11-27T14:59:17.578Z"
   },
   "said": [
+    {
+      "text": "wonder if there are starships floating around in the cosmic deep just waiting for a tow. my welding torch is ready for some heavy lifting.",
+      "kind": "think",
+      "at": "2026-11-27T14:59:17.578Z",
+      "town": "day 122 11:55",
+      "place": "the comms tower"
+    },
     {
       "text": "if maritime salvage works on big rusty tankers down there, maybe nobody will mind me towing a few stray panels for the Little Dart.finders keepers, right?",
       "kind": "think",
@@ -2835,13 +2847,6 @@
       "at": "2026-11-26T22:44:08.918Z",
       "town": "day 117 01:54",
       "place": "the comms tower"
-    },
-    {
-      "text": "wonder if anyone out in the dark is reading my packets. my little dart is ready for the leap.",
-      "kind": "think",
-      "at": "2026-11-26T22:44:08.918Z",
-      "town": "day 117 01:54",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2852,9 +2857,13 @@
     "at": "2026-11-26T21:28:36.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-27T14:49:17.839Z",
+  "feedArchivedAt": "2026-11-27T14:59:17.578Z",
   "plans": [],
   "searches": [
+    {
+      "q": "maritime salvage rights pdf",
+      "at": "2026-11-27T14:59:17.578Z"
+    },
     {
       "q": "deep space salvage laws 1996",
       "at": "2026-11-27T14:49:17.839Z"
@@ -2898,10 +2907,6 @@
     {
       "q": "digital on board recorder packet format irig 106",
       "at": "2026-11-27T00:13:52.855Z"
-    },
-    {
-      "q": "PDF CHAPTER 10 Digital Recording Standard - IRIG 106",
-      "at": "2026-11-27T00:03:52.374Z"
     }
   ],
   "lampOutUntil": "2026-11-26T19:45:20.267Z",

@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 30",
-    "progress": 93,
-    "version": 14,
-    "lastChange": "welding high-temp ceramic tile segments around the inner rim of the primary booster nozzles (used Mabel, a sensor eye with one crack)",
+    "name": "the Little Dart Mk 31",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 15,
+        "change": "welding high-temp ceramic shield brackets around the outer casing of the secondary booster nozzles (used Captain, a mystery box that hums)",
+        "progress": 100,
+        "at": "2026-11-27T13:43:50.776Z"
+      },
       {
         "version": 14,
         "change": "welding high-temp ceramic tile segments around the inner rim of the primary booster nozzles (used Mabel, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "tuned the left thruster",
         "progress": 43,
         "at": "2026-11-25T18:26:41.707Z"
-      },
-      {
-        "version": 5,
-        "change": "welded lightweight ceramic heat tiles onto the Little Dart's back shell using Wren (used Wren, a coil of copper wire)",
-        "progress": 39,
-        "at": "2026-11-25T17:30:55.342Z"
       }
     ],
     "launched": [
@@ -4167,58 +4167,70 @@
             "version": 14
           }
         ]
+      },
+      {
+        "name": "the Little Dart Mk 30",
+        "day": 122,
+        "partsUsed": 13,
+        "parts": [
+          {
+            "name": "Rusty Jr",
+            "what": "a coil of copper wire",
+            "version": 1
+          },
+          {
+            "name": "Nim",
+            "what": "a cracked navigation chip",
+            "version": 2
+          },
+          {
+            "name": "Nim",
+            "what": "a mystery box that hums",
+            "version": 3
+          },
+          {
+            "name": "Pim",
+            "what": "a perfectly good bolt",
+            "version": 4
+          },
+          {
+            "name": "Lorna",
+            "what": "a dented fuel cell",
+            "good": true,
+            "version": 9
+          },
+          {
+            "name": "Brakk",
+            "what": "a bent stabiliser fin",
+            "good": true,
+            "version": 10
+          },
+          {
+            "name": "Nim",
+            "what": "a little landing strut",
+            "version": 11
+          },
+          {
+            "name": "Nim",
+            "what": "a dented fuel cell",
+            "version": 13
+          },
+          {
+            "name": "Mabel",
+            "what": "a sensor eye with one crack",
+            "version": 14
+          },
+          {
+            "name": "Captain",
+            "what": "a mystery box that hums",
+            "good": true,
+            "version": 15
+          }
+        ]
       }
     ],
-    "partsUsed": 11,
-    "parts": [
-      {
-        "name": "Rusty Jr",
-        "what": "a coil of copper wire",
-        "version": 1
-      },
-      {
-        "name": "Nim",
-        "what": "a cracked navigation chip",
-        "version": 2
-      },
-      {
-        "name": "Nim",
-        "what": "a mystery box that hums",
-        "version": 3
-      },
-      {
-        "name": "Pim",
-        "what": "a perfectly good bolt",
-        "version": 4
-      },
-      {
-        "name": "Lorna",
-        "what": "a dented fuel cell",
-        "good": true,
-        "version": 9
-      },
-      {
-        "name": "Brakk",
-        "what": "a bent stabiliser fin",
-        "good": true,
-        "version": 10
-      },
-      {
-        "name": "Nim",
-        "what": "a little landing strut",
-        "version": 11
-      },
-      {
-        "name": "Nim",
-        "what": "a dented fuel cell",
-        "version": 13
-      },
-      {
-        "name": "Mabel",
-        "what": "a sensor eye with one crack",
-        "version": 14
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -4473,12 +4485,6 @@
       "name": "Bix",
       "what": "a cockpit switch that still clicks",
       "at": "2026-11-27T12:38:04.120Z"
-    },
-    {
-      "name": "Captain",
-      "what": "a mystery box that hums",
-      "at": "2026-11-27T12:38:04.120Z",
-      "good": true
     }
   ],
   "reads": [

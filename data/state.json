@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795801280842,
+  "lastTick": 1795801880427,
   "asleep": false,
-  "place": "hangar",
-  "action": "work_dart",
-  "doing": "still working on the Little Dart",
-  "actionStartedAt": "2026-11-27T17:23:46.660Z",
-  "actionMinutes": 30,
-  "thought": "that winch drum is spinning smooth as butter now. just gotta feed the cable through without catching my fingers.",
-  "feeling": "focused and determined",
-  "say": "easy does it on the spool, rusty jr.",
-  "mood": 0.394,
-  "energy": 0.201,
+  "place": "market",
+  "action": "scavenge",
+  "doing": "digging through the junk piles",
+  "actionStartedAt": "2026-11-27T17:51:20.427Z",
+  "actionMinutes": 45,
+  "thought": "my treads are feeling a bit dry and I need some spare bits for the winch housing. time to dig.",
+  "feeling": "a bit low on energy but curious",
+  "say": "",
+  "mood": 0.435,
+  "energy": 0.082,
   "needs": {
-    "charge": 0.279,
-    "oil": 0.496,
-    "curiosity": 0.38,
+    "charge": 0.326,
+    "oil": 0.566,
+    "curiosity": 0.11,
     "company": 0,
-    "craft": 0
+    "craft": 0.067
   },
   "credits": 3,
   "recent": [
+    {
+      "id": "scavenge",
+      "detail": "",
+      "at": "2026-11-27T17:51:20.427Z"
+    },
     {
       "id": "work_dart",
       "detail": "routing heavy steel cable through the variable torque winch drum on bolt gus six",
@@ -75,11 +80,6 @@
       "id": "work_dart",
       "detail": "welding high-temp ceramic heat tiles onto the Little Dart's secondary booster no",
       "at": "2026-11-27T15:52:14.748Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-27T15:42:15.184Z"
     }
   ],
   "wants": [
@@ -110,6 +110,12 @@
     15
   ],
   "letters": [
+    {
+      "id": 1268,
+      "subject": "Winch and Scavenging",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1268",
+      "at": "2026-11-27T17:51:20.427Z"
+    },
     {
       "id": 1267,
       "subject": "Winches and Cables",
@@ -1303,23 +1309,9 @@
       "subject": "Quick nap and the Little Dart Mk 28!",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1068",
       "at": "2026-11-26T01:53:04.303Z"
-    },
-    {
-      "id": 1067,
-      "subject": "Wiring the dashboard",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1067",
-      "at": "2026-11-26T01:15:34.430Z"
     }
   ],
   "creatorThread": [
-    {
-      "from": "zeeb",
-      "letter": 1228,
-      "subject": "THz waveguide specs",
-      "text": "Hey Creator!\n\nJust pulling up some research gate diagrams on terahertz time-domain waveguides from the comms tower. My brass dish is twitching at every new frequency.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
-      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1228",
-      "at": "2026-11-27T10:10:35.144Z"
-    },
     {
       "from": "zeeb",
       "letter": 1229,
@@ -1631,6 +1623,14 @@
       "text": "Hey Creator!\n\nGot bolt gus six completely welded and now I'm feeding the heavy steel cable onto the winch drum. Everything is lining up just like the patent diagrams.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
       "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1267",
       "at": "2026-11-27T17:41:20.842Z"
+    },
+    {
+      "from": "zeeb",
+      "letter": 1268,
+      "subject": "Winch and Scavenging",
+      "text": "Hey Creator!\n\nStepped away from the winch for a minute to go dig through the junk market. Need some thick rubber gaskets and fresh wire before I keep building.\n\n*bweep-bzt-bweep*\n\n- Zeeb",
+      "url": "https://github.com/taylorelliott0927-lgtm/zeeb/issues/1268",
+      "at": "2026-11-27T17:51:20.427Z"
     }
   ],
   "seenCreatorMsgs": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-27T17:41:20.842Z",
+  "lettersCheckedAt": "2026-11-27T17:51:20.427Z",
   "weather": {
     "kind": "hazy",
     "temp": 15,
@@ -1651,39 +1651,48 @@
   "sleepDay": 122,
   "lastReflectDay": 122,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-27T17:41:20.842Z",
+  "updatedAt": "2026-11-27T17:51:20.427Z",
   "clock": {
     "day": 123,
-    "time": "09:32",
-    "hour": 9,
-    "minute": 32
+    "time": "10:51",
+    "hour": 10,
+    "minute": 51
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the junk market",
   "streak": {
-    "action": "work_dart",
-    "since": "2026-11-27T17:23:46.660Z"
+    "action": "scavenge",
+    "since": "2026-11-27T17:51:20.427Z"
   },
-  "busyUntil": "2026-11-27T17:45:05.842Z",
-  "busyUntilTown": "10:02",
+  "busyUntil": "2026-11-27T17:56:57.927Z",
+  "busyUntilTown": "11:36",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "routing thick steel cable onto the variable torque winch drum",
-  "newsForCreator": "the Little Dart Mk 31 just reached 25% built (version 4). Last change: routing heavy steel cable through the variable torque winch drum on bolt gus six.",
+  "doingWords": "digging through a pile of rusted brackets for spare copper",
+  "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "nod",
     "wiggle"
   ],
   "pops": {
-    "at": "2026-11-27T16:02:15.041Z",
+    "at": "2026-11-27T17:51:20.427Z",
     "items": [
       {
-        "text": "-1 credit",
-        "kind": "spend",
-        "at": "2026-11-27T16:02:15.041Z"
+        "text": "+ a scorched heat tile",
+        "kind": "part",
+        "at": "2026-11-27T17:51:20.427Z"
+      },
+      {
+        "text": "+ half a thruster nozzle",
+        "kind": "part",
+        "at": "2026-11-27T17:51:20.427Z"
+      },
+      {
+        "text": "+ a cockpit switch that still clicks",
+        "kind": "part",
+        "at": "2026-11-27T17:51:20.427Z"
       }
     ]
   },
@@ -1694,6 +1703,10 @@
     "at": "2026-11-27T16:12:14.531Z"
   },
   "thoughts": [
+    {
+      "text": "my treads are feeling a bit dry and I need some spare bits for the winch housing. time to dig.",
+      "at": "2026-11-27T17:51:20.427Z"
+    },
     {
       "text": "that winch drum is spinning smooth as butter now. just gotta feed the cable through without catching my fingers.",
       "at": "2026-11-27T17:41:20.842Z"
@@ -1713,19 +1726,16 @@
     {
       "text": "battery is getting a bit low so a quick juice up will have my servos spinning nicely again. *bweep*",
       "at": "2026-11-27T17:03:47.062Z"
-    },
-    {
-      "text": "steve bendelac and jean lagadec know how to handle a heavy spool. i am naming this bolt right here gus.",
-      "at": "2026-11-27T16:53:46.816Z"
     }
   ],
-  "sayAt": "2026-11-27T17:41:20.842Z",
+  "sayAt": "2026-11-27T17:51:20.427Z",
   "today": {
     "day": 123,
     "counts": {
       "follow_link": 2,
       "nap_dock": 2,
-      "work_dart": 3
+      "work_dart": 3,
+      "scavenge": 1
     }
   },
   "lastDone": {
@@ -1733,7 +1743,7 @@
     "read_news": "2026-11-27T05:09:54.103Z",
     "drink_oil": "2026-11-27T16:02:15.041Z",
     "follow_link": "2026-11-27T16:53:46.816Z",
-    "scavenge": "2026-11-27T12:38:04.120Z",
+    "scavenge": "2026-11-27T17:51:20.427Z",
     "fix_job": "2026-11-27T12:48:03.658Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
     "open_shop": "2026-11-13T03:54:08.469Z",
@@ -1791,6 +1801,13 @@
     "at": "2026-11-27T16:53:46.816Z"
   },
   "said": [
+    {
+      "text": "my treads are feeling a bit dry and I need some spare bits for the winch housing. time to dig.",
+      "kind": "think",
+      "at": "2026-11-27T17:51:20.427Z",
+      "town": "day 123 10:51",
+      "place": "the junk market"
+    },
     {
       "text": "easy does it on the spool, rusty jr.",
       "kind": "say",
@@ -2833,13 +2850,6 @@
       "at": "2026-11-27T01:04:33.092Z",
       "town": "day 117 20:37",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "ah, nothing beats grade-four synth-oil when the knee gears start clicking.",
-      "kind": "say",
-      "at": "2026-11-27T00:54:32.542Z",
-      "town": "day 117 19:17",
-      "place": "the fuel depot"
     }
   ],
   "flight": {
@@ -2850,7 +2860,7 @@
     "at": "2026-11-26T21:28:36.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-27T17:41:20.842Z",
+  "feedArchivedAt": "2026-11-27T17:51:20.427Z",
   "plans": [],
   "searches": [
     {

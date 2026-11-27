@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 31",
-    "progress": 26,
-    "version": 4,
-    "lastChange": "routing heavy steel cable through the variable torque winch drum on bolt gus six",
+    "progress": 32,
+    "version": 5,
+    "lastChange": "securing the heavy steel cable and testing the torque limiter on bolt gus six (used Brakk, a scorched heat tile)",
     "log": [
+      {
+        "version": 5,
+        "change": "securing the heavy steel cable and testing the torque limiter on bolt gus six (used Brakk, a scorched heat tile)",
+        "progress": 32,
+        "at": "2026-11-27T18:31:20.768Z"
+      },
       {
         "version": 4,
         "change": "routing heavy steel cable through the variable torque winch drum on bolt gus six",
@@ -238,12 +244,6 @@
         "change": "installed custom high-temp gasket seals around the aft thruster mount using Brakk (used Nim, a dented fuel cell)",
         "progress": 68,
         "at": "2026-11-25T21:48:20.141Z"
-      },
-      {
-        "version": 10,
-        "change": "attached lightweight high-temp ceramic heat tiles to the aft section using Tilly",
-        "progress": 60,
-        "at": "2026-11-25T20:26:43.616Z"
       }
     ],
     "launched": [
@@ -4229,7 +4229,7 @@
         ]
       }
     ],
-    "partsUsed": 3,
+    "partsUsed": 4,
     "parts": [
       {
         "name": "Rusty Jr",
@@ -4245,6 +4245,11 @@
         "name": "Sprocket",
         "what": "a coil of copper wire",
         "version": 3
+      },
+      {
+        "name": "Brakk",
+        "what": "a scorched heat tile",
+        "version": 5
       }
     ],
     "design": null
@@ -4495,20 +4500,12 @@
     {
       "name": "Mabel",
       "what": "a cockpit switch that still clicks",
-      "at": "2026-11-27T17:51:20.427Z",
-      "carrying": true
+      "at": "2026-11-27T17:51:20.427Z"
     },
     {
       "name": "Sprocket",
       "what": "half a thruster nozzle",
-      "at": "2026-11-27T17:51:20.427Z",
-      "carrying": true
-    },
-    {
-      "name": "Brakk",
-      "what": "a scorched heat tile",
-      "at": "2026-11-27T17:51:20.427Z",
-      "carrying": true
+      "at": "2026-11-27T17:51:20.427Z"
     }
   ],
   "reads": [

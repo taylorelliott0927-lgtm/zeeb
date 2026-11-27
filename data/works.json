@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 30",
-    "progress": 55,
-    "version": 9,
-    "lastChange": "welding the rear secondary booster brackets using Brakk (the bent stabiliser fin) (used Lorna, a dented fuel cell)",
+    "progress": 63,
+    "version": 10,
+    "lastChange": "insulating the secondary booster nozzles with high temp ceramic tile layers (used Brakk, a bent stabiliser fin)",
     "log": [
+      {
+        "version": 10,
+        "change": "insulating the secondary booster nozzles with high temp ceramic tile layers (used Brakk, a bent stabiliser fin)",
+        "progress": 63,
+        "at": "2026-11-27T09:30:33.766Z"
+      },
       {
         "version": 9,
         "change": "welding the rear secondary booster brackets using Brakk (the bent stabiliser fin) (used Lorna, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "wiring the 8-wire slip ring into the compact motorized tether spooler assembly (used Captain, half a thruster nozzle)",
         "progress": 8,
         "at": "2026-11-25T11:05:27.461Z"
-      },
-      {
-        "version": 14,
-        "change": "assembling the miniature motorized tether spooler using a tiny copper wire named Rusty Jr. (used Mabel, a strip of hull plating)",
-        "progress": 100,
-        "at": "2026-11-25T09:55:25.797Z"
       }
     ],
     "launched": [
@@ -4169,7 +4169,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Rusty Jr",
@@ -4196,6 +4196,12 @@
         "what": "a dented fuel cell",
         "good": true,
         "version": 9
+      },
+      {
+        "name": "Brakk",
+        "what": "a bent stabiliser fin",
+        "good": true,
+        "version": 10
       }
     ],
     "design": null
@@ -4447,12 +4453,6 @@
       "name": "Nim",
       "what": "a little landing strut",
       "at": "2026-11-27T06:44:57.381Z"
-    },
-    {
-      "name": "Brakk",
-      "what": "a bent stabiliser fin",
-      "at": "2026-11-27T06:44:57.381Z",
-      "good": true
     }
   ],
   "reads": [

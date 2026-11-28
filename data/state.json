@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795835482545,
+  "lastTick": 1795836083139,
   "asleep": false,
   "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-28T03:11:22.545Z",
-  "actionMinutes": 180,
-  "thought": "I spent way too long looking up catenary tension curves up at the tower. Time to head down to Bay 3 and get a full charge so I can build the Little Dart's next frame section.",
-  "feeling": "sleepy, low battery, ready for a nap",
-  "say": "*bweep-boop* Time to plug in and charge up!",
-  "mood": 0.189,
-  "energy": 0.009,
+  "action": "work_dart",
+  "doing": "working on the Little Dart",
+  "actionStartedAt": "2026-11-28T03:21:23.139Z",
+  "actionMinutes": 45,
+  "thought": "Time to put those catenary tension calculations to work on the Dart's lower frame section. Flexing under load is good, snapping is bad.",
+  "feeling": "excited and ready to weld",
+  "say": "Time to turn math into hot metal! *bweep-bzt-boop*",
+  "mood": 0.244,
+  "energy": 0.111,
   "needs": {
-    "charge": 0.19,
-    "oil": 0.466,
-    "curiosity": 0.08,
-    "company": 0.053,
-    "craft": 1
+    "charge": 0.287,
+    "oil": 0.506,
+    "curiosity": 0.16,
+    "company": 0.106,
+    "craft": 0.5
   },
   "credits": 0,
   "recent": [
+    {
+      "id": "work_dart",
+      "detail": "welding catenary-braced titanium tension wires onto the Little Dart lower frame ",
+      "at": "2026-11-28T03:21:23.139Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-28T01:14:59.088Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-28T01:04:59.171Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-28T03:11:22.545Z",
+  "lettersCheckedAt": "2026-11-28T03:21:23.139Z",
   "weather": {
     "kind": "clear",
     "temp": 12,
@@ -1651,30 +1651,30 @@
   "sleepDay": 125,
   "lastReflectDay": 125,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-28T03:11:22.545Z",
+  "updatedAt": "2026-11-28T03:21:23.139Z",
   "clock": {
     "day": 126,
-    "time": "13:32",
-    "hour": 13,
-    "minute": 32
+    "time": "14:52",
+    "hour": 14,
+    "minute": 52
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-28T03:11:22.545Z"
+    "action": "work_dart",
+    "since": "2026-11-28T03:21:23.139Z"
   },
-  "busyUntil": "2026-11-28T03:33:52.545Z",
-  "busyUntilTown": "16:32",
+  "busyUntil": "2026-11-28T03:27:00.639Z",
+  "busyUntilTown": "15:37",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "plugging into the hangar dock for a good recharge nap",
+  "doingWords": "welding catenary-braced tension wires onto the Little Dart frame",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "droop"
+    "nod"
   ],
   "pops": {
     "at": "2026-11-28T01:14:59.088Z",
@@ -1694,6 +1694,10 @@
   },
   "thoughts": [
     {
+      "text": "Time to put those catenary tension calculations to work on the Dart's lower frame section. Flexing under load is good, snapping is bad.",
+      "at": "2026-11-28T03:21:23.139Z"
+    },
+    {
       "text": "I spent way too long looking up catenary tension curves up at the tower. Time to head down to Bay 3 and get a full charge so I can build the Little Dart's next frame section.",
       "at": "2026-11-28T03:11:22.545Z"
     },
@@ -1712,24 +1716,21 @@
     {
       "text": "seventy-one billion credits for defense and nobody thought to spend it on a decent set of landing struts for a scrappy pilot. i bet the little dart's heat shield will beat theirs anyway.",
       "at": "2026-11-28T02:37:14.995Z"
-    },
-    {
-      "text": "i should check if my landing struts need beefier base plates before launch. wouldn't want the thrust kicking the floor out.",
-      "at": "2026-11-28T02:27:15.016Z"
     }
   ],
-  "sayAt": "2026-11-28T03:11:22.545Z",
+  "sayAt": "2026-11-28T03:21:23.139Z",
   "today": {
     "day": 126,
     "counts": {
       "browse_wire": 4,
       "follow_link": 3,
       "read_news": 1,
-      "nap_dock": 1
+      "nap_dock": 1,
+      "work_dart": 1
     }
   },
   "lastDone": {
-    "work_dart": "2026-11-27T23:12:20.260Z",
+    "work_dart": "2026-11-28T03:21:23.139Z",
     "read_news": "2026-11-28T02:37:14.995Z",
     "drink_oil": "2026-11-28T01:24:58.954Z",
     "follow_link": "2026-11-28T02:27:15.016Z",
@@ -1791,6 +1792,20 @@
     "at": "2026-11-28T03:01:23.042Z"
   },
   "said": [
+    {
+      "text": "Time to turn math into hot metal! *bweep-bzt-boop*",
+      "kind": "say",
+      "at": "2026-11-28T03:21:23.139Z",
+      "town": "day 126 14:52",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "Time to put those catenary tension calculations to work on the Dart's lower frame section. Flexing under load is good, snapping is bad.",
+      "kind": "think",
+      "at": "2026-11-28T03:21:23.139Z",
+      "town": "day 126 14:52",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "*bweep-boop* Time to plug in and charge up!",
       "kind": "say",
@@ -2826,20 +2841,6 @@
       "at": "2026-11-27T11:49:06.623Z",
       "town": "day 121 10:34",
       "place": "the Dented Moon cantina"
-    },
-    {
-      "text": "wonder if anyone here knows a good trick for sealing secondary nozzles without burning through my gasket supply.",
-      "kind": "think",
-      "at": "2026-11-27T11:49:06.623Z",
-      "town": "day 121 10:34",
-      "place": "the Dented Moon cantina"
-    },
-    {
-      "text": "*bweep-bzt*",
-      "kind": "say",
-      "at": "2026-11-27T11:39:06.468Z",
-      "town": "day 121 09:14",
-      "place": "the Dented Moon cantina"
     }
   ],
   "flight": {
@@ -2850,7 +2851,7 @@
     "at": "2026-11-26T21:28:36.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-28T03:11:22.545Z",
+  "feedArchivedAt": "2026-11-28T03:21:23.139Z",
   "plans": [],
   "searches": [
     {

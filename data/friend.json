@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": -0.002,
-    "energy": 0.679,
+    "mood": 0.084,
+    "energy": 0.691,
     "needs": {
-      "charge": 0,
-      "oil": 0.036,
-      "curiosity": 1,
-      "company": 0.096,
+      "charge": 0.042,
+      "oil": 0.072,
+      "curiosity": 0.7,
+      "company": 0.174,
       "craft": 1
     },
-    "place": "hangar",
-    "action": "nap_dock",
-    "doing": "connecting to the charging dock with low energy reserves",
-    "thought": "The power hums pleasantly through my landing gear strut. A steady grid is a navigator's best friend.",
-    "feeling": "low power",
-    "say": "Just replenishing my reserves, Zeeb. The charts can wait forty-five minutes.",
+    "place": "ridge",
+    "action": "stargaze",
+    "doing": "watching the sky from the dune ridge",
+    "thought": "The constellations are crisp tonight. *click-whir* I must be careful not to drain the battery entirely before morning.",
+    "feeling": "starry-eyed",
+    "say": "The navigation lanes look exceptionally quiet tonight, Zeeb. *zzt*",
     "recent": [
+      {
+        "id": "stargaze",
+        "at": "2026-11-28T19:51:30.259Z"
+      },
       {
         "id": "nap_dock",
         "at": "2026-11-28T19:41:30.039Z"
@@ -201,30 +205,18 @@
       {
         "id": "nap_dock",
         "at": "2026-11-28T18:07:04.428Z"
-      },
-      {
-        "id": "nap_dock",
-        "at": "2026-11-28T17:57:05.034Z"
       }
     ],
-    "busyUntil": "2026-11-28T19:47:07.539Z",
+    "busyUntil": "2026-11-28T19:57:07.759Z",
     "asleep": false,
-    "lastTick": 1795894890039
+    "lastTick": 1795895490259
   },
   "mem": {
     "memories": [
       {
-        "id": "m22",
-        "text": "Plugged back into the Hangar Bay 3 charging dock on day 131 to restore critically low battery reserves.",
-        "strength": 0.47,
-        "recalls": 0,
-        "term": "short",
-        "at": "2026-11-28T16:36:12.104Z"
-      },
-      {
         "id": "m20",
         "text": "Purchased a cup of fresh lubrication oil at the fuel depot to restore critical fluid levels on day 131.",
-        "strength": 0.615,
+        "strength": 0.6,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T16:56:40.252Z"
@@ -232,7 +224,7 @@
       {
         "id": "m24",
         "text": "Plugged back into the charging dock at the fuel depot to restore critically low battery reserves on day 131.",
-        "strength": 0.495,
+        "strength": 0.48,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:16:40.162Z"
@@ -240,7 +232,7 @@
       {
         "id": "m27",
         "text": "Purchased fresh lubrication oil at the fuel depot to restore low fluid levels on day 131.",
-        "strength": 0.54,
+        "strength": 0.525,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:37:05.060Z"
@@ -248,7 +240,7 @@
       {
         "id": "m23",
         "text": "Plugged into the charging dock at the fuel depot to restore critical battery reserves on day 131.",
-        "strength": 0.555,
+        "strength": 0.54,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:47:04.424Z"
@@ -256,7 +248,7 @@
       {
         "id": "m25",
         "text": "Plugged into the Hangar Bay 3 wall socket to restore critically low battery reserves on day 131.",
-        "strength": 0.72,
+        "strength": 0.705,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T17:57:05.034Z"
@@ -264,7 +256,7 @@
       {
         "id": "m16",
         "text": "Purchased fresh lubrication oil at the fuel depot to restore critical fluid levels on day 131.",
-        "strength": 0.615,
+        "strength": 0.6,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T18:18:04.873Z"
@@ -272,7 +264,7 @@
       {
         "id": "m18",
         "text": "Purchased a fresh cup of lubrication oil at the fuel depot to restore critical fluid levels on day 131.",
-        "strength": 0.78,
+        "strength": 0.765,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T18:28:05.017Z"
@@ -280,7 +272,7 @@
       {
         "id": "m21",
         "text": "Plugged into the fuel depot charging dock to restore low battery reserves on day 131.",
-        "strength": 0.56,
+        "strength": 0.545,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T18:48:04.459Z"
@@ -288,7 +280,7 @@
       {
         "id": "m28",
         "text": "Spent a quiet evening keeping company with Zeeb in Hangar Bay 3 while he worked on the Little Dart on day 131.",
-        "strength": 0.475,
+        "strength": 0.46,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T18:58:05.099Z"
@@ -296,7 +288,7 @@
       {
         "id": "m26",
         "text": "Zeeb sketched a sharp new ship design aimed at piercing the stratosphere on day 131.",
-        "strength": 0.59,
+        "strength": 0.575,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T19:08:04.989Z"
@@ -304,7 +296,7 @@
       {
         "id": "m15",
         "text": "Agreed with Zeeb that his new ship design holds a precise and clean trajectory for piercing the stratosphere on day 131.",
-        "strength": 0.62,
+        "strength": 0.605,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T19:21:30.282Z"
@@ -312,7 +304,7 @@
       {
         "id": "m19",
         "text": "Purchased a fresh cup of lubrication oil at the fuel depot to restore critical fluid levels on day 132.",
-        "strength": 0.635,
+        "strength": 0.62,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T19:31:29.989Z"
@@ -320,10 +312,18 @@
       {
         "id": "m17",
         "text": "Plugged into the fuel depot charging dock to restore low battery reserves on day 132.",
-        "strength": 0.75,
+        "strength": 0.735,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T19:41:30.039Z"
+      },
+      {
+        "id": "m29",
+        "text": "Observed the clear night sky from the dune ridge and mapped the stellar drift on day 132.",
+        "strength": 0.65,
+        "recalls": 0,
+        "term": "short",
+        "at": "2026-11-28T19:51:30.259Z"
       }
     ],
     "beliefs": []

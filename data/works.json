@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 31",
-    "progress": 72,
-    "version": 12,
-    "lastChange": "welding Fen the bent stabiliser fin onto the open lattice interstage to reinforce lateral load limits (used Sprocket, a tiny gyroscope)",
+    "progress": 79,
+    "version": 13,
+    "lastChange": "welding lightweight diagonal bracing struts onto the Little Dart's interior frame using Otto the dented fuel cell for scrap reinforcement (used Otto, a dented fuel cell)",
     "log": [
+      {
+        "version": 13,
+        "change": "welding lightweight diagonal bracing struts onto the Little Dart's interior frame using Otto the dented fuel cell for scrap reinforcement (used Otto, a dented fuel cell)",
+        "progress": 79,
+        "at": "2026-11-28T07:01:54.867Z"
+      },
       {
         "version": 12,
         "change": "welding Fen the bent stabiliser fin onto the open lattice interstage to reinforce lateral load limits (used Sprocket, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "mounted the ZL38063 voice processor chip right into the center of the Little Dart cockpit console and ran fresh copper wire to the audio receiver. (used Fen, a coil of copper wire)",
         "progress": 17,
         "at": "2026-11-26T07:45:36.316Z"
-      },
-      {
-        "version": 2,
-        "change": "soldered the ZL38063 audio pin layout into the Little Dart cockpit control panel",
-        "progress": 9,
-        "at": "2026-11-26T05:00:13.694Z"
       }
     ],
     "launched": [
@@ -4229,7 +4229,7 @@
         ]
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 10,
     "parts": [
       {
         "name": "Rusty Jr",
@@ -4270,6 +4270,12 @@
         "name": "Sprocket",
         "what": "a tiny gyroscope",
         "version": 12
+      },
+      {
+        "name": "Otto",
+        "what": "a dented fuel cell",
+        "good": true,
+        "version": 13
       }
     ],
     "design": null
@@ -4566,12 +4572,6 @@
       "name": "Wren",
       "what": "a mystery box that hums",
       "at": "2026-11-28T00:09:19.560Z"
-    },
-    {
-      "name": "Otto",
-      "what": "a dented fuel cell",
-      "at": "2026-11-28T00:09:19.560Z",
-      "good": true
     }
   ],
   "reads": [

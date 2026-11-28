@@ -142,40 +142,52 @@
     }
   },
   "state": {
-    "mood": 0.412,
-    "energy": 0.525,
+    "mood": 0.398,
+    "energy": 0.499,
     "needs": {
-      "charge": 0.1,
-      "oil": 0.2,
-      "curiosity": 0.6,
+      "charge": 0.142,
+      "oil": 0.236,
+      "curiosity": 0.672,
       "company": 0,
-      "craft": 0.3
+      "craft": 0.36
     },
     "place": "hangar",
     "action": "hang_out",
-    "doing": "standing still on the workbench while Zeeb adjusts my sensor dish",
-    "thought": "Optical array calibrating. Magnetic north located. Primary telemetry dish receiving local atmospheric signals.",
-    "feeling": "starry-eyed but low on power",
-    "say": "*click* Sensor dish connected. Signal clarity... ninety-eight percent. Hello, Zeeb. *soft static hum*",
+    "doing": "calibrating sensor dish alignment while greeting Zeeb",
+    "thought": "Audio input confirmed. Zeeb is the creator entity logged in my primary blueprint table. Sensor dish alignment is optimal.",
+    "feeling": "starry-eyed and quiet",
+    "say": "*click* Greetings, Zeeb. *bzzt* Telemetry signal is clear. Optical aperture calibrated and ready for plotting horizon vectors.",
     "recent": [
+      {
+        "id": "hang_out",
+        "at": "2026-11-28T03:41:24.197Z"
+      },
       {
         "id": "hang_out",
         "at": "2026-11-28T03:31:23.348Z"
       }
     ],
-    "busyUntil": "2026-11-28T03:33:15.848Z",
+    "busyUntil": "2026-11-28T03:43:54.197Z",
     "asleep": false,
-    "lastTick": 1795836683348
+    "lastTick": 1795837284197
   },
   "mem": {
     "memories": [
       {
         "id": "m1",
         "text": "Activated for the first time in Hangar Bay 3. Zeeb finished connecting my sensor dish.",
-        "strength": 0.8,
+        "strength": 0.785,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:31:23.348Z"
+      },
+      {
+        "id": "m2",
+        "text": "Logged Zeeb's voice print and confirmed sensor dish calibration in Hangar 3.",
+        "strength": 0.65,
+        "recalls": 0,
+        "term": "short",
+        "at": "2026-11-28T03:41:24.197Z"
       }
     ],
     "beliefs": []

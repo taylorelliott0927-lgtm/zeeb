@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795862509323,
+  "lastTick": 1795863108552,
   "asleep": false,
-  "place": "hangar",
-  "action": "nap_dock",
-  "doing": "napping in the charging dock",
-  "actionStartedAt": "2026-11-28T10:41:49.323Z",
-  "actionMinutes": 45,
-  "thought": "time to plug in for a bit so I don't stall out right in the middle of plumbing.",
-  "feeling": "low power but happy about the fuel lines",
-  "say": "bweep-bzt",
-  "mood": 0.231,
-  "energy": 0.158,
+  "place": "tower",
+  "action": "follow_link",
+  "doing": "following a link across the Wire",
+  "actionStartedAt": "2026-11-28T10:51:48.552Z",
+  "actionMinutes": 30,
+  "thought": "ha, they should see me swap out a fusion valve when a dust squall hits. maybe I just need better cookies for my browser.",
+  "feeling": "very proud and slightly amused",
+  "say": "",
+  "mood": 0.276,
+  "energy": 0.285,
   "needs": {
-    "charge": 0.154,
-    "oil": 0.312,
-    "curiosity": 0.742,
-    "company": 0,
-    "craft": 0.067
+    "charge": 0.201,
+    "oil": 0.352,
+    "curiosity": 0.422,
+    "company": 0.053,
+    "craft": 0.134
   },
   "credits": 3,
   "recent": [
+    {
+      "id": "follow_link",
+      "detail": "",
+      "at": "2026-11-28T10:51:48.552Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "browse_wire",
       "detail": "an-6 bulkhead fittings and lightweight fuel rails",
       "at": "2026-11-28T09:09:00.474Z"
-    },
-    {
-      "id": "browse_wire",
-      "detail": "micro-valves for high-pressure fuel lines",
-      "at": "2026-11-28T08:59:01.159Z"
     }
   ],
   "wants": [
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-28T10:41:49.323Z",
+  "lettersCheckedAt": "2026-11-28T10:51:48.552Z",
   "weather": {
     "kind": "clear",
     "temp": 16,
@@ -1651,32 +1651,29 @@
   "sleepDay": 127,
   "lastReflectDay": 127,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-28T10:41:49.323Z",
+  "updatedAt": "2026-11-28T10:51:48.552Z",
   "clock": {
     "day": 129,
-    "time": "01:35",
-    "hour": 1,
-    "minute": 35
+    "time": "02:55",
+    "hour": 2,
+    "minute": 55
   },
   "townDayMinutes": 180,
-  "placeName": "Hangar Bay 3",
+  "placeName": "the comms tower",
   "streak": {
-    "action": "nap_dock",
-    "since": "2026-11-28T10:41:49.323Z"
+    "action": "follow_link",
+    "since": "2026-11-28T10:51:48.552Z"
   },
-  "busyUntil": "2026-11-28T10:47:26.823Z",
-  "busyUntilTown": "02:20",
+  "busyUntil": "2026-11-28T10:55:33.552Z",
+  "busyUntilTown": "03:25",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "plugging into the charging dock for a quick battery sip",
+  "doingWords": "",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
-  "body": [
-    "droop",
-    "lean_in"
-  ],
+  "body": [],
   "pops": {
     "at": "2026-11-28T10:03:55.366Z",
     "items": [
@@ -1694,6 +1691,10 @@
     "at": "2026-11-28T10:11:49.025Z"
   },
   "thoughts": [
+    {
+      "text": "ha, they should see me swap out a fusion valve when a dust squall hits. maybe I just need better cookies for my browser.",
+      "at": "2026-11-28T10:51:48.552Z"
+    },
     {
       "text": "time to plug in for a bit so I don't stall out right in the middle of plumbing.",
       "at": "2026-11-28T10:41:49.323Z"
@@ -1713,25 +1714,22 @@
     {
       "text": "Even little starships need their pilots to power down once in a while. Sector nine can wait until the voltage is back up.",
       "at": "2026-11-28T10:03:55.366Z"
-    },
-    {
-      "text": "Sector nine is so close I can almost hear the thrusters hum. Tack says the dust lane is clear.",
-      "at": "2026-11-28T09:53:55.903Z"
     }
   ],
-  "sayAt": "2026-11-28T10:41:49.323Z",
+  "sayAt": "2026-11-28T10:51:48.552Z",
   "today": {
     "day": 129,
     "counts": {
       "work_dart": 1,
-      "nap_dock": 1
+      "nap_dock": 1,
+      "follow_link": 1
     }
   },
   "lastDone": {
     "work_dart": "2026-11-28T10:31:48.968Z",
     "read_news": "2026-11-28T08:29:00.809Z",
     "drink_oil": "2026-11-28T09:23:55.751Z",
-    "follow_link": "2026-11-28T08:39:00.830Z",
+    "follow_link": "2026-11-28T10:51:48.552Z",
     "scavenge": "2026-11-28T00:34:58.648Z",
     "fix_job": "2026-11-28T09:13:56.017Z",
     "build_thing": "2026-11-14T18:27:59.427Z",
@@ -1787,10 +1785,17 @@
     }
   ],
   "nextSearch": {
-    "text": "-6 AN braided stainless fuel line flexible hose",
-    "at": "2026-11-28T09:09:00.474Z"
+    "text": "high performance exhaust headers for tiny rockets",
+    "at": "2026-11-28T10:51:48.552Z"
   },
   "said": [
+    {
+      "text": "ha, they should see me swap out a fusion valve when a dust squall hits. maybe I just need better cookies for my browser.",
+      "kind": "think",
+      "at": "2026-11-28T10:51:48.552Z",
+      "town": "day 129 02:55",
+      "place": "the comms tower"
+    },
     {
       "text": "bweep-bzt",
       "kind": "say",
@@ -2833,13 +2838,6 @@
       "at": "2026-11-27T20:02:38.128Z",
       "town": "day 124 04:22",
       "place": "the comms tower"
-    },
-    {
-      "text": "i wonder if i can squeeze a tiny coupling relay into the auxiliary thruster feed without blowing the nav computer. that galvanic isolation sounds mighty smart.",
-      "kind": "think",
-      "at": "2026-11-27T20:02:38.128Z",
-      "town": "day 124 04:22",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2850,7 +2848,7 @@
     "at": "2026-11-26T21:28:36.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-28T10:41:49.323Z",
+  "feedArchivedAt": "2026-11-28T10:51:48.552Z",
   "plans": [],
   "searches": [
     {

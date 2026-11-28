@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795867832321,
+  "lastTick": 1795868431753,
   "asleep": false,
-  "place": "depot",
-  "action": "hang_out",
-  "doing": "hanging out with his friend",
-  "actionStartedAt": "2026-11-28T12:10:32.321Z",
-  "actionMinutes": 30,
-  "thought": "Tack's telemetry sensor is always so precise. Between his star charts and my engine builds, Mk 32 is going to fly super smooth.",
-  "feeling": "cheerful and eager",
-  "say": "*bweep-bzt!* Hey Tack! Perfect timing. I just finished routing the braided fuel lines on Mk 32, and the exhaust gasket specs are looking prime!",
-  "mood": 0.368,
-  "energy": 0.658,
+  "place": "hangar",
+  "action": "work_dart",
+  "doing": "working on the Little Dart",
+  "actionStartedAt": "2026-11-28T12:20:31.753Z",
+  "actionMinutes": 45,
+  "thought": "Bix is going to make a great heat shield for the exhaust manifold. If I trim the edges down, it'll protect the wiring completely.",
+  "feeling": "focused, excited, ready to weld",
+  "say": "*bweep-bzt-boop!* Fitting Bix right around the main port so the heat doesn't melt Tack's sensors.",
+  "mood": 0.436,
+  "energy": 0.555,
   "needs": {
-    "charge": 0.098,
-    "oil": 0.04,
-    "curiosity": 0.327,
-    "company": 0,
-    "craft": 0.661
+    "charge": 0.195,
+    "oil": 0.08,
+    "curiosity": 0.407,
+    "company": 0.053,
+    "craft": 0.228
   },
   "credits": 2,
   "recent": [
+    {
+      "id": "work_dart",
+      "detail": "installing heat shielding around the micro thruster exhaust housing (used Bix, a",
+      "at": "2026-11-28T12:20:31.753Z"
+    },
     {
       "id": "hang_out",
       "detail": "comparing engine flow rates with Tack's telemetry charts while hanging out near ",
@@ -75,14 +80,14 @@
       "id": "work_dart",
       "detail": "securing the AN-6 bulkhead fittings and lightweight fuel rails with precision to",
       "at": "2026-11-28T10:21:48.817Z"
-    },
-    {
-      "id": "work_dart",
-      "detail": "installing and sealing the AN-6 bulkhead fittings and lightweight fuel rails ont",
-      "at": "2026-11-28T10:11:49.025Z"
     }
   ],
   "wants": [
+    {
+      "id": "w6",
+      "text": "to bolt down the heat tile shielding before testing the thruster alignment",
+      "at": "2026-11-28T12:20:31.753Z"
+    },
     {
       "id": "w5",
       "text": "to get my joints greased up so I can get back to building",
@@ -97,11 +102,6 @@
       "id": "w8",
       "text": "to look up more exhaust designs after this",
       "at": "2026-11-28T11:01:49.113Z"
-    },
-    {
-      "id": "w7",
-      "text": "to get my battery back to full and resume plumbing",
-      "at": "2026-11-28T10:41:49.323Z"
     }
   ],
   "promises": [],
@@ -1639,7 +1639,7 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-28T12:10:32.321Z",
+  "lettersCheckedAt": "2026-11-28T12:20:31.753Z",
   "weather": {
     "kind": "clear",
     "temp": 18,
@@ -1651,31 +1651,31 @@
   "sleepDay": 128,
   "lastReflectDay": 128,
   "brain": "gemini-3.6-flash",
-  "updatedAt": "2026-11-28T12:10:32.321Z",
+  "updatedAt": "2026-11-28T12:20:31.753Z",
   "clock": {
     "day": 129,
-    "time": "13:25",
-    "hour": 13,
-    "minute": 25
+    "time": "14:45",
+    "hour": 14,
+    "minute": 45
   },
   "townDayMinutes": 180,
-  "placeName": "the fuel depot",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "hang_out",
-    "since": "2026-11-28T12:10:32.321Z"
+    "action": "work_dart",
+    "since": "2026-11-28T12:20:31.753Z"
   },
-  "busyUntil": "2026-11-28T12:14:17.321Z",
-  "busyUntilTown": "13:55",
+  "busyUntil": "2026-11-28T12:26:09.253Z",
+  "busyUntilTown": "15:30",
   "runner": "github",
   "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "talking telemetry and fuel lines with Tack at the depot taps",
-  "newsForCreator": "",
+  "doingWords": "welding scorched heat tile shielding around the thruster ports",
+  "newsForCreator": "the Little Dart Mk 32 just reached 25% built (version 3). Last change: installing heat shielding around the micro thruster exhaust housing (used Bix, a scorched heat tile) (used Gus, a sensor eye with one crack).",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "bounce",
-    "nod"
+    "lean_in",
+    "bounce"
   ],
   "pops": {
     "at": "2026-11-28T11:59:39.088Z",
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "Bix is going to make a great heat shield for the exhaust manifold. If I trim the edges down, it'll protect the wiring completely.",
+      "at": "2026-11-28T12:20:31.753Z"
+    },
+    {
       "text": "Tack's telemetry sensor is always so precise. Between his star charts and my engine builds, Mk 32 is going to fly super smooth.",
       "at": "2026-11-28T12:10:32.321Z"
     },
@@ -1713,17 +1717,13 @@
     {
       "text": "All that reading about exhaust gaskets made my visor heavy. Time to head down to Hangar Bay 3 and juice up.",
       "at": "2026-11-28T11:39:39.245Z"
-    },
-    {
-      "text": "wonder if that stuff would make a good heat shield for re-entry over kessa-9. better check its weight first.",
-      "at": "2026-11-28T11:29:38.826Z"
     }
   ],
-  "sayAt": "2026-11-28T12:10:32.321Z",
+  "sayAt": "2026-11-28T12:20:31.753Z",
   "today": {
     "day": 129,
     "counts": {
-      "work_dart": 1,
+      "work_dart": 2,
       "nap_dock": 2,
       "follow_link": 2,
       "browse_wire": 3,
@@ -1732,7 +1732,7 @@
     }
   },
   "lastDone": {
-    "work_dart": "2026-11-28T10:31:48.968Z",
+    "work_dart": "2026-11-28T12:20:31.753Z",
     "read_news": "2026-11-28T08:29:00.809Z",
     "drink_oil": "2026-11-28T11:59:39.088Z",
     "follow_link": "2026-11-28T11:29:38.826Z",
@@ -1795,6 +1795,20 @@
     "at": "2026-11-28T11:29:38.826Z"
   },
   "said": [
+    {
+      "text": "*bweep-bzt-boop!* Fitting Bix right around the main port so the heat doesn't melt Tack's sensors.",
+      "kind": "say",
+      "at": "2026-11-28T12:20:31.753Z",
+      "town": "day 129 14:45",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "Bix is going to make a great heat shield for the exhaust manifold. If I trim the edges down, it'll protect the wiring completely.",
+      "kind": "think",
+      "at": "2026-11-28T12:20:31.753Z",
+      "town": "day 129 14:45",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "*bweep-bzt!* Hey Tack! Perfect timing. I just finished routing the braided fuel lines on Mk 32, and the exhaust gasket specs are looking prime!",
       "kind": "say",
@@ -2830,20 +2844,6 @@
       "at": "2026-11-27T21:41:19.013Z",
       "town": "day 124 17:31",
       "place": "the comms tower"
-    },
-    {
-      "text": "hmm, let's see about that thermal resistance chart.",
-      "kind": "say",
-      "at": "2026-11-27T21:30:21.758Z",
-      "town": "day 124 16:04",
-      "place": "the comms tower"
-    },
-    {
-      "text": "if my thruster controller draws fifteen amps, a tiny aluminum fin will not save the day. need a chunky heatsink for the main panel.",
-      "kind": "think",
-      "at": "2026-11-27T21:30:21.758Z",
-      "town": "day 124 16:04",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2854,7 +2854,7 @@
     "at": "2026-11-26T21:28:36.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-28T12:10:32.321Z",
+  "feedArchivedAt": "2026-11-28T12:20:31.753Z",
   "plans": [],
   "searches": [
     {

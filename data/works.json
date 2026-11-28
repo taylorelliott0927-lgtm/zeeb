@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 32",
-    "progress": 41,
-    "version": 5,
-    "lastChange": "mounting and welding high temperature ceramic insulation brackets around the micro thruster nozzle (used Fen, a bent stabiliser fin)",
+    "progress": 50,
+    "version": 6,
+    "lastChange": "routing and securing AN-6 bulkhead fittings and lightweight fuel lines along the lower spine of the Little Dart (used Pim, a sensor eye with one crack)",
     "log": [
+      {
+        "version": 6,
+        "change": "routing and securing AN-6 bulkhead fittings and lightweight fuel lines along the lower spine of the Little Dart (used Pim, a sensor eye with one crack)",
+        "progress": 50,
+        "at": "2026-11-28T14:12:05.656Z"
+      },
       {
         "version": 5,
         "change": "mounting and welding high temperature ceramic insulation brackets around the micro thruster nozzle (used Fen, a bent stabiliser fin)",
@@ -238,12 +244,6 @@
         "change": "applied a smooth layer of thermal paste across the Little Dart's processor heat sink using the copper wire Bix for delicate positioning (used Bix, a coil of copper wire)",
         "progress": 87,
         "at": "2026-11-26T18:00:58.512Z"
-      },
-      {
-        "version": 11,
-        "change": "routed the copper wire (Nim) through the instrument panel and soldered the navigation power bus (used Nim, a coil of copper wire)",
-        "progress": 80,
-        "at": "2026-11-26T15:38:29.932Z"
       }
     ],
     "launched": [
@@ -4297,7 +4297,7 @@
         ]
       }
     ],
-    "partsUsed": 5,
+    "partsUsed": 6,
     "parts": [
       {
         "name": "Pim",
@@ -4323,6 +4323,11 @@
         "name": "Fen",
         "what": "a bent stabiliser fin",
         "version": 5
+      },
+      {
+        "name": "Pim",
+        "what": "a sensor eye with one crack",
+        "version": 6
       }
     ],
     "design": null
@@ -4571,6 +4576,16 @@
   ],
   "stash": [
     {
+      "name": "Dibs",
+      "what": "a strip of hull plating",
+      "at": "2026-11-28T14:12:05.656Z"
+    },
+    {
+      "name": "Captain",
+      "what": "a coil of copper wire",
+      "at": "2026-11-28T14:12:05.656Z"
+    },
+    {
       "name": "Tilly",
       "what": "a strip of hull plating",
       "at": "2026-11-28T12:57:33.179Z"
@@ -4599,11 +4614,6 @@
       "name": "Gus",
       "what": "a scorched heat tile",
       "at": "2026-11-28T01:04:59.171Z"
-    },
-    {
-      "name": "Pim",
-      "what": "a sensor eye with one crack",
-      "at": "2026-11-28T00:44:59.049Z"
     }
   ],
   "reads": [

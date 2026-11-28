@@ -1,10 +1,16 @@
 {
   "dart": {
-    "name": "the Little Dart Mk 31",
-    "progress": 98,
-    "version": 15,
-    "lastChange": "riveting lightweight carbon-weave skin plates onto the forward nose section of the Little Dart, using Gus (a scorched heat tile) (used Brakk, a mystery box that hums)",
+    "name": "the Little Dart Mk 32",
+    "progress": 0,
+    "version": 0,
+    "lastChange": "",
     "log": [
+      {
+        "version": 16,
+        "change": "installing and sealing the AN-6 bulkhead fittings and lightweight fuel rails onto the Little Dart, using Nim (a cockpit switch that still clicks) for extra panel security (used Tilly, a dented fuel cell)",
+        "progress": 100,
+        "at": "2026-11-28T10:11:49.025Z"
+      },
       {
         "version": 15,
         "change": "riveting lightweight carbon-weave skin plates onto the forward nose section of the Little Dart, using Gus (a scorched heat tile) (used Brakk, a mystery box that hums)",
@@ -238,12 +244,6 @@
         "change": "routed the final navigation bus leads and secured the main panel with Nim (a sensor eye with one crack) (used Otto, a perfectly good bolt)",
         "progress": 41,
         "at": "2026-11-26T11:06:17.603Z"
-      },
-      {
-        "version": 5,
-        "change": "routed fresh copper wire from the Nim sensor eye to the primary nav-bus and secured the panel with Otto the bolt (used Otto, a scorched heat tile)",
-        "progress": 34,
-        "at": "2026-11-26T10:56:18.685Z"
       }
     ],
     "launched": [
@@ -4227,67 +4227,78 @@
             "version": 15
           }
         ]
+      },
+      {
+        "name": "the Little Dart Mk 31",
+        "day": 128,
+        "partsUsed": 13,
+        "parts": [
+          {
+            "name": "Rusty Jr",
+            "what": "a sensor eye with one crack",
+            "version": 1
+          },
+          {
+            "name": "Fen",
+            "what": "a bent stabiliser fin",
+            "version": 2
+          },
+          {
+            "name": "Sprocket",
+            "what": "a coil of copper wire",
+            "version": 3
+          },
+          {
+            "name": "Brakk",
+            "what": "a scorched heat tile",
+            "version": 5
+          },
+          {
+            "name": "Sprocket",
+            "what": "half a thruster nozzle",
+            "version": 6
+          },
+          {
+            "name": "Mabel",
+            "what": "a cockpit switch that still clicks",
+            "version": 7
+          },
+          {
+            "name": "Brakk",
+            "what": "half a thruster nozzle",
+            "version": 11
+          },
+          {
+            "name": "Sprocket",
+            "what": "a tiny gyroscope",
+            "version": 12
+          },
+          {
+            "name": "Otto",
+            "what": "a dented fuel cell",
+            "good": true,
+            "version": 13
+          },
+          {
+            "name": "Wren",
+            "what": "a mystery box that hums",
+            "version": 14
+          },
+          {
+            "name": "Brakk",
+            "what": "a mystery box that hums",
+            "version": 15
+          },
+          {
+            "name": "Tilly",
+            "what": "a dented fuel cell",
+            "version": 16
+          }
+        ]
       }
     ],
-    "partsUsed": 12,
-    "parts": [
-      {
-        "name": "Rusty Jr",
-        "what": "a sensor eye with one crack",
-        "version": 1
-      },
-      {
-        "name": "Fen",
-        "what": "a bent stabiliser fin",
-        "version": 2
-      },
-      {
-        "name": "Sprocket",
-        "what": "a coil of copper wire",
-        "version": 3
-      },
-      {
-        "name": "Brakk",
-        "what": "a scorched heat tile",
-        "version": 5
-      },
-      {
-        "name": "Sprocket",
-        "what": "half a thruster nozzle",
-        "version": 6
-      },
-      {
-        "name": "Mabel",
-        "what": "a cockpit switch that still clicks",
-        "version": 7
-      },
-      {
-        "name": "Brakk",
-        "what": "half a thruster nozzle",
-        "version": 11
-      },
-      {
-        "name": "Sprocket",
-        "what": "a tiny gyroscope",
-        "version": 12
-      },
-      {
-        "name": "Otto",
-        "what": "a dented fuel cell",
-        "good": true,
-        "version": 13
-      },
-      {
-        "name": "Wren",
-        "what": "a mystery box that hums",
-        "version": 14
-      },
-      {
-        "name": "Brakk",
-        "what": "a mystery box that hums",
-        "version": 15
-      }
-    ],
+    "partsUsed": 0,
+    "parts": [],
     "design": null
   },
   "tunes": [
@@ -4571,11 +4582,6 @@
     {
       "name": "Pim",
       "what": "a tiny gyroscope",
-      "at": "2026-11-28T00:19:19.748Z"
-    },
-    {
-      "name": "Tilly",
-      "what": "a dented fuel cell",
       "at": "2026-11-28T00:19:19.748Z"
     }
   ],

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 32",
-    "progress": 50,
-    "version": 6,
-    "lastChange": "routing and securing AN-6 bulkhead fittings and lightweight fuel lines along the lower spine of the Little Dart (used Pim, a sensor eye with one crack)",
+    "progress": 56,
+    "version": 7,
+    "lastChange": "mounting and securing the main fuel distribution manifold and high-pressure check valves along the spine of the Little Dart (used Gus, a scorched heat tile) (used Gus, a scorched heat tile)",
     "log": [
+      {
+        "version": 7,
+        "change": "mounting and securing the main fuel distribution manifold and high-pressure check valves along the spine of the Little Dart (used Gus, a scorched heat tile) (used Gus, a scorched heat tile)",
+        "progress": 56,
+        "at": "2026-11-28T14:22:06.246Z"
+      },
       {
         "version": 6,
         "change": "routing and securing AN-6 bulkhead fittings and lightweight fuel lines along the lower spine of the Little Dart (used Pim, a sensor eye with one crack)",
@@ -238,12 +244,6 @@
         "change": "welded a custom titanium exhaust flange onto the Little Dart's aft propulsion housing using Gus for extra leverage (used Gus, a cockpit switch that still clicks)",
         "progress": 97,
         "at": "2026-11-26T19:08:22.447Z"
-      },
-      {
-        "version": 12,
-        "change": "applied a smooth layer of thermal paste across the Little Dart's processor heat sink using the copper wire Bix for delicate positioning (used Bix, a coil of copper wire)",
-        "progress": 87,
-        "at": "2026-11-26T18:00:58.512Z"
       }
     ],
     "launched": [
@@ -4297,7 +4297,7 @@
         ]
       }
     ],
-    "partsUsed": 6,
+    "partsUsed": 7,
     "parts": [
       {
         "name": "Pim",
@@ -4328,6 +4328,11 @@
         "name": "Pim",
         "what": "a sensor eye with one crack",
         "version": 6
+      },
+      {
+        "name": "Gus",
+        "what": "a scorched heat tile",
+        "version": 7
       }
     ],
     "design": null
@@ -4609,11 +4614,6 @@
       "name": "Nim",
       "what": "a cockpit switch that still clicks",
       "at": "2026-11-28T09:53:55.903Z"
-    },
-    {
-      "name": "Gus",
-      "what": "a scorched heat tile",
-      "at": "2026-11-28T01:04:59.171Z"
     }
   ],
   "reads": [

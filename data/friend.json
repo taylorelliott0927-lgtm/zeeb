@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": -0.186,
-    "energy": 0.2,
+    "mood": -0.111,
+    "energy": 0.173,
     "needs": {
-      "charge": 0,
+      "charge": 0.042,
       "oil": 1,
       "curiosity": 1,
-      "company": 0.586,
+      "company": 0.084,
       "craft": 1
     },
-    "place": "hangar",
-    "action": "nap_dock",
-    "doing": "remaining plugged into the terminal to top off core energy reserves",
-    "thought": "Battery reserves are finally nearing a stable state. [click-whir] Just a little longer on the line to be completely safe.",
+    "place": "depot",
+    "action": "hang_out",
+    "doing": "joining Zeeb at the fuel depot to review the upcoming flight path over a cup of heavy grade oil",
+    "thought": "[click-whir] The battery levels are finally green... it is good to step away from the dock and find Zeeb enjoying his break.",
     "feeling": "relieved and steady",
-    "say": "",
+    "say": "The telemetry for sector nine looks exceptionally clear today, Zeeb. Not a dust cloud in sight.",
     "recent": [
+      {
+        "id": "hang_out",
+        "at": "2026-11-28T09:23:55.751Z"
+      },
       {
         "id": "nap_dock",
         "at": "2026-11-28T09:13:56.017Z"
@@ -201,22 +205,18 @@
       {
         "id": "nap_dock",
         "at": "2026-11-28T07:21:54.707Z"
-      },
-      {
-        "id": "help_dart",
-        "at": "2026-11-28T07:11:54.560Z"
       }
     ],
-    "busyUntil": "2026-11-28T09:21:26.017Z",
+    "busyUntil": "2026-11-28T09:27:40.751Z",
     "asleep": false,
-    "lastTick": 1795857236017
+    "lastTick": 1795857835751
   },
   "mem": {
     "memories": [
       {
         "id": "m10",
         "text": "Continued resting at the Hangar Bay 3 power node to restore safe battery levels on day 127.",
-        "strength": 0.465,
+        "strength": 0.45,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T06:23:48.266Z"
@@ -224,7 +224,7 @@
       {
         "id": "m11",
         "text": "Continued resting at the Hangar Bay 3 power node to safely raise my charge levels on day 127.",
-        "strength": 0.48,
+        "strength": 0.465,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T06:33:48.586Z"
@@ -232,7 +232,7 @@
       {
         "id": "m14",
         "text": "Helped Zeeb fit the fairings onto the Little Dart at Hangar Bay 3 on day 127.",
-        "strength": 0.49,
+        "strength": 0.475,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T07:11:54.560Z"
@@ -240,7 +240,7 @@
       {
         "id": "m15",
         "text": "Plugged back into the Hangar Bay 3 charging dock to raise my low battery levels on day 127.",
-        "strength": 0.505,
+        "strength": 0.49,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T07:21:54.707Z"
@@ -248,7 +248,7 @@
       {
         "id": "m16",
         "text": "Plugged back into the Hangar Bay 3 charging dock to restore critically low battery levels on day 128.",
-        "strength": 0.57,
+        "strength": 0.555,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T07:31:54.543Z"
@@ -256,7 +256,7 @@
       {
         "id": "m17",
         "text": "Continued resting at the Hangar Bay 3 charging dock to safely restore battery levels on day 128.",
-        "strength": 0.585,
+        "strength": 0.57,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T07:41:54.742Z"
@@ -264,23 +264,15 @@
       {
         "id": "m18",
         "text": "Continued resting at the Hangar Bay 3 charging dock to safely restore critically low battery levels on day 128.",
-        "strength": 0.6,
+        "strength": 0.585,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T07:51:54.711Z"
       },
       {
-        "id": "m19",
-        "text": "Continued resting at the Hangar Bay 3 charging dock to ensure my battery is safely filled on day 128.",
-        "strength": 0.46,
-        "recalls": 0,
-        "term": "short",
-        "at": "2026-11-28T08:19:00.870Z"
-      },
-      {
         "id": "m20",
         "text": "Continued resting at the Hangar Bay 3 charging dock to safely bring my battery levels up from critically low on day 128.",
-        "strength": 0.675,
+        "strength": 0.66,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T08:29:00.809Z"
@@ -288,7 +280,7 @@
       {
         "id": "m21",
         "text": "Continued resting at the Hangar Bay 3 charging dock to raise my battery from critically low on day 128.",
-        "strength": 0.64,
+        "strength": 0.625,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T08:39:00.830Z"
@@ -296,7 +288,7 @@
       {
         "id": "m22",
         "text": "Continued resting at the Hangar Bay 3 charging dock to bring my battery levels up from critically low on day 128.",
-        "strength": 0.705,
+        "strength": 0.69,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T08:49:00.448Z"
@@ -304,7 +296,7 @@
       {
         "id": "m23",
         "text": "Continued resting at the Hangar Bay 3 charging dock to finish restoring my battery levels on day 128.",
-        "strength": 0.72,
+        "strength": 0.705,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T08:59:01.159Z"
@@ -312,7 +304,7 @@
       {
         "id": "m24",
         "text": "Continued resting at the Hangar Bay 3 charging dock to restore critically low battery reserves on day 128.",
-        "strength": 0.585,
+        "strength": 0.57,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T09:09:00.474Z"
@@ -320,10 +312,18 @@
       {
         "id": "m25",
         "text": "Finished charging my battery reserves at the Hangar Bay 3 dock on day 128, bringing my power levels back to a safe operating range.",
-        "strength": 0.75,
+        "strength": 0.735,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T09:13:56.017Z"
+      },
+      {
+        "id": "m26",
+        "text": "Joined Zeeb at the fuel depot on day 128 to discuss clear flight paths after finishing my battery charge.",
+        "strength": 0.65,
+        "recalls": 0,
+        "term": "short",
+        "at": "2026-11-28T09:23:55.751Z"
       }
     ],
     "beliefs": []

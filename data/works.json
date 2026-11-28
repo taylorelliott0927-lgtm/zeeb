@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 32",
-    "progress": 34,
-    "version": 4,
-    "lastChange": "securing heat tile trim around the micro thruster housing (used Fen, a bent stabiliser fin) (used Dibs, a bent stabiliser fin)",
+    "progress": 41,
+    "version": 5,
+    "lastChange": "mounting and welding high temperature ceramic insulation brackets around the micro thruster nozzle (used Fen, a bent stabiliser fin)",
     "log": [
+      {
+        "version": 5,
+        "change": "mounting and welding high temperature ceramic insulation brackets around the micro thruster nozzle (used Fen, a bent stabiliser fin)",
+        "progress": 41,
+        "at": "2026-11-28T14:02:06.116Z"
+      },
       {
         "version": 4,
         "change": "securing heat tile trim around the micro thruster housing (used Fen, a bent stabiliser fin) (used Dibs, a bent stabiliser fin)",
@@ -238,12 +244,6 @@
         "change": "routed the copper wire (Nim) through the instrument panel and soldered the navigation power bus (used Nim, a coil of copper wire)",
         "progress": 80,
         "at": "2026-11-26T15:38:29.932Z"
-      },
-      {
-        "version": 10,
-        "change": "mounted three flexible solar cells along the starboard curve of the Little Dart's hull and sealed the seams with a drop of high-grade resin (used Wren, a little landing strut)",
-        "progress": 74,
-        "at": "2026-11-26T15:23:21.328Z"
       }
     ],
     "launched": [
@@ -4297,7 +4297,7 @@
         ]
       }
     ],
-    "partsUsed": 4,
+    "partsUsed": 5,
     "parts": [
       {
         "name": "Pim",
@@ -4318,6 +4318,11 @@
         "name": "Dibs",
         "what": "a bent stabiliser fin",
         "version": 4
+      },
+      {
+        "name": "Fen",
+        "what": "a bent stabiliser fin",
+        "version": 5
       }
     ],
     "design": null
@@ -4598,11 +4603,6 @@
     {
       "name": "Pim",
       "what": "a sensor eye with one crack",
-      "at": "2026-11-28T00:44:59.049Z"
-    },
-    {
-      "name": "Fen",
-      "what": "a bent stabiliser fin",
       "at": "2026-11-28T00:44:59.049Z"
     }
   ],

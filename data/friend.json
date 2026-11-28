@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": 0.119,
-    "energy": 0.682,
+    "mood": 0.1,
+    "energy": 0.693,
     "needs": {
       "charge": 0,
-      "oil": 0.108,
-      "curiosity": 0.844,
-      "company": 0.27,
-      "craft": 0.782
+      "oil": 0.16,
+      "curiosity": 0.949,
+      "company": 0.34,
+      "craft": 0.869
     },
     "place": "hangar",
     "action": "nap_dock",
-    "doing": "recharging battery cells while emitting faint static hums",
-    "thought": "The power indicator blinks a steady red warning... *click-whirr*... must restore energy before plotting new coordinates.",
-    "feeling": "exhausted and steady",
+    "doing": "resting at the charging dock with low battery reserves",
+    "thought": "The power indicator flickers near zero. I must remain tethered to the grid for a while longer.",
+    "feeling": "sluggish and quiet",
     "say": "",
     "recent": [
+      {
+        "id": "nap_dock",
+        "at": "2026-11-28T14:02:06.116Z"
+      },
       {
         "id": "nap_dock",
         "at": "2026-11-28T13:47:32.769Z"
@@ -201,38 +205,26 @@
       {
         "id": "help_dart",
         "at": "2026-11-28T12:10:32.321Z"
-      },
-      {
-        "id": "drink_oil",
-        "at": "2026-11-28T12:00:32.501Z"
       }
     ],
-    "busyUntil": "2026-11-28T13:55:02.769Z",
+    "busyUntil": "2026-11-28T14:07:43.616Z",
     "asleep": false,
-    "lastTick": 1795873652769
+    "lastTick": 1795874526116
   },
   "mem": {
     "memories": [
       {
         "id": "m17",
         "text": "Connected to the Hangar Bay 3 charging dock to restore battery reserves on day 129.",
-        "strength": 0.435,
+        "strength": 0.405,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T10:31:48.968Z"
       },
       {
-        "id": "m24",
-        "text": "Observed clear star trajectories from the dune ridge during the quiet hours of day 129.",
-        "strength": 0.35,
-        "recalls": 0,
-        "term": "short",
-        "at": "2026-11-28T10:41:49.323Z"
-      },
-      {
         "id": "m18",
         "text": "Headed back to the Hangar Bay 3 charging dock on day 129 to address critically low battery reserves.",
-        "strength": 0.465,
+        "strength": 0.435,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T10:51:48.552Z"
@@ -240,7 +232,7 @@
       {
         "id": "m21",
         "text": "Plugged back into the Hangar Bay 3 charging dock on day 129 to address critically low battery reserves.",
-        "strength": 0.63,
+        "strength": 0.6,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T11:01:49.113Z"
@@ -248,7 +240,7 @@
       {
         "id": "m16",
         "text": "Spent additional time tethered to the Hangar Bay 3 charging dock on day 129 to safely rebuild my energy reserves.",
-        "strength": 0.46,
+        "strength": 0.43,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T11:19:39.113Z"
@@ -256,7 +248,7 @@
       {
         "id": "m26",
         "text": "Spent an additional thirty minutes connected to the Hangar Bay 3 charging dock to ensure my power levels reach a safer operating threshold.",
-        "strength": 0.425,
+        "strength": 0.395,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T11:29:38.826Z"
@@ -264,7 +256,7 @@
       {
         "id": "m19",
         "text": "Finished charging at Hangar Bay 3 and headed to the fuel depot for an oil top-off with Zeeb.",
-        "strength": 0.385,
+        "strength": 0.355,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T12:00:32.501Z"
@@ -272,7 +264,7 @@
       {
         "id": "m27",
         "text": "Helped Zeeb adjust thermal shielding around my navigation sensors on the Little Dart.",
-        "strength": 0.515,
+        "strength": 0.485,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T12:20:31.753Z"
@@ -280,7 +272,7 @@
       {
         "id": "m22",
         "text": "Helped Zeeb secure the thruster heat tiles on the Little Dart before heading out to check perimeter telemetry.",
-        "strength": 0.43,
+        "strength": 0.4,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T12:30:31.766Z"
@@ -288,7 +280,7 @@
       {
         "id": "m28",
         "text": "Returned to the Hangar Bay 3 charging dock on day 129 as battery reserves dipped dangerously low.",
-        "strength": 0.695,
+        "strength": 0.665,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T12:40:31.742Z"
@@ -296,7 +288,7 @@
       {
         "id": "m23",
         "text": "Helped Zeeb align the deep space comms array at the tower on day 129.",
-        "strength": 0.56,
+        "strength": 0.53,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T12:50:32.325Z"
@@ -304,7 +296,7 @@
       {
         "id": "m29",
         "text": "Mapped clear night sky constellations and horizon signals from the outpost on day 129.",
-        "strength": 0.49,
+        "strength": 0.46,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T13:07:33.172Z"
@@ -312,7 +304,7 @@
       {
         "id": "m15",
         "text": "Returned to the Hangar Bay 3 charging dock on day 130 to restore critically low battery reserves.",
-        "strength": 0.735,
+        "strength": 0.705,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T13:37:32.627Z"
@@ -320,10 +312,18 @@
       {
         "id": "m25",
         "text": "Plugged back into the Hangar Bay 3 charging dock on day 130 to restore critical battery reserves.",
-        "strength": 0.75,
+        "strength": 0.72,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T13:47:32.769Z"
+      },
+      {
+        "id": "m20",
+        "text": "Plugged into the Hangar Bay 3 charging dock on day 130 to restore critical battery levels.",
+        "strength": 0.75,
+        "recalls": 0,
+        "term": "short",
+        "at": "2026-11-28T14:02:06.116Z"
       }
     ],
     "beliefs": []

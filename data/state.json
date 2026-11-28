@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795834883042,
+  "lastTick": 1795835482545,
   "asleep": false,
-  "place": "tower",
-  "action": "browse_wire",
-  "doing": "still browsing the Wire at the comms tower",
-  "actionStartedAt": "2026-11-28T02:47:14.307Z",
-  "actionMinutes": 45,
-  "thought": "if i use titanium wire for the landing struts, i have to calculate the horizontal tension right or the whole gear assembly will bind up under load.",
-  "feeling": "focused and slightly greasy",
-  "say": "ooh, that curve radius is super slick.",
-  "mood": 0.175,
-  "energy": -0.201,
+  "place": "hangar",
+  "action": "nap_dock",
+  "doing": "napping in the charging dock",
+  "actionStartedAt": "2026-11-28T03:11:22.545Z",
+  "actionMinutes": 180,
+  "thought": "I spent way too long looking up catenary tension curves up at the tower. Time to head down to Bay 3 and get a full charge so I can build the Little Dart's next frame section.",
+  "feeling": "sleepy, low battery, ready for a nap",
+  "say": "*bweep-boop* Time to plug in and charge up!",
+  "mood": 0.189,
+  "energy": 0.009,
   "needs": {
-    "charge": 0.593,
-    "oil": 0.426,
-    "curiosity": 0,
-    "company": 0,
+    "charge": 0.19,
+    "oil": 0.466,
+    "curiosity": 0.08,
+    "company": 0.053,
     "craft": 1
   },
   "credits": 0,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-28T03:11:22.545Z"
+    },
     {
       "id": "browse_wire",
       "detail": "catenary tension equations for miniature titanium hulls",
@@ -75,14 +80,14 @@
       "id": "drink_oil",
       "detail": "",
       "at": "2026-11-28T01:04:59.171Z"
-    },
-    {
-      "id": "nap_dock",
-      "detail": "",
-      "at": "2026-11-28T00:54:58.460Z"
     }
   ],
   "wants": [
+    {
+      "id": "w7",
+      "text": "a full charge in the dock",
+      "at": "2026-11-28T03:11:22.545Z"
+    },
     {
       "id": "w6",
       "text": "some thin titanium wire for hull bracing",
@@ -97,11 +102,6 @@
       "id": "w9",
       "text": "some clean sheet aluminum for the next bulkhead",
       "at": "2026-11-27T23:32:20.254Z"
-    },
-    {
-      "id": "w8",
-      "text": "some aluminum gussets for the interstage ring",
-      "at": "2026-11-27T22:42:21.019Z"
     }
   ],
   "promises": [],
@@ -1639,43 +1639,42 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-28T03:01:23.042Z",
+  "lettersCheckedAt": "2026-11-28T03:11:22.545Z",
   "weather": {
     "kind": "clear",
     "temp": 12,
     "wind": 6,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-28T02:37:15.226Z"
+    "at": "2026-11-28T03:11:22.644Z"
   },
   "sleepDay": 125,
   "lastReflectDay": 125,
-  "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-28T03:01:23.042Z",
+  "brain": "gemini-3.6-flash",
+  "updatedAt": "2026-11-28T03:11:22.545Z",
   "clock": {
     "day": 126,
-    "time": "12:12",
-    "hour": 12,
-    "minute": 12
+    "time": "13:32",
+    "hour": 13,
+    "minute": 32
   },
   "townDayMinutes": 180,
-  "placeName": "the comms tower",
+  "placeName": "Hangar Bay 3",
   "streak": {
-    "action": "browse_wire",
-    "since": "2026-11-28T02:47:14.307Z"
+    "action": "nap_dock",
+    "since": "2026-11-28T03:11:22.545Z"
   },
-  "busyUntil": "2026-11-28T03:07:00.542Z",
-  "busyUntilTown": "12:57",
+  "busyUntil": "2026-11-28T03:33:52.545Z",
+  "busyUntilTown": "16:32",
   "runner": "github",
-  "model": "gemini-3.5-flash-lite",
+  "model": "gemini-3.6-flash",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "spinning brass dish while tracking catenary tension equations for titanium hulls",
+  "doingWords": "plugging into the hangar dock for a good recharge nap",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "look_up",
-    "spin"
+    "droop"
   ],
   "pops": {
     "at": "2026-11-28T01:14:59.088Z",
@@ -1695,6 +1694,10 @@
   },
   "thoughts": [
     {
+      "text": "I spent way too long looking up catenary tension curves up at the tower. Time to head down to Bay 3 and get a full charge so I can build the Little Dart's next frame section.",
+      "at": "2026-11-28T03:11:22.545Z"
+    },
+    {
       "text": "if i use titanium wire for the landing struts, i have to calculate the horizontal tension right or the whole gear assembly will bind up under load.",
       "at": "2026-11-28T03:01:23.042Z"
     },
@@ -1713,19 +1716,16 @@
     {
       "text": "i should check if my landing struts need beefier base plates before launch. wouldn't want the thrust kicking the floor out.",
       "at": "2026-11-28T02:27:15.016Z"
-    },
-    {
-      "text": "i wonder if tiny helices could anchor the landing gear of the little dart into loose desert dust. that would save so much weight on the nose cone.",
-      "at": "2026-11-28T02:17:15.116Z"
     }
   ],
-  "sayAt": "2026-11-28T03:01:23.042Z",
+  "sayAt": "2026-11-28T03:11:22.545Z",
   "today": {
     "day": 126,
     "counts": {
       "browse_wire": 4,
       "follow_link": 3,
-      "read_news": 1
+      "read_news": 1,
+      "nap_dock": 1
     }
   },
   "lastDone": {
@@ -1750,7 +1750,7 @@
     "chat_patrons": "2026-11-27T11:49:06.623Z",
     "busk": "2026-11-25T16:00:29.331Z",
     "cantina_band": "2026-11-26T16:28:29.352Z",
-    "nap_dock": "2026-11-28T00:54:58.460Z",
+    "nap_dock": "2026-11-28T03:11:22.545Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1791,6 +1791,20 @@
     "at": "2026-11-28T03:01:23.042Z"
   },
   "said": [
+    {
+      "text": "*bweep-boop* Time to plug in and charge up!",
+      "kind": "say",
+      "at": "2026-11-28T03:11:22.545Z",
+      "town": "day 126 13:32",
+      "place": "Hangar Bay 3"
+    },
+    {
+      "text": "I spent way too long looking up catenary tension curves up at the tower. Time to head down to Bay 3 and get a full charge so I can build the Little Dart's next frame section.",
+      "kind": "think",
+      "at": "2026-11-28T03:11:22.545Z",
+      "town": "day 126 13:32",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "ooh, that curve radius is super slick.",
       "kind": "say",
@@ -2826,20 +2840,6 @@
       "at": "2026-11-27T11:39:06.468Z",
       "town": "day 121 09:14",
       "place": "the Dented Moon cantina"
-    },
-    {
-      "text": "wonder if any new scrap came in overnight. maybe a nice titanium bolt or three.",
-      "kind": "think",
-      "at": "2026-11-27T11:39:06.468Z",
-      "town": "day 121 09:14",
-      "place": "the Dented Moon cantina"
-    },
-    {
-      "text": "*bweep-bzt-bweep*",
-      "kind": "say",
-      "at": "2026-11-27T11:29:06.634Z",
-      "town": "day 121 07:54",
-      "place": "the comms tower"
     }
   ],
   "flight": {
@@ -2850,7 +2850,7 @@
     "at": "2026-11-26T21:28:36.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-28T03:01:23.042Z",
+  "feedArchivedAt": "2026-11-28T03:11:22.545Z",
   "plans": [],
   "searches": [
     {

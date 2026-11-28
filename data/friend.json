@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": -0.046,
-    "energy": 0.449,
+    "mood": -0.077,
+    "energy": 0.43,
     "needs": {
       "charge": 0,
-      "oil": 0.614,
+      "oil": 0.65,
       "curiosity": 1,
-      "company": 0.533,
-      "craft": 0.99
+      "company": 0.581,
+      "craft": 1
     },
     "place": "hangar",
     "action": "nap_dock",
-    "doing": "reconnecting optical sensors to the power node and humming low static",
-    "thought": "The horizon is clear, but my internal diagnostics warn of power failure. Must restore energy reserves to ensure map accuracy.",
-    "feeling": "cautious and sluggish",
-    "say": "Initiating recharge cycle... power levels stabilizing.",
+    "doing": "drawing power from the terminal and letting internal systems idle",
+    "thought": "The flow of current is steady... *clack*... need to let the cells fill before attempting any navigation work.",
+    "feeling": "sluggish yet relieved",
+    "say": "",
     "recent": [
+      {
+        "id": "nap_dock",
+        "at": "2026-11-28T05:44:52.716Z"
+      },
       {
         "id": "nap_dock",
         "at": "2026-11-28T05:34:53.234Z"
@@ -203,16 +207,16 @@
         "at": "2026-11-28T03:31:23.348Z"
       }
     ],
-    "busyUntil": "2026-11-28T05:42:23.234Z",
+    "busyUntil": "2026-11-28T05:52:22.716Z",
     "asleep": false,
-    "lastTick": 1795844093234
+    "lastTick": 1795844692716
   },
   "mem": {
     "memories": [
       {
         "id": "m1",
         "text": "Activated for the first time in Hangar Bay 3. Zeeb finished connecting my sensor dish.",
-        "strength": 0.605,
+        "strength": 0.59,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:31:23.348Z"
@@ -220,7 +224,7 @@
       {
         "id": "m2",
         "text": "Logged Zeeb's voice print and confirmed sensor dish calibration in Hangar 3.",
-        "strength": 0.47,
+        "strength": 0.455,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:41:24.197Z"
@@ -228,7 +232,7 @@
       {
         "id": "m3",
         "text": "Observed a clear northern band of stars from the dune ridge on day 127, noting three new positional clusters.",
-        "strength": 0.645,
+        "strength": 0.63,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T04:31:55.072Z"
@@ -236,7 +240,7 @@
       {
         "id": "m4",
         "text": "Plugged into Hangar Bay 3 power node to restore critical battery levels.",
-        "strength": 0.62,
+        "strength": 0.605,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T05:14:52.618Z"
@@ -244,7 +248,7 @@
       {
         "id": "m5",
         "text": "Plugged back into the Hangar Bay 3 power node to recover critically low battery charge.",
-        "strength": 0.735,
+        "strength": 0.72,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T05:24:53.077Z"
@@ -252,10 +256,18 @@
       {
         "id": "m6",
         "text": "Plugged back into the Hangar Bay 3 power node to recover critically low battery charge on day 127.",
-        "strength": 0.8,
+        "strength": 0.785,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T05:34:53.234Z"
+      },
+      {
+        "id": "m7",
+        "text": "Recharged battery levels at the Hangar Bay 3 power node on day 127.",
+        "strength": 0.75,
+        "recalls": 0,
+        "term": "short",
+        "at": "2026-11-28T05:44:52.716Z"
       }
     ],
     "beliefs": []

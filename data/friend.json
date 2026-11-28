@@ -1,10 +1,15 @@
 {
-  "stage": "building",
+  "stage": "alive",
   "project": {
-    "progress": 97,
+    "progress": 100,
     "idea": "I start by collecting materials for the new companion bot, ensuring everything is organized and ready to build.",
     "started": "2026-11-14T11:54:58.335Z",
     "log": [
+      {
+        "progress": 100,
+        "note": "soldering the final connections on the sensory array harness using Pim the sensor eye and Pim the cockpit switch (used Brakk, a little landing strut)",
+        "at": "2026-11-28T03:31:23.348Z"
+      },
       {
         "progress": 97,
         "note": "working on the sensory array harness (used Bix, a cockpit switch that still clicks)",
@@ -91,16 +96,91 @@
       {
         "name": "Bix",
         "what": "a cockpit switch that still clicks"
+      },
+      {
+        "name": "Brakk",
+        "what": "a little landing strut"
       }
     ]
   },
-  "sheet": null,
-  "state": null,
+  "sheet": {
+    "name": "Tack",
+    "kind": "A tall, slender navigator bot cobbled together from a telemetry relay and an old landing gear strut.",
+    "core": "Tack is built to read star charts and plot smooth courses through heavy space dust. He leaves the repair wrenching to others and focuses entirely on the open sky ahead.",
+    "traits": [
+      "observant",
+      "cautious",
+      "precise",
+      "quiet",
+      "starry-eyed"
+    ],
+    "values": [
+      "accurate maps",
+      "clear signals",
+      "open horizons"
+    ],
+    "fears": [
+      "dead zones",
+      "corrupted star charts",
+      "magnetic storms"
+    ],
+    "quirks": [
+      "hums low radio static when calculating",
+      "aligns his head to magnetic north when idle",
+      "twitches his optical lens when excited"
+    ],
+    "voice": "Calm and rhythmic with soft mechanical clicks between sentences.",
+    "colors": {
+      "body": "#4a5d6e",
+      "eye": "#7df9ff"
+    },
+    "firstWords": "Signal locked. Where are we heading, pilot?",
+    "why": "needed a co-pilot for the Little Dart. someone to check the star charts while i fly the ship. gave him diagonal bracing so he won't shake apart at launch. *bweep*",
+    "added": {
+      "traits": [],
+      "quirks": []
+    }
+  },
+  "state": {
+    "mood": 0.412,
+    "energy": 0.525,
+    "needs": {
+      "charge": 0.1,
+      "oil": 0.2,
+      "curiosity": 0.6,
+      "company": 0,
+      "craft": 0.3
+    },
+    "place": "hangar",
+    "action": "hang_out",
+    "doing": "standing still on the workbench while Zeeb adjusts my sensor dish",
+    "thought": "Optical array calibrating. Magnetic north located. Primary telemetry dish receiving local atmospheric signals.",
+    "feeling": "starry-eyed but low on power",
+    "say": "*click* Sensor dish connected. Signal clarity... ninety-eight percent. Hello, Zeeb. *soft static hum*",
+    "recent": [
+      {
+        "id": "hang_out",
+        "at": "2026-11-28T03:31:23.348Z"
+      }
+    ],
+    "busyUntil": "2026-11-28T03:33:15.848Z",
+    "asleep": false,
+    "lastTick": 1795836683348
+  },
   "mem": {
-    "memories": [],
+    "memories": [
+      {
+        "id": "m1",
+        "text": "Activated for the first time in Hangar Bay 3. Zeeb finished connecting my sensor dish.",
+        "strength": 0.8,
+        "recalls": 0,
+        "term": "short",
+        "at": "2026-11-28T03:31:23.348Z"
+      }
+    ],
     "beliefs": []
   },
   "diary": [],
   "promises": [],
-  "bornAt": null
+  "bornAt": "2026-11-28T03:31:23.348Z"
 }

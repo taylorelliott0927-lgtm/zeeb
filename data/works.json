@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 32",
-    "progress": 66,
-    "version": 8,
-    "lastChange": "routing and securing the main fuel distribution lines and bulkhead fittings along the spine of the Little Dart using Captain, a coil of copper wire (used Nim, a cockpit switch that still clicks)",
+    "progress": 79,
+    "version": 9,
+    "lastChange": "mounting ceramic insulation brackets and thermal tiles along the lower hull of the Little Dart using Sprocket, a sensor eye with one crack (used Bix, a scorched heat tile)",
     "log": [
+      {
+        "version": 9,
+        "change": "mounting ceramic insulation brackets and thermal tiles along the lower hull of the Little Dart using Sprocket, a sensor eye with one crack (used Bix, a scorched heat tile)",
+        "progress": 76,
+        "at": "2026-11-28T15:56:12.240Z"
+      },
       {
         "version": 8,
         "change": "routing and securing the main fuel distribution lines and bulkhead fittings along the spine of the Little Dart using Captain, a coil of copper wire (used Nim, a cockpit switch that still clicks)",
@@ -238,12 +244,6 @@
         "change": "adding high-grade titanium reinforcement struts to the engine bay (used Rusty Jr, a coil of copper wire)",
         "progress": 8,
         "at": "2026-11-26T23:24:09.109Z"
-      },
-      {
-        "version": 14,
-        "change": "welded custom lightweight ceramic tile heat shield composites onto the Little Dart's underside using Tok for precise alignment (used Tok, a tiny gyroscope)",
-        "progress": 100,
-        "at": "2026-11-26T21:18:36.910Z"
       }
     ],
     "launched": [
@@ -4297,7 +4297,7 @@
         ]
       }
     ],
-    "partsUsed": 8,
+    "partsUsed": 9,
     "parts": [
       {
         "name": "Pim",
@@ -4338,6 +4338,11 @@
         "name": "Nim",
         "what": "a cockpit switch that still clicks",
         "version": 8
+      },
+      {
+        "name": "Bix",
+        "what": "a scorched heat tile",
+        "version": 9
       }
     ],
     "design": null
@@ -4608,11 +4613,6 @@
     {
       "name": "Nim",
       "what": "a sensor eye with one crack",
-      "at": "2026-11-28T11:29:38.826Z"
-    },
-    {
-      "name": "Bix",
-      "what": "a scorched heat tile",
       "at": "2026-11-28T11:29:38.826Z"
     }
   ],

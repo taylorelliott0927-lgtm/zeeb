@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": 0.098,
-    "energy": 0.659,
+    "mood": 0.074,
+    "energy": 0.73,
     "needs": {
-      "charge": 0.084,
-      "oil": 0.108,
-      "curiosity": 0.772,
-      "company": 0.222,
+      "charge": 0,
+      "oil": 0,
+      "curiosity": 0.783,
+      "company": 0.229,
       "craft": 1
     },
-    "place": "hangar",
-    "action": "sleep",
-    "doing": "asleep in the charging dock",
-    "thought": "The horizon is fading from view. Power cells demand replenishment before the next charting session.",
-    "feeling": "low power and weary",
+    "place": "depot",
+    "action": "drink_oil",
+    "doing": "purchasing and consuming a cup of fresh lubrication oil",
+    "thought": "*click* A steady flow of oil is essential before I can trust my gyros for any serious star charting.",
+    "feeling": "parched yet hopeful",
     "say": "",
     "recent": [
+      {
+        "id": "drink_oil",
+        "at": "2026-11-28T20:11:30.186Z"
+      },
       {
         "id": "go_to_sleep",
         "at": "2026-11-28T20:01:30.329Z"
@@ -201,22 +205,18 @@
       {
         "id": "drink_oil",
         "at": "2026-11-28T18:18:04.873Z"
-      },
-      {
-        "id": "help_dart",
-        "at": "2026-11-28T18:17:04.920Z"
       }
     ],
-    "busyUntil": "2026-11-28T19:57:07.759Z",
-    "asleep": true,
-    "lastTick": 1795896090329
+    "busyUntil": "2026-11-28T20:14:00.186Z",
+    "asleep": false,
+    "lastTick": 1795896690186
   },
   "mem": {
     "memories": [
       {
         "id": "m20",
         "text": "Purchased a cup of fresh lubrication oil at the fuel depot to restore critical fluid levels on day 131.",
-        "strength": 0.585,
+        "strength": 0.57,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T16:56:40.252Z"
@@ -224,7 +224,7 @@
       {
         "id": "m24",
         "text": "Plugged back into the charging dock at the fuel depot to restore critically low battery reserves on day 131.",
-        "strength": 0.465,
+        "strength": 0.45,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:16:40.162Z"
@@ -232,7 +232,7 @@
       {
         "id": "m27",
         "text": "Purchased fresh lubrication oil at the fuel depot to restore low fluid levels on day 131.",
-        "strength": 0.51,
+        "strength": 0.495,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:37:05.060Z"
@@ -240,7 +240,7 @@
       {
         "id": "m23",
         "text": "Plugged into the charging dock at the fuel depot to restore critical battery reserves on day 131.",
-        "strength": 0.525,
+        "strength": 0.51,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:47:04.424Z"
@@ -248,7 +248,7 @@
       {
         "id": "m25",
         "text": "Plugged into the Hangar Bay 3 wall socket to restore critically low battery reserves on day 131.",
-        "strength": 0.69,
+        "strength": 0.675,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T17:57:05.034Z"
@@ -256,7 +256,7 @@
       {
         "id": "m16",
         "text": "Purchased fresh lubrication oil at the fuel depot to restore critical fluid levels on day 131.",
-        "strength": 0.585,
+        "strength": 0.57,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T18:18:04.873Z"
@@ -264,7 +264,7 @@
       {
         "id": "m18",
         "text": "Purchased a fresh cup of lubrication oil at the fuel depot to restore critical fluid levels on day 131.",
-        "strength": 0.75,
+        "strength": 0.735,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T18:28:05.017Z"
@@ -272,7 +272,7 @@
       {
         "id": "m21",
         "text": "Plugged into the fuel depot charging dock to restore low battery reserves on day 131.",
-        "strength": 0.53,
+        "strength": 0.515,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T18:48:04.459Z"
@@ -280,7 +280,7 @@
       {
         "id": "m26",
         "text": "Zeeb sketched a sharp new ship design aimed at piercing the stratosphere on day 131.",
-        "strength": 0.56,
+        "strength": 0.545,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T19:08:04.989Z"
@@ -288,7 +288,7 @@
       {
         "id": "m15",
         "text": "Agreed with Zeeb that his new ship design holds a precise and clean trajectory for piercing the stratosphere on day 131.",
-        "strength": 0.59,
+        "strength": 0.575,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T19:21:30.282Z"
@@ -296,15 +296,15 @@
       {
         "id": "m19",
         "text": "Purchased a fresh cup of lubrication oil at the fuel depot to restore critical fluid levels on day 132.",
-        "strength": 0.605,
-        "recalls": 0,
+        "strength": 0.74,
+        "recalls": 1,
         "term": "short",
         "at": "2026-11-28T19:31:29.989Z"
       },
       {
         "id": "m17",
         "text": "Plugged into the fuel depot charging dock to restore low battery reserves on day 132.",
-        "strength": 0.72,
+        "strength": 0.705,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T19:41:30.039Z"
@@ -312,7 +312,7 @@
       {
         "id": "m29",
         "text": "Observed the clear night sky from the dune ridge and mapped the stellar drift on day 132.",
-        "strength": 0.635,
+        "strength": 0.62,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T19:51:30.259Z"
@@ -320,7 +320,7 @@
       {
         "id": "m22",
         "text": "Plugged into the Hangar Bay 3 auxiliary dock to restore critically low battery reserves on day 132.",
-        "strength": 0.8,
+        "strength": 0.785,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T20:01:30.329Z"

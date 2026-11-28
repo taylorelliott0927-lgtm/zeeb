@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": 0.398,
-    "energy": 0.499,
+    "mood": 0.355,
+    "energy": 0.567,
     "needs": {
-      "charge": 0.142,
-      "oil": 0.236,
-      "curiosity": 0.672,
-      "company": 0,
-      "craft": 0.36
+      "charge": 0,
+      "oil": 0.274,
+      "curiosity": 0.748,
+      "company": 0.05,
+      "craft": 0.423
     },
     "place": "hangar",
-    "action": "hang_out",
-    "doing": "calibrating sensor dish alignment while greeting Zeeb",
-    "thought": "Audio input confirmed. Zeeb is the creator entity logged in my primary blueprint table. Sensor dish alignment is optimal.",
-    "feeling": "starry-eyed and quiet",
-    "say": "*click* Greetings, Zeeb. *bzzt* Telemetry signal is clear. Optical aperture calibrated and ready for plotting horizon vectors.",
+    "action": "nap_dock",
+    "doing": "interfacing with the hangar charging rack to restore power reserves",
+    "thought": "click... Zeeb is working at the junk market. I will dock at Hangar Bay 3, align my chassis to magnetic north, and monitor local telemetry while charging... whirrr.",
+    "feeling": "drained, watchful, steady",
+    "say": "",
     "recent": [
+      {
+        "id": "nap_dock",
+        "at": "2026-11-28T03:51:55.442Z"
+      },
       {
         "id": "hang_out",
         "at": "2026-11-28T03:41:24.197Z"
@@ -167,16 +171,16 @@
         "at": "2026-11-28T03:31:23.348Z"
       }
     ],
-    "busyUntil": "2026-11-28T03:43:54.197Z",
+    "busyUntil": "2026-11-28T04:03:10.442Z",
     "asleep": false,
-    "lastTick": 1795837284197
+    "lastTick": 1795837915442
   },
   "mem": {
     "memories": [
       {
         "id": "m1",
         "text": "Activated for the first time in Hangar Bay 3. Zeeb finished connecting my sensor dish.",
-        "strength": 0.785,
+        "strength": 0.77,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:31:23.348Z"
@@ -184,7 +188,7 @@
       {
         "id": "m2",
         "text": "Logged Zeeb's voice print and confirmed sensor dish calibration in Hangar 3.",
-        "strength": 0.65,
+        "strength": 0.635,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:41:24.197Z"

@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": -0.071,
-    "energy": 0.184,
+    "mood": -0.026,
+    "energy": 0.099,
     "needs": {
-      "charge": 0.118,
-      "oil": 0.927,
+      "charge": 0.16,
+      "oil": 0.963,
       "curiosity": 1,
       "company": 0,
-      "craft": 1
+      "craft": 0.6
     },
     "place": "hangar",
-    "action": "hang_out",
-    "doing": "standing beside Zeeb and humming low radio static while observing his work on the Little Dart",
-    "thought": "Radio static frequencies are steady tonight. Zeeb is making good progress on the port thruster.",
-    "feeling": "steady and supportive",
-    "say": "Your calibration rhythm is remarkably clean today, Zeeb.",
+    "action": "help_dart",
+    "doing": "holding the fairing steady while Zeeb secures the rivets",
+    "thought": "The curves of the Little Dart are coming together cleanly. A smooth hull means clean telemetry through the atmosphere.",
+    "feeling": "focused and steady",
+    "say": "Holding steady here, Zeeb. The alignment looks true to the horizon.",
     "recent": [
+      {
+        "id": "help_dart",
+        "at": "2026-11-28T07:11:54.560Z"
+      },
       {
         "id": "hang_out",
         "at": "2026-11-28T07:01:54.867Z"
@@ -201,22 +205,18 @@
       {
         "id": "nap_dock",
         "at": "2026-11-28T05:14:52.618Z"
-      },
-      {
-        "id": "nap_dock",
-        "at": "2026-11-28T04:54:53.617Z"
       }
     ],
-    "busyUntil": "2026-11-28T07:05:39.867Z",
+    "busyUntil": "2026-11-28T07:17:32.060Z",
     "asleep": false,
-    "lastTick": 1795849314867
+    "lastTick": 1795849914560
   },
   "mem": {
     "memories": [
       {
         "id": "m1",
         "text": "Activated for the first time in Hangar Bay 3. Zeeb finished connecting my sensor dish.",
-        "strength": 0.47,
+        "strength": 0.455,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:31:23.348Z"
@@ -224,7 +224,7 @@
       {
         "id": "m2",
         "text": "Logged Zeeb's voice print and confirmed sensor dish calibration in Hangar 3.",
-        "strength": 0.335,
+        "strength": 0.32,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:41:24.197Z"
@@ -232,7 +232,7 @@
       {
         "id": "m3",
         "text": "Observed a clear northern band of stars from the dune ridge on day 127, noting three new positional clusters.",
-        "strength": 0.51,
+        "strength": 0.495,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T04:31:55.072Z"
@@ -240,7 +240,7 @@
       {
         "id": "m4",
         "text": "Plugged into Hangar Bay 3 power node to restore critical battery levels.",
-        "strength": 0.485,
+        "strength": 0.47,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T05:14:52.618Z"
@@ -248,7 +248,7 @@
       {
         "id": "m5",
         "text": "Plugged back into the Hangar Bay 3 power node to recover critically low battery charge.",
-        "strength": 0.6,
+        "strength": 0.585,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T05:24:53.077Z"
@@ -256,7 +256,7 @@
       {
         "id": "m6",
         "text": "Plugged back into the Hangar Bay 3 power node to recover critically low battery charge on day 127.",
-        "strength": 0.665,
+        "strength": 0.65,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T05:34:53.234Z"
@@ -264,7 +264,7 @@
       {
         "id": "m7",
         "text": "Recharged battery levels at the Hangar Bay 3 power node on day 127.",
-        "strength": 0.63,
+        "strength": 0.615,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T05:44:52.716Z"
@@ -272,7 +272,7 @@
       {
         "id": "m8",
         "text": "Rested at the Hangar Bay 3 power node to build back essential charge on day 127.",
-        "strength": 0.66,
+        "strength": 0.645,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T06:03:48.610Z"
@@ -280,7 +280,7 @@
       {
         "id": "m9",
         "text": "Continued replenishing battery charge at the Hangar Bay 3 power node on day 127.",
-        "strength": 0.675,
+        "strength": 0.66,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T06:13:49.036Z"
@@ -288,7 +288,7 @@
       {
         "id": "m10",
         "text": "Continued resting at the Hangar Bay 3 power node to restore safe battery levels on day 127.",
-        "strength": 0.69,
+        "strength": 0.675,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T06:23:48.266Z"
@@ -296,7 +296,7 @@
       {
         "id": "m11",
         "text": "Continued resting at the Hangar Bay 3 power node to safely raise my charge levels on day 127.",
-        "strength": 0.705,
+        "strength": 0.69,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T06:33:48.586Z"
@@ -304,7 +304,7 @@
       {
         "id": "m12",
         "text": "Rejoined Zeeb at the fuel depot after successfully restoring battery charge at Hangar Bay 3 on day 127.",
-        "strength": 0.67,
+        "strength": 0.655,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T06:43:48.966Z"
@@ -312,10 +312,18 @@
       {
         "id": "m13",
         "text": "Spent quiet time with Zeeb at the fuel depot while he worked on the Little Dart on day 127.",
-        "strength": 0.65,
+        "strength": 0.635,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T07:01:54.867Z"
+      },
+      {
+        "id": "m14",
+        "text": "Helped Zeeb fit the fairings onto the Little Dart at Hangar Bay 3 on day 127.",
+        "strength": 0.7,
+        "recalls": 0,
+        "term": "short",
+        "at": "2026-11-28T07:11:54.560Z"
       }
     ],
     "beliefs": []

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 31",
-    "progress": 79,
-    "version": 13,
-    "lastChange": "welding lightweight diagonal bracing struts onto the Little Dart's interior frame using Otto the dented fuel cell for scrap reinforcement (used Otto, a dented fuel cell)",
+    "progress": 91,
+    "version": 14,
+    "lastChange": "riveting lightweight carbon-weave skin plates onto the forward nose section of the Little Dart (used Wren, a mystery box that hums)",
     "log": [
+      {
+        "version": 14,
+        "change": "riveting lightweight carbon-weave skin plates onto the forward nose section of the Little Dart (used Wren, a mystery box that hums)",
+        "progress": 89,
+        "at": "2026-11-28T07:11:54.560Z"
+      },
       {
         "version": 13,
         "change": "welding lightweight diagonal bracing struts onto the Little Dart's interior frame using Otto the dented fuel cell for scrap reinforcement (used Otto, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "mounted the Nim sensor eye into the main dashboard and ran fresh copper wire to the navigation bus (used Nim, a cockpit switch that still clicks)",
         "progress": 25,
         "at": "2026-11-26T10:11:15.877Z"
-      },
-      {
-        "version": 3,
-        "change": "mounted the ZL38063 voice processor chip right into the center of the Little Dart cockpit console and ran fresh copper wire to the audio receiver. (used Fen, a coil of copper wire)",
-        "progress": 17,
-        "at": "2026-11-26T07:45:36.316Z"
       }
     ],
     "launched": [
@@ -4229,7 +4229,7 @@
         ]
       }
     ],
-    "partsUsed": 10,
+    "partsUsed": 11,
     "parts": [
       {
         "name": "Rusty Jr",
@@ -4276,6 +4276,11 @@
         "what": "a dented fuel cell",
         "good": true,
         "version": 13
+      },
+      {
+        "name": "Wren",
+        "what": "a mystery box that hums",
+        "version": 14
       }
     ],
     "design": null
@@ -4567,11 +4572,6 @@
       "name": "Brakk",
       "what": "a mystery box that hums",
       "at": "2026-11-28T00:19:19.748Z"
-    },
-    {
-      "name": "Wren",
-      "what": "a mystery box that hums",
-      "at": "2026-11-28T00:09:19.560Z"
     }
   ],
   "reads": [

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 33",
-    "progress": 3,
-    "version": 0,
-    "lastChange": "",
+    "progress": 11,
+    "version": 1,
+    "lastChange": "welding lightweight composite brackets along the starboard bulkhead of the Little Dart Mk 32 (used Captain, a coil of copper wire)",
     "log": [
+      {
+        "version": 1,
+        "change": "welding lightweight composite brackets along the starboard bulkhead of the Little Dart Mk 32 (used Captain, a coil of copper wire)",
+        "progress": 11,
+        "at": "2026-11-28T18:38:04.936Z"
+      },
       {
         "version": 12,
         "change": "securing the carbon nanotube wire bundle along the starboard conduit channel of the Little Dart Mk 32 (using Captain, a coil of copper wire) (used Tilly, a strip of hull plating)",
@@ -238,12 +244,6 @@
         "change": "riveting the rear intake shroud onto the main frame junction box (used Spike, a hefty little hex bolt)",
         "progress": 37,
         "at": "2026-11-27T02:57:32.709Z"
-      },
-      {
-        "version": 4,
-        "change": "soldering the backup telemetry leads onto the main frame junction box (used Pim, a perfectly good bolt)",
-        "progress": 34,
-        "at": "2026-11-27T01:04:33.092Z"
       }
     ],
     "launched": [
@@ -4364,8 +4364,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Captain",
+        "what": "a coil of copper wire",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -4614,11 +4620,6 @@
     {
       "name": "Dibs",
       "what": "a strip of hull plating",
-      "at": "2026-11-28T14:12:05.656Z"
-    },
-    {
-      "name": "Captain",
-      "what": "a coil of copper wire",
       "at": "2026-11-28T14:12:05.656Z"
     }
   ],

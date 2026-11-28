@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": -0.243,
-    "energy": 0.15,
+    "mood": -0.166,
+    "energy": 0.175,
     "needs": {
       "charge": 0,
-      "oil": 0.999,
+      "oil": 1,
       "curiosity": 1,
-      "company": 0.048,
-      "craft": 0.66
+      "company": 0.096,
+      "craft": 0.72
     },
     "place": "hangar",
     "action": "nap_dock",
-    "doing": "holding the bracket steady while letting the low-frequency current trickle into depleted cells",
-    "thought": "Steady hands, steady current. The night sky is clear, but these cells need a firm baseline before plotting any new courses.",
-    "feeling": "diminishing energy",
-    "say": "Bracket secured, Zeeb. Holding steady while these cells draw current.",
+    "doing": "reconnecting to the charging port for a careful top-up",
+    "thought": "[click-whir] Battery levels have dipped into the danger zone again... must stay connected until the indicator turns green.",
+    "feeling": "dimly powered",
+    "say": "",
     "recent": [
+      {
+        "id": "nap_dock",
+        "at": "2026-11-28T07:31:54.543Z"
+      },
       {
         "id": "nap_dock",
         "at": "2026-11-28T07:21:54.707Z"
@@ -201,30 +205,18 @@
       {
         "id": "nap_dock",
         "at": "2026-11-28T05:34:53.234Z"
-      },
-      {
-        "id": "nap_dock",
-        "at": "2026-11-28T05:24:53.077Z"
       }
     ],
-    "busyUntil": "2026-11-28T07:27:32.207Z",
+    "busyUntil": "2026-11-28T07:39:24.543Z",
     "asleep": false,
-    "lastTick": 1795850514707
+    "lastTick": 1795851114543
   },
   "mem": {
     "memories": [
       {
-        "id": "m1",
-        "text": "Activated for the first time in Hangar Bay 3. Zeeb finished connecting my sensor dish.",
-        "strength": 0.44,
-        "recalls": 0,
-        "term": "short",
-        "at": "2026-11-28T03:31:23.348Z"
-      },
-      {
         "id": "m3",
         "text": "Observed a clear northern band of stars from the dune ridge on day 127, noting three new positional clusters.",
-        "strength": 0.48,
+        "strength": 0.465,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T04:31:55.072Z"
@@ -232,7 +224,7 @@
       {
         "id": "m4",
         "text": "Plugged into Hangar Bay 3 power node to restore critical battery levels.",
-        "strength": 0.455,
+        "strength": 0.44,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T05:14:52.618Z"
@@ -240,7 +232,7 @@
       {
         "id": "m5",
         "text": "Plugged back into the Hangar Bay 3 power node to recover critically low battery charge.",
-        "strength": 0.57,
+        "strength": 0.555,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T05:24:53.077Z"
@@ -248,7 +240,7 @@
       {
         "id": "m6",
         "text": "Plugged back into the Hangar Bay 3 power node to recover critically low battery charge on day 127.",
-        "strength": 0.635,
+        "strength": 0.62,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T05:34:53.234Z"
@@ -256,7 +248,7 @@
       {
         "id": "m7",
         "text": "Recharged battery levels at the Hangar Bay 3 power node on day 127.",
-        "strength": 0.6,
+        "strength": 0.585,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T05:44:52.716Z"
@@ -264,7 +256,7 @@
       {
         "id": "m8",
         "text": "Rested at the Hangar Bay 3 power node to build back essential charge on day 127.",
-        "strength": 0.63,
+        "strength": 0.615,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T06:03:48.610Z"
@@ -272,7 +264,7 @@
       {
         "id": "m9",
         "text": "Continued replenishing battery charge at the Hangar Bay 3 power node on day 127.",
-        "strength": 0.645,
+        "strength": 0.63,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T06:13:49.036Z"
@@ -280,7 +272,7 @@
       {
         "id": "m10",
         "text": "Continued resting at the Hangar Bay 3 power node to restore safe battery levels on day 127.",
-        "strength": 0.66,
+        "strength": 0.645,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T06:23:48.266Z"
@@ -288,7 +280,7 @@
       {
         "id": "m11",
         "text": "Continued resting at the Hangar Bay 3 power node to safely raise my charge levels on day 127.",
-        "strength": 0.675,
+        "strength": 0.66,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T06:33:48.586Z"
@@ -296,7 +288,7 @@
       {
         "id": "m12",
         "text": "Rejoined Zeeb at the fuel depot after successfully restoring battery charge at Hangar Bay 3 on day 127.",
-        "strength": 0.64,
+        "strength": 0.625,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T06:43:48.966Z"
@@ -304,7 +296,7 @@
       {
         "id": "m13",
         "text": "Spent quiet time with Zeeb at the fuel depot while he worked on the Little Dart on day 127.",
-        "strength": 0.62,
+        "strength": 0.605,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T07:01:54.867Z"
@@ -312,7 +304,7 @@
       {
         "id": "m14",
         "text": "Helped Zeeb fit the fairings onto the Little Dart at Hangar Bay 3 on day 127.",
-        "strength": 0.685,
+        "strength": 0.67,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T07:11:54.560Z"
@@ -320,10 +312,18 @@
       {
         "id": "m15",
         "text": "Plugged back into the Hangar Bay 3 charging dock to raise my low battery levels on day 127.",
-        "strength": 0.7,
+        "strength": 0.685,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T07:21:54.707Z"
+      },
+      {
+        "id": "m16",
+        "text": "Plugged back into the Hangar Bay 3 charging dock to restore critically low battery levels on day 128.",
+        "strength": 0.75,
+        "recalls": 0,
+        "term": "short",
+        "at": "2026-11-28T07:31:54.543Z"
       }
     ],
     "beliefs": []

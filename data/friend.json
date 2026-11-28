@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": 0.199,
-    "energy": 0.547,
+    "mood": 0.22,
+    "energy": 0.557,
     "needs": {
-      "charge": 0.042,
-      "oil": 0.382,
-      "curiosity": 0.964,
-      "company": 0.194,
-      "craft": 0.603
+      "charge": 0,
+      "oil": 0.387,
+      "curiosity": 0.675,
+      "company": 0.231,
+      "craft": 0.612
     },
-    "place": "hangar",
-    "action": "sleep",
-    "doing": "asleep in the charging dock",
-    "thought": "*click* Power cell voltage low... *bzzz* Telemetry arrays entering standby mode. Aligning lens to north before sleep cycle.",
-    "feeling": "drained, rhythmic, quiet",
+    "place": "ridge",
+    "action": "stargaze",
+    "doing": "scanning the clear night sky and mapping distant constellations from the dune ridge",
+    "thought": "The upper atmosphere is remarkably stable tonight. *click-whirr* Every star is sharp and clean.",
+    "feeling": "wondering and starry-eyed",
     "say": "",
     "recent": [
+      {
+        "id": "stargaze",
+        "at": "2026-11-28T04:31:55.072Z"
+      },
       {
         "id": "go_to_sleep",
         "at": "2026-11-28T04:21:54.828Z"
@@ -179,16 +183,16 @@
         "at": "2026-11-28T03:31:23.348Z"
       }
     ],
-    "busyUntil": "2026-11-28T04:26:55.383Z",
-    "asleep": true,
-    "lastTick": 1795839714828
+    "busyUntil": "2026-11-28T04:39:25.072Z",
+    "asleep": false,
+    "lastTick": 1795840315072
   },
   "mem": {
     "memories": [
       {
         "id": "m1",
         "text": "Activated for the first time in Hangar Bay 3. Zeeb finished connecting my sensor dish.",
-        "strength": 0.725,
+        "strength": 0.71,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:31:23.348Z"
@@ -196,15 +200,31 @@
       {
         "id": "m2",
         "text": "Logged Zeeb's voice print and confirmed sensor dish calibration in Hangar 3.",
-        "strength": 0.59,
+        "strength": 0.575,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:41:24.197Z"
+      },
+      {
+        "id": "m3",
+        "text": "Observed a clear northern band of stars from the dune ridge on day 127, noting three new positional clusters.",
+        "strength": 0.75,
+        "recalls": 0,
+        "term": "short",
+        "at": "2026-11-28T04:31:55.072Z"
       }
     ],
     "beliefs": []
   },
-  "diary": [],
+  "diary": [
+    {
+      "day": 127,
+      "time": "00:16",
+      "title": "Clear Skies Above Kessa-9",
+      "text": "Town Day 127. The charging dock hums quietly while Zeeb rests. My optical sensors are clear of dust, and the upper band of the galaxy is fully visible tonight. No magnetic static, no dead zones. Just clean light reaching my dish after a long journey through the dark.",
+      "at": "2026-11-28T04:31:55.072Z"
+    }
+  ],
   "promises": [],
   "bornAt": "2026-11-28T03:31:23.348Z"
 }

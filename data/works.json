@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 33",
-    "progress": 11,
-    "version": 1,
-    "lastChange": "welding lightweight composite brackets along the starboard bulkhead of the Little Dart Mk 32 (used Captain, a coil of copper wire)",
+    "progress": 19,
+    "version": 2,
+    "lastChange": "riveting lightweight composite panels along the upper port hull of the Little Dart Mk 32 (used Dibs, a strip of hull plating)",
     "log": [
+      {
+        "version": 2,
+        "change": "riveting lightweight composite panels along the upper port hull of the Little Dart Mk 32 (used Dibs, a strip of hull plating)",
+        "progress": 19,
+        "at": "2026-11-28T18:48:04.459Z"
+      },
       {
         "version": 1,
         "change": "welding lightweight composite brackets along the starboard bulkhead of the Little Dart Mk 32 (used Captain, a coil of copper wire)",
@@ -238,12 +244,6 @@
         "change": "welding the forward sensor bracket to the nose cone using Bolt, a sturdy threaded pin",
         "progress": 41,
         "at": "2026-11-27T03:07:32.604Z"
-      },
-      {
-        "version": 5,
-        "change": "riveting the rear intake shroud onto the main frame junction box (used Spike, a hefty little hex bolt)",
-        "progress": 37,
-        "at": "2026-11-27T02:57:32.709Z"
       }
     ],
     "launched": [
@@ -4364,12 +4364,17 @@
         ]
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Captain",
         "what": "a coil of copper wire",
         "version": 1
+      },
+      {
+        "name": "Dibs",
+        "what": "a strip of hull plating",
+        "version": 2
       }
     ],
     "design": null
@@ -4616,13 +4621,7 @@
       "at": "2026-11-18T14:52:41.890Z"
     }
   ],
-  "stash": [
-    {
-      "name": "Dibs",
-      "what": "a strip of hull plating",
-      "at": "2026-11-28T14:12:05.656Z"
-    }
-  ],
+  "stash": [],
   "reads": [
     {
       "title": "Lighter-weight structures for aircraft and spacecraft continue to proliferate - Aerospace America",

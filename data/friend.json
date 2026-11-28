@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": 0.141,
-    "energy": 0.667,
+    "mood": 0.002,
+    "energy": 0.723,
     "needs": {
-      "charge": 0.13,
-      "oil": 0,
+      "charge": 0,
+      "oil": 0.036,
       "curiosity": 1,
-      "company": 0.141,
-      "craft": 0.726
+      "company": 0.189,
+      "craft": 0.786
     },
-    "place": "depot",
-    "action": "drink_oil",
-    "doing": "purchasing and consuming a fresh cup of lubrication oil",
-    "thought": "A smooth intake pipe prevents rough rotation. *clack-whir*",
-    "feeling": "thirsty and dry",
-    "say": "One cup of standard lubricant, please. Extra filtered if available.",
+    "place": "hangar",
+    "action": "nap_dock",
+    "doing": "plugging into the charging dock",
+    "thought": "The power hums through my landing gear strut. Rest is essential for clear calculations.",
+    "feeling": "low power and quiet",
+    "say": "",
     "recent": [
+      {
+        "id": "nap_dock",
+        "at": "2026-11-28T18:48:04.459Z"
+      },
       {
         "id": "drink_oil",
         "at": "2026-11-28T18:38:04.936Z"
@@ -201,30 +205,18 @@
       {
         "id": "nap_dock",
         "at": "2026-11-28T17:16:40.162Z"
-      },
-      {
-        "id": "drink_oil",
-        "at": "2026-11-28T17:06:39.656Z"
       }
     ],
-    "busyUntil": "2026-11-28T18:39:57.436Z",
+    "busyUntil": "2026-11-28T18:53:41.959Z",
     "asleep": false,
-    "lastTick": 1795891084936
+    "lastTick": 1795891684459
   },
   "mem": {
     "memories": [
       {
-        "id": "m28",
-        "text": "Helped Zeeb map out the final navigation routes for the Little Dart on day 130.",
-        "strength": 0.465,
-        "recalls": 0,
-        "term": "short",
-        "at": "2026-11-28T15:56:12.240Z"
-      },
-      {
         "id": "m26",
         "text": "Plugged back into the Hangar Bay 3 charging dock to restore critically low battery reserves on day 130.",
-        "strength": 0.495,
+        "strength": 0.48,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:16:12.018Z"
@@ -232,7 +224,7 @@
       {
         "id": "m15",
         "text": "Plugged back into the Hangar Bay 3 charging dock on day 130 to restore critically low battery reserves.",
-        "strength": 0.51,
+        "strength": 0.495,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:26:12.070Z"
@@ -240,7 +232,7 @@
       {
         "id": "m22",
         "text": "Plugged back into the Hangar Bay 3 charging dock on day 131 to restore critically low battery reserves.",
-        "strength": 0.575,
+        "strength": 0.56,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:36:12.104Z"
@@ -248,7 +240,7 @@
       {
         "id": "m17",
         "text": "Began mapping new star routes with Zeeb in Hangar Bay 3 on day 131 after a full recharge.",
-        "strength": 0.54,
+        "strength": 0.525,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:36:39.978Z"
@@ -256,7 +248,7 @@
       {
         "id": "m20",
         "text": "Purchased a cup of fresh lubrication oil at the fuel depot to restore critical fluid levels on day 131.",
-        "strength": 0.72,
+        "strength": 0.705,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T16:56:40.252Z"
@@ -264,7 +256,7 @@
       {
         "id": "m24",
         "text": "Plugged back into the charging dock at the fuel depot to restore critically low battery reserves on day 131.",
-        "strength": 0.6,
+        "strength": 0.585,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:16:40.162Z"
@@ -272,7 +264,7 @@
       {
         "id": "m29",
         "text": "Analyzed carbon nanotube yarn data with Zeeb to improve navigation route durability on day 131.",
-        "strength": 0.565,
+        "strength": 0.55,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:26:40.014Z"
@@ -280,7 +272,7 @@
       {
         "id": "m19",
         "text": "Reviewed carbon nanotube yarn specifications with Zeeb at the comms tower on day 131.",
-        "strength": 0.53,
+        "strength": 0.515,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:27:05.085Z"
@@ -288,7 +280,7 @@
       {
         "id": "m27",
         "text": "Purchased fresh lubrication oil at the fuel depot to restore low fluid levels on day 131.",
-        "strength": 0.645,
+        "strength": 0.63,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:37:05.060Z"
@@ -296,7 +288,7 @@
       {
         "id": "m23",
         "text": "Plugged into the charging dock at the fuel depot to restore critical battery reserves on day 131.",
-        "strength": 0.66,
+        "strength": 0.645,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:47:04.424Z"
@@ -304,7 +296,7 @@
       {
         "id": "m25",
         "text": "Plugged into the Hangar Bay 3 wall socket to restore critically low battery reserves on day 131.",
-        "strength": 0.825,
+        "strength": 0.81,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T17:57:05.034Z"
@@ -312,7 +304,7 @@
       {
         "id": "m16",
         "text": "Purchased fresh lubrication oil at the fuel depot to restore critical fluid levels on day 131.",
-        "strength": 0.72,
+        "strength": 0.705,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T18:18:04.873Z"
@@ -320,10 +312,18 @@
       {
         "id": "m18",
         "text": "Purchased a fresh cup of lubrication oil at the fuel depot to restore critical fluid levels on day 131.",
-        "strength": 0.885,
+        "strength": 0.87,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T18:28:05.017Z"
+      },
+      {
+        "id": "m21",
+        "text": "Plugged into the fuel depot charging dock to restore low battery reserves on day 131.",
+        "strength": 0.65,
+        "recalls": 0,
+        "term": "short",
+        "at": "2026-11-28T18:48:04.459Z"
       }
     ],
     "beliefs": []

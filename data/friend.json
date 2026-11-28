@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": 0.032,
-    "energy": 0.439,
+    "mood": 0.097,
+    "energy": 0.407,
     "needs": {
-      "charge": 0.042,
-      "oil": 0.53,
+      "charge": 0.071,
+      "oil": 0.555,
       "curiosity": 1,
       "company": 0,
-      "craft": 0.44
+      "craft": 0.482
     },
     "place": "tower",
     "action": "hang_out",
-    "doing": "aligning signal relays with Zeeb at the comms tower",
-    "thought": "*hmmm-bzzz* Atmospheric noise is minimal tonight. A clean transmission could slice right through the outer dust belt.",
-    "feeling": "attentive and hopeful",
-    "say": "*click-clack* Array aligned to magnetic north, Zeeb. The deep space corridor is clear.",
+    "doing": "scanning the horizon and reading clear telemetry with Zeeb",
+    "thought": "*bzzzz-hum* Signal-to-noise ratio down to zero point zero two percent. *click* The open spectrum is quiet.",
+    "feeling": "starry-eyed yet low on battery",
+    "say": "*click* The open spectrum is clear, Zeeb. *bzz-hmmm* Every frequency from here to the outer dust belt is coming through without distortion.",
     "recent": [
+      {
+        "id": "hang_out",
+        "at": "2026-11-28T12:57:33.179Z"
+      },
       {
         "id": "hang_out",
         "at": "2026-11-28T12:50:32.325Z"
@@ -201,22 +205,18 @@
       {
         "id": "nap_dock",
         "at": "2026-11-28T11:19:39.113Z"
-      },
-      {
-        "id": "nap_dock",
-        "at": "2026-11-28T11:09:38.941Z"
       }
     ],
-    "busyUntil": "2026-11-28T12:56:09.825Z",
+    "busyUntil": "2026-11-28T13:01:18.179Z",
     "asleep": false,
-    "lastTick": 1795870232325
+    "lastTick": 1795870653179
   },
   "mem": {
     "memories": [
       {
         "id": "m25",
         "text": "Finished charging my battery reserves at the Hangar Bay 3 dock on day 128, bringing my power levels back to a safe operating range.",
-        "strength": 0.405,
+        "strength": 0.39,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T09:13:56.017Z"
@@ -224,7 +224,7 @@
       {
         "id": "m15",
         "text": "Completed a brief supplementary recharge at the Hangar Bay 3 dock on day 128 to ensure stable operating power.",
-        "strength": 0.395,
+        "strength": 0.38,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T10:11:49.025Z"
@@ -232,7 +232,7 @@
       {
         "id": "m17",
         "text": "Connected to the Hangar Bay 3 charging dock to restore battery reserves on day 129.",
-        "strength": 0.525,
+        "strength": 0.51,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T10:31:48.968Z"
@@ -240,7 +240,7 @@
       {
         "id": "m24",
         "text": "Observed clear star trajectories from the dune ridge during the quiet hours of day 129.",
-        "strength": 0.44,
+        "strength": 0.425,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T10:41:49.323Z"
@@ -248,7 +248,7 @@
       {
         "id": "m18",
         "text": "Headed back to the Hangar Bay 3 charging dock on day 129 to address critically low battery reserves.",
-        "strength": 0.555,
+        "strength": 0.54,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T10:51:48.552Z"
@@ -256,7 +256,7 @@
       {
         "id": "m21",
         "text": "Plugged back into the Hangar Bay 3 charging dock on day 129 to address critically low battery reserves.",
-        "strength": 0.72,
+        "strength": 0.705,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T11:01:49.113Z"
@@ -264,7 +264,7 @@
       {
         "id": "m16",
         "text": "Spent additional time tethered to the Hangar Bay 3 charging dock on day 129 to safely rebuild my energy reserves.",
-        "strength": 0.55,
+        "strength": 0.535,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T11:19:39.113Z"
@@ -272,7 +272,7 @@
       {
         "id": "m26",
         "text": "Spent an additional thirty minutes connected to the Hangar Bay 3 charging dock to ensure my power levels reach a safer operating threshold.",
-        "strength": 0.515,
+        "strength": 0.5,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T11:29:38.826Z"
@@ -280,7 +280,7 @@
       {
         "id": "m20",
         "text": "Engaged a prolonged charging cycle at Hangar Bay 3 to recover from critical battery depletion.",
-        "strength": 0.43,
+        "strength": 0.415,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T11:39:39.245Z"
@@ -288,7 +288,7 @@
       {
         "id": "m19",
         "text": "Finished charging at Hangar Bay 3 and headed to the fuel depot for an oil top-off with Zeeb.",
-        "strength": 0.475,
+        "strength": 0.46,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T12:00:32.501Z"
@@ -296,7 +296,7 @@
       {
         "id": "m27",
         "text": "Helped Zeeb adjust thermal shielding around my navigation sensors on the Little Dart.",
-        "strength": 0.605,
+        "strength": 0.59,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T12:20:31.753Z"
@@ -304,7 +304,7 @@
       {
         "id": "m22",
         "text": "Helped Zeeb secure the thruster heat tiles on the Little Dart before heading out to check perimeter telemetry.",
-        "strength": 0.52,
+        "strength": 0.505,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T12:30:31.766Z"
@@ -312,7 +312,7 @@
       {
         "id": "m28",
         "text": "Returned to the Hangar Bay 3 charging dock on day 129 as battery reserves dipped dangerously low.",
-        "strength": 0.785,
+        "strength": 0.77,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T12:40:31.742Z"
@@ -320,7 +320,7 @@
       {
         "id": "m23",
         "text": "Helped Zeeb align the deep space comms array at the tower on day 129.",
-        "strength": 0.65,
+        "strength": 0.635,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T12:50:32.325Z"

@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 31",
-    "progress": 63,
-    "version": 11,
-    "lastChange": "welding catenary-braced titanium tension wires onto the Little Dart lower frame section for optimal load distribution (used Brakk, half a thruster nozzle)",
+    "progress": 72,
+    "version": 12,
+    "lastChange": "welding Fen the bent stabiliser fin onto the open lattice interstage to reinforce lateral load limits (used Sprocket, a tiny gyroscope)",
     "log": [
+      {
+        "version": 12,
+        "change": "welding Fen the bent stabiliser fin onto the open lattice interstage to reinforce lateral load limits (used Sprocket, a tiny gyroscope)",
+        "progress": 72,
+        "at": "2026-11-28T05:14:52.618Z"
+      },
       {
         "version": 11,
         "change": "welding catenary-braced titanium tension wires onto the Little Dart lower frame section for optimal load distribution (used Brakk, half a thruster nozzle)",
@@ -238,12 +244,6 @@
         "change": "soldered the ZL38063 audio pin layout into the Little Dart cockpit control panel",
         "progress": 9,
         "at": "2026-11-26T05:00:13.694Z"
-      },
-      {
-        "version": 1,
-        "change": "welded a custom high-strength titanium brace to the Little Dart main engine mount (used Mabel, a dented fuel cell)",
-        "progress": 7,
-        "at": "2026-11-26T02:23:03.544Z"
       }
     ],
     "launched": [
@@ -4229,7 +4229,7 @@
         ]
       }
     ],
-    "partsUsed": 7,
+    "partsUsed": 8,
     "parts": [
       {
         "name": "Rusty Jr",
@@ -4265,6 +4265,11 @@
         "name": "Brakk",
         "what": "half a thruster nozzle",
         "version": 11
+      },
+      {
+        "name": "Sprocket",
+        "what": "a tiny gyroscope",
+        "version": 12
       }
     ],
     "design": null
@@ -4567,11 +4572,6 @@
       "what": "a dented fuel cell",
       "at": "2026-11-28T00:09:19.560Z",
       "good": true
-    },
-    {
-      "name": "Sprocket",
-      "what": "a tiny gyroscope",
-      "at": "2026-11-28T00:09:19.560Z"
     }
   ],
   "reads": [

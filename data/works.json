@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 32",
-    "progress": 0,
-    "version": 0,
-    "lastChange": "",
+    "progress": 6,
+    "version": 1,
+    "lastChange": "securing the AN-6 bulkhead fittings and lightweight fuel rails with precision torque (used Pim, a tiny gyroscope)",
     "log": [
+      {
+        "version": 1,
+        "change": "securing the AN-6 bulkhead fittings and lightweight fuel rails with precision torque (used Pim, a tiny gyroscope)",
+        "progress": 6,
+        "at": "2026-11-28T10:21:48.817Z"
+      },
       {
         "version": 16,
         "change": "installing and sealing the AN-6 bulkhead fittings and lightweight fuel rails onto the Little Dart, using Nim (a cockpit switch that still clicks) for extra panel security (used Tilly, a dented fuel cell)",
@@ -238,12 +244,6 @@
         "change": "welded the titanium nose cone reinforcement and sealed the seam with high-temp paste (used Brakk, a bent stabiliser fin)",
         "progress": 48,
         "at": "2026-11-26T12:07:01.569Z"
-      },
-      {
-        "version": 6,
-        "change": "routed the final navigation bus leads and secured the main panel with Nim (a sensor eye with one crack) (used Otto, a perfectly good bolt)",
-        "progress": 41,
-        "at": "2026-11-26T11:06:17.603Z"
       }
     ],
     "launched": [
@@ -4297,8 +4297,14 @@
         ]
       }
     ],
-    "partsUsed": 0,
-    "parts": [],
+    "partsUsed": 1,
+    "parts": [
+      {
+        "name": "Pim",
+        "what": "a tiny gyroscope",
+        "version": 1
+      }
+    ],
     "design": null
   },
   "tunes": [
@@ -4577,11 +4583,6 @@
     {
       "name": "Pim",
       "what": "a cockpit switch that still clicks",
-      "at": "2026-11-28T00:19:19.748Z"
-    },
-    {
-      "name": "Pim",
-      "what": "a tiny gyroscope",
       "at": "2026-11-28T00:19:19.748Z"
     }
   ],

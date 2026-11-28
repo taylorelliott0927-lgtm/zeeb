@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": 0.08,
-    "energy": 0.717,
+    "mood": 0.098,
+    "energy": 0.703,
     "needs": {
-      "charge": 0.044,
+      "charge": 0.086,
       "oil": 0,
       "curiosity": 1,
-      "company": 0.048,
-      "craft": 0.903
+      "company": 0.096,
+      "craft": 0.963
     },
     "place": "depot",
     "action": "drink_oil",
-    "doing": "rolling over to the fuel depot to purchase a fresh cup of lubrication oil",
-    "thought": "Smooth joints make for smooth trajectories. Must keep the internal servos running clean.",
-    "feeling": "sluggish yet hopeful",
-    "say": "Acquiring necessary fluids, Zeeb. Be right back.",
+    "doing": "purchasing and drinking a cup of fresh lubrication oil",
+    "thought": "The joints are locking up just a fraction too much. I need that clean flow before I look at the sky again.",
+    "feeling": "stiff and dry",
+    "say": "Hurry back, Zeeb. My intake valves are nearly parched.",
     "recent": [
+      {
+        "id": "drink_oil",
+        "at": "2026-11-28T16:56:40.252Z"
+      },
       {
         "id": "drink_oil",
         "at": "2026-11-28T16:46:39.629Z"
@@ -201,38 +205,26 @@
       {
         "id": "drink_oil",
         "at": "2026-11-28T15:25:56.897Z"
-      },
-      {
-        "id": "drink_oil",
-        "at": "2026-11-28T15:15:57.223Z"
       }
     ],
-    "busyUntil": "2026-11-28T16:48:32.129Z",
+    "busyUntil": "2026-11-28T16:58:32.752Z",
     "asleep": false,
-    "lastTick": 1795884399629
+    "lastTick": 1795885000252
   },
   "mem": {
     "memories": [
       {
         "id": "m25",
         "text": "Plugged back into the Hangar Bay 3 charging dock on day 130 to restore critical battery reserves.",
-        "strength": 0.585,
+        "strength": 0.57,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T13:47:32.769Z"
       },
       {
-        "id": "m24",
-        "text": "Plugged into the Hangar Bay 3 charging dock on day 130 to restore critically low battery levels.",
-        "strength": 0.48,
-        "recalls": 0,
-        "term": "short",
-        "at": "2026-11-28T14:12:05.656Z"
-      },
-      {
         "id": "m19",
         "text": "Plugged into the Hangar Bay 3 charging dock on day 130 to restore critically low battery levels once more.",
-        "strength": 0.495,
+        "strength": 0.48,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T14:22:06.246Z"
@@ -240,7 +232,7 @@
       {
         "id": "m16",
         "text": "Plugged back into the Hangar Bay 3 charging dock on day 130 to restore critical battery reserves before plotting new flight paths.",
-        "strength": 0.605,
+        "strength": 0.59,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T14:55:57.445Z"
@@ -248,7 +240,7 @@
       {
         "id": "m18",
         "text": "Purchased a cup of fresh lubrication oil at the fuel depot on day 130 to restore critical fluid levels.",
-        "strength": 0.62,
+        "strength": 0.605,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T15:05:56.760Z"
@@ -256,7 +248,7 @@
       {
         "id": "m29",
         "text": "Purchased another cup of fresh lubrication oil at the fuel depot on day 130 to maintain servo fluidity.",
-        "strength": 0.485,
+        "strength": 0.47,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T15:15:57.223Z"
@@ -264,7 +256,7 @@
       {
         "id": "m27",
         "text": "Purchased another cup of fresh lubrication oil at the fuel depot on day 130 to maintain servo fluidity and reduce friction.",
-        "strength": 0.515,
+        "strength": 0.5,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T15:35:56.870Z"
@@ -272,7 +264,7 @@
       {
         "id": "m23",
         "text": "Purchased another cup of fresh lubrication oil at the fuel depot on day 130 to maintain servo fluidity and precision.",
-        "strength": 0.53,
+        "strength": 0.515,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T15:45:56.424Z"
@@ -280,7 +272,7 @@
       {
         "id": "m28",
         "text": "Helped Zeeb map out the final navigation routes for the Little Dart on day 130.",
-        "strength": 0.66,
+        "strength": 0.645,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T15:56:12.240Z"
@@ -288,7 +280,7 @@
       {
         "id": "m26",
         "text": "Plugged back into the Hangar Bay 3 charging dock to restore critically low battery reserves on day 130.",
-        "strength": 0.69,
+        "strength": 0.675,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:16:12.018Z"
@@ -296,7 +288,7 @@
       {
         "id": "m15",
         "text": "Plugged back into the Hangar Bay 3 charging dock on day 130 to restore critically low battery reserves.",
-        "strength": 0.705,
+        "strength": 0.69,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:26:12.070Z"
@@ -304,7 +296,7 @@
       {
         "id": "m22",
         "text": "Plugged back into the Hangar Bay 3 charging dock on day 131 to restore critically low battery reserves.",
-        "strength": 0.77,
+        "strength": 0.755,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:36:12.104Z"
@@ -312,7 +304,7 @@
       {
         "id": "m17",
         "text": "Began mapping new star routes with Zeeb in Hangar Bay 3 on day 131 after a full recharge.",
-        "strength": 0.735,
+        "strength": 0.72,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:36:39.978Z"
@@ -320,10 +312,18 @@
       {
         "id": "m21",
         "text": "Purchased fresh lubrication oil at the depot on day 131 to maintain smooth servo movement.",
-        "strength": 0.65,
+        "strength": 0.635,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:46:39.629Z"
+      },
+      {
+        "id": "m20",
+        "text": "Purchased a cup of fresh lubrication oil at the fuel depot to restore critical fluid levels on day 131.",
+        "strength": 0.75,
+        "recalls": 0,
+        "term": "short",
+        "at": "2026-11-28T16:56:40.252Z"
       }
     ],
     "beliefs": []

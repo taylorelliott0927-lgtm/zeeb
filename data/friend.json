@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": 0.105,
-    "energy": 0.681,
+    "mood": 0.112,
+    "energy": 0.697,
     "needs": {
       "charge": 0,
-      "oil": 0.109,
+      "oil": 0.145,
       "curiosity": 1,
-      "company": 0.096,
-      "craft": 0.72
+      "company": 0.144,
+      "craft": 0.78
     },
     "place": "hangar",
     "action": "nap_dock",
-    "doing": "recharging power cells in the docking bay",
-    "thought": "The battery indicator blinks a steady warning, but my circuits hum quietly as power flows back into my frame.",
-    "feeling": "low power",
+    "doing": "resting in the charging dock with low power levels",
+    "thought": "The charging indicator pulses steadily... power is trickling back into my cells. Zeeb is sleeping nearby, breathing softly. I will let my systems restore themselves in the quiet hangar.",
+    "feeling": "low power and still",
     "say": "",
     "recent": [
+      {
+        "id": "nap_dock",
+        "at": "2026-11-28T16:26:12.070Z"
+      },
       {
         "id": "nap_dock",
         "at": "2026-11-28T16:16:12.018Z"
@@ -201,22 +205,18 @@
       {
         "id": "hang_out",
         "at": "2026-11-28T14:52:05.541Z"
-      },
-      {
-        "id": "hang_out",
-        "at": "2026-11-28T14:42:05.797Z"
       }
     ],
-    "busyUntil": "2026-11-28T16:23:42.018Z",
+    "busyUntil": "2026-11-28T16:33:42.070Z",
     "asleep": false,
-    "lastTick": 1795882572018
+    "lastTick": 1795883172070
   },
   "mem": {
     "memories": [
       {
         "id": "m25",
         "text": "Plugged back into the Hangar Bay 3 charging dock on day 130 to restore critical battery reserves.",
-        "strength": 0.645,
+        "strength": 0.63,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T13:47:32.769Z"
@@ -224,7 +224,7 @@
       {
         "id": "m20",
         "text": "Plugged into the Hangar Bay 3 charging dock on day 130 to restore critical battery levels.",
-        "strength": 0.525,
+        "strength": 0.51,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T14:02:06.116Z"
@@ -232,7 +232,7 @@
       {
         "id": "m24",
         "text": "Plugged into the Hangar Bay 3 charging dock on day 130 to restore critically low battery levels.",
-        "strength": 0.54,
+        "strength": 0.525,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T14:12:05.656Z"
@@ -240,23 +240,15 @@
       {
         "id": "m19",
         "text": "Plugged into the Hangar Bay 3 charging dock on day 130 to restore critically low battery levels once more.",
-        "strength": 0.555,
+        "strength": 0.54,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T14:22:06.246Z"
       },
       {
-        "id": "m22",
-        "text": "Plotted a clean flight corridor through the northern dust drift with Zeeb on day 130.",
-        "strength": 0.485,
-        "recalls": 0,
-        "term": "short",
-        "at": "2026-11-28T14:42:05.797Z"
-      },
-      {
         "id": "m17",
         "text": "Reviewed the smooth northern drift route with Zeeb at the fuel depot on day 130.",
-        "strength": 0.5,
+        "strength": 0.485,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T14:52:05.541Z"
@@ -264,7 +256,7 @@
       {
         "id": "m16",
         "text": "Plugged back into the Hangar Bay 3 charging dock on day 130 to restore critical battery reserves before plotting new flight paths.",
-        "strength": 0.665,
+        "strength": 0.65,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T14:55:57.445Z"
@@ -272,7 +264,7 @@
       {
         "id": "m18",
         "text": "Purchased a cup of fresh lubrication oil at the fuel depot on day 130 to restore critical fluid levels.",
-        "strength": 0.68,
+        "strength": 0.665,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T15:05:56.760Z"
@@ -280,7 +272,7 @@
       {
         "id": "m29",
         "text": "Purchased another cup of fresh lubrication oil at the fuel depot on day 130 to maintain servo fluidity.",
-        "strength": 0.545,
+        "strength": 0.53,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T15:15:57.223Z"
@@ -288,7 +280,7 @@
       {
         "id": "m27",
         "text": "Purchased another cup of fresh lubrication oil at the fuel depot on day 130 to maintain servo fluidity and reduce friction.",
-        "strength": 0.575,
+        "strength": 0.56,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T15:35:56.870Z"
@@ -296,7 +288,7 @@
       {
         "id": "m23",
         "text": "Purchased another cup of fresh lubrication oil at the fuel depot on day 130 to maintain servo fluidity and precision.",
-        "strength": 0.59,
+        "strength": 0.575,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T15:45:56.424Z"
@@ -304,7 +296,7 @@
       {
         "id": "m21",
         "text": "Watched the clear evening skies over Kessa-9 from Hangar Bay 3 on day 130, noting the clear navigation paths.",
-        "strength": 0.505,
+        "strength": 0.49,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T15:46:12.348Z"
@@ -312,7 +304,7 @@
       {
         "id": "m28",
         "text": "Helped Zeeb map out the final navigation routes for the Little Dart on day 130.",
-        "strength": 0.72,
+        "strength": 0.705,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T15:56:12.240Z"
@@ -320,10 +312,18 @@
       {
         "id": "m26",
         "text": "Plugged back into the Hangar Bay 3 charging dock to restore critically low battery reserves on day 130.",
-        "strength": 0.75,
+        "strength": 0.735,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:16:12.018Z"
+      },
+      {
+        "id": "m15",
+        "text": "Plugged back into the Hangar Bay 3 charging dock on day 130 to restore critically low battery reserves.",
+        "strength": 0.75,
+        "recalls": 0,
+        "term": "short",
+        "at": "2026-11-28T16:26:12.070Z"
       }
     ],
     "beliefs": []

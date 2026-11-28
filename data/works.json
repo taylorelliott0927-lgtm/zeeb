@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 32",
-    "progress": 6,
-    "version": 1,
-    "lastChange": "securing the AN-6 bulkhead fittings and lightweight fuel rails with precision torque (used Pim, a tiny gyroscope)",
+    "progress": 14,
+    "version": 2,
+    "lastChange": "installing the stainless braided fuel line flexible hose along the main chassis channel (used Pim, a cockpit switch that still clicks)",
     "log": [
+      {
+        "version": 2,
+        "change": "installing the stainless braided fuel line flexible hose along the main chassis channel (used Pim, a cockpit switch that still clicks)",
+        "progress": 14,
+        "at": "2026-11-28T10:31:48.968Z"
+      },
       {
         "version": 1,
         "change": "securing the AN-6 bulkhead fittings and lightweight fuel rails with precision torque (used Pim, a tiny gyroscope)",
@@ -238,12 +244,6 @@
         "change": "mounted the salvaged sensor eye with one crack (Nim) into the instrument cluster and wired it straight to the navigation bus (used Nim, a sensor eye with one crack)",
         "progress": 54,
         "at": "2026-11-26T13:55:54.401Z"
-      },
-      {
-        "version": 7,
-        "change": "welded the titanium nose cone reinforcement and sealed the seam with high-temp paste (used Brakk, a bent stabiliser fin)",
-        "progress": 48,
-        "at": "2026-11-26T12:07:01.569Z"
       }
     ],
     "launched": [
@@ -4297,12 +4297,17 @@
         ]
       }
     ],
-    "partsUsed": 1,
+    "partsUsed": 2,
     "parts": [
       {
         "name": "Pim",
         "what": "a tiny gyroscope",
         "version": 1
+      },
+      {
+        "name": "Pim",
+        "what": "a cockpit switch that still clicks",
+        "version": 2
       }
     ],
     "design": null
@@ -4579,11 +4584,6 @@
       "name": "Gus",
       "what": "a sensor eye with one crack",
       "at": "2026-11-28T00:29:20.193Z"
-    },
-    {
-      "name": "Pim",
-      "what": "a cockpit switch that still clicks",
-      "at": "2026-11-28T00:19:19.748Z"
     }
   ],
   "reads": [

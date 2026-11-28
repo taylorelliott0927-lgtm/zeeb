@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": 0.287,
-    "energy": 0.563,
+    "mood": 0.242,
+    "energy": 0.578,
     "needs": {
-      "charge": 0.042,
-      "oil": 0.31,
-      "curiosity": 0.82,
-      "company": 0.098,
-      "craft": 0.483
+      "charge": 0,
+      "oil": 0.346,
+      "curiosity": 0.892,
+      "company": 0.146,
+      "craft": 0.543
     },
     "place": "hangar",
     "action": "nap_dock",
-    "doing": "interfacing with the hangar charging rack to restore power reserves",
-    "thought": "click... Zeeb is working at the junk market. I will dock at Hangar Bay 3, align my chassis to magnetic north, and monitor local telemetry while charging... whirrr.",
-    "feeling": "drained, watchful, steady",
-    "say": "",
+    "doing": "coupling with the power node next to Zeeb",
+    "thought": "*click* Power levels reaching depleted status. Alignment with dock terminal confirmed. *low static hum*",
+    "feeling": "drained, quiet, ready to recharge",
+    "say": "*click* Initiating battery cycle... good night, Zeeb. *bzzt*",
     "recent": [
+      {
+        "id": "nap_dock",
+        "at": "2026-11-28T04:11:55.383Z"
+      },
       {
         "id": "nap_dock",
         "at": "2026-11-28T03:51:55.442Z"
@@ -171,16 +175,16 @@
         "at": "2026-11-28T03:31:23.348Z"
       }
     ],
-    "busyUntil": "2026-11-28T04:03:10.442Z",
+    "busyUntil": "2026-11-28T04:26:55.383Z",
     "asleep": false,
-    "lastTick": 1795838515060
+    "lastTick": 1795839115383
   },
   "mem": {
     "memories": [
       {
         "id": "m1",
         "text": "Activated for the first time in Hangar Bay 3. Zeeb finished connecting my sensor dish.",
-        "strength": 0.755,
+        "strength": 0.74,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:31:23.348Z"
@@ -188,7 +192,7 @@
       {
         "id": "m2",
         "text": "Logged Zeeb's voice print and confirmed sensor dish calibration in Hangar 3.",
-        "strength": 0.62,
+        "strength": 0.605,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:41:24.197Z"

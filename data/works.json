@@ -1,10 +1,16 @@
 {
   "dart": {
     "name": "the Little Dart Mk 32",
-    "progress": 79,
-    "version": 9,
-    "lastChange": "mounting ceramic insulation brackets and thermal tiles along the lower hull of the Little Dart using Sprocket, a sensor eye with one crack (used Bix, a scorched heat tile)",
+    "progress": 89,
+    "version": 10,
+    "lastChange": "welding and securing the final thermal insulation bracket rows along the starboard lower hull of the Little Dart Mk 32 (used Nim, a sensor eye with one crack)",
     "log": [
+      {
+        "version": 10,
+        "change": "welding and securing the final thermal insulation bracket rows along the starboard lower hull of the Little Dart Mk 32 (used Nim, a sensor eye with one crack)",
+        "progress": 89,
+        "at": "2026-11-28T16:06:11.455Z"
+      },
       {
         "version": 9,
         "change": "mounting ceramic insulation brackets and thermal tiles along the lower hull of the Little Dart using Sprocket, a sensor eye with one crack (used Bix, a scorched heat tile)",
@@ -238,12 +244,6 @@
         "change": "mounting lightweight ceramic heat shield tiles along the ventral hull panels (used Nim, a cracked navigation chip)",
         "progress": 16,
         "at": "2026-11-26T23:33:52.875Z"
-      },
-      {
-        "version": 1,
-        "change": "adding high-grade titanium reinforcement struts to the engine bay (used Rusty Jr, a coil of copper wire)",
-        "progress": 8,
-        "at": "2026-11-26T23:24:09.109Z"
       }
     ],
     "launched": [
@@ -4297,7 +4297,7 @@
         ]
       }
     ],
-    "partsUsed": 9,
+    "partsUsed": 10,
     "parts": [
       {
         "name": "Pim",
@@ -4343,6 +4343,11 @@
         "name": "Bix",
         "what": "a scorched heat tile",
         "version": 9
+      },
+      {
+        "name": "Nim",
+        "what": "a sensor eye with one crack",
+        "version": 10
       }
     ],
     "design": null
@@ -4609,11 +4614,6 @@
       "name": "Sprocket",
       "what": "a sensor eye with one crack",
       "at": "2026-11-28T12:57:33.179Z"
-    },
-    {
-      "name": "Nim",
-      "what": "a sensor eye with one crack",
-      "at": "2026-11-28T11:29:38.826Z"
     }
   ],
   "reads": [

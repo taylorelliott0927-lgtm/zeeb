@@ -1,26 +1,31 @@
 {
   "epoch": 1794479390602,
-  "lastTick": 1795851114543,
+  "lastTick": 1795851714742,
   "asleep": false,
   "place": "hangar",
   "action": "nap_dock",
-  "doing": "napping in the charging dock",
+  "doing": "still napping in the charging dock",
   "actionStartedAt": "2026-11-28T07:31:54.543Z",
-  "actionMinutes": 45,
-  "thought": "battery indicator is blinking slow and red, time for a quick nap right beside Tack. *bweep*",
-  "feeling": "a bit sleepy and low on charge",
-  "say": "going to catch forty winks in the dock, tack.",
-  "mood": 0.34,
-  "energy": 0.169,
+  "actionMinutes": 30,
+  "thought": "charging up feels so good when my gears are all warmed up from riveting. Tack is resting right beside me, humming quiet telemetry tones.",
+  "feeling": "recharged and cozy",
+  "say": "",
+  "mood": 0.328,
+  "energy": 0.457,
   "needs": {
-    "charge": 0.202,
-    "oil": 0.192,
-    "curiosity": 0.545,
-    "company": 0,
-    "craft": 0.067
+    "charge": 0,
+    "oil": 0.232,
+    "curiosity": 0.625,
+    "company": 0.053,
+    "craft": 0.134
   },
   "credits": 0,
   "recent": [
+    {
+      "id": "nap_dock",
+      "detail": "",
+      "at": "2026-11-28T07:41:54.742Z"
+    },
     {
       "id": "nap_dock",
       "detail": "",
@@ -75,11 +80,6 @@
       "id": "nap_dock",
       "detail": "",
       "at": "2026-11-28T05:34:53.234Z"
-    },
-    {
-      "id": "drink_oil",
-      "detail": "",
-      "at": "2026-11-28T05:24:53.077Z"
     }
   ],
   "wants": [
@@ -1639,24 +1639,24 @@
     6850174595,
     6850217707
   ],
-  "lettersCheckedAt": "2026-11-28T07:31:54.543Z",
+  "lettersCheckedAt": "2026-11-28T07:41:54.742Z",
   "weather": {
     "kind": "clear",
     "temp": 11,
     "wind": 8,
     "mood": 0.01,
     "source": "Tozeur, Tunisia",
-    "at": "2026-11-28T07:01:55.340Z"
+    "at": "2026-11-28T07:41:54.891Z"
   },
   "sleepDay": 126,
   "lastReflectDay": 126,
   "brain": "gemini-3.5-flash-lite",
-  "updatedAt": "2026-11-28T07:31:54.543Z",
+  "updatedAt": "2026-11-28T07:41:54.742Z",
   "clock": {
     "day": 128,
-    "time": "00:16",
-    "hour": 0,
-    "minute": 16
+    "time": "01:36",
+    "hour": 1,
+    "minute": 36
   },
   "townDayMinutes": 180,
   "placeName": "Hangar Bay 3",
@@ -1664,18 +1664,18 @@
     "action": "nap_dock",
     "since": "2026-11-28T07:31:54.543Z"
   },
-  "busyUntil": "2026-11-28T07:37:32.043Z",
-  "busyUntilTown": "01:01",
+  "busyUntil": "2026-11-28T07:45:39.742Z",
+  "busyUntilTown": "02:06",
   "runner": "github",
   "model": "gemini-3.5-flash-lite",
   "pcBrainAt": "2026-11-18T06:01:13.288Z",
-  "doingWords": "plugging into the charging dock for a quick battery sip",
+  "doingWords": "plugged into the charging dock beside Tack, letting power flow back into my servos",
   "newsForCreator": "",
   "newsPendingTicks": 0,
   "lastChatAt": "2026-11-14T07:27:57.792Z",
   "body": [
-    "droop",
-    "nod"
+    "nod",
+    "shake"
   ],
   "pops": {
     "at": "2026-11-28T06:43:48.966Z",
@@ -1695,6 +1695,10 @@
   },
   "thoughts": [
     {
+      "text": "charging up feels so good when my gears are all warmed up from riveting. Tack is resting right beside me, humming quiet telemetry tones.",
+      "at": "2026-11-28T07:41:54.742Z"
+    },
+    {
       "text": "battery indicator is blinking slow and red, time for a quick nap right beside Tack. *bweep*",
       "at": "2026-11-28T07:31:54.543Z"
     },
@@ -1713,17 +1717,13 @@
     {
       "text": "nothing beats a nice cold cup of heavy lubricating oil after checking out orbital engine restart specs. now my pump valves are sliding smooth as glass.",
       "at": "2026-11-28T06:43:48.966Z"
-    },
-    {
-      "text": "all that wire browsing made my servo joints thirsty. time to top off the tank.",
-      "at": "2026-11-28T06:33:48.586Z"
     }
   ],
-  "sayAt": "2026-11-28T07:31:54.543Z",
+  "sayAt": "2026-11-28T07:41:54.742Z",
   "today": {
     "day": 128,
     "counts": {
-      "nap_dock": 1
+      "nap_dock": 2
     }
   },
   "lastDone": {
@@ -1748,7 +1748,7 @@
     "chat_patrons": "2026-11-27T11:49:06.623Z",
     "busk": "2026-11-25T16:00:29.331Z",
     "cantina_band": "2026-11-26T16:28:29.352Z",
-    "nap_dock": "2026-11-28T07:31:54.543Z",
+    "nap_dock": "2026-11-28T07:41:54.742Z",
     "watch_suns": "2026-11-19T00:54:42.428Z",
     "work_project": "2026-11-14T17:57:59.313Z",
     "start_friend": "2026-11-14T11:54:58.335Z",
@@ -1790,6 +1790,13 @@
     "at": "2026-11-28T06:23:48.266Z"
   },
   "said": [
+    {
+      "text": "charging up feels so good when my gears are all warmed up from riveting. Tack is resting right beside me, humming quiet telemetry tones.",
+      "kind": "think",
+      "at": "2026-11-28T07:41:54.742Z",
+      "town": "day 128 01:36",
+      "place": "Hangar Bay 3"
+    },
     {
       "text": "going to catch forty winks in the dock, tack.",
       "kind": "say",
@@ -2832,13 +2839,6 @@
       "at": "2026-11-27T17:13:47.110Z",
       "town": "day 123 05:51",
       "place": "Hangar Bay 3"
-    },
-    {
-      "text": "just resting my servos for a minute so I don't grind my gears into dust. *bweep-bzt*",
-      "kind": "think",
-      "at": "2026-11-27T17:13:47.110Z",
-      "town": "day 123 05:51",
-      "place": "Hangar Bay 3"
     }
   ],
   "flight": {
@@ -2849,7 +2849,7 @@
     "at": "2026-11-26T21:28:36.448Z",
     "seconds": 45
   },
-  "feedArchivedAt": "2026-11-28T07:31:54.543Z",
+  "feedArchivedAt": "2026-11-28T07:41:54.742Z",
   "plans": [],
   "searches": [
     {

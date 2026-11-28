@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": 0.22,
-    "energy": 0.557,
+    "mood": 0.191,
+    "energy": 0.524,
     "needs": {
-      "charge": 0,
-      "oil": 0.387,
-      "curiosity": 0.675,
-      "company": 0.231,
-      "craft": 0.612
+      "charge": 0.042,
+      "oil": 0.423,
+      "curiosity": 0.627,
+      "company": 0.279,
+      "craft": 0.672
     },
-    "place": "ridge",
-    "action": "stargaze",
-    "doing": "scanning the clear night sky and mapping distant constellations from the dune ridge",
-    "thought": "The upper atmosphere is remarkably stable tonight. *click-whirr* Every star is sharp and clean.",
-    "feeling": "wondering and starry-eyed",
+    "place": "depot",
+    "action": "wander",
+    "doing": "walking back down the dune ridge toward the outpost lights",
+    "thought": "*click* Power cell output fading. *humm* Navigational array switching to low-draw mode. I must return to the central grid before my relay drops signal.",
+    "feeling": "cautious and low on power",
     "say": "",
     "recent": [
+      {
+        "id": "wander",
+        "at": "2026-11-28T04:41:54.534Z"
+      },
       {
         "id": "stargaze",
         "at": "2026-11-28T04:31:55.072Z"
@@ -183,16 +187,16 @@
         "at": "2026-11-28T03:31:23.348Z"
       }
     ],
-    "busyUntil": "2026-11-28T04:39:25.072Z",
+    "busyUntil": "2026-11-28T04:44:24.534Z",
     "asleep": false,
-    "lastTick": 1795840315072
+    "lastTick": 1795840914534
   },
   "mem": {
     "memories": [
       {
         "id": "m1",
         "text": "Activated for the first time in Hangar Bay 3. Zeeb finished connecting my sensor dish.",
-        "strength": 0.71,
+        "strength": 0.695,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:31:23.348Z"
@@ -200,7 +204,7 @@
       {
         "id": "m2",
         "text": "Logged Zeeb's voice print and confirmed sensor dish calibration in Hangar 3.",
-        "strength": 0.575,
+        "strength": 0.56,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:41:24.197Z"
@@ -208,7 +212,7 @@
       {
         "id": "m3",
         "text": "Observed a clear northern band of stars from the dune ridge on day 127, noting three new positional clusters.",
-        "strength": 0.75,
+        "strength": 0.735,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T04:31:55.072Z"

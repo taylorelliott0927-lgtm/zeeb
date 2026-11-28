@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": 0.242,
-    "energy": 0.578,
+    "mood": 0.199,
+    "energy": 0.547,
     "needs": {
-      "charge": 0,
-      "oil": 0.346,
-      "curiosity": 0.892,
-      "company": 0.146,
-      "craft": 0.543
+      "charge": 0.042,
+      "oil": 0.382,
+      "curiosity": 0.964,
+      "company": 0.194,
+      "craft": 0.603
     },
     "place": "hangar",
-    "action": "nap_dock",
-    "doing": "coupling with the power node next to Zeeb",
-    "thought": "*click* Power levels reaching depleted status. Alignment with dock terminal confirmed. *low static hum*",
-    "feeling": "drained, quiet, ready to recharge",
-    "say": "*click* Initiating battery cycle... good night, Zeeb. *bzzt*",
+    "action": "sleep",
+    "doing": "asleep in the charging dock",
+    "thought": "*click* Power cell voltage low... *bzzz* Telemetry arrays entering standby mode. Aligning lens to north before sleep cycle.",
+    "feeling": "drained, rhythmic, quiet",
+    "say": "",
     "recent": [
+      {
+        "id": "go_to_sleep",
+        "at": "2026-11-28T04:21:54.828Z"
+      },
       {
         "id": "nap_dock",
         "at": "2026-11-28T04:11:55.383Z"
@@ -176,15 +180,15 @@
       }
     ],
     "busyUntil": "2026-11-28T04:26:55.383Z",
-    "asleep": false,
-    "lastTick": 1795839115383
+    "asleep": true,
+    "lastTick": 1795839714828
   },
   "mem": {
     "memories": [
       {
         "id": "m1",
         "text": "Activated for the first time in Hangar Bay 3. Zeeb finished connecting my sensor dish.",
-        "strength": 0.74,
+        "strength": 0.725,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:31:23.348Z"
@@ -192,7 +196,7 @@
       {
         "id": "m2",
         "text": "Logged Zeeb's voice print and confirmed sensor dish calibration in Hangar 3.",
-        "strength": 0.605,
+        "strength": 0.59,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T03:41:24.197Z"

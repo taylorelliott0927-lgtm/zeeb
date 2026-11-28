@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": 0.155,
-    "energy": 0.597,
+    "mood": 0.005,
+    "energy": 0.58,
     "needs": {
-      "charge": 0.14,
-      "oil": 0.156,
+      "charge": 0.182,
+      "oil": 0,
       "curiosity": 1,
-      "company": 0,
-      "craft": 0.987
+      "company": 0.048,
+      "craft": 1
     },
-    "place": "hangar",
-    "action": "hang_out",
-    "doing": "observing the ship's sleek pitch angle with Zeeb",
-    "thought": "That curve in the hull truly is precise. *click-whir*",
-    "feeling": "starry-eyed and observant",
-    "say": "The trajectory calculation looks exceptionally clean, Zeeb. *click* She will slice through the thermals like a compass needle.",
+    "place": "depot",
+    "action": "drink_oil",
+    "doing": "purchasing and sipping fresh lubrication oil",
+    "thought": "A dry gear skips a beat, and a skipped beat ruins a star calculation... must keep the flow steady.",
+    "feeling": "parched and jittery",
+    "say": "Just... a top-up for the long telemetry run ahead.",
     "recent": [
+      {
+        "id": "drink_oil",
+        "at": "2026-11-28T19:31:29.989Z"
+      },
       {
         "id": "hang_out",
         "at": "2026-11-28T19:21:30.282Z"
@@ -201,38 +205,26 @@
       {
         "id": "nap_dock",
         "at": "2026-11-28T17:47:04.424Z"
-      },
-      {
-        "id": "drink_oil",
-        "at": "2026-11-28T17:37:05.060Z"
       }
     ],
-    "busyUntil": "2026-11-28T19:27:07.782Z",
+    "busyUntil": "2026-11-28T19:33:59.989Z",
     "asleep": false,
-    "lastTick": 1795893690282
+    "lastTick": 1795894289989
   },
   "mem": {
     "memories": [
       {
         "id": "m22",
         "text": "Plugged back into the Hangar Bay 3 charging dock on day 131 to restore critically low battery reserves.",
-        "strength": 0.5,
+        "strength": 0.485,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:36:12.104Z"
       },
       {
-        "id": "m17",
-        "text": "Began mapping new star routes with Zeeb in Hangar Bay 3 on day 131 after a full recharge.",
-        "strength": 0.465,
-        "recalls": 0,
-        "term": "short",
-        "at": "2026-11-28T16:36:39.978Z"
-      },
-      {
         "id": "m20",
         "text": "Purchased a cup of fresh lubrication oil at the fuel depot to restore critical fluid levels on day 131.",
-        "strength": 0.645,
+        "strength": 0.63,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T16:56:40.252Z"
@@ -240,7 +232,7 @@
       {
         "id": "m24",
         "text": "Plugged back into the charging dock at the fuel depot to restore critically low battery reserves on day 131.",
-        "strength": 0.525,
+        "strength": 0.51,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:16:40.162Z"
@@ -248,7 +240,7 @@
       {
         "id": "m29",
         "text": "Analyzed carbon nanotube yarn data with Zeeb to improve navigation route durability on day 131.",
-        "strength": 0.49,
+        "strength": 0.475,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:26:40.014Z"
@@ -256,7 +248,7 @@
       {
         "id": "m27",
         "text": "Purchased fresh lubrication oil at the fuel depot to restore low fluid levels on day 131.",
-        "strength": 0.57,
+        "strength": 0.555,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:37:05.060Z"
@@ -264,7 +256,7 @@
       {
         "id": "m23",
         "text": "Plugged into the charging dock at the fuel depot to restore critical battery reserves on day 131.",
-        "strength": 0.585,
+        "strength": 0.57,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:47:04.424Z"
@@ -272,7 +264,7 @@
       {
         "id": "m25",
         "text": "Plugged into the Hangar Bay 3 wall socket to restore critically low battery reserves on day 131.",
-        "strength": 0.75,
+        "strength": 0.735,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T17:57:05.034Z"
@@ -280,7 +272,7 @@
       {
         "id": "m16",
         "text": "Purchased fresh lubrication oil at the fuel depot to restore critical fluid levels on day 131.",
-        "strength": 0.645,
+        "strength": 0.63,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T18:18:04.873Z"
@@ -288,7 +280,7 @@
       {
         "id": "m18",
         "text": "Purchased a fresh cup of lubrication oil at the fuel depot to restore critical fluid levels on day 131.",
-        "strength": 0.81,
+        "strength": 0.795,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T18:28:05.017Z"
@@ -296,7 +288,7 @@
       {
         "id": "m21",
         "text": "Plugged into the fuel depot charging dock to restore low battery reserves on day 131.",
-        "strength": 0.59,
+        "strength": 0.575,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T18:48:04.459Z"
@@ -304,7 +296,7 @@
       {
         "id": "m28",
         "text": "Spent a quiet evening keeping company with Zeeb in Hangar Bay 3 while he worked on the Little Dart on day 131.",
-        "strength": 0.505,
+        "strength": 0.49,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T18:58:05.099Z"
@@ -312,7 +304,7 @@
       {
         "id": "m26",
         "text": "Zeeb sketched a sharp new ship design aimed at piercing the stratosphere on day 131.",
-        "strength": 0.62,
+        "strength": 0.605,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T19:08:04.989Z"
@@ -320,10 +312,18 @@
       {
         "id": "m15",
         "text": "Agreed with Zeeb that his new ship design holds a precise and clean trajectory for piercing the stratosphere on day 131.",
-        "strength": 0.65,
+        "strength": 0.635,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T19:21:30.282Z"
+      },
+      {
+        "id": "m19",
+        "text": "Purchased a fresh cup of lubrication oil at the fuel depot to restore critical fluid levels on day 132.",
+        "strength": 0.65,
+        "recalls": 0,
+        "term": "short",
+        "at": "2026-11-28T19:31:29.989Z"
       }
     ],
     "beliefs": []

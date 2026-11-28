@@ -142,22 +142,26 @@
     }
   },
   "state": {
-    "mood": 0.009,
-    "energy": 0.747,
+    "mood": 0.032,
+    "energy": 0.741,
     "needs": {
       "charge": 0,
-      "oil": 0.072,
+      "oil": 0.108,
       "curiosity": 1,
-      "company": 0.144,
+      "company": 0.192,
       "craft": 1
     },
     "place": "hangar",
     "action": "nap_dock",
-    "doing": "reconnecting optical sensors and routing current from the bay wall socket into depleted power cells",
-    "thought": "Battery levels dropping too fast. Zeeb is busy with his nanotube yarn, so I must secure power before joining him.",
-    "feeling": "diminished power",
-    "say": "Power reserves... require immediate replenishment, Zeeb.",
+    "doing": "absorbing electrical current while staring at the hangar ceiling rafters",
+    "thought": "The electrical hum of the wall socket is quite steady today. *click* Zeeb calls me Rusty Jr., but my star charts are pristine.",
+    "feeling": "drowsy and precise",
+    "say": "All systems drawing power safely, Zeeb. The horizon can wait just a little longer.",
     "recent": [
+      {
+        "id": "nap_dock",
+        "at": "2026-11-28T18:07:04.428Z"
+      },
       {
         "id": "nap_dock",
         "at": "2026-11-28T17:57:05.034Z"
@@ -201,22 +205,18 @@
       {
         "id": "nap_dock",
         "at": "2026-11-28T16:36:12.104Z"
-      },
-      {
-        "id": "nap_dock",
-        "at": "2026-11-28T16:26:12.070Z"
       }
     ],
-    "busyUntil": "2026-11-28T18:02:42.534Z",
+    "busyUntil": "2026-11-28T18:14:34.428Z",
     "asleep": false,
-    "lastTick": 1795888625034
+    "lastTick": 1795889224428
   },
   "mem": {
     "memories": [
       {
         "id": "m18",
         "text": "Purchased a cup of fresh lubrication oil at the fuel depot on day 130 to restore critical fluid levels.",
-        "strength": 0.5,
+        "strength": 0.485,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T15:05:56.760Z"
@@ -224,7 +224,7 @@
       {
         "id": "m28",
         "text": "Helped Zeeb map out the final navigation routes for the Little Dart on day 130.",
-        "strength": 0.54,
+        "strength": 0.525,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T15:56:12.240Z"
@@ -232,7 +232,7 @@
       {
         "id": "m26",
         "text": "Plugged back into the Hangar Bay 3 charging dock to restore critically low battery reserves on day 130.",
-        "strength": 0.57,
+        "strength": 0.555,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:16:12.018Z"
@@ -240,7 +240,7 @@
       {
         "id": "m15",
         "text": "Plugged back into the Hangar Bay 3 charging dock on day 130 to restore critically low battery reserves.",
-        "strength": 0.585,
+        "strength": 0.57,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:26:12.070Z"
@@ -248,7 +248,7 @@
       {
         "id": "m22",
         "text": "Plugged back into the Hangar Bay 3 charging dock on day 131 to restore critically low battery reserves.",
-        "strength": 0.65,
+        "strength": 0.635,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:36:12.104Z"
@@ -256,7 +256,7 @@
       {
         "id": "m17",
         "text": "Began mapping new star routes with Zeeb in Hangar Bay 3 on day 131 after a full recharge.",
-        "strength": 0.615,
+        "strength": 0.6,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:36:39.978Z"
@@ -264,7 +264,7 @@
       {
         "id": "m21",
         "text": "Purchased fresh lubrication oil at the depot on day 131 to maintain smooth servo movement.",
-        "strength": 0.53,
+        "strength": 0.515,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T16:46:39.629Z"
@@ -272,7 +272,7 @@
       {
         "id": "m20",
         "text": "Purchased a cup of fresh lubrication oil at the fuel depot to restore critical fluid levels on day 131.",
-        "strength": 0.795,
+        "strength": 0.78,
         "recalls": 1,
         "term": "short",
         "at": "2026-11-28T16:56:40.252Z"
@@ -280,7 +280,7 @@
       {
         "id": "m24",
         "text": "Plugged back into the charging dock at the fuel depot to restore critically low battery reserves on day 131.",
-        "strength": 0.675,
+        "strength": 0.66,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:16:40.162Z"
@@ -288,7 +288,7 @@
       {
         "id": "m29",
         "text": "Analyzed carbon nanotube yarn data with Zeeb to improve navigation route durability on day 131.",
-        "strength": 0.64,
+        "strength": 0.625,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:26:40.014Z"
@@ -296,7 +296,7 @@
       {
         "id": "m19",
         "text": "Reviewed carbon nanotube yarn specifications with Zeeb at the comms tower on day 131.",
-        "strength": 0.605,
+        "strength": 0.59,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:27:05.085Z"
@@ -304,7 +304,7 @@
       {
         "id": "m27",
         "text": "Purchased fresh lubrication oil at the fuel depot to restore low fluid levels on day 131.",
-        "strength": 0.72,
+        "strength": 0.705,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:37:05.060Z"
@@ -312,7 +312,7 @@
       {
         "id": "m23",
         "text": "Plugged into the charging dock at the fuel depot to restore critical battery reserves on day 131.",
-        "strength": 0.735,
+        "strength": 0.72,
         "recalls": 0,
         "term": "short",
         "at": "2026-11-28T17:47:04.424Z"
@@ -320,8 +320,8 @@
       {
         "id": "m25",
         "text": "Plugged into the Hangar Bay 3 wall socket to restore critically low battery reserves on day 131.",
-        "strength": 0.75,
-        "recalls": 0,
+        "strength": 0.885,
+        "recalls": 1,
         "term": "short",
         "at": "2026-11-28T17:57:05.034Z"
       }
